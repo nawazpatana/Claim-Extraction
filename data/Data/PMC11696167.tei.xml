@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Weakly supervised deep learning-based classification for histopathology of gliomas: a single center experience</title>
+				<funder ref="#_aXjuHFm">
+					<orgName type="full">National Key R&amp;D Program of China</orgName>
+				</funder>
+				<funder ref="#_YZRsFu2">
+					<orgName type="full">Sichuan Science and Technology Program</orgName>
+				</funder>
+				<funder ref="#_mK4jpkj">
+					<orgName type="full">West China Hospital of Sichuan University</orgName>
+				</funder>
+				<funder ref="#_pH47fhp">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder ref="#_yyQCJ9u">
+					<orgName type="full">National Natural Science Foundation of China</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-01-02">2025-01-02</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Mingrong</forename><surname>Zuo</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Pediatric Neurosurgery , Key Laboratory of Birth Defects and Related Diseases of Women and Children of Ministry of Education , West China Second University Hospital , Sichuan University , Chengdu 610041 , China.</note>
+								<orgName type="department" key="dep1">Department of Pediatric Neurosurgery</orgName>
+								<orgName type="department" key="dep2">of Women and Children of Ministry of Education</orgName>
+								<orgName type="laboratory">Key Laboratory of Birth Defects and Related Diseases</orgName>
+								<orgName type="institution" key="instit1">West China Second University Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Mingrong</note>
+								<orgName type="institution">Mingrong</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiang</forename><surname>Xing</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Mingrong</note>
+								<orgName type="institution">Mingrong</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Linmao</forename><surname>Zheng</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Pathology , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Mingrong</note>
+								<orgName type="institution">Mingrong</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hao</forename><surname>Wang</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> School of Information and Software Engineering , University of Electronic Science and Technology of China , Chengdu 610054 , People&apos;s Republic of China.</note>
+								<orgName type="department">School of Information and Software Engineering</orgName>
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>610054</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yunbo</forename><surname>Yuan</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Siliang</forename><surname>Chen</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tianping</forename><surname>Yu</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Pathology , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shuxin</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> Department of Critical Care Medicine , West China Hospital , Sichuan University , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Critical Care Medicine</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuan</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Qing</forename><surname>Mao</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yongbin</forename><surname>Yu</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> School of Information and Software Engineering , University of Electronic Science and Technology of China , Chengdu 610054 , People&apos;s Republic of China.</note>
+								<orgName type="department">School of Information and Software Engineering</orgName>
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>610054</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Ni</forename><surname>Chen</surname></persName>
+							<email>chenni1@163.com</email>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Pathology , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yanhui</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , West China Hospital , Sichuan University , 37 Guoxue Avenue , Chengdu 610041 , People&apos;s Republic of China.</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution" key="instit1">West China Hospital</orgName>
+								<orgName type="institution" key="instit2">Sichuan University</orgName>
+								<address>
+									<addrLine>37 Guoxue Avenue</addrLine>
+									<postCode>610041</postCode>
+									<settlement>Chengdu</settlement>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Weakly supervised deep learning-based classification for histopathology of gliomas: a single center experience</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Scientific Reports</title>
+						<title level="j" type="abbrev">Sci Rep</title>
+						<idno type="eISSN">2045-2322</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-01-02" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">B338BB908CB542FAE758EF10BF69A942</idno>
+					<idno type="DOI">10.1038/s41598-024-84238-x</idno>
+					<note type="submission">Received: 18 August 2024; Accepted: 20 December 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T18:49+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Glioma</term>
+					<term>Weakly supervised deep learning</term>
+					<term>Hematoxylin-eosin staining</term>
+					<term>Diagnosis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Multiple artificial intelligence systems have been created to facilitate accurate and prompt histopathological diagnosis of tumors using hematoxylin-eosin-stained slides. We aimed to investigate whether weakly supervised deep learning can aid in glioma diagnosis. We analyzed 472 whole slide images (WSIs) from 226 patients in West China Hospital (WCH) and 1604 WSIs from 880 patients in The Cancer Genome Atlas (TCGA). We utilized the OpenSlide library to load WSIs, segmented them into small patches using the DeepZoom module, and then normalized the color using the Reinhard method. A weakly supervised deep learning model was developed using ResNet-50 combined with an attention mechanism. We investigated the performance of the model by calculating area under the curve (AUC) in a ten-fold cross-validation setting. Heatmap visualizations showed the prediction mechanism of the model. The results were promising, with high AUC values for differentiating grades of astrocytomas, oligodendrogliomas, all gliomas, and glioma types in the TCGA dataset (0.9419, 0.8659, 0.9904, and 0.9298, respectively), and in the WCH cohort (0.9048, 0.7423, 0.9510, and 0.7098, respectively). The model demonstrated a strong ability to infer IDH status in the TCGA dataset (AUC = 0.9488). The weakly supervised deep learning model proved to be an effective and reliable tool for neuropathological diagnosis, making it an attractive auxiliary tool.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>and molecular diagnostics require highly skilled pathologists with years of experience in manually handling and identifying tissue sections, making the diagnostic process labor-intensive, especially with a large patient population. Additionally, interobserver variability in diagnoses raises concerns about the consistency and precision for each patient <ref type="bibr" target="#b3">4</ref> . In recent years, computational pathology, based on whole slide images generated by advanced digital slide scanners, has emerged as an effective method for enhancing the efficiency and accuracy of diagnoses for pathologists <ref type="bibr" target="#b4">5,</ref><ref type="bibr" target="#b5">6</ref> . Moreover, deep learning algorithms, which integrate convolutional neural networks (CNNs) with prognosticators from the widely available WSIs, are capable of predicting time-to-event outcomes in various tumors <ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref> . Nonetheless, cross-institutional studies are needed to validate the accuracy and efficiency of artificial intelligence (AI) assisted pathological classification.</p><p>In terms of glioma research, a prominent study demonstrates that a deep learning model can assist pathologists in classifying the five histological subtypes of gliomas with a patient-level accuracy of 87.5% <ref type="bibr" target="#b9">10</ref> . An earlier study employs a coarse-to-fine analysis strategy based on whole slide images (WSIs) and achieves an accuracy of 93.1% in distinguishing GBM and lower-grade gliomas <ref type="bibr" target="#b9">10</ref> . Deep CNNs (DCNNs) can also automatically identify key histopathological tumor regions that correlate with GBM patient survival <ref type="bibr" target="#b10">11</ref> . Several studies have leveraged deep learning to classify WHO grades, histological subtypes, and molecular status of gliomas with a relatively high accuracy <ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref> . However, most of these studies predominantly use supervised deep learning algorithms, which inherently require pathologists to annotate the regions of interest (ROIs) or pick image patches on WSIs. Subsequently, computer-aided algorithms are developed based on the selected ROIs for tumor classification. Due to the necessity of expert pathologist supervision, early models face limitations in realworld applications, as obtaining accurate WSI annotations from doctors is labor-intensive, and the robustness of diagnosis is compromised as the selected ROIs hardly encompass all the relevant information from the WSIs. Recently, weakly supervised deep learning models have been introduced to address these limitations <ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref> . e advantage of weakly supervised deep learning algorithms is their capability to operate with a single label per slide, thus eliminating the need for annotation at the ROI level by pathologists <ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b18">19</ref> . ese novel methods appear to detect tumors and classify tumor subtypes with high accuracy <ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref> . Nevertheless, there is a scarcity of research employing weakly supervised deep-learning algorithms to identify glioma types, grades, and molecular markers.</p><p>In the current study, we evaluate the diagnostic accuracy of histopathological and molecular classification of gliomas on the TCGA dataset and West China Hospital (WCH) dataset with a well-established weakly supervised deep learning algorithm <ref type="bibr" target="#b18">19</ref> . e clustering-constrained-attention multiple-instance learning (CLAM) model employs the self-attention mechanism to accurately classify whole slides <ref type="bibr" target="#b18">19</ref> . Importantly, CLAM requires only slide-or patient-level labels for training and, without any input from pathologists, completes the fundamental yet onerous task of subtyping gliomas, including the discrimination of a key molecular marker. We propose that the weakly supervised deep learning model is a valuable addition to an integrated neuropathological diagnosis workflow, in line with the 5th edition of WHO CNS tumor classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Patient cohorts and study scheme</head><p>A total of 226 patients with five glioma subtypes, including astrocytoma, anaplastic astrocytoma, oligodendroglioma, anaplastic oligodendroglioma, and glioblastoma (472 hematoxylin-eosin (HE) WSIs from 226 patients) were recruited from the West China Hospital. 880 patients with the same 5 subtypes (1604 HE WSIs from 880 patients) were enrolled from the TCGA. All demographic and clinical characteristics of the data in the present study are detailed in Table <ref type="table" target="#tab_0">1</ref>.</p><p>e workflow of the study, presented in Fig. <ref type="figure" target="#fig_0">1</ref>, includes two main procedures: (I) Selecting and collecting WSIs of HE staining slides from the TCGA and WCH, and preprocessing them using a pipeline of approaches. We partitioned the TCGA WSIs into three subgroups: the training set, the testing set, and the internal validation set with a proportion of 8:1:1. e external validation set, used for testing diagnostic accuracy, included 472 HE WSIs from our institution. (II) Testing the diagnostic accuracy of the weakly supervised deep learning model. Representative HE images from the WCH show distinct morphological characteristics of each glioma subtype (Fig. <ref type="figure" target="#fig_1">2a-f</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature and Category Astrocytoma</head><p>Oligodendroglioma Glioblastoma Total </p><formula xml:id="formula_0">Numbers (n) (WCH + TCGA) Patients/WSI (n/</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification performance of weakly supervised deep learning</head><p>e original TCGA database comprises n = 1604 WSIs (Astrocytoma n = 346, Anaplastic astrocytoma n = 220, Oligodendroglioma n = 163, Anaplastic oligodendroglioma n = 115, Glioblastoma n = 760). We conducted tenfold cross-validation to assess the reliability of the weakly supervised deep learning model across all diagnostic tasks. We plotted the receiver operating characteristic (ROC) curves and calculated their corresponding area under the curve (AUC), as depicted in Fig. <ref type="figure" target="#fig_2">3</ref> and detailed in the supplementary Tables <ref type="table" target="#tab_0">1 to 8</ref>. Briefly, our predictive model showed a promising performance in classifying glioma grades and types on the TCGA dataset (Fig. <ref type="figure" target="#fig_2">3a</ref>, <ref type="figure">c</ref>, e, and g) (Supplementary Tables <ref type="table" target="#tab_0">1</ref>, <ref type="table">3</ref>, <ref type="table">5</ref>, and <ref type="table">7</ref>). Additionally, we achieved satisfactory results in predicting glioma grades in our cohort (Fig. <ref type="figure" target="#fig_2">3b</ref> and <ref type="figure">f</ref>) (Supplementary Tables <ref type="table">2</ref> and <ref type="table">6</ref>). However, the performance for grading oligodendrogliomas and classifying glioma types requires further improvement (Fig. <ref type="figure" target="#fig_2">3d</ref> and <ref type="figure">h</ref>) (Supplementary Tables <ref type="table">4</ref> and <ref type="table">8</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Visualizing heatmap of corresponding tumors</head><p>We selected and presented representative heatmaps of HE images of each tumor type from five patients in the TCGA dataset. Magnified heatmaps illustrate how the deep learning model identifies specific and critical pathological features (Fig. <ref type="figure" target="#fig_3">4a-e</ref>). In the case of anaplastic astrocytoma (IDH-mutant) (Fig. <ref type="figure" target="#fig_3">4b</ref>) and anaplastic oligodendroglioma (IDH mutant and 1p/19 codeletion) (Fig. <ref type="figure" target="#fig_3">4d</ref>), the model prominently highlighted regions of pathological microvascular proliferation and marked increases in cellularity with heterogeneity, in contrast to the astrocytoma (IDH-mutant, grade 2) (Fig. <ref type="figure" target="#fig_3">4a</ref>) and oligodendroglioma (IDH mutant and 1p/19 codeletion, grade 2) (Fig. <ref type="figure" target="#fig_3">4c</ref>). Furthermore, the heatmap generated by the model accurately identified the highest-risk region characterized by palisading necrosis and dense nuclei within the core area of glioblastoma (Fig. <ref type="figure" target="#fig_3">4e</ref>). ese examples visually depict the risk features associated with different glioma types and may enhance and inform pathological practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prediction of IDH mutant</head><p>IDH mutation status is regarded as the primary decisive biomarker for distinguishing glioblastomas from other diffuse gliomas (Fig. <ref type="figure" target="#fig_4">5a</ref>). e deep learning model differentiated IDH-mutant WSIs from IDH-wildtype in the TCGA dataset with a mean AUC of 0.9488 (Fig. <ref type="figure" target="#fig_4">5b</ref>) (Supplementary Table <ref type="table">9</ref>). e confusion matrix revealed an accuracy of 91.8% for identifying IDH-wildtype and 86.1% for IDH mutant gliomas in the TCGA dataset, respectively (Fig. <ref type="figure" target="#fig_4">5c</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>With the publication of the fi h edition of the CNS tumor classification, molecular pathology has emerged as the cornerstone of glioma therapy 2 . However, histopathological morphology identification remains essential as the e workflow of the present study. e whole slide images (WSIs) of HE staining slides from the TCGA and WCH were collected and preprocessed through a pipeline of procedures, and then data were partitioned into three subgroups (I). Transfer learning was used to extract high-quality patch-level features, and then a weakly supervised deep learning model was generated and pretrained and tested employing the training dataset (II). Finally, the model was used to determine the final diagnosis and diagnostic accuracy was validated using the internal and external validation datasets, respectively (II).</p><p>primary step in glioma diagnosis for classifying gliomas. Undoubtedly, these factors increase the workload for pathologists. To enhance the diagnostic efficiency and accuracy of gliomas in clinical practice, computer-aided diagnosis using AI based on the DCNN is gaining significant attention <ref type="bibr" target="#b6">7,</ref><ref type="bibr" target="#b21">22</ref> . Building on a previously reported weakly supervised deep learning model <ref type="bibr" target="#b18">19</ref> , we conducted an AI-assisted predicting analysis for gliomas using both the TCGA and WCH datasets. In this study, our prediction model accurately distinguishes the grades and origins of all gliomas. In addition, our model can further successfully identify IDH mutant. Furthermore, the diagnostic heatmap generated by the model aligns closely with the diagnostic process of pathologists, highlighting representative risk features. erefore, we demonstrate that the weakly supervised deep learning model could serve as a useful aid for the pathological diagnosis of gliomas.</p><p>To ensure timely therapeutic intervention for patients, pathologists need to diagnose brain tumors promptly a er tumor resection. As glioma is the most common primary malignant brain tumor 1 , identifying WHO grades   or molecular markers of gliomas is a top priority for neuropathologists. Our research revealed that the diagnostic accuracy for distinguishing astrocytoma and oligodendroglioma grades of the weakly supervised deep learning model was about 0.98 and 0.86 on the TCGA dataset.</p><p>Importantly, these accuracies also reached 0.90 and 0.74 in our cohort. A study reported that a whole slide imaging-based deep learning model identified intracranial germinoma, astrocytoma, and oligodendroglioma with internal and external validation accuracies of 95.3% and 76.9%, respectively <ref type="bibr" target="#b14">15</ref> . Although the high accuracy of our study for astrocytoma aligned with the aforementioned research, the internal and external accuracies for oligodendrogliomas of that research were only 83.3% and 72.2% <ref type="bibr" target="#b15">16</ref> , indicating that the performance of our model in identifying oligodendroglioma could still be improved. Notably, our model could predict the WHO grades of all diffuse gliomas, with diagnostic accuracies for identifying gliomas (WHO grade 2 and 3) and glioblastomas reaching 0.99 and 0.95 in the external validation set of TCGA and WCH, respectively. Recently, a weakly supervised learning model achieved an accuracy of 0.94 in a classification task of nine brain tumor types on an independent dataset, including oligodendrogliomas, astrocytomas, ependymoma, lymphoma, and metastasis <ref type="bibr" target="#b20">21</ref> . Additionally, a vision transformer-based weakly supervised histopathological image analysis not only predicted histopathological subtypes of eight brain tumors but also demonstrated high accuracy in identifying three glioma molecular markers: IDH1 mutation, P53 mutation, and MGMT methylation <ref type="bibr" target="#b15">16</ref> . ese researches provided great convenience for pathologists in diagnosing a wide range of brain tumors. Our study also suggested that the weakly supervised learning model has reliable predictive power for identifying IDH mutations in gliomas.</p><p>Traditionally, deep learning models analyzing tissue slides have relied on manual ROI selection or risk features labeling of experienced pathologists. It hinders the clinical application of computational-aided diagnosis <ref type="bibr" target="#b6">7,</ref><ref type="bibr" target="#b7">8,</ref><ref type="bibr" target="#b21">[22]</ref><ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref> . Although supervised deep learning has already yielded promising results on small datasets, its clinical application remains uncertain due to the substantial variability among independent samples . A pioneering large-scale study confirmed that a weakly supervised deep learning model achieved high accuracy on the CAMELYON16 test set for detecting metastatic breast cancer, comparable to the results of the original supervised deep learning model <ref type="bibr" target="#b5">6</ref> . It suggested that a supervised deep learning model trained on small datasets and with patch-level annotations may not generalize well in real-world practice. In contrast, the weakly supervised algorithm can process large and diverse datasets without requiring additional management by pathologists, warranting further in-depth investigation of this new method. As for the diagnostic accuracy of weakly supervised learning models for brain tumors, accumulating evidence has demonstrated their efficiency in identifying subtypes and grades of gliomas, and other brain tumors <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b20">21</ref> . Even so, the present study, based on our dataset, offers additional evidence that the robust weakly supervised learning model can accurately diagnose grades and a molecular marker of gliomas at the slide level without expert supervision. Furthermore, future studies validating the accuracy and efficiency of weakly supervised AI-assisted pathological classification should be conducted across multiple institutions.</p><p>Our study has several limitations. e results showed limited power for distinguishing both grades of oligodendrogliomas and the origin of astrocytoma and oligodendroglioma in our dataset (Fig. <ref type="figure" target="#fig_2">3d</ref> and <ref type="figure">h</ref>). We used only 472 WSIs of our center for external validation, a number significantly lower than the TCGA dataset. Future studies should expand this to include more WSIs from multiple medical centers to comprehensively validate the model's diagnostic accuracy. Molecular diagnosis is a more vital and complicated process in classifying gliomas. We validated a promising prediction value of the weakly supervised deep learning model for IDH mutation on the TCGA dataset. Unfortunately, we were unable to conduct the same analysis with our data due to the limited size of our IDH status database. us, it remains to be demonstrated whether the deep learning model can be applied to classifying IDH mutation and other molecular statuses in our center following dataset expansion. We also acknowledge that future work should address the diagnosis of tumor tissue sections from distinct anatomical locations to overcome the challenges posed by intratumoral heterogeneity. Finally, we consider it essential to refine the algorithms of the deep learning model to enhance its intelligence and diagnostic accuracy.</p><p>In summary, we utilized a weakly supervised deep learning model with high automation and reasonable efficiency for the pathological diagnosis of gliomas. is model should be applied to assist in the pathological diagnosis of gliomas in the future, enabling pathologists to achieve higher accuracy and efficiency in their diagnoses and, in turn, providing patients with timely post-operative treatment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Patient cohort and ethics statement</head><p>e present study retrospectively collected 472 HE staining slides of glioma tissues from WCH of Sichuan University and selected 1604 HE staining slides of gliomas from the public TCGA. All diagnoses of WSIs were evaluated by two senior pathologists of the Department of Pathology of WCH. Our study was performed according to the principles of the Declaration of Helsinki. Our study was approved by the Ethics Committee on Biomedical Research, West China Hospital of Sichuan University (No.2021.1319) and written informed consents were attained from patients or their legal guardians. e inclusion criteria were as follows: (I) Patients were diagnosed with gliomas based on the histological and molecular biomarkers according to the fi h edition of the 2021 classification of CNS tumors. (II) Available HE slides are suitable for acquiring high-quality WSIs. Exclusions were as follows: I. Partial regions of HE staining from both TCGA and WCH datasets were damaged, contaminated, or blurry. For WSIs from the TCGA cohort, we revised the diagnosis of gliomas before 2021 based on the fi h edition of 2021 2 .</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1.e workflow of the present study. e whole slide images (WSIs) of HE staining slides from the TCGA and WCH were collected and preprocessed through a pipeline of procedures, and then data were partitioned into three subgroups (I). Transfer learning was used to extract high-quality patch-level features, and then a weakly supervised deep learning model was generated and pretrained and tested employing the training dataset (II). Finally, the model was used to determine the final diagnosis and diagnostic accuracy was validated using the internal and external validation datasets, respectively (II).</figDesc><graphic coords="3,100.57,50.50,453.60,246.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Representative HE images of each subtype of gliomas of WCH. (a) Oligodendroglioma, IDH-mutant and 1p/19q codeletion, WHO grade 2. (b) Anaplastic Oligodendroglioma, IDH-mutant and 1p/19q codeletion, WHO grade 3. (c) Astrocytoma, IDH-mutant, WHO grade 2. (d) Anaplastic Astrocytoma, IDH-mutant, WHO grade 3. (e) Glioblastoma with morphology of WHO grade 3 astrocytoma, IDH-wildtype, WHO grade 4. (f) Glioblastoma with typical risk features of extremely dense cells and plenty of microvascular proliferation, IDHwildtype, WHO grade 4. Magnification, 200X.</figDesc><graphic coords="4,72.25,50.50,481.92,525.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. Classification performance of the weakly supervised prediction model. ROC curve of prediction of glioma histopathology validated on the internal test set of TCGA (a, c, e, and g), and the external test set of WCH (b, d, f, and h) using the weakly supervised deep learning model.</figDesc><graphic coords="5,155.91,50.50,344.16,567.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. Representative heatmap outputs for glioma diagnosis generated by the weakly supervised deeplearning model. (a) Astrocytoma, IDH-mutant, WHO grade 2. (b) Anaplastic Astrocytoma, IDH-mutant, WHO grade 3. (c) Oligodendroglioma, IDH-mutant and 1p/19q codeletion, WHO grade 2. (d) Anaplastic Oligodendroglioma, IDH-mutant and 1p/19q codeletion, WHO grade 3. (e) Glioblastoma, IDH-wildtype, WHO grade 4. Magnification of the primary HEs and their corresponding heatmaps were 10X. Magnification of the enlarged heatmaps of the right column was 100X.</figDesc><graphic coords="6,108.97,50.50,445.20,567.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. IDH status prediction of the weakly supervised prediction model. (a) Representative HE images of anaplastic astrocytoma, IDH mutant (AA, IDH-mutant), and glioblastoma, IDH wildtype (GBM, IDHwildtype). Magnification, 100X. (b) ROC curve of prediction of the IDH biomarker employing the TCGA dataset. (c) Confusion matrix showing the performance of the model in predicting IDH mutation status in the TCGA dataset.</figDesc><graphic coords="7,155.91,50.50,252.24,567.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Demographic</figDesc><table><row><cell>n)</cell><cell cols="2">35/35 + 316/566 55/55 + 175/278</cell><cell cols="2">136/382 + 389/760 226/472 + 880/1604</cell></row><row><cell>WHO grade (n)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>II</cell><cell>23 + 139</cell><cell>29 + 92</cell><cell>-</cell><cell>52 + 231</cell></row><row><cell>III</cell><cell>12 + 177</cell><cell>26 + 83</cell><cell>-</cell><cell>38 + 260</cell></row><row><cell>IV</cell><cell>-</cell><cell>-</cell><cell>136 + 389</cell><cell>136 + 389</cell></row><row><cell cols="2">IDH mutation, 1p/19q co-deletion (n)</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">IDH-mut, non-co-del 35 + 316</cell><cell>-</cell><cell>-</cell><cell>351 + 316</cell></row><row><cell>IDH-mut, co-del</cell><cell>-</cell><cell>55 + 175</cell><cell>-</cell><cell>55 + 175</cell></row><row><cell>IDH-wildtype</cell><cell>-</cell><cell>-</cell><cell>136 + 389</cell><cell>136 + 389</cell></row></table><note><p>and clinical characteristics of data in this study. Abbreviations: TCGA, e Cancer Genome Atlas. WCH, West China Hospital. HE, Hematoxylin-eosin. WSI, Whole Slide Image. IDH-mut, nonco-del, IDH mutant and not 1p/19q co-deletion. IDH-mut, co-del, IDH mutant and 1p/19q co-deletion.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Scientific Reports | (2025) 15:265 2 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Scientific Reports | (2025) 15:265 3 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Scientific Reports | (2025) 15:265 4 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>Scientific Reports | (2025) 15:265 5 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_4"><p>Scientific Reports | (2025) 15:265 6 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Scientific Reports | (2025) 15:265 7 | https://doi.org/10.1038/s41598-024-84238-x</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_6"><p>Scientific Reports |(2025) 15:265</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_7"><p>| https://doi.org/10.1038/s41598-024-84238-x www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_8"><p>Scientific Reports | (2025) 15:265 10 | https://doi.org/10.1038/s41598-024-84238-x www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_9"><p>Scientific Reports | (2025) 15:265 11 | https://doi.org/10.1038/s41598-024-84238-x www.nature.com/scientificreports/</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>is work was supported by grants from the internal research funds in <rs type="funder">West China Hospital of Sichuan University</rs> (<rs type="grantNumber">19HXCX009</rs>), the <rs type="funder">Sichuan Science and Technology Program</rs> (<rs type="grantNumber">2023YFQ0002</rs>), the <rs type="funder">National Key R&amp;D Program of China</rs> (<rs type="grantNumber">2022ZD0116100</rs>), the <rs type="funder">National Natural Science Foundation of China</rs> (<rs type="grantNumber">62276055</rs>), the <rs type="programName">Sichuan Science and Technology Program</rs> (<rs type="grantNumber">2023YFG0288</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_mK4jpkj">
+					<idno type="grant-number">19HXCX009</idno>
+				</org>
+				<org type="funding" xml:id="_YZRsFu2">
+					<idno type="grant-number">2023YFQ0002</idno>
+				</org>
+				<org type="funding" xml:id="_aXjuHFm">
+					<idno type="grant-number">2022ZD0116100</idno>
+				</org>
+				<org type="funding" xml:id="_yyQCJ9u">
+					<idno type="grant-number">62276055</idno>
+					<orgName type="program" subtype="full">Sichuan Science and Technology Program</orgName>
+				</org>
+				<org type="funding" xml:id="_pH47fhp">
+					<idno type="grant-number">2023YFG0288</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data acquisition and preprocessing</head><p>WSIs of HE slides (Magnification 10x) from the TCGA dataset were scanned using the Aperio Imagescope-Pathology Slide Viewing So ware. e representative WSIs (Magnification 10x) obtained from our center were scanned by the automatic digital scanner of Hamamatsu NanoZoomer-SQ (C13140, Hamamatsu, Japan). We took a three-step image preprocessing method to convert the original WSI into segmentations. Preprocessing used the programming language Python version 3.7.4 and Jupyter Lab (<ref type="url" target="https://jupyter.org">https://jupyter.org</ref>). Details are presented in Fig. <ref type="figure">1</ref>: I. All procedures relating to programming of these steps operated in the cloud serves of Hua Wei ( h t t p : / / w w w . h u a w e i c l o u d . c o m / ) utilizing the operating system of Ubuntu 16.04 server 64bit. Firstly, the OpenSlide (Version 3.4.1) was used to read WSIs and fulfill data vectorization <ref type="bibr" target="#b25">26</ref> . Secondly, images of WSIs were segmented into non-overlapping patches at a resolution of 512 × 512 pixels by the DeepZoom module, and each patch with more than 50% of background was removed by the Grab cut algorithm <ref type="bibr" target="#b26">27,</ref><ref type="bibr" target="#b27">28</ref> . en, color standardization of all heterogeneous WSIs was performed through the Reinhard method <ref type="bibr" target="#b28">29</ref> .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model development and testing</head><p>To develop a weakly supervised deep learning model, all WSIs from the TCGA dataset were allocated into the training and testing, and internal validating test sets in a proportion of 8:1:1. Figure <ref type="figure">1</ref> shows the overview of model development procedures. Based on the approach presented by Lu et al. <ref type="bibr" target="#b18">19</ref> , the weakly supervised deep learning model was developed and trained using PyTorch1.3. We used the DCNN of ResNet-50 to obtain highlevel visual features of patches. It is difficult and time-consuming to annotate enough specific ROIs on WSIs to develop a DCNN suitable for glioma detection. erefore, we also utilized transfer learning to optimize high-level visual feature extraction <ref type="bibr" target="#b29">30</ref> All weights of convolutional layers of the ResNet-50 were trained on the ImageNet dataset <ref type="bibr" target="#b30">31</ref> . Unlike the classical deep learning model fulfills diagnostic tasks at a patch level, our analysis tries to predict diagnosis at a WSI-level. To design weakly supervised deep learning algorithms that could efficiently tackle WSI images with high-resolution and information content, we used the attention mechanism of deep learning <ref type="bibr" target="#b31">32</ref> . We performed dimension reduction for patches to reduce their calculation amount through the full connection layer, and then patches connected with the attention network compiled by the attention layer. e attention network was divided into many classifiers. Finally, we conducted diagnostic classifying and acquired confidence scores by connecting the output of the attention layer with the classifying layer with the So max activation function. We further analyzed the external validation set from our institution to obtain the objective prediction value by the weakly supervised deep learning model. Results were also plotted into a confusion matrix to describe the performance of this trained model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>K-fold cross-validation</head><p>We performed the training procedure with a method called k-fold cross-validation with the following procedure.</p><p>(1) We split data into k groups. As we used 10-fold cross-validation, thus we split the data into ten groups. (2) Train and test k times: we set aside one group (Group 0) for interval validation and used the remaining groups (Groups 1,2, …8,9) as the training set and testing set in the first round, we termed the fold 0. Next, we set aside Group 1 for interval validation and used the rest (Groups 0, 2, 3…8,9) for training and testing set in the second round, which was termed fold 1. en, we repeated this process k times (k = 10 in our study) so that every group was to be the internal validation data exactly only once. (3) Averaging the results: we take the results (accuracy and AUC) from each round and calculate the average performance a er ten rounds.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Visualization and explainability of deep learning model</head><p>To understand the specific contents learned by the deep learning model, visualization of model execution was performed following training of the model. Extract and record the location of scores of K (m, n) of each patch, and transform these scores into 0 to 1. en, standardized scores were converted to red, green, and blue (RGB), and diverging colormap was used to draw heatmaps of which the higher attention scores meant a higher probability of becoming red, while the lower attention scores represented the color was closer to blue. Finally, we assembled heatmaps of all patches according to previously recorded location and overlaid primary WSIs with corresponding heatmaps a er setting the diaphaneity of all assembled heatmaps to 50%, which made it possible to observe histopathological sections accompanied with attention scores. e regions of top scores of WSIs with the strongest confidence denoted correctly classified risk features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis</head><p>Data were divided into the k sets of which k-1 for training and 1 for cross validation. To validate the reliability of the model, we used the k-fold cross-validation technique to evaluate the accuracy through training and testing divided data. To appraise the accuracy and specificity of the prediction model, the ROC curve and AUC were calculated in Python with the Matplotlib package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>e TCGA datasets are publicly available (<ref type="url" target="https://portal.gdc.cancer.gov/">https://portal.gdc.cancer.gov/</ref>). Our hospital's data are presently u n a v a i l a b l e due to hospital requirements governing privacy protection but are available from the corresponding author on reasonable request.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>M.R. Zuo, X. Xing, L.M. Zheng, and H. Wang collected all the data; Y.H. Liu, N. Chen, and Y.B. Yu conceived the study; L.M. Zheng, T.P. Yu, and N. Chen conducted pathological diagnosis; M.R. Zuo, X. Xing, L.M. Zheng, and H. Wang, Y.B. Yuan, S.L. Chen, S.X. Zhang processed data and performed the analysis; M.R. Zuo, X. Xing, and L.M. Zheng dra ed the manuscript and all authors revised the final edition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Competing interests e authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethical approval</head><p>Our study was performed according to the principles of the Declaration of Helsinki. Our study was approved by the Ethics Committee on Biomedical Research, West China Hospital of Sichuan University (No.2021.1319) and written informed consents were attained from patients or their legal guardians.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional information</head><p>Supplementary Information e online version contains supplementary material available at h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 8 -0 2 4 -8 4 2 3 8 -x .</p><p>Correspondence and requests for materials should be addressed to N.C. or Y.L.</p><p>Reprints and permissions information is available at <ref type="url" target="www.nature.com/reprints">www.nature.com/reprints</ref>. Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Open Access</head><p>is article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. e images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit t t p : / / c r e a t i v e c o m m o n s . o r g / l i c e n s e s / b y -n c -n d / 4 . 0 / . © e Author(s) 2024</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2015–2019</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mackenzie</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><forename type="middle">A</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac202</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">Supplement_5</biblScope>
+			<biblScope unit="page" from="v1" to="v95" />
+			<date type="published" when="2022-10-05">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom, Q. T. et al. CBTRUS statistical report: Primary brain and other central nervous system tumors diagnosed in the United States in 2015-2019. Neuro-oncology 24, v1-v95 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">WHO classification of tumors of the central nervous system: A summary</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-oncology</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021">2021. 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. et al. e 2021 WHO classification of tumors of the central nervous system: A summary. Neuro-oncology 23, 1231- 1251 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Webster</forename><forename type="middle">K</forename><surname>Cavenee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroko</forename><surname>Ohgaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otmar</forename><forename type="middle">D</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Kleihues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-016-1545-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="803" to="820" />
+			<date type="published" when="2016-05-09">2016. 2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. et al. e 2016 World Health Organization classification of tumors of the central nervous system: A summary. Acta Neuropathol. 131, 803-820 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The consistency of neuropathological diagnoses in patients undergoing surgery for suspected recurrence of glioblastoma</title>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Holdhoff</surname></persName>
+			<idno type="ORCID">0000-0002-3285-3484</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaobu</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">F</forename><surname>Piotrowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roy</forename><forename type="middle">E</forename><surname>Strowd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shannon</forename><surname>Seopaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norman</forename><forename type="middle">J</forename><surname>Barker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananyaa</forename><surname>Sivakumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fausto</forename><forename type="middle">J</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><forename type="middle">A</forename><surname>Grossman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">C</forename><surname>Burger</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-018-03037-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">141</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="347" to="354" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Holdhoff, M. et al. e consistency of neuropathological diagnoses in patients undergoing surgery for suspected recurrence of glioblastoma. J. Neurooncol. 141, 347-354 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Computational Pathology: A Path Ahead</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Feldman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexis</forename><forename type="middle">B</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">S</forename><surname>Dighe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">D</forename><surname>Pfeifer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lynn</forename><surname>Bry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><forename type="middle">S</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Saltz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">E</forename><surname>Tomaszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">R</forename><surname>Gilbertson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">H</forename><surname>Sinard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><forename type="middle">K</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Galli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">A</forename><surname>Golden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">J</forename><surname>Becich</surname></persName>
+		</author>
+		<idno type="DOI">10.5858/arpa.2015-0093-sa</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of Pathology &amp; Laboratory Medicine</title>
+		<idno type="ISSN">0003-9985</idno>
+		<idno type="ISSNe">1543-2165</idno>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="41" to="50" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Archives of Pathology and Laboratory Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. et al. Computational pathology: A path ahead. Arch. Pathol. Lab. Med. 140, 41-50 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Clinical-grade computational pathology using weakly supervised deep learning on whole slide images</title>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Campanella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">G</forename><surname>Hanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luke</forename><surname>Geneslaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allen</forename><surname>Miraflor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitor</forename><surname>Werneck Krauss Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">J</forename><surname>Busam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edi</forename><surname>Brogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">E</forename><surname>Reuter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">S</forename><surname>Klimstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Fuchs</surname></persName>
+			<idno type="ORCID">0000-0001-7603-8687</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-019-0508-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1301" to="1309" />
+			<date type="published" when="2019-07-15">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Campanella, G. et al. Clinical-grade computational using weakly supervised deep learning on whole slide images. Nat. Med. 25, 1301-1309 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Predicting cancer outcomes from histology and genomics using convolutional networks</title>
+		<author>
+			<persName><forename type="first">Pooya</forename><surname>Mobadersany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Safoora</forename><surname>Yousefi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Amgad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Gutman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">E</forename><surname>Velázquez Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><forename type="middle">A D</forename><surname>Cooper</surname></persName>
+			<idno type="ORCID">0000-0002-3504-4965</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.1717139115</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="E2970" to="E2979" />
+			<date type="published" when="2018-03-12">2018</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mobadersany, P. et al. Predicting cancer outcomes from histology and genomics using convolutional networks. Proc. Natl. Acad. Sci. 115, E2970-E2979 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Predicting survival from colorectal cancer histology slides using deep learning: A retrospective multicenter study</title>
+		<author>
+			<persName><forename type="first">Jakob</forename><forename type="middle">Nikolas</forename><surname>Kather</surname></persName>
+			<idno type="ORCID">0000-0002-3730-5348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Krisam</surname></persName>
+			<idno type="ORCID">0000-0003-4092-7874</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pornpimol</forename><surname>Charoentong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Luedde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Herpel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cleo-Aron</forename><surname>Weis</surname></persName>
+			<idno type="ORCID">0000-0002-1831-3406</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timo</forename><surname>Gaiser</surname></persName>
+			<idno type="ORCID">0000-0002-6022-073X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Marx</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nektarios</forename><forename type="middle">A</forename><surname>Valous</surname></persName>
+			<idno type="ORCID">0000-0002-4014-2404</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dyke</forename><surname>Ferber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lina</forename><surname>Jansen</surname></persName>
+			<idno type="ORCID">0000-0001-8004-4940</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Constantino</forename><forename type="middle">Carlos</forename><surname>Reyes-Aldasoro</surname></persName>
+			<idno type="ORCID">0000-0002-9466-2018</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Inka</forename><surname>Zörnig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Jäger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hermann</forename><surname>Brenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jenny</forename><surname>Chang-Claude</surname></persName>
+			<idno type="ORCID">0000-0001-8919-1971</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Hoffmeister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niels</forename><surname>Halama</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pmed.1002730</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS Medicine</title>
+		<title level="j" type="abbrev">PLoS Med</title>
+		<idno type="ISSNe">1549-1676</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">e1002730</biblScope>
+			<date type="published" when="2019-01-24">2019</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kather, J. N. et al. Predicting survival from colorectal cancer histology slides using deep learning: A retrospective multicenter study. PLoS Med. 16, e1002730 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Deep learning-based subtyping of gastric cancer histology predicts clinical outcome: a multi-institutional retrospective study</title>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">Patrick</forename><surname>Veldhuizen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Röcken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans-Michael</forename><surname>Behrens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Didem</forename><surname>Cifci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><forename type="middle">Sophie</forename><surname>Muti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takaki</forename><surname>Yoshikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomio</forename><surname>Arai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takashi</forename><surname>Oshima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">P</forename><surname>Ebert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">T</forename><surname>Pearson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Calderaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heike</forename><forename type="middle">I</forename><surname>Grabsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><forename type="middle">Nikolas</forename><surname>Kather</surname></persName>
+			<idno type="ORCID">0000-0002-3730-5348</idno>
+		</author>
+		<idno type="DOI">10.1007/s10120-023-01398-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Gastric Cancer</title>
+		<title level="j" type="abbrev">Gastric Cancer</title>
+		<idno type="ISSN">1436-3291</idno>
+		<idno type="ISSNe">1436-3305</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="708" to="720" />
+			<date type="published" when="2023-06-03">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Veldhuizen, G. P. et al. Deep learning-based subtyping of gastric cancer histology predicts clinical outcome: A multi-institutional retrospective study. Gastric Cancer, 1-13 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Automated classification of brain tumor type in whole-slide digital pathology images using local representative tiles</title>
+		<author>
+			<persName><forename type="first">Jocelyn</forename><surname>Barker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Assaf</forename><surname>Hoogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrien</forename><surname>Depeursinge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2015.12.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="60" to="71" />
+			<date type="published" when="2016-05">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barker, J., Hoogi, A., Depeursinge, A. &amp; Rubin, D. L. Automated classification of brain tumor type in whole-slide digital pathology images using local representative tiles. Med. Image. Anal. 30, 60-71 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A deep convolutional neural network for segmentation of whole-slide pathology images identifies novel tumour cell-perivascular niche interactions that are associated with poor survival in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Amin</forename><surname>Zadeh Shirazi</surname></persName>
+			<idno type="ORCID">0000-0002-1906-9900</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">D</forename><surname>Mcdonnell</surname></persName>
+			<idno type="ORCID">0000-0002-7009-3869</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Fornaciari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Narjes</forename><forename type="middle">Sadat</forename><surname>Bagherian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaitlin</forename><forename type="middle">G</forename><surname>Scheer</surname></persName>
+			<idno type="ORCID">0000-0002-2103-0378</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">S</forename><surname>Samuel</surname></persName>
+			<idno type="ORCID">0000-0001-7880-6379</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mahdi</forename><surname>Yaghoobi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">J</forename><surname>Ormsby</surname></persName>
+			<idno type="ORCID">0000-0002-4256-7481</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Santosh</forename><surname>Poonnoose</surname></persName>
+			<idno type="ORCID">0000-0002-9486-4904</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Damon</forename><forename type="middle">J</forename><surname>Tumes</surname></persName>
+			<idno type="ORCID">0000-0001-5709-857X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guillermo</forename><forename type="middle">A</forename><surname>Gomez</surname></persName>
+			<idno type="ORCID">0000-0002-0494-2404</idno>
+		</author>
+		<idno type="DOI">10.1038/s41416-021-01394-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">British Journal of Cancer</title>
+		<title level="j" type="abbrev">Br J Cancer</title>
+		<idno type="ISSN">0007-0920</idno>
+		<idno type="ISSNe">1532-1827</idno>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="337" to="350" />
+			<date type="published" when="2021-04-29">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zadeh Shirazi, A. et al. A deep convolutional neural network for segmentation of whole-slide pathology images identifies novel tumour cell-perivascular niche interactions that are associated with poor survival in glioblastoma. Br. J. Cancer. 125, 337-350 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Ertosun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<title level="m">AMIA annual symposium proceedings</title>
+		<imprint>
+			<publisher>American Medical Informatics Association</publisher>
+			<date type="published" when="1899">1899</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ertosun, M. G. &amp; Rubin, D. L. in AMIA annual symposium proceedings. 1899 (American Medical Informatics Association).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Classification of Diffuse Glioma Subtype from Clinical-Grade Pathological Images Using Deep Transfer Learning</title>
+		<author>
+			<persName><forename type="first">Sanghyuk</forename><surname>Im</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonghwan</forename><surname>Hyeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eunyoung</forename><surname>Rha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janghyeon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ho-Jin</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuchae</forename><surname>Jung</surname></persName>
+			<idno type="ORCID">0000-0003-2202-7303</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tae-Jung</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0003-3140-3681</idno>
+		</author>
+		<idno type="DOI">10.3390/s21103500</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">3500</biblScope>
+			<date type="published" when="2021-05-17">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Im, S. et al. Classification of diffuse glioma subtype from clinical-grade pathological images using deep transfer learning. Sensors 21, 3500 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Predicting prognosis and IDH mutation status for patients with lower-grade gliomas using whole slide images</title>
+		<author>
+			<persName><forename type="first">Shuai</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">J</forename><surname>Zanazzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saeed</forename><surname>Hassanpour</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-95948-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">16849</biblScope>
+			<date type="published" when="2021-08-19">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jiang, S., Zanazzi, G. J. &amp; Hassanpour, S. Predicting prognosis and IDH mutation status for patients with lower-grade gliomas using whole slide images. Sci. Rep. 11, 16849 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Contribution of whole slide imaging‐based deep learning in the assessment of intraoperative and postoperative sections in neuropathology</title>
+		<author>
+			<persName><forename type="first">Liting</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junming</forename><surname>Jian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke‐da</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifu</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianghai</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liangfang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengzheng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keqing</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Jing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Gao</surname></persName>
+			<idno type="ORCID">0000-0001-9906-0596</idno>
+		</author>
+		<idno type="DOI">10.1111/bpa.13160</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Pathology</title>
+		<title level="j" type="abbrev">Brain Pathology</title>
+		<idno type="ISSN">1015-6305</idno>
+		<idno type="ISSNe">1750-3639</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">13160</biblScope>
+			<date type="published" when="2023-04-25">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shi, L. et al. Contribution of whole slide imaging-based deep learning in the assessment of intraoperative and postoperative sections in neuropathology. Brain Pathol., e13160 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Vision transformer-based weakly supervised histopathological image analysis of primary brain tumors</title>
+		<author>
+			<persName><forename type="first">Zhongxiao</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-2480-0750</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuwei</forename><surname>Cong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiping</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingxian</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junsi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enzhou</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lixiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiafeng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiawei</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Penglei</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiuyi</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenwu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiangning</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Carin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yupeng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiguang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Gao</surname></persName>
+			<idno type="ORCID">0000-0002-7108-3574</idno>
+		</author>
+		<idno type="DOI">10.1016/j.isci.2022.105872</idno>
+	</analytic>
+	<monogr>
+		<title level="j">iScience</title>
+		<title level="j" type="abbrev">iScience</title>
+		<idno type="ISSN">2589-0042</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">105872</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, Z. et al. Vision transformer-based weakly supervised histopathological image analysis of primary brain tumors. iScience 26 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A weakly supervised deep learning-based method for glioma subtype classification using WSI and mpMRIs</title>
+		<author>
+			<persName><forename type="first">Wei-Wen</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing-Ming</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linmin</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling-An</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao-Feng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jui-Chien</forename><surname>Hsiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rivka</forename><surname>Colen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peizhong</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-022-09985-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">6111</biblScope>
+			<date type="published" when="2022-04-12">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hsu, W. W. et al. A weakly supervised deep learning-based method for glioma subtype classification using WSI and mpMRIs. Sci. Rep. 12, 6111 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Weakly-supervised learning for lung carcinoma classification using deep learning</title>
+		<author>
+			<persName><forename type="first">Fahdi</forename><surname>Kanavati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gouji</forename><surname>Toyokawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seiya</forename><surname>Momosaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Rambeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuka</forename><surname>Kozuma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fumihiro</forename><surname>Shoji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koji</forename><surname>Yamazaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sadanori</forename><surname>Takeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Osamu</forename><surname>Iizuka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masayuki</forename><surname>Tsuneki</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-020-66333-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">9297</biblScope>
+			<date type="published" when="2020-06-09">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kanavati, F. et al. Weakly-supervised learning for lung carcinoma classification using deep learning. Sci. Rep. 10, 9297 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Data-efficient and weakly supervised computational pathology on whole-slide images</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matteo</forename><surname>Barbieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-020-00682-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="555" to="570" />
+			<date type="published" when="2021-03-01">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. Data-efficient and weakly supervised computational pathology on whole-slide images. Nat. Biomedical Eng. 5, 555-570 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">AI-based pathology predicts origins for cancers of unknown primary</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maha</forename><surname>Shady</surname></persName>
+			<idno type="ORCID">0000-0003-4060-7686</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jana</forename><surname>Lipkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-021-03512-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">594</biblScope>
+			<biblScope unit="issue">7861</biblScope>
+			<biblScope unit="page" from="106" to="110" />
+			<date type="published" when="2021-05-05">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. AI-based pathology predicts origins for cancers of unknown primary. Nature 594, 106-110 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Histopathological Auxiliary System for Brain Tumour (HAS-Bt) based on Weakly Supervised Learning using a WHO CNS5-Style Pipeline</title>
+		<author>
+			<persName><forename type="first">Yixin</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyang</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuai</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junfeng</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaping</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinggang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinsong</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-2575131/v1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurooncol</title>
+		<imprint>
+			<date type="published" when="2023-02-14">2023</date>
+			<publisher>Research Square Platform LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ma, Y. et al. Histopathological auxiliary system for brain tumour (HAS-Bt) based on weakly supervised learning using a WHO CNS5-style pipeline. J. Neurooncol., (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Artificial intelligence neuropathologist for glioma classification using deep learning on hematoxylin and eosin stained slide images and molecular markers</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiuping</forename><surname>Chun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixin</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuai</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">U Farrukh</forename><surname>Hameed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunming</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junfeng</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abudumijiti</forename><surname>Aibaidula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinggang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinsong</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaa163</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="44" to="52" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jin, L. et al. Artificial intelligence neuropathologist for glioma classification using deep learning on hematoxylin and eosin stained slide images and molecular markers. Neuro-oncology 23, 44-52 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Classifying histopathology whole-slides using fusion of decisions from deep convolutional network on a collection of random multi-views at multi-magnification</title>
+		<author>
+			<persName><forename type="first">Kausik</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sri</forename><forename type="middle">Phani Krishna</forename><surname>Karri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhijit</forename><surname>Guha Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jyotirmoy</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Debdoot</forename><surname>Sheet</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/isbi.2017.7950690</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-04">2017</date>
+			<biblScope unit="page" from="1024" to="1027" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Das, K., Karri, S. P. K., Roy, A. G., Chatterjee, J. &amp; Sheet, D. in IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017). 1024-1027 (IEEE, 2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Using deep convolutional neural networks to identify and classify tumor-associated stroma in diagnostic breast biopsies</title>
+		<author>
+			<persName><forename type="first">Babak</forename><surname>Ehteshami Bejnordi</surname></persName>
+			<idno type="ORCID">0000-0002-6258-5687</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maeve</forename><surname>Mullooly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruth</forename><forename type="middle">M</forename><surname>Pfeiffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqi</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><forename type="middle">M</forename><surname>Vacek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">L</forename><surname>Weaver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sally</forename><surname>Herschorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Louise</forename><forename type="middle">A</forename><surname>Brinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bram</forename><surname>Van Ginneken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nico</forename><surname>Karssemeijer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">H</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gretchen</forename><forename type="middle">L</forename><surname>Gierach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><forename type="middle">A W M</forename><surname>Van Der Laak</surname></persName>
+			<idno type="ORCID">0000-0001-7982-0754</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Sherman</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41379-018-0073-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Modern Pathology</title>
+		<title level="j" type="abbrev">Modern Pathology</title>
+		<idno type="ISSN">0893-3952</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1502" to="1512" />
+			<date type="published" when="2018-01">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ehteshami Bejnordi, B. et al. Using deep convolutional neural networks to identify and classify tumor-associated stroma in diagnostic breast biopsies. Mod. Pathol. 31, 1502-1512 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Khosla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gargeya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Irshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Beck</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1606.05718" />
+		<title level="m">Deep learning for identifying metastatic breast cancer</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Wang, D., Khosla, A., Gargeya, R., Irshad, H. &amp; Beck, A. H. Deep learning for identifying metastatic breast cancer. arXiv preprint https://arxiv.org/abs/1606.05718 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A vendor-neutral so ware foundation for digital pathology</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goode</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gilbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Harkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jukic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Satyanarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Openslide</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Pathol. Inf</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">27</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goode, A., Gilbert, B., Harkes, J., Jukic, D. &amp; Satyanarayanan, M. OpenSlide: A vendor-neutral so ware foundation for digital pathology. J. Pathol. Inf. 4, 27 (2013).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Graphcut textures</title>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Kwatra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arno</forename><surname>Schödl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irfan</forename><surname>Essa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><surname>Turk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Bobick</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/882262.882264</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<title level="j" type="abbrev">ACM Trans. Graph.</title>
+		<idno type="ISSN">0730-0301</idno>
+		<idno type="ISSNe">1557-7368</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="277" to="286" />
+			<date type="published" when="2003-07">2003</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kwatra, V., Schödl, A., Essa, I., Turk, G. &amp; Bobick, A. Graphcut textures: Image and video synthesis using graph cuts. Acm Trans. Graphics (tog). 22, 277-286 (2003).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">&quot;GrabCut&quot;</title>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Rother</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vladimir</forename><surname>Kolmogorov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Blake</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1015706.1015720</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<title level="j" type="abbrev">ACM Trans. Graph.</title>
+		<idno type="ISSN">0730-0301</idno>
+		<idno type="ISSNe">1557-7368</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="309" to="314" />
+			<date type="published" when="2004-08">2004</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rother, C., Kolmogorov, V. &amp; Blake, A. GrabCut interactive foreground extraction using iterated graph cuts. ACM Trans. Graphics (TOG). 23, 309-314 (2004).</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The role of artificial intelligence in precision medicine</title>
+		<author>
+			<persName><forename type="first">Bertalan</forename><surname>Mesko</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/23808993.2017.1380516</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Review of Precision Medicine and Drug Development</title>
+		<title level="j" type="abbrev">Expert Review of Precision Medicine and Drug Development</title>
+		<idno type="ISSNe">2380-8993</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="239" to="241" />
+			<date type="published" when="2017-09-03">2017</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mesko, B. Vol. 2 239-241 (Taylor &amp; Francis, 2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A Survey of Transfer Learning for Convolutional Neural Networks</title>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Ribani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Marengoni</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/sibgrapi-t.2019.00010</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 32nd SIBGRAPI Conference on Graphics, Patterns and Images Tutorials (SIBGRAPI-T)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-10">2019</date>
+			<biblScope unit="page" from="47" to="57" />
+		</imprint>
+	</monogr>
+	<note>SIBGRAPI-T)</note>
+	<note type="raw_reference">Ribani, R. &amp; Marengoni, M. in 2019 32nd SIBGRAPI conference on graphics, patterns and images tutorials (SIBGRAPI-T). 47-57 (IEEE).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">ImageNet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li-Jia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kai Li</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Li Fei-Fei</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2009.5206848</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-06">2009</date>
+			<biblScope unit="page" from="248" to="255" />
+		</imprint>
+	</monogr>
+	<note>Ieee</note>
+	<note type="raw_reference">Deng, J. et al. in 2009 IEEE conference on computer vision and pattern recognition. 248-255 (Ieee).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Attention Is All You Need</title>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><surname>N.Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+		<idno type="DOI">10.65215/r5bs2d54</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Neural. Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<date type="published" when="2017">2017</date>
+			<publisher>Shenzhen Medical Academy of Research and Translation</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaswani, A. et al. Attention is all you need. Adv. Neural. Inf. Process. Syst. 30 (2017).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

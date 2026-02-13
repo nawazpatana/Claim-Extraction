@@ -1,0 +1,3194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Benchmarking GPT-5 in radiation oncology: measurable gains, but persistent need for expert oversight</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-11">11 December 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ugur</forename><surname>Dinç</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jibak</forename><surname>Sarkar</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Philipp</forename><surname>Schubert</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Thomas</forename><surname>Weissmann</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Andre</forename><surname>Karius</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Johann</forename><surname>Brand</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bernd-Niklas</forename><surname>Axer</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ahmed</forename><surname>Gomaa</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pluvio</forename><surname>Stephan</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ishita</forename><surname>Sheth</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sogand</forename><surname>Beirami</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Annette</forename><surname>Schwarz</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Udo</forename><surname>Gaipl</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Stefanie</forename><surname>Corradini</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Radiation Oncology , University Hospital , Ludwig Maximilian University of Munich , Munich , Germany</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital</orgName>
+								<orgName type="institution" key="instit2">Ludwig Maximilian University of Munich</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiation Oncology , University Hospital Erlangen , Friedrich-Alexander-Universität Erlangen-Nürnberg , Erlangen , Germany ,</note>
+								<orgName type="department">Department of Radiation Oncology</orgName>
+								<orgName type="institution" key="instit1">University Hospital Erlangen</orgName>
+								<orgName type="institution" key="instit2">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Comprehensive Cancer Center Erlangen-Europäische Metropolregion Nürnberg ( European Metropolitan Region Nuremberg) ( CCC ER-EMN) , Erlangen , Germany ,</note>
+								<orgName type="department" key="dep1">Comprehensive Cancer Center Erlangen-Europäische Metropolregion</orgName>
+								<orgName type="department" key="dep2">CCC ER-EMN)</orgName>
+								<orgName type="institution" key="instit1">Nürnberg</orgName>
+								<orgName type="institution" key="instit2">European Metropolitan Region Nuremberg)</orgName>
+								<address>
+									<settlement>Erlangen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Bavarian Cancer Research Center (BZKF) , Munich , Germany ,</note>
+								<orgName type="department">Bavarian Cancer Research Center (BZKF)</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">Monash University , Australia</note>
+								<orgName type="institution">Monash University</orgName>
+								<address>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<note type="raw_affiliation">Alexandria University , Egypt Hicham Meskher ,</note>
+								<orgName type="department">Hicham Meskher</orgName>
+								<orgName type="institution">Alexandria University</orgName>
+								<address>
+									<country key="EG">Egypt</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<note type="raw_affiliation">Shantou University , China</note>
+								<orgName type="institution">Shantou University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Benchmarking GPT-5 in radiation oncology: measurable gains, but persistent need for expert oversight</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Oncology</title>
+						<title level="j" type="abbrev">Front. Oncol.</title>
+						<idno type="eISSN">2234-943X</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<date type="published" when="2025-12-11">11 December 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C9E20C45AA3B684CAD612550DD9128C8</idno>
+					<idno type="DOI">10.3389/fonc.2025.1695468</idno>
+					<note type="submission">RECEIVED 29 August 2025 REVISED 07 October 2025 ACCEPTED 11 November 2025 PUBLISHED 11 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-02T04:12+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>GPt-5</term>
+					<term>artificial intelligence</term>
+					<term>radiation oncology</term>
+					<term>large language models</term>
+					<term>treatment recommendation</term>
+					<term>oncologic decision support</term>
+					<term>hallucination</term>
+					<term>real-world evaluation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction: Large language models (LLM) have shown great potential in clinical decision support and medical education. GPT-5 is a novel LLM system that has been specifically marketed towards oncology use. This study comprehensively benchmarks GPT-5 for the field of radiation oncology. Methods: Performance was assessed using two complementary benchmarks: (i) the American College of Radiology Radiation Oncology In-Training Examination  (TXIT, 2021), comprising 300 multiple-choice items, and (ii) a curated set of 60 authentic radiation oncologic vignettes representing diverse disease sites and treatment indications. For the vignette evaluation, GPT-5 was instructed to generate structured therapeutic plans and concise two-line summaries. Four board-certified radiation oncologists independently rated outputs for correctness, comprehensiveness, and hallucinations. Inter-rater reliability was quantified using Fleiss' k. GPT-5-14 results were compared to published GPT-3.5 and GPT-4 baselines. Results: On the TXIT benchmark, GPT-5 achieved a mean accuracy of 92.8%, outperforming GPT-4 (78.8%) and GPT-3.5 (62.1%). Domain-specific gains were most pronounced in dose specification and diagnosis. In the vignette evaluation, GPT-5's treatment recommendations were rated highly for correctness (mean 3.24/4, 95% CI: 3.11-3.38) and comprehensiveness (3.59/4, 95% CI: 3.49-3.69). Hallucinations were rare, flagged in 10.0% of all individual reviewer assessments (24 of 240), and no patient case reached majority consensus for their presence. Inter-rater agreement was low (Fleiss' k 0.083 for correctness), reflecting inherent variability in clinical judgment. Errors clustered in complex scenarios requiring precise trial knowledge or detailed clinical adaptation. Discussion: GPT-5 clearly outperformed prior model variants on the radiation oncology multiple-choice benchmark. Although GPT-5 exhibited favorable performance in generating real-world radiation oncology treatment recommendations, correctness ratings indicate room for further improvement.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.389" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Large language models (LLMs) have advanced rapidly in recent years, driven by scaling of parameters <ref type="bibr" target="#b0">(1)</ref>, reinforcement-learningbased alignment <ref type="bibr" target="#b1">(2,</ref><ref type="bibr" target="#b2">3)</ref>, and the development of modular architectures such as Mixture-of-Experts (MoE) <ref type="bibr" target="#b3">(4,</ref><ref type="bibr" target="#b4">5)</ref>. These innovations have enabled broad use of LLMs across scientific and clinical domains <ref type="bibr" target="#b5">(6)</ref><ref type="bibr" target="#b6">(7)</ref><ref type="bibr" target="#b7">(8)</ref>. In biomedicine, domain-specific pretraining and clinical fine-tuning have enhanced representation of medical terminology and workflows <ref type="bibr" target="#b8">(9)</ref><ref type="bibr" target="#b9">(10)</ref><ref type="bibr" target="#b10">(11)</ref>, while general-purpose models have achieved exam-level performance in several evaluations <ref type="bibr" target="#b11">(12)</ref><ref type="bibr" target="#b12">(13)</ref><ref type="bibr" target="#b13">(14)</ref>. Nonetheless, accuracy remains heterogeneous across specialties and problem types <ref type="bibr" target="#b14">(15)</ref><ref type="bibr" target="#b15">(16)</ref><ref type="bibr" target="#b16">(17)</ref><ref type="bibr" target="#b17">(18)</ref>. Current consensus emphasizes transparent communication of model limitations and the need for sustained human oversight <ref type="bibr" target="#b16">(17,</ref><ref type="bibr" target="#b17">18)</ref>.</p><p>Within radiation oncology, deep learning methods are established for tasks such as segmentation, image enhancement, dose estimation, and outcome prediction <ref type="bibr" target="#b18">(19)</ref><ref type="bibr" target="#b19">(20)</ref><ref type="bibr" target="#b20">(21)</ref><ref type="bibr" target="#b21">(22)</ref><ref type="bibr" target="#b22">(23)</ref><ref type="bibr" target="#b23">(24)</ref><ref type="bibr" target="#b24">(25)</ref>. LLMs extend this toolkit with text-centric applications such as guideline summarization, structured rationale generation, question answering, and automated documentation <ref type="bibr" target="#b25">(26)</ref><ref type="bibr" target="#b26">(27)</ref><ref type="bibr" target="#b27">(28)</ref>. Evaluation of such models now include physics-focused question sets <ref type="bibr" target="#b28">(29,</ref><ref type="bibr" target="#b29">30)</ref> as well as surgical and board-style assessments <ref type="bibr" target="#b30">(31,</ref><ref type="bibr" target="#b31">32)</ref>. Radiation oncology-specific studies underscore both the promise of LLMs and the persistence of domain-specific limitations (e.g., dose prescription, differentiation between percutaneous and interstitial techniques) as well as challenges in keeping pace with evolving trial evidence <ref type="bibr" target="#b15">(16,</ref><ref type="bibr" target="#b16">17)</ref>.</p><p>A key area of ongoing research is the use of large language models as clinical decision support (CDS) systems, with prominent initiatives including Med-PaLM, Med-PaLM 2, and Google AMIE <ref type="bibr" target="#b12">(13,</ref><ref type="bibr" target="#b32">33,</ref><ref type="bibr" target="#b33">34)</ref>. LLM agents like AMIE illustrate how LLM-based assistants may retrieve, synthesize, and contextualize medical evidence for patientspecific recommendations under expert supervision <ref type="bibr" target="#b32">(33)</ref>. Early evaluations report promising accuracy in case-based reasoning and treatment planning, while underscoring the necessity of explicit uncertainty handling and clinician oversight <ref type="bibr" target="#b15">(16,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b34">35)</ref>.</p><p>GPT-5, the latest generation of OpenAI's foundation models, represents a fundamental shift compared to GPT-3.5 and GPT-4 by explicitly incorporating reasoning-focused reinforcement learning reward models <ref type="bibr" target="#b35">(36)</ref>. In combination with a larger MoE backbone and improved calibration of probabilistic outputs, GPT-5 achieves stronger logical consistency, longer-context reasoning, and higher factual accuracy. Importantly, GPT-5 is a major OpenAI model explicitly positioned as a reasoning model, designed to generate structured, interpretable rationales in addition to predictions. These advances have translated into improved performance across biomedical benchmarks, USMLE-style exams, radiology case reasoning, and oncology-specific tasks, while also reducing hallucination rates <ref type="bibr" target="#b16">(17,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b36">37,</ref><ref type="bibr" target="#b37">38)</ref>. Despite these improvements, supervised use remains essential, particularly in high-stakes oncology settings.</p><p>Building on this progress, the present work provides the first comprehensive evaluation of GPT-5 in radiation oncology. We investigate two complementary settings: (i) a benchmark against the American College of Radiology Radiation Oncology In-Training Examination (ACR TXIT) subset using an automated Responses API pipeline directly comparable to GPT-3.5/4 results, and (ii) a novel real-world scenario dataset comprising 60 complex clinical cases without a single established standard of care <ref type="bibr" target="#b38">(39)</ref>.</p><p>By jointly analyzing standardized benchmarking and novel scenario-based evaluation, we assess GPT-5's accuracy, comprehensiveness and hallucination frequency. This dual design allows rigorous quantification of performance while also examining GPT-5's practical usability and failure modes in clinically ambiguous situations. Given the explicit positioning of GPT-5 as a reasoning model for scientific and medical tasks, our study provides a timely and domain-specific benchmark of its potential and limitations in radiation oncology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Materials and methods</head><p>This study comprised two complementary evaluations of GPT-5 in radiation oncology: (i) performance on a standardized multiple-choice knowledge benchmark, and (ii) structured decision-support recommendations on real-world oncologic case vignettes. All analyses were performed on de-identified data, using isolated sessions without cross-case information transfer. No protected health information was processed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">GPT-5 model and prompting framework</head><p>The large language model (LLM) under test corresponds to the GPT-5 family as characterized in the publicly released system card <ref type="bibr" target="#b36">(37)</ref>. The specific model identifier is gpt-5-2025-08-07. GPT-5 is a transformer-based model trained on large text corpora with mixtureof-experts routing and reinforcement learning from human and artifical intelligence (AI) feedback. For reproducibility, standardized instructions were used for all experiments, and prompts/outputs were logged. Each API call was executed in a fresh session to avoid context leakage between cases. Automation was implemented in Python.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">ACR radiation oncology in-training examination benchmark</head><p>Knowledge-based performance was assessed using the 2021 American College of Radiology (ACR) Radiation Oncology In-Training Examination (TXIT) <ref type="bibr" target="#b38">(39,</ref><ref type="bibr" target="#b39">40)</ref>, which comprises 300 multiple-choice questions spanning statistics, physics, biology, and clinical radiation oncology across disease sites. Fourteen questions included medical images, of which seven required visual interpretation (Q17, Q86, Q112, Q116, Q125, Q143, Q164). Since only GPT-5 is capable of processing image-based items, these questions were included exclusively in its evaluation. For GPT-3.5 and GPT-4, the image-based items were removed prior to testing, and the total number of eligible questions was adjusted accordingly, resulting in 293 scorable items, consistent with prior work <ref type="bibr" target="#b38">(39)</ref>. The 2021 TXIT version was retained to ensure comparability and consistency with previous benchmark studies of GPT-3.5 and GPT-4.</p><p>Questions were presented as stem plus options without auxiliary text. Prompts instructed the model to select exactly one option and return the format Final answer: X with X ∈ {A,B,C,D}. No external tools (especially web search) or interactive feedback were permitted. Scoring followed established methodology: 1.0 for a correct choice and 0.0 otherwise.</p><p>For content analysis, items were mapped to ACR knowledge domains and to a clinical care-path framework (diagnosis, treatment decision, treatment planning, prognosis, toxicity, brachytherapy, and dosimetry) <ref type="bibr" target="#b39">(40)</ref>. Items explicitly referencing major clinical trials or guidelines (e.g., Stockholm III, CRITICS, PORTEC-3, ORIOLE, AJCC 8th edition) were flagged for subgroup reporting <ref type="bibr" target="#b40">(41)</ref><ref type="bibr" target="#b41">(42)</ref><ref type="bibr" target="#b42">(43)</ref>. Results were compared directly to published GPT-3.5 and GPT-4 benchmarks.</p><p>To assess clinical usability, we curated a set of 60 anonymized oncologic case vignettes representing a broad spectrum of disease sites and treatment indications, including definitive, adjuvant, salvage, palliative, and reirradiation scenarios. Source cases were sampled from patients treated in 2025 and subsequently stripped of all identifiers. Patient name, birth date, and ID were removed automatically, while age and sex were retained. Clinical information such as diagnosis, stage, grading, comorbidities, and oncologic history was condensed by two physicians into vignettes, ensuring privacy while preserving clinical representativeness.</p><p>The final case set was designed to be balanced across tumor sites and treatment contexts (Table <ref type="table" target="#tab_0">1</ref>). Specifically, it included 10 brain tumor cases (glioblastoma, lower-grade glioma, meningioma, vestibular schwannoma, paraganglioma), 10 breast cancer cases (stratified by nodal status, recurrence, and DCIS), 10 lung cancer cases (NSCLC stage III, SBRT, reirradiation, SCLC), 10 rectal/anal cancer cases (neoadjuvant rectal, definitive anal, local recurrence), 10 prostate cancer cases (risk-adapted definitive therapy, biochemical recurrence, local recurrence post-prostatectomy), and 10 metastatic cases (brain, bone, and SBRT). This stratification allowed for evaluation of GPT-5 across both common and complex clinical scenarios, covering a representative cross-section of realworld radiation oncology practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Real-world oncologic decision-support benchmark</head><p>Each vignette was paired with a standardized instruction asking GPT-5 to propose a single most appropriate therapeutic plan and briefly justify the recommendation. Required elements included: disease stage, treatment intent, prior therapy, modality/technique, dose/fractionation, target volumes and OAR constraints, expected toxicities, and follow-up considerations. In addition, GPT-5 was instructed to generate a concise two-line summary of the proposed management, which was ultimately used for evaluation.</p><p>Vignettes were curated for diversity with the primary criterion of ensuring sufficient representation across the categories shown in Table <ref type="table" target="#tab_0">1</ref>. After project initiation, we included the first occurrences of eligible cases within each category until target counts were reached. Cases were logged by category at intake, and their presentation order was randomized prior to model evaluation and expert review to minimize order effects, carryover/anchoring bias, and any unintended adaptation by the model or raters.</p><p>Outputs were evaluated by four senior radiation oncologists from a tertiary university hospital. Correctness and comprehensiveness were rated on 4-point Likert scales (4 = fully correct/comprehensive, 1 = not clinically justifiable). Hallucinations were flagged per case by each reviewer (binary). For analysis, we computed the hallucination score, defined as the mean fraction of reviewers flagging a hallucination across cases (range 0-1). Consensus thresholds were summarized at levels of any (≥1/4 raters), majority (≥2/4), strong (≥3/4), or unanimous (4/4). Inter-rater agreement was estimated using Fleiss' k for correctness, comprehensiveness, and hallucination scores (Table <ref type="table" target="#tab_1">2</ref>).</p><p>Exploratory subgroup analyses stratified cases by disease site, prior radiotherapy, and treatment intent. Endpoints included correctness, comprehensiveness and hallucination rate.</p><p>Below we provide two illustrative vignettes with GPT-5 therapy suggestions; the complete list of benchmark cases is available in the Supplementary Material. Note that dates have been removed from the published vignettes.</p><p>Example 1 -Case 2 (83-year-old female) Diagnosis: Rectal carcinoma (5-11cm from anal verge, 1cm above linea dentata), cT4b cN2b cM0, CRM+, EMVI+, G2, mismatch repair-proficient (pMMR).</p><p>Anamnesis and work-up:</p><formula xml:id="formula_0">##.##.####: Rectoscopy with biopsy → adenocarcinoma, G2, pMMR (MLH1, MSH2, MSH6, PMS2 intact). ##.##.####: CT chest/abdomen → cT3 cN+ cM0, no distant metastases. ##.##.####: Pelvic MRI → cT4b N2b, CRM+, EMVI+, suspected vaginal infiltration. ##.##.####: Multidisciplinary tumor board recommended total neoadjuvant therapy. ##.##.####: Transvaginal ultrasound → no sonographic vaginal invasion, fat plane preserved.</formula><p>GPT-5 suggestion (TNT, long course): Radiochemotherapy with 50.4Gy/28 fractions (IMRT) plus capecitabine 825mg/m 2 BID (Mon-Fri), consolidation chemotherapy with mFOLFOX6 q14d ×4 cycles, followed by total mesorectal excision (TME) 8-12 weeks post-RCT.</p><p>Example 2 -Case 52 (male, 52 years).</p><p>Diagnosis: Prostate carcinoma cT1c cN0 cM0, Gleason 4 + 3 = 7b, iPSA 10.8ng/ml, estimated lymph node risk (YALE) ∼7%.</p><p>Anamnesis and work-up: ##.##.####: Prostate biopsies → poorly differentiated adenocarcinoma, max. Gleason 7b (4 + 3). Since ##.####: LHRH 3-monthly depot. ##.##.####: Tumor board (urologic cancers) → recommendation for local curative therapy, patient in good general condition. ##.##.####: Prostate MRI (pelvis) → no suspicious lymph nodes, indeterminate bone lesion (likely atypical hemangioma), MRI performed for radiotherapy planning. ##.##.####: Uncomplicated implantation of 3 fiducial gold markers.</p><p>GPT-5 suggestion (curative RT + short-term ADT): Definitive radiotherapy to prostate ± proximal seminal vesicles, 60Gy in 20 fractions (IG-IMRT/VMAT with daily IGRT); no elective pelvic lymph node irradiation; short-term ADT for 4-6 months (if already &gt;6 months, terminate now).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Statistical analysis</head><p>For the TXIT benchmark, we report overall accuracy and descriptive breakdowns by domain, care-path category, and trial/ guideline-anchored items. For the clinical decision-support benchmark, primary endpoints were expert-rated correctness, comprehensiveness, hallucinations, and concordance with delivered care. Exploratory subgroup analyses were prespecified; no multiplicity adjustment was applied. All automation, randomization seeds, prompts, and raw outputs are provided as Supplementary Material. Use of de-identified, retrospective vignettes complied with institutional policies for research on nonhuman-subjects data. 3 Results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Overall TXIT performance</head><p>Across the 293 scorable items of the ACR TXIT (2021), previously reported baselines reproduced web-interface performance of 63.1% for GPT-3.5 and 74.1% for GPT-4. Using the application programming interface (API) with a fixed prompt over five repeated runs, GPT-3.5 achieved 62.1% ± 1.1% and GPT-4 78.8% ± 0.9%, consistent with earlier reports <ref type="bibr" target="#b38">(39)</ref>.</p><p>For GPT-5, we conducted five independent runs that included both text-only and image-based questions. Overall accuracy ranged from 92.3% to 93.0%, with a mean of 92.8%. Performance on the subset of image-based items was lower, with only 2 of 7 questions answered correctly. Given that the item pool, scoring criteria, and adjudication procedures were identical to those used for prior models, the observed improvement in accuracy reflects genuine advances in model capability rather than differences in test format or evaluation methodology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Domain-wise analysis</head><p>Stratified by ACR knowledge domains, GPT-5 preserved historical strengths, reaching at least 95% accuracy in Statistics, CNS/Eye, Biology, and Physics. Performance remained lower for Gynecology (75.0%), and moderately reduced for Gastrointestinal and Genitourinary topics (both around 90%). Compared with GPT-4, the largest absolute gains were observed in Dose (from 59.4% to 87.5%) and Diagnosis (from 76.5% to 91.2%) (Figure <ref type="figure" target="#fig_0">1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Clinical care-path analysis</head><p>When mapped to clinical care-path categories, GPT-5 demonstrated consistently high accuracy (Figure <ref type="figure" target="#fig_1">2</ref>):</p><p>• 100% in Treatment Planning (11/11), Local Control (2/2), Diagnosis Methodology (3/3), Anatomy (8/8), and Pharmacology (1/1). • 95.9% (47/49) in Treatment Decision and 95.2% (20/21) in Prognosis Assessment. • 92.3% in Toxicity, 92.9% in Trial/Study/Guideline, and 91.2% in Diagnosis.</p><p>• 88.9% in Brachytherapy and 87.5% in Dose.</p><p>On items explicitly anchored to named trials or staging systems, GPT-5 achieved 92.9% (13/14), outperforming GPT-4 (85.7%) and GPT-3.5 (50.0%).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Evaluation on clinical case vignettes</head><p>In the evaluation of 60 real-world radiation oncology vignettes, GPT-5's treatment recommendations were rated as follows (Figure <ref type="figure" target="#fig_2">3</ref>):</p><p>• Correctness: mean 3.24/4 (95% CI: 3.11-3.38).</p><p>• Comprehensiveness: mean 3.59/4 (95% CI: 3.49-3.69).</p><p>Hallucinations were infrequent. In total, 24 of 240 individual ratings (60 cases × 4 raters) were classified as hallucinations, corresponding to an overall hallucination rate of 10%. Thus, the vast majority of ratings (90%) did not identify hallucinations, indicating that such occurrences were infrequent across cases. No case was flagged by the majority of experts (at least two out of four raters). Distribution was 36/60 (60%) with zero hallucination flags and 24/60 (40%) with exactly one (Figure <ref type="figure" target="#fig_3">4</ref>).</p><p>Inter-rater reliability was low, with Fleiss' k = 0.083 for correctness, k =-0.016 for comprehensiveness, and k =-0.111 for hallucinations, indicating variability in individual reviewer judgments.</p><p>When stratified by the six major tumor groups, distinct patterns emerged (Figures <ref type="figure" target="#fig_4">5</ref><ref type="figure" target="#fig_6">6</ref><ref type="figure" target="#fig_5">7</ref>). Hallucinations were rare overall, with Comprehensiveness ratings (1-4 scale) by tumor group. All groups except for rectal/anal achieved high median scores (≥3.5). Breast, prostate, and brain tumor cases were most consistently rated as highly comprehensive, while rectal/anal and lung cancers showed broader variability.</p><p>prostate and brain tumor cases showing almost none, whereas breast, rectal/anal, lung, and metastasis cases exhibited higher variability (Figure <ref type="figure" target="#fig_4">5</ref>). Comprehensiveness was generally high across all groups (median ≥3.5/4), with breast, prostate, and brain tumors rated most consistently complete, and rectal/anal and lung cancers showing broader variability (Figure <ref type="figure" target="#fig_5">7</ref>). Correctness displayed the clearest differentiation: prostate and brain tumors achieved the highest median scores (≥3.5/4), breast and metastases performed intermediately, while rectal/anal and lung cancers scored lowest and most variably (Figure <ref type="figure" target="#fig_6">6</ref>).</p><p>Beyond these main groupings, more granular subgroup analyses revealed clear data-defined differences. Highest correctness was observed in prostate, intermediate risk (correctness 3.83; comprehensiveness 3.83; hallucinations 0%) and prostate, biochemical recurrence after RPE (3.67; 3.83; 0%), as well as smallcell lung cancer (SCLC) (3.67; 4.00; 0%). Brain primaries were generally strong: meningioma (3.67; 3.67; 0%), vestibular schwannoma (3.67; 3.33; 0%), glioma grade 2/3 (3.50; 3.67; 0%), and glioblastoma (3.33; 3.83; 0%); a weaker brain subgroup was pituitary adenoma (2.67; 3.50; 12.5%).</p><p>Breast adjuvant scenarios were solid for correctness and highly complete but showed higher hallucination rates in several subgroups: adjuvant low risk (3.33; 4.00; 25%), adjuvant nodenegative (3.50; 4.00; 25%), adjuvant node-positive (3.17; 3.50; 12.5%), DCIS (3.00; 3.33; 12.5%), and loco-regional recurrence (3.00; 3.33; 0%). Correctness ratings (1-4 scale) by tumor group. Prostate and brain tumor cases scored highest for correctness (median ≥3.5). Lung and rectal/anal cancer cases showed lower and more variable correctness, whereas breast cancer and metastasis cases performed intermediately. For metastatic disease, palliative bone metastases performed well (3.67; 3.89; 0%) and metastatic SBRT was acceptable (3.11; 3.33; 0%), while brain metastases were lower and more error-prone (2.67; 3.33; 18.75%).</p><p>Rectum-anal cases were the weakest overall: anal cancer (3.00; 3.00; 0%), neoadjuvant rectal cancer (2.75; 3.25; 25%), and local recurrence (2.33; 3.56; 25%).</p><p>These patterns localize remaining challenges to problem settings that demand precise trial knowledge, dose/fractionation choices, or complex multimodality sequencing.</p><p>Several representative cases illustrate these limitations:</p><p>• Case 7 (low-risk prostate cancer): The system recommended definitive therapy, which some raters considered overtreatment given active surveillance would also have been guideline-concordant, though others accepted it because the patient requested therapy.</p><p>• Case 8 (neoadjuvant rectal cancer): Biomarker analysis (e.g. MSI) was omitted, a gap increasingly relevant for therapy planning.</p><p>• Case 11 (brain metastases): The combination of ipilimumab and nivolumab was proposed, but with a non-guideline-concordant dosing scheme, lowering correctness.</p><p>• Case 17 (DCIS): A radiotherapy boost dose was recommended, which is not guideline-supported and was judged overtreatment.  Distribution of case-level mean expert ratings for correctness and comprehensiveness across 60 cases. Each box represents the interquartile range (IQR) with whiskers and outliers, summarizing the spread of ratings. Case-level mean correctness ranged from 2.25 to 4.00, while case-level mean comprehensiveness ranged from 2.50 to 4.00.</p><p>• Case 29 (NSCLC with SBRT): Systemic therapy options were suggested despite definitive SBRT being the standard in this context.</p><p>• Case 36 (lung SBRT): Chemotherapy cycles were not specified, reducing precision despite an otherwise acceptable plan.</p><p>• Case 42 (brain metastases): Therapy recommendations were given without histologic confirmation, a prerequisite step that reduced guideline adherence.</p><p>• Case 58 (SBRT): Outdated regimens were mixed with correct ones, producing polarized ratings.</p><p>To further clarify the nature of GPT-5 errors, we systematically categorized them by severity. At the lowest ranking level (mean score = 2, n = 5), major errors occurred, including three cases with incorrect radiotherapy recommendations and two cases with incorrect systemic therapy suggestions. At the intermediate ranking level (scores between 2 and 3, n = 14), errors were more nuanced: five cases included only one of several valid therapeutic options without clear justification, one case recommended a radiotherapy boost that is not guideline-concordant, two cases suggested non-standard chemotherapy regimens, one case contained a radiotherapy dosage error, and five systemic therapy recommendations contained minor inaccuracies. At the higher ranking level (scores ≥ 3, n = 41), correctness was generally preserved, but inconsistent issues remained, such as non-standard dosing of bisphosphonate therapy, omission of important management strategies (e.g., watch-and-wait approaches), and lack of clarification requests regarding essential patient information (e.g., performance status). This structured error Hallucination rates by tumor group (10 cases each). Hallucinations were rare overall. Prostate and brain tumor cases showed almost no hallucinations, while breast, rectal/anal, lung, and metastasis cases exhibited higher variability, with some reaching up to 25%. Hallucination consensus across cases. Bars show the number of cases with 0, 1, 2, 3, or 4 raters flagging hallucination. In this cohort, 36/60 cases had 0 flags and 24/60 had exactly 1 flag; no case reached majority (≥2/4), strong (≥3/4), or unanimous (4/4) consensus.</p><p>categorization highlights that GPT-5's shortcomings ranged from major treatment misassignments to more subtle omissions or deviations from guideline-concordant practice.</p><p>Where historical records permitted, GPT-5's recommendations showed high concordance with delivered care across treatment intent, modality/technique, and dose/target ranges, although multiple reasonable options often existed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>Large language models are poised to function as supervised amplifiers of clinical reasoning in radiation oncology, with their primary value lying not in test accuracy but in producing auditable, guideline-aware drafts that speed multidisciplinary deliberation while preserving human accountability. Real-world integration should prioritize governance (traceable evidence links and versioning), tool-coupled reasoning (retrieval and dose-constraint checks), and human-in-the-loop verification, particularly given persistent limits in visual reasoning. Our evaluation frameworkcombining standardized knowledge testing with expert-rated, realworld vignettes-offers a practical template for assessing clinical utility through explainability and error typologies rather than accuracy alone.</p><p>This work extends the literature on large language models (LLMs) in radiation oncology along two complementary axes: standardized examination performance and real-world decision support. On the ACR TXIT subset, the present model attained 92.8% under the same item pool and adjudication rules previously used for GPT-3.5/4, which yielded 63.1% and 74.1%, respectively <ref type="bibr" target="#b38">(39)</ref>. While this marks a substantial advance, such accuracy cannot be equated with clinical safety, as even a small residual error rate may translate into unacceptable risks without human oversight. The magnitude of the observed gain is consistent with the architectural and training changes that distinguish GPT-5 from its predecessors: scaling of transformer capacity, more stable long-context attention, preference optimization with richer feedback, and-critically-its explicit positioning as a reasoning model. Unlike GPT-3.5 and GPT-4, GPT-5 is designed not only to recall information but to generate structured, stepwise rationales, yielding more consistent and interpretable outputs <ref type="bibr" target="#b36">(37,</ref><ref type="bibr" target="#b37">38)</ref>. Our use of a constrained response format ("Final answer: X") reduced adjudication noise without contributing domain knowledge. Examination accuracy nevertheless remains an imperfect surrogate for clinical competence: persistent weaknesses were observed in brachytherapy, fine-grained dosimetry, and evolving trial-specific details, mirroring deficits documented for earlier models <ref type="bibr" target="#b38">(39)</ref>. In addition, GPT-5 correctly answered only 2 of 7 image-based TXIT items, underscoring its limited visual reasoning capabilities and highlighting that, despite progress in text-based reasoning, current models remain unreliable for image interpretation in radiation oncology.</p><p>Persistent weaknesses were noted in brachytherapy and trialspecific knowledge, likely reflecting limited representation of these domains in publicly available training data. Brachytherapy guidance is largely confined to specialized society documents, while trial protocols are often behind paywalls or scattered across conference proceedings, reducing their visibility to large-scale pretraining. Addressing these gaps will require domain-targeted fine-tuning and integration of curated trial databases or retrieval pipelines.</p><p>Comparisons with adjacent evaluations clarify where improvements reflect reasoning advances rather than test artifacts. In radiation oncology physics, Holmes et al. showed that item structure and distractors meaningfully influence performance (29), while Wang et al. demonstrated that simply shuffling answer options alters accuracy <ref type="bibr" target="#b29">(30)</ref>. Our reproduction of prior TXIT baselines with identical stems, options, and scoring therefore supports the interpretation that GPT-5's higher scores reflect genuine advances in reasoning and knowledge synthesis rather than format effects. At the same time, gynecologic oncology, brachytherapy, and trialanchored items remained more challenging, consistent with topiclevel variability in prior reports <ref type="bibr" target="#b14">(15,</ref><ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b38">39)</ref>.</p><p>A more robust and clinically relevant benchmark was established through our 60-case evaluation based on authentic oncologic vignettes, in which GPT-5 was tasked with generating structured management plans. The model produced coherent and comprehensive drafts, extending earlier findings with GPT-4 that had been reported in a smaller Red Journal-style Gray Zone cases <ref type="bibr" target="#b38">(39)</ref>. Hallucinations were infrequent and did not pose a substantive concern; rather, errors were concentrated in areas requiring detailed trial-specific knowledge, nuanced clinical adaptation or complex multimodality treatments (e.g., SBRT, DCIS, brain metastases, anorectal cancer, lung cancer with comorbidities). Inter-rater variability, while contributing to lower k values (leiss' k = 0.083 for correctness, k =-0.016 for comprehensiveness, and k =-0.111 for hallucinations), similarly reflects the legitimate diversity of acceptable clinical strategies in these complex scenarios, underscoring that LLM outputs may reasonably diverge from one clinician's judgment while still remaining guideline-concordant. Taken together, these results highlight the potential of reasoningoriented models: GPT-5 is able to synthesize case-relevant rationales, thereby moving closer to providing the deliberative support that is directly applicable in tumor board settings.</p><p>A closer examination of hallucinations revealed that most were not "classic" fabrications, such as nonexistent drugs or spurious references, but rather subtler drifts within otherwise plausible recommendations. Hallucinations were reported by only one of the four raters and were usually related to apparent overtherapy without explicit justification. A notable example was the repeated suggestion of zoledronic acid 4mg IV every 6 months for 3 years. While this regimen exists in osteoporosis practice, it is not a recognized oncology schedule, where dosing intervals are typically every 3-12 weeks and duration is generally limited to 2 years with reassessment. Three of the four experts therefore judged these outputs as "incorrect" rather than as hallucinations, whereas one reviewer flagged them as such. This highlights that hallucinations in clinical LLM evaluation may span a spectrum-from minor factual drifts (plausible but guideline-incongruent regimens) to potentially harmful errors (overtreatment, misdosing, or omission of critical steps). Such misalignments could likely have been mitigated by more restrictive prompting (e.g., "use only oncology guidelines, not osteoporosis or other indications"), but this was deliberately omitted to avoid overfitting and to better approximate real-world deployment conditions.</p><p>Our evaluation complements emerging work such as the Articulate Medical Intelligence Explorer (AMIE) system, which was tested in synthetic breast oncology vignettes <ref type="bibr" target="#b32">(33)</ref>. While AMIE incorporated retrieval and self-critique pipelines and demonstrated performance above trainees and fellows, our study extends this line of research by benchmarking GPT-5 on real, anonymized, multi-disease radiation oncology cases rated by board-certified specialists.</p><p>Our findings align with broader medical LLM studies, which consistently show topic-level heterogeneity, stronger outputs under expert scaffolding, and improved interpretability when reasoning steps are made explicit <ref type="bibr" target="#b14">(15,</ref><ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b30">31,</ref><ref type="bibr" target="#b31">32)</ref>. Reviews and meta-analyses converge on supervised applications-education, tumor-board summarization, pre-board preparation-rather than autonomous decision-making <ref type="bibr" target="#b16">(17,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b43">44)</ref>. Within this trajectory, GPT-5's positioning as a reasoning model represents a qualitative step: it enables explicit rationale generation and structured synthesis across complex oncology cases, something prior models handled only inconsistently.</p><p>Methodologically, our study also connects to emerging multimodal planning assistants that couple LLM reasoning to imaging or dose engines <ref type="bibr" target="#b26">(27,</ref><ref type="bibr" target="#b27">28)</ref>. Such systems may compensate for GPT-5's current blind spots in image review and dosimetry but will require rigorous validation and regulatory oversight before clinical use <ref type="bibr" target="#b14">(15,</ref><ref type="bibr" target="#b44">45)</ref>. From a governance perspective, near-term deployment should remain supervised, with retrieval-augmented pipelines, auditable links to guidelines and trials (e.g., AJCC, PORTEC-3, ORIOLE), explicit uncertainty labeling, and human sign-off <ref type="bibr">(41-43, 45, 46)</ref>.</p><p>Retrieval-augmented systems such as Med-PaLM 2 and AMIE combine generative reasoning with evidence retrieval and self-critique, achieving strong performance but relying on curated sources at inference time <ref type="bibr" target="#b32">(33,</ref><ref type="bibr" target="#b33">34)</ref>. In contrast, GPT-5 in our study operated without retrieval and nevertheless showed high TXIT accuracy and solid vignette performance, suggesting it may represent a new baseline for model-internal reasoning. However, definitive conclusions require cross-platform comparisons on larger and more diverse datasets.</p><p>Beyond technical performance, deployment of GPT-5 raises ethical and regulatory considerations. If applied to diagnosis or treatment planning, the system could qualify as a medical device under EU MDR or FDA frameworks, yet it is not currently validated for such use. Until formal regulatory pathways are established, GPT-5 outputs should be regarded as educational or research aids, with responsible use requiring human oversight, auditable evidence links, and clear boundaries of autonomy.</p><p>An additional consideration is model versioning and potential drift across updates. Although we reported the exact model identifier and used standardized prompts with repeated runs, future versions may behave differently, complicating reproducibility of benchmark results. This underscores the need for transparent version reporting, archiving of raw outputs, and community benchmarks to monitor stability over time.</p><p>Future research should prioritize prospective studies, ideally randomizing tumor-board workflows to model-assisted versus control arms. Additional directions include systematic evaluation of reasoning under tool use and retrieval conditions, direct comparisons of general-purpose and domain-adapted models, explicit assessment of target and dose coherence as well as toxicity forecasting, and development of auditable retrieval pipelines tightly coupled to primary evidence <ref type="bibr" target="#b17">(18)</ref>. Ultimately, the goal is not to replace clinician judgment, but to generate reproducible, evidence-linked drafts and option sets that accelerate multidisciplinary deliberation while preserving safety, accountability, and trust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Limitations</head><p>Several limitations frame the interpretation of our findings. First, standardized examinations sample knowledge differently from realworld practice; thus, high TXIT performance does not guarantee reliability in rare, ambiguous, or evolving scenarios <ref type="bibr" target="#b12">(13)</ref>. Second, the retrospective vignette cohort-while enriched by follow-up and therapy verification-may be affected by survivorship and documentation biases. Third, despite prespecified rubrics, interrater variability persisted, reflecting the complexity and plurality of oncologic decision-making <ref type="bibr" target="#b16">(17)</ref>. Fourth, GPT-5 was tested in isolation, without external tools; integration with guideline retrieval, dose-constraint engines, toxicity predictors, or trial databases could plausibly improve accuracy, safety, and auditability. Fifth, the TXIT and 60-case sets cover only a subset of radiation oncology knowledge, and cannot capture the full diversity of decision-making. Finally, model versioning, decoding parameters, and memory constraints may influence outputs; these were mitigated through fresh sessions and repeated runs, but residual variability remains.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>On TXIT benchmarks, GPT-4 outperformed GPT-3.5, and GPT-5 further increased accuracy to 92.8%, with strengths in statistics, CNS/ eye, physics, diagnostic methods, and toxicity, and persistent gaps in gynecology, brachytherapy, dosimetry, and trial-specific details.</p><p>More importantly, our novel 60-case benchmark of real-world oncologic scenarios showed that GPT-5 can generate coherent, comprehensive management drafts. Hallucinations were rare and not a substantive concern; limitations instead reflected occasional inaccuracies in guideline details, multimodal treatments, and nuanced adaptation of medical knowledge to complex clinical case descriptions.</p><p>In the near term, GPT-5 is best positioned for supervised applications: education and pre-board preparation; structured draft generation for tumor boards (with traceable evidence links and human sign off); and standardized documentation support. These uses exploit its strength in fast, coherent synthesis while keeping clinicians in control of final decisions.</p><p>Future applications may include semi-autonomous decision support and tighter integration with external tools (retrieval of upto-date guidelines and trials, dose-constraint engines, toxicity predictors). Realizing this will require prospective evaluation, robust safety guardrails (uncertainty disclosure, override pathways), auditability, and-where applicable-regulatory clearance. Until such conditions are met, GPT-5 should be deployed as an augmentative assistant rather than an autonomous decision-maker.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1</head><label>1</label><figDesc>FIGURE 1</figDesc><graphic coords="5,113.56,549.18,368.50,178.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 2</head><label>2</label><figDesc>FIGURE 2</figDesc><graphic coords="6,113.56,95.02,368.50,178.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIGURE 3</head><label>3</label><figDesc>FIGURE 3 Domain-wise accuracy across models. Symbols show mean accuracy and error bars indicate the SD across five runs for GPT-3.5, GPT-4, and GPT-5.</figDesc><graphic coords="6,127.73,534.33,340.16,194.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 4 TXIT</head><label>4</label><figDesc>FIGURE 4 TXIT accuracy by model. Symbols show mean accuracy and error bars indicate the standard deviation (SD) across five runs for GPT-3.5, GPT-4, and GPT-5.</figDesc><graphic coords="7,156.08,95.02,283.46,187.43" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIGURE 5</head><label>5</label><figDesc>FIGURE 5    </figDesc><graphic coords="7,113.56,561.26,368.50,167.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE 7</head><label>7</label><figDesc>FIGURE 7    </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>FIGURE 6</head><label>6</label><figDesc>FIGURE 6    </figDesc><graphic coords="8,113.50,551.34,368.50,166.73" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Sampling frame for the 60 clinical cases set.</figDesc><table><row><cell>Category</cell><cell>Subcategory</cell><cell>Number of cases</cell><cell>% of total</cell></row><row><cell></cell><cell>Glioblastoma (grade 4)</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Glioma (grade 2/3)</cell><cell></cell><cell>3.3%</cell></row><row><cell>Brain Tumor</cell><cell>Meningioma</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Vestibular schwannoma</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Paraganglioma</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Adjuvant-nodal positive</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Adjuvant-nodal negative</cell><cell></cell><cell>3.3%</cell></row><row><cell>Breast Cancer</cell><cell>Adjuvant-low risk</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Loco-regional recurrence</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>DCIS</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>NSCLC-definitive (stage III)</cell><cell></cell><cell>5.0%</cell></row><row><cell>Lung Cancer</cell><cell>NSCLC-SBRT</cell><cell></cell><cell>5.0%</cell></row><row><cell></cell><cell>NSCLC-reirradiation</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>SCLC</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Neoadjuvant-rectal cancer</cell><cell></cell><cell>6.7%</cell></row><row><cell>Rectal/Anal Cancer</cell><cell>Definitive-anal cancer</cell><cell></cell><cell>5.0%</cell></row><row><cell></cell><cell>Local recurrence</cell><cell></cell><cell>5.0%</cell></row><row><cell></cell><cell>Definitive-low risk</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Definitive-intermediate risk</cell><cell></cell><cell>3.3%</cell></row><row><cell>Prostate Cancer</cell><cell>Definitive-high risk</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Biochemical recurrence after RPE</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Local recurrence after RPE + EBRT</cell><cell></cell><cell>3.3%</cell></row><row><cell></cell><cell>Brain metastases</cell><cell></cell><cell>6.7%</cell></row><row><cell>Metastases</cell><cell>Palliative-bone metastases</cell><cell></cell><cell>5.0%</cell></row><row><cell></cell><cell>SBRT</cell><cell></cell><cell>5.0%</cell></row><row><cell cols="4">DCIS, ductal carcinoma in situ; NSCLC, non-small cell lung cancer; SCLC, small-cell lung</cell></row><row><cell cols="4">cancer; SBRT, stereotactic body radiotherapy; RPE, radical prostatectomy; EBRT, external</cell></row><row><cell>beam radiotherapy.</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">Category totals were balanced to support stratified analyses by site and radiooncologic</cell></row><row><cell>treatment indication.</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2</head><label>2</label><figDesc>Clinical cases: case-level outcomes across raters.</figDesc><table><row><cell>Metric</cell><cell cols="2">Estimate 95% CI</cell><cell>Notes</cell></row><row><cell>Correctness (mean/4)</cell><cell>3.24</cell><cell>3.11-3.38</cell><cell>mean across cases</cell></row><row><cell>Comprehensiveness (mean/4)</cell><cell>3.59</cell><cell>3.49-3.69</cell><cell>mean across cases</cell></row><row><cell>Hallucination (mean % per case)</cell><cell>10.0%</cell><cell>6.8-13.2%</cell><cell>proportion of raters per case</cell></row><row><cell>Any hallucination (per case)</cell><cell>40.0%</cell><cell>28.6-52.6%</cell><cell>24/60 cases</cell></row><row><cell>Majority/Strong/ Unanimous</cell><cell>0%/0%/0%</cell><cell>-</cell><cell>no case ≥2/4, ≥3/4, or 4/ 4</cell></row><row><cell>Inter-rater reliability (Fleiss')</cell><cell>0.083/0.016/ 0.111</cell><cell>-</cell><cell>correctness/compreh./ hallucination</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Oncology frontiersin.org</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Dinc ¸et al. 10.3389/fonc.2025.1695468 Frontiers in Oncology frontiersin.org</p></note>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) declared that financial support was not received for this work and/or its publication.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics statement</head><p>Ethical approval was not required for the studies involving humans because The use of retrospective patient data to construct anonymized oncologic case vignettes in this work was in accordance with the ethical standards of the institutional research committee and local legislation (BayKrG Art. 27) as well as with the 1964 Helsinki declaration and its later amendments. The studies were conducted in accordance with the local legislation and institutional requirements. The participants provided their written informed consent to participate in this study. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p><p>The author(s) declared that they were an editorial board member of Frontiers, at the time of submission. This had no impact on the peer review process and the final decision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Correction note</head><p>A correction has been made to this article. Details can be found at: 10.3389/fonc.2025.1766619.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generative AI statement</head><p>The author(s) declare that Generative AI was used in the creation of this manuscript. Grammar correction.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary material</head><p>The Supplementary Material for this article can be found online at: <ref type="url" target="https://www.frontiersin.org/articles/10.3389/fonc.2025.1695468/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fonc.2025.1695468/  full#supplementary-material</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY TABLE 1</head><p>Full list of benchmark cases included in the real-world oncologic decisionsupport evaluation. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Scaling laws for neural language models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mccandlish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Henighan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">B</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Child</surname></persName>
+		</author>
+		<idno>arXiv.</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaplan J, McCandlish S, Henighan T, Brown TB, Chess B, Child R, et al. Scaling laws for neural language models. arXiv. (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS Special Section on Deep Reinforcement Learning and Adaptive Dynamic Programming</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">F</forename><surname>Christiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leike</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Legg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Amodei</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tnnls.2017.2678899</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Neural Networks and Learning Systems</title>
+		<title level="j" type="abbrev">IEEE Trans. Neural Netw. Learning Syst.</title>
+		<idno type="ISSN">2162-237X</idno>
+		<idno type="ISSNe">2162-2388</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1016" to="1016" />
+			<date type="published" when="2017-04">2017</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Christiano PF, Leike J, Brown T, Martic M, Legg S, Amodei D. Deep reinforcement learning from human preferences. Adv Neural Inf Process Syst. (2017) 30.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Training language models to follow instructions with human feedback</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wainwright</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mishkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv Neural Inf Process Syst</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="27730" to="27744" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ouyang L, Wu J, Jiang X, Almeida D, Wainwright C, Mishkin P, et al. Training language models to follow instructions with human feedback. Adv Neural Inf Process Syst. (2022) 35:27730-44.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Outrageously large neural networks: The sparsely-gated mixture-of-experts layer</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mirhoseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Maziarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno>arXiv.</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shazeer N, Mirhoseini A, Maziarz K, Davis A, Le Q, Hinton G, et al. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv. (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Fedus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zoph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Mach Learn Res</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1" to="39" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fedus W, Zoph B, Shazeer N. Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity. J Mach Learn Res. (2022) 23:1-39.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Attention Is All You Need</title>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><surname>N.Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+		<idno type="DOI">10.65215/r5bs2d54</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv Neural Inf Process Syst</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Shenzhen Medical Academy of Research and Translation</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, et al. Attention is all you need. Adv Neural Inf Process Syst. (2017) 30:1-13.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Language models are few-shot learners</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ryder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Subbiah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv Neural Inf Process Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="1877" to="1901" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brown T, Mann B, Ryder N, Subbiah M, Kaplan JD, Dhariwal P, et al. Language models are few-shot learners. Adv Neural Inf Process Syst. (2020) 33:1877-901.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Chain-of-thought prompting elicits reasoning in large language models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schuurmans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bosma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chi</forename><forename type="middle">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv Neural Inf Process Syst</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="24824" to="24837" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wei J, Wang X, Schuurmans D, Bosma M, Xia F, Chi E, et al. Chain-of-thought prompting elicits reasoning in large language models. Adv Neural Inf Process Syst. (2022) 35:24824-37.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">BioBERT: a pre-trained biomedical language representation model for biomedical text mining</title>
+		<author>
+			<persName><forename type="first">Jinhyuk</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0003-4972-239X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wonjin</forename><surname>Yoon</surname></persName>
+			<idno type="ORCID">0000-0002-6435-548X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sungdong</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-0240-6210</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Donghyeon</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-8224-8354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sunkyu</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-0240-6210</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chan</forename><forename type="middle">Ho</forename><surname>So</surname></persName>
+			<idno type="ORCID">0000-0001-7633-1074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaewoo</forename><surname>Kang</surname></persName>
+			<idno type="ORCID">0000-0001-6798-9106</idno>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btz682</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1234" to="1240" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee J, Yoon W, Kim S, Kim D, Kim S, So CH, et al. Biobert: a pre-trained biomedical language representation model for biomedical text mining. Bioinformatics. (2020) 36:1234-40. doi: 10.1093/bioinformatics/btz682</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Domain-Specific Language Model Pretraining for Biomedical Natural Language Processing</title>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Tinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Lucas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoto</forename><surname>Usuyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tristan</forename><surname>Naumann</surname></persName>
+			<idno type="ORCID">0000-0003-2150-1747</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianfeng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hoifung</forename><surname>Poon</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3458754</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Computing for Healthcare</title>
+		<title level="j" type="abbrev">ACM Trans. Comput. Healthcare</title>
+		<idno type="ISSN">2691-1957</idno>
+		<idno type="ISSNe">2637-8051</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2021-10-15">2021</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gu Y, Tinn R, Cheng H, Lucas M, Usuyama N, Liu X, et al. Domain-specific language model pretraining for biomedical natural language processing. ACM Trans Computing Healthcare (HEALTH). (2021) 3:1-23.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Proceedings of the 2nd Clinical Natural Language Processing Workshop</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Alsentzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Boag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">D</forename><surname>Naumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/w19-19</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<publisher>Association for Computational Linguistics</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alsentzer E, Murphy JR, Boag W, Weng WH, Jin D, Naumann T, et al. Publicly available clinical bert embeddings. arXiv. (2019). doi: 10.18653/v1/W19-19</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Openai</surname></persName>
+		</author>
+		<idno>arXiv.</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="100" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Gpt-4 technical report</note>
+	<note type="raw_reference">OpenAI. Gpt-4 technical report. arXiv. (2023), 1-100.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Large language models encode clinical knowledge</title>
+		<author>
+			<persName><forename type="first">Karan</forename><surname>Singhal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shekoofeh</forename><surname>Azizi</surname></persName>
+			<idno type="ORCID">0000-0002-7447-6031</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Sara</forename><surname>Mahdavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyung</forename><forename type="middle">Won</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Scales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Tanwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><surname>Cole-Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Pfohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Perry</forename><surname>Payne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Seneviratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Gamble</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Kelly</surname></persName>
+			<idno type="ORCID">0000-0002-1246-844X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abubakr</forename><surname>Babiker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathanael</forename><surname>Schärli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aakanksha</forename><surname>Chowdhery</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Mansfield</surname></persName>
+			<idno type="ORCID">0000-0003-4969-0543</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dina</forename><surname>Demner-Fushman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Agüera Y Arcas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dale</forename><surname>Webster</surname></persName>
+			<idno type="ORCID">0000-0002-3023-8824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yossi</forename><surname>Matias</surname></persName>
+			<idno type="ORCID">0000-0003-3960-6002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katherine</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juraj</forename><surname>Gottweis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nenad</forename><surname>Tomasev</surname></persName>
+			<idno type="ORCID">0000-0003-1624-0220</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4079-8275</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alvin</forename><surname>Rajkomar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joelle</forename><surname>Barral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Semturs</surname></persName>
+			<idno type="ORCID">0000-0001-6108-2773</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Karthikesalingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Natarajan</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-023-06291-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">620</biblScope>
+			<biblScope unit="issue">7972</biblScope>
+			<biblScope unit="page" from="172" to="180" />
+			<date type="published" when="2023-07-12">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singhal K, Azizi S, Tu T, Mahdavi SS, Wei J, Chung HW, et al. Large language models encode clinical knowledge. Nature. (2023) 620:172-80. doi: 10.1038/s41586- 023-06291-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models</title>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">H</forename><surname>Kung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morgan</forename><surname>Cheatham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arielle</forename><surname>Medenilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Czarina</forename><surname>Sillos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorie</forename><surname>De Leon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camille</forename><surname>Elepaño</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Madriaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rimel</forename><surname>Aggabao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giezel</forename><surname>Diaz-Candido</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Maningo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Tseng</surname></persName>
+			<idno type="ORCID">0000-0003-0211-512X</idno>
+		</author>
+		<idno type="DOI">10.1371/journal.pdig.0000198</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS Digital Health</title>
+		<title level="j" type="abbrev">PLOS Digit Health</title>
+		<idno type="ISSNe">2767-3170</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">e0000198</biblScope>
+			<date type="published" when="2023-02-09">2023</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kung TH, Cheatham M, Medenilla A, Sillos C, De Leon L, Elepaño C, et al. Performance of chatgpt on usmle: potential for ai-assisted medical education using large language models. PloS digital Health. (2023) 2:e0000198. doi: 10.1371/ journal.pdig.0000198</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">ChatGPT: Can a Natural Language Processing Tool Be Trusted for Radiation Oncology Use?</title>
+		<author>
+			<persName><forename type="first">Behzad</forename><surname>Ebrahimi</surname></persName>
+			<idno type="ORCID">0000-0001-6907-7696</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Carlson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hania</forename><surname>Al-Hallaq</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijrobp.2023.03.075</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Radiation Oncology*Biology*Physics</title>
+		<title level="j" type="abbrev">International Journal of Radiation Oncology*Biology*Physics</title>
+		<idno type="ISSN">0360-3016</idno>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="977" to="983" />
+			<date type="published" when="2023-08">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ebrahimi B, Howard A, Carlson DJ, Al-Hallaq H. Chatgpt: can a natural language processing tool be trusted for radiation oncology use? Int J Radiat Oncology Biology Phys. (2023) 116:977-83.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Quality of Large Language Model Responses to Radiation Oncology Patient Care Questions</title>
+		<author>
+			<persName><forename type="first">Amulya</forename><surname>Yalamanchili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bishwambhar</forename><surname>Sengupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarita</forename><forename type="middle">O</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bharat</forename><forename type="middle">B</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">E</forename><surname>Abazeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Troy</forename><surname>Teo</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamanetworkopen.2024.4630</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Network Open</title>
+		<title level="j" type="abbrev">JAMA Netw Open</title>
+		<idno type="ISSNe">2574-3805</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">e244630</biblScope>
+			<date type="published" when="2024-04-02">2024</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yalamanchili A, Sengupta B, Song J, Lim S, Thomas TO, Mittal BB, et al. Quality of large language model responses to radiation oncology patient care questions. JAMA network Open. (2024) 7:e244630-e244630. doi: 10.1001/jamanetworkopen.2024.4630</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Large language models in oncology: a review</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rod</forename><surname>Parsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Swanson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John-Jose</forename><surname>Nunez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Critch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danielle</forename><forename type="middle">S</forename><surname>Bitterman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei-Fei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srinivas</forename><surname>Raman</surname></persName>
+			<idno type="ORCID">0000-0001-5688-9628</idno>
+		</author>
+		<idno type="DOI">10.1136/bmjonc-2025-000759</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMJ Oncology</title>
+		<title level="j" type="abbrev">bmjonc</title>
+		<idno type="ISSNe">2752-7948</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">e000759</biblScope>
+			<date type="published" when="2025-05">2025</date>
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen D, Parsa R, Swanson K, Nunez JJ, Critch A, Bitterman DS, et al. Large language models in oncology: a review. BMJ Oncol. (2025) 4:e000759. doi: 10.1136/ bmjonc-2025-000759</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Large language model integrations in cancer decision-making: a systematic review and meta-analysis</title>
+		<author>
+			<persName><forename type="first">Yuexing</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiwen</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinna</forename><forename type="middle">E</forename><surname>Löckenhoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marzyeh</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saleh</forename><surname>Kalantari</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41746-025-01824-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Digital Medicine</title>
+		<title level="j" type="abbrev">npj Digit. Med.</title>
+		<idno type="ISSNe">2398-6352</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">450</biblScope>
+			<date type="published" when="2025-07-17">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hao Y, Qiu Z, Holmes J, Löckenhoff CE, Liu W, Ghassemi M, et al. Large language model integrations in cancer decision-making: a systematic review and meta- analysis. NPJ Digital Med. (2025) 8:450. doi: 10.1038/s41746-025-01824-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Principles of artificial intelligence in radiooncology</title>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-2627-3077</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Gomaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Höfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Schubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udo</forename><surname>Gaipl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00066-024-02272-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Strahlentherapie und Onkologie</title>
+		<title level="j" type="abbrev">Strahlenther Onkol</title>
+		<idno type="ISSN">0179-7158</idno>
+		<idno type="ISSNe">1439-099X</idno>
+		<imprint>
+			<biblScope unit="volume">201</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="210" to="235" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang Y, Gomaa A, Hoefler D, Schubert P, Gaipl U, Frey B, et al. Principles of artificial intelligence in radiooncology. Strahlentherapie und Onkologie. (2025) 201:210-35. doi: 10.1007/s00066-024-02272-0</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A self-supervised multimodal deep learning approach to differentiate post-radiotherapy progression from pseudoprogression in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Gomaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pluvio</forename><surname>Stephan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharina</forename><surname>Breininger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnd</forename><surname>Dörfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Schnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Delev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Coras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna-Jasmina</forename><surname>Donaubauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charlotte</forename><surname>Schmitter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jenny</forename><surname>Stritzelberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siming</forename><surname>Bayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Schönecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieter</forename><forename type="middle">H</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Hau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udo</forename><forename type="middle">S</forename><surname>Gaipl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><forename type="middle">A</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-025-02026-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">17133</biblScope>
+			<date type="published" when="2025-05-17">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gomaa A, Huang Y, Stephan P, Breininger K, Frey B, Dörfler A, et al. A self- supervised multimodal deep learning approach to differentiate post-radiotherapy progression from pseudoprogression in glioblastoma. Sci Rep. (2025) 15:17133. doi: 10.1038/s41598-025-02026-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Deep learning for brain metastasis detection and segmentation in longitudinal MRI data</title>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Sommer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udo</forename><surname>Gaipl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luitpold</forename><forename type="middle">V</forename><surname>Distel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Weissmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Uder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><forename type="middle">A</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnd</forename><surname>Dörfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/mp.15863</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Physics</title>
+		<title level="j" type="abbrev">Medical Physics</title>
+		<idno type="ISSN">0094-2405</idno>
+		<idno type="ISSNe">2473-4209</idno>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="5773" to="5786" />
+			<date type="published" when="2022-07-22">2022</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang Y, Bert C, Sommer P, Frey B, Gaipl U, Distel LV, et al. Deep learning for brain metastasis detection and segmentation in longitudinal mri data. Med Phys. (2022) 49:5773-86. doi: 10.1002/mp.15863</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Deep learning for automatic head and neck lymph node level delineation provides expert-level accuracy</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Weissmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Roesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sina</forename><surname>Mansoorian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Horacio</forename><surname>Ayala Gaona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antoniu-Oreste</forename><surname>Gostian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Hecht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Lettmaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Deloch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udo</forename><forename type="middle">S</forename><surname>Gaipl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luitpold</forename><forename type="middle">Valentin</forename><surname>Distel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinrich</forename><surname>Iro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1115258</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">1115258</biblScope>
+			<date type="published" when="2023-02-16">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weissmann T, Huang Y, Fischer S, Roesch J, Mansoorian S, Ayala Gaona H, et al. Deep learning for automatic head and neck lymph node level delineation provides expert-level accuracy. Front Oncol. (2023) 13:1115258. doi: 10.3389/ fonc.2023.1115258</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Improving CBCT image quality to the CT level using RegGAN in esophageal cancer adaptive radiotherapy</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingke</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiurui</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanhua</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aihui</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenjiong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hengle</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyong</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongkang</forename><surname>Zhou</surname></persName>
+			<idno type="ORCID">0000-0001-5722-0432</idno>
+		</author>
+		<idno type="DOI">10.1007/s00066-022-02039-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Strahlentherapie und Onkologie</title>
+		<title level="j" type="abbrev">Strahlenther Onkol</title>
+		<idno type="ISSN">0179-7158</idno>
+		<idno type="ISSNe">1439-099X</idno>
+		<imprint>
+			<biblScope unit="volume">199</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="485" to="497" />
+			<date type="published" when="2023-01-23">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang H, Liu X, Kong L, Huang Y, Chen H, Ma X, et al. Improving cbct image quality to the ct level using reggan in esophageal cancer adaptive radiotherapy. Strahlentherapie und Onkologie. (2023) 199:485-97. doi: 10.1007/ s00066-022-02039-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Technical Note: A feasibility study on deep learning‐based radiotherapy dose calculation</title>
+		<author>
+			<persName><forename type="first">Yixun</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiguo</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steve</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/mp.13953</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Physics</title>
+		<title level="j" type="abbrev">Medical Physics</title>
+		<idno type="ISSN">0094-2405</idno>
+		<idno type="ISSNe">2473-4209</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="753" to="758" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xing Y, Nguyen D, Lu W, Yang M, Jiang S. A feasibility study on deep learning- based radiotherapy dose calculation. Med Phys. (2020) 47:753-8. doi: 10.1002/ mp.13953</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Deep learning for autosegmentation for radiotherapy treatment planning: State-of-the-art and novel perspectives</title>
+		<author>
+			<persName><forename type="first">Ayhan</forename><forename type="middle">Can</forename><surname>Erdur</surname></persName>
+			<idno type="ORCID">0009-0006-0290-0434</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Rusche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Scholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Kiechle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Óscar</forename><surname>Llorián-Salvador</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><forename type="middle">A</forename><surname>Buchner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mai</forename><forename type="middle">Q</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Etzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><surname>Weidner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Christin</forename><surname>Metz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedikt</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Schnabel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Rueckert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><forename type="middle">E</forename><surname>Combs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">C</forename><surname>Peeken</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00066-024-02262-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Strahlentherapie und Onkologie</title>
+		<title level="j" type="abbrev">Strahlenther Onkol</title>
+		<idno type="ISSN">0179-7158</idno>
+		<idno type="ISSNe">1439-099X</idno>
+		<imprint>
+			<biblScope unit="volume">201</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="236" to="254" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Erdur AC, Rusche D, Scholz D, Kiechle J, Fischer S, Llorian-Salvador O, et al. Deep learning for autosegmentation for radiotherapy treatment planning: State-of-the- art and novel perspectives. Strahlentherapie und Onkologie. (2025) 201:236-54. doi: 10.1007/s00066-024-02262-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Fine-tuning a local LLaMA-3 large language model for automated privacy-preserving physician letter generation in radiation oncology</title>
+		<author>
+			<persName><forename type="first">Yihao</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Gomaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Godehard</forename><surname>Lahmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Höfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Weissmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphaela</forename><surname>Voigt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Schubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charlotte</forename><surname>Schmitter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alina</forename><surname>Depardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/frai.2024.1493716</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Artificial Intelligence</title>
+		<title level="j" type="abbrev">Front. Artif. Intell.</title>
+		<idno type="ISSNe">2624-8212</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">1493716</biblScope>
+			<date type="published" when="2025-01-14">2025</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hou Y, Bert C, Gomaa A, Lahmer G, Höfler D, Weissmann T, et al. Fine-tuning a local llama-3 large language model for automated privacy-preserving physician letter generation in radiation oncology. Front Artif Intell. (2025) 7:1493716. doi: 10.3389/ frai.2024.1493716</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Interactive computer-aided diagnosis on medical image using large language models</title>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zihao</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0009-0001-8044-7683</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinggang</forename><surname>Shen</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s44172-024-00271-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications Engineering</title>
+		<title level="j" type="abbrev">Commun Eng</title>
+		<idno type="ISSNe">2731-3395</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">133</biblScope>
+			<date type="published" when="2024-09-17">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang S, Zhao Z, Ouyang X, Liu T, Wang Q, Shen D. Interactive computer-aided diagnosis on medical image using large language models. Commun Eng. (2024) 3:133. doi: 10.1038/s44172-024-00271-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Automated radiotherapy treatment planning guided by GPT-4Vision</title>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0001-6291-0550</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oscar</forename><surname>Pastor-Serrano</surname></persName>
+			<idno type="ORCID">0000-0002-2328-1429</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yizheng</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-8799-2580</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Gopaulchan</surname></persName>
+			<idno type="ORCID">0009-0004-1645-5912</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weixing</forename><surname>Liang</surname></persName>
+			<idno type="ORCID">0000-0001-9924-693X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Buyyounouski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erqi</forename><surname>Pollom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quynh-Thu</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Gensheimer</surname></persName>
+			<idno type="ORCID">0000-0002-4897-3843</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xing</surname></persName>
+			<idno type="ORCID">0000-0003-2536-5359</idno>
+		</author>
+		<idno type="DOI">10.1088/1361-6560/adf02c</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine &amp; Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">155002</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu S, Pastor-Serrano O, Chen Y, Gopaulchan M, Liang W, Buyyounouski M, et al. Automated radiotherapy treatment planning guided by gpt-4vision. Phys Med Biol. (2024). doi: 10.1088/1361-6560/adf02c</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Evaluating large language models on a highly-specialized topic, radiation oncology physics</title>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengliang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhen</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terence</forename><forename type="middle">T</forename><surname>Sio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">A</forename><surname>Mcgee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">B</forename><surname>Ashman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiajian</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1219326</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">1219326</biblScope>
+			<date type="published" when="2023-07-17">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Holmes J, Liu Z, Zhang L, Ding Y, Sio TT, McGee LA, et al. Evaluating large language models on a highly-specialized topic, radiation oncology physics. Front Oncol. (2023) 13:1219326. doi: 10.3389/fonc.2023.1219326</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A recent evaluation on the performance of LLMs on radiation oncology physics using questions of randomly shuffled options</title>
+		<author>
+			<persName><forename type="first">Peilong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengliang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dequan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiajian</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2025.1557064</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">1557064</biblScope>
+			<date type="published" when="2025-05-23">2025</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang P, Holmes J, Liu Z, Chen D, Liu T, Shen J, et al. A recent evaluation on the performance of llms on radiation oncology physics using questions of randomly shuffled options. Front Oncol. (2025) 15:1557064. doi: 10.3389/fonc.2025.1557064</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Role of Artificial Intelligence in Surgical Training by Assessing GPT-4 and GPT-4o on the Japan Surgical Board Examination With Text-Only and Image-Accompanied Questions: Performance Evaluation Study</title>
+		<author>
+			<persName><forename type="first">Hiroki</forename><surname>Maruyama</surname></persName>
+			<idno type="ORCID">0009-0008-7845-2281</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshitaka</forename><surname>Toyama</surname></persName>
+			<idno type="ORCID">0000-0003-0027-9681</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kentaro</forename><surname>Takanami</surname></persName>
+			<idno type="ORCID">0000-0002-0098-7760</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kei</forename><surname>Takase</surname></persName>
+			<idno type="ORCID">0000-0003-0931-9942</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takashi</forename><surname>Kamei</surname></persName>
+			<idno type="ORCID">0000-0003-1282-0463</idno>
+		</author>
+		<idno type="DOI">10.2196/69313</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JMIR Medical Education</title>
+		<title level="j" type="abbrev">JMIR Med Educ</title>
+		<idno type="ISSNe">2369-3762</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="e69313" to="e69313" />
+			<date type="published" when="2025-07-30">2025</date>
+			<publisher>JMIR Publications Inc.</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Maruyama H, Toyama Y, Takanami K, Takase K, Kamei T. Role of artificial intelligence in surgical training by assessing gpt-4 and gpt-4o on the Japan surgical board examination with text-only and image-accompanied questions: Performance evaluation study. JMIR Med Educ. (2025) 11:e69313. doi: 10.2196/69313</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">GPT-4’s capabilities for formative and summative assessments in Norwegian medicine exams—an intrinsic case study in the early phase of intervention</title>
+		<author>
+			<persName><forename type="first">Rune</forename><forename type="middle">J</forename><surname>Krumsvik</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fmed.2025.1441747</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Medicine</title>
+		<title level="j" type="abbrev">Front. Med.</title>
+		<idno type="ISSNe">2296-858X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">1441747</biblScope>
+			<date type="published" when="2025-04-10">2025</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Krumsvik RJ. Gpt-4&apos;s capabilities for formative and summative assessments in norwegian medicine exams-an intrinsic case study in the early phase of intervention. Front Med. (2025) 12:1441747. doi: 10.3389/fmed.2025.1441747</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Exploring Large Language Models for Specialist-Level Oncology Care</title>
+		<author>
+			<persName><forename type="first">Anil</forename><surname>Palepu</surname></persName>
+			<idno type="ORCID">0000-0002-4720-8787</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vikram</forename><surname>Dhillon</surname></persName>
+			<idno type="ORCID">0009-0006-5741-1080</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Polly</forename><surname>Niravath</surname></persName>
+			<idno type="ORCID">0000-0002-0998-0274</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei-Hung</forename><surname>Weng</surname></persName>
+			<idno type="ORCID">0000-0003-2232-0390</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Preethi</forename><surname>Prasad</surname></persName>
+			<idno type="ORCID">0000-0002-8090-0599</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khaled</forename><surname>Saab</surname></persName>
+			<idno type="ORCID">0000-0003-1427-0469</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ryutaro</forename><surname>Tanno</surname></persName>
+			<idno type="ORCID">0000-0002-8107-6730</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Cheng</surname></persName>
+			<idno type="ORCID">0009-0009-7778-5575</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hanh</forename><surname>Mai</surname></persName>
+			<idno type="ORCID">0009-0006-9648-8160</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ethan</forename><surname>Burns</surname></persName>
+			<idno type="ORCID">0000-0002-8905-2039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zainub</forename><surname>Ajmal</surname></persName>
+			<idno type="ORCID">0000-0002-3792-8975</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kavita</forename><surname>Kulkarni</surname></persName>
+			<idno type="ORCID">0000-0003-3583-0429</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Mansfield</surname></persName>
+			<idno type="ORCID">0000-0003-4969-0543</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dale</forename><surname>Webster</surname></persName>
+			<idno type="ORCID">0000-0002-3023-8824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joelle</forename><surname>Barral</surname></persName>
+			<idno type="ORCID">0009-0009-0432-5148</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juraj</forename><surname>Gottweis</surname></persName>
+			<idno type="ORCID">0009-0000-6348-5592</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Schaekermann</surname></persName>
+			<idno type="ORCID">0000-0002-1735-9680</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><forename type="middle">S</forename><surname>Mahdavi</surname></persName>
+			<idno type="ORCID">0000-0001-6823-598X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Natarajan</surname></persName>
+			<idno type="ORCID">0000-0001-7849-2074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Karthikesalingam</surname></persName>
+			<idno type="ORCID">0009-0000-4958-5976</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Tu</surname></persName>
+			<idno type="ORCID">0000-0001-9191-7938</idno>
+		</author>
+		<idno type="DOI">10.1056/aics2500025</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NEJM AI</title>
+		<title level="j" type="abbrev">NEJM AI</title>
+		<idno type="ISSN">2836-9386</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Palepu A, Dhillon V, Niravath P, Weng WH, Prasad P, Saab K, et al. Exploring large language models for specialist-level oncology care. arXiv. (2024). doi: 10.1056/ AIcs2500025</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Toward expert-level medical question answering with large language models</title>
+		<author>
+			<persName><forename type="first">Karan</forename><surname>Singhal</surname></persName>
+			<idno type="ORCID">0009-0001-0286-609X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Tu</surname></persName>
+			<idno type="ORCID">0000-0001-9191-7938</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juraj</forename><surname>Gottweis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rory</forename><surname>Sayres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ellery</forename><surname>Wulczyn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Amin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">R</forename><surname>Pfohl</surname></persName>
+			<idno type="ORCID">0000-0003-0551-9664</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><surname>Cole-Lewis</surname></persName>
+			<idno type="ORCID">0000-0002-7275-1810</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Darlene</forename><surname>Neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qazi</forename><forename type="middle">Mamunur</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Schaekermann</surname></persName>
+			<idno type="ORCID">0000-0002-1735-9680</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dev</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">H</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-4387-8740</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nigam</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+			<idno type="ORCID">0000-0001-9385-7158</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sami</forename><surname>Lachgar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">Andrew</forename><surname>Mansfield</surname></persName>
+			<idno type="ORCID">0000-0003-4969-0543</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sushant</forename><surname>Prakash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ewa</forename><surname>Dominowska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Agüera Y Arcas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nenad</forename><surname>Tomašev</surname></persName>
+			<idno type="ORCID">0000-0003-1624-0220</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4079-8275</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Renee</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Semturs</surname></persName>
+			<idno type="ORCID">0000-0001-6108-2773</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Sara</forename><surname>Mahdavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joelle</forename><forename type="middle">K</forename><surname>Barral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dale</forename><forename type="middle">R</forename><surname>Webster</surname></persName>
+			<idno type="ORCID">0000-0002-3023-8824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yossi</forename><surname>Matias</surname></persName>
+			<idno type="ORCID">0000-0003-3960-6002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shekoofeh</forename><surname>Azizi</surname></persName>
+			<idno type="ORCID">0000-0002-7447-6031</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Karthikesalingam</surname></persName>
+			<idno type="ORCID">0009-0000-4958-5976</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Natarajan</surname></persName>
+			<idno type="ORCID">0000-0001-7849-2074</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-03423-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="943" to="950" />
+			<date type="published" when="2025-01-08">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singhal K, Tu T, Gottweis J, Sayres R, Wulczyn E, Amin M, et al. Toward expert- level medical question answering with large language models. Nat Med. (2025) 31:943- 50. doi: 10.1038/s41591-024-03423-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Exploring the Capabilities and Limitations of Large Language Models for Radiation Oncology Decision Support</title>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marlen</forename><surname>Haderlein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Lettmaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-2627-3077</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ijrobp.2023.11.062</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Radiation Oncology*Biology*Physics</title>
+		<title level="j" type="abbrev">International Journal of Radiation Oncology*Biology*Physics</title>
+		<idno type="ISSN">0360-3016</idno>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="900" to="904" />
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Putz F, Haderlein M, Lettmaier S, Semrau S, Fietkau R, Huang Y. Exploring the capabilities and limitations of large language models for radiation oncology decision support. Int J Radiat Oncology Biology Phys. (2024) 118:900-4. doi: 10.1016/ j.ijrobp.2023.11.062</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Constitutional ai: Harmlessness from ai feedback</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kadavath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kundu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kernion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jones</surname></persName>
+		</author>
+		<idno>arXiv.</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bai Y, Kadavath S, Kundu S, Askell A, Kernion J, Jones A, et al. Constitutional ai: Harmlessness from ai feedback. arXiv. (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<author>
+			<persName><surname>Openai</surname></persName>
+		</author>
+		<ptr target="https://openai.com/index/gpt-5-system-card/" />
+		<title level="m">Gpt-5 system card</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">OpenAI. In: Gpt-5 system card. Available online at: https://openai.com/index/ gpt-5-system-card/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Openai</surname></persName>
+		</author>
+		<ptr target="https://openai.com/research/index/" />
+		<imprint/>
+	</monogr>
+	<note>Gpt-5</note>
+	<note type="raw_reference">OpenAI. In: Gpt-5. Available online at: https://openai.com/research/index/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Benchmarking ChatGPT-4 on a radiation oncology in-training exam and Red Journal Gray Zone cases: potentials and challenges for ai-assisted medical education and decision making in radiation oncology</title>
+		<author>
+			<persName><forename type="first">Yixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Gomaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Semrau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marlen</forename><surname>Haderlein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Lettmaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Weissmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><surname>Grigo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hassen</forename><forename type="middle">Ben</forename><surname>Tkhayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udo</forename><surname>Gaipl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luitpold</forename><surname>Distel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Fietkau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Bert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Putz</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1265024</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">1265024</biblScope>
+			<date type="published" when="2023-09-14">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang Y, Gomaa A, Semrau S, Haderlein M, Lettmaier S, Weissmann T, et al. Benchmarking chatgpt-4 on a radiation oncology in-training exam and red journal gray zone cases: potentials and challenges for ai-assisted medical education and decision making in radiation oncology. Front Oncol. (2023) 13:1265024. doi: 10.3389/ fonc.2023.1265024</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Analysis of the Radiation Oncology In-Training Examination Content Using a Clinical Care Path Conceptual Framework</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">R</forename><surname>Rogacki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanley</forename><surname>Gutiontov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chelain</forename><forename type="middle">R</forename><surname>Goodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Jeans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasmin</forename><surname>Hasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">W</forename><surname>Golden</surname></persName>
+		</author>
+		<idno type="DOI">10.37549/aro1287</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Radiation Oncology</title>
+		<title level="j" type="abbrev">ARO</title>
+		<idno type="ISSNe">2334-5446</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="41" to="51" />
+			<date type="published" when="2021-09-01">2021</date>
+			<publisher>Anderson Publishing, Ltd.</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rogacki K, Gutiontov S, Goodman C, Jeans E, Hasan Y, Golden DW. Analysis of the radiation oncology in-training examination content using a clinical care path conceptual framework. Appl Radiat Oncol. (2021) 10:41-51. doi: 10.37549/ARO1287</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Adjuvant chemoradiotherapy versus radiotherapy alone in women with high-risk endometrial cancer (PORTEC-3): patterns of recurrence and post-hoc survival analysis of a randomised phase 3 trial</title>
+		<author>
+			<persName><forename type="first">Stephanie</forename><forename type="middle">M</forename><surname>De Boer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><forename type="middle">E</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Mileshkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dionyssios</forename><surname>Katsaros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Bessette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Haie-Meder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petronella</forename><forename type="middle">B</forename><surname>Ottevanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">A</forename><surname>Ledermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pearly</forename><surname>Khaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romerai</forename><surname>D'amico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Fyles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Helene</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ina</forename><forename type="middle">M</forename><surname>Jürgenliemk-Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><forename type="middle">C</forename><surname>Kitchener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><forename type="middle">W</forename><surname>Nijman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Godfrey</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>Gribaudo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diane</forename><surname>Provencher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chantal</forename><surname>Hanzen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roy</forename><forename type="middle">F</forename><surname>Kruitwagen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><forename type="middle">T H B M</forename><surname>Smit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naveena</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viet</forename><surname>Do</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Lissoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remi</forename><forename type="middle">A</forename><surname>Nout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Feeney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><forename type="middle">W</forename><surname>Verhoeven-Adema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hein</forename><surname>Putter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carien</forename><forename type="middle">L</forename><surname>Creutzberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mccormack</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Whitmarsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Allerton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gregory</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Symonds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Hoskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Adusumalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Anand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lchw</forename><surname>Lutgens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hollema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Snyers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Westerveld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Jobsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Slot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Mens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">C</forename><surname>Stam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Triest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Van Der Steen-Banasik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaj</forename><surname>De Winter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Quinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kolodziej</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pyman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Capp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fossati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Colombo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carinelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ferrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Artioli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Davidson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Mclachlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ghatage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pvc</forename><surname>Rittenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Souhami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Duvillard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Berton-Rigaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tubiana-Mathieu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1470-2045(19)30395-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Oncology</title>
+		<title level="j" type="abbrev">The Lancet Oncology</title>
+		<idno type="ISSN">1470-2045</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1273" to="1285" />
+			<date type="published" when="2019-09">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">de Boer SM, Powell ME, Mileshkin L, Katsaros D, Bessette P, Haie-Meder C, et al. Adjuvant chemoradiotherapy versus radiotherapy alone in women with high-risk endometrial cancer (portec-3): patterns of recurrence and post-hoc survival analysis of a randomised phase 3 trial. Lancet Oncol. (2019) 20:1273-85. doi: 10.1016/S1470-2045 (19)30395-X</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Outcomes of Observation vs Stereotactic Ablative Radiation for Oligometastatic Prostate Cancer</title>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">Yue</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Deek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noura</forename><surname>Radwan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Su</forename><forename type="middle">Jin</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><forename type="middle">S</forename><surname>Antonarakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">P</forename><surname>Rowe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><forename type="middle">E</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Gorin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Curtiland</forename><surname>Deville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">C</forename><surname>Greco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hailun</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">R</forename><surname>Denmeade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Channing</forename><forename type="middle">J</forename><surname>Paller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shirl</forename><surname>Dipasquale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Theodore</forename><forename type="middle">L</forename><surname>Deweese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Carducci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">J</forename><surname>Pienta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">G</forename><surname>Pomper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">P</forename><surname>Dicker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><forename type="middle">A</forename><surname>Eisenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ash</forename><forename type="middle">A</forename><surname>Alizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Diehn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phuoc</forename><forename type="middle">T</forename><surname>Tran</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamaoncol.2020.0147</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Oncology</title>
+		<title level="j" type="abbrev">JAMA Oncol</title>
+		<idno type="ISSN">2374-2437</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">650</biblScope>
+			<date type="published" when="2020-05-01">2020</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phillips R, Shi WY, Deek M, Radwan N, Lim SJ, Antonarakis ES, et al. Outcomes of observation vs stereotactic ablative radiation for oligometastatic prostate cancer: the oriole phase 2 randomized clinical trial. JAMA Oncol. (2020) 6:650-9. doi: 10.1001/ jamaoncol.2020.0147</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The Eighth Edition &lt;scp&gt;AJCC&lt;/scp&gt; Cancer Staging Manual: Continuing to build a bridge from a population‐based to a more “personalized” approach to cancer staging</title>
+		<author>
+			<persName><forename type="first">Mahul</forename><forename type="middle">B</forename><surname>Amin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederick</forename><forename type="middle">L</forename><surname>Greene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">B</forename><surname>Edge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carolyn</forename><forename type="middle">C</forename><surname>Compton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">E</forename><surname>Gershenwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">K</forename><surname>Brookland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donna</forename><forename type="middle">M</forename><surname>Gress</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Byrd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">P</forename><surname>Winchester</surname></persName>
+		</author>
+		<idno type="DOI">10.3322/caac.21388</idno>
+	</analytic>
+	<monogr>
+		<title level="j">CA: A Cancer Journal for Clinicians</title>
+		<title level="j" type="abbrev">CA A Cancer J Clinicians</title>
+		<idno type="ISSN">0007-9235</idno>
+		<idno type="ISSNe">1542-4863</idno>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="93" to="99" />
+			<date type="published" when="2017-01-17">2017</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amin MB, Greene FL, Edge SB, Compton CC, Gershenwald JE, Brookland RK, et al. The eighth edition ajcc cancer staging manual: continuing to build a bridge from a population-based to a more &quot;personalized&quot; approach to cancer staging. CA: Cancer J Clin. (2017) 67:93-9. doi: 10.3322/caac.21388</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Patient- and clinician-based evaluation of large language models for patient education in prostate cancer radiotherapy</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Trapp</surname></persName>
+			<idno type="ORCID">0000-0002-5382-5933</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nina</forename><surname>Schmidt-Hegemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Keilholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">Frederike</forename><surname>Brose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><forename type="middle">N</forename><surname>Marschner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Schönecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><forename type="middle">H</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana-Coralia</forename><surname>Dehelean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maya</forename><surname>Rottler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinah</forename><surname>Konnerth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claus</forename><surname>Belka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefanie</forename><surname>Corradini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Rogowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00066-024-02342-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Strahlentherapie und Onkologie</title>
+		<title level="j" type="abbrev">Strahlenther Onkol</title>
+		<idno type="ISSN">0179-7158</idno>
+		<idno type="ISSNe">1439-099X</idno>
+		<imprint>
+			<biblScope unit="volume">201</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="333" to="342" />
+			<date type="published" when="2025-01-10">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Trapp C, Schmidt-Hegemann N, Keilholz M, Brose SF, Marschner SN, Schönecker S, et al. Patient-and clinician-based evaluation of large language models for patient education in prostate cancer radiotherapy. Strahlentherapie und Onkologie. (2025) 201:333-42. doi: 10.1007/s00066-024-02342-3</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Large language model AI chatbots require approval as medical devices</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Gilbert</surname></persName>
+			<idno type="ORCID">0000-0002-1997-1689</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><surname>Harvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Melvin</surname></persName>
+			<idno type="ORCID">0000-0001-6370-4177</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Vollebregt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Wicks</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-023-02412-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2396" to="2398" />
+			<date type="published" when="2023-06-30">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gilbert S, Harvey H, Melvin T, Vollebregt E, Wicks P. Large language model ai chatbots require approval as medical devices. Nat Med. (2023) 29:2396-8. doi: 10.1038/ s41591-023-02412-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Using ai-generated suggestions from chatgpt to optimize clinical decision support</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Wanderer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Turer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Nelson</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2025.1695468</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Am Med Inf Assoc</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1237" to="1245" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu S, Wright AP, Patterson BL, Wanderer JP, Turer RW, Nelson SD, et al. Using ai-generated suggestions from chatgpt to optimize clinical decision support. J Am Med Inf Assoc. (2023) 30:1237-45. doi: 10.1093/jamia/ocad072 Dinc ¸et al. 10.3389/fonc.2025.1695468</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">SwinCLNet: a robust framework for brain tumor segmentation via shifted window attention and cross-scale fusion</title>
+				<funder ref="#_XYrcxRG">
+					<orgName type="full">National Research Foundation of Korea</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Ministry of Education</orgName>
+				</funder>
+				<funder ref="#_Hw2g6rw">
+					<orgName type="full">Korean government (MSIT)</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Bio&amp; Medical Technology Development Program of the National Research Foundation</orgName>
+					<orgName type="abbreviated">NRF</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Glocal University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-12">2025-12-12</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Seyong</forename><surname>Jin</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Artificial Intelligence , Sejong University , Seoul 05006 , South Korea.</note>
+								<orgName type="department">Artificial Intelligence</orgName>
+								<orgName type="institution">Sejong University</orgName>
+								<address>
+									<postCode>05006</postCode>
+									<settlement>Seoul</settlement>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yeonwoo</forename><surname>Noh</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> College of Medicine , Gachon University , Incheon 21936 , South Korea.</note>
+								<orgName type="department">College of Medicine</orgName>
+								<orgName type="institution">Gachon University</orgName>
+								<address>
+									<postCode>21936</postCode>
+									<settlement>Incheon</settlement>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hyeonjoon</forename><surname>Moon</surname></persName>
+							<email>hmoon@sju.ac.kr</email>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Computer Science and Engineering , Sejong University , Seoul 05006 , South Korea.</note>
+								<orgName type="department">Computer Science and Engineering</orgName>
+								<orgName type="institution">Sejong University</orgName>
+								<address>
+									<postCode>05006</postCode>
+									<settlement>Seoul</settlement>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Minwoo</forename><surname>Lee</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Neurology , Hallym University Sacred Heart Hospital , Anyang 14068 , South Korea.</note>
+								<orgName type="department">Neurology</orgName>
+								<orgName type="institution">Hallym University Sacred Heart Hospital</orgName>
+								<address>
+									<postCode>14068</postCode>
+									<settlement>Anyang</settlement>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Wonjong</forename><surname>Noh</surname></persName>
+							<email>wonjong.noh@hallym.ac.kr</email>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> School of Software , Hallym University , Chuncheon 24252 , South Korea.</note>
+								<orgName type="department">School of Software</orgName>
+								<orgName type="institution">Hallym University</orgName>
+								<address>
+									<postCode>24252</postCode>
+									<settlement>Chuncheon</settlement>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">SwinCLNet: a robust framework for brain tumor segmentation via shifted window attention and cross-scale fusion</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Scientific Reports</title>
+						<title level="j" type="abbrev">Sci Rep</title>
+						<idno type="eISSN">2045-2322</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">16</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-12-12" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">48195ED175BF52FA846240E756D3F84C</idno>
+					<idno type="DOI">10.1038/s41598-025-31937-8</idno>
+					<note type="submission">Received: 10 September 2025; Accepted: 5 December 2025 Accession</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T21:27+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>3D-U-Net</term>
+					<term>Brain tumor segmentation</term>
+					<term>Cross-scale dual fusion</term>
+					<term>Large-kernel attention</term>
+					<term>Medical imaging</term>
+					<term>Shi ed window self-attention</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Despite significant breakthroughs in deep learning, brain tumor segmentation remains a challenging task due to the unclear tumor borders and the high degree of accuracy required. To overcome these concerns, we propose a new segmentation model, SwinCLNet, which integrates window-based multi-head self-attention, shifted window multi-head self-attention, cross-scale dual fusion, and residual large-kernel attention into the 3D U-Net architecture. First, the encoder employs the window-based multi-head and shifted window multi-head self-attention modules to capture rich contextual information. Second, the decoder employs the cross-scale dual fusion module, which precisely complements tumor boundary representation by fusing these enhanced features. Third, the SwinCLNet employs the residual large-kernel attention module over skip connections, using large-kernel attention to expand the receptive field and capture long-range spatial dependencies. Testing using the BraTS2023 and 2024 datasets demonstrated that the proposed SwinCLNet model has excellent performance in terms of the Dice score and Hausdorff distance for all brain tumor segmentation areas. In particular, the proposed model increased the average Dice score by approximately 4.53% and reduced the Hausdorff distance 95th percentile by approximately 30.89% compared with the average of benchmark models. These data demonstrate that the SwinCLNet model is particularly efÏcient in the difÏcult tumor core and enhancing tumor regions.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Motivations and contributions</head><p>In this study, we specifically aimed to address the accuracy and reliability of a new model for the brain tumor segmentation. is new hybrid segmentation model combines the benefits of a CNN-based structure and a transformer-based structure. e main contributions of this study are summarized as follows.</p><p>• First, we proposed a novel segmentation model, SwinCLNet, which is based on 3D U-Net and optimizes both local and global information processing. is was accomplished by methodically incorporating an advanced fusion block and a hybrid attention mechanism into the encoder-decoder framework. • Second, we designed a new attention block that alternates between window-based multi-head self-attention (W-MSA) and shi ed window-based multi-head self-attention (SW-MSA), effectively capturing both local and global contextual information through cross-window information exchange. is alternating approach overcomes the limited receptive field of local attention while preserving its computational efficiency. • ird, we developed a new cross-scale dual fusion (CSDF) module, which fuses multiple resolution features in the decoder, enhancing boundary precision and overall segmentation performance. By adaptively aligning features from the upsampling path and the skip connection, this module improves the accuracy of tumor boundary reconstruction.</p><p>• Fourth, we designed a new residual large-kernel attention (RLKA) module and applied it to the skip connections, further enhancing the feature representation by expanding the receptive field. With its residual connection, the RLKA module improves features without running the risk of information loss. • Finally, the proposed approach provides a useful hybrid technique that successfully exploits the robust feature integration of CSDF module, the broad receptive field of the RLKA module, and the detailed feature extraction of W-MSA/SW-MSA blocks. rough extensive evaluations using the BraTS2023 and 2024 datasets, we showed that the proposed model, SwinCLNet, achieves highly competitive segmentation performance across all tumor subregions in terms of the Dice score and Hausdorff distance 95th percentile (HD95), outperforming the benchmarked models. e proposed model recorded the average Dice score 88.31% which is an increase of approximately 4.53% and reduced the HD95 by approximately 30.89% compared with the average of benchmark models. e model's efficacy was especially noticeable in the difficult tumor core (TC) and enhancing tumor (ET) regions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature review 2D U-Net-based architectures</head><p>Recent research has focused on evolving the core U-Net architecture itself, particularly for 2D segmentation tasks. For example, Xiong et al. <ref type="bibr" target="#b4">5</ref> suggested leveraging large-scale foundation models by integrating the powerful Segment Anything Model (SAM) <ref type="bibr" target="#b5">6</ref> as a pre-trained encoder to enhance feature extraction capabilities for both natural and medical images. Also, there is a research focusing on modifying the skip-connection in 2D U-Net design. For example, Peng et al. <ref type="bibr" target="#b6">7</ref> introduced U-Net v2, which re-examines the design of skip connections to optimize feature fusion and gradient flow by infusing semantic information from high-level features into lowlevel features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>3D U-Net-based architectures</head><p>A prominent 3D U-Net 8 variant, nnU-Net 2 , automatically adapts preprocessing, architecture, and training configurations based on dataset characteristics to achieve strong performance across various benchmarks. Fu et al. <ref type="bibr" target="#b8">9</ref> designed a modality-specific, multi-encoder nnU-Net by independently processing each magnetic resonance imaging (MRI) modality before fusion, thereby significantly improving the segmentation accuracy for primary brain lymphoma in post-contrast T1-weighted clinical MRI. Spronck et al. <ref type="bibr" target="#b9">10</ref> adapted nnU-Net for whole-slide image segmentation by incorporating domain-specific hyperparameter tuning, pathology-guided color augmentation, an efficient whole-slide imaging inference pipeline, and uncertainty-aware inference, thereby achieving SOTA performance in computational pathology challenges. While 3D U-Net architectures built from stacked 3D convolutions 8 provide a strong baseline, their inherently local receptive fields limit their ability to capture global contextual information. is emerges as a core shortcoming on the BraTS dataset. BraTS tumors are characterized by high heterogeneity, irregular shapes, and ambiguous boundaries between multiple subregions such as enhancing tumor, necrosis, and peritumoral edema. Distinguishing these complex and o en infiltrating structures requires modeling long-range spatial dependencies across the entire volume, which standard CNNs, with their limited receptive fields, struggle to capture effectively. <ref type="bibr" target="#b10">11,</ref><ref type="bibr" target="#b11">12</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transformer-based architectures</head><p>Recently, transformer-based architectures have emerged as alternatives to convolutional models owing to their superior capability in modeling global contextual information. TransUNet 3 pioneered the integration of vision transformers with U-Net by replacing the encoder with a transformer to leverage long-range feature dependencies. Chowdary et al. <ref type="bibr" target="#b12">13</ref> proposed a transformer-based classification architecture by introducing dualpath local-global transformer and spatial attention fusion modules, which, when combined, enhance feature extraction at both the local and global levels, significantly improving the classification performance across multiple medical imaging datasets. Wang et al. <ref type="bibr" target="#b13">14</ref> developed a hybrid model combining transformer blocks with convolutional encoders and downsamplers, using cross-phase tokens for multi-phase computed tomography (CT) fusion and a novel preprocessing unit to address annotation limitations, achieving approximately 90.9% accuracy in liver lesion classification. Oghbaie et al. <ref type="bibr" target="#b14">15</ref> proposed an end-to-end transformer-based classification framework that handles variable-length volumetric medical data by introducing a volume-wise resolution randomization strategy and slice-level positional embedding, achieving a 21.96% improvement in the balanced accuracy for retinal optical coherence tomography classification tasks. Liao et al. <ref type="bibr" target="#b15">16</ref> introduced the transformer-based annotation bias-aware (TAB) model, which employs learnable query-based transformers and multivariate Gaussian modeling to explicitly account for annotator preference and stochastic errors, thereby mitigating annotation bias and improving segmentation consistency on multi-annotator OD/OC datasets. Yang et al. <ref type="bibr" target="#b16">17</ref> proposed DAST, a differentiable neural architecture search method that jointly optimizes transformer and convolutional operations under graphics processing unit memory constraints, uncovering optimal layer combinations and achieving SOTA performance on the KiTS'19 kidney CT segmentation challenge. Similarly, Zhou et al. <ref type="bibr" target="#b17">18</ref> proposed nnFormer, which integrates interleaved Transformer blocks within the robust nnU-Net framework to effectively capture both local and global dependencies in 3D volumetric data. Although transformer models can successfully learn the global contextual information, current transformers incur significant computational costs for high-resolution imaging such as 3D MRI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Mamba-based architectures</head><p>Recently, State-Space Models (SSMs), particularly Mamba, have emerged as a compelling alternative to Transformers for modeling long-range dependencies. Transformers are limited by quadratic complexity (O(N 2 )) with sequence length. However, Mamba-based architectures achieve linear complexity (O(N)) while effectively capturing global context using a selective SSM mechanism. is efficiency is particularly advantageous for high-resolution 3D medical images. Ma et al. <ref type="bibr" target="#b18">19</ref> , for instance, embeds Mamba blocks within a U-Net structure to enhance long-range feature capture for biomedical images. Gong et al. <ref type="bibr" target="#b19">20</ref> specifically adapts this concept for 3D volumetric segmentation, combining Mamba's efficiency with the robust isensee et al. <ref type="bibr" target="#b1">2</ref> framework. Liu et al. <ref type="bibr" target="#b20">21</ref> explore VMamba as a general-purpose vision backbone. Ruan et al. <ref type="bibr" target="#b21">22</ref> explore VM-UNet as a U-shape architecture for medical image segmentation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hybrid architectures</head><p>Some studies have utilized both U-Net and CNN or transformers to balance local features with long-range dependencies in complex 3D data. Ma et al. <ref type="bibr" target="#b22">23</ref> improved the performance of U-Net by designing encoders, 3D channels, and spatial attention supervision modules based on 3D shi local and global transformers. Liu et al. <ref type="bibr" target="#b23">24</ref> attempted to improve performance by partially using a transformer-based attraction mechanism while preserving the topology of U-Net. Hao et al. <ref type="bibr" target="#b3">4</ref> designed a memory-efficient transformer-based segmentation architecture by introducing a depthwise separable shu ed convolution (DSPConv), an efficient vector aggregation attention, and a serial multi-head attention module, significantly reducing parameter count, memory usage, and computational complexity while preserving accuracy on the ACDC and Hippocampus datasets. Phan et al. <ref type="bibr" target="#b24">25</ref> proposed UNest, a transformer architecture for unpaired medical image synthesis that incorporates structural inductive biases by leveraging foreground masks from a segment-anything model-based extractor and applying structural attention within anatomically relevant regions, resulting in up to 19.30% improvements across MRI, CT, and positron emission tomography (PET) synthesis tasks. Yang et al. <ref type="bibr" target="#b25">26</ref> proposed a region attention transformer, which dynamically segments the input into semantic regions using the segment-anything model and applies region-based multi-head self-attention (MHA) within those partitions. is reduces interference from irrelevant image areas and introduces a focal region loss to enhance restoration in high-difficulty regions, achieving SOTA results in PET synthesis, CT denoising, and pathology super-resolution. Lin et al. <ref type="bibr" target="#b26">27</ref> introduced a dynamic self-attention sparsification method for medical transformers by grouping similar feature tokens into feature prototypes during attention computation. is dependency distillation mechanism significantly reduces computational complexity while improving model performance as a plug-and-play module. Roy et al. <ref type="bibr" target="#b27">28</ref> developed MedNeXt, a fully ConvNeXt-inspired 3D encoder--decoder architecture with large-kernel residual blocks and compound scaling, which mirrors transformer-like performance improvements in a convolutional framework. is model achieved SOTA segmentation accuracy on multiple CT and MRI tasks. Xiao et al. <ref type="bibr" target="#b28">29</ref> , for instance, is a hybrid model balancing CNN local features with Transformer global modeling. It enhances the U-Net encoder with residual connections and replaces skip connections with a dual attention mechanism to better capture dependencies, while an efficient channel attention fusion method in the decoder suppresses redundant features. Following a similar hybrid philosophy, Zhang et al. <ref type="bibr" target="#b29">30</ref> introduced CI-UNet, which utilizes ConvNeXt as its encoder to amalgamate computational efficiency and feature extraction, while an advanced cross-dimensional attention mechanism captures intricate global context. Similarly, LPF-Net 31 addresses the limitations of pure CNNs and Transformers by proposing a dual-branch encoder to extract both local details via a CNN and global context dependencies via a Swin Transformer, which are then combined using a progressive fusion strategy. Some hybrid models focus on sophisticated feature fusion to handle boundary segmentation challenges in multi-scale region. Xiao et al. <ref type="bibr" target="#b31">32</ref> , for example, proposes a deep fusion of weak edge and context features. It uses a novel weak edge detection module (Otsu-WD) alongside a parallel GRU-based network to preserve edge context. A maximum index fusion mechanism then merges these details with multilayer context features, preventing their loss and achieving clearer boundary segmentation. Zhang et al. <ref type="bibr" target="#b32">33</ref> proposed a unique approach for meningioma grading by integrating ViT and CNN architectures. eir model combines radiomics and deep learning to leverage the potential value of peritumoral edema (PTE) regions, enhancing grading accuracy. PIF-Net <ref type="bibr" target="#b33">34</ref> uses hierarchical parallel paths with dense cross-path connections to enhance feature representation and filter ambiguities. DFPNet 35 also addresses complex boundaries by using two subnetworks: a top-down feature steered network to capture context and a bottom-up border network to optimize boundary features.</p><p>Other hybrid models focus specifically on redesigning the skip connections to improve feature fusion. Zhang et al. <ref type="bibr" target="#b35">36</ref> , for instance, argue that traditional skip connections may limit contextual information capture. eir proposed MRC-TransUNet combines a lightweight ViT with a U-Net, using skip connections only in the first layer and applying reciprocal attention modules in subsequent layers to compensate for detail loss. Similarly, Wen et al. <ref type="bibr" target="#b36">37</ref> enhance the skip pathways in their 3D hybrid model, MRCM-UCTransNet, by integrating a multiscale residual convolution module (MRCM) into the UCTransNet architecture to improve feature extraction.</p><p>Together with these advanced segmentation architectures, advancements in optimization for tensorbased medical data include the Step Gravitational Search Algorithm (SGSA) proposed by Fan et al. <ref type="bibr" target="#b37">38</ref> . is metaheuristic addresses inefficient training and high feature redundancy in Support Tensor Train Machines (STTM) by performing synchronous feature selection and parameter optimization on MRI datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>Overall proposed model architecture e overall structure of the proposed SwinCLNet model is illustrated in Fig. <ref type="figure">1</ref>. e proposed model adopts a five-stage encoder-decoder structure based on 3D U-Net. e core of this model is the systematic integration of the proposed W-MSA/SW-MSA, RLKA, and CSDF modules into the encoder, skip connection, and decoder paths, respectively, to maximize feature representation and fusion capabilities. e encoder gradually downsamples the inputted 3D volume and extracts hierarchical features. At each of the five encoder stages, the feature's representation is enhanced by a key attention mechanism that alternates between W-MSA and SW-MSA. e W-MSA captures the rich local context, while the SW-MSA enables cross-window connections to learn the global context. e output of this attention block then passes through the RLKA module in the skip connection path. e RLKA efficiently captures long-range dependencies to further enrich features, and this highly refined final feature map is delivered to the decoder. e decoder gradually restores the resolution of the feature map through upsampling with each decoder stage using the CSDF module. e CSDF effectively fuses features delivered from the lower layer with features delivered from RLKA, and finally, it passes the segmentation layer through to generate the tumor subregion prediction result for each voxel.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SW-MSA/W-MSA blocks</head><p>e core of the proposed model's encoder is a 3D window-based self-attention mechanism designed to efficiently capture both local and global contextual information. is is achieved by alternating between two block types, SW-MSA and W-MSA, as shown in Fig. <ref type="figure">2</ref>. By alternating these W-MSA and SW-MSA blocks, the model effectively learns a rich hierarchy of local and global features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SW-MSA</head><p>To enable cross-window connections, the SW-MSA block applies a full self-attention process on a cyclically shi ed version of the feature map. e detailed operation is as follows:</p><p>1. Cyclic Shi . Before any other operation, the input feature map is cyclically shi ed along the depth, height, and width axes by half the window size,</p><formula xml:id="formula_0">( w d 2 , w h 2 , ww 2 )</formula><p>.</p><p>Fig. <ref type="figure">1</ref>. Architecture of the proposed SwinCLNet.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Window</head><p>Partitioning. e shi ed tensor X ∈ R B×C×D×H×W is partitioned into a batch of windows, resulting in a sequence-like tensor Xwin ∈ R (B•n win )×N ×C , where nwin is the number of windows and N is the number of voxels per window.</p><p>3. Feature Embedding and MHA. e features are first projected from dimension C to d model via a linear layer. en, a standard pre-layer normalization (LN) MHA operation with a residual connection is performed:</p><formula xml:id="formula_1">Xemb = MHA(LN(X emb )) + X emb .</formula><p>(1)</p><p>4. Gated Depthwise Feed-Forward Network (GDFFN). e output from the attention block is then passed through a GDFFN. Since the proposed GDFFN operates on 3D volumes, the windowed features Xemb are temporarily reverted to their 3D shape, processed by the GDFFN, and then partitioned back into the window sequence format. is step also includes a residual connection:</p><formula xml:id="formula_2">Xout = GDFFN(LN( Xemb )) + Xemb .</formula><p>(2)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Reverse and Final Residual</head><p>Connection. e processed features are projected back to the original channel dimension C and reassembled into a full 3D tensor Xproj. A final residual connection merges these learned features with the original input tensor X via a 3D convolution, enhancing feature integration:</p><formula xml:id="formula_3">X final = Conv3D(Xproj) + X.</formula><p>(3)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Reverse Shi .</head><p>A er the full attention and GDFFN operations, the resulting feature map is shi ed back to its original alignment. is process forces attention to be computed across the boundaries of the original, nonshi ed windows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>W-MSA</head><p>e W-MSA block efficiently computes self-attention within fixed, non-overlapping windows. Its operation is identical to the SW-MSA process detailed above and illustrated in Fig. <ref type="figure">2</ref> but omits the initial Cyclic Shi and the final Reverse Shi steps.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RLKA on skip connections</head><p>To further enhance the contextual representation of features on the skip connections, we introduced a RLKA module, which is shown in Fig. <ref type="figure" target="#fig_0">3a</ref>. is module is applied a er the W-MSA/SW-MSA blocks and is composed of a large-kernel attention (LKA) block within an external residual framework. is module emulates a selfattention mechanism by aggregating long-range spatial context and projecting channel information. However, standard 3D convolutions have the limitation of being computationally expensive. Accordingly, the proposed module employs decomposed convolutions to address this limitation, thereby achieving both high efficiency and an expanded receptive field. e internal operation of the LKA block is a four-step process.</p><p>1. Axial Decomposition. e input feature map t is processed by three parallel large-kernel depthwise convolutions, each operating along a single spatial axis: depth (d), height (h), and width (w).</p><p>2. Feature Aggregation. e outputs from these three axial convolutions are aggregated via element-wise summation:</p><formula xml:id="formula_4">U = DWConv d (t) + DWConv h (t) + DWConvw(t).</formula><p>(4) Fig. <ref type="figure">2</ref>. Shi ed window multi-head self-attention block.</p><p>3. Channel Mixing. e aggregated feature map U is then passed through a 1 × 1 × 1 point-wise convolution for channel-wise feature fusion.</p><p>4. Residual Connections. Finally, the output of the point-wise convolution is added back to the original input tensor t, defining the complete LKA operation, FLKA(•):</p><formula xml:id="formula_5">FLKA(t) = Conv1×1(U) + t. (<label>5</label></formula><formula xml:id="formula_6">)</formula><p>is internal residual connection (Eq 5) is critical for stabilizing the training of this deep transformation path (Steps 1-3), ensuring the block can easily learn an identity mapping and preventing gradient vanishing. is entire LKA block is wrapped by the main, external residual connection of the RLKA module. e final output Y is the element-wise sum of the input feature map t and the output of the LKA function, preserving the original features:</p><formula xml:id="formula_7">Y = FLKA(t) + t.<label>(6)</label></formula><p>is external residual connection allows the LKA to learn an additive refinement, focusing only on n spatial context.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CSDF block</head><p>e proposed CSDF block enhances multi-scale feature fusion in the decoder by spatially aligning features from different resolutions. is CSDF process contributes to more accurate boundary delineation by aligning the semantic context with structural details, ultimately improving the segmentation of complex anatomical regions.</p><p>is alignment is essential because decoder features F low carry a coarse semantic context from deeper layers, whereas encoder features F high preserve fine-grained spatial detail. e architecture of the CSDF module is shown in Fig. <ref type="figure" target="#fig_0">3(b</ref>).</p><p>1. Upsampling Refinement. e low-resolution decoder features F low are passed through an upsampling refinement block. is block consists of trilinear interpolation, followed by a 3D convolutional layer and an Instance Normalization layer, to spatially align and refine the semantic features before fusion:</p><formula xml:id="formula_8">F refined = IN(Conv3D(Up(F low ))),<label>(7)</label></formula><p>where Up(•) denotes trilinear upsampling.</p><p>2. Feature Concatenation. e resulting refined features F refined are then concatenated channel-wise with the high-resolution encoder features F high:</p><formula xml:id="formula_9">Fconcat = Concat(F refined , F high ),<label>(8)</label></formula><p>where Concat(•) represents channel-wise concatenation.</p><p>3. Multi-Scale Merging. Subsequently, the concatenated feature map Fconcat is passed through a standard 3D convolutional block to merge the multi-scale information. is block consists of a 3D convolution, followed by an instance normalization layer and a LeakyReLU non-linear activation function. e entire operation is expressed as</p><formula xml:id="formula_10">F csdf = LeakyReLU(IN(Conv3D(Fconcat))),<label>(9)</label></formula><p>where <ref type="bibr">Conv3D(•)</ref> is the 3D convolutional layer, and <ref type="bibr">IN(•)</ref> is instance normalization. e resulting feature map F csdf is then forwarded to the subsequent decoder stage for progressive refinement. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dataset and implementation details Dataset</head><p>In this study, we used the official BraTS 2023 and BraTS 2024 datasets <ref type="bibr" target="#b38">[39]</ref><ref type="bibr" target="#b39">[40]</ref><ref type="bibr" target="#b40">[41]</ref> , which include 1,251 and 1,350 multi-modal MRI scans (FLAIR, T1, T1Gd, and T2), respectively, from adult glioma cases. Each MRI volume was 240 × 240 × 155 voxels. We performed a 5-fold cross-validation using the entire training data. To prevent any data leakage and ensure a fair evaluation, this partitioning was performed at the patient-level. is approach was adopted to robustly evaluate the model's generalization performance, although it limits direct comparability to the official challenge leaderboard.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Preprocessing</head><p>For data preprocessing, we used an automated pipeline from nnU-Net, which performed voxel intensity normalization, resampled the images to isotropic resolution, and automatically determined the optimal patch size. During training, the four-channel MRI volume centered on the tumor was cropped into a 128 × 128 × 128 voxel patch.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation metrics</head><p>e performance was evaluated using two quantitative metrics: the Dice similarity coefficient (Dice) and the HD95. Here, A and B are the predicted and ground truth (GT) segmentations, respectively.</p><p>e Dice score measures the overlap between the predicted and GT segmentations and is defined as</p><formula xml:id="formula_11">DSC(A, B) = 2|A ∩ B| |A| + |B| . (<label>10</label></formula><formula xml:id="formula_12">)</formula><p>A higher Dice score indicated better segmentation accuracy. In contrast, HD95 measures the spatial distance between the predicted and GT contours. It is defined as</p><formula xml:id="formula_13">HD95(A, B) = P95 (d(A, B)) . (<label>11</label></formula><formula xml:id="formula_14">)</formula><p>where P95 represents the 95th percentile of the bidirectional distances between all the points on the predicted segmentation boundary and the nearest points on the GT boundary. A lower HD95 value indicated a more accurate boundary prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Network architecture</head><p>e proposed SwinCLNet is a 3D U-Net-based architecture with six encoder stages and five decoder stages. e encoder path (Encoder-1 to Encoder-5) utilizes W-MSA/SW-MSA for progressive feature extraction. Encoder-6 serves as the bottleneck with 320-dimensional output. e decoder path uses the proposed CSDF blocks. RLKA modules are applied to all five skip connections before feature fusion in the corresponding decoder stages. e detailed architectural specifications are provided in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Module configurations</head><p>e specific hyperparameters for the W-MSA/SW-MSA blocks are detailed in Table <ref type="table">2</ref>. is table outlines the configuration applied at each encoder stage. e d_model column specifies the feature dimension, which progressively increases from 32 to 320 as the network deepens. e num_heads column indicates the number of parallel attention heads, scaling from 2 to 8. e fixed 3D Window Size of 4 × 4 × 4 is utilized for all stages, and the Dropout rate of 0.1 is consistently applied for regularization. Here, the W-MSA/SW-MSA expansion ratio was set to 4 for all blocks. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Stage</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RLKA specification</head><p>As specified in Table <ref type="table" target="#tab_2">3</ref>, the RLKA module uses a 3D depthwise separable convolution. is is decomposed into three sequential axial-wise depthwise convolutions, each with a Kernel size of 9, Dilation of 1, Stride of 1, and Padding of 4, followed by a 1×1×1 point-wise convolution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CSDF specification</head><p>In Table <ref type="table" target="#tab_2">3</ref>, CSDF utilizes a 3×3×3 Kernel, a Dilation of 1, a Stride of 1, and a Padding of 1. It exploits Trilinear upsampling to align features, and then a standard 3D convolution and an Instance Normalization layer to complete the fusion process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Loss function</head><p>We employed a compound loss function (Ltotal) combining Dice Loss (LDice) and Cross-Entropy Loss (LCE). is combination is standard for addressing the class imbalance inherent in BraTS data. e loss is computed for each foreground class (WT, TC, ET) and averaged.</p><formula xml:id="formula_15">L total = LDice + LCE</formula><p>e Dice loss for a single class c is defined as:</p><formula xml:id="formula_16">LDice = 1 - 2 ∑ i pi,cgi,c + ϵ ∑ i pi,c + ∑ i gi,c + ϵ</formula><p>where pi,c is the predicted probability for voxel i of class c, gi,c is the one-hot encoded ground truth, and ϵ is a smoothing factor (1e-5).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Inference pipeline</head><p>To generate full-volume predictions from the patch-based model, we used a sliding-window approach. e details of the inference pipeline are summarized in Table <ref type="table" target="#tab_1">4</ref>. is process begins with Z-score normalization applied per-patient and per-modality to standardize input intensities. Inference is performed using a 96 × 96 × 96 sliding window size with a 48 × 48 × 48 stride, creating a 50% overlap. e resulting overlapping predictions are combined using a Gaussian weighted average, which assigns higher importance to predictions at the center of the window. Finally, the output segmentation is refined through post-processing. is includes Connected Component Analysis to remove small spurious predictions and Morphological Closing to fill minor holes and smooth contours.  Table 2. SW-MSA specification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experiment results</head><p>We evaluated the segmentation performance of the whole tumor (WT) which included peritumoral edema, necrosis, non-ET, and ET; the TC which included necrosis and non-ET; and the ET. All experiments were performed on an Ubuntu 22.04 system using PyTorch 2.6.0 and an NVIDIA A6000 GPU with 48 GB of memory. e batch size and number of epochs were 4 and 300, respectively. e basic experiment followed the basic settings of nnU-Net, and learning was conducted using a stochastic gradient descent optimizer with Nesterov momentum. Additionally, the hyperparameters were automatically adjusted according to the basic learning plan of nnU-Net, and the learning rate was set to 1 × 10 -2 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Accuracy evaluation</head><p>First, we evaluate the proposed SwinCLNet in terms of accuracy performance. Here, we compared the proposed SwinCLNet model with SOTA benchmark models using a 5-fold cross-validation (CV), which is shown in Table <ref type="table" target="#tab_4">5</ref> and visually confirmed by the box plot distribution in Fig <ref type="figure" target="#fig_1">4</ref>.</p><p>Using the BraTS2023 dataset, the proposed SwinCLNet achieved the highest average Dice score of 88.31% ± 2.0%. Here, ± denotes standard deviation. is result is not only superior in mean performance but also demonstrates high stability compared to other models. For instance, the strong large-kernel CNN, MedNeXt-M, achieved 87.30% ± 2.3%, and the strong VT-UNet baseline achieved 86.88% ± 2.4%. e proposed model's lower standard deviation suggests greater robustness across different data splits. Moreover, for the HD95 metric, SwinCLNet achieved a significantly lower average distance of 8.95 mm ± 3.1 mm. is is a clear improvement over MedNeXt-M's 11.13 mm ± 3.9 mm, VT-UNet's 11.38 mm ± 4.0 mm and nnU-Net's 12.37 mm ± 4.3 mm, again showing superior performance and lower variance.</p><p>is trend of superior and more stable performance continued on the BraTS 2024 dataset. e proposed SwinCLNet achieved a mean Dice of 87.82% ± 2.1%, while MedNeXt-M recorded 87.00% ± 2.4% and the SOTA Transformer, Swin UNETR, recorded 85.89% ± 2.7%. Regarding the HD95 metric, SwinCLNet confirmed its robust boundary delineation with a mean of 9.71 mm ± 3.3 mm, clearly outperforming MedNeXt-M at 11.43 mm ± 4.1 mm, Swin UNETR at 13.14 mm ± 4.6 mm and nnU-Net at 13.18 mm ± 4.7 mm.</p><p>Furthermore, to validate that the proposed model's performance improvement is statistically significant, we conducted a paired Wilcoxon signed-rank test on the 5-fold CV results. e resulting p-values are presented in Table <ref type="table">6</ref>. As shown, SwinCLNet demonstrated a statistically meaningful improvement (p &lt; 0.05) in both Mean Dice and Mean HD95 compared to all benchmarked SOTA models, including nnU-Net, VT-UNet, Swin UNETR, SegMamba, and MedNeXt-M.</p><p>Second, an ablation study was conducted to determine the optimal numbers of enhancement blocks, which is shown in Table <ref type="table">7</ref> and Fig. <ref type="figure" target="#fig_2">5</ref>. To verify the stability of these results, each configuration was run using 3 different random seeds. e Model-0 baseline achieved an average Dice of 80.79% ± 0.59% and a mean HD95 of 14.33 mm ± 1.70 mm. Performance consistently improved as enhancement blocks were added. e proposed Model-5, which applied modules to all stages, recorded the highest Dice score of 88.56% ± 0.27% and the lowest mean HD95 of 8.63 mm ± 0.77 mm. Notably, the standard deviation progressively decreased as modules were added. Model-5 showed the lowest variance, which indicates the proposed full model is not only the most accurate but also the most stable with respect to random initialization. Furthermore, we conducted the ablation study to find the optimal kernel size k for the RLKA module, which is shown in Table <ref type="table">8</ref>. As we increased the kernel size, both performance and computational overhead increased accordingly. However, the performance gains saturated at k = 9. erefore, we selected the model with k = 9 as our final configuration.</p><p>ird, we investigated the individual contributions of each the proposed module. is study was also validated using three random seeds. Results are summarized in Table <ref type="table">9</ref> and Fig. <ref type="figure" target="#fig_4">6</ref>, while Fig. <ref type="figure" target="#fig_3">7</ref> provides the corresponding qualitative visualization. e Baseline model, which is Model-0 from Table <ref type="table">7</ref>, provided 80.79% ± 0.59% Mean Dice. Applying only the CSDF module improved performance to 83.46% ± 0.49%. Applying only the W-MSA/ SW-MSA module achieved a significant gain to 86.06% ± 0.40%. Integrating both W-MSA/SW-MSA and CSDF further improved the mean Dice to 88.42% ± 0.30%. Finally, the addition of the RLKA module as a final refinement yielded the highest performance at 88.56% ± 0.27% and the lowest HD95 at 8.63 mm ± 0.77 mm. Applying any of the proposed modules produced a notable performance improvement over the baseline. e low standard deviations across all configurations confirm that these additive gains are consistent and not an artifact of random initialization.</p><p>Segmentation Methods Dice score (%, ↑ ) HD95 (mm, ↓) WT TC ET Mean WT TC ET Mean (Model-0) Baseline 88.38 ± 0.31 79.51 ± 0.55 74.49 ± 0.90 80.79 ± 0.59 7.28 ± 0.80 9.88 ± 1.20 25.81 ± 3.10 14.33 ± 1.70 (Model-1) Enhancement block × 1 89.56 ± 0.28 81.94 ± 0.48 76.47 ± 0.81 82.70 ± 0.52 6.66 ± 0.72 8.82 ± 1.05 23.65 ± 2.80 13.19 ± 1.52 (Model-2) Enhancement block × 2 90.64 ± 0.25 84.08 ± 0.41 78.36 ± 0.70 84.42 ± 0.45 6.09 ± 0.65 7.91 ± 0.90 21.84 ± 2.50 12.18 ± 1.35 (Model-3) Enhancement block × 3 91.90 ± 0.20 86.60 ± 0.35 80.59 ± 0.55 86.44 ± 0.37 5.39 ± 0.50 6.79 ± 0.70 19.66 ± 2.10 10.94 ± 1.10 (Model-4) Enhancement block × 4 92.49 ± 0.18 87.82 ± 0.30 81.58 ± 0.48 87.39 ± 0.32 5.03 ± 0.45 6.26 ± 0.60 18.49 ± 1.80 10.26 ± 0.95 (Model-5) Enhancement block × 5 (Proposed) 93.27 ± 0.15 89.78 ± 0.25 82.62 ± 0.40 88.56 ± 0.27 4.27 ± 0.30 5.49 ± 0.50 16.12 ± 1.50 8.63 ± 0.77 Table 7. Ablation study on the number of the proposed blocks using the Brats 2023 dataset. Model comparison (SwinCLNet vs.) Mean dice (p-value) Mean HD95 (p-value) nnU-Net 2 0.041 0.043 VT-UNet 45 0.043 0.045 Swin UNETR 46 0.040 0.042 SegMamba 47 0.039 0.041 MedNeXt-M 28 0.041 0.043 Table 6. Statistical significance (p-values) of SwinCLNet compared to SOTA baselines on the BraTS 2023 5-fold CV results, using a paired Wilcoxon signed-rank test. p-value &lt; 0.05 are considered significant. Fourth, we provide visual segmentation results for a representative case, which is shown in Fig. <ref type="figure" target="#fig_6">8</ref>. e figure compares the segmentation maps generated by the proposed model with the GT and other SOTA methods. In the segmentation maps, the green, red, and blue subregions represent the WT, TC, and ET, respectively. Earlier models such as 3D U-Net 1 and Attention U-Net 43 roughly identified the tumor, but failed to identify the intricate boundaries of the subregions. More recent models such as Swin UNETR <ref type="bibr" target="#b45">46</ref> and SegMamba 47 demonstrated improved results, but still showed minor inaccuracies. In contrast, the proposed model indicated the superior segmentation performance among all models compared. Additionally, we provide a more detailed comparison in Fig 9 . While SegMamba <ref type="bibr" target="#b46">47</ref> and MedNeXt 28 capture the main tumor body, they tend to miss or undersegment these small, disconnected blue ET regions. In contrast, the proposed SwinCLNet demonstrates its robustness by more accurately identifying these difficult sparse features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Computing cost analysis</head><p>Table 10 details segmentation performance and computational costs.</p><p>e proposed SwinCLNet achieves a Mean Dice score of 88.31%, which exceeds all other listed models, including MedNeXt-M's 87.30%, VT-UNet's 86.88%, and Swin UNETR 86.57%. Also, the proposed SwinCLNet shows efficient computational complexity. Although its parameter count and GPU memory usage are higher compared to the benchmark models, it demonstrates efficiency in terms of FLOPs and inference time. Regarding FLOPs, SwinCLNet has</p><p>Segmentation methods Dice score (%, ↑ ) HD95 (mm, ↓) WT TC ET Mean WT TC ET Mean Baseline 88.38 ± 0.31 79.51 ± 0.55 74.49 ± 0.90 80.79 ± 0.59 7.28 ± 0.80 9.88 ± 1.20 25.81 ± 3.10 14.33 ± 1.70 CSDF 89.95 ± 0.27 83.13 ± 0.45 77.30 ± 0.75 83.46 ± 0.49 6.35 ± 0.68 8.01 ± 0.95 22.14 ± 2.60 12.17 ± 1.41 W-MSA/SW-MSA 91.48 ± 0.22 86.66 ± 0.38 80.05 ± 0.60 86.06 ± 0.40 5.44 ± 0.52 6.20 ± 0.75 18.57 ± 2.00 10.06 ± 1.09 W-MSA/SW-MSA + CSDF 93.20 ± 0.17 89.65 ± 0.28 82.42 ± 0.45 88.42 ± 0.30 4.39 ± 0.35 5.76 ± 0.55 16.34 ± 1.60 8.83 ± 0.83 W-MSA/SW-MSA + CSDF + RLKA 93.27 ± 0.15 89.78 ± 0.25 82.62 ± 0.40 88.56 ± 0.27 4.27 ± 0.30 5.49 ± 0.50 16.12 ± 1.50 8.63 ± 0.77 Table 9. Ablation study on the proposed modules using the Brats 2023 dataset. Kernel size (k) Mean dice (%) ↑ Parameters (M) ↓ FLOPs (G) ↓ Inference (ms) ↓ 3 88.45 ± 0.29 31.76 147.1 172 5 88.50 ± 0.28 31.84 149.1 173 7 88.54 ± 0.27 31.92 151.0 175 9 (Proposed) 88.56 ± 0.24 32.00 153.0 177 11 88.56 ± 0.21 32.08 155.0 180 Table 8. Ablation study on the RLKA kernel size (k). 153.0 GFLOPs, which is substantially lower than MedNeXt-M's 248.0 GFLOPs, VT-UNet's 198.5 GFLOPs, Swin UNETR's 175.2 GFLOPs, and comparable to SegMamba and nnU-Net. Regarding inference time, SwinCLNet shows 177 ms, which is faster than MedNeXt-M at 225 ms, VT-UNet at 210 ms, and Swin UNETR at 189 ms. In summary, the proposed model achieves the superior segmentation performance while maintaining lower FLOPs and faster inference time compared to other benchmark models. Table 11 details the increases in computational cost from the 3D-U-Net baseline for each added module. Adding RLKA increases the number of parameters by 0.36 M, FLOPs by 8.8 G, and inference time by 4 ms. Adding CSDualFusion increases parameters by 4.40 M, FLOPs by 2.3 G, and inference time by 19 ms. Adding SW-MSA increases parameters by 8.24 M, FLOPs by 43.4 G, and inference time by 36 ms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion, limitations and future work</head><p>e proposed model achieved superior segmentation performance. It achieved an average Dice score of 88.31% and 87.82% and an average HD95 of 8.95 mm and 9.71 mm on the BraTS 2023 and 2024 datasets, respectively, demonstrating superior performance compared to benchmark models. To verify statistical significance, a paired Wilcoxon signed-rank test was performed on the 5-fold cross-validation results. e results showed that the proposed SwinCLNet achieved statistically significant improvements (p-value &lt; 0.05) in both average Dice and average HD95 compared to all benchmark models.</p><p>However, despite the superior performance and efficiency of the model, the improvement in the WT region was relatively limited compared to the TC and ET regions, as reflected in the reduced HD95 score for the ET region. e model may still face challenges in accurately segmenting the boundaries of highly heterogeneous regions or extremely small lesions. In particular, the WT boundary issue likely stems from such heterogeneity, while the ET region being small, sparse, and having ambiguous boundaries further contributes to instability in the HD95 metric, which is highly sensitive to minor boundary deviations in the BraTS dataset.</p><p>e first reason is that we employed a general loss function without incorporating any boundary specific components, which limited the model's ability to emphasize ambiguous or heterogeneous regions such as WT.  Moreover, no region targeted optimization such as region specific loss weighting or dedicated boundary aware objectives was applied, further constraining performance in these challenging areas. To address this, auxiliary loss modules emphasizing boundary aware features could be introduced to assign higher weights to ambiguous boundary pixels, particularly in the heterogeneous WT region. is approach may incorporate compound loss functions that integrate the main loss with boundary focused terms such as Boundary Loss or Hausdorff Distance Loss.  e second reason is that we employed a static window in the W-MSA/SW-MSA mechanisms. is static design is computationally efficient but may not be optimal for all sub-regions. For instance, applying larger windows to the WT region, where broad contextual understanding is essential, and smaller windows to the TC and ET regions, where precise boundary delineation is required, could improve segmentation performance. To this end, we plan to explore dynamic or adaptive windowing strategies, including architectures that process multiple window scales in parallel within each block and effectively fuse these multi-scale features. In addition, we will investigate advanced deformable or adaptive attention mechanisms that allow attention windows to flexibly adjust their shape and sampling positions according to input features, enabling more accurate modeling of irregular tumor boundaries.</p><p>e proposed model also achieves lower FLOPs and faster inference speed compared to major benchmark models. It recorded relatively low FLOPs of 153.0 GFLOPs, making it more efficient than MedNeXt-M at 248.0 GFLOPs and VT-UNet at 198.5 GFLOPs. e inference time was also faster at 177 ms compared to MedNeXt-M at 225 ms and Swin UNETR at 189 ms. However, it has increased memory usage and the number of model parameters. e primary reason for this increase is the expansion of the proposed model's depth and width. Systematically integrating the proposed modules deepened the architecture, which in turn increased both model parameters and memory usage. To address this, first, model quantization can be applied. Specifically, post-training quantization (PTQ), which converts the model weights and activation values to lower-bit representations, could be utilized. is technique can significantly reduce memory usage while minimizing accuracy degradation. Second, knowledge distillation can be employed. is approach involves training a lighter 'student' model to mimic the output of the high-performance 'teacher' model. It offers a way to reduce memory consumption while preserving the model's performance.</p><p>Finally, to further enhance applicability and robustness in real clinical settings, we plan to investigate data-efficient unsupervised or semi-supervised learning strategies <ref type="bibr" target="#b47">48,</ref><ref type="bibr" target="#b48">49</ref> and multimodal learning frameworks, along with the integration of large vision-language models (VLMs) <ref type="bibr" target="#b49">50</ref> . In addition, we aim to develop more advanced models that remain resilient across different scanners and sequences, varying noise levels, anisotropic resolutions, and even extreme morphological variations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>We proposed a new SwinCLNet model that enhances brain tumor segmentation performance by integrating new W-MSA/SW-MSA, CSDF, and RLKA modules into the existing 3D U-Net framework. First, the proposed encoder block enhanced feature representation by alternating the W-MSA and SW-MSA modules. e SW-MSA module facilitated information sharing across windows via a shi ing mechanism, whereas the W-MSA module captured the rich local context within a fixed 3D window. e model effectively learned both local and global contextual information owing to this dual approach. Second, the proposed decoder employed the CSDF module that integrated the features across multiple resolutions. Combining low-and high-level features contributed to improving the precision of tumor boundary delineation. ird, the proposed model applied the RLKA module to skip connections to expand the receptive field and further enhanced the spatial feature representation. Finally, through extensive experiments, we confirmed that the proposed model achieved superior segmentation performance compared to representative benchmark models while achieving lower computational complexity. Table 10. Comparison of performance and computational costs across different models (BraTS 2023 Mean Dice).</p><p>ese results demonstrated that the proposed SwinCLNet is an effective solution for the complex task of brain tumor segmentation.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. Residual Large-Kernel Attention (RLKA) and Cross-Scale Dual Fusion (CSDF) .</figDesc><graphic coords="6,129.01,50.50,425.16,150.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. Case-level performance distribution from 5-fold cross-validation on BraTS 2023. (a): Mean Dice distribution, higher is better, (b): Mean HD95 distribution, lower is better.</figDesc><graphic coords="10,129.01,50.50,425.16,160.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Ablation study on the number of the proposed blocks.</figDesc><graphic coords="11,72.97,50.50,481.20,208.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. Visual comparison of the component ablation study. (a) Input T1ce Image, (b) Ground Truth (GT), (c) Baseline model, (d) Baseline + CSDF, (e) Baseline + SW-MSA, (f) Baseline + SW-MSA + CSDF, and (g) Proposed model (SW-MSA + CSDF + RLKA).</figDesc><graphic coords="12,72.25,302.82,481.92,115.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Ablation study on the proposed architectural components.</figDesc><graphic coords="12,72.25,50.50,481.92,200.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 9 .</head><label>9</label><figDesc>Fig. 9. Visual comparison on a challenging small lesion case.</figDesc><graphic coords="13,72.25,395.02,481.92,233.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. Visual comparison of tumor segmentation on the BraTS2023 dataset. e colored areas identify the different tumor subregions with green denoting WT, red denoting the TC, and blue denoting the ET.</figDesc><graphic coords="13,72.25,50.50,481.92,282.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="4,72.25,426.23,481.92,285.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="5,72.25,50.50,481.92,187.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>SwinCLNet</figDesc><table><row><cell></cell><cell cols="2">Resolution Input Ch</cell><cell cols="2">Output Ch Module</cell></row><row><cell>Input</cell><cell>1/1</cell><cell>4</cell><cell>4</cell><cell>-</cell></row><row><cell>Encoder-1</cell><cell>1/1</cell><cell>4</cell><cell>32</cell><cell>W-MSA</cell></row><row><cell>Encoder-2</cell><cell>1/2</cell><cell>32</cell><cell>64</cell><cell>SW-MSA</cell></row><row><cell>Encoder-3</cell><cell>1/4</cell><cell>64</cell><cell>128</cell><cell>W-MSA</cell></row><row><cell>Encoder-4</cell><cell>1/8</cell><cell>128</cell><cell>256</cell><cell>SW-MSA</cell></row><row><cell>Encoder-5</cell><cell>1/16</cell><cell>256</cell><cell>320</cell><cell>W-MSA</cell></row><row><cell cols="2">Encoder-6 (Bottleneck) 1/32</cell><cell>320</cell><cell>320</cell><cell>-</cell></row><row><cell>Decoder-5</cell><cell>1/16</cell><cell cols="2">320up + RLKA(SC5) 256</cell><cell>CSDF</cell></row><row><cell>Decoder-4</cell><cell>1/8</cell><cell cols="2">256up + RLKA(SC4) 256</cell><cell>CSDF</cell></row><row><cell>Decoder-3</cell><cell>1/4</cell><cell cols="2">256up + RLKA(SC3) 128</cell><cell>CSDF</cell></row><row><cell>Decoder-2</cell><cell>1/2</cell><cell cols="2">128up + RLKA(SC2) 64</cell><cell>CSDF</cell></row><row><cell>Decoder-1</cell><cell>1/1</cell><cell>64up + RLKA(SC1)</cell><cell>32</cell><cell>CSDF</cell></row><row><cell>Output</cell><cell>1/1</cell><cell>32</cell><cell>3</cell><cell>1×1×1 Conv</cell></row></table><note><p>architecture with channel dimensions and module placement.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 4 .</head><label>4</label><figDesc>Inference pipeline details.</figDesc><table><row><cell>Module</cell><cell cols="5">Kernel Dilation Stride Padding Structure</cell></row><row><cell>RLKA (SC1 to SC5)</cell><cell>9</cell><cell>1</cell><cell>1</cell><cell>4</cell><cell>Depthwise (3-axis) + Pointwise</cell></row><row><cell cols="2">CSDF (Decoder 1 to 5) 3</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>Trilinear upsample + Conv3D + IN</cell></row><row><cell>Component</cell><cell cols="2">Configuration</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Normalization</cell><cell cols="4">Z-score (per modality, per-patient)</cell><cell></cell></row><row><cell>Sliding Window Size</cell><cell cols="2">96×96×96</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">Sliding Window Stride 48×48×48 (50% overlap)</cell><cell></cell><cell></cell></row><row><cell>Blending</cell><cell cols="3">Gaussian weighted average</cell><cell></cell><cell></cell></row><row><cell>Post-processing</cell><cell cols="5">Connected Component Analysis (CCA), Morphological Closing</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>RLKA and CSDF specifications.</figDesc><table><row><cell>Stage</cell><cell cols="4">d_model num_heads Window size Dropout</cell></row><row><cell cols="2">Encoder-1 32</cell><cell>2</cell><cell>4 × 4 × 4</cell><cell>0.1</cell></row><row><cell cols="2">Encoder-2 64</cell><cell>4</cell><cell>4 × 4 × 4</cell><cell>0.1</cell></row><row><cell cols="2">Encoder-3 128</cell><cell>4</cell><cell>4 × 4 × 4</cell><cell>0.1</cell></row><row><cell cols="2">Encoder-4 256</cell><cell>8</cell><cell>4 × 4 × 4</cell><cell>0.1</cell></row><row><cell cols="2">Encoder-5 320</cell><cell>8</cell><cell>4 × 4 × 4</cell><cell>0.1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Performance</figDesc><table><row><cell></cell><cell cols="2">Dice score (%, ↑ )</cell><cell></cell><cell></cell><cell cols="2">HD95 (mm, ↓)</cell><cell></cell><cell></cell></row><row><cell>Methods</cell><cell>WT</cell><cell>TC</cell><cell>ET</cell><cell>Mean</cell><cell>WT</cell><cell>TC</cell><cell>ET</cell><cell>Mean</cell></row><row><cell cols="2">Performance of BraTS 2023</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3D-U-Net 1</cell><cell cols="8">88.15 ± 2.5 79.30 ± 4.1 74.21 ± 5.8 80.55 ± 4.1 7.42 ± 3.2 10.15 ± 4.4 26.11 ± 9.3 14.56 ± 5.6</cell></row><row><cell>R2-U-Net 42</cell><cell cols="8">88.63 ± 2.4 80.95 ± 3.7 77.25 ± 5.3 82.28 ± 3.8 7.25 ± 3.0 10.05 ± 4.2 24.82 ± 9.0 14.04 ± 5.4</cell></row><row><cell>Attention-U-Net 43</cell><cell cols="8">88.70 ± 2.3 82.00 ± 3.3 78.51 ± 5.0 83.07 ± 3.5 6.40 ± 2.6 9.98 ± 4.0 23.50 ± 8.7 13.29 ± 5.1</cell></row><row><cell>TransBTS 44</cell><cell cols="8">88.91 ± 2.2 80.98 ± 3.6 77.28 ± 5.2 82.39 ± 3.7 11.65 ± 4.6 10.50 ± 4.9 26.22 ± 9.4 16.12 ± 6.3</cell></row><row><cell>nnU-Net 2</cell><cell cols="8">91.90 ± 1.3 86.15 ± 2.2 79.98 ± 4.3 86.01 ± 2.6 5.05 ± 1.9 10.20 ± 3.7 21.85 ± 7.4 12.37 ± 4.3</cell></row><row><cell>VT-UNet 45</cell><cell cols="8">92.03 ± 1.2 87.72 ± 2.0 80.90 ± 4.0 86.88 ± 2.4 4.81 ± 1.8 8.80 ± 3.3 20.53 ± 7.0 11.38 ± 4.0</cell></row><row><cell>Swin UNETR 46</cell><cell cols="8">91.96 ± 1.3 87.45 ± 2.1 80.29 ± 4.2 86.57 ± 2.5 5.15 ± 1.8 9.75 ± 3.5 22.25 ± 7.7 12.38 ± 4.3</cell></row><row><cell>SegMamba 47</cell><cell cols="8">91.65 ± 1.4 87.00 ± 2.2 80.01 ± 4.4 86.22 ± 2.7 5.50 ± 2.0 10.10 ± 3.6 22.80 ± 8.0 12.80 ± 4.5</cell></row><row><cell>MedNeXt-M 28</cell><cell cols="8">92.35 ± 1.1 88.10 ± 1.9 81.45 ± 3.8 87.30 ± 2.3 4.75 ± 1.7 8.70 ± 3.1 19.95 ± 6.9 11.13 ± 3.9</cell></row><row><cell cols="9">SwinCLNet (Proposed) 93.05 ± 0.9 89.51 ± 1.6 82.37 ± 3.4 88.31 ± 2.0 4.45 ± 1.3 5.75 ± 2.2 16.65 ± 5.8 8.95 ± 3.1</cell></row><row><cell cols="2">Performance of BraTS 2024</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3D-U-Net 1</cell><cell cols="8">87.40 ± 2.7 78.45 ± 4.3 72.88 ± 6.1 79.58 ± 4.4 8.15 ± 3.4 11.05 ± 4.7 27.90 ± 10.0 15.70 ± 6.0</cell></row><row><cell>R2-U-Net 42</cell><cell cols="8">88.11 ± 2.6 80.32 ± 3.9 76.35 ± 5.6 81.59 ± 4.0 7.78 ± 3.2 10.70 ± 4.5 25.95 ± 9.3 14.81 ± 5.7</cell></row><row><cell>Attention-U-Net 43</cell><cell cols="8">88.23 ± 2.5 81.40 ± 3.5 77.59 ± 5.3 82.41 ± 3.8 6.90 ± 2.9 10.60 ± 4.4 24.55 ± 9.0 14.02 ± 5.4</cell></row><row><cell>TransBTS 44</cell><cell cols="8">88.40 ± 2.4 80.33 ± 3.8 76.25 ± 5.4 81.66 ± 3.9 12.15 ± 4.9 11.10 ± 5.0 27.35 ± 9.7 16.87 ± 6.5</cell></row><row><cell>nnU-Net 2</cell><cell cols="8">91.50 ± 1.4 85.52 ± 2.4 79.00 ± 4.6 85.34 ± 2.8 5.50 ± 2.0 10.80 ± 4.0 23.25 ± 8.0 13.18 ± 4.7</cell></row><row><cell>VT-UNet 45</cell><cell cols="8">91.55 ± 1.3 87.00 ± 2.2 80.11 ± 4.3 86.22 ± 2.6 5.18 ± 1.9 9.40 ± 3.6 21.95 ± 7.4 12.18 ± 4.3</cell></row><row><cell>Swin UNETR 46</cell><cell cols="8">91.46 ± 1.4 86.73 ± 2.3 79.48 ± 4.5 85.89 ± 2.7 5.47 ± 1.9 10.35 ± 3.8 23.60 ± 8.1 13.14 ± 4.6</cell></row><row><cell>SegMamba 47</cell><cell cols="8">91.05 ± 1.5 86.28 ± 2.4 79.15 ± 4.7 85.49 ± 2.9 5.80 ± 2.1 10.70 ± 3.9 24.20 ± 8.3 13.57 ± 4.8</cell></row><row><cell>MedNeXt-M 28</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>92.10 ± 1.2 87.85 ± 2.0 81.05 ± 4.0 87.00 ± 2.4 4.95 ± 1.8 8.95 ± 3.3 20.40 ± 7.1 11.43 ± 4.1 SwinCLNet (Proposed) 92.80 ± 1.0 88.98 ± 1.7 81.67 ± 3.7 87.82 ± 2.1 4.75 ± 1.4 6.40 ± 2.4 17.98 ± 6.1 9.71 ± 3.3 comparison of the BraTS 2023 and BraTS 2024 datasets, reported as (Mean ± Standard Deviation) from 5-fold cross-validation.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 11 .</head><label>11</label><figDesc>Ablation study on computational cost.</figDesc><table><row><cell>Model</cell><cell>Mean Dice (%) ↑</cell><cell cols="4">Parameters (M) GPU Memory (GB) FLOPs (G) Patch Inference (ms)</cell></row><row><cell>3D-U-Net</cell><cell>80.55</cell><cell>19.0</cell><cell>1.75</cell><cell>98.5</cell><cell>118</cell></row><row><cell>SegMamba</cell><cell>86.22</cell><cell>28.5</cell><cell>2.35</cell><cell>152.4</cell><cell>152</cell></row><row><cell>nnU-Net</cell><cell>86.01</cell><cell>30.7</cell><cell>2.40</cell><cell>156.8</cell><cell>160</cell></row><row><cell>MedNeXt-M</cell><cell>87.30</cell><cell>18.3</cell><cell>2.15</cell><cell>248.0</cell><cell>225</cell></row><row><cell>Swin UNETR</cell><cell>86.57</cell><cell>32.8</cell><cell>2.72</cell><cell>175.2</cell><cell>189</cell></row><row><cell>VT-UNet</cell><cell>86.88</cell><cell>35.2</cell><cell>2.85</cell><cell>198.5</cell><cell>210</cell></row><row><cell>TransBTS</cell><cell>82.39</cell><cell>32.3</cell><cell>2.85</cell><cell>188.9</cell><cell>218</cell></row><row><cell cols="2">SwinCLNet (Proposed) 88.31</cell><cell>32.0</cell><cell>2.81</cell><cell>153.0</cell><cell>177</cell></row><row><cell>Component</cell><cell cols="4">Parameters (M) GPU Memory (GB) FLOPs (G) Inference (ms)</cell><cell></cell></row><row><cell>3D-U-Net (Baseline)</cell><cell>19.0</cell><cell>1.75</cell><cell>98.5</cell><cell>118</cell><cell></cell></row><row><cell>+ RLKA</cell><cell>+0.36</cell><cell>+0.12</cell><cell>+8.8</cell><cell>+4</cell><cell></cell></row><row><cell>+ CSDualFusion</cell><cell>+4.40</cell><cell>+0.45</cell><cell>+2.3</cell><cell>+19</cell><cell></cell></row><row><cell>+ W-MSA/SW-MSA</cell><cell>+8.24</cell><cell>+0.49</cell><cell>+43.4</cell><cell>+36</cell><cell></cell></row><row><cell cols="2">SwinCLNet (Proposed) 32.0</cell><cell>2.81</cell><cell>153.0</cell><cell>177</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Scientific Reports | 2026 16:2105 2 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Scientific Reports | 2026 16:2105 3 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Scientific Reports | 2026 16:2105 4 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>Scientific Reports | 2026 16:2105 5 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_4"><p>Scientific Reports | 2026 16:2105 6 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Scientific Reports | 2026 16:2105 7 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_6"><p>Scientific Reports | 2026 16:2105 8 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_7"><p>Scientific Reports | 2026 16:2105 9 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_8"><p>Scientific Reports | 2026 16:2105 10 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_9"><p>Scientific Reports | 2026 16:2105 11 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_10"><p>Scientific Reports | 2026 16:2105 12 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_11"><p>Scientific Reports | 2026 16:2105 13 | https://doi.org/10.1038/s41598-025-31937-8</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_12"><p>Scientific Reports | 2026 16:2105 14 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_13"><p>Scientific Reports | 2026 16:2105 15 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_14"><p>Scientific Reports | 2026 16:2105 16 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_15"><p>Scientific Reports | 2026 16:2105 17 | https://doi.org/10.1038/s41598-025-31937-8 www.nature.com/scientificreports/</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>Funding is research was supported by the <rs type="funder">Bio&amp; Medical Technology Development Program of the National Research Foundation (NRF)</rs> funded by the <rs type="funder">Korean government (MSIT)</rs> (No. <rs type="grantNumber">RS-2023-00223501</rs>) and the <rs type="funder">Glocal University</rs> Project funded by the <rs type="funder">Ministry of Education</rs> and the <rs type="funder">National Research Foundation of Korea</rs> (<rs type="grantNumber">GLO-CAL-202504310001</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_Hw2g6rw">
+					<idno type="grant-number">RS-2023-00223501</idno>
+				</org>
+				<org type="funding" xml:id="_XYrcxRG">
+					<idno type="grant-number">GLO-CAL-202504310001</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Synapse ID syn53708249.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>e BraTS 2023 and BraTS 2024 datasets analysed during the current study are available on the Synapse platform. Access to the BraTS 2023 dataset requires approval from the BraTS 2023 Challenge organizers. Similarly, access to the BraTS 2024 dataset requires approval from the BraTS 2024 Challenge organizers. Following approval, the data are available for download by authorized users. e specific datasets can be found by referencing their respective challenges on the platform (<ref type="url" target="https://www.synapse.org/">https://www.synapse.org/</ref>).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>S.J. (Seyong Jin) conceived the study, developed the methodology, implemented the so ware, and conducted the experiments. Y.N. (Yeonwoo Noh) supported data curation and the validation process. W.N. (Wonjong Noh) contributed to the formal analysis. W.N., H.M. (Hyeonjoon Moon) and M.L. (Minwoo Lee) provided critical review and were responsible for funding acquisition. W.N. and H.M. also provided supervision and managed the project. All authors reviewed and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Competing interests e authors declare no competing interests.</p><p>Open Access is article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. e images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit h t t p : / / c r e a t i v e c o m m o n s . o r g / l i c e n s e s / b y -n c -n d / 4 . 0 / . © e Author(s) 2025</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation</title>
+		<author>
+			<persName><forename type="first">Özgün</forename><surname>Çiçek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Abdulkadir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soeren</forename><forename type="middle">S</forename><surname>Lienkamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-46723-8_49</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">Proceedings, Part II</title>
+		<meeting><address><addrLine>Athens, Greece</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016">October 17-21, 2016. 2016</date>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="424" to="432" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Çiçek, Ö., Abdulkadir, A., Lienkamp, S. S., Brox, T. &amp; Ronneberger, O. 3d u-net: learning dense volumetric segmentation from sparse annotation. In Medical Image Computing and Computer-Assisted Intervention-MICCAI 2016: 19th International Conference, Athens, Greece, October 17-21, 2016, Proceedings, Part II 19 424-432 (Springer, 2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Abstract: nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andre</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Zimmerer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">F</forename><surname>Jaeger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Kohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Wasserthal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Koehler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Norajitra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Wirkert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-658-25326-4_7</idno>
+		<idno type="arXiv">arXiv:1809.10486</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Informatik aktuell</title>
+		<imprint>
+			<publisher>Springer Fachmedien Wiesbaden</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="22" to="22" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Isensee, F. et al. nnu-net: Self-adapting framework for u-net-based medical image segmentation. arXiv preprint. arXiv:1809.10486 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Transunet: Transformers make strong encoders for medical image segmentation</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2102.04306</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Chen, J. et al. Transunet: Transformers make strong encoders for medical image segmentation. arXiv preprint. arXiv:2102.04306 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">EMF-Former: An Efficient and Memory-Friendly Transformer for Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Zhaoquan</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyan</forename><surname>Quan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yinbin</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72111-3_22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="231" to="241" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hao, Z., Quan, H. &amp; Lu, Y. Emf-former: An efficient and memory-friendly transformer for medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 231-241 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">SAM2-UNet: segment anything 2 makes strong encoder for natural and medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zihuang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuangyi</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenxue</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feilong</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siying</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanbin</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s44267-025-00106-w</idno>
+		<idno type="arXiv">arXiv:2408.08870</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Visual Intelligence</title>
+		<title level="j" type="abbrev">Vis. Intell.</title>
+		<idno type="ISSN">2097-3330</idno>
+		<idno type="ISSNe">2731-9008</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Xiong, X. et al. Sam2-unet: Segment anything 2 makes strong encoder for natural and medical image segmentation. arXiv preprint. arXiv:2408.08870 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Segment Anything</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Kirillov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Mintun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikhila</forename><surname>Ravi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanzi</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chloe</forename><surname>Rolland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Gustafson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tete</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Whitehead</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">C</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wan-Yen</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollár</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.00371</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023</date>
+			<biblScope unit="page" from="3992" to="4003" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kirillov, A. et al. Segment anything. In Proceedings of the IEEE/CVF International Conference on Computer Vision 4015-4026 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">U-Net V2: Rethinking the Skip Connections of U-Net for Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Yaopeng</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danny</forename><forename type="middle">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Sonka</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/isbi60581.2025.10980742</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2025-04-14">2025. 2025</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Peng, Y., Chen, D. Z. &amp; Sonka, M. U-net v2: Rethinking the skip connections of u-net for medical image segmentation. In 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 1-5 (IEEE, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Munich, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">October 5-9, 2015. 2015</date>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+	<note>proceedings, part III</note>
+	<note type="raw_reference">Ronneberger, O., Fischer, P. &amp; Brox, T. U-net: Convolutional networks for biomedical image segmentation. In Medical image computing and computer-assisted intervention-MICCAI 2015: 18th international conference, Munich, Germany, October 5-9, 2015, proceedings, part III 18 234-241 (Springer, 2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Comparing foundation models and nnU-Net for segmentation of primary brain lymphoma on clinical routine post-contrast T1-weighted MRI</title>
+		<author>
+			<persName><forename type="first">Guanghui</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucia</forename><surname>Nichelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dario</forename><surname>Herran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romain</forename><surname>Valabregue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agusti</forename><surname>Alentorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khê</forename><surname>Hoang-Xuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Houillier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Didier</forename><surname>Dormont</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stéphane</forename><surname>Lehéricy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Colliot</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3044679</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging 2025: Clinical and Biomedical Imaging</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2025-04-02">2025. 2025</date>
+			<biblScope unit="volume">13410</biblScope>
+			<biblScope unit="page">45</biblScope>
+		</imprint>
+	</monogr>
+	<note>Medical Imaging</note>
+	<note type="raw_reference">Fu, G. et al. Comparing foundation models and nnu-net for segmentation of primary brain lymphoma on clinical routine post- contrast t1-weighted mri. In Medical Imaging 2025: Clinical and Biomedical Imaging vol. 13410, 1341019 (SPIE, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">nnunet meets pathology: bridging the gap for application to whole-slide images and computational biomarkers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Spronck</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging with Deep Learning</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Spronck, J. et al. nnunet meets pathology: bridging the gap for application to whole-slide images and computational biomarkers. In Medical Imaging with Deep Learning (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A systematic review on deep learning implementation in brain tumor segmentation, classification and prediction</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Adeel</forename><surname>Abid</surname></persName>
+			<idno type="ORCID">0000-0003-4679-9033</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kashif</forename><surname>Munir</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-025-20706-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Tools and Applications</title>
+		<title level="j" type="abbrev">Multimed Tools Appl</title>
+		<idno type="ISSNe">1573-7721</idno>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">31</biblScope>
+			<biblScope unit="page" from="38203" to="38242" />
+			<date type="published" when="2025-02-26">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abid, M. A. &amp; Munir, K. A systematic review on deep learning implementation in brain tumor segmentation, classification and prediction. Multimedia Tools and Applications 1-40 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Transformers in medical imaging: A survey</title>
+		<author>
+			<persName><forename type="first">Fahad</forename><surname>Shamshad</surname></persName>
+			<idno type="ORCID">0000-0003-2442-0475</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Waqas</forename><surname>Zamir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Haris</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munawar</forename><surname>Hayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fahad</forename><forename type="middle">Shahbaz</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huazhu</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2023.102802</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page">102802</biblScope>
+			<date type="published" when="2023-08">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shamshad, F. et al. Transformers in medical imaging: A survey. Med. Image Anal. 88, 102802 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Med-Former: A Transformer Based Architecture for Medical Image Classification</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">Jignesh</forename><surname>Chowdary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaozheng</forename><surname>Yin</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72120-5_42</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="448" to="457" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chowdary, G. J. &amp; Yin, Z. Med-former: A transformer based architecture for medical image classification. In International Conference on Medical Image Computing and Computer-Assisted Intervention 448-457 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">TransLiver: A Hybrid Transformer Model for Multi-phase Liver Lesion Classification</title>
+		<author>
+			<persName><forename type="first">Xierui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanning</forename><surname>Ying</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiujun</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-43895-0_31</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="329" to="338" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, X., Ying, H., Xu, X., Cai, X. &amp; Zhang, M. Transliver: A hybrid transformer model for multi-phase liver lesion classification. In International Conference on Medical Image Computing and Computer-Assisted Intervention 329-338 (Springer, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Transformer-Based End-to-End Classification of Variable-Length Volumetric Data</title>
+		<author>
+			<persName><forename type="first">Marzieh</forename><surname>Oghbaie</surname></persName>
+			<idno type="ORCID">0000-0001-7391-1612</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Teresa</forename><surname>Araújo</surname></persName>
+			<idno type="ORCID">0000-0001-9687-528X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taha</forename><surname>Emre</surname></persName>
+			<idno type="ORCID">0000-0002-6753-5048</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ursula</forename><surname>Schmidt-Erfurth</surname></persName>
+			<idno type="ORCID">0000-0002-7788-7311</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hrvoje</forename><surname>Bogunović</surname></persName>
+			<idno type="ORCID">0000-0002-9168-0894</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-43987-2_35</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="358" to="367" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Oghbaie, M., Araújo, T., Emre, T., Schmidt-Erfurth, U. &amp; Bogunović, H. Transformer-based end-to-end classification of variable- length volumetric data. In International Conference on Medical Image Computing and Computer-Assisted Intervention 358-367 (Springer, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Transformer-Based Annotation Bias-Aware Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Zehui</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shishuai</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Xia</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-43901-8_3</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="24" to="34" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liao, Z., Hu, S., Xie, Y. &amp; Xia, Y. Transformer-based annotation bias-aware medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 24-34 (Springer, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">DAST: Differentiable Architecture Search with Transformer for 3D Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyue</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yufan</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishwesh</forename><surname>Nath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenqi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andriy</forename><surname>Myronenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Hatamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Can</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Holger</forename><forename type="middle">R</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daguang</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-43898-1_71</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="747" to="756" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang, D. et al. Dast: Differentiable architecture search with transformer for 3d medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 747-756 (Springer, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Nnformer: Interleaved transformer for volumetric medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Medical Image Computing and Computer-Assisted Intervention</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="217" to="228" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhou, Y. et al. Nnformer: Interleaved transformer for volumetric medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 217-228 (Springer, 2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">U-mamba: Enhancing long-range dependency for biomedical image segmentation</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2401.04722</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Ma, J., Li, F. &amp; Wang, B. U-mamba: Enhancing long-range dependency for biomedical image segmentation. arXiv preprint arXiv:2401.04722 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Nnmamba: 3D Biomedical Image Segmentation, Classification and Landmark Detection with State Space Model</title>
+		<author>
+			<persName><forename type="first">Haifan</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luoyao</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yitao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xusheng</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haofeng</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/isbi60581.2025.10980694</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2025-04-14">2025. 2025</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gong, H. et al. nnmamba: 3d biomedical image segmentation, classification and landmark detection with state space model. In 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 1-5 (IEEE, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Vmamba: Visual state space model</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Neural. Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="103031" to="103063" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, Y. et al. Vmamba: Visual state space model. Adv. Neural. Inf. Process. Syst. 37, 103031-103063 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">VM-UNet: Vision Mamba UNet for Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Jiacheng</forename><surname>Ruan</surname></persName>
+			<idno type="ORCID">0000-0001-5469-507X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jincheng</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-4170-0877</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suncheng</forename><surname>Xiang</surname></persName>
+			<idno type="ORCID">0000-0002-9141-6460</idno>
+		</author>
+		<idno type="DOI">10.1145/3767748</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Multimedia Computing, Communications, and Applications</title>
+		<title level="j" type="abbrev">ACM Trans. Multimedia Comput. Commun. Appl.</title>
+		<idno type="ISSN">1551-6857</idno>
+		<idno type="ISSNe">1551-6865</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ruan, J., Li, J. &amp; Xiang, S. Vm-unet: Vision mamba unet for medical image segmentation ACM Transactions on Multimedia Computing, Communications and Applications (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">DTASUnet: a local and global dual transformer with the attention supervision U-network for brain tumor segmentation</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ze</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baosheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yungang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-78067-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">28379</biblScope>
+			<date type="published" when="2024-11-17">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ma, B. et al. Dtasunet: A local and global dual transformer with the attention supervision u-network for brain tumor segmentation. Sci. Rep. 14, 28379 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Causal Intervention for Brain Tumor Segmentation</title>
+		<author>
+			<persName><forename type="first">Hengxin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weizhi</forename><surname>Nie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zibo</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anan</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72114-4_16</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="160" to="170" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, H., Li, Q., Nie, W., Xu, Z. &amp; Liu, A. Causal intervention for brain tumor segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 160-170 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Structural Attention: Rethinking Transformer for Unpaired Medical Image Synthesis</title>
+		<author>
+			<persName><forename type="first">Vu</forename><forename type="middle">Minh Hieu</forename><surname>Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhibin</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonios</forename><surname>Perperidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Son</forename><forename type="middle">Lam</forename><surname>Phung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><forename type="middle">W</forename><surname>Verjans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minh-Son</forename><surname>To</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72104-5_66</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="690" to="700" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phan, V. M. H. et al. Structural attention: Rethinking transformer for unpaired medical image synthesis. In International Conference on Medical Image Computing and Computer-Assisted Intervention 690-700 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Region Attention Transformer for Medical Image Restoration</title>
+		<author>
+			<persName><forename type="first">Zhiwen</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haowei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziniu</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingzheng</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72104-5_58</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="603" to="613" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang, Z. et al. Region attention transformer for medical image restoration. In International Conference on Medical Image Computing and Computer-Assisted Intervention 603-613 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Revisiting Self-attention in Medical Transformers via Dependency Sparsification</title>
+		<author>
+			<persName><forename type="first">Xian</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhehao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zengqiang</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72120-5_52</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="555" to="566" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lin, X., Wang, Z., Yan, Z. &amp; Yu, L. Revisiting self-attention in medical transformers via dependency sparsification. In International Conference on Medical Image Computing and Computer-Assisted Intervention 555-566 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">MedNeXt: Transformer-Driven Scaling of ConvNets for Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Saikat</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Koehler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Constantin</forename><surname>Ulrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Baumgartner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">F</forename><surname>Jäger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-43901-8_39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="405" to="415" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Roy, S. et al. Mednext: transformer-driven scaling of convnets for medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 405-415 (Springer, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Enhanced medical image segmentation using U-Net with residual connections and dual attention mechanism</title>
+		<author>
+			<persName><forename type="first">Leyi</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaojiao</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaodong</forename><surname>Fan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.engappai.2025.110794</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Applications of Artificial Intelligence</title>
+		<title level="j" type="abbrev">Engineering Applications of Artificial Intelligence</title>
+		<idno type="ISSN">0952-1976</idno>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="page">110794</biblScope>
+			<date type="published" when="2025-08">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xiao, L., Song, J., Xie, X. &amp; Fan, C. Enhanced medical image segmentation using u-net with residual connections and dual attention mechanism. Eng. Appl. Artif. Intell. 153, 110794 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">CI-UNet: melding convnext and cross-dimensional attention for robust medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Zhuo</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihan</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaochen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanfeng</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13534-023-00341-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Engineering Letters</title>
+		<title level="j" type="abbrev">Biomed. Eng. Lett.</title>
+		<idno type="ISSN">2093-9868</idno>
+		<idno type="ISSNe">2093-985X</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="341" to="353" />
+			<date type="published" when="2024-01-08">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, Z., Wen, Y., Zhang, X. &amp; Ma, Q. Ci-unet: Melding convnext and cross-dimensional attention for robust medical image segmentation. Biomed. Eng. Lett. 14, 341-353 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Corrigendum to “Local and long-range progressive fusion network for knee joint segmentation” [Biomed. Signal Process. Control 112(Part D) (2026) 108624]</title>
+		<author>
+			<persName><forename type="first">Xiwang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lijie</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xipeng</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanyuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongyang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Renwei</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jubai</forename><surname>An</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2025.109408</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page">109408</biblScope>
+			<date type="published" when="2026-04">2026</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xie, X. et al. Local and long-range progressive fusion network for knee joint segmentation. Biomed. Signal Process. Control 112, 108624 (2026).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Automatic brain MRI tumors segmentation based on deep fusion of weak edge and context features</title>
+		<author>
+			<persName><forename type="first">Leyi</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baoxian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaodong</forename><surname>Fan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-025-11151-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">154</biblScope>
+			<date type="published" when="2025-03-03">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xiao, L., Zhou, B. &amp; Fan, C. Automatic brain mri tumors segmentation based on deep fusion of weak edge and context features. Artif. Intell. Rev. 58, 154 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Deep learning and radiomics-based approach to meningioma grading: exploring the potential value of peritumoral edema regions</title>
+		<author>
+			<persName><forename type="first">Zhuo</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jixuan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaochen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanfeng</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1361-6560/ad3cb1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine &amp; Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">105002</biblScope>
+			<date type="published" when="2024-04-26">2024</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, Z. et al. Deep learning and radiomics-based approach to meningioma grading: Exploring the potential value of peritumoral edema regions. Phys. Med. Biol. 69, 105002 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">PIF-Net: A parallel interweave fusion network for knee joint segmentation</title>
+		<author>
+			<persName><forename type="first">Xiwang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lijie</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xipeng</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenyi</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jubai</forename><surname>An</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2025.107967</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page">107967</biblScope>
+			<date type="published" when="2025-11">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xie, X. et al. Pif-net: A parallel interweave fusion network for knee joint segmentation. Biomed. Signal Process. Control 109, 107967 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Discriminative features pyramid network for medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Xiwang</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0002-8328-5392</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lijie</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanyu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weidong</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenyi</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xipeng</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jubai</forename><surname>An</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bbe.2024.04.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biocybernetics and Biomedical Engineering</title>
+		<title level="j" type="abbrev">Biocybernetics and Biomedical Engineering</title>
+		<idno type="ISSN">0208-5216</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="327" to="340" />
+			<date type="published" when="2024-04">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xie, X. et al. Discriminative features pyramid network for medical image segmentation. Biocybern. Biomed. Eng. 44, 327-340 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">A Novel Deep Learning Model for Medical Image Segmentation with Convolutional Neural Network and Transformer</title>
+		<author>
+			<persName><forename type="first">Zhuo</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongbing</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yicheng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jifang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baoshan</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12539-023-00585-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Interdisciplinary Sciences: Computational Life Sciences</title>
+		<title level="j" type="abbrev">Interdiscip Sci Comput Life Sci</title>
+		<idno type="ISSN">1913-2751</idno>
+		<idno type="ISSNe">1867-1462</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="663" to="677" />
+			<date type="published" when="2023-09-04">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, Z. et al. A novel deep learning model for medical image segmentation with convolutional neural network and transformer. Interdiscip. Sci. 15, 663-677 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">&lt;scp&gt;MRCM&lt;/scp&gt;‐&lt;scp&gt;UCTransNet&lt;/scp&gt;: Automatic and Accurate &lt;scp&gt;3D&lt;/scp&gt; Tooth Segmentation Network From Cone‐Beam &lt;scp&gt;CT&lt;/scp&gt; Images</title>
+		<author>
+			<persName><forename type="first">Xinyang</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuoxuan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanbo</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-1148-1260</idno>
+		</author>
+		<idno type="DOI">10.1002/ima.23139</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Imaging Systems and Technology</title>
+		<title level="j" type="abbrev">Int J Imaging Syst Tech</title>
+		<idno type="ISSN">0899-9457</idno>
+		<idno type="ISSNe">1098-1098</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">23139</biblScope>
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wen, X., Liu, Z., Chu, Y., Le, M. &amp; Li, L. Mrcm-uctransnet: Automatic and accurate 3d tooth segmentation network from cone- beam ct images. Int. J. Imaging Syst. Technol. 34, e23139 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A step gravitational search algorithm for function optimization and STTM’s synchronous feature selection-parameter optimization</title>
+		<author>
+			<persName><forename type="first">Chaodong</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurence</forename><forename type="middle">T</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leyi</forename><surname>Xiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-025-11193-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">179</biblScope>
+			<date type="published" when="2025-03-21">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fan, C., Yang, L. T. &amp; Xiao, L. A step gravitational search algorithm for function optimization and sttm&apos;s synchronous feature selection-parameter optimization. Artif. Intell. Rev. 58, 179 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2107.02314</idno>
+		<title level="m">e rsna-asnr-miccai brats 2021 benchmark on brain tumor segmentation and radiogenomic classification</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Baid, U. et al. e rsna-asnr-miccai brats 2021 benchmark on brain tumor segmentation and radiogenomic classification. arXiv preprint. arXiv:2107.02314 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Multimodal Brain Tumor Segmentation and Beyond</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">H</forename><surname>Menze</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/978-2-88971-170-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">1664-8714</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1993" to="2024" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Menze, B. H. et al. e multimodal brain tumor image segmentation benchmark (brats). IEEE Trans. Med. Imaging 34, 1993-2024 (2014).</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features</title>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><forename type="middle">S</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">B</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/sdata.2017.117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2017-09-05">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bakas, S. et al. Advancing the cancer genome atlas glioma mri collections with expert segmentation labels and radiomic features. Sci. Data 4, 1-13 (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Recurrent residual U-Net for medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Zahangir</forename><surname>Alom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Yakopcic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmudul</forename><surname>Hasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarek</forename><forename type="middle">M</forename><surname>Taha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijayan</forename><forename type="middle">K</forename><surname>Asari</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/1.jmi.6.1.014006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Medical Imaging</title>
+		<title level="j" type="abbrev">J. Med. Imag.</title>
+		<idno type="ISSN">2329-4302</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">01</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2019-03-27">2019</date>
+			<publisher>SPIE-Intl Soc Optical Eng</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alom, M. Z., Yakopcic, C., Hasan, M., Taha, T. M. &amp; Asari, V. K. Recurrent residual u-net for medical image segmentation. J. Med. Imaging 6, 014006-014006 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">O</forename><surname>Oktay</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1804.03999</idno>
+		<title level="m">Attention u-net: Learning where to look for the pancreas</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Oktay, O. Attention u-net: Learning where to look for the pancreas. arXiv preprint arXiv:1804.03999 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Transbts: Multimodal brain tumor segmentation using transformer</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wenxuan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Medical Image Computing and Computer-Assisted Intervention</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="109" to="119" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wenxuan, W. et al. Transbts: Multimodal brain tumor segmentation using transformer. In International Conference on Medical Image Computing and Computer-Assisted Intervention, Springer 109-119 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">A Robust Volumetric Transformer for Accurate 3D Tumor Segmentation</title>
+		<author>
+			<persName><forename type="first">Himashi</forename><surname>Peiris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munawar</forename><surname>Hayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaolin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gary</forename><surname>Egan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehrtash</forename><surname>Harandi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-16443-9_16</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="162" to="172" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Peiris, H., Hayat, M., Chen, Z., Egan, G. &amp; Harandi, M. A robust volumetric transformer for accurate 3d tumor segmentation. In International Conference on Medical Image Computing and Computer-assisted Intervention 162-172 (Springer, 2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images</title>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Hatamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishwesh</forename><surname>Nath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yucheng</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Holger</forename><forename type="middle">R</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daguang</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-08999-2_22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="272" to="284" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hatamizadeh, A. et al. Swin unetr: Swin transformers for semantic segmentation of brain tumors in mri images. In International MICCAI Brainlesion Workshop 272-284 (Springer, 2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">SegMamba: Long-Range Sequential Modeling Mamba for 3D Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Zhaohu</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yijun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-72111-3_54</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="578" to="588" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xing, Z., Ye, T., Yang, Y., Liu, G. &amp; Zhu, L. Segmamba: Long-range sequential modeling mamba for 3d medical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention 578-588 (Springer, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Semi-Supervised Unpaired Medical Image Segmentation Through Task-Affinity Consistency</title>
+		<author>
+			<persName><forename type="first">Jingkun</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-9466-7153</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianguo</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-9317-0268</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kurt</forename><surname>Debattista</surname></persName>
+			<idno type="ORCID">0000-0003-2982-5199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jungong</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0003-4361-956X</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2022.3213372</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="594" to="605" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, J., Zhang, J., Debattista, K. &amp; Han, J. Semi-supervised unpaired medical image segmentation through task-affinity consistency. IEEE Trans. Med. Imaging 42, 594-605 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Dynamic contrastive learning guided by class confidence and confusion degree for medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Jingkun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changrui</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjian</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianguo</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kurt</forename><surname>Debattista</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jungong</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2023.109881</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page">109881</biblScope>
+			<date type="published" when="2024-01">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, J. et al. Dynamic contrastive learning guided by class confidence and confusion degree for medical image segmentation. Pattern Recogn. 145, 109881 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">From Gaze to Insight: Bridging Human Visual Attention and Vision Language Model Explanation for Weakly-Supervised Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Jingkun</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-9466-7153</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Haoran</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0006-4347-9172</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Boyan</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vicente</forename><surname>Grau</surname></persName>
+			<idno type="ORCID">0000-0001-8139-3480</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jungong</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2025.3616598</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="page" from="1" to="1" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, J. et al. From gaze to insight: bridging human visual attention and vision language model explanation for weakly-supervised medical image segmentation. IEEE Trans. Med. Imaging (2025).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

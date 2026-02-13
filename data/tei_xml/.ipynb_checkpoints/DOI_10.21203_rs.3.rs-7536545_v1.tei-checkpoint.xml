@@ -1,0 +1,2526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A human iPSC-based neural spheroid platform for modeling glioblastoma infiltration using high-content imaging</title>
+				<funder ref="#_6QqaTG5">
+					<orgName type="full">Innovate UK</orgName>
+				</funder>
+				<funder ref="#_w947H9X">
+					<orgName type="full">HipSci consortium</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Rosetrees Trust</orgName>
+				</funder>
+				<funder ref="#_sCppkfu #_yvEHDjj">
+					<orgName type="full">Wellcome Trust</orgName>
+				</funder>
+				<funder ref="#_QhcDzZH">
+					<orgName type="full">Medical Research Council</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-10-06">October 6th, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Victoria</forename><forename type="middle">S K</forename><surname>Tsang</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>s</label> College London University College London Saint Louis University University of Leeds University of Cambridge Ivo Lieberam King&apos;s College London King&apos;s College London</note>
+								<orgName type="institution" key="instit1">College London</orgName>
+								<orgName type="institution" key="instit2">University College London</orgName>
+								<orgName type="institution" key="instit3">Saint Louis University</orgName>
+								<orgName type="institution" key="instit4">University of Leeds</orgName>
+								<orgName type="institution" key="instit5">University of Cambridge Ivo Lieberam King&apos;s College London</orgName>
+								<orgName type="institution" key="instit6">King&apos;s College London</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Federica</forename><surname>Riccio</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hannah</forename><surname>Nudds</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jason</forename><surname>Coombes</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Heiko</forename><surname>Wurdak</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Harry</forename><forename type="middle">J C J</forename><surname>Bulstrode</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ivo</forename><surname>Lieberam</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Davide</forename><surname>Danovi</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">College London</note>
+								<orgName type="institution">College London</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A human iPSC-based neural spheroid platform for modeling glioblastoma infiltration using high-content imaging</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<date type="published" when="2025-10-06">October 6th, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8CD15A64A7BBDDFD06BF1028BE3DB0CA</idno>
+					<idno type="DOI">10.21203/rs.3.rs-7536545/v1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-08T08:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Glioblastoma</term>
+					<term>cancer migration</term>
+					<term>induced-pluripotent stem cells</term>
+					<term>neural spheroid</term>
+					<term>high-content imaging</term>
+					<term>stem cell modelling</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Glioblastoma is the most aggressive adult brain tumor, characterized by resistance to therapy and high recurrence due to diffuse in ltration. To mimic glioblastoma migration, we developed a physiologically relevant co-culture model, combining patient-derived glioblastoma cell lines with cortical-like neural spheroids differentiated from human induced pluripotent stem cells. Using high-content imaging, we demonstrate that GBM1 and GBM20 cell lines migrate directionally along axons toward neural spheroids in live imaging assays and in ltrate spheroids extensively in endpoint assays, unlike non-cancerous neural stem cells. A proof-of-principle drug screen identi ed PF-573228 (FAK inhibitor) and Motixafortide (CXCR4 inhibitor) as potent suppressors of GBM1 and GBM20 in ltration, respectively. Bulk RNA sequencing revealed gene expression pro les correlating with invasive behavior and drug sensitivity. This platform offers a valuable model for studying glioblastoma in ltration along axons and provides proof-of-principle that migration can serve as a measurable and actionable phenotype to screen therapeutic vulnerabilities in glioblastoma.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Glioblastoma (GB) is the most common and aggressive form of primary brain tumor in adults, with a median overall survival of just 12 to 15 months following diagnosis and standard-of-care treatment with temozolomide <ref type="bibr">[1]</ref><ref type="bibr">[2]</ref><ref type="bibr">[3]</ref><ref type="bibr">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr">[8]</ref> . GB is de ned by its IDH1/IDH2-wildtype status and classi ed as a World Health Organization (WHO) grade IV tumor, re ecting its high malignancy <ref type="bibr">3,</ref><ref type="bibr" target="#b4">5</ref> . A major barrier to effective treatment is the pronounced inter-and intra-tumoral heterogeneity in genetic mutations and cellular phenotypes, which complicates therapeutic targeting and drives drug resistance <ref type="bibr" target="#b7">[9]</ref><ref type="bibr" target="#b8">[10]</ref><ref type="bibr" target="#b9">[11]</ref> . Moreover, the highly in ltrative nature of GB precludes complete surgical resection and temozolomide treatment, promoting tumor recurrence <ref type="bibr">6,</ref><ref type="bibr" target="#b10">12,</ref><ref type="bibr" target="#b11">13</ref> .</p><p>A key contributor to the aggressive invasiveness of GB is a subpopulation of neoplastic cells called the GB stem-like cells (GSCs) <ref type="bibr" target="#b12">[14]</ref><ref type="bibr" target="#b13">[15]</ref><ref type="bibr">[16]</ref><ref type="bibr" target="#b15">[17]</ref> . GSCs exhibit hallmark features of stemness, including self-renewal and multipotency, and are found at the tumor core and in in ltrative margins, where they play a key role in tumor recurrence and therapy resistance <ref type="bibr" target="#b15">[17]</ref><ref type="bibr">[18]</ref><ref type="bibr" target="#b17">[19]</ref><ref type="bibr" target="#b18">[20]</ref> . Most importantly, GSCs are highly invasive and utilize conserved mechanisms of invasion, emphasizing their critical role in disease progression. Their invasive capacity is mediated by intrinsic processes, including cytoskeletal remodeling and upregulation of surface receptors that regulate adhesion and motility <ref type="bibr" target="#b13">15</ref> . These mechanisms facilitate GSC migration along two primary routes, the vascular endothelium and axonal tracts within the white matter of the brain, although the mechanisms underlying the route selection remain unclear <ref type="bibr" target="#b12">14,</ref><ref type="bibr" target="#b13">15,</ref><ref type="bibr" target="#b19">21</ref> .</p><p>An increased understanding of the prognostic signi cance of tumor invasion has driven the development of advanced in vitro models that more accurately recapitulate GB complexity for drug screening purposes <ref type="bibr" target="#b20">22</ref> . Among these, patient-derived GSC lines have emerged as a valuable research tool. These lines faithfully preserve the stem cell-like properties, genetic landscape, and transcriptional pro le of the parental tumor, even after extended passaging, thereby maintaining key features of the in vivo tumor phenotype <ref type="bibr" target="#b21">23,</ref><ref type="bibr" target="#b22">24</ref> . Particularly, patient-speci c GSCs have been used to generate physiologically relevant model systems, including glioma spheroids and GB cerebral organoids that better represent the complexity of GB and the tumor microenvironment <ref type="bibr" target="#b23">25</ref> .</p><p>High-content imaging combines automated microscopy with quantitative single-cell analysis, allowing detailed, large-scale assessment of cellular phenotypes <ref type="bibr">26,</ref><ref type="bibr" target="#b25">27</ref> . In cancer research, high-content imaging enables dynamic studies of cell behaviors such as migration, especially when using label-free modalities like phase contrast to avoid phototoxicity during long-term live-cell assays <ref type="bibr">28,</ref><ref type="bibr" target="#b27">29</ref> . These advancements, alongside computational and multi-omics approaches, have signi cantly enhanced drug screening and target discovery in complex tumor models like GB.</p><p>In this study, we present a novel in vitro co-culture system that combines patient-derived GB cells and axons extending from neural spheroids derived from human iPSCs. This model allows for the interaction between GB cells and neuronal axons, providing a more physiologically relevant microenvironment for the study of GB cells migration and in ltration, which are critical processes driving GB recurrence. Using high-content imaging, we reveal signi cant differences in the migration patterns of two different GB cell lines and provide insights into the mechanisms underlying GB cell line-speci c in ltration strategies, with potential implications for anti-in ltrative therapies. Additionally, we correlate migration phenotypes with drug responses identi ed through a screening of relevant inhibitors. This drug screen provides proof-of-principle that migration is a measurable phenotype with potential for guiding precision therapies against GB in ltration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Patient-derived GB cells migrate along axons toward the neural spheroid in vitro</head><p>To generate an in vitro model suitable for the characterization of in ltration of GB cells and amenable to drug-screening studies, we combined the culture of patient-derived GB cell lines with human iPSC-derived neural spheroids with radially extending axons. Wildtype human iPSCs are differentiated into excitatory cortical-like neurons using NGN2-mediated forward programming differentiation <ref type="bibr" target="#b28">30</ref> . Following the induction phase, early neuronal progenitors are placed into non-adherent Pluronic acid-coated V-bottom plates where they self-aggregate into individual spheroids of reproducible size and shape (Figure <ref type="figure" target="#fig_0">1A</ref>). Then, spheroids are transferred onto laminin-coated plates where they adhere to the culture substrate and extend long, radially organized neurites (Figure <ref type="figure" target="#fig_0">1B</ref>).</p><p>Immuno uorescence staining performed on the spheroids revealed positive expression of the axonal marker βIII-tubulin (Tubb3) in the projecting neurites (Figure <ref type="figure" target="#fig_0">1B</ref>), validating the generation of a neuronal substrate suitable for GB co-culture assays.</p><p>Having established a co-culture of neural spheroids with emerging axons, we next examined how two different patient-derived GB cell lines, GBM1 and GBM20, behave in this axon-rich microenvironment. GBM1, rst described by Wurdak et al., was derived from a primary, treatment-naïve tumor <ref type="bibr" target="#b7">9,</ref><ref type="bibr" target="#b29">31</ref> , while GBM20, reported by Polson et al., was obtained from a recurrent tumor previously treated with chemoradiotherapy and the IMA950 peptide vaccine <ref type="bibr" target="#b29">31</ref> . A human neural stem cell line called NS17 was examined in parallel as a non-tumorigenic control with features of self-renewal and multipotency <ref type="bibr" target="#b30">32</ref> .</p><p>Live-cell imaging of the GB and NS17 lines revealed that all three cell lines aligned with and migrated along neuronal axons, indicating a direct interaction between the cells and the axons (Figure <ref type="figure" target="#fig_1">2</ref> and supplementary videos). To determine whether the direction of cell migration along axons was random or biased toward the neural spheroid, we quanti ed the directionality of individual cell tracks (Figure <ref type="figure" target="#fig_2">3A</ref>). In the absence of axons, migration was isotropic, as shown by the uniform distribution of the polar histograms. In contrast, cells plated on axons exhibited directional migration along axons, with a clear enrichment of movement toward the neural spheroid positioned on the right side of the imaging eld. This directional bias was evident across all cell lines, including the non-cancerous NS17 control (10% of cells moving at an angle 0 o ), and was most pronounced in GBM20 (12% of cells moving at an angle 0 o ).</p><p>A signi cant increase in instantaneous velocity was observed when all three cell lines were cultured on axons compared with axon-free conditions (****, p &lt; 0.0001) (Figure <ref type="figure" target="#fig_2">3B</ref>). Interestingly, a change in overall mean speed reached signi cance only for GBM1 cells on axons, with no such effect on the other cell lines. Although migration directionality and velocity were strongly in uenced by the presence of neuronal axons, the con nement ratio remained unchanged between axon-present and axon-absent conditions for all cell lines (Figure <ref type="figure" target="#fig_2">3B</ref>). These ndings suggest that axons function as a permissive, orienting substrate that enhances guidance cues, particularly for GBM1 cells. Moreover, the increased variability in directionality and velocity on axons highlights the heterogeneity of cell responses and supports the need for further investigation into temporal dynamics and GB subtype-speci c migration mechanisms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>GB cells exhibit cell line-speci c in ltration in neural spheroid co-culture</head><p>We hypothesized that cells migrating toward the neural spheroid would subsequently in ltrate it. To assess the in ltration potential of patient-derived GB cells in comparison to non-tumorigenic neural stem cells, GBM1, GBM20, and NS17 cells were labelled with a permeable cytoplasmic dye, added to neural spheroids in culture, and imaged every day for 5 days. A customized image analysis pipeline was applied to endpoint images acquired from Day 1 to 5 to quantify the number of in ltrating cells across conditions (Figure <ref type="figure" target="#fig_3">4A</ref>).</p><p>All three cell lines showed a progressive increase in the number of in ltrated cells over time (Figure <ref type="figure" target="#fig_3">4B</ref>). On Day 5, NS17 cells reached an average in ltration of 6.5 ± 0.9 cells per spheroid, whereas GBM1 and GBM20 demonstrated signi cantly greater in ltration, with 17.2 ± 0.6 and 11.9 ± 1.6 cells, respectively.</p><p>Statistically signi cant differences emerged by Day 2, at which point GBM1 cells had in ltrated the spheroids at a higher rate (5.5 ± 1.0 cells) compared to NS17 (1.6 ± 0.4 cells). Normal distribution analysis of cell in ltration values revealed progressive divergence between patient-derived GB lines and the nontumorigenic control (Figure <ref type="figure" target="#fig_3">4C</ref>). On Day 3, data distribution showed a clear separation between NS17 and GBM1/GBM20, with a calculated Z-factor of 0.701, indicating excellent assay robustness and strong discriminatory power suitable for screening applications. While the Z-factor decreased to 0.218 by Day 4, re ecting increased variability or overlap in in ltration measurements, it improved again on Day 5, reaching 0.575, consistent with a reliable and moderately robust assay window (See also Figure <ref type="figure" target="#fig_0">S1A</ref>). These data suggest that Day 3 represents the optimal time point for distinguishing differential in ltration phenotypes in this model, with potential applicability for high-throughput anti-invasion compound screening.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>GB and neural spheroid co-cultures enable identi cation of tumor-speci c in ltration inhibitors</head><p>Having developed a quantitative pipeline to measure GB cell migration along axons and in ltration into the neural spheroid core, we next used this co-culture platform for a pilot drug screen. To investigate mechanisms regulating GB in ltration, a panel of 18 inhibitors (Table <ref type="table">1</ref>) targeting cytoskeletal dynamics, kinase signaling, and axonal guidance pathways that mediate glioma invasion was selected based on literature and clinical relevance <ref type="bibr" target="#b13">15,</ref><ref type="bibr" target="#b15">17,</ref><ref type="bibr" target="#b31">33</ref> . This included established cytoskeletal disruptors such as inhibitors to actin polymerization (Latrunculin B), myosin II ATPase (Blebbistatin), and ROCK1/2 (Y-27632), commonly used to reduce cell motility, along with targeted canonical GB signaling pathways involved in cell migration and invasion, including inhibitors to TGF-β receptor (SB 431542), PI3K/Akt (API-2), Protein Kinase C (GF 109203X), and integrins (Cilengitide), pathways often targeted in clinical evaluation <ref type="bibr" target="#b32">[34]</ref><ref type="bibr" target="#b33">[35]</ref><ref type="bibr">[36]</ref><ref type="bibr" target="#b35">[37]</ref><ref type="bibr">[38]</ref> . Additional targets included non-canonical regulators such as hedgehog (HPI-1) and Wnt (IWP-2) pathways, and receptor tyrosine kinases, including FAK (PF 573228), FGFR (PD 173074), PDGFR (AC 710), and EGFR (Iressa) <ref type="bibr" target="#b37">[39]</ref><ref type="bibr" target="#b38">[40]</ref><ref type="bibr" target="#b39">[41]</ref> . Given the importance of axon-guided migration in GBM, we included inhibitors of Ephrin receptors (ALW-II-41-27 for EphA2, NVP-BHG712 for EphB4, and Ehp-inhibitor-1), and the CXCL12/CXCR4 axis (Motixafortide), known to regulate directed migration in the hypoxic tumor core in immunotherapy <ref type="bibr" target="#b40">42,</ref><ref type="bibr" target="#b41">43</ref> . Finally, we tested repurposed drugs such as pranlukast (ONO-1078), a leukotriene receptor antagonist shown to impair GB spread along white matter tracts in preclinical models <ref type="bibr" target="#b42">44</ref> .</p><p>On Day 0, GB and NS17 cells were labelled and seeded in co-culture with the neural spheroids. Inhibitors were applied at 1 μM on Days 1 to 3, and cultures were imaged each day after 6 hours of incubation. Representative images illustrate the increasing accumulation of GBM1 cells within and around the spheroid from Day 1 to Day 3 in the untreated controls and with Motixafortide treatment (Figure <ref type="figure" target="#fig_4">5A</ref>). As expected from previous observations, both GBM1 and GBM20 cells showed progressive in ltration into the neural spheroid over three days, and inhibitor-speci c effects became apparent by Day 3. For the GBM20 line, signi cant reduction of in ltration was observed with PF 573228 (**, p = 0.0043), Y-27632 (*, p = 0.0244), Motixafortide (*, p = 0.0232), and GF 109203X (*, p = 0.0262) (Figure <ref type="figure" target="#fig_4">5B</ref>). Conversely, only Latrunculin B (*, p = 0.0386) and Motixafortide (*, p = 0.0293) signi cantly reduced GBM1 in ltration (Figure <ref type="figure" target="#fig_4">5B</ref>). Importantly, none of the tested inhibitors signi cantly affected in ltration of the non-cancerous NS17 neural stem cells (See also Figure <ref type="figure" target="#fig_0">S1B</ref>).</p><p>Their in ltration remained consistently low and comparable to vehicle controls, underscoring the speci city of the drug responses observed in the GB models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>GBM1 and GBM20 exhibit distinct transcriptomic signatures that align with differential drug sensitivities</head><p>To investigate the molecular basis underlying the different in ltrative behaviors and drug responses of GBM1 and GBM20 observed in our co-culture system, we conducted bulk RNA-sequencing followed by differential gene expression analysis. The two GB lines exhibited distinct transcriptomic pro les, as visualized in a volcano plot. GBM20 showed elevated expressions of PCOLCE, GABBR2, ERAP2, PCDHB5, ERAP2 and CCL2, while GBM1 was characterized by higher expressions of COL1A2, MGST1, CDKN2A, MCAM, and RGMB, suggesting distinct biological programs (Figure <ref type="figure" target="#fig_5">6A</ref>). Gene Ontology (GO) enrichment analysis of signi cantly dysregulated genes (adjusted p &lt; 0.05, |log₂ FC| &gt; 1) further highlighted these differences (Figure <ref type="figure" target="#fig_5">6B</ref>). GBM1 was enriched for neurodevelopmental programs such as "positive regulation of nervous system development" and "axonogenesis," as well as cell adhesion and guidance processes ("cell-cell adhesion via plasma membrane adhesion molecules" and "axon guidance") and cilium-associated programs ("cilium assembly" and "cilium organization"). In contrast, GBM20 showed enrichment for extracellular matrix (ECM) organization pathways ("ECM structural organization" and "external encapsulating structure organization") and genes involved in neurite outgrowth and synapse formation ("pattern speci cation process" and "regulation of neuron projection development").</p><p>To explore how these transcriptional differences may relate to drug responses, we conducted pre-ranked Gene Set Enrichment Analysis (GSEA) using MSigDB gene sets (GO, KEGG, Reactome, and Hallmark). In the drug screen, in ltration of GBM1 cells was signi cantly reduced by Latrunculin B (actin polymerization inhibitor) and Motixafortide (CXCR4 antagonist). Correspondingly, GSEA revealed enrichment of actin remodeling and wound healing pathways in GBM1, suggesting a dependence on actin-driven motility. Enrichment of immune-related pathways, including PD-1 signaling and antigen presentation, also supports involvement of the CXCL12-CXCR4 axis, targeted by Motixafortide (Figure <ref type="figure" target="#fig_5">6C</ref>). GBM20 in ltration was signi cantly inhibited by GF 109203X (Protein Kinase C inhibitor) and Y-27632 (ROCK inhibitor). GSEA revealed enrichment of presynaptic organization and oxidative stress-related pathways in GBM20, consistent with ROCK-and PKC-mediated cytoskeletal remodeling and redox signaling dependencies (Figure <ref type="figure" target="#fig_5">6C</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>We present a physiologically relevant in vitro co-culture model combining patient-derived GB cells with human iPSC-derived neural spheroids. These spheroids form a dense core of neuronal bodies with radially extending axons, allowing a reproducible and scalable assessment of GB cell in ltration. Using high-content imaging, we established automated pipelines to quantify axon engagement, directional migration in live assays, and spheroid in ltration in endpoint assays. Both GBM1 and GBM20 actively migrated toward neural spheroids, but GBM1 showed a higher in ltration capacity. A focused drug screen revealed line-speci c sensitivities, with four compounds reducing GBM1 in ltration and two affecting GBM20, establishing proof-of-principle for our model as a platform for identifying anti-in ltration compounds. Transcriptomic pro ling further highlighted distinct gene expression programs underpinning the observed migratory phenotypes and drug responses. This integrative approach correlates cell behavior with molecular signatures, laying the foundation for functional precision-medicine studies in GB.</p><p>We demonstrated that both GB lines and a non-tumorigenic neural stem cell line (NS17) migrated toward neural spheroids, but only the GB lines in ltrated them. This suggests that while neural-derived cues attract all lines, only GB cells possess the mechanism for in ltration. Consistent with prior work, we observed that GBM1 in ltrated more readily compared to neural progenitors <ref type="bibr" target="#b43">45</ref> . However, our previous ndings reported greater aggressiveness with patientderived GBM20 spheroids spontaneously fusing and in ltrating human cerebral organoids at a faster rate than GBM1 spheroids 46 . These differences may re ect shifts in phenotype following treatment, as GBM20 is derived from a recurrent tumor that was treated with radiotherapy and chemotherapy. Notably, recurrent GB cells have been shown to adopt less proliferative, pre-oligodendrocyte-like states in response to damage, potentially explaining the reduced invasiveness <ref type="bibr" target="#b42">44</ref> .</p><p>Our model also identi ed compounds that differentially impair GB cell in ltration. GBM20 was sensitive to inhibition of FAK (PF 573228), PKC (GF 109203X), and ROCK (Y-27632), while GBM1 responded to actin polymerization inhibition (Latrunculin B). Both lines were sensitive to inhibition of CXCR4 (Motixafortide), suggesting reliance on CXCL12/CXCR4 signaling, a known target in GB immunotherapy <ref type="bibr" target="#b41">43</ref> . Transcriptomic analyses revealed expression patterns consistent with drug sensitivity. GBM20 showed upregulation of FAK pathway-related genes (SRC, ITGA5, ITGB3, PPFIA1 and PRKCB), aligning with sensitivity to PF 573228 and GF 109203X. Previous studies support these ndings, as GF 109203X effectively targeted Protein Kinase C in GB <ref type="bibr" target="#b45">47</ref> and PF 573228 has also reduced the migration of established GB cell lines, T98G and U-118, in other models <ref type="bibr" target="#b37">39</ref> . High CXCL12 expression in GBM1 matched its higher sensitivity to Motixafortide with an increased reduction in the number of in ltrated cells in GBM1 compared to GBM20.</p><p>GSEA revealed additional mechanistic differences: GBM1 showed enrichment for actin cytoskeleton remodeling and immune-related pathways, supporting a model of CXCR4-and actin-driven motility. GBM20 exhibited enrichment for synaptic signaling and oxidative stress pathways, consistent with its dependence on ROCK/PKC signaling. These ndings reinforce the value of transcriptomics-informed migration assays in uncovering subtype-speci c vulnerabilities. Differential drug responses may re ect distinct pathway dependencies or compensatory mechanisms, underscoring the need for tailored therapeutic strategies.</p><p>The alignment between transcriptional programs and drug responses supports behavior-based functional strati cation as a complementary strategy to conventional molecular pro ling. This approach offers a powerful tool for evaluating patient-speci c vulnerabilities and complements recent advances using machine learning and high-throughput drug screening 48 . Our results not only highlight divergent invasive programs between GBM1 and GBM20 but also demonstrate the utility of patient-derived co-culture systems in identifying functionally relevant pathways. This work provides proof-of-principle that migration can serve as a robust, measurable, and functionally relevant phenotype to screen therapeutic vulnerabilities in GB.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and future direction</head><p>This pilot study involved only two GB lines and a single control, limiting broader applicability. Expanding the model to include a diverse panel of patientderived lines will enhance its predictive utility for therapeutic development. Future improvements include incorporating iPSC-derived oligodendrocytes to mimic myelinated tracts, as glioma cells preferentially migrate on myelinated axons <ref type="bibr" target="#b47">49,</ref><ref type="bibr" target="#b48">50</ref> . Moreover, while phase-contrast imaging enabled live tracking of GB migration and pseudopodia formation <ref type="bibr" target="#b48">[50]</ref><ref type="bibr" target="#b49">[51]</ref><ref type="bibr" target="#b50">[52]</ref> , it was not optimal for imaging in ltration into dense neural spheroids. Implementing high-content Z-stack imaging platforms such as the Operetta CLS permitted higher-throughput and higher-resolution quanti cation of in ltration dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Although glioma growth has been widely studied, its invasion and migration remain poorly understood. Our co-culture model, pairing patient-derived GB cells with axon-extending human neural spheroids, provides a physiologically relevant platform for migration-based drug screening. By integrating high-content imaging, drug screening, and transcriptomic data, we captured cell line-speci c behaviors and subtype-dependent migratory mechanisms. These ndings underscore the heterogeneity of GB invasion and demonstrate the potential of our platform to guide personalized therapeutic strategies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cell culture GB cells culture</head><p>The patient-derived GBM1 and GBM20 cell lines were derived under informed consent according to ethical approvals (LREC 115/ES/0094; courtesy of Dr Heiko Wurdak, University of Leeds <ref type="bibr" target="#b7">9,</ref><ref type="bibr" target="#b29">31</ref> . GBM1 and GBM20 cell lines were derived respectively from a primary tumor of a 58-year-old female patient and a 50year-old male patient with a recurrent GB, previously treated with radiotherapy, temozolomide, and IMA950. The cell models maintain the stem cell-like characteristics of GB under adherent culture conditions <ref type="bibr" target="#b7">9,</ref><ref type="bibr" target="#b29">31,</ref><ref type="bibr" target="#b43">45</ref> .</p><p>Cells were cultured 5 μg/mL poly-L-ornithine (PLO) (Sigma) and 2 μg/mL laminin (Thermo sher) coated plates in Neurobasal medium (Invitrogen) supplemented with 0.5X B27 (Invitrogen), 0.5X N2 (Invitrogen), 40 ng/mL epidermal growth factor (EGF) (R&amp;D Systems), and 40 ng/mL basicbroblast growth factor (b-FGF) (Invitrogen). Cells were passaged using 1X TrypLE (Gibco) when approximately 80% con uency was reached, and passages remained between passage numbers 14 to 20. Cell cultures were routinely tested for mycoplasma, and all were negative for contamination.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Neural stem cells</head><p>The cells GCGR.NS17ST_A (shortened to NS17) from the Glioma Cellular Genetics Resource (GCGR) was acquired under informed consent according to local ethical approvals (08/S1101/1) <ref type="bibr" target="#b30">32</ref> and kindly provided by Dr Steven Pollard (University of Edinburgh). The cells were cultured according to previously published methods DMEM/HAMS-F12 medium (Sigma) supplemented with 1.5 mg/mL of glucose (Sigma), 100 μM MEM NEAA (Gibco), 50 U/mL and 50 mg/mL Pen Strep (Gibco), 0.01% BSA (Gibco), 100 μM beta-mercaptoethanol (Gibco), 0.5X B27, 0.5X N2, EGF to 10 ng/mL, and b-FGF to 10 ng/mL. The cells were passaged using StemPro Accutase Cell Dissociation Reagent (Gibco) when they reached approximately 80% con uency at a split no lower than 1:6.</p><p>Induced glutamatergic neuron cell culture HPSI1013I-PAMV_1 human iPSCs obtained from the HipSci biobank, where pluripotency characterization, such as Pluritest, was performed as part of their standard quality control pipelines (<ref type="url" target="http://www.hipsci.org/">www.hipsci.org</ref>). The line was derived from skin broblasts from a healthy male donor aged 65-69 from a White British ethnicity. HPSI1013I-PAMV_1 cells were transduced with a doxycycline-inducible Neurogenin-2 (iNGN2) transgene following the protocol from the Ward laboratory <ref type="bibr" target="#b28">30</ref> . The integration of the transgene was achieved by electroporation and TALEN-mediated integration into the AAVS1 safe-harbor locus. iNGN2 PAMV_1 cells were cultured in feeder-free conditions on 4% Vitronectin XF (Stem Cell Technologies) coated plates in Essential 8 medium (Gibco) supplemented with 50 U/mL and 50 mg/mL Penicillin/Streptomycin respectively (Life Technologies). The medium was changed daily, and cells were passaged using TryplE and resuspended in Essential 8 medium with 10 μM Y-27632 Rho-kinase (ROCK) inhibitor (ENZO Life Sciences) at approximately 1.5 million cells per well. All cell cultures were routinely screened for mycoplasma and con rmed to be negative for contamination.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transcription factor-mediated differentiated CNS-like glutamatergic neurons</head><p>The transcription factor-mediated differentiation protocol was adapted from the Ward laboratory <ref type="bibr" target="#b28">30</ref> . On Day 0, iNGN2 PAMV_1 cells were dissociated using Accutase at 37°C for 5 minutes. The cells were resuspended with the Induction Medium -DMEM/F12 Hepes medium (Life Technologies), supplemented with 0.5X N2, 100 μM MEM NEAA, 2 mM L-Glutamine (Gibco), Doxycycline (2 μg/ml) (Sigma), and 10 μM Y-27632 ROCKi (1:100), on GFR Matrigel (BD Biosciences) (1:50) at a density of 1.5 million cells per well. Doxycycline will induce the differentiation into Glutamatergic Excitatory Neurons. On Days 1 and 2, nascent neurites began to be evident, and the media was replaced with fresh induction media with Doxycycline. Cells were dissociated with Accutase for freezing in 10% dimethyl sulfoxide (Sigma) in medium or for neural spheroid generation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generation of neural spheroids</head><p>Following dissociation, differentiated cells were resuspended in the induction media and were seeded at a density of 10,000 cells/well in the 5% Pluronic F127 (Sigma-Aldrich) coated V-bottom plate and centrifuged for 2 min at 200 x g to aggregate the cells at the bottom of the well according to the in-house protocol <ref type="bibr" target="#b51">53</ref> . The cells were left for 48 h with daily half-medium changes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Maturation and generation of axon bundles</head><p>On Day 6, the neural spheroids were transferred to laminin-coated 24-well or 96-well glass-bottom plates (Cellvis) in Cortical Neuron Culture Medium -BrainPhys neuronal medium (Stemcell Technologies) supplemented with 0.5X B27, 10 ng/mL Brain-Derived Neurotrophic Factor (BDNF) (PeproTech), 10 ng/mL Neurotrophin-3 (NT-3) (PeproTech), and 1 μg/mL Laminin. The cells were checked daily for the presence of cell debris and morphological changes with bi-weekly half-medium changes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Co-culture of GB cells with neural spheroids</head><p>On Day 11, 1X BioTracker 488 Green Nuclear Dye (Sigma-Aldrich) was added to the cell culture medium to stain the neural spheroids for 20 min at 37°C and washed twice. GB cells were labelled with 1X BioTracker 655 Red Cytoplasmic Membrane Dye (Sigma-Aldrich) in suspension for 20 min at 37°C and washed three times by centrifugation. The GB cells were seeded on top of the neural spheroids at a density of 5,000 cells/well in a 24-well plate or 840 cells/well in a 96-well plate with a 50/50 medium.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Staining and Imaging</head><p>Immunostaining Neural spheroids were xed at 4% PFA/PBS at RT for 20 min and permeabilized with 3% BSA/0.1% Triton-X-100/PBS for 1 h at RT. Cells were incubated with the primary mouse axonal antibody βIII-tubulin (Tubb3) (R&amp;D Systems) diluted in 3% BSA/0.1% Triton-X-100/PBS (1/1000) overnight at 4°C in the dark. The next day, primary antibodies were rinsed away with 3% BSA/PBS. The cells were incubated with the secondary anti-mouse antibody conjugated to AF 488 (Invitrogen), diluted in 3% BSA/0.1% Triton-X-100/PBS (1:500) at RT for 45 min and rinsed with PBS. To stain the nucleus, the cells are incubated with 10 μM Hoechst (Invitrogen) for 10 min at RT and rinsed with PBS. Finally, the cells were incubated with 80% glycerol as a clearing agent for 1 h min at RT and rinsed with PBS before being placed in fresh PBS at 4°C until imaging.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Confocal microscopy</head><p>Confocal images were acquired using a Leica TCS SP8 Confocal laser scanning microscope, using a 10x dry objective, and viewed with the Leica software.</p><p>Each uorochrome was excited with the corresponding laser line (DAPI, UV (355 nm); AF488, Green (530 nm); AF594, Red (639 nm) laser line).</p><p>Immuno uorescence data were analyzed in Fiji open-source software (2.0.0-rc-64/1.51s version). Images from different elds were tiled and stitched, and the maximum projection was obtained using the Z-stack.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Imaging assay</head><p>Live-cell imaging of non-labelled cells Live-cell imaging of non-labelled cells on laminin-coated glass plates and on axons was performed on the Livecyte quantitative phase imager (Phasefocus), which uses quantitative phase imaging and has an accurate tracking apparatus. ROIs (10 mm x 25 mm) on the right and the top of the neural spheroids were selected, and images were acquired every 15 min for 24 h.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endpoint assay</head><p>Co-cultures of patient-derived GB cells and human iPSC-derived cortical-like neural spheroids were imaged every 24 h at Day 0, 1, 2, and 3 using the Operetta CLS High Content Analysis (PerkinElmer) with the bright eld, 488 nm, and 655 nm channels. The PreciScan Intelligent Acquisition plug-in for Harmony software was used to locate the neural spheroid within the well. The plug-in allows the accurate targeting of the region of interest (ROI) whilst reducing acquisition and analysis times. Once the PreciScan was performed and the region of the neural spheroid was located, a Z-stack of 10 images over 20 μm (distance 2 μm) was acquired.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Inhibitor screen</head><p>Inhibitors were added to the co-culture at a nal concentration of 1 μM. Following a 6 h antagonist treatment, images were acquired using the Operetta CLS Imaging System. This was repeated for the next two days.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Image analysis</head><p>Live-cell imaging assay analysis using the Phasefocus Livecyte Images were analyzed using the built-in Analysis Software with the Motility Assay on the Livecyte quantitative phase imager (Phasefocus). Using the built-in applications, the cells were identi ed and tracked, and the tracking properties were calculated to generate cell migration parameters. Directionality results were analyzed in a polar histogram using R Studio (version 2025.05.1). Analyzes of instantaneous velocity, speed, and con nement ratio were performed using GraphPad Prism software, and the Welch's t-test was performed between cells plated with or without axons. A p-value below 0.05 was considered signi cant and was indicated with an asterisk: ****, p &lt; 0.0001.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endpoint assay analysis using Harmony</head><p>Images were analyzed using the built-in Harmony HCI and Analysis Software on the Operetta CLS device. The maximum projection of the Z-stack was taken, and the neural spheroid was stained with the BioTracker 488 and identi ed as an ROI using the green channel. The GB cells stained with the BioTracker 655 in the ROI were identi ed and segmented using the far-red channel (Segmentation Method C in Harmony Software).</p><p>All experiments were performed in technical triplicate and were independently repeated at least three times to perform statistical analysis. All statistical analyses were performed using GraphPad Prism software (version 9.2). Results represented as means with standard deviation (SD), and different ANOVA tests with multiple comparisons between control and other conditions were performed to calculate the statistical signi cance of multiple experimental conditions. A p-value below 0.05 was considered signi cant and was indicated with an asterisk: *, p ≤ 0.05; **, p ≤0.01; ***, p ≤0.001. The number of independent experiments is indicated in the gure legend as N.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RNA sequencing</head><p>The GBM1 and GBM20 cell lines were prepared for RNA sequencing. They were rinsed once with PBS, detached with TrypLE, and snap-frozen in pellets of 10 6 cells. The cells were submitted to Euro ns Genomics, Germany, under Project ID: NG-29040. Raw sequencing data were pre-processed using the fastp software to generate clean data, termed quality control. This involves checking the quality of the raw sequencing ltering for high-quality reads to remove poor-quality bases (below Phred Quality 20) <ref type="bibr" target="#b52">54</ref> .</p><p>High-quality sequence reads were aligned using the STAR (Spliced Transcripts Alignment to a Reference) to the reference genome UCSC Homo sapiens version hg38 55 . Gene-wise quanti cation was achieved to inspect the transcriptome alignments using the RSEM tool 56 . For the differential gene expression between cell lines, genes with fewer than 10 average reads were removed. Using the R/Bioconductor DESeq2 package, the abundance counts of each gene were then used to perform differential gene expression 57 . Euro ns Genomics provided this pre-processing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RNA-seq data analysis</head><p>Further analysis was performed on R Studio using the ggplot2 package to generate a volcano plot of differential gene expression. Sample-wise comparison values (log₂ fold change and p-value) provided by Euro ns Genomics were used. Gene Ontology (GO) enrichment and Gene Set Enrichment Analysis (GSEA) were performed using the clusterPro ler and fgsea packages to identify biological processes and pathways associated with differential expression.</p><p>Signi cantly enriched terms were visualized using bar plots and enrichment plots.      A) Volcano plot showing the differentially expressed genes between GBM1 (orange) and GBM20 (blue). Genes with an adjusted p-value &lt; 0.05 and |log₂ fold change| &gt; 1 were considered signi cant. B) Bar plots of GO biological process enrichment for signi cantly upregulated genes in GBM1 and GBM20. The q-score represents enrichment strength (-log₁₀ adjusted p-value). Color intensity corresponds to the adjusted p-value (FDR-corrected), with red indicating higher signi cance and blue lower signi cance. C) GSEA enrichment scores of relevant pathways in GBM1 (orange) and GBM20 (blue).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations Figures</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 Co</head><label>1</label><figDesc>Figure 1 Co-culture of human iPSC-derived neural spheroids and patient-derived GB cells A) Timeline and schematic diagram of the transcription-factor mediated neural induction (Fernandopulle et al., 2018), neural spheroid generation using Pluronic acid-coated V-bottom plates, maturation, axon outgrowth, and co-culture with patient-derived cells. B) Representative bright eld image captured on the x10 microscope of a neural spheroid generated through forward reprogramming. Scale bar = 200 μm. C) Representative confocal images of the neural spheroid and axons (Hoechst in blue and Tubb3 in green). Scale bar = 200 μm.</figDesc><graphic coords="11,27.75,36.00,487.50,347.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 Live</head><label>2</label><figDesc>Figure 2Live imaging assays of neural spheroids co-cultured with NS17, GBM20, and GBM1 cells Schematic diagram of the layout of the cells cultured with or without axons and phase contrast images of the time-lapse assay of and GBM1 cells cultured with or without axons at time point 0 (00:00) with the cell mask overlay. Scale bar = 500 μm.</figDesc><graphic coords="12,27.75,36.00,487.50,383.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 Motility</head><label>3</label><figDesc>Figure 3 Motility analysis of live imaging assays of neural spheroids co-cultured with NS17, GBM20, and GBM1 cells A) Polar histograms summarize the percentage of cells migrating by angle in degrees. Number of cells analyzed = 1000 cells. B) Quanti cation of the instantaneous velocity, speed, and con nement ratio of the NS17, GBM20, and GBM1 cells with or without axons. Number of cells analyzed = 1000 cells. ****, p&lt; 0.0001 calculated from Welch's t-test.</figDesc><graphic coords="13,27.75,36.00,426.50,582.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 Endpoint</head><label>4</label><figDesc>Figure 4 Endpoint assays of neural spheroids co-cultured with NS17, GBM20, and GBM1 cells A) Representative immuno uorescence images of the co-culture of the neural spheroids with NS17, GBM20, and GBM1 cells at Day 0-5. Scale bars = 100 μm. B) Quanti cation of NS17, GBM20, and GBM1 in ltration of the neural spheroid at Day 0-5, normalized to Day 0. Error bars represent mean ± SD. number of independent experiments (n) = 3. ****, p &lt; 0.0001 and **, p &lt; 0.001 calculated from 2way ANOVA of baseline-corrected data. C) Normal distribution curves for NS17, GBM20, and GBM1 in ltration calculated from the means and standard deviation at Day 3. Z-factor = 0.701246093.</figDesc><graphic coords="14,27.75,36.00,480.50,582.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 Pilot</head><label>5</label><figDesc>Figure 5 Pilot drug screen on the co-culture of neural spheroids with GBM1 or GBM20 cells A) Representative immuno uorescence images of the co-culture of the neural spheroids with GBM1 cells from Day 1-3 in the untreated control and with the inhibitor Motixafortide at 1 μM. Scale bar = 100 μm. B) Quanti cation of GBM20 and GBM1 cellular in ltration at Day 3, normalized to Day 0. Error bars represent mean ± SD. number of independent experiments (n) = 3. **, p &lt; 0.005 and *, p &lt; 0.05 calculated using the Brown-Forsythe and Welch ANOVA tests.</figDesc><graphic coords="15,27.75,36.00,487.50,431.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6</head><label>6</label><figDesc>Figure 6Differential gene expressions between GBM1 and GBM20 cell lines.</figDesc><graphic coords="16,27.75,36.00,480.50,582.50" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>We appreciate the support, advice, and reagents provided by everyone at CSCRM. We are grateful to <rs type="person">Dr Bronwyn Irving</rs>, <rs type="person">Dr James Williams</rs>, and <rs type="person">Dr Léa R'Bibo</rs> for their valuable expertise in GB cell culture, stem cell culture, and neural differentiation, respectively. We thank <rs type="person">Thomas Williams</rs>, <rs type="person">Dr Lazaros Fotopoulos</rs>, and <rs type="person">Erika Wiseman</rs> at the <rs type="affiliation">Stem Cell Hotel</rs> for their expert assistance and management of the imaging facilities. We would also like to thank <rs type="person">Ioanna Kourouzidou</rs>, <rs type="person">Oluwaseun Adegbite</rs>, <rs type="person">Layla Kadhim</rs> for their involvement in preliminary experiments. Furthermore, we acknowledge <rs type="person">Dr Andrea Serio</rs>, <rs type="person">Dr Ciro Chiappini</rs> and <rs type="person">Dr Steve Pollard</rs> for their valuable support and input in the project initiation. HipSci Lines samples were collected from consented research volunteers recruited from the <rs type="institution">NIHR Cambridge BioResource</rs> through <ref type="url" target="https://www.cambridgebioresource.group.cam.ac.uk/">https://www.cambridgebioresource.group.cam.ac.uk/</ref>. The <rs type="funder">HipSci consortium</rs> obtained ethics approval for a revised consent (REC ref. <rs type="grantNumber">09/H0304/77</rs>, <rs type="grantNumber">V3 15/03/2013</rs>), under which all data, except for the Y chromosome from males, can be made openly available (Y chromosome data can be used to de-identify men by surname matching). For open access, the author has applied a CC BY public copyright license to any author-accepted manuscript version arising from this submission. Funding V.T. and F.R. were funded by the <rs type="funder">Wellcome Trust</rs> as part of the "<rs type="programName">Cell Therapies &amp; Regenerative Medicine" PhD Programme</rs> (<rs type="grantNumber">108874/Z/15/Z</rs>). The authors acknowledge nancial support <rs type="funder">Rosetrees Trust</rs> to D.D., from the <rs type="funder">Medical Research Council</rs> (grant <rs type="grantNumber">MR/N025865/1</rs>) to I.L, and from <rs type="funder">Innovate UK</rs> (<rs type="grantNumber">TSB/89370</rs>)</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_w947H9X">
+					<idno type="grant-number">09/H0304/77</idno>
+				</org>
+				<org type="funding" xml:id="_sCppkfu">
+					<idno type="grant-number">V3 15/03/2013</idno>
+					<orgName type="program" subtype="full">Cell Therapies &amp; Regenerative Medicine&quot; PhD Programme</orgName>
+				</org>
+				<org type="funding" xml:id="_yvEHDjj">
+					<idno type="grant-number">108874/Z/15/Z</idno>
+				</org>
+				<org type="funding" xml:id="_QhcDzZH">
+					<idno type="grant-number">MR/N025865/1</idno>
+				</org>
+				<org type="funding" xml:id="_6QqaTG5">
+					<idno type="grant-number">TSB/89370</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>Processed data have been deposited in the Gene Expression Omnibus (GEO) under accession number GSE308010 (accessible during review at: <ref type="url" target="https://eur01.safelinks.protection.outlook.com/">https://eur01.safelinks.protection.outlook.com/</ref>? url=https%3A%2F%2Fwww<ref type="url" target=".ncbi.nlm.nih.gov%2Fgeo%2Fquery%2Facc.cgi%3Facc%3DGSE308010&amp;data=05%7C02%7Cv.tsang%40qmul.ac.uk%7C73893a0644">.ncbi.nlm.nih.gov%2Fgeo%2Fquery%2Facc.cgi%3Facc%3DGSE308010&amp;data=05%7C02%7Cv.tsang%40qmul.ac.uk%7C73893a0644</ref> </p><p>Reviewer token: e xgocyffgbpmb).</p><p>Raw sequencing data (BAM les) are available in the Sequence Read Archive (SRA) under BioProject accession number PRJNA1327912 (accessible view only at: <ref type="url" target="https://dataview.ncbi.nlm.nih.gov/object/PRJNA1327912?reviewer=1p614t1hlcnep52di60emi03d3">https://dataview.ncbi.nlm.nih.gov/object/PRJNA1327912?reviewer=1p614t1hlcnep52di60emi03d3</ref>).</p><p>Data will be released publicly upon acceptance and publication.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Author contributions V.T., D.D., and I.L., conceptualization; V.T. and F.R., data curation; V.T., F.R., I.L., and D.D., investigation; V.T., F.R., I.L., and D.D., funding acquisition; V.T., formal analysis; V.T., F.R., H.N., and J.C., methodology; D.D. and I.L., supervision; V.T., and D.D., visualization; V.T., and D.D., writing -original draft; V. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Files</head><p>This is a list of supplementary les associated with this preprint. Click to download.</p><p>TsangScienti cReportsSupplementaryinformation.docx</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Molecular Pro ling Reveals Biologically Discrete Subsets and Pathways of Progression in Diffuse Glioma</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ceccarelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<imprint>
+			<biblScope unit="volume">164</biblScope>
+			<biblScope unit="page" from="550" to="563" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ceccarelli, M. et al. Molecular Pro ling Reveals Biologically Discrete Subsets and Pathways of Progression in Diffuse Glioma. Cell 164, 550-563 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Clinical updates on gliomas and implications of the 5th edition of the WHO classification of central nervous system tumors</title>
+		<author>
+			<persName><forename type="first">Xiaopeng</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixin</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Delin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yilin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenlin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaning</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuekun</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tingyu</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hai</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianshu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanmu</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siying</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huanzhang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianrui</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenbin</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1131642</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<date type="published" when="2023-03-14">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guo, X. et al. Clinical updates on gliomas and implications of the 5th edition of the WHO classi cation of central nervous system tumors. Front. Oncol. 13, (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Long-term survival with IDH wildtype glioblastoma: rst results from the ETERNITY Brain Tumor Funders&apos; Collaborative Consortium (EORTC 1419)</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hertler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Cancer</title>
+		<imprint>
+			<biblScope unit="volume">189</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hertler, C. et al. Long-term survival with IDH wildtype glioblastoma: rst results from the ETERNITY Brain Tumor Funders&apos; Collaborative Consortium (EORTC 1419). Eur. J. Cancer 189, (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">WHO Classi cation of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page">1231</biblScope>
+			<date type="published" when="2021">2021. 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. et al. The 2021 WHO Classi cation of Tumors of the Central Nervous System: a summary. Neuro-Oncol. 23, 1231 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Updates in IDH-Wildtype Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Jawad</forename><forename type="middle">M</forename><surname>Melhem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><surname>Detsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">Jane</forename><surname>Lim-Fat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Perry</surname></persName>
+			<idno type="ORCID">0000-0003-0698-6037</idno>
+		</author>
+		<idno type="DOI">10.1007/s13311-022-01251-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurotherapeutics</title>
+		<title level="j" type="abbrev">Neurotherapeutics</title>
+		<idno type="ISSN">1878-7479</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1705" to="1723" />
+			<date type="published" when="2022-10">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Melhem, J. M., Detsky, J., Lim-Fat, M. J. &amp; Perry, J. R. Updates in IDH-Wildtype Glioblastoma. Neurotherapeutics 19, 1705-1723 (2022). .</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2011–2015</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haley</forename><surname>Gittleman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabrielle</forename><surname>Truitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Boscia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noy131</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">suppl_4</biblScope>
+			<biblScope unit="page" from="iv1" to="iv86" />
+			<date type="published" when="2018-10-01">2018</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom, Q. T. et al. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2011-2015. Neuro-Oncol. iv1 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Editor&apos;s choice: The epidemiology of glioma in adults: a &quot;state of the science</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">World Health Organization Classi cation of Tumours of the Central Nervous System</title>
+		<imprint>
+			<publisher>Int. Agency Res. Cancer</publisher>
+			<date type="published" when="2014">2014. 2021</date>
+			<biblScope unit="volume">896</biblScope>
+		</imprint>
+	</monogr>
+	<note>5th editio</note>
+	<note type="raw_reference">Ostrom, Q. T. et al. Editor&apos;s choice: The epidemiology of glioma in adults: a &quot;state of the science&quot; review. Neuro-Oncol. 896 (2014). . World Health Organization Classi cation of Tumours of the Central Nervous System. Int. Agency Res. Cancer 5th editio, (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">An RNAi Screen Identi es TRRAP as a Regulator of Brain Tumor-Initiating Cell Differentiation</title>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Stem Cell</title>
+		<imprint>
+			<biblScope unit="page" from="37" to="47" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. et al. An RNAi Screen Identi es TRRAP as a Regulator of Brain Tumor-Initiating Cell Differentiation. Cell Stem Cell 37-47 (2010).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Glioblastoma stem cells: lessons from the tumor hierarchy in a lethal cancer</title>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">C</forename><surname>Gimple</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shruti</forename><surname>Bhargava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deobrat</forename><surname>Dixit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><forename type="middle">N</forename><surname>Rich</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/gad.324301.119</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Genes &amp; Development</title>
+		<title level="j" type="abbrev">Genes Dev.</title>
+		<idno type="ISSN">0890-9369</idno>
+		<idno type="ISSNe">1549-5477</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">11-12</biblScope>
+			<biblScope unit="page" from="591" to="609" />
+			<date type="published" when="2019-06-01">2019</date>
+			<publisher>Cold Spring Harbor Laboratory</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gimple, R. C., Bhargava, S., Dixit, D. &amp; Rich, J. N. Glioblastoma stem cells: lessons from the tumor hierarchy in a lethal cancer. Genes Dev. 591-609 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Brain tumor stem cells: The cancer stem cell hypothesis writ large</title>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">B</forename><surname>Dirks</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.molonc.2010.08.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Oncology</title>
+		<title level="j" type="abbrev">Molecular Oncology</title>
+		<idno type="ISSN">1574-7891</idno>
+		<idno type="ISSNe">1878-0261</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="420" to="430" />
+			<date type="published" when="2010-08-10">2010</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dirks, P. B. Brain tumor stem cells: the cancer stem cell hypothesis writ large. Mol. Oncol. 4, 420-430 (2010).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy alone on survival in glioblastoma in a randomised phase III study: 5-year analysis of the EORTC-NCIC trial</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Stupp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lancet Oncol</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="459" to="466" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stupp, R. et al. Effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy alone on survival in glioblastoma in a randomised phase III study: 5-year analysis of the EORTC-NCIC trial. Lancet Oncol. 10, 459-466 (2009).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Advances in Glioblastoma Multiforme Treatment: New Models for Nanoparticle Therapy</title>
+		<author>
+			<persName><forename type="first">Elif</forename><surname>Ozdemir-Kaynak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amina</forename><forename type="middle">A</forename><surname>Qutub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ozlem</forename><surname>Yesil-Celiktas</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fphys.2018.00170</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Physiology</title>
+		<title level="j" type="abbrev">Front. Physiol.</title>
+		<idno type="ISSNe">1664-042X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2018-03-19">2018</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ozdemir-Kaynak, E., Qutub, A. A. &amp; Yesil-Celiktas, O. Advances in glioblastoma multiforme treatment: New models for nanoparticle therapy. Front. Physiol. 9, (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">An Experimenter’s Guide to Glioblastoma Invasion Pathways</title>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">C</forename><surname>De Gooijer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miriam</forename><surname>Guillén Navarro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rene</forename><surname>Bernards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wurdinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Van Tellingen</surname></persName>
+			<idno type="ORCID">0000-0002-1037-6269</idno>
+		</author>
+		<idno type="DOI">10.1016/j.molmed.2018.07.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Molecular Medicine</title>
+		<title level="j" type="abbrev">Trends in Molecular Medicine</title>
+		<idno type="ISSN">1471-4914</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="763" to="780" />
+			<date type="published" when="2018-09">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">de Gooijer, M. C., Guillén Navarro, M., Bernards, R., Wurdinger, T. &amp; van Tellingen, O. An Experimenter&apos;s Guide to Glioblastoma Invasion Pathways. Trends Mol. Med. 24, 763-780 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Molecular mechanisms of cell motility</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Armento</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer and Metastasis Review</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="73" to="93" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Codon Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Armento, A. et al. Molecular mechanisms of cell motility. in Cancer and Metastasis Review vol. 11 73-93 (Codon Publications, 2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Experimental models and tools to tackle glioblastoma</title>
+		<author>
+			<persName><forename type="first">Faye</forename><forename type="middle">L</forename><surname>Robertson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria-Angeles</forename><surname>Marqués-Torrejón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gillian</forename><forename type="middle">M</forename><surname>Morrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">M</forename><surname>Pollard</surname></persName>
+			<idno type="ORCID">0000-0001-6428-0492</idno>
+		</author>
+		<idno type="DOI">10.1242/dmm.040386</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Disease Models &amp; Mechanisms</title>
+		<idno type="ISSN">1754-8403</idno>
+		<idno type="ISSNe">1754-8411</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<date type="published" when="2019-09-01">2019</date>
+			<publisher>The Company of Biologists</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Robertson, F. L., Marqués-Torrejón, M. A., Morrison, G. M. &amp; Pollard, S. M. Experimental models and tools to tackle glioblastoma. DMM Dis. Models Mech. 12, (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Significance of Glioma Stem-Like Cells in the Tumor Periphery That Express High Levels of CD44 in Tumor Invasion, Early Progression, and Poor Prognosis in Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Masahiro</forename><surname>Nishikawa</surname></persName>
+			<idno type="ORCID">0000-0002-1302-7646</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiro</forename><surname>Inoue</surname></persName>
+			<idno type="ORCID">0000-0002-7438-2369</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takanori</forename><surname>Ohnishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shohei</forename><surname>Kohno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiro</forename><surname>Ohue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shirabe</forename><surname>Matsumoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satoshi</forename><surname>Suehiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daisuke</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saya</forename><surname>Ozaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideaki</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hajime</forename><surname>Yano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hisaaki</forename><surname>Takahashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riko</forename><surname>Kitazawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junya</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takeharu</forename><surname>Kunieda</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2018/5387041</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Stem Cells International</title>
+		<title level="j" type="abbrev">Stem Cells International</title>
+		<idno type="ISSN">1687-966X</idno>
+		<idno type="ISSNe">1687-9678</idno>
+		<imprint>
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2018-08-23">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nishikawa, M. et al. Signi cance of glioma stem-like cells in the tumor periphery that express high levels of CD44 in tumor invasion, early progression, and poor prognosis in glioblastoma. Stem Cells Int. 2018,</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Single-Cell RNA-Seq Analysis of Infiltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Spyros</forename><surname>Darmanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Derek</forename><surname>Croote</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Mignardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophia</forename><surname>Chernikova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peyman</forename><surname>Samghababi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norma</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Kowarsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Caneda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">D</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">David</forename><surname>Connolly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingmei</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">A</forename><surname>Barres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><forename type="middle">Hayden</forename><surname>Gephart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">R</forename><surname>Quake</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.celrep.2017.10.030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Reports</title>
+		<title level="j" type="abbrev">Cell Reports</title>
+		<idno type="ISSN">2211-1247</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1399" to="1410" />
+			<date type="published" when="2017-10">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Darmanis, S. et al. Single-Cell RNA-Seq Analysis of In ltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma. Cell Rep. 1399-1410 (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Identification of human brain tumour initiating cells</title>
+		<author>
+			<persName><forename type="first">Sheila</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">D</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><forename type="middle">A</forename><surname>Squire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Bayani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takuichiro</forename><surname>Hide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Mark</forename><surname>Henkelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Cusimano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">B</forename><surname>Dirks</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature03128</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">432</biblScope>
+			<biblScope unit="issue">7015</biblScope>
+			<biblScope unit="page" from="396" to="401" />
+			<date type="published" when="2004-11">2004</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh, S. K. et al. Identi cation of human brain tumour initiating cells. Nature 432, 396-401 (2004).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Glioblastoma Stem-Like Cells, Metabolic Strategy to Kill a Challenging Target</title>
+		<author>
+			<persName><forename type="first">Delphine</forename><surname>Garnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ophélie</forename><surname>Renoult</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Clotilde</forename><surname>Alves-Guerra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">François</forename><surname>Paris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claire</forename><surname>Pecqueur</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2019.00118</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">118</biblScope>
+			<date type="published" when="2019-03-06" />
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Garnier, D., Renoult, O., Alves-Guerra, M. C., Paris, F. &amp; Pecqueur, C. Glioblastoma stem-like cells, Metabolic strategy to kill a challenging target. Front. Oncol. 9, 118</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Biomimetic Strategies for the Glioblastoma Microenvironment</title>
+		<author>
+			<persName><forename type="first">Junghwa</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pilnam</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fmats.2017.00045</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Materials</title>
+		<title level="j" type="abbrev">Front. Mater.</title>
+		<idno type="ISSNe">2296-8016</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<date type="published" when="2017-12-19">2017</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cha, J. &amp; Kim, P. Biomimetic strategies for the glioblastoma microenvironment. Front. Mater. 4, (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Systematic Review of Pre-Clinical Systems Using Artificial Microenvironments and Anti-Migratory Drugs to Control Migration of Glioblastoma Cells</title>
+		<author>
+			<persName><forename type="first">Hana</forename><surname>Selvi</surname></persName>
+			<idno type="ORCID">0009-0007-0465-1555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anke</forename><surname>Brüning-Richardson</surname></persName>
+			<idno type="ORCID">0000-0002-9862-9805</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Danovi</surname></persName>
+			<idno type="ORCID">0000-0003-4119-5337</idno>
+		</author>
+		<idno type="DOI">10.1017/erm.2024.33</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Reviews in Molecular Medicine</title>
+		<title level="j" type="abbrev">Expert Rev. Mol. Med.</title>
+		<idno type="ISSNe">1462-3994</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page">6</biblScope>
+			<date type="published" when="2025">2025</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Selvi, H., Brüning-Richardson, A. &amp; Danovi, D. Systematic Review of Pre-Clinical Systems Using Arti cial Microenvironments and Anti-Migratory Drugs to Control Migration of Glioblastoma Cells. Expert Rev. Mol. Med. 27, e6 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The Human Glioblastoma Cell Culture Resource: Validated Cell Models Representing All Molecular Subtypes</title>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Bergström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiwen</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrik</forename><surname>Johansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Voichita</forename><forename type="middle">Dana</forename><surname>Marinescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nanna</forename><surname>Lindberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Segerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Wicher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mia</forename><surname>Niklasson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sathishkumar</forename><surname>Baskaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Smitha</forename><surname>Sreedharan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isabelle</forename><surname>Everlien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Kastemar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annika</forename><surname>Hermansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lioudmila</forename><surname>Elfineh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylwia</forename><surname>Libard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">Charles</forename><surname>Holland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Göran</forename><surname>Hesselager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irina</forename><surname>Alafuzoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bengt</forename><surname>Westermark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sven</forename><surname>Nelander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><surname>Forsberg-Nilsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lene</forename><surname>Uhrbom</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ebiom.2015.08.026</idno>
+	</analytic>
+	<monogr>
+		<title level="j">EBioMedicine</title>
+		<title level="j" type="abbrev">EBioMedicine</title>
+		<idno type="ISSN">2352-3964</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1351" to="1363" />
+			<date type="published" when="2015-10">2015</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xie, Y. et al. The Human Glioblastoma Cell Culture Resource: Validated Cell Models Representing All Molecular Subtypes. EBioMedicine 2, 1351-1363 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Tumor stem cells derived from glioblastomas cultured in bFGF and EGF more closely mirror the phenotype and genotype of primary tumors than do serum-cultured cell lines</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="391" to="403" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, J. et al. Tumor stem cells derived from glioblastomas cultured in bFGF and EGF more closely mirror the phenotype and genotype of primary tumors than do serum-cultured cell lines. Cancer Cell 9, 391-403 (2006).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Tumor Microenvironment Is Critical for the Maintenance of Cellular States Found in Primary Glioblastomas</title>
+		<author>
+			<persName><forename type="first">Allison</forename><forename type="middle">R</forename><surname>Pine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><forename type="middle">M</forename><surname>Cirigliano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">G</forename><surname>Nicholson</surname></persName>
+			<idno type="ORCID">0000-0002-4585-6924</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0002-6348-874X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Linkous</surname></persName>
+			<idno type="ORCID">0000-0003-1663-6364</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Miyaguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lincoln</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richa</forename><surname>Singhania</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Theodore</forename><forename type="middle">H</forename><surname>Schwartz</surname></persName>
+			<idno type="ORCID">0000-0003-4464-7394</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rohan</forename><surname>Ramakrishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Pisapia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Elemento</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><forename type="middle">A</forename><surname>Fine</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/2159-8290.cd-20-0057</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Discovery</title>
+		<idno type="ISSN">2159-8274</idno>
+		<idno type="ISSNe">2159-8290</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="964" to="979" />
+			<date type="published" when="2020-07-01">2020</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pine, R. et al. Tumor Microenvironment Is Critical for the Maintenance of Cellular States Found in Primary Glioblastomas. Cancer Discov. CD-20-0057 (2020) doi:10.1158/2159-8290.cd-20-0057.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Surface Enhanced Raman Scattering (SERS) Image Cytometry for High-Content Screening</title>
+		<author>
+			<persName><forename type="first">Er</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">P</forename><surname>Nolan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-409513-7.00007-5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Fluorescence Microscopy</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="93" to="108" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, E. &amp; Nolan, J. P. Surface Enhanced Raman Scattering (SERS) Image Cytometry for High-Content Screening. Fluoresc. Microsc. Super-Resolut. Nov. Tech. 93-108 (2014) doi:10.1016/B978-0-12-409513-7.00007-5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Targeting DOT1L for mixed-lineage rearranged leukemia</title>
+		<author>
+			<persName><forename type="first">Corentin</forename><surname>Bon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Si</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><forename type="middle">B</forename><surname>Arimondo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-816422-8.00005-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Histone Modifications in Therapy</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="81" to="99" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bon, C., Si, Y. &amp; Arimondo, P. B. Targeting DOT1L for mixed-lineage rearranged leukemia. Histone Modif. Ther. 81-99 (2020) doi:10.1016/B978-0-12- 816422-8.00005-2.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The Personalisation of Glioblastoma Treatment Using Whole Exome Sequencing: A Pilot Study</title>
+		<author>
+			<persName><forename type="first">Anne-Marie</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Lastakchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Mcconville</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/genes11020173</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Genes</title>
+		<title level="j" type="abbrev">Genes</title>
+		<idno type="ISSNe">2073-4425</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">173</biblScope>
+			<date type="published" when="2020-02-06">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Garrett, A. M., Lastakchi, S. &amp; McConville, C. The Personalisation of Glioblastoma Treatment Using Whole Exome Sequencing: A Pilot Study. Genes 11, (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Targeting tumour-intrinsic neural vulnerabilities of glioblastoma</title>
+		<author>
+			<persName><forename type="first">Sohyon</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0003-4790-4990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Bühler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Mena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zuzanna</forename><surname>Lottenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebekka</forename><surname>Wegmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miaomiao</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bihl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bartłomiej</forename><surname>Augustynek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sven</forename><surname>Baumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Goetze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Audrey</forename><surname>Van Drogen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Pedrioli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Kirschenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flavio</forename><surname>Vasella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><forename type="middle">J</forename><surname>Rushing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernd</forename><surname>Wollscheid</surname></persName>
+			<idno type="ORCID">0000-0002-3923-1610</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">A</forename><surname>Hediger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weller</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Berend</forename><surname>Snijder</surname></persName>
+			<idno type="ORCID">0000-0003-3386-6583</idno>
+		</author>
+		<idno type="DOI">10.1101/2022.10.07.511321</idno>
+	</analytic>
+	<monogr>
+		<title level="j">bioRxiv</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">07</biblScope>
+			<biblScope unit="page">511321</biblScope>
+			<date type="published" when="2022-10-07">2022. 2022</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, S. et al. Targeting tumour-intrinsic neural vulnerabilities of glioblastoma. bioRxiv 2022.10.07.511321 (2022) doi:10.1101/2022.10.07.511321.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Transcription Factor–Mediated Differentiation of Human iPSCs into Neurons</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">S</forename><surname>Fernandopulle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Prestil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Grunseich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Gan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">E</forename><surname>Ward</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cpcb.51</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Protocols in Cell Biology</title>
+		<title level="j" type="abbrev">CP Cell Biology</title>
+		<idno type="ISSN">1934-2500</idno>
+		<idno type="ISSNe">1934-2616</idno>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">51</biblScope>
+			<date type="published" when="2018-05-18">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fernandopulle, M. S. et al. Transcription Factor-Mediated Differentiation of Human iPSCs into Neurons. Curr. Protoc. Cell Biol. 79, e51 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">KHS101 disrupts energy metabolism in human glioblastoma cells and reduces tumor growth in mice</title>
+		<author>
+			<persName><forename type="first">Euan</forename><forename type="middle">S</forename><surname>Polson</surname></persName>
+			<idno type="ORCID">0000-0003-1250-7338</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Verena</forename><forename type="middle">B</forename><surname>Kuchler</surname></persName>
+			<idno type="ORCID">0000-0002-4684-1177</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Abbosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edith</forename><forename type="middle">M</forename><surname>Ross</surname></persName>
+			<idno type="ORCID">0000-0001-9676-9823</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">K</forename><surname>Mathew</surname></persName>
+			<idno type="ORCID">0000-0002-2609-9876</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hester</forename><forename type="middle">A</forename><surname>Beard</surname></persName>
+			<idno type="ORCID">0000-0002-7942-410X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bárbara</forename><surname>Da Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">N</forename><surname>Holding</surname></persName>
+			<idno type="ORCID">0000-0002-8459-7048</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephane</forename><surname>Ballereau</surname></persName>
+			<idno type="ORCID">0000-0002-8479-3110</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eulashini</forename><surname>Chuntharpursat-Bon</surname></persName>
+			<idno type="ORCID">0000-0002-0767-6877</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hollie</forename><forename type="middle">B S</forename><surname>Griffiths</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Shao</surname></persName>
+			<idno type="ORCID">0000-0003-4437-5536</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anjana</forename><surname>Patel</surname></persName>
+			<idno type="ORCID">0000-0002-6216-0830</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">J</forename><surname>Davies</surname></persName>
+			<idno type="ORCID">0000-0003-1686-1561</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alastair</forename><surname>Droop</surname></persName>
+			<idno type="ORCID">0000-0001-7695-7480</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Chumas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">C</forename><surname>Short</surname></persName>
+			<idno type="ORCID">0000-0003-4423-7256</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mihaela</forename><surname>Lorger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">E</forename><surname>Gestwicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><forename type="middle">D</forename><surname>Roberts</surname></persName>
+			<idno type="ORCID">0000-0002-1455-5248</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robin</forename><forename type="middle">S</forename><surname>Bon</surname></persName>
+			<idno type="ORCID">0000-0003-1733-3680</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">J</forename><surname>Allison</surname></persName>
+			<idno type="ORCID">0000-0002-5766-2377</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shoutian</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Markowetz</surname></persName>
+			<idno type="ORCID">0000-0002-2784-5308</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Heiko</forename><surname>Wurdak</surname></persName>
+			<idno type="ORCID">0000-0003-4385-4324</idno>
+		</author>
+		<idno type="DOI">10.1126/scitranslmed.aar2718</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science Translational Medicine</title>
+		<title level="j" type="abbrev">Sci. Transl. Med.</title>
+		<idno type="ISSN">1946-6234</idno>
+		<idno type="ISSNe">1946-6242</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">454</biblScope>
+			<biblScope unit="page">2718</biblScope>
+			<date type="published" when="2018-08-15">2018</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Polson, E. S. et al. KHS101 disrupts energy metabolism in human glioblastoma cells and reduces tumor growth in mice. Sci. Transl. Med. 10, 2718 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Kinomics platform using GBM tissue identifies BTK as being associated with higher patient survival</title>
+		<author>
+			<persName><forename type="first">Sofian</forename><surname>Al Shboul</surname></persName>
+			<idno type="ORCID">0000-0002-0455-4380</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olimpia</forename><forename type="middle">E</forename><surname>Curran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><forename type="middle">A</forename><surname>Alfaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fiona</forename><surname>Lickiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erisa</forename><surname>Nita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacek</forename><surname>Kowalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faris</forename><surname>Naji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rudolf</forename><surname>Nenutil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><forename type="middle">L</forename><surname>Ball</surname></persName>
+			<idno type="ORCID">0000-0002-0728-7169</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Radovan</forename><surname>Krejcir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Borivoj</forename><surname>Vojtesek</surname></persName>
+			<idno type="ORCID">0000-0001-6194-3705</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ted</forename><forename type="middle">R</forename><surname>Hupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">M</forename><surname>Brennan</surname></persName>
+			<idno type="ORCID">0000-0002-7347-830X</idno>
+		</author>
+		<idno type="DOI">10.26508/lsa.202101054</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Life Science Alliance</title>
+		<title level="j" type="abbrev">Life Sci. Alliance</title>
+		<idno type="ISSNe">2575-1077</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">e202101054</biblScope>
+			<date type="published" when="2021-10-13">2021</date>
+			<publisher>Life Science Alliance, LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al Shboul, S. et al. Kinomics platform using GBM tissue identi es BTK as being associated with higher patient survival. Life Sci. Alliance 4, (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Overview of the molecular mechanisms of migration and invasion in glioblastoma multiforme</title>
+		<author>
+			<persName><forename type="first">Xian</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ju-Yu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yueh</forename><surname>Chien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Ping</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming-Teh</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang-Ting</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/jcma.0000000000000552</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Chinese Medical Association</title>
+		<idno type="ISSN">1726-4901</idno>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="669" to="677" />
+			<date type="published" when="2021-07">2021</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, X. et al. Overview of the molecular mechanisms of migration and invasion in glioblastoma multiforme. J. Chin. Med. Assoc. 84, (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A Potential Role for the Inhibition of PI3K Signaling in Glioblastoma Therapy</title>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>Ströbele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukas</forename><surname>Schneele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><forename type="middle">D</forename><surname>Siegelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Nonnenmacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoxia</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Karpel-Massle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mike-Andrew</forename><surname>Westhoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-Eric</forename><surname>Halatsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus-Michael</forename><surname>Debatin</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0131670</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e0131670</biblScope>
+			<date type="published" when="2015-06-29">2015</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ströbele, S. et al. A Potential Role for the Inhibition of PI3K Signaling in Glioblastoma Therapy. PLOS ONE 10, e0131670 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Differential effects of the Akt inhibitor MK-2206 on migration and radiation sensitivity of glioblastoma cells</title>
+		<author>
+			<persName><forename type="first">Cholpon</forename><forename type="middle">S</forename><surname>Djuzenova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vanessa</forename><surname>Fiedler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Memmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Astrid</forename><surname>Katzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitri</forename><surname>Sisario</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippa</forename><forename type="middle">K</forename><surname>Brosch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Göhrung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Svenja</forename><surname>Frister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heiko</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Flentje</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vladimir</forename><forename type="middle">L</forename><surname>Sukhorukov</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12885-019-5517-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Cancer</title>
+		<title level="j" type="abbrev">BMC Cancer</title>
+		<idno type="ISSNe">1471-2407</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2019-04-03">2019. 2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Djuzenova, C. S. et al. Differential effects of the Akt inhibitor MK-2206 on migration and radiation sensitivity of glioblastoma cells. BMC Cancer 2019 191 19, 1-18 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Targeted therapy for high-grade glioma with the TGF- 2 inhibitor trabedersen: results of a randomized and controlled phase IIb study</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bogdahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Stockhammer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Venkataramana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Mahapatra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Suri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Balasubramaniam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Oliushine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Parfenov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Poverennova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zaaroor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jachimczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ludwig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Schmaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Heinrichs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K-H</forename><surname>Schlingensiepen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noq142</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<title level="j" type="abbrev">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="132" to="142" />
+			<date type="published" when="2011">2011</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bogdahn, U. et al. Targeted therapy for high-grade glioma with the TGF-β2 inhibitor trabedersen: results of a randomized and controlled phase IIb study. Neuro-Oncol. 13, 132 (2011).</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Phase 1b/2a study of galunisertib, a small molecule inhibitor of transforming growth factor-beta receptor I, in combination with standard temozolomide-based radiochemotherapy in patients with newly diagnosed malignant glioma</title>
+		<author>
+			<persName><forename type="first">Antje</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annick</forename><surname>Desjardins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><surname>Suarez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Forsyth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivelina</forename><surname>Gueorguieva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tiana</forename><surname>Burkholder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ann</forename><forename type="middle">Louise</forename><surname>Cleverly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">T</forename><surname>Estrem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuaicheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">M</forename><surname>Lahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">C</forename><surname>Guba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Capper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordi</forename><surname>Rodon</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10637-020-00910-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Investigational New Drugs</title>
+		<title level="j" type="abbrev">Invest New Drugs</title>
+		<idno type="ISSN">0167-6997</idno>
+		<idno type="ISSNe">1573-0646</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1570" to="1579" />
+			<date type="published" when="2020-03-05">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wick, A. et al. Phase 1b/2a study of galunisertib, a small molecule inhibitor of transforming growth factor-beta receptor I, in combination with standard temozolomide-based radiochemotherapy in patients with newly diagnosed malignant glioma. Invest. New Drugs 1570 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Buparlisib in Patients With Recurrent Glioblastoma Harboring Phosphatidylinositol 3-Kinase Pathway Activation: An Open-Label, Multicenter, Multi-Arm, Phase II Trial</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Touat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">M</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shakti</forename><surname>Ramkissoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><forename type="middle">S</forename><surname>Mccluskey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristine</forename><surname>Pelton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sam</forename><surname>Haidar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sankha</forename><forename type="middle">S</forename><surname>Basu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">C</forename><surname>Gaffey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Loreal</forename><forename type="middle">E</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Emmanuel</forename><surname>Martinez-Ledesma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaofang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jungwoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mi-Ae</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">T</forename><surname>Huse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Kuhn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mikael</forename><forename type="middle">L</forename><surname>Rinne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><surname>Colman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathalie</forename><forename type="middle">Y R</forename><surname>Agar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><forename type="middle">M</forename><surname>Omuro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">M</forename><surname>Deangelis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">R</forename><surname>Gilbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">F</forename><surname>De Groot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">S</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eudocia</forename><forename type="middle">Q</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lakshmi</forename><surname>Nayak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Heath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">L</forename><surname>Horky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tracy</forename><forename type="middle">T</forename><surname>Batchelor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rameen</forename><surname>Beroukhim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azra</forename><forename type="middle">H</forename><surname>Ligon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">F</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimpy</forename><surname>Koul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">S</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Prados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">K Alfred</forename><surname>Yung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">L</forename><surname>Ligon</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/jco.18.01207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Oncology</title>
+		<title level="j" type="abbrev">JCO</title>
+		<idno type="ISSN">0732-183X</idno>
+		<idno type="ISSNe">1527-7755</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="741" to="750" />
+			<date type="published" when="2019-03-20">2019</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wen, P. Y. et al. Buparlisib in Patients With Recurrent Glioblastoma Harboring Phosphatidylinositol 3-Kinase Pathway Activation: An Open-Label, Multicenter, Multi-Arm, Phase II Trial. J. Clin. Oncol. 37, 741 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Small-molecule inhibitors of FGFR, integrins and FAK selectively decrease L1CAM-stimulated glioblastoma cell motility and proliferation</title>
+		<author>
+			<persName><forename type="first">Hannah</forename><forename type="middle">J</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deni</forename><forename type="middle">S</forename><surname>Galileo</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13402-016-0267-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cellular Oncology</title>
+		<title level="j" type="abbrev">Cell Oncol.</title>
+		<idno type="ISSN">2211-3428</idno>
+		<idno type="ISSNe">2211-3436</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="229" to="242" />
+			<date type="published" when="2016-02-16">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Anderson, H. J. &amp; Galileo, D. S. Small-molecule inhibitors of FGFR, integrins and FAK selectively decrease L1CAM-stimulated glioblastoma cell motility and proliferation. Cell. Oncol. 229-242 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Gefitinib selectively inhibits tumor cell migration in EGFR-amplified human glioblastoma</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Dionne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Massarwa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Klaassen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Foreman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Niswander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Canoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Kleinschmidt-Demasters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Waziri</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/not053</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<title level="j" type="abbrev">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1048" to="1057" />
+			<date type="published" when="2013-06-07">2013</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Parker, J. J. et al. Ge tinib selectively inhibits tumor cell migration in EGFR-ampli ed human glioblastoma. Neuro-Oncol. 1048 (2013).</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">PDGFR inhibition mediated intracellular signalling in C6 glioma growth and migration: role of ERK and ROCK pathway</title>
+		<author>
+			<persName><forename type="first">Juhi</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kedarlal</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prakash</forename><forename type="middle">P</forename><surname>Pillai</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10616-017-0163-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cytotechnology</title>
+		<title level="j" type="abbrev">Cytotechnology</title>
+		<idno type="ISSN">0920-9069</idno>
+		<idno type="ISSNe">1573-0778</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="465" to="477" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh, J., Sharma, K. &amp; Pillai, P. P. PDGFR inhibition mediated intracellular signalling in C6 glioma growth and migration: role of ERK and ROCK pathway. Cytotechnology 70, 465 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Targeting Ephrin Receptor Tyrosine Kinase A2 with a Selective Aptamer for Glioblastoma Stem Cells</title>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Ther. Nucleic Acids</title>
+		<imprint>
+			<biblScope unit="page" from="176" to="185" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A nito, A. et al. Targeting Ephrin Receptor Tyrosine Kinase A2 with a Selective Aptamer for Glioblastoma Stem Cells. Mol. Ther. Nucleic Acids 176- 185 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Targeting CXCL12/CXCR4 Axis in Tumor Immunotherapy</title>
+		<author>
+			<persName><forename type="first">Weiqiang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanchun</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingli</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">E</forename><surname>Burow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangdi</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.2174/0929867324666170830111531</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Medicinal Chemistry</title>
+		<title level="j" type="abbrev">CMC</title>
+		<idno type="ISSN">0929-8673</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="3026" to="3041" />
+			<date type="published" when="2019-08-27" />
+			<publisher>Bentham Science Publishers Ltd.</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhou, W., Guo, S., Liu, M., Burow, M. E. &amp; Wang, G. Targeting CXCL12/CXCR4 Axis in Tumor Immunotherapy. Curr. Med. Chem. 26, 3026</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The white matter is a pro-differentiative microenvironment for glioblastoma</title>
+		<author>
+			<persName><forename type="first">Lucy</forename><forename type="middle">J</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><forename type="middle">P</forename><surname>Clements</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jemima</forename><forename type="middle">J</forename><surname>Burden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniela</forename><surname>Kocher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Richards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><forename type="middle">Castro</forename><surname>Devesa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Megan</forename><surname>Woodberry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leila</forename><surname>Zakka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zane</forename><surname>Jaunmuktane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Brandner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gillian</forename><surname>Morrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">M</forename><surname>Pollard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">B</forename><surname>Dirks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Marguerat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simona</forename><surname>Parrinello</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2020.11.14.379594</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Inf. Model</title>
+		<imprint>
+			<biblScope unit="volume">01</biblScope>
+			<biblScope unit="page" from="1689" to="1699" />
+			<date type="published" when="2020-11-16">2020</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brooks, L. J. et al. The white matter is a pro-differentiative microenvironment for glioblastoma. J. Chem. Inf. Model. 01, 1689-1699 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Spontaneous Glioblastoma Spheroid Infiltration of Early-Stage Cerebral Organoids Models Brain Tumor Invasion</title>
+		<author>
+			<persName><forename type="first">Bárbara</forename><surname>Da Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">K</forename><surname>Mathew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Euan</forename><forename type="middle">S</forename><surname>Polson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heiko</forename><surname>Wurdak</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/2472555218764623</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SLAS Discovery</title>
+		<title level="j" type="abbrev">SLAS Discovery</title>
+		<idno type="ISSN">2472-5552</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="862" to="868" />
+			<date type="published" when="2018-09">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">da Silva, B. B., Mathew, R. K., Polson, E. S., Williams, J. &amp; Wurdak, H. Spontaneous Glioblastoma Spheroid In ltration of Early-Stage Cerebral Organoids Models Brain Tumor Invasion. SLAS Discov. 862-868 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Irving</surname></persName>
+		</author>
+		<title level="m">Modelling invasion, migration and cellular networks in Glioblastoma stem cells</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+		<respStmt>
+			<orgName>University of Leeds</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Irving, B. K. Modelling invasion, migration and cellular networks in Glioblastoma stem cells. (University of Leeds, 2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Targeting Protein Kinase C in Glioblastoma Treatment</title>
+		<author>
+			<persName><forename type="first">Noelia</forename><surname>Geribaldi-Doldán</surname></persName>
+			<idno type="ORCID">0000-0003-2149-9050</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Irati</forename><surname>Hervás-Corpión</surname></persName>
+			<idno type="ORCID">0000-0002-3991-4147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Gómez-Oliva</surname></persName>
+			<idno type="ORCID">0000-0003-4093-2550</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Domínguez-García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Félix</forename><forename type="middle">A</forename><surname>Ruiz</surname></persName>
+			<idno type="ORCID">0000-0003-0748-5015</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Iglesias-Lozano</surname></persName>
+			<idno type="ORCID">0000-0002-1054-2386</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Livia</forename><surname>Carrascal</surname></persName>
+			<idno type="ORCID">0000-0003-4222-5550</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Pardillo-Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">L</forename><surname>Gil-Salú</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>Nunez-Abades</surname></persName>
+			<idno type="ORCID">0000-0003-0947-8492</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><forename type="middle">M</forename><surname>Valor</surname></persName>
+			<idno type="ORCID">0000-0002-1229-0565</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carmen</forename><surname>Castro</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/biomedicines9040381</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedicines</title>
+		<title level="j" type="abbrev">Biomedicines</title>
+		<idno type="ISSNe">2227-9059</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">381</biblScope>
+			<date type="published" when="2021-04-04">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Geribaldi-Doldán, N. et al. Targeting Protein Kinase C in Glioblastoma Treatment. Biomedicines 9, (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Identification of drug candidates against glioblastoma with machine learning and high-throughput screening of heterogeneous cellular models</title>
+		<author>
+			<persName><forename type="first">Vanessa</forename><surname>Smer-Barreto</surname></persName>
+			<idno type="ORCID">0009-0009-1455-1261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J R</forename><surname>Elliott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Álvaro</forename><surname>Lorente-Macías</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asier</forename><surname>Unciti-Broceta</surname></persName>
+			<idno type="ORCID">0000-0003-1029-2855</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><forename type="middle">A</forename><surname>Oyarzún</surname></persName>
+			<idno type="ORCID">0000-0002-0381-5278</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><forename type="middle">O</forename><surname>Carragher</surname></persName>
+			<idno type="ORCID">0000-0001-5541-9747</idno>
+		</author>
+		<idno type="DOI">10.1101/2025.03.06.641926</idno>
+		<ptr target="https://doi.org/10.1101/2025.03.06.641926" />
+		<imprint>
+			<date type="published" when="2025-03-07">2025. 2025</date>
+			<publisher>openRxiv</publisher>
+			<biblScope unit="volume">03</biblScope>
+			<biblScope unit="page">641926</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Smer-Barreto, V. et al. Identi cation of drug candidates against glioblastoma with machine learning and high-throughput screening of heterogeneous cellular models. 2025.03.06.641926 Preprint at https://doi.org/10.1101/2025.03.06.641926 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Migration of Human Glioma Cells on Myelin</title>
+		<author>
+			<persName><forename type="first">Alf</forename><surname>Giese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lan</forename><surname>Kluwe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Britta</forename><surname>Laube</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hildegard</forename><surname>Meissner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">E</forename><surname>Berens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Westphal</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/00006123-199604000-00026</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgery</title>
+		<title level="j" type="abbrev">Neurosurgery</title>
+		<idno type="ISSN">0148-396X</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="755" to="764" />
+			<date type="published" when="1996-04">1996</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Giese, A. et al. Migration of Human Glioma Cells on Myelin : Neurosurgery. Neurosurgery vol. 38 755-764 (1996).</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Regulation of human glioma cell migration, tumor growth, and stemness gene expression using a Lck targeted inhibitor</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Zepecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Snyder</surname></persName>
+			<idno type="ORCID">0000-0002-6598-1837</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fajardo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Toms</surname></persName>
+			<idno type="ORCID">0000-0001-8732-0522</idno>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tapinos</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41388-018-0546-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<title level="j" type="abbrev">Oncogene</title>
+		<idno type="ISSN">0950-9232</idno>
+		<idno type="ISSNe">1476-5594</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1734" to="1750" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zepecki, J. P. et al. Regulation of human glioma cell migration, tumor growth, and stemness gene expression using a Lck targeted inhibitor. Oncogene (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Apoptotic effect of atorvastatin in glioblastoma spheroids tumor cultured in fibrin gel</title>
+		<author>
+			<persName><forename type="first">Neda</forename><surname>Bayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somayeh</forename><surname>Ebrahimi-Barough</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abbas</forename><surname>Norouzi-Javidan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hooshang</forename><surname>Saberi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roksana</forename><surname>Tajerian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Mehdi Mokhtari</forename><surname>Ardakan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sadegh</forename><surname>Shirian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arman</forename><surname>Ai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jafar</forename><surname>Ai</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.biopha.2016.11.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedicine &amp; Pharmacotherapy</title>
+		<title level="j" type="abbrev">Biomedicine &amp; Pharmacotherapy</title>
+		<idno type="ISSN">0753-3322</idno>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="1959" to="1966" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bayat, N. et al. The anti-angiogenic effect of atorvastatin in glioblastoma spheroids tumor cultured in brin gel: In 3D in vitro model. Asian Pac. J. Cancer Prev. 19, 2553-2560 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">A tumorsphere model of glioblastoma multiforme with intratumoral heterogeneity for quantitative analysis of cellular migration and drug response</title>
+		<author>
+			<persName><forename type="first">Johann</forename><forename type="middle">Mar</forename><surname>Gudbergsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serhii</forename><surname>Kostrikov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kasper</forename><forename type="middle">Bendix</forename><surname>Johnsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederikke</forename><forename type="middle">Petrine</forename><surname>Fliedner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">Brøgger</forename><surname>Stolberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nanna</forename><surname>Humle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anders</forename><forename type="middle">Elias</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjarne</forename><forename type="middle">Winther</forename><surname>Kristensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gunna</forename><surname>Christiansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Kjær</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">Lars</forename><surname>Andresen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meg</forename><surname>Duroux</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.yexcr.2019.03.031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Cell Research</title>
+		<title level="j" type="abbrev">Experimental Cell Research</title>
+		<idno type="ISSN">0014-4827</idno>
+		<imprint>
+			<biblScope unit="volume">379</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="82" />
+			<date type="published" when="2019-06">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gudbergsson, J. M. et al. A tumorsphere model of glioblastoma multiforme with intratumoral heterogeneity for quantitative analysis of cellular migration and drug response. Exp. Cell Res. 379, 73-82 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">An integrated pipeline for high-throughput screening and profiling of spheroids using simple live image analysis of frame to frame variations</title>
+		<author>
+			<persName><forename type="first">Haneen</forename><surname>Alsehli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fuad</forename><surname>Mosis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eva</forename><surname>Hamrud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erika</forename><surname>Wiseman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eileen</forename><surname>Gentleman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Danovi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ymeth.2020.05.017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Methods</title>
+		<title level="j" type="abbrev">Methods</title>
+		<idno type="ISSN">1046-2023</idno>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="page" from="33" to="43" />
+			<date type="published" when="2021-06" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alsehli, H. et al. An integrated pipeline for high-throughput screening and pro ling of spheroids using simple live image analysis of frame to frame variations. Methods San Diego Calif 33</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">fastp: an ultra-fast all-in-one FASTQ preprocessor</title>
+		<author>
+			<persName><forename type="first">Shifu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanqing</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaru</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Gu</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/bty560</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="i884" to="i890" />
+			<date type="published" when="2018-09-01">2018</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, S., Zhou, Y., Chen, Y. &amp; Gu, J. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics 34, i884-i890 (2018).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

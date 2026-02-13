@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Structure-Guided Discovery of CHI3L1 Inhibitors from Ultralarge Chemical Spaces for Glioblastoma Therapy</title>
+				<funder ref="#_NbqMK4f">
+					<orgName type="full">National Institute of Neurological Disorders and Stroke</orgName>
+				</funder>
+				<funder ref="#_BMZCNnb">
+					<orgName type="full">French National Centre for Scientific Research</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>American Chemical Society (ACS)</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-21">December 21, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Baljit</forename><surname>Kaur</surname></persName>
+							<idno type="ORCID">0000-0002-0461-6692</idno>
+						</author>
+						<author>
+							<persName><forename type="first">François</forename><surname>Sindt</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Longfei</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Didier</forename><surname>Rognan</surname></persName>
+							<idno type="ORCID">0000-0002-0577-641X</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Moustafa</forename><surname>Gabr</surname></persName>
+							<idno type="ORCID">0000-0001-9074-3331</idno>
+						</author>
+						<title level="a" type="main">Structure-Guided Discovery of CHI3L1 Inhibitors from Ultralarge Chemical Spaces for Glioblastoma Therapy</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">ACS Omega</title>
+						<title level="j" type="abbrev">ACS Omega</title>
+						<idno type="ISSN">2470-1343</idno>
+						<imprint>
+							<publisher>American Chemical Society (ACS)</publisher>
+							<biblScope unit="volume">11</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<biblScope unit="page" from="1317" to="1322"/>
+							<date type="published" when="2025-12-21">December 21, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F5EFF2DD1EFCD0169C84F462F1C05BE6</idno>
+					<idno type="DOI">10.1021/acsomega.5c08775</idno>
+					<note type="submission">Received: August 27, 2025 Revised: November 8, 2025 Accepted: December 5, 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T20:26+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Glioblastoma (GBM) is a lethal brain tumor with few therapies. Targeting Chitinase 3-like 1 (CHI3L1), we used our SpaceDock structure-based virtual screen of 377 billion compounds, synthesized 60 top hits, and validated nine binders. Lead compound 9e (K d = 19.11 μM) reduced viability and STAT3 signaling in 3D GBM spheroids. These findings demonstrate the potential of reactivity-aware ultralarge screening to identify modulators of nonenzymatic, dynamic targets in complex cancer models.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="607.41" lry="800.9"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ INTRODUCTION</head><p>Glioblastoma (GBM) is an aggressive and notoriously hard-totreat brain cancer. <ref type="bibr" target="#b0">1</ref> Its diffuse spread, cellular heterogeneity, and dynamic tumor microenvironment 2 limit the effectiveness of surgery, radiation, and chemotherapy. <ref type="bibr" target="#b2">3</ref> In the United States, GBM causes over 10,000 deaths annually, <ref type="bibr" target="#b3">4</ref> with median survival of 12-18 months; ∼25% survive beyond one year, and few reach five years. <ref type="bibr" target="#b4">5</ref> GBM reprograms immune cells, particularly macrophages, to support rather than attack the tumor, driving angiogenesis, immune suppression, and faster progression. <ref type="bibr" target="#b5">6</ref> This immunosuppressive reprogramming also limits current immunotherapies, underscoring the need for new targets to reverse it. <ref type="bibr" target="#b6">7</ref> Even with the use of approved drugs like Temozolomide, <ref type="bibr" target="#b7">8</ref> bevacizumab, <ref type="bibr" target="#b8">9</ref> and tumor-treating fields, <ref type="bibr" target="#b9">10</ref> mutations in the IDH1 <ref type="bibr" target="#b10">11</ref> or EGFR genes <ref type="bibr" target="#b11">12</ref> efforts to treat GBM remain largely unsuccessful. Key barriers include treatment resistance, poor drug penetration across the blood-brain barrier, and an immunosuppressive tumor microenvironment. <ref type="bibr" target="#b12">13</ref> These challenges underscore the need for new small molecules and improved screening strategies.</p><p>Among the potential molecular targets receiving growing attention is Chitinase-3-like protein 1 (CHI3L1). <ref type="bibr" target="#b13">14</ref> This protein is secreted by cells <ref type="bibr" target="#b14">15</ref> and, although it shares structural similarities with active enzymes called chitinases, it lacks the key residues needed for enzymatic function. <ref type="bibr" target="#b15">16</ref> Instead, it plays a significant role in processes like inflammation, <ref type="bibr" target="#b16">17</ref> tissue remodeling, <ref type="bibr" target="#b17">18</ref> and cancer progression. <ref type="bibr" target="#b18">19</ref> In the case of GBM, CHI3L1 levels are often elevated, and the protein appears to help steer macrophages toward a state that supports tumor growth, promotes new blood vessel formation, and suppresses immune responses. <ref type="bibr" target="#b19">20</ref> Through these connections, CHI3L1 influences multiple signaling cascades in tumor biology and immune evasion, notably activating the STAT3 pathway, a driver of immunosuppression in GBM. <ref type="bibr" target="#b19">20</ref> The pursuit of selective small-molecule inhibitors targeting CHI3L1 has remained limited. <ref type="bibr" target="#b20">[21]</ref><ref type="bibr" target="#b21">[22]</ref><ref type="bibr" target="#b22">[23]</ref> CHI3L1 is challenging to drug because it lacks enzymatic activity and stable receptorligand interactions, instead acting as a flexible, contextdependent signaling regulator that transiently engages receptors such as IL-13Rα2, RAGE (receptor for advanced glycation end products), and VEGFR2 (Vascular Endothelial Growth Factor Receptor 2). <ref type="bibr" target="#b23">24</ref> We present one of the largest virtual screening approaches ever described, leveraging the efficiency of our recently described SpaceDock virtual screening method, <ref type="bibr" target="#b24">25</ref> to search in a chemical space of 377 billion synthetically feasible molecules for CHI3L1 inhibitors. Of 45 synthesized candidates, three were validated by multiple orthogonal assays as promising leads for optimization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ RESULTS AND DISCUSSION</head><p>Structure-Based Screening Of A Virtual Chemical Space of 377 Billion Compounds. We applied an in-house structure-driven, reaction-aware ligand design strategy (Space-Dock) <ref type="bibr" target="#b24">25</ref> tailored to the unique demands of nonenzymatic, structurally flexible proteins such as CHI3L1. Moving beyond reliance on extensive preassembled virtual libraries, our approach initiates from commercially available building blocks, which are docked onto experimentally or computationally characterized protein surfaces of interest. (Figure <ref type="figure" target="#fig_0">1</ref>).</p><p>Reagent docking poses (20 per building block) are then systematically scanned for one of 40 possible organic chemistry   <ref type="table">S1</ref>), depending on strict topological (distances, angles, torsional angles) relationships and organic chemistry cross-compatibility. Upon successful linkage (covalent bond formation, ring closure), newly enumerated SpaceDock ligands are energy minimized in the target active site and redocked to ascertain that the same pose can be recovered again. Quality check of remaining poses 26 eliminated dubious solutions (high strain energy, too many unsatisfied hydrogen-bonds and ionic bonds at the protein-ligand interface) which are then submitted to two independent and rigorous physics-based absolute binding free energy estimates (Hyde 27 and VM2 <ref type="bibr" target="#b27">28</ref> ) to keep only best scorers. Clustering by maximum common substructures afforded 60 clusters out of which the best VM2 scorer was purchased for synthesis at Enamine (Kyiv, Ukraine). Out of the 60 virtual hits, 45 could indeed be synthesized at sufficient purity (&gt;90% by LC-MS).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACS Omega</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>linkages (Table</head><p>Primary Screening by MST. Virtual hits were tested at the single concentration of 250 μM for binding to a fluorescentlabeled His-tagged hCHI3L1 protein. Based on the normalized fluorescence (Fnorm) values (Figure <ref type="figure" target="#fig_1">2A</ref>), 15 potential hits (1c, 1d, 1e, 2a, 2d, 2e, 3a, 3b, 4a, 4c, 6a, 7d, 8a, 8b, 9e) were identified. Comparison of compound fluorescence with a blank/ reference (CHI3L1 labeled and treated with 2.5% DMSO instead of a test compound) identified eight compounds (2d, 2e, 3a, 3b, 4c, 6a, 8b, and 9e) that exhibited higher or lower fluorescence than the blank (Figure <ref type="figure" target="#fig_1">2B</ref>). To eliminate false positives due to signal interference or fluorophore interactions, additional control experiments were performed on those eight hits, including autofluorescence screening (Figure <ref type="figure" target="#fig_1">2C</ref>) and a quenching assay (Figure <ref type="figure" target="#fig_1">2D</ref>).</p><p>In the autofluorescence assay, compounds 2e, 3b, 4c, 6a and 8b exhibited high intrinsic fluorescence at the detection wavelength, whereas the fluorescence signals for compounds 2d, 3a, and 9e remained within acceptable limits for MST analysis. In the quenching assay, compounds 2d, 2e, 3b, and 4c showed concentration-dependent quenching effects and were therefore excluded from further analysis.</p><p>Based on these criteria, compounds showing minimal signal interference across all assays were considered suitable for MST analysis. Through this refinement process, nine compounds� 1c, 1d, 1e, 2a, 3a, 4a, 7d, 8a, and 9e�were confirmed as valid hits with reliable binding profiles.</p><p>Dose-Response Confirmation. The potential hits identified from the single-dose screening were further evaluated in a dose-dependent MST assay to confirm their direct binding affinity for CHI3L1 (Figure <ref type="figure" target="#fig_2">3</ref>). Among the nine candidates, three compounds 3a, 4a, and 9e exhibited a clear dosedependent response, indicating these are likely true binders.</p><p>Interestingly, none of the three hits were available in the catalogue of 20 million commercially available screening compounds directly purchasable at E-molecule (<ref type="url" target="https://www.emolecules.com/products/screening-compounds">https://www.  emolecules.com/products/screening-compounds</ref>), thereby confirming the value of screening much larger "on-demand" chemical spaces.</p><p>Hit confirmation by SPR. To support the MST results, we evaluated binding affinities of compounds 3a, 4a, and 9e using SPR. Compound 3a S1A) did not exhibit a dosedependent response, while compound 4a (Figure <ref type="figure" target="#fig_0">S1B</ref>) showed a high relative response indicative of nonspecific binding. However, compound 9e showed a clear, dose-dependent binding response, yielding a dissociation constant (K d ) of 19.11 μM (Figure <ref type="figure" target="#fig_0">S1C</ref>). The SPR sensorgram for compound 9e is presented in Figure <ref type="figure" target="#fig_1">S2</ref>. Notably, the dose-dependent activity of 9e observed in both SPR and MST assays closely mirrors the behavior of the positive control compound G28 (Figure <ref type="figure" target="#fig_2">S3</ref>). Importantly, 9e exhibits a K d of 19.11 μM, which represents an improvement over G28 (K d = 51.42 μM).</p><p>Given the low molecular weight of compound 9e (MW = 277.75) and an estimated logP of 2.31 (ACD/ChemSketch v2010), it presents an excellent ligand efficiency 29 of 0.35 kcal mol -1 and a valuable start for hit to lead optimization. According to SpaceDock, the compound is hydrogen-bonded to two central polar residues (D207, Y206) and exhibit aromatic interactions to F261 and Y352. Distal aromatic groups (chloroindane, oxadiazole) fit into the two apolar ends of the pocket (Figure <ref type="figure">S4</ref>). However, the pocket remains empty at the vicinity of E290 and M204/M350, suggesting that adequate substitutions to reach both amino acids may improve the hit potency.</p><p>AlphaLISA-Based Assessment of Compounds Targeting hCHI3LA-Galectin-3 Interaction. To investigate the ability of selected compounds to inhibit the interaction between hCHI3L1 and Galectin-3, compounds 3a, 4a, and 9e were evaluated using an AlphaLISA-based inhibition assay (Figure <ref type="figure">4A</ref>). The assay was performed in technical triplicates under optimized conditions. Compound 3a exhibited no detectable inhibition, while compound 4a showed a modest inhibition of 13.23%. Compound 9e displayed the highest level of inhibition among the three, at 20.87%. These results suggest that 4a and 9e may weakly interfere with the hCHI3L1-Galectin-3 interaction, highlighting them as potential starting points for further optimization.</p><p>Evaluation of the Therapeutic Potential Using GBM Organoids. To evaluate the functional impact of compound 9e in a biologically relevant context, we utilized a 3D multicellular GBM spheroid model comprising GBM cells, endothelial cells, and macrophages. Treatment with compound 9e led to a pronounced, dose-dependent decrease in spheroid viability, achieving statistical significance at concentrations as low as 25 μM (Figure <ref type="figure">4B</ref>). This outcome aligns with the respective CHI3L1 binding affinity of compound 9e. Although the IC 50 of compound 9e in GBM spheroids (62.4 ± 7.8 μM) is within the range expected for an early hit (Figure <ref type="figure">S5</ref>), structural analysis revealed additional unoccupied regions in the predicted binding pocket (Figure <ref type="figure">S4</ref>) that are amenable to substitution, supporting 9e as a suitable starting point for lead-optimization.</p><p>To further validate the CHI3L1 dependency of 9e, we performed a phenocopy experiment using a CHI3L1-neutralizing antibody (Figure <ref type="figure">S6</ref>). Treatment with the antibody reduced spheroid viability to a similar extent as 9e (76% vs 71% of control), and cotreatment of antibody and 9e did not produce an additive effect (73%). This lack of additivity demonstrates that 9e and the antibody act through the same pathway, supporting CHI3L1-dependent activity of 9e.</p><p>To further probe target engagement, we quantified pSTAT3 levels in GBM spheroids using a HTRF assay. Compound 9e elicited a dose-dependent reduction in pSTAT3 (Figure <ref type="figure">4C</ref>). Collectively, these findings support compound 9e as an inhibitor of the CHI3L1-STAT3 axis, capable of impairing tumor spheroid viability and dampening downstream signaling in a relevant 3D coculture system. To directly contextualize 9e against the known CHI3L1 tool compound G28, both compounds were evaluated side-by-side in 3D GBM spheroids (Figure <ref type="figure">4B</ref>,<ref type="figure">C</ref>). Although G28 revealed more potent reduction in spheroid viability than 9e, only compound 9e resulted in a significant reduction of phospho-STAT3 levels (Figure <ref type="figure">4C</ref>). This uncoupling between the effect of G28 on viability and its lack of STAT3 inhibition suggests that G28 may not act through the CHI3L1-STAT3 signaling axis in this model. In contrast, 9e reduces both spheroid viability and STAT3 phosphorylation (Figure <ref type="figure">4B</ref>,C), consistent with a CHI3L1-dependent mechanism of action.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ CONCLUSION</head><p>This study applies a structure-guided, reaction-aware virtual screening (SpaceDock) of 377 billion compounds to identify CHI3L1 inhibitors, a conformationally dynamic GBM target. Prioritized candidates yielded lead 9e, which showed micromolar affinity, blocked CHI3L1-Galectin-3 interaction, and reduced viability and STAT3 signaling in 3D GBM organoids. These results position 9e as a promising lead and highlight SpaceDock as a versatile platform for targeting elusive proteins through integrated computational design, biophysical screening, and tumor-relevant validation.</p><p>■ ASSOCIATED CONTENT ligands, SMILES strings of 45 virtual hits selected for synthesis and experimental validation, and LC-MS data for the top hit compounds (PDF)</p><p>■</p><p>AUTHOR INFORMATION Corresponding Authors Didier Rognan -Laboratoire d'Innovation Thérapeutique, UMR7200 CNRS-Université de Strasbourg, F-67400 Illkirch, France; orcid.org/0000-0002-0577-641X; Email: rognan@unistra.fr Moustafa Gabr -Department of Radiology, Molecular Imaging Innovations Institute (MI3), Weill Cornell Medicine, New York, New York 10065, United States; orcid.org/0000-0001-9074-3331; Email: mog4005@med.cornell.edu</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Structure-based organic-chemistry driven ligand design. (A) Three-dimensional structure of CHI3L1 bound to a small molecule inhibitor (PDB 8R4X). Key protein-ligand hydrogen bonds are displayed by magenta dots. (B) Generative design workflow yielding 60 synthesizable hits. At each step, several filters are introduced to restrain the generative design. We here ensured that the two key hydrogen bonds to Y216 and D217 are conserved throughout the workflow. Number of solutions are indicated, at each step, in the bottom diagram.</figDesc><graphic coords="2,123.48,60.43,360.00,275.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. (A) Primary screening of molecules from at 250 μM (with 2.5% DMSO). The blue, green, black, and purple indicates the potential hits, negative control/reference (buffer with 2.5% DMSO), nonbinder, positive control (G28); 22 (B) Comparison of initial fluorescence of compounds with reference having labeled hCHI3L1 with 2.5% DMSO. The red dots indicate the compounds that may have signal interference or fluorophore interactions; (C) Autofluorescence and (D) quench test of candidates from single-dosage screening. Dotted lines in (C) and (D) indicate the threshold values (mean negative control ± 3 × SD) used to flag compounds with excessive autofluorescence or quenching.</figDesc><graphic coords="2,123.48,396.45,360.00,244.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. MST-based confirmation of CHI3L1 binding by compound 3a, 4a and 9e, respectively. The graph displays dose-dependent changes in normalized fluorescence (Fnorm [%]) plotted against increasing concentrations of each ligand. Data are mean ± SD (n = 3).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="4,93.43,60.43,419.98,141.79" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>https://doi.org/10.1021/acsomega.5c08775 ACS Omega 2026, 11, 1317-1322</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>ACS Omega</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><head>Funding</head><p>We gratefully acknowledge financial support from the <rs type="funder">National Institute of Neurological Disorders and Stroke</rs> under grant number <rs type="grantNumber">R01NS136524</rs> (PI: M.G.), and of the <rs type="funder">French National Centre for Scientific Research</rs> (<rs type="programName">OPEN program</rs>, PI: D.R.)</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_NbqMK4f">
+					<idno type="grant-number">R01NS136524</idno>
+				</org>
+				<org type="funding" xml:id="_BMZCNnb">
+					<orgName type="program" subtype="full">OPEN program</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement</head><p>The full list of virtual hits is given as SMILES strings as Supporting Information. All software used in this study are available as described below: Protoss v.4.0, TorsionAnalyzer v2.0.0:<ref type="url" target="https://www.zbh.uni-hamburg.de/forschung/amd/software.html">https://www.zbh.uni-hamburg.de/forschung/amd/  software.html</ref> (accessed 08-11-2025) GOLD v.2022: CCDC Software Ltd., Cambridge CB2 1EZ, United Kingdom, <ref type="url" target="http://www.ccdc.cam.ac.uk">www.  ccdc.cam.ac.uk</ref> (accessed 08-11-2025) SpaceDock v.1.0.0: <ref type="url" target="https://github.com/litfsindt/LIT-SpaceDock">https://github.com/litfsindt/LIT-SpaceDock</ref> (accessed 08-11-2025) IChem v5.2.8: <ref type="url" target="http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html">http://bioinfo-pharma.u-strasbg.fr/  labwebsite/download.html</ref> (accessed 08-11-2025) Filter v.4.2.1.1, Szbyki v2.4.0.0, Freeform v.2.5.1.1: OpenEye Scientific, Santa Fe, N.M., USA, <ref type="url" target="https://www.eyesopen.com/">https://www.eyesopen.com/</ref> (accessed 08-11-2025) Hyde v.2.1.1: BioSolveIT GmbH, Sankt Augustin, Germany, <ref type="url" target="http://www.biosolveit.de">www.biosolveit.de</ref> (accessed 08-11-2025)</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>* sı Supporting Information</head><p>The Supporting Information is available free of charge at <ref type="url" target="https://pubs.acs.org/doi/10.1021/acsomega.5c08775?goto=supporting-info">https://pubs.acs.org/doi/10.1021/acsomega.5c08775</ref>.</p><p>Computational and experimental procedures. Organic chemistry reactions used to generate targets-specific  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Contributions</head><p>The manuscript was written through contributions of all authors. All of the authors approved the final version of the manuscript. F.S. performed the virtual screening. B.K. and L.Z. performed the experimental validation. D.R. supervised the computational study. M.G. supervised the experimental validation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Notes</head><p>The authors declare the following competing financial interest(s): D.R. is cofounder and shareholder of BIODOL Therapeutics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ ACKNOWLEDGMENTS</head><p>The Calculation Centre of the IN2P3 (CNRS, Villeurbanne, France) is acknowledged for the allocation of computing time and excellent support.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ ABBREVIATIONS</head><p>Gal3, Galectin-3; CHI3L1, Chitinase-3-like protein 1; HTRF, homogeneous time-resolved fluorescence; IL-13Rα2, homogeneous time-resolved fluorescence IL-13 receptor α 2; PPI, protein-protein interactions; MST, microscale thermophoresis; SPR, surface plasmon resonance; K D , equilibrium dissociation constant; RAGE, receptor for advanced glycation end products; VEGFR2, Vascular Endothelial Growth Factor Receptor</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Multidrug micelles and sonopermeation for chemotherapy co-delivery to brain tumors</title>
+		<author>
+			<persName><forename type="first">Anshuman</forename><surname>Dasgupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Niklas</forename><surname>May</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geir</forename><surname>Klinkenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helena</forename><forename type="middle">C</forename><surname>Besse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eva</forename><forename type="middle">Miriam</forename><surname>Buhl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><surname>Moeckel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahaf</forename><surname>Mihyar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quim</forename><surname>Peña</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armin</forename><forename type="middle">Azadkhah</forename><surname>Shalmani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Hark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anne</forename><surname>Rix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susanne</forename><surname>Koletnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josbert</forename><surname>Metselaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wim</forename><forename type="middle">E</forename><surname>Hennink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gert</forename><surname>Storm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dannis</forename><surname>Van Vuurden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chrit</forename><surname>Moonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Ries</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruth</forename><surname>Schmid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Kiessling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Twan</forename><surname>Lammers</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jconrel.2025.02.018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Controlled Release</title>
+		<title level="j" type="abbrev">Journal of Controlled Release</title>
+		<idno type="ISSN">0168-3659</idno>
+		<imprint>
+			<biblScope unit="volume">380</biblScope>
+			<biblScope unit="page" from="818" to="828" />
+			<date type="published" when="2025-04">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dasgupta, A.; May, J.-N.; Klinkenberg, G.; Besse, H. C.; Buhl, E. M.; Moeckel, D.; Mihyar, R.; Penã, Q.; Shalmani, A. A.; Hark, C.; Rix, A.; Koletnik, S.; Metselaar, J.; Shi, Y.; Hennink, W. E.; Storm, G.; van Vuurden, D.; Moonen, C.; Ries, M.; Schmid, R.; Kiessling, F.; Lammers, T. Multidrug Micelles and Sonopermeation for Chemotherapy Co- Delivery to Brain Tumors. J. Controlled Release 2025, 380, 818-828.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Glioblastoma heterogeneity at single cell resolution</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Eisenbarth</surname></persName>
+			<idno type="ORCID">0000-0003-1378-0029</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">Alan</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-8272-2450</idno>
+		</author>
+		<idno type="DOI">10.1038/s41388-023-02738-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<title level="j" type="abbrev">Oncogene</title>
+		<idno type="ISSN">0950-9232</idno>
+		<idno type="ISSNe">1476-5594</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page" from="2155" to="2165" />
+			<date type="published" when="2023-06-05">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eisenbarth, D.; Wang, Y. A. Glioblastoma Heterogeneity at Single Cell Resolution. Oncogene 2023, 42 (27), 2155-2165.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Revolutionizing Glioblastoma Treatment: A Comprehensive Overview of Modern Therapeutic Approaches</title>
+		<author>
+			<persName><forename type="first">Karol</forename><surname>Sadowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrianna</forename><surname>Jażdżewska</surname></persName>
+			<idno type="ORCID">0009-0002-8627-0601</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Kozłowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandra</forename><surname>Zacny</surname></persName>
+			<idno type="ORCID">0009-0000-7004-2351</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Lorenc</surname></persName>
+			<idno type="ORCID">0000-0002-9780-9484</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wioletta</forename><surname>Olejarz</surname></persName>
+			<idno type="ORCID">0000-0002-3211-0947</idno>
+		</author>
+		<idno type="DOI">10.3390/ijms25115774</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Molecular Sciences</title>
+		<title level="j" type="abbrev">IJMS</title>
+		<idno type="ISSNe">1422-0067</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">5774</biblScope>
+			<date type="published" when="2024-05-26">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sadowski, K.; Jazḋzėwska, A.; Kozłowski, J.; Zacny, A.; Lorenc, T.; Olejarz, W. Revolutionizing Glioblastoma Treatment: A Comprehen- sive Overview of Modern Therapeutic Approaches. International Journal of Molecular Sciences 2024, 25 (11), 5774.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">About the Author</title>
+		<author>
+			<persName><forename type="first">Henry</forename><forename type="middle">A</forename><surname>Swann</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><surname>Foundation</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9780824874674-031</idno>
+		<ptr target="https://swannfoundation.org/about-glioblastoma-cancer/facts-statistics/" />
+	</analytic>
+	<monogr>
+		<title level="m">Hawai&apos;i Sports</title>
+		<imprint>
+			<publisher>University of Hawaii Press</publisher>
+			<date type="published" when="2025-08-01">Aug 01, 2025</date>
+			<biblScope unit="page" from="653" to="656" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Facts &amp; Statistics -Henry A. Swann, Jr. Foundation. https:// swannfoundation.org/about-glioblastoma-cancer/facts-statistics/ (ac- cessed Aug 01, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Glioblastoma Survival Rate|Glioblastoma Foundation News</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kwatra</surname></persName>
+		</author>
+		<idno type="DOI">10.37717/220020135</idno>
+		<ptr target="https://glioblastomafoundation.org/news/glioblastoma-multiforme" />
+	</analytic>
+	<monogr>
+		<title level="m">Glioblastoma Foundation</title>
+		<imprint>
+			<publisher>James S. McDonnell Foundation</publisher>
+			<date type="published" when="2025-06-14">June 14, 2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kwatra, G. Glioblastoma Survival Rate|Glioblastoma Foundation News; Glioblastoma Foundation https://glioblastomafoundation.org/ news/glioblastoma-multiforme (accessed June 14, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Current state of immunotherapy for glioblastoma</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanxuan</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chetan</forename><surname>Bettegowda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41571-018-0003-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Clinical Oncology</title>
+		<title level="j" type="abbrev">Nat Rev Clin Oncol</title>
+		<idno type="ISSN">1759-4774</idno>
+		<idno type="ISSNe">1759-4782</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="422" to="442" />
+			<date type="published" when="2018-04-11">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lim, M.; Xia, Y.; Bettegowda, C.; Weller, M. Current State of Immunotherapy for Glioblastoma. Nat. Rev. Clin Oncol 2018, 15 (7), 422-442.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Immunotherapy for glioblastoma: current state, challenges, and future perspectives</title>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0009-0003-6585-0145</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heba</forename><surname>Ali</surname></persName>
+			<idno type="ORCID">0000-0001-5535-7638</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><forename type="middle">D</forename><surname>Lathia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peiwen</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-8129-9328</idno>
+		</author>
+		<idno type="DOI">10.1038/s41423-024-01226-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cellular &amp; Molecular Immunology</title>
+		<title level="j" type="abbrev">Cell Mol Immunol</title>
+		<idno type="ISSNe">2042-0226</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1354" to="1375" />
+			<date type="published" when="2024-10-15">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, Y.; Zhou, F.; Ali, H.; Lathia, J. D.; Chen, P. Immunotherapy for Glioblastoma: Current State, Challenges, and Future Perspectives. Cell Mol. Immunol 2024, 21 (12), 1354-1375.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Antitumor Imidazotetrazines. 32.1 Synthesis of Novel Imidazotetrazinones and Related Bicyclic Heterocycles To Probe the Mode of Action of the Antitumor Drug Temozolomide</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Deans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F G</forename><surname>Stevens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Tisdale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Wheelhouse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Denny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Hartley</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/jm00009a010?urlappend=%3Fref%3DPDF&amp;jav=VoR&amp;rel=cite-as</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1493" to="1504" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Clark, A. S.; Deans, B.; Stevens, M. F. G.; Tisdale, M. J.; Wheelhouse, R. T.; Denny, B. J.; Hartley, J. A. Antitumor Imidazotetrazines. 32.1 Synthesis of Novel Imidazotetrazinones and Related Bicyclic Heterocycles To Probe the Mode of Action of the Antitumor Drug Temozolomide. J. Med. Chem. 1995, 38 (9), 1493- 1504.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Bevacizumab for the Treatment of Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Miguel</forename><forename type="middle">J</forename><surname>Gil-Gil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Mesia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Montserrat</forename><surname>Rey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordi</forename><surname>Bruna</surname></persName>
+		</author>
+		<idno type="DOI">10.4137/cmo.s8503</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Medicine Insights: Oncology</title>
+		<title level="j" type="abbrev">Clin Med Insights Oncol</title>
+		<idno type="ISSN">1179-5549</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">8503</biblScope>
+			<date type="published" when="2013-01">2013</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gil-Gil, M. J.; Mesia, C.; Rey, M.; Bruna, J. Bevacizumab for the Treatment of Glioblastoma. Clin Med. Insights Oncol. 2013, 7, No. CMO.S8503.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">What to Know About Optune</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dwyer</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Md</surname></persName>
+		</author>
+		<ptr target="https://www.verywellhealth.com/optune-5072947" />
+		<imprint>
+			<date type="published" when="2025-06-14">2025. June 14, 2025</date>
+			<publisher>Verywell Health</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dwyer, B., MD. What to Know About Optune; Verywell Health, 2025 https://www.verywellhealth.com/optune-5072947 (accessed June 14, 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">IDH Inhibition in Gliomas: From Preclinical Models to Clinical Trials</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ruda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Horbinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Preusser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Soffietti</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41582-024-00967-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Rev. Neurol</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="395" to="407" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ruda, R.; Horbinski, C.; van den Bent, M.; Preusser, M.; Soffietti, R. IDH Inhibition in Gliomas: From Preclinical Models to Clinical Trials. Nat. Rev. Neurol. 2024, 20 (7), 395-407.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Epidermal growth factor receptor and EGFRvIII in glioblastoma: signaling pathways and targeted therapies</title>
+		<author>
+			<persName><forename type="first">Zhenyi</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ozlem</forename><surname>Aksoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tina</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi-Wen</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">A</forename><surname>Weiss</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41388-017-0045-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<title level="j" type="abbrev">Oncogene</title>
+		<idno type="ISSN">0950-9232</idno>
+		<idno type="ISSNe">1476-5594</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1561" to="1575" />
+			<date type="published" when="2018-01-11">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">An, Z.; Aksoy, O.; Zheng, T.; Fan, Q.-W.; Weiss, W. A. Epidermal Growth Factor Receptor (EGFR) and EGFRvIII in Glioblastoma (GBM): Signaling Pathways and Targeted Therapies. Oncogene 2018, 37 (12), 1561-1575.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Temozolomide resistance in glioblastoma multiforme</title>
+		<author>
+			<persName><forename type="first">Sang</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.gendis.2016.04.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Genes &amp; Diseases</title>
+		<title level="j" type="abbrev">Genes &amp; Diseases</title>
+		<idno type="ISSN">2352-3042</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="198" to="210" />
+			<date type="published" when="2016-09">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, S. Y. Temozolomide Resistance in Glioblastoma Multi- forme. Genes Diseases 2016, 3 (3), 198-210.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Chitinase-3-like-1: a multifaceted player in neuroinflammation and degenerative pathologies with therapeutic implications</title>
+		<author>
+			<persName><forename type="first">Pharaoh</forename><forename type="middle">Fellow</forename><surname>Mwale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Ta</forename><surname>Hsieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting-Lin</forename><surname>Yen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing-Shiun</forename><surname>Jan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Taliyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chih-Hao</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-8354-7874</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wen-Bin</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13024-025-00801-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Neurodegeneration</title>
+		<title level="j" type="abbrev">Mol Neurodegeneration</title>
+		<idno type="ISSNe">1750-1326</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">7</biblScope>
+			<date type="published" when="2025-01-18">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mwale, P. F.; Hsieh, C.-T.; Yen, T.-L.; Jan, J.-S.; Taliyan, R.; Yang, C.-H.; Yang, W.-B. Chitinase-3-like-1: A Multifaceted Player in Neuroinflammation and Degenerative Pathologies with Therapeutic Implications. Mol. Neurodegener. 2025, 20, 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">CHI3L1 in Multiple Sclerosis—From Bench to Clinic</title>
+		<author>
+			<persName><forename type="first">Izabela</forename><surname>Jatczak-Pawlik</surname></persName>
+			<idno type="ORCID">0000-0001-6566-421X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Jurewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Małgorzata</forename><surname>Domowicz</surname></persName>
+			<idno type="ORCID">0000-0002-7804-9926</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alicja</forename><surname>Ewiak-Paszyńska</surname></persName>
+			<idno type="ORCID">0000-0003-1065-8669</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mariusz</forename><surname>Stasiołek</surname></persName>
+			<idno type="ORCID">0000-0002-2582-1708</idno>
+		</author>
+		<idno type="DOI">10.3390/cells13242086</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cells</title>
+		<title level="j" type="abbrev">Cells</title>
+		<idno type="ISSNe">2073-4409</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">24</biblScope>
+			<biblScope unit="page">2086</biblScope>
+			<date type="published" when="2024-12-17">2024. 2086</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jatczak-Pawlik, I.; Jurewicz, A.; Domowicz, M.; Ewiak-Paszynśka, A.; Stasiołek, M. CHI3L1 in Multiple Sclerosis�From Bench to Clinic. Cells 2024, 13 (24), 2086.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Chitinase-3 like-protein-1 function and its role in diseases</title>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongping</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingchang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoren</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>You</surname></persName>
+			<idno type="ORCID">0000-0003-3308-4127</idno>
+		</author>
+		<idno type="DOI">10.1038/s41392-020-00303-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Signal Transduction and Targeted Therapy</title>
+		<title level="j" type="abbrev">Sig Transduct Target Ther</title>
+		<idno type="ISSNe">2059-3635</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">201</biblScope>
+			<date type="published" when="2020-09-14">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhao, T.; Su, Z.; Li, Y.; Zhang, X.; You, Q. Chitinase-3 like- Protein-1 Function and Its Role in Diseases. Signal Transduct. Target. Ther. 2020, 5 (1), 201.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Chitinase-3-like-1: a multifaceted player in neuroinflammation and degenerative pathologies with therapeutic implications</title>
+		<author>
+			<persName><forename type="first">Pharaoh</forename><forename type="middle">Fellow</forename><surname>Mwale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Ta</forename><surname>Hsieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting-Lin</forename><surname>Yen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing-Shiun</forename><surname>Jan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Taliyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chih-Hao</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-8354-7874</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wen-Bin</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13024-025-00801-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Neurodegeneration</title>
+		<title level="j" type="abbrev">Mol Neurodegeneration</title>
+		<idno type="ISSNe">1750-1326</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">7</biblScope>
+			<date type="published" when="2025-01-18">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mwale, P. F.; Hsieh, C.-T.; Yen, T.-L.; Jan, J.-S.; Taliyan, R.; Yang, C.-H.; Yang, W.-B. Chitinase-3-like-1: A Multifaceted Player in Neuroinflammation and Degenerative Pathologies with Therapeutic Implications. Mol. Neurodegeneration 2025, 20 (1), 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Chitinase 3-Like-1/BRP-39 regulates extracellular matrix remodeling during allergic fungal asthma</title>
+		<author>
+			<persName><forename type="first">Diandra</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mgayya</forename><surname>Makullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">Jane</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jarrett</forename><surname>Godfried</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ellie</forename><surname>Rokicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suki</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chad</forename><surname>Steele</surname></persName>
+		</author>
+		<idno type="DOI">10.4049/jimmunol.212.supp.1069.5999</idno>
+		<idno>1069_5999</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Immunology</title>
+		<idno type="ISSN">0022-1767</idno>
+		<idno type="ISSNe">1550-6606</idno>
+		<imprint>
+			<biblScope unit="volume">212</biblScope>
+			<biblScope unit="issue">1_Supplement</biblScope>
+			<biblScope unit="page" from="1069_5999" to="1069_5999" />
+			<date type="published" when="2024-05-01">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ellis, D.; Makullah, M.; Jones, M. J.; Godfried, J.; Rokicki, E.; Cheung, S.; Steele, C. Chitinase 3-Like-1/BRP-39 Regulates Extrac- ellular Matrix Remodeling during Allergic Fungal Asthma. J. Immunol. 2024, 212 (1_Supplement), No. 1069_5999.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The Role of CHI3L1 Expression in Angiogenesis in Invasive Ductal Breast Carcinoma</title>
+		<author>
+			<persName><forename type="first">Agnieszka</forename><surname>Rusak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karolina</forename><surname>Jablonska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandra</forename><surname>Piotrowska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jedrzej</forename><surname>Grzegrzolka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandra</forename><surname>Nowak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrzej</forename><surname>Wojnar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dziegiel</surname></persName>
+		</author>
+		<idno type="DOI">10.21873/anticanres.12602</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Anticancer Research</title>
+		<title level="j" type="abbrev">Anticancer Res</title>
+		<idno type="ISSN">0250-7005</idno>
+		<idno type="ISSNe">1791-7530</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3357" to="3366" />
+			<date type="published" when="2018-05-30">2018</date>
+			<publisher>International Institute of Anticancer Research</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rusak, A.; Jablonska, K.; Piotrowska, A.; Grzegrzolka, J.; Nowak, A.; Wojnar, A.; Dziegiel, P. The Role of CHI3L1 Expression in Angiogenesis in Invasive Ductal Breast Carcinoma. Anticancer Res. 2018, 38 (6), 3357-3366.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">CHI3L1 predicted in malignant entities is associated with glioblastoma immune microenvironment</title>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minggao</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lanxin</forename><surname>Luo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clim.2022.109158</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Immunology</title>
+		<title level="j" type="abbrev">Clinical Immunology</title>
+		<idno type="ISSN">1521-6616</idno>
+		<imprint>
+			<biblScope unit="volume">245</biblScope>
+			<biblScope unit="page">109158</biblScope>
+			<date type="published" when="2022-12">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, F.; Qi, B.; Yang, L.; Wang, B.; Gao, L.; Zhao, M.; Luo, L. CHI3L1 Predicted in Malignant Entities Is Associated with Glioblastoma Immune Microenvironment. Clin. Immunol. 2022, 245, No. 109158.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Lead optimization of a CHI3L1 inhibitor for Glioblastoma: Enhanced target engagement, pharmacokinetics, and efficacy in 3D spheroid models</title>
+		<author>
+			<persName><forename type="first">Baljit</forename><surname>Kaur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hossam</forename><surname>Nada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longfei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moustafa</forename><forename type="middle">T</forename><surname>Gabr</surname></persName>
+			<idno type="ORCID">0000-0001-9074-3331</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ejmech.2025.117924</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Medicinal Chemistry</title>
+		<title level="j" type="abbrev">European Journal of Medicinal Chemistry</title>
+		<idno type="ISSN">0223-5234</idno>
+		<imprint>
+			<biblScope unit="volume">297</biblScope>
+			<biblScope unit="page">117924</biblScope>
+			<date type="published" when="2025-11">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaur, B.; Nada, H.; Zhang, L.; Gabr, M. T. Lead Optimization of a CHI3L1 Inhibitor for Glioblastoma: Enhanced Target Engagement, Pharmacokinetics, and Efficacy in 3D Spheroid Models. Eur. J. Med. Chem. 2025, 297, No. 117924.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">CHI3L1-targeted small molecules as glioblastoma therapies: Virtual screening-based discovery, biophysical validation, pharmacokinetic profiling, and evaluation in glioblastoma spheroids</title>
+		<author>
+			<persName><forename type="first">Hossam</forename><surname>Nada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longfei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baljit</forename><surname>Kaur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moustafa</forename><forename type="middle">T</forename><surname>Gabr</surname></persName>
+			<idno type="ORCID">0000-0001-9074-3331</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ejmech.2025.117960</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Medicinal Chemistry</title>
+		<title level="j" type="abbrev">European Journal of Medicinal Chemistry</title>
+		<idno type="ISSN">0223-5234</idno>
+		<imprint>
+			<biblScope unit="volume">297</biblScope>
+			<biblScope unit="page">117960</biblScope>
+			<date type="published" when="2025-11">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nada, H.; Zhang, L.; Kaur, B.; Gabr, M. T. CHI3L1-Targeted Small Molecules as Glioblastoma Therapies: Virtual Screening-Based Discovery, Biophysical Validation, Pharmacokinetic Profiling, and Evaluation in Glioblastoma Spheroids. Eur. J. Med. Chem. 2025, 297, No. 117960.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Structure-Based Discovery of High-Affinity Small Molecule Ligands and Development of Tool Probes to Study the Role of Chitinase-3-Like Protein 1</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Czestkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ł</forename><surname>Krzeminśki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Piotrowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mazur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pluta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Andryianau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Koralewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Matyszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Olejniczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kowalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lisiecka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kozieł</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Piwowar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Papiernik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nowotny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Napiórkowska-Gromadzka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nowak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Niedziałek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wieczorek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Siwinśka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rejczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Jędrzejczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mulewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Olczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zasłona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gołębiowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Drzewicka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bartoszewicz</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jmedchem.3c02255?urlappend=%3Fref%3DPDF&amp;jav=VoR&amp;rel=cite-as</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3959" to="3985" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Czestkowski, W.; Krzeminśki, Ł.; Piotrowicz, M. C.; Mazur, M.; Pluta, E.; Andryianau, G.; Koralewski, R.; Matyszewski, K.; Olejniczak, S.; Kowalski, M.; Lisiecka, K.; Kozieł, R.; Piwowar, K.; Papiernik, D.; Nowotny, M.; Napiórkowska-Gromadzka, A.; Nowak, E.; Niedziałek, D.; Wieczorek, G.; Siwinśka, A.; Rejczak, T.; Jędrzejczak, K.; Mulewski, K.; Olczak, J.; Zasłona, Z.; Gołębiowski, A.; Drzewicka, K.; Bartoszewicz, A. Structure-Based Discovery of High-Affinity Small Molecule Ligands and Development of Tool Probes to Study the Role of Chitinase-3-Like Protein 1. J. Med. Chem. 2024, 67 (5), 3959-3985.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">IL-13Rα2 uses TMEM219 in chitinase 3-like-1-induced signalling and effector responses</title>
+		<author>
+			<persName><forename type="first">Chang-Min</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuan</forename><forename type="middle">Hua</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adel</forename><forename type="middle">M</forename><surname>Nour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Wook</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyung</forename><forename type="middle">Hee</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">Dela</forename><surname>Cruz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lokesh</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><forename type="middle">L</forename><surname>Nasr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yorgo</forename><surname>Modis</surname></persName>
+			<idno type="ORCID">0000-0002-6084-0429</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chun</forename><forename type="middle">Geun</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-9514-3658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jack</forename><forename type="middle">A</forename><surname>Elias</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncomms12752</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12752</biblScope>
+			<date type="published" when="2016-09-15">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, C.-M.; He, C. H.; Nour, A. M.; Zhou, Y.; Ma, B.; Park, J. W.; Kim, K. H.; Cruz, C. D.; Sharma, L.; Nasr, M. L.; Modis, Y.; Lee, C. G.; Elias, J. A. IL-13Rα2 Uses TMEM219 in Chitinase 3-like-1-Induced Signalling and Effector Responses. Nat. Commun. 2016, 7 (1), No. 12752.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Protein Structure-Based Organic Chemistry-Driven Ligand Design from Ultralarge Chemical Spaces</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sindt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seyller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Eguida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rognan</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acscentsci.3c01521?urlappend=%3Fref%3DPDF&amp;jav=VoR&amp;rel=cite-as</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Cent. Sci</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="615" to="627" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sindt, F.; Seyller, A.; Eguida, M.; Rognan, D. Protein Structure- Based Organic Chemistry-Driven Ligand Design from Ultralarge Chemical Spaces. ACS Cent. Sci. 2024, 10 (3), 615-627.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Protoss: a holistic approach to predict tautomers and protonation states in protein-ligand complexes</title>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bietz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sascha</forename><surname>Urbaczek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Rarey</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1758-2946-6-12</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cheminformatics</title>
+		<title level="j" type="abbrev">J Cheminform</title>
+		<idno type="ISSNe">1758-2946</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2014-04-03">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bietz, S.; Urbaczek, S.; Schulz, B.; Rarey, M. Protoss: a holistic approach to predict tautomers and protonation states in protein-ligand complexes. J. Cheminform 2014, 6, 12.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Development and validation of a genetic algorithm for flexible docking 1 1Edited by F. E. Cohen</title>
+		<author>
+			<persName><forename type="first">Gareth</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Willett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Glen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">R</forename><surname>Leach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robin</forename><surname>Taylor</surname></persName>
+		</author>
+		<idno type="DOI">10.1006/jmbi.1996.0897</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Molecular Biology</title>
+		<title level="j" type="abbrev">Journal of Molecular Biology</title>
+		<idno type="ISSN">0022-2836</idno>
+		<imprint>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="727" to="748" />
+			<date type="published" when="1997-04">1997</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jones, G.; Willett, P.; Glen, R.; Leach, A.; Taylor, R. Development and validation of a genetic algorithm for flexible docking. J. Mol. Biol. 1997, 267 (3), 727-748.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">IChem: A Versatile Toolkit for Detecting, Comparing, and Predicting Protein–Ligand Interactions</title>
+		<author>
+			<persName><forename type="first">Franck</forename><surname>Da silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><surname>Desaphy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Didier</forename><surname>Rognan</surname></persName>
+			<idno type="ORCID">0000-0002-0577-641X</idno>
+		</author>
+		<idno type="DOI">10.1002/cmdc.201700505</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ChemMedChem</title>
+		<title level="j" type="abbrev">ChemMedChem</title>
+		<idno type="ISSN">1860-7179</idno>
+		<idno type="ISSNe">1860-7187</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="507" to="510" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Da Silva, F.; Desaphy, J.; Rognan, D. IChem: A Versatile Toolkit for Detecting, Comparing, and Predicting Protein-Ligand Interactions. ChemMedChem 2018, 13 (6), 507-510.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Ligand efficiency: a useful metric for lead selection</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">L</forename><surname>Hopkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Colin</forename><forename type="middle">R</forename><surname>Groom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Alex</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1359-6446(04)03069-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Drug Discovery Today</title>
+		<title level="j" type="abbrev">Drug Discovery Today</title>
+		<idno type="ISSN">1359-6446</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="430" to="431" />
+			<date type="published" when="2004-05">2004</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430-431.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

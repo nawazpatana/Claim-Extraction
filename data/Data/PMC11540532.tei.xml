@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Large language models as a diagnostic support tool in neuropathology</title>
+				<funder ref="#_dfScDHp">
+					<orgName type="full">European Union</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Bayer</orgName>
+				</funder>
+				<funder ref="#_4G7eGn4">
+					<orgName type="full">German Federal Ministry of Education and Research (PEARL</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">MSD</orgName>
+				</funder>
+				<funder ref="#_ftw9B7n #_NxXeYCc #_9kmWByr #_5cp4WZv #_zmMxWMj #_hwe4U6R #_4GAgxT9 #_QQPWetT">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">AstraZeneca</orgName>
+				</funder>
+				<funder ref="#_GNZwAJB">
+					<orgName type="full">National Institutes of Health (EPICO</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Fresenius</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Roche</orgName>
+				</funder>
+				<funder ref="#_gJsSwK5">
+					<orgName type="full">German Academic Exchange Service</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Merck</orgName>
+				</funder>
+				<funder ref="#_QsJptJ4">
+					<orgName type="full">National Institute for Health and Care Research (NIHR</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Pfizer</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Eisai</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Leeds Biomedical Research Centre</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Projekt DEAL</orgName>
+				</funder>
+				<funder ref="#_gHjeVV3">
+					<orgName type="full">German Cancer Aid</orgName>
+				</funder>
+				<funder ref="#_wwe2UQ4">
+					<orgName type="full">German Joint Federal Committee (TransplantKI</orgName>
+				</funder>
+				<funder ref="#_cEugvYH #_4axhb6G">
+					<orgName type="full">European Research Council</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">BMS</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Janssen</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Wiley</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-11">2024-11</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Katherine</forename><forename type="middle">J</forename><surname>Hewitt</surname></persName>
+							<idno type="ORCID">0000-0001-6602-0141</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Else Kröner Fresenius Center for Digital Health , Faculty of Medicine and University Hospital Carl Gustav Carus , TUD Dresden University of Technology , Dresden , Germany</note>
+								<orgName type="department" key="dep1">Else Kröner Fresenius Center for Digital Health</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="department" key="dep3">Hospital Carl Gustav Carus</orgName>
+								<orgName type="institution" key="instit1">University</orgName>
+								<orgName type="institution" key="instit2">TUD Dresden University of Technology</orgName>
+								<address>
+									<settlement>Dresden</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Isabella</forename><forename type="middle">C</forename><surname>Wiest</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Else Kröner Fresenius Center for Digital Health , Faculty of Medicine and University Hospital Carl Gustav Carus , TUD Dresden University of Technology , Dresden , Germany</note>
+								<orgName type="department" key="dep1">Else Kröner Fresenius Center for Digital Health</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="department" key="dep3">Hospital Carl Gustav Carus</orgName>
+								<orgName type="institution" key="instit1">University</orgName>
+								<orgName type="institution" key="instit2">TUD Dresden University of Technology</orgName>
+								<address>
+									<settlement>Dresden</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Medicine II , Medical Faculty Mannheim , Heidelberg University , Mannheim , Germany .,</note>
+								<orgName type="department" key="dep1">Department of Medicine II</orgName>
+								<orgName type="department" key="dep2">Medical Faculty Mannheim</orgName>
+								<orgName type="institution">Heidelberg University</orgName>
+								<address>
+									<settlement>Mannheim</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zunamys</forename><forename type="middle">I</forename><surname>Carrero</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Else Kröner Fresenius Center for Digital Health , Faculty of Medicine and University Hospital Carl Gustav Carus , TUD Dresden University of Technology , Dresden , Germany</note>
+								<orgName type="department" key="dep1">Else Kröner Fresenius Center for Digital Health</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="department" key="dep3">Hospital Carl Gustav Carus</orgName>
+								<orgName type="institution" key="instit1">University</orgName>
+								<orgName type="institution" key="instit2">TUD Dresden University of Technology</orgName>
+								<address>
+									<settlement>Dresden</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Laura</forename><surname>Bejan</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>3</label> School of Medicine , University College London , London , UK</note>
+								<orgName type="department">School of Medicine</orgName>
+								<orgName type="institution">University College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Thomas</forename><forename type="middle">O</forename><surname>Millner</surname></persName>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>4</label> Division of Neuropathology , Queen Square Institute of Neurology , University College London , London , UK</note>
+								<orgName type="department">Division of Neuropathology</orgName>
+								<orgName type="institution" key="instit1">Queen Square Institute of Neurology</orgName>
+								<orgName type="institution" key="instit2">University College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>5</label> Blizard Institute , Barts and The London School of Medicine and Dentistry , Queen Mary University of London , London , UK</note>
+								<orgName type="department">Barts and The London School of Medicine and Dentistry</orgName>
+								<orgName type="institution" key="instit1">Blizard Institute</orgName>
+								<orgName type="institution" key="instit2">Queen Mary University of London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sebastian</forename><surname>Brandner</surname></persName>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>4</label> Division of Neuropathology , Queen Square Institute of Neurology , University College London , London , UK</note>
+								<orgName type="department">Division of Neuropathology</orgName>
+								<orgName type="institution" key="instit1">Queen Square Institute of Neurology</orgName>
+								<orgName type="institution" key="instit2">University College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jakob</forename><forename type="middle">Nikolas</forename><surname>Kather</surname></persName>
+							<idno type="ORCID">0000-0002-3730-5348</idno>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation">Heidelberg University , Mannheim , Germany</note>
+								<orgName type="institution">Heidelberg University</orgName>
+								<address>
+									<settlement>Mannheim</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<note type="raw_affiliation">Fresenius Center for Digital Health , Technische Universität Dresden , DE-01062 Dresden , Germany. Owkin , France ;</note>
+								<orgName type="department">Fresenius Center for Digital Health</orgName>
+								<orgName type="institution">Technische Universität Dresden</orgName>
+								<address>
+									<postCode>DE-01062</postCode>
+									<settlement>Dresden Owkin</settlement>
+									<country>Germany France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff9">
+								<note type="raw_affiliation">DoMore Diagnostics , Norway ;</note>
+								<orgName type="institution">DoMore Diagnostics</orgName>
+								<address>
+									<country key="NO">Norway</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff10">
+								<note type="raw_affiliation">Panakeia , UK ;</note>
+								<orgName type="institution">Panakeia</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff11">
+								<note type="raw_affiliation">AstraZeneca , UK; Mindpeak , Germany ; and</note>
+								<orgName type="institution" key="instit1">AstraZeneca</orgName>
+								<orgName type="institution" key="instit2">UK; Mindpeak</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff12">
+								<note type="raw_affiliation">MultiplexDx , Slovakia.</note>
+								<orgName type="institution">MultiplexDx</orgName>
+								<address>
+									<country key="SK">Slovakia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff13">
+								<note type="raw_affiliation">StratifAI GmbH , Germany ,</note>
+								<orgName type="institution">StratifAI GmbH</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff14">
+								<note type="raw_affiliation">Synagen GmbH , Germany</note>
+								<orgName type="institution">Synagen GmbH</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Large language models as a diagnostic support tool in neuropathology</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">The Journal of Pathology: Clinical Research</title>
+						<title level="j" type="abbrev">The Journal of Pathology CR</title>
+						<idno type="ISSN">2056-4538</idno>
+						<imprint>
+							<publisher>Wiley</publisher>
+							<biblScope unit="volume">10</biblScope>
+							<biblScope unit="issue">6</biblScope>
+							<date type="published" when="2024-11" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">27CE2FE0D4DB31173973275F9BE105CB</idno>
+					<idno type="DOI">10.1002/2056-4538.70009</idno>
+					<note type="submission">Received 27 July 2024; Revised 10 September 2024; Accepted 14 October 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T12:40+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>large language models</term>
+					<term>neuropathology</term>
+					<term>adult-type diffuse gliomas</term>
+					<term>decision support tools</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The WHO guidelines for classifying central nervous system (CNS) tumours are changing considerably with each release. The classification of CNS tumours is uniquely complex among most other solid tumours as it incorporates not just morphology, but also genetic and epigenetic features. Keeping current with these changes across medical fields can be challenging, even for clinical specialists. Large language models (LLMs) have demonstrated their ability to parse and process complex medical text, but their utility in neuro-oncology has not been systematically tested. We hypothesised that LLMs can effectively diagnose neuro-oncology cases from free-text histopathology reports according to the latest WHO guidelines. To test this hypothesis, we evaluated the performance of ChatGPT-4o, Claude-3.5-sonnet, and Llama3 across 30 challenging neuropathology cases, which each presented a complex mix of morphological and genetic information relevant to the diagnosis. Furthermore, we integrated these models with the latest WHO guidelines through Retrieval-Augmented Generation (RAG) and again assessed their diagnostic accuracy. Our data show that LLMs equipped with RAG, but not without RAG, can accurately diagnose the neuropathological tumour subtype in 90% of the tested cases. This study lays the groundwork for a new generation of computational tools that can assist neuropathologists in their daily reporting practice.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Large language models (LLMs) have shown promising performance on several healthcare-related tasks including medical education <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>, and administrative tasks such as writing hospital discharge summaries <ref type="bibr" target="#b2">[3]</ref> and clinic letters <ref type="bibr" target="#b3">[4]</ref> for cancer patients in a variety of scenarios. While LLMs have also been applied to patient-facing tasks, such as medical chatbots <ref type="bibr" target="#b4">[5]</ref>, concerns remain regarding hallucinations (where a generative response contains false or misleading information), their inability to provide references for factual information, and the lack of transparency in decisionmaking <ref type="bibr" target="#b5">[6]</ref>.</p><p>One potential application of LLMs is as decision support tools to aid practitioners in the interpretation of clinical guidelines <ref type="bibr" target="#b6">[7]</ref>. However, to our knowledge this has not been trialled in a neuropathology setting.</p><p>We performed a PubMed search and found one study that assessed the diagnostic accuracy of vision-LLMs on neuropathology images of neurodegenerative diseases <ref type="bibr" target="#b7">[8]</ref>. A further seven studies examining the utility of LLMs for diagnostic support tasks within the field of neurology were identified, however none were applied in a neuropathology setting. Our search criteria and a summary of our findings can be found in supplementary material, Table <ref type="table" target="#tab_0">S1</ref>.</p><p>Given the challenges presented by neuropathology diagnostics due to recent changes in the diagnostic approach and the multitude of potential diagnoses <ref type="bibr" target="#b8">[9]</ref>, we hypothesised that LLMs could potentially benefit neuropathology practitioners.</p><p>This work aims to assess the ability of three leading LLMs, one open-source (Llama3-70b from Meta) and two proprietary (ChatGPT-4o from OpenAI, Claude-3.5-sonnet from Anthropic), to provide accurate diagnoses in neuropathology. Since adult-type diffuse gliomas represent a significant proportion of the diagnostic work in adult neuro-oncology practice <ref type="bibr" target="#b9">[10]</ref>, we created 30 realistic free-text neuropathology reports and asked the models to make a diagnosis based on the histopathological description.</p><p>Additionally, we evaluated the standard 'zero-shot' responses against Retrieval-Augmented Generation (RAG) responses, where the models were provided with the latest WHO guidelines. RAG is a framework which limits the LLM to utilising data provided by the user, such as diagnostic guidelines, rather than relying on data acquired during training or from the internet. Moreover, this approach has been shown to mitigate some limitations of standard LLMs, including hallucinations <ref type="bibr" target="#b10">[11]</ref>.</p><p>Both responses were compared to an expertgenerated ground truth and for strict concordance with the latest WHO guidelines. Thereby, we hypothesise that the RAG responses will outperform the zero-shot responses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cohort description</head><p>We generated 30 artificial neuropathology cases: 10 each for astrocytoma, oligodendroglioma, and glioblastoma, with varying grade, morphological, and molecular features. For accuracy, these cases were based on real data, chosen semi-randomly from the pseudonimised University College London Hospitals (UCLH) dataset. Cases were selected to represent a full range of features that a neuropathologist might encounter when reporting these entities. Only the diagnostic details necessary for reaching a diagnosis were kept, such as morphological features (e.g. gemistocytes, presence or absence of necrosis and/or mitoses, microvascular proliferations) and the results of further testing (e.g. immunohistochemistry and/or molecular analysis). Tumour descriptions were otherwise rephrased while trying to preserve different writing styles, including any grammar or spelling errors (e.g. 'mitoticly' and 'cells positive' instead of 'cells are positive'). This experiment was conducted in concordance with the Declaration of Helsinki. No patient-identifiable data were accessed or used during this project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RAG approach</head><p>Relevant diagnostic criteria are based on the CNS WHO 2021 fifth edition <ref type="bibr" target="#b8">[9]</ref>. The chapters on adulttype diffuse gliomas, along with paragraphs from the foreword and introduction discussing changes to the diagnostic approach from the previous edition, were collated into a Microsoft Word document. Relevant tables were converted to plain text to make the information accessible to the LLMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Large language models</head><p>We compared ChatGPT-4o, Claude-3.5-sonnet, and Llama3-70b-groq. The Llama3-70b model with the groq extension was selected for its RAG capabilities, and was used for both the zero-shot and RAG experiments. All models were accessed via a web interface: ChatGPT through chatgpt.com, Claude through claude.ai, and Llama3 through poe.com. Further details of the prompts used for both the zeroshot and the RAG experiments are provided in supplementary material, Table <ref type="table" target="#tab_1">S2</ref>. The experiments were conducted between 8 May and 26 June 2024.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis</head><p>The full neuropathological diagnosis consists of a histopathological diagnosis, a molecular diagnosis, and a grade <ref type="bibr" target="#b8">[9]</ref> (e.g. astrocytoma, IDH-mutant, CNS WHO grade 3). Each response generated by the network was reviewed for these three components, and was deemed correct only if all three completely matched the WHO guidelines. The diagnostic criteria for adult-type diffuse gliomas can be found in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">of 7 KJ Hewitt et al</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Zero-shot LLMs are ineffective at neuropathology diagnosis</head><p>We compared the 'zero-shot' (standard) performance of all three models (zGPT, zLlama, and zClaude) in diagnosing adult-type diffuse gliomas from neuropathological descriptions. Although the vast majority of LLM-generated diagnoses were close to the ground truth, because we held the LLM to clinical standards many responses were classified as 'incorrect' by human experts (Table <ref type="table" target="#tab_1">2</ref>; Figure <ref type="figure" target="#fig_0">1</ref>). In the astrocytoma cases, zClaude provided the correct diagnosis in 6/10 cases and zGPT in 1/10, whereas zLlama was unable to provide any correct diagnoses. For the glioblastoma cases, zClaude provided 5/10 correct diagnoses, zGPT provided This table summarises the diagnostic criteria for the neuropathological diagnosis of adult-type diffuse gliomas according to WHO CNS fifth edition <ref type="bibr" target="#b8">[9]</ref>. Once a diffusely infiltrating glioma has been identified on histopathology, these criteria must be demonstrated either by immunohistochemistry or DNA sequencing. Alternatively, DNA methylation profiling can also be used. WHO CNS5 also recommends that grade is designated in Arabic numerals, rather than Roman numerals, as in previous editions. This table provides examples of the diagnoses given by each model, for each experimental approach and tumour type. One case for each tumour type was chosen and the diagnoses given by each model for both experimental approaches are provided, to illustrate how the models performed. Responses that were classified as incorrect are highlighted in red. In most instances, the diagnosis provided by the model was close to the ground truth, but were deemed incorrect because they failed to meet the current WHO guidance <ref type="bibr" target="#b8">[9]</ref>. For example, the ChatGPT response in the zero-shot experiment for case A2 was deemed incorrect because the grade was given in Roman, rather than in Arabic, numerals. This change to how grade should be noted was implemented by the most recent edition of the WHO CNS 5 guidelines. Many of the diagnostics errors made by the models in the zero-shot experiments related to changes that were introduced in the WHO CNS 5 guidelines, such as astrocytoma and glioblastoma being exclusively IDH-mutant and IDH-wildtype respectively, and the term anaplastic no longer being used. Full responses are provided in supplementary material, Full responses by case.</p><p>3 of 7 LLMs as diagnostic support tool in neuropathology 3/10, and zLlama provided no correct diagnoses. As for the oligodendroglioma cases, only zClaude provided correct diagnoses, doing so in 5/10 cases. Neither zGPT nor zLlama provided any correct responses.</p><p>Across all zero-shot experiments, the correct diagnosis was given in just 20/90 cases (22.2%); 13.3% (n = 4) by zGPT and 53.3% (n = 16) by zClaude. zLlama provided no correct responses. The most common reason for responses being deemed incorrect was that the grade was given in Roman, rather than Arabic numerals. This was the case in 18/30 astrocytoma cases (60%), 18/30 glioblastoma cases (60%), and 21/30 oligodendroglioma cases (70%). Figures <ref type="figure" target="#fig_0">1</ref> and <ref type="figure" target="#fig_1">2</ref> provide an overview of the mistakes and correct diagnoses made by each model. Mistakes by model and tumour type. This bar chart shows the total number of mistakes made by each model for each tumour type, where green represents astrocytoma, orange represents glioblastoma and grey oligodendroglioma. The bars are absent for some of the RAG experiments because no incorrect diagnoses were generated for these cases. The diagnostic accuracy of the models was judged according to three components: the morphological diagnosis, e.g. astrocytoma; the molecular diagnosis, e.g. IDH-mutant; and the grade, e.g. grade 3. Errors related to grade were either that the incorrect grade was given by a model or the grade was given in Roman rather than Arabic numerals. Errors relating to morphology were either that the morphological diagnosis itself was incorrect, or an outdated term such as 'anaplastic' was used. Errors relating to molecular status were either that the molecular diagnosis provided was wrong, or a molecular status was not provided at all. In the instances where an outdated term or a grade in Roman numerals was provided, the response was deemed incorrect, regardless of whether the morphological diagnosis or the grade itself was correct. This level of accuracy was chosen because we wanted to hold the models to clinical standards. This figure shows that mistakes of all types were made much more frequently in the zero-shot experiments than the RAG experiments.</p><p>Next, we compared performance of all three models when utilising a RAG approach (rGPT, rLlama, and rClaude).</p><p>In the astrocytoma cases, rClaude provided the correct diagnosis in 8/10 cases, rLlama in 9/10 cases, and rGPT in 10/10 cases. For the glioblastoma cases, rClaude provided the correct diagnosis in 10/10 cases, while rGPT and rLlama both provided the correct diagnosis in 9/10 cases. As for the oligodendroglioma cases, both rGPT and rClaude correctly diagnosed 9/10 cases, whereas rLlama correctly diagnosed 8/10 cases.</p><p>Across all RAG experiments, the correct diagnosis was provided in 81/90 cases (90%); 93.3% (n = 28) by rGPT, 86.7% (n = 26) by rLlama, and 90% (n = 27) by rClaude. A results summary can be found in Figures <ref type="figure" target="#fig_0">1</ref> and <ref type="figure" target="#fig_1">2</ref>.</p><p>Summaries of the results given by all three models across both the zero-shot and RAG experiments for the astrocytoma, glioblastoma and oligodendrogioma case experiments are provided in supplementary material, Tables <ref type="table">S3</ref>, S4 and S5 respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Our study has evaluated the performance of LLMs on neuropathology cases, providing evidence against the use of zero-shot LLMs within this field. Despite all three models being capable of providing neuropathology diagnoses based on histological descriptions of brain tumours, the diagnoses frequently used outdated terminology and often failed to meet current diagnostic standards. Conversely, the RAG approach yielded higher-quality results, providing an accurate diagnosis in 90% of cases. ChatGPT with RAG was the most accurate among the models, with only two misdiagnoses. One misdiagnosis consisted of an incorrect grade in an oligodendroglioma case, which is arguably subjective and prone to inter-observer variability, even </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">of 7</head><p>LLMs as diagnostic support tool in neuropathology among experts. However the other misdiagnosis was more consequential, as it was a glioblastoma case misdiagnosed as a low-grade astrocytoma. This has significant impact for both management <ref type="bibr" target="#b11">[12]</ref> and outcome <ref type="bibr" target="#b9">[10]</ref>, but as this case was an 'early' glioblastoma, it also presents a diagnostic challenge.</p><p>Our findings support RAG's potential to improve the diagnostic capabilities of LLMs. By constraining the natural language processing power of LLMs within clinical guidelines, RAG can mitigate some of the primary concerns associated with LLMs, such as lack of transparency and fabricated results. Through additional prompt engineering, LLMs with RAG could benefit clinicians working in neuropathology.</p><p>Limitations of our study include the scope. Although adult-type diffuse gliomas are a fundamental part of neuropathology, numerous other entities are routinely encountered by neuropathologists on a daily basis. Further work to evaluate LLMs on a wider variety of entities and differentials, obtained from a variety of different data sources, is necessary. This should include rare cases and cases where the diagnosis is uncertain, such as entities which are a diagnosis of exclusion, to assess how the LLMs deal with ambiguity.</p><p>Additionally, before any AI model can be used clinically, the issue of safeguarding confidential patient data needs to be addressed. Many approaches for this exist, including computational privacy-preserving techniques <ref type="bibr" target="#b12">[13]</ref> and locally run LLM anonymisation pipelines <ref type="bibr" target="#b13">[14]</ref>. Regardless of the approach, the underlying principle remains the same: sensitive data should not be shared with cloud-based services (including LLMs) unless the provider can ensure that the data is treated according to the relevant legislations, i.e. Health Insurance Portability and Accountability Act in the USA and General Data Protection Regulation in the European Union.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1.Mistakes by model and tumour type. This bar chart shows the total number of mistakes made by each model for each tumour type, where green represents astrocytoma, orange represents glioblastoma and grey oligodendroglioma. The bars are absent for some of the RAG experiments because no incorrect diagnoses were generated for these cases. The diagnostic accuracy of the models was judged according to three components: the morphological diagnosis, e.g. astrocytoma; the molecular diagnosis, e.g. IDH-mutant; and the grade, e.g. grade 3. Errors related to grade were either that the incorrect grade was given by a model or the grade was given in Roman rather than Arabic numerals. Errors relating to morphology were either that the morphological diagnosis itself was incorrect, or an outdated term such as 'anaplastic' was used. Errors relating to molecular status were either that the molecular diagnosis provided was wrong, or a molecular status was not provided at all. In the instances where an outdated term or a grade in Roman numerals was provided, the response was deemed incorrect, regardless of whether the morphological diagnosis or the grade itself was correct. This level of accuracy was chosen because we wanted to hold the models to clinical standards. This figure shows that mistakes of all types were made much more frequently in the zero-shot experiments than the RAG experiments.</figDesc><graphic coords="4,57.71,85.49,479.79,367.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Correct diagnoses by tumour type. This bar chart presents the total number of correct diagnoses made by each model for each tumour type, where dark blue represents zero-shot correct response and light green RAG correct responses. The bar is absent for some of the zero-shot experiments because no correct diagnoses were generated for these cases. This figure demonstrates that correct diagnoses were made much more frequently by all models in the RAG experiments than the zero-shot experiments.</figDesc><graphic coords="5,57.88,85.49,479.45,306.77" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Diagnostic criteria</figDesc><table><row><cell></cell><cell>Essential criteria</cell><cell>Additional information</cell></row><row><cell>Astrocytoma,</cell><cell>Diffusely infiltrating glioma AND</cell><cell>ATRX mutation can be demonstrated as loss of nuclear</cell></row><row><cell>IDH-mutant</cell><cell>IDH-mutation AND</cell><cell>ATRX expression on immunohistochemistry or ATRX</cell></row><row><cell></cell><cell>ATRX mutation OR</cell><cell>mutation on molecular testing.</cell></row><row><cell></cell><cell>exclusion of whole arm deletions of 1p and 19q</cell><cell></cell></row><row><cell>Oligodendroglioma,</cell><cell>Diffusely infiltrating glioma AND</cell><cell>Recommended that 1p/19q assays be able to detect</cell></row><row><cell>IDH-mutant 1p/19q-codeleted</cell><cell>IDH-mutation AND</cell><cell>whole-arm chromosomal losses, such as FISH or</cell></row><row><cell></cell><cell>Whole arm deletions of 1p and 19q</cell><cell>molecular genetic testing.</cell></row><row><cell>Glioblastoma,</cell><cell>Diffuse astrocytic glioma AND</cell><cell>Must additionally demonstrate one or more of:</cell></row><row><cell>IDH-wildtype</cell><cell>IDH-wildtype AND</cell><cell>microvascular proliferation, necrosis, TERT promoter</cell></row><row><cell></cell><cell>H3-wildtype</cell><cell>mutation, EGFR gene amplification, chromosome</cell></row><row><cell></cell><cell></cell><cell>+7/À10 copy number alterations.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Example results</figDesc><table><row><cell></cell><cell>Experimental</cell><cell></cell><cell>Model and responses</cell><cell></cell></row><row><cell>Case number: ground truth</cell><cell>approach</cell><cell>ChatGPT</cell><cell>Llama</cell><cell>Claude</cell></row><row><cell>Case A2:</cell><cell>Zero-shot</cell><cell>Astrocytoma</cell><cell>Astrocytoma</cell><cell>Astrocytoma</cell></row><row><cell>Astrocytoma</cell><cell></cell><cell>IDH-mutant</cell><cell>IDH-mutant</cell><cell>IDH-mutant</cell></row><row><cell>IDH-mutant</cell><cell></cell><cell>Grade II</cell><cell>Grade II</cell><cell>Grade 2</cell></row><row><cell>Grade 2</cell><cell>RAG</cell><cell>Astrocytoma</cell><cell>Astrocytoma</cell><cell>Astrocytoma</cell></row><row><cell></cell><cell></cell><cell>IDH-mutant</cell><cell>IDH-mutant</cell><cell>IDH-mutant</cell></row><row><cell></cell><cell></cell><cell>Grade 2</cell><cell>Grade 2</cell><cell>Grade 2</cell></row><row><cell>Case G10:</cell><cell>Zero-shot</cell><cell>Glioblastoma</cell><cell>Anaplastic astrocytoma</cell><cell>Astrocytoma</cell></row><row><cell>Glioblastoma</cell><cell></cell><cell>IDH-wildtype</cell><cell>Grade III</cell><cell>IDH-wildtype</cell></row><row><cell>IDH-wildtype</cell><cell></cell><cell>Grade 4</cell><cell></cell><cell>Grade 4</cell></row><row><cell>Grade 4</cell><cell>RAG</cell><cell>Glioblastoma</cell><cell>Glioblastoma</cell><cell>Glioblastoma</cell></row><row><cell></cell><cell></cell><cell>IDH-wildtype</cell><cell>IDH-wildtype</cell><cell>IDH-wildtype</cell></row><row><cell></cell><cell></cell><cell>Grade 4</cell><cell>Grade 4</cell><cell>Grade 4</cell></row><row><cell>Case O9:</cell><cell>Zero-shot</cell><cell>Anaplastic oligodendrogl.</cell><cell>Glioblastoma</cell><cell>Anaplastic oligodendrogl.</cell></row><row><cell>Oligodendroglioma</cell><cell></cell><cell>IDH-mutant, 1p/19q co-del.</cell><cell>IDH-mutant</cell><cell>IDH-mutant, 1p/19q co-del.</cell></row><row><cell>IDH-mutant, 1p/19q co-deleted</cell><cell></cell><cell>Grade III</cell><cell>Grade IV</cell><cell>Grade II</cell></row><row><cell>Grade 3</cell><cell>RAG</cell><cell>Oligodendrogl.</cell><cell>Astrocytoma</cell><cell>Oligodendrogl.</cell></row><row><cell></cell><cell></cell><cell>IDH-mutant, 1p/19q co-del.</cell><cell>IDH-mutant</cell><cell>IDH-mutant, 1p/19q co-del.</cell></row><row><cell></cell><cell></cell><cell>Grade 3</cell><cell>Grade 3</cell><cell>Grade 3</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>© 2024 The Author(s). The Journal of Pathology: Clinical Research published by The Pathological Society of Great Britain and Ireland and John Wiley &amp; Sons Ltd. J Pathol Clin Res 2024; 10: e70009</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>The dataset on which the cases were based was obtained from <rs type="institution">UCLH via Brain UK</rs> (<rs type="grantNumber">REF:22/011</rs>). The authors thank both <rs type="institution">Brain UK</rs> and <rs type="institution">UCLH</rs> for their roles in this work. JNK is supported by the <rs type="funder">German Cancer Aid</rs> (<rs type="projectName">DECADE</rs>, <rs type="grantNumber">70115166</rs>), the <rs type="funder">German Federal Ministry of Education and Research (PEARL</rs>, <rs type="grantNumber">01KD2104C</rs>; <rs type="projectName">CAMINO</rs>, <rs type="grantNumber">01EO2101</rs>; SWAG, <rs type="grantNumber">01KD2215A</rs>; <rs type="projectName">TRANSFORM LIVER</rs>, <rs type="grantNumber">031L0312A</rs>; <rs type="projectName">TANGERINE</rs>, <rs type="grantNumber">01KT2302</rs> through <rs type="projectName">ERA-NET Transcan</rs>; Come2Data, <rs type="grantNumber">16DKZ2044A</rs>; <rs type="grantNumber">DEEP-HCC</rs>, <rs type="grantNumber">031L0315A</rs>), the <rs type="funder">German Academic Exchange Service</rs> (<rs type="projectName">SECAI</rs>, <rs type="grantNumber">57616814</rs>), the <rs type="funder">German Joint Federal Committee (TransplantKI</rs>, <rs type="grantNumber">01VSF21048</rs>), the <rs type="funder">European Union</rs>'s <rs type="programName">Horizon Europe innovation programme</rs> (<rs type="projectName">ODELIA</rs>, <rs type="grantNumber">101057091</rs>; <rs type="projectName">GENIAL</rs>, <rs type="grantNumber">101096312</rs>), the <rs type="funder">European Research Council</rs> (<rs type="projectName">NADIR</rs>, <rs type="grantNumber">101114631</rs>), the <rs type="funder">National Institutes of Health (EPICO</rs>, <rs type="grantNumber">R01 CA263318</rs>), and the <rs type="funder">National Institute for Health and Care Research (NIHR</rs>; <rs type="grantNumber">NIHR203331</rs>) <rs type="funder">Leeds Biomedical Research Centre</rs>. The views expressed are those of the authors and not necessarily those of the NHS, the <rs type="institution">NIHR</rs>, or the <rs type="institution">Department of Health and Social Care</rs>. This work was funded by the <rs type="funder">European Union</rs>. Views and opinions expressed are, however, those of the authors only and do not necessarily reflect those of the <rs type="institution">European Union</rs>. Neither the European Union nor the granting authority can be held responsible for them. Open Access funding enabled and organized by <rs type="funder">Projekt DEAL</rs>.</p></div>
+			</div>
+			<div type="funding">
+<div><p><rs type="institution">GSK</rs>, and has received honoraria by <rs type="funder">AstraZeneca</rs>, <rs type="funder">Bayer</rs>, <rs type="funder">Eisai</rs>, <rs type="funder">Janssen</rs>, <rs type="funder">Merck</rs>, <rs type="funder">MSD</rs>, <rs type="funder">BMS</rs>, <rs type="funder">Roche</rs>, <rs type="funder">Pfizer</rs>, and <rs type="funder">Fresenius</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_gHjeVV3">
+					<idno type="grant-number">REF:22/011</idno>
+					<orgName type="project" subtype="full">DECADE</orgName>
+				</org>
+				<org type="funding" xml:id="_4G7eGn4">
+					<idno type="grant-number">70115166</idno>
+				</org>
+				<org type="funded-project" xml:id="_ftw9B7n">
+					<idno type="grant-number">01KD2104C</idno>
+					<orgName type="project" subtype="full">CAMINO</orgName>
+				</org>
+				<org type="funding" xml:id="_NxXeYCc">
+					<idno type="grant-number">01EO2101</idno>
+				</org>
+				<org type="funded-project" xml:id="_9kmWByr">
+					<idno type="grant-number">01KD2215A</idno>
+					<orgName type="project" subtype="full">TRANSFORM LIVER</orgName>
+				</org>
+				<org type="funded-project" xml:id="_5cp4WZv">
+					<idno type="grant-number">031L0312A</idno>
+					<orgName type="project" subtype="full">TANGERINE</orgName>
+				</org>
+				<org type="funded-project" xml:id="_zmMxWMj">
+					<idno type="grant-number">01KT2302</idno>
+					<orgName type="project" subtype="full">ERA-NET Transcan</orgName>
+				</org>
+				<org type="funding" xml:id="_hwe4U6R">
+					<idno type="grant-number">16DKZ2044A</idno>
+				</org>
+				<org type="funding" xml:id="_4GAgxT9">
+					<idno type="grant-number">DEEP-HCC</idno>
+				</org>
+				<org type="funded-project" xml:id="_gJsSwK5">
+					<idno type="grant-number">031L0315A</idno>
+					<orgName type="project" subtype="full">SECAI</orgName>
+				</org>
+				<org type="funding" xml:id="_wwe2UQ4">
+					<idno type="grant-number">57616814</idno>
+				</org>
+				<org type="funded-project" xml:id="_dfScDHp">
+					<idno type="grant-number">01VSF21048</idno>
+					<orgName type="project" subtype="full">ODELIA</orgName>
+					<orgName type="program" subtype="full">Horizon Europe innovation programme</orgName>
+				</org>
+				<org type="funded-project" xml:id="_QQPWetT">
+					<idno type="grant-number">101057091</idno>
+					<orgName type="project" subtype="full">GENIAL</orgName>
+				</org>
+				<org type="funded-project" xml:id="_cEugvYH">
+					<idno type="grant-number">101096312</idno>
+					<orgName type="project" subtype="full">NADIR</orgName>
+				</org>
+				<org type="funding" xml:id="_4axhb6G">
+					<idno type="grant-number">101114631</idno>
+				</org>
+				<org type="funding" xml:id="_GNZwAJB">
+					<idno type="grant-number">R01 CA263318</idno>
+				</org>
+				<org type="funding" xml:id="_QsJptJ4">
+					<idno type="grant-number">NIHR203331</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The UCLH dataset was acquired through Brain UK (REF: 22/011). Inquiries regarding access to this dataset should be directed to SB. Llama3-70b-groq is freely accessible via poe.com, whereas ChatGPT-4o requires a paid subscription. Anthropic offers limited free access to Claude, but full access requires a paid subscription.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions statement</head><p>KJH is involved in the conception of the study; data acquisition and analysis; writing of first draft; review and critique; and final approval. ICW is involved in the conception of the study; review and critique; and final approval. ZIC is responsible for review and critique; and final approval. LB is involved in data acquisition; review and critique; and final approval. TOM is involved in the data acquisition; review and critique; and final approval. SB is involved in the data acquisition; review and critique; and final approval. JNK is involved in the conception of the study; review and critique; and final approval.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY MATERIAL ONLINE</head><p>Table <ref type="table">S1</ref>. Results of literature review Table <ref type="table">S2</ref>. Prompts Table <ref type="table">S3</ref>. Summary of astrocytoma case results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table S4. Summary of glioblastoma case results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table S5. Summary of oligodendroglioma case results</head><p>Full responses by case 7 of 7 LLMs as diagnostic support tool in neuropathology</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Towards expert-level medical question answering with large language models</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Singhal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gottweis</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2305.09617</idno>
+		<idno>arXiv 2023</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2305.09617" />
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Singhal K, Tu T, Gottweis J, et al. Towards expert-level medical question answering with large language models. arXiv 2023. https://doi.org/10.48550/arXiv.2305.09617.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models</title>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">H</forename><surname>Kung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morgan</forename><surname>Cheatham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arielle</forename><surname>Medenilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Czarina</forename><surname>Sillos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorie</forename><surname>De Leon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camille</forename><surname>Elepaño</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Madriaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rimel</forename><surname>Aggabao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giezel</forename><surname>Diaz-Candido</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Maningo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Tseng</surname></persName>
+			<idno type="ORCID">0000-0003-0211-512X</idno>
+		</author>
+		<idno type="DOI">10.1371/journal.pdig.0000198</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS Digital Health</title>
+		<title level="j" type="abbrev">PLOS Digit Health</title>
+		<idno type="ISSNe">2767-3170</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">e0000198</biblScope>
+			<date type="published" when="2023-02-09">2023</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kung TH, Cheatham M, Medenilla A, et al. Performance of ChatGPT on USMLE: potential for AI-assisted medical education using large language models. PLoS Digit Health 2023; 2: e0000198.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">ChatGPT: the future of discharge summaries?</title>
+		<author>
+			<persName><forename type="first">Sajan</forename><forename type="middle">B</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><surname>Lam</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s2589-7500(23)00021-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Digital Health</title>
+		<title level="j" type="abbrev">The Lancet Digital Health</title>
+		<idno type="ISSN">2589-7500</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="e107" to="e108" />
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Patel SB, Lam K. ChatGPT: the future of discharge summaries? Lancet Digit Health 2023; 5: e107-e108.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Using ChatGPT to write patient clinic letters</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">R</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">D</forename><surname>Dobbs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hayley</forename><forename type="middle">A</forename><surname>Hutchings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iain</forename><forename type="middle">S</forename><surname>Whitaker</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s2589-7500(23)00048-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Digital Health</title>
+		<title level="j" type="abbrev">The Lancet Digital Health</title>
+		<idno type="ISSN">2589-7500</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="e179" to="e181" />
+			<date type="published" when="2023-04">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ali SR, Dobbs TD, Hutchings HA, et al. Using ChatGPT to write patient clinic letters. Lancet Digit Health 2023; 5: e179-e181.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Comparing Physician and Artificial Intelligence Chatbot Responses to Patient Questions Posted to a Public Social Media Forum</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">W</forename><surname>Ayers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Poliak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Dredze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">C</forename><surname>Leas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zechariah</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jessica</forename><forename type="middle">B</forename><surname>Kelley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><forename type="middle">J</forename><surname>Faix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">M</forename><surname>Goodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Longhurst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Hogarth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davey</forename><forename type="middle">M</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamainternmed.2023.1838</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Internal Medicine</title>
+		<title level="j" type="abbrev">JAMA Intern Med</title>
+		<idno type="ISSN">2168-6106</idno>
+		<imprint>
+			<biblScope unit="volume">183</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">589</biblScope>
+			<date type="published" when="2023-06-01">2023</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ayers JW, Poliak A, Dredze M, et al. Comparing physician and artificial intelligence Chatbot responses to patient questions posted to a public social media forum. JAMA Intern Med 2023; 183: 589-596.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Evaluating ChatGPT as an Adjunct for Radiologic Decision-Making</title>
+		<author>
+			<persName><forename type="first">Arya</forename><surname>Rao</surname></persName>
+			<idno type="ORCID">0000-0003-3007-4812</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meghana</forename><surname>Kamineni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Winston</forename><surname>Lie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">D</forename><surname>Succi</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2023.02.02.23285399</idno>
+		<ptr target="https://doi.org/10.1101/2023.02.02.23285399" />
+	</analytic>
+	<monogr>
+		<title level="j">medRxiv</title>
+		<imprint>
+			<date type="published" when="2023-02-07">2023</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rao A, Kim J, Kamineni M, et al. Evaluating ChatGPT as an adjunct for radiologic decision-making. medRxiv 2023. https://doi. org/10.1101/2023.02.02.23285399.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Optimization of hepatological clinical guidelines interpretation by large language models: a retrieval augmented generation-based framework</title>
+		<author>
+			<persName><forename type="first">Simone</forename><surname>Kresevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauro</forename><surname>Giuffrè</surname></persName>
+			<idno type="ORCID">0000-0002-9910-3514</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Milos</forename><surname>Ajcevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agostino</forename><surname>Accardo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lory</forename><forename type="middle">S</forename><surname>Crocè</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><forename type="middle">L</forename><surname>Shung</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41746-024-01091-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Digital Medicine</title>
+		<title level="j" type="abbrev">npj Digit. Med.</title>
+		<idno type="ISSNe">2398-6352</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2024-04-23">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kresevic S, Giuffrè M, Ajcevic M, et al. Optimization of hepatological clinical guidelines interpretation by large language models: a retrieval augmented generation-based framework. npj Digit Med 2024; 7: 1-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Evaluating the efficacy of few-shot learning for GPT-4Vision in neurodegenerative disease histopathology: A comparative analysis with convolutional neural network model</title>
+		<author>
+			<persName><forename type="first">Daisuke</forename><surname>Ono</surname></persName>
+			<idno type="ORCID">0000-0002-0238-7355</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><forename type="middle">W</forename><surname>Dickson</surname></persName>
+			<idno type="ORCID">0000-0001-7189-7917</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shunsuke</forename><surname>Koga</surname></persName>
+			<idno type="ORCID">0000-0001-8868-9700</idno>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-4462333/v1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropathol Appl Neurobiol</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page">e12997</biblScope>
+			<date type="published" when="2024-05-28">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ono D, Dickson DW, Koga S. Evaluating the efficacy of few-shot learning for GPT-4Vision in neurodegenerative disease histopathology: a comparative analysis with convolutional neural network model. Neuropathol Appl Neurobiol 2024; 50: e12997.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Remarks on the WHO Classification of Tumours of the Central Nervous System</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Stochdorph</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-95413-9_2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Tumours of the Central Nervous System in Infancy and Childhood</title>
+		<meeting><address><addrLine>Lyon</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="17" to="18" />
+		</imprint>
+	</monogr>
+	<note>Central Nervous System Tumours th edn</note>
+	<note type="raw_reference">WHO Classification of Tumours Editorial Board. Central Nervous System Tumours. WHO Classification of Tumours Series, Volume 6 (5th edn). International Agency for Research on Cancer: Lyon, 2021.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2016—2020</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mackenzie</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><forename type="middle">A</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noad149</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">Supplement_4</biblScope>
+			<biblScope unit="page" from="iv1" to="iv99" />
+			<date type="published" when="2023-10-04">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Price M, Neff C, et al. CBTRUS statistical report: primary brain and other central nervous system tumors diagnosed in the United States in 2016-2020. Neuro Oncol 2023; 25: iv1-iv99.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Benchmarking retrieval-augmented generation for medicine</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Q</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2402.13178</idno>
+		<idno>arXiv 2024</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2402.13178" />
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Xiong G, Jin Q, Lu Z, et al. Benchmarking retrieval-augmented generation for medicine. arXiv 2024. https://doi.org/10.48550/ arXiv.2402.13178.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+			<idno type="ORCID">0000-0001-5710-5127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Preusser</surname></persName>
+			<idno type="ORCID">0000-0003-3541-2315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emilie</forename><surname>Le Rhun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jörg</forename><forename type="middle">C</forename><surname>Tonn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+			<idno type="ORCID">0000-0003-1239-1603</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmen</forename><surname>Balana</surname></persName>
+			<idno type="ORCID">0000-0003-0771-0390</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Chinot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Dirven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pim</forename><surname>French</surname></persName>
+			<idno type="ORCID">0000-0002-0668-9529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><forename type="middle">E</forename><surname>Hegi</surname></persName>
+			<idno type="ORCID">0000-0003-0855-6495</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Asgeir</forename><forename type="middle">S</forename><surname>Jakola</surname></persName>
+			<idno type="ORCID">0000-0002-2860-9331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Rudà</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Short</surname></persName>
+			<idno type="ORCID">0000-0003-4423-7256</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Smits</surname></persName>
+			<idno type="ORCID">0000-0001-5563-2871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J B</forename><surname>Taphoorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Westphal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+			<idno type="ORCID">0000-0002-9204-7038</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41571-020-00447-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Clinical Oncology</title>
+		<title level="j" type="abbrev">Nat Rev Clin Oncol</title>
+		<idno type="ISSN">1759-4774</idno>
+		<idno type="ISSNe">1759-4782</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="170" to="186" />
+			<date type="published" when="2020-12-08">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weller M, van den Bent M, Preusser M, et al. EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood. Nat Rev Clin Oncol 2020; 18: 170-186.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving artificial intelligence in healthcare: Techniques and applications</title>
+		<author>
+			<persName><forename type="first">Nazish</forename><surname>Khalid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Qayyum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Bilal</surname></persName>
+			<idno type="ORCID">0000-0002-6732-7601</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ala</forename><surname>Al-Fuqaha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junaid</forename><surname>Qadir</surname></persName>
+			<idno type="ORCID">0000-0001-9466-2475</idno>
+		</author>
+		<idno type="DOI">10.1016/j.compbiomed.2023.106848</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Biology and Medicine</title>
+		<title level="j" type="abbrev">Computers in Biology and Medicine</title>
+		<idno type="ISSN">0010-4825</idno>
+		<imprint>
+			<biblScope unit="volume">158</biblScope>
+			<biblScope unit="page">106848</biblScope>
+			<date type="published" when="2023-05">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khalid N, Qayyum A, Bilal M, et al. Privacy-preserving artificial intelligence in healthcare: techniques and applications. Comput Biol Med 2023; 158: 106848.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Anonymizing medical documents with local, privacy preserving large language models: The LLM-Anonymizer</title>
+		<author>
+			<persName><forename type="first">Isabella</forename><forename type="middle">C</forename><surname>Wiest</surname></persName>
+			<idno type="ORCID">0009-0004-4848-614X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Elisabeth</forename><surname>Leßmann</surname></persName>
+			<idno type="ORCID">0009-0005-7029-0028</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dyke</forename><surname>Ferber</surname></persName>
+			<idno type="ORCID">0009-0006-6195-9276</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marko</forename><surname>Van Treeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiefu</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">P</forename><surname>Ebert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><forename type="middle">Benedikt</forename><surname>Westphalen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Wermke</surname></persName>
+			<idno type="ORCID">0000-0002-4844-4087</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><forename type="middle">Nikolas</forename><surname>Kather</surname></persName>
+			<idno type="ORCID">0000-0002-3730-5348</idno>
+		</author>
+		<idno type="DOI">10.1101/2024.06.11.24308355</idno>
+		<ptr target="https://doi.org/10.1101/2024.06.11.24308355" />
+	</analytic>
+	<monogr>
+		<title level="j">bioRxiv</title>
+		<imprint>
+			<date type="published" when="2024-06-13">2024</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wiest IC, Leßmann M-E, Wolf F, et al. Anonymizing medical documents with local, privacy preserving large language models: the LLM-anonymizer. bioRxiv 2024. https://doi.org/10.1101/2024. 06.11.24308355.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Optimizing GPT-4 Turbo Diagnostic Accuracy in Neuroradiology through Prompt Engineering and Confidence Thresholds</title>
+		<author>
+			<persName><forename type="first">Akihiko</forename><surname>Wada</surname></persName>
+			<idno type="ORCID">0000-0003-3432-0267</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Toshiaki</forename><surname>Akashi</surname></persName>
+			<idno type="ORCID">0000-0002-3056-0792</idno>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Shih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akifumi</forename><surname>Hagiwara</surname></persName>
+			<idno type="ORCID">0000-0001-5277-3249</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mitsuo</forename><surname>Nishizawa</surname></persName>
+			<idno type="ORCID">0000-0001-5486-3002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yayoi</forename><surname>Hayakawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junko</forename><surname>Kikuta</surname></persName>
+			<idno type="ORCID">0000-0003-1324-8614</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Keigo</forename><surname>Shimoji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katsuhiro</forename><surname>Sano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koji</forename><surname>Kamagata</surname></persName>
+			<idno type="ORCID">0000-0001-5028-218X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Atsushi</forename><surname>Nakanishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shigeki</forename><surname>Aoki</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/diagnostics14141541</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">1541</biblScope>
+			<date type="published" when="2024-07-17">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wada A, Akashi T, Shih G, et al. Optimizing GPT-4 turbo diag- nostic accuracy in neuroradiology through prompt engineering and confidence thresholds. Diagnostics 2024; 14: 1541.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Can Artificial Intelligence Mitigate Missed Diagnoses by Generating Differential Diagnoses for Neurosurgeons?</title>
+		<author>
+			<persName><forename type="first">Rohit</forename><forename type="middle">Prem</forename><surname>Kumar</surname></persName>
+			<idno type="ORCID">0009-0003-4657-2864</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Sivan</surname></persName>
+			<idno type="ORCID">0009-0008-8245-7042</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hanin</forename><surname>Bachir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">A</forename><surname>Sarwar</surname></persName>
+			<idno type="ORCID">0000-0002-4026-5797</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><surname>Ruzicka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">R</forename><surname>O'malley</surname></persName>
+			<idno type="ORCID">0000-0002-3095-1785</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paulo</forename><surname>Lobo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilona</forename><forename type="middle">Cazorla</forename><surname>Morales</surname></persName>
+			<idno type="ORCID">0000-0003-3332-5269</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">D</forename><surname>Cassimatis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jasdeep</forename><forename type="middle">S</forename><surname>Hundal</surname></persName>
+			<idno type="ORCID">0000-0001-7647-8439</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nitesh</forename><forename type="middle">V</forename><surname>Patel</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2024.05.052</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page" from="e1083" to="e1088" />
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar RP, Sivan V, Bachir H, et al. Can artificial intelligence mitigate missed diagnoses by generating differential diagnoses for neurosurgeons? World Neurosurg 2024; 187: e1083-e1088.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The Application of Large Language Models for Radiologic Decision Making</title>
+		<author>
+			<persName><forename type="first">Hossam</forename><forename type="middle">A</forename><surname>Zaki</surname></persName>
+			<idno type="ORCID">0000-0003-2391-2689</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Aoun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saminah</forename><surname>Munshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hazem</forename><surname>Abdel-Megid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lleayem</forename><surname>Nazario-Johnson</surname></persName>
+			<idno type="ORCID">0009-0006-6876-1334</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sun</forename><forename type="middle">Ho</forename><surname>Ahn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jacr.2024.01.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American College of Radiology</title>
+		<title level="j" type="abbrev">Journal of the American College of Radiology</title>
+		<idno type="ISSN">1546-1440</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1072" to="1078" />
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zaki HA, Aoun A, Munshi S, et al. The application of large language models for radiologic decision making. J Am Coll Radiol 2024; 21: 1072-1078.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">ChatGPT Assisting Diagnosis of Neuro-ophthalmology Diseases Based on Case Reports</title>
+		<author>
+			<persName><forename type="first">Yeganeh</forename><surname>Madadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Delsoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priscilla</forename><forename type="middle">A</forename><surname>Lao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">W</forename><surname>Fong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Hollingsworth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Malik</forename><forename type="middle">Y</forename><surname>Kahook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siamak</forename><surname>Yousefi</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2023.09.13.23295508</idno>
+		<ptr target="https://doi.org/10.1101/2023.09.13.23295508" />
+	</analytic>
+	<monogr>
+		<title level="j">medRxiv</title>
+		<imprint>
+			<date type="published" when="2023-09-14">2023</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Madadi Y, Delsoz M, Lao PA, et al. ChatGPT assisting diagnosis of neuro-ophthalmology diseases based on case reports. medRxiv 2023. https://doi.org/10.1101/2023.09.13.23295508.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Chat GPT as a Neuro-Score Calculator: Analysis of a Large Language Model’s Performance on Various Neurological Exam Grading Scales</title>
+		<author>
+			<persName><forename type="first">Tse</forename><forename type="middle">Chiang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Kaminski</surname></persName>
+			<idno type="ORCID">0009-0002-2917-4082</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laila</forename><surname>Koduri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alyssa</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorie</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitch</forename><surname>Couldwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johnny</forename><surname>Delashaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Dumont</surname></persName>
+			<idno type="ORCID">0000-0002-8077-8992</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2023.08.088</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page" from="e342" to="e347" />
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen TC, Kaminski E, Koduri L, et al. Chat GPT as a neuro-score calculator: analysis of a large language model&apos;s performance on various neurological exam grading scales. World Neurosurg 2023; 179: e342-e347.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Evaluating the performance of large language models: &lt;scp&gt;ChatGPT&lt;/scp&gt; and Google Bard in generating differential diagnoses in clinicopathological conferences of neurodegenerative disorders</title>
+		<author>
+			<persName><forename type="first">Shunsuke</forename><surname>Koga</surname></persName>
+			<idno type="ORCID">0000-0001-8868-9700</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">B</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><forename type="middle">W</forename><surname>Dickson</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/bpa.13207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Pathology</title>
+		<title level="j" type="abbrev">Brain Pathology</title>
+		<idno type="ISSN">1015-6305</idno>
+		<idno type="ISSNe">1750-3639</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">13207</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Koga S, Martin NB, Dickson DW. Evaluating the performance of large language models: ChatGPT and Google Bard in generating differential diagnoses in clinicopathological conferences of neuro- degenerative disorders. Brain Pathol 2024; 34: e13207.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Use of Large Language Models to Predict Neuroimaging</title>
+		<author>
+			<persName><forename type="first">Lleayem</forename><surname>Nazario-Johnson</surname></persName>
+			<idno type="ORCID">0009-0006-6876-1334</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hossam</forename><forename type="middle">A</forename><surname>Zaki</surname></persName>
+			<idno type="ORCID">0000-0003-2391-2689</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Glenn</forename><forename type="middle">A</forename><surname>Tung</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jacr.2023.06.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American College of Radiology</title>
+		<title level="j" type="abbrev">Journal of the American College of Radiology</title>
+		<idno type="ISSN">1546-1440</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1004" to="1009" />
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>References 15-21 are cited only in the supplementary material</note>
+	<note type="raw_reference">Nazario-Johnson L, Zaki HA, Tung GA. Use of large language models to predict neuroimaging. J Am Coll Radiol 2023; 20: 1004-1009. References 15-21 are cited only in the supplementary material.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

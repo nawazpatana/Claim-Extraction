@@ -1,0 +1,3226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Single-cell and spatial transcriptome sequencing analysis reveals characteristics of a unique subpopulation in high-grade IDH-mutant astrocytoma</title>
+				<funder ref="#_N7fkV2m">
+					<orgName type="full">Xinqiao Hospital</orgName>
+				</funder>
+				<funder ref="#_pqrvDFs">
+					<orgName type="full">Jinfeng Lab</orgName>
+				</funder>
+				<funder ref="#_dMDZ2q8">
+					<orgName type="full">Army Medical University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-29">2025-12-29</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Wei</forename><surname>Chen</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Min</forename><surname>Zheng</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Jinfeng Laboratory , No. 313 , Jinyue Road , Chongqing High- tech Zone , Chongqing 401329 , China</note>
+								<orgName type="laboratory">Jinfeng Laboratory</orgName>
+								<address>
+									<addrLine>No. 313 Jinyue Road Chongqing High- tech Zone</addrLine>
+									<postCode>401329</postCode>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jia-Yin</forename><surname>An</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Emergency Department , Naval Hospital of Eastern Theater , Zhejiang , China</note>
+								<orgName type="department">Emergency Department</orgName>
+								<orgName type="institution">Naval Hospital of Eastern Theater</orgName>
+								<address>
+									<settlement>Zhejiang</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Guo-Hao</forename><surname>Huang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jing-Peng</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Jinfeng Laboratory , No. 313 , Jinyue Road , Chongqing High- tech Zone , Chongqing 401329 , China</note>
+								<orgName type="laboratory">Jinfeng Laboratory</orgName>
+								<address>
+									<addrLine>No. 313 Jinyue Road Chongqing High- tech Zone</addrLine>
+									<postCode>401329</postCode>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lin</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Peng</forename><surname>Ren</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ting-Ting</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jean-Philippe</forename><surname>Hugnot</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> IGF , Univ Montpellier , CNRS , Inserm , Montpellier , France</note>
+								<orgName type="department">IGF</orgName>
+								<orgName type="institution" key="instit1">Univ Montpellier</orgName>
+								<orgName type="institution" key="instit2">CNRS</orgName>
+								<orgName type="institution" key="instit3">Inserm</orgName>
+								<address>
+									<settlement>Montpellier</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Jinfeng Laboratory , No. 313 , Jinyue Road , Chongqing High- tech Zone , Chongqing 401329 , China</note>
+								<orgName type="laboratory">Jinfeng Laboratory</orgName>
+								<address>
+									<addrLine>No. 313 Jinyue Road Chongqing High- tech Zone</addrLine>
+									<postCode>401329</postCode>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sheng-Qing</forename><surname>Lv</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , Xinqiao Hospital , Third Military Medical University (Army Medical University) , Chongqing , China</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Xinqiao Hospital</orgName>
+								<orgName type="institution">Third Military Medical University (Army Medical University)</orgName>
+								<address>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Jinfeng Laboratory , No. 313 , Jinyue Road , Chongqing High- tech Zone , Chongqing 401329 , China</note>
+								<orgName type="laboratory">Jinfeng Laboratory</orgName>
+								<address>
+									<addrLine>No. 313 Jinyue Road Chongqing High- tech Zone</addrLine>
+									<postCode>401329</postCode>
+									<settlement>Chongqing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Single-cell and spatial transcriptome sequencing analysis reveals characteristics of a unique subpopulation in high-grade IDH-mutant astrocytoma</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Cellular Oncology</title>
+						<title level="j" type="abbrev">Cell Oncol.</title>
+						<idno type="eISSN">2211-3436</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">49</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-12-29" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">5AC94470B4CFA44300D7C719ABDA2F16</idno>
+					<idno type="DOI">10.1007/s13402-025-01139-5</idno>
+					<note type="submission">Received: 10 December 2024 / Accepted: 7 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T13:55+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>IDH-mutant astrocytoma</term>
+					<term>Single-cell sequencing</term>
+					<term>Spatial transcriptome sequencing</term>
+					<term>Malignant progression</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction (Isocitrate dehydrogenase) IDH-mutant astrocytoma is classified as World Health Organization (WHO) grade 2-4 and is second only to IDH wild-type glioblastoma in the incidence of adult glioma. However, few studies use single-cell and spatial transcriptome sequencing to analyze its malignant progression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>Intraoperative navigation and yellow fluorescence visualization were utilized to accurately isolate high-grade (WHO grade 3-4) and low-grade (WHO grade 2) samples of IDH-mutant astrocytoma for single-cell and spatial transcriptome sequencing. By combining single-cell, spatial transcriptome, The Cancer Genome Atlas (TCGA), and The Chinese Glioma Genome Atlas (CGGA) data, analyses of survival, enriched pathways, transcription factors, intercellular communication, differentiation trajectories, and immune response were performed to identify the characteristics of a unique subpopulation of high-grade IDH-mutant astrocytoma.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>Our single-cell RNA sequencing analysis identified a distinct subpopulation (Cluster 7) present in high-grade IDH-mutant astrocytoma, which was localized to the terminus of the pseudotime trajectory. Importantly, this cluster not only exhibited an immunosuppressive phenotype correlated with poor clinical prognosis, but also demonstrated significant enrichment in Developmental Biology and Calcium Signaling pathways. Furthermore, this subpopulation engaged in prominent ligand-receptor interactions, particularly through PTN_PTPRZ1 and MIF_CD74 pairs. Notably, comparative analysis revealed that high-grade astrocytoma displayed both quantitatively and qualitatively enhanced communication networks when compared to their low-grade counterparts.</p><p>Conclusions Our single-cell RNA sequencing analysis identifies a distinct tumor cell subpopulation present in high-grade (WHO grade 3-4) adult IDH-mutant astrocytoma. This cluster, which likely arises from malignant progression in adult astrocytoma, may provide new insights for developing therapeutic strategies against this clinically challenging disease.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>According to the 2021 WHO Classification of Tumors of the Central Nervous System, IDH-mutant astrocytoma was molecularly characterized by IDH mutations without 1p19q co-deletion and was classified as WHO grades 2-4 <ref type="bibr" target="#b0">[1]</ref>. Among adult gliomas, IDH-mutant astrocytoma is second only to IDH wild-type glioblastoma in incidence, with an average survival time of 7-8 years, better than IDH wildtype glioblastoma and worse than oligodendroglioma <ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b24">[6]</ref><ref type="bibr" target="#b25">[7]</ref><ref type="bibr" target="#b26">[8]</ref>.</p><p>The emergence of technologies such as single-cell and spatial transcriptome sequencing in recent years has allowed First author: Wei Chen and Min Zheng.</p><p>Sheng-Qing Lv lvsq0518@tmmu.edu.cn; lvsq0518@hotmail.com us to analyze the molecular characteristics and functions of different clusters of tumors. However, most studies on adult gliomas target IDH wild-type glioblastomas <ref type="bibr" target="#b27">[9]</ref><ref type="bibr" target="#b28">[10]</ref><ref type="bibr" target="#b29">[11]</ref>.</p><p>Through single-cell RNA sequencing, we identified a distinct GSX1 + tumor subpopulation specifically enriched in high-grade IDH-mutant astrocytoma (WHO grades 3-4), localized at the pseudotime trajectory terminus and associated with poor prognosis and immunosuppressive phenotype. This subpopulation exhibited marked pathway activation in REACTOME developmental biology and KEGG calcium signaling, with spatial transcriptomics validating its characteristic cell-cell communication patterns, particularly through dominant PTN_PTPRZ1 and MIF_CD74 interactions. Comparative analyses revealed significantly enhanced communication network complexity in high-grade versus low-grade tumors. Collectively, these results support a role for GSX1 + cluster in IDH-mutant astrocytoma malignant progression, with potential implications for developing targeted therapies against this aggressive tumor subtype.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Sample cohort and selection criteria</head><p>We performed 10x single-cell RNA sequencing on matched high-grade (WHO grade 3-4, n = 3) and low-grade (WHO grade 2, n = 3) IDH-mutant astrocytomas, with additional spatial transcriptomics from one tumor junction area of highgrade and low-grade IDH-mutant astrocytoma. High-grade cases met: (1) age &gt; 18 years <ref type="bibr" target="#b1">(2)</ref>, MRI contrast enhancement (3), intraoperative yellow fluorescence, and (4) pathological confirmation of IDH mutation with 1p/19q intact status. Low-grade tumors exhibited: (1) age &gt; 18 years <ref type="bibr" target="#b1">(2)</ref>, nonenhancing MRI (3), absent fluorescence, and (4) equivalent molecular confirmation. All cases were histopathologically validated per the 2021 WHO CNS guidelines (1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Single-cell sequencing and upstream data processing</head><p>Fresh surgical samples were dissected into 2-4 mm fragments on ice, followed by tissue dissociation, cell counting, quality control, and library preparation. Sequencing reads were demultiplexed and aligned to the reference genome using the 10x Genomics Cell Ranger pipeline (v7.1) with default parameters, which performs alignment, barcode/ UMI counting, and generates feature-barcode matrices. Initial quality control included doublet removal (Scrublet, expected_doublet_rate = 0.07) and filtering via Seurat to retain high-quality cells (genes &gt; 200, UMIs &gt; 400, mitochondrial reads &lt; 20%) <ref type="bibr" target="#b30">[12]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Spatial transcriptome sequencing and upstream data processing</head><p>Tumor samples preserved in OCT were processed through RNA quality assessment, fixation, H&amp;E staining, destaining, probe hybridization, RNA digestion, probe release, reverse transcription, and library preparation. Libraries were purified (SPRIselect), quality-checked (Bioanalyzer), and sequenced on an Illumina NovaSeq platform (PE150). Primary quality control of FASTQ files included: (1) discarding reads with &gt; 3 N bases (excluding paired reads) (2), removing read pairs if ≥ 20% of bases had Q &lt; 5, and (3) trimming adapter sequences (minimum 8 bp match). Reads were aligned to the probe set using Space Ranger Count, with confident mappings (paired-probe matches) retained after filtering homologous genes <ref type="bibr" target="#b29">[11]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Double-cell removal, quality control, and single-cell sample integration</head><p>In the downstream data analysis, the R package Doublet-Finder (v2.0.4) was applied for double cell removal according to the instructions ( h t t p s : / / g i t h u b . c o m / d d i e z / D o u b l e t F i n d e r). In short, double cell removal was exercised for each sample, DoubletRate = ncol(number of cells)*8*1e-6. Calculated double-cell ratios were corrected using homologous double-cell ratios, pcs = 1:20, pN = 0.25 <ref type="bibr" target="#b31">[13]</ref>. The data was then integrated, and QC was performed on the following criteria: nFeature_RNA &gt; 300 &amp; nFeature_RNA &lt; 6000 &amp; percent.mt &lt; 10 &amp; percent.HB &lt; 1 &amp; nCount_RNA &lt; 100,000. De-batch effects were then performed using the harmony package <ref type="bibr" target="#b32">[14]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Seurat pipeline</head><p>Single-cell RNA-seq data were processed using Seurat (v5.1.0) following standard workflows. Data normalization (LogNormalize, scale factor = 10,000) was followed by identification of highly variable genes (vst method, nfeatures = 3,000) and scaling. Dimensionality reduction included PCA (n = 20 PCs confirmed by elbow plot) and UMAP (dims = 1:20, harmony-corrected). Clustering (resolution = 0.4, dims = 1:20) and differential expression analysis (FindAllMarkers, est.use = 'wilcox', only.pos = T, min. pct = 0.4, logfc.threshold = 1) were performed to characterize cell populations <ref type="bibr" target="#b30">[12]</ref>.</p><p>1 3 2.6 TCGA, CGGA data processing Glioma RNA-seq counts data and clinical information were obtained from TCGA (via UCSC Xena, n = 223, IDHmutant astrocytomas: 114 grade 2, 100 grade 3, 9 grade 4) and CGGA (n = 206, IDH-mutant astrocytomas from 693 glioma dataset: 70 grade 2, 101 grade 3, 35 grade 4), with samples stratified by IDH mutation and 1p/19q intact status <ref type="bibr" target="#b33">[15,</ref><ref type="bibr" target="#b34">16]</ref>. Data integration and batch correction were performed using IOBR (v0.99.0; remove_batcheffect function), followed by counts-to-TPM conversion (count2tpm function) <ref type="bibr" target="#b35">[17]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7">Functional enrichment analysis</head><p>Functional enrichment analysis was performed at three biological scales: (i) differential gene set analysis using Gene Set Enrichment Analysis (GSEA) with MSigDB collections [18, 19], (ii) single-cell pathway activity quantification via AUCell ( h t t p s : / / g i t h u b . c o m / a e r t s l a b / A U C e l l ), and (iii) spatial transcriptomic functional patterns assessed through Seurat's AddModuleScore with default parameters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8">SCENIC</head><p>Transcription factor regulatory networks were reconstructed using SCENIC (v1.3.2) with hg38 reference databases (refseq-r80__10kb_up_and_down_tss.mc9nr.feather and refseq-r80__500bp_up_and_100bp_down_tss.mc9nr.feather). Gene expression matrices were filtered (minCountsPerGene = 3 × 0.01 × ncol(exprMat); minSamples = ncol(exprMat) × 0.01). The most and least active transcription factors were filtered based on regulon activity scores [20].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.9">InferCNV, Monocle2, velocity</head><p>Copy number variation analysis was performed using infer-CNV ( h t t p s : / / g i t h u b . c o m / b r o a d i n s t i t u t e / i n f e r C N V / w i k i ) with human.gene.positions as the genomic reference, implementing the run function (cutoff = 0.1, denoise = TRUE, hclust_method='ward.D2') and T cells as the reference population <ref type="bibr" target="#b39">[21]</ref>. Pseudotime trajectory reconstruction was conducted via monocle (v2.32.0) by: (i) creating CellData-Set objects (newCellDataSet), (ii) calculating normalization factors (estimateSizeFactors), and (iii) estimating gene dispersions (estimateDispersions) <ref type="bibr" target="#b40">[22]</ref>. RNA velocity was estimated from integrated loom files using scVelo (v0.3.2) <ref type="bibr" target="#b5">[23]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.10">Cellchat</head><p>Intercellular communication analysis was performed using CellChat (v1.6.1) following the developer's protocol. The pipeline comprised: (i) object initialization with create-CellChat, (ii) identification of significantly overexpressed ligand-receptor pairs via identifyOverExpressedInteractions (P &lt; 0.05), (iii) probabilistic interaction modeling using computeCommunProb, and (iv) filtration of low-confidence interactions (filterCommunication; min.cells = 5). Resultant networks were visualized through multiple modalities, including global connectivity patterns (netVisual_circle, netVisual_aggregate), interaction-specific diagrams (net-Visual_heatmap, netVisual_individual), ligand-receptor expression mapping (netVisual_bubble), and molecular context visualization (plotGeneExpression) <ref type="bibr" target="#b6">[24]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.11">Immune response analysis</head><p>To achieve robust statistical power, we integrated 429 IDHmutant astrocytoma samples from the TCGA and CGGA databases. Tumor Immune Dysfunction and Exclusion (TIDE) scores were computed for each case using the ofÏcial web portal (v2.0; <ref type="url" target="http://tide.dfci.harvard.edu/">http://tide.dfci.harvard.edu/</ref>) <ref type="bibr" target="#b7">[25]</ref>. Gene Set Variation Analysis (GSVA) was then performed using cluster 7 signature genes as input. Samples were dichotomized into high-and low-score groups based on the median GSVA enrichment score <ref type="bibr" target="#b8">[26]</ref>, followed by comparative analysis of immunotherapy response potential.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.12">Process of spatial transcriptome analysis</head><p>Spatial transcriptomic data processing, including quality control, dimensionality reduction, and clustering, was performed using Seurat (v5.1.0) following the developer's standardized pipeline. Gene set activity scores were quantified via the AddModuleScore algorithm, with spatial expression patterns visualized using SpatialFeaturePlot. Gene set variation analysis (GSVA) was employed to quantify gene set enrichment scores. For spatial deconvolution, the Robust Cell Type Decomposition (RCTD) algorithm was implemented to integrate single-cell RNA sequencing (scRNA-seq) with spatial transcriptomic data <ref type="bibr" target="#b9">[27]</ref>. Spatial co-localization patterns were analyzed using mistyR (v1.14.0), a computational framework for multi-view tissue characterization <ref type="bibr" target="#b10">[28]</ref>. Cell-cell communication networks were inferred through stLearn (v1.1.1), incorporating spatial proximity constraints into ligand-receptor interaction modeling <ref type="bibr" target="#b11">[29]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.13">Cell lines and cell culture</head><p>The human Astrocytoma cell lines (LGG336, LGG85) were obtained from Montpellier University Hospital (CHU-Gui de Chauliac), following the procedures previously described <ref type="bibr" target="#b12">[30]</ref>. LGG336 and LGG85 cells were cultured serum. Primary antibodies (anti-Gsh1, bs-11612R, 1:500; anti-IDH1 R132H, H09, Dianova 1:100) were incubated overnight at 4 °C in a Haier BCD-192TGN icebox. TSA amplification was performed after HRP-secondary antibody incubation (50 min) on a Servicebio DS-2S100 decolorizing shaker. Fluorescent secondaries (Alexa Fluor ® 488/594, 1:500) were applied for 50 min, followed by DAPI counterstaining (10 min). Slides (Servicebio G6012) were mounted with coverslips (Jiangsu Shitai 10212432 C) using antifade medium and imaged on a Nikon Eclipse C1 microscope with consistent exposure settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.17">R, Python, and statistical methods</head><p>All analyses were performed using R (v4.4.0) and Python (v3.10). Data are presented as mean ± SEM unless noted otherwise in figure legends. Normality was assessed by the Shapiro-Wilk test. Parametric data were analyzed using Student's t-test or ANOVA (one-way/two-way), with Tukey's HSD test for multiple comparisons. Non-parametric data were evaluated with the Mann-Whitney test, except for large samples (n &gt; 30/group) where Welch's t-test was applied. Survival analyses used log-rank (Mantel-Cox) tests, and categorical data were assessed by Fisher's exact test. Significance thresholds were set at P &lt; 0.05.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Identification of a GSX1 + tumor subpopulation associated with poor prognosis in high-grade IDHmutant Astrocytoma</head><p>Utilizing intraoperative neuronavigation and yellow fluorescence guidance, we achieved precise tumor resection, with distinct pathological regions demarcated as follows: red spots (low-grade areas), yellow triangles (high-grade areas), and green boxes (mixed high/ low-grade zones) (Fig. <ref type="figure" target="#fig_0">1A</ref>). Cell clusters were annotated based on canonical markers from established literature <ref type="bibr" target="#b13">[31]</ref>: tumor cells (SOX2</p><formula xml:id="formula_0">+ SOX9 + GFAP + ), M1-like MDM (CD68 + P2Y12 -CD163 -), M2-like MDM (CD68 + P2Y12 -CD163 + ), M1-like MG (CD68 + P2Y12 + CD163 -), M2-like MG (CD68 + P2Y12 + CD163 + )</formula><p>, T cells (CD68 -CD3 + ), monocytes (CD14 + and/or CD16 + ), endothelial cells (CD31 + ). Unsupervised clustering identified tumor cell-enriched clusters <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b25">7,</ref><ref type="bibr" target="#b26">8,</ref><ref type="bibr" target="#b29">11,</ref><ref type="bibr" target="#b30">12,</ref><ref type="bibr" target="#b34">16,</ref><ref type="bibr" target="#b35">17]</ref>, microglia (0, 1, 5, 14), macrophages <ref type="bibr" target="#b1">[2]</ref>, monocytes <ref type="bibr" target="#b27">[9]</ref>, T cells <ref type="bibr" target="#b24">[6]</ref>, endothelial cells <ref type="bibr" target="#b33">[15]</ref>, and undefined populations <ref type="bibr" target="#b28">[10,</ref><ref type="bibr" target="#b31">13]</ref>. Notably, a distinct tumor subpopulation (cluster 7, n = 1,146 cells) was exclusively detected in high-grade samples (Fig. <ref type="figure" target="#fig_0">1B</ref>). Differential in Dulbecco's Modified Eagle's medium F12 (#21331-020, Gibco) supplemented with L-glutamine (#25030081, Gibco), N2 (#17502048, Gibco), B27 (#12587010, Gibco), ciprofloxacin (#PHR1044, Sigma), gentamicin (# HY-A0276A, MCE), fungin (#ant-fn-1, Invivogen), heparin (#H3149, Sigma), EGF (#AF-100-15, Peprotech), and FGF2 (#AF-100-18B, Peprotech), with cultures incubated at 37 °C in a humidified 5% CO₂ atmosphere.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.14">Western blot</head><p>The antibodies were used for Western blotting: Gsh1 (Gsh1 Rabbit pAb, bs-11612R,1:500), PDE1C (PDE1C Polyclonal antibody,13785-1-AP, 1:500), beta-Actin (beta-Actin (8H10D10) Mouse mAb). Cells were lysed in RIPA Lysis Buffer (P0013B, Beyotime). Protein samples (10 mg per lane) were separated by SDS-PAGE electrophoresis and immunoblotted on polyvinylidene fluoride (PVDF) membranes and incubated with the primary antibody at 4˚C overnight. After washing, membranes were incubated with the secondary antibody (beta-Actin to anti-Mouse (ABflo ® 488-conjugated Goat anti-Mouse IgG (H + L) (AS037)). After incubation with rabbit primary antibodies against Gsh1 and PDE1C, samples were treated with HRP-conjugated anti-rabbit IgG secondary antibody at room temperature for 60 min, followed by ECL detection using a CCD camera. Quantification was performed using ImageJ software.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.15">Immunohistochemistry (IHC)</head><p>Immunohistochemistry was performed on 4-µm parafÏnembedded astrocytoma sections. After dewaxing and rehydration, antigen retrieval was conducted in citrate buffer (pH 6.0) at 95 °C for 30 min. Endogenous peroxidase was blocked with 3% H₂O₂ (25 min, RT), followed by 3% BSA blocking (30 min). Sections were incubated with primary antibodies (anti-PDE1C 1:500, anti-SOX10 1:50) overnight at 4 °C, then with HRP-conjugated secondary antibody (50 min, RT). DAB development was monitored microscopically, followed by hematoxylin counterstaining. Sections were dehydrated and mounted for imaging.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.16">Co-Immunofluorescence staining</head><p>Immunofluorescence was performed on 4-µm sections cut with a Leica RM2016 microtome. Sections were dewaxed using a Donatello dehydrator (DIPATH) and rehydrated through an ethanol series. Antigen retrieval was conducted in citrate buffer (pH 6.0) using a Galanz microwave oven (P70D20TL-P4) at 95 °C for 30 min. After peroxidase blocking (3% H₂O₂, 25 min), sections were permeabilized with 0.5% Triton X-100 and blocked with 10% gene expression analysis (FindAllMarkers) was subsequently performed to identify cluster-specific markers. The DotPlot visualization (Supplementary Fig. <ref type="figure" target="#fig_0">1</ref>) delineated canonical marker genes for each cell type, as referenced in prior studies <ref type="bibr" target="#b13">[31]</ref>. Cluster 7 was identified as a distinct subpopulation characterized by co-expression of GSX1, SOX2, SOX9, and GFAP (Fig. <ref type="figure" target="#fig_0">1C</ref>). Furthermore, independent validation in IDH-mutant astrocytoma datasets confirmed GSX1 expression within the tumor cell population (Supplementary Fig. <ref type="figure">2</ref>; Single Cell Portal: h t t p s : / / s i n g l e c e l l . b r o a d i n s t i t u t e . o r g / ) <ref type="bibr" target="#b14">[32]</ref>. Elevated GSX1 expression correlated with poorer prognosis in both the CGGA (Fig. <ref type="figure" target="#fig_0">1D</ref>) and TCGA cohorts (Fig. <ref type="figure" target="#fig_0">1E</ref>). Multivariate analysis confirmed GSX1 as an independent prognostic factor in these datasets (CGGA: Fig. <ref type="figure" target="#fig_0">1F</ref>; TCGA: Fig. <ref type="figure" target="#fig_0">1G</ref>). Although Cluster 17 was uniquely observed in high-grade astrocytoma, its limited cell count (n = 68) precluded further investigation in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Functional enrichment of cluster 7</head><p>Using the FindAllMarkers function (parameters: min. pct = 0.25, test.use = "wilcox", logfc.threshold = 0.25), we identified differentially expressed genes (DEGs) between cluster 7 and all other clusters. Subsequent Gene Set Enrichment Analysis (GSEA) revealed that cluster 7 was most significantly enriched in the REACTOME_DEVEL-OPMENTAL_BIOLOGY pathway (Fig. <ref type="figure">2A</ref>, <ref type="figure">C</ref>) and the KEGG_CALCIUM_SIGNALING_PATHWAY (Fig. <ref type="figure">2B</ref>, <ref type="figure">D</ref>). Key genes driving the REACTOME_DEVELOPMEN-TAL_BIOLOGY enrichment included SOX10, HOXD3, TFAP2C, LHX2, COL9A1, IRX1, HOPX, SIX1, BOC, CAPN2, and COL9A3, while the KEGG_CALCIUM_SIG-NALING_PATHWAY was enriched for PDE1C, ATP2B2, ADCY1, GRM5, TACR1, and ADRA1A. To validate the activity of these pathways at single-cell resolution, we employed AUCell scoring, which demonstrated significantly higher pathway activity in cluster 7 compared to other clusters (Fig. <ref type="figure">2E-F</ref>). cluster 7 and found that genes such as MYBL2, E2F7 were clustered into one group. On the other hand, CCN4 and</p><p>MET were clustered into one group (Fig. <ref type="figure">5H</ref>). Many studies on MYBL2, E2F7, CCN4, and MET genes promote tumor progression by promoting tumor proliferation, differentiation, and migration <ref type="bibr" target="#b28">[10,</ref><ref type="bibr" target="#b15">[33]</ref><ref type="bibr" target="#b16">[34]</ref><ref type="bibr" target="#b17">[35]</ref>, which may also contribute to the malignant progression of IDH-mutant astrocytoma.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6">Cluster 7 communication networks and gradespecific interactions in IDH-mutant Astrocytoma</head><p>CellChat analysis revealed that cluster 7 exhibited the most frequent interactions with tumor subpopulations (clusters 8, 16, 11, 17, 3, and 4) (Fig. <ref type="figure">6A</ref>), while demonstrating particularly strong communication intensity with T-cell and macrophage clusters (Fig. <ref type="figure">6B</ref>). Notably, these immune interactions were significantly enriched in high-grade IDHmutant astrocytoma (Supplementary Fig. <ref type="figure">3E</ref>) compared to their low-grade counterparts (Supplementary Fig. <ref type="figure">3F</ref>), suggesting cluster 7 may play a key role in modulating the immune microenvironment through crosstalk with T cells and macrophages.</p><p>Cluster 7 exhibited distinct ligand-receptor interactions: as a ligand, it primarily engaged the MIF-(CD74 + CXCR4) pathway (Fig. <ref type="figure">6C</ref>), while as a receptor, it predominantly interacted via PTN-PTPRZ1 (Fig. <ref type="figure">6D</ref>). Cluster 7-specific analyses revealed strong ANGPTL and MSTN signaling when acting as ligands with non-tumor cells (Supplementary Fig. <ref type="figure">3A-B</ref>), and prominent EGF (non-tumor cells) and NRG (tumor cells) pathways when functioning as a receptor (Supplementary Fig. <ref type="figure">3C-D</ref>).</p><p>Comparative analysis of cellular communication between high-grade and low-grade IDH-mutant astrocytoma revealed significantly enhanced interaction frequency (Fig. <ref type="figure">6E</ref>) and intensity (Fig. <ref type="figure">6F</ref>) in high-grade astrocytoma. Differential heatmaps visualized these disparities, with red indicating pathways amplified in high-grade astrocytoma and blue marking suppressed interactions (Supplementary Fig. <ref type="figure">2G-H</ref>). The ratio of high-to-low-grade communication further underscored these differences (Fig. <ref type="figure">6G</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7">Impact of cluster 7 on immunotherapy response in IDH-mutant Astrocytoma</head><p>To assess the immunomodulatory role of cluster 7, we performed TIDE analysis on a combined cohort of 429 IDHmutant astrocytoma (184 WHO grade 2, 201 grade 3, and 44 grade 4) from TCGA and CGGA. Using GSVA, samples were stratified into cluster 7-high and 7-low groups based on median expression of the top 100 signature genes (Supplementary Data). The cluster 7-high group exhibited significantly elevated TIDE scores (Fig. <ref type="figure">7A</ref>), along with higher</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Experimental validation of GSX1-Enriched subpopulation in Astrocytoma</head><p>To validate our findings, we performed experiments using IDH-mutant astrocytoma cell lines LGG85 (WHO grade 4, high-grade) and LGG336 (WHO grade 2, low-grade). Fluorescence co-localization assays revealed spatial coexpression of Gsh1 with the IDH1 R132H mutant (Fig. <ref type="figure">3A</ref>). Moreover, key downstream effectors of these pathways-PDE1C (Calcium Signaling Pathway) and SOX10 (Developmental Biology)-exhibited distinct expression patterns, as demonstrated by representative immunohistochemical staining (Fig. <ref type="figure">3B-C</ref>). Western blot analysis confirmed significantly higher Gsh1 and PDE1C protein expression in high-grade astrocytoma (LGG85) compared to low-grade astrocytoma (LGG336) (Fig. <ref type="figure">3D-F</ref>). These results collectively demonstrate: <ref type="bibr" target="#b0">[1]</ref> the existence of a GSX1 (Gsh1)enriched subpopulation co-localizing with tumor cells; <ref type="bibr" target="#b1">[2]</ref> a grade-dependent expression pattern of Gsh1 and PDE1C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">SCENIC analysis of transcription factor regulation in cluster 7</head><p>We performed SCENIC analysis to investigate transcription factor (TF) activity in cluster 7. The top 10 most/least active TFs were identified, and their activity patterns across all clusters revealed two distinct groups: tumor cell clusters <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b25">7,</ref><ref type="bibr" target="#b26">8,</ref><ref type="bibr" target="#b29">11,</ref><ref type="bibr" target="#b34">16]</ref> and non-tumor clusters (13, 6, 1, 5, 0, 2) (Fig. <ref type="figure">4A</ref>). Among all TFs in cluster 7, GSX1 (red) exhibited the highest activity (Fig. <ref type="figure">4B</ref>), consistent with its reported role in progenitor cell proliferation, differentiation, and neural development. Cluster-specific analysis confirmed GSX1's predominant activity in cluster 7 (Fig. <ref type="figure">4C</ref>). Comparative analysis of the top 20 differentially active TFs between IDHmutant high-grade and low-grade astrocytoma revealed distinct regulatory profiles (Fig. <ref type="figure">4D</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">Copy number variation and tumor subcluster dynamics</head><p>InferCNV analysis using T cells as reference revealed significant copy number amplifications (chromosomes 7, 8, 3, 4) and deletions (chromosomes 17, 19) across clusters (Fig. <ref type="figure">5A</ref>).</p><p>To delineate tumor subcluster relationships, RNA velocity and Monocle2 pseudotime analysis were integrated. Velocity analysis demonstrated directional progression of clusters 4, 8, 11, and 17 toward cluster 7 (Fig. <ref type="figure">5B-C</ref>), while Monocle2 positioned cluster 7 at the terminal pseudotime state (Fig. <ref type="figure">5D-F</ref>). GSX1 expression in cluster 7 increased significantly along pseudotime (Fig. <ref type="figure">5G</ref>). Then we performed the cell trajectory analysis of the signature genes of 1 3 MIF_CD74 (Fig. <ref type="figure">8F</ref>) and PTN_PTPRZ1 (Fig. <ref type="figure">8G</ref>) at the spatial transcriptomic level.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>Recent years have witnessed the application of singlecell and spatial transcriptome sequencing in glioblastoma research <ref type="bibr" target="#b27">[9]</ref><ref type="bibr" target="#b28">[10]</ref><ref type="bibr" target="#b29">[11]</ref>, yet these techniques remain underutilized in the study of IDH-mutant astrocytoma. Notably, some investigations have combined astrocytoma and oligodendroglioma under the umbrella term "IDH-mutant gliomas" <ref type="bibr" target="#b3">[4]</ref>, an approach that differs fundamentally from studies specifically focused on IDH-mutant astrocytoma. Furthermore, certain studies employ the 2016 WHO Classification of Tumors of the Central Nervous System, a practice that may compromise the precision of their findings <ref type="bibr" target="#b18">[36]</ref>.</p><p>We stratified IDH-mutant astrocytoma cases-which underwent meticulous preoperative planning, precise intraoperative resection, and postoperative pathological confirmation-into low-grade and high-grade groups. This stratification facilitates the investigation of mechanisms underlying tumor progression from low-grade to high-grade Exclusion (Fig. <ref type="figure">7B</ref>), MDSC (Fig. <ref type="figure">7C</ref>), and CAF scores (Fig. <ref type="figure">7D</ref>), collectively indicating poorer immunotherapy responsiveness compared to the low-expression group.</p><p>Spatial transcriptomics further revealed co-localization between cluster 7 and immune checkpoint genes (TIGIT,</p><p>LGALS9, CD47, CD276, PDCD1) across both in situ (Fig. <ref type="figure">7E</ref>) and para-tumoral (Fig. <ref type="figure">7F</ref>) regions. These findings suggest that cluster 7 enrichment correlates with an immunosuppressive microenvironment and reduced therapeutic efÏcacy of immune checkpoint blockade.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.8">Spatial transcriptomics analysis of cluster 7</head><p>We employed RCTD to spatially map cluster 7 distribution using single-cell-derived reference data (Fig. <ref type="figure">8A</ref>). Notably, the spatial patterns of REACTOME_DEVELOPMENTAL_ BIOLOGY (Fig. <ref type="figure">8B</ref>) and KEGG_CALCIUM_SIGNAL-ING_PATHWAY (Fig. <ref type="figure">8C</ref>) exhibited concordance with cluster 7 localization. Spatial co-localization between cluster 7 and these pathways was further validated using mistyR (Fig. <ref type="figure">8D-E</ref>). Additionally, stLearn analysis confirmed the predominant cell-cell communication axes involving IDH-mutant astrocytoma aligns with its broader role in fate determination and malignancy, suggesting conserved mechanisms whereby GSX1 may drive aggressive phenotypes through aberrant differentiation or synaptic signaling pathways. Similarly, recent studies have identified EGFR alteration as an additional adverse prognostic marker in IDH-mutant astrocytoma <ref type="bibr" target="#b22">[40]</ref>.</p><p>Pseudotime trajectory analysis positioned Cluster 7 at the terminal stage, suggesting a highly malignant phenotype. Furthermore, cell-cell communication analysis revealed significantly more extensive interaction networks in highgrade tumors compared to low-grade counterparts. Cluster 7 was particularly characterized by prominent MIF_CD74 and PTN_PTPZ1 ligand-receptor pairs, a finding corroborated by spatial transcriptomics. These findings are clinically relevant, as PTN is an independent prognostic marker for glioblastoma and PTN-PTPRZ1 promotes tumor growth <ref type="bibr" target="#b42">[41,</ref><ref type="bibr" target="#b43">42]</ref>, while MIF drives immune evasion and tumor progression <ref type="bibr" target="#b44">[43,</ref><ref type="bibr" target="#b45">44]</ref>-suggesting these interactions may contribute to malignant progression in IDH-mutant astrocytoma.</p><p>Additionally, Cluster 7 displayed an immunosuppressive signature, with spatial co-localization of multiple disease. Single-cell RNA sequencing analysis identified a distinct GSX1 + cluster (Cluster 7) enriched in high-grade IDH-mutant astrocytoma. In both TCGA and CGGA (two independent cohorts), this cell population was strongly associated with poor prognosis and emerged as an independent prognostic factor, indicating that patients harboring Cluster 7 tumor cells exhibit worse clinical outcomes. The transcription factor GSX1 emerges as a pivotal regulator of neural progenitor dynamics across developmental contexts. While Pei et al. established its role in promoting neuronal differentiation by antagonizing GSX2 in the telencephalon <ref type="bibr" target="#b19">[37]</ref>. Ma et al. further revealed that its expression is tightly controlled by BMP/SMAD signaling gradients, ensuring orderly temporal fate transitions in the cerebellum <ref type="bibr" target="#b20">[38]</ref>. Notably, GSX1's functional versatility extends beyond development: Bergeron et al. implicated GSX1 + neurons in sensorimotor gating circuits, with loss of GSX1 disrupting prepulse inhibition-a hallmark of neuropsychiatric disorders <ref type="bibr" target="#b21">[39]</ref>. Together, these studies underscore GSX1 as a molecular nexus linking extrinsic signaling (e.g., BMP), intrinsic transcriptional programs, and higher-order neural circuitry. Our identification of GSX1 + clusters in high-grade Fig. 8 Spatial transcriptomics analysis of cluster 7. (A) Spatial distribution of cluster 7. (B-C) Spatial patterns of REACTOME_DEVELOP-MENTAL_BIOLOGY (B) and KEGG_CALCIUM_SIGNAL-ING_PATHWAY (C). (D-E) Colocalization of cluster 7 with both pathways in para.214 (D) and dual (para.214 + intra) perspectives (E). (F-G) Spatial mapping of ligand-receptor pairs MIF_ CD74 (F) and PTN_PTPRZ1 (G)</p><p>immune checkpoint-related genes. This aligns with recent reports of a novel immune/mesenchymal-enriched (IME) subtype in IDH-mutant astrocytoma, defined by gemistocytic differentiation, immune infiltration, and unfavorable prognosis <ref type="bibr" target="#b41">[45]</ref>. Pathway analysis further demonstrated that Cluster 7 exhibited marked activation of REACTOME_DEVELOPMENTAL_BIOLOGY and KEGG_CALCIUM_SIGNALING_PATHWAY.</p><p>These findings collectively demonstrate that the presence of Cluster 7 signifies a highly malignant state in astrocytoma and is associated with poor responsiveness to immunotherapy. This subpopulation is characterized by prominent MIF_CD74 and PTN_PTPRZ1 ligand-receptor interactions, along with marked activation of the REACTOME_DEVELOPMENTAL_BIOLOGY and KEGG_CALCIUM_SIGNALING_PATHWAY.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Limitation</head><p>While our study provides novel insights into the GSX1 + subpopulation in IDH-mutant astrocytoma, several limitations warrant consideration. First, although spatial transcriptomics enabled regional characterization of GSX1 + cluster at the RNA level, the inherent inability to directly assess protein-level interactions may obscure functionally relevant pathways. Future spatial proteomics studies could validate these findings by mapping ligand-receptor interactions and protein network coordination. Second, while computational analyses identified putative ligand-receptor axes (e.g., PTN_PTPRZ1 and MIF_CD74), their mechanistic roles in immunosuppression, malignant progression, and intercellular communication require experimental validation through functional assays. Third, although TCGA/CGGA cohorts revealed prognostic correlations, prospective multicenter studies with standardized treatments are needed to confirm clinical utility. Addressing these gaps through integrated omics approaches and rigorous validation will strengthen the translational significance of our findings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Conclusions</head><p>In conclusion, our single-cell analysis identified a distinct subpopulation in high-grade IDH-mutant astrocytomas that is preferentially associated with advanced disease stages. This cluster demonstrates molecular characteristics, including enrichment in Developmental Biology and Calcium Signaling pathways, as well as PTN_PTPRZ1/MIF_CD74 interactions, which may contribute to its observed correlation with poorer clinical outcomes. These findings may provide new insights for developing therapeutic strategies against this clinically challenging disease.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 Identification of a GSX1 + tumor subpopulation associated with poor prognosis in high-grade IDH-mutant astrocytoma. (A) Schematic representation of tumor sampling regions: red spots denote low-grade areas, yellow triangles indicate high-grade areas, and green boxes demarcate mixed high-and low-grade zones. (B) DimPlot of highgrade and low-grade tumor samples. (C) VlnPlot of SOX2, GFAP, SOX9, and GSX1. (D) GSX1-high vs. GSX1-low survival in CGGA (n = 206). (E) TCGA cohort (n = 223). Groups stratified by median expression. Log-rank (Mantel-Cox) test. (F) Multivariate analysis identified high GSX1 expression as an independent prognostic factor in both CGGA (HR = 1.68) and (G) TCGA (HR = 2.30) cohorts. H: highgrade IDH-mutant astrocytoma. L: low-grade IDH-mutant astrocytoma. Radio: Radiotherapy. Chemo: Chemotherapy. MGMT: MGMT promoter methylation. NA: Not available</figDesc><graphic coords="5,51.02,58.00,240.72,609.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 Fig. 3</head><label>23</label><figDesc>Fig. 2 Functional enrichment of cluster 7. (A) Top 10 enriched pathways from the REACTOME database by GSEA. (B) Top 6 enriched pathways from the KEGG database by GSEA. (C) GSEA enrichment plot for REACTOME_DEVELOPMENTAL_BIOLOGY. (D) GSEA enrichment plot for KEGG_CALCIUM_SIGNALING_PATH-</figDesc><graphic coords="7,51.04,58.00,493.20,606.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4 Fig. 5 Fig. 6</head><label>456</label><figDesc>Fig. 4 SCENIC analysis of transcription factor regulation in cluster 7. (A) Heatmap showing the activity of the top 10 most and least active transcription factors (TFs) in cluster 7 across all clusters. (B) Visualization of all TFs identified in cluster 7. (C) Violin plot depicting GSX1 TF activity distribution across clusters. (D) Top 20 differentially active TFs between high-grade and low-grade IDH-mutant astrocytoma. H: high-grade IDH-mutant astrocytoma; L: low-grade IDHmutant astrocytoma</figDesc><graphic coords="9,178.61,58.00,365.64,347.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 7 Fig. 8</head><label>78</label><figDesc>Fig. 7 Impact of cluster 7 on immunotherapy response in IDHmutant astrocytoma. (A) TIDE scores, (B) Exclusion scores, (C) MDSC scores, and (D) CAF scores were significantly elevated in the cluster 7-high group compared to the low group, indicating poorer immunotherapy response. (E-F) Spatial co-localization of cluster 7 with immune checkpoint genes (TIGIT, LGALS9, CD47, CD276, PDCD1) was observed in both intra-tumoral (E) and para-tumoral (F) regions. TIDE: Tumor Immune Dysfunction and Exclusion. MDSC: Myeloidderived suppressor cells. CAF: Cancer-associated fibroblasts. ***: p &lt; 0.001; ****: p &lt; 0.0001</figDesc><graphic coords="12,178.61,58.00,365.64,366.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="11,238.73,58.00,305.52,609.48" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>Funding This study was supported by grants from <rs type="funder">Xinqiao Hospital</rs> (<rs type="grantNumber">2024F036</rs>), <rs type="funder">Jinfeng Lab</rs> (<rs type="grantNumber">JFLKYXM202503AZ-301</rs>, <rs type="grantNumber">JFLKYX-M202303AZ-207</rs>), and <rs type="grantName">Talent Medical Doctor Award</rs> from <rs type="funder">Army Medical University</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_N7fkV2m">
+					<idno type="grant-number">2024F036</idno>
+				</org>
+				<org type="funding" xml:id="_pqrvDFs">
+					<idno type="grant-number">JFLKYXM202503AZ-301</idno>
+				</org>
+				<org type="funding" xml:id="_dMDZ2q8">
+					<idno type="grant-number">JFLKYX-M202303AZ-207</idno>
+					<orgName type="grant-name">Talent Medical Doctor Award</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The data presented in this study are available on request from the corresponding author.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information</head><p>The online version contains supplementary material available at h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 1 3 4 0 2 -0 2 5 -0 1 1 3 9 -5 .</p><p>Author contributions Wei Chen performed data analysis, study design, and data interpretation. Min Zheng and Jia-Yin An performed cellular experiments and histological analyses. Guo-Hao Huang, Jing-Peng Liu, and Ting-Ting Wang were responsible for statistical analyses and drafted the manuscript. Lin Yang and Peng Ren were responsible for sample collection. Sheng-Qing Lv and Jean-Philippe Hugnot provided professional guidance. All authors have read and agreed to the published version of the manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Ethics approval This investigation followed the Helsinki Declaration and was approved by the Ethics Committee of Xinqiao Hospital, Third Military Medical University (Army Medical University). Ethical approval number(2023-yandi170-01).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests The authors declare no competing interests.</head><p>Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit h t t p : / / c r e a t i v e c o m m o n s . o r g / l i c e n s e s / b y / 4 . 0 / .</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The 2021 WHO Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Wesseling</surname></persName>
+			<idno type="ORCID">0000-0001-5453-5201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+			<idno type="ORCID">0000-0002-0633-6563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">A</forename><surname>Cree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><forename type="middle">M</forename><surname>Pfister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021-06-29">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D.N. Louis, A. Perry, P. Wesseling, D.J. Brat, I.A. Cree, D. Fig- arella-Branger et al., The 2021 WHO classification of tumors of the central nervous system: a summary. Neuro-Oncology. 23(8), 1231-1251 (2021)</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Glioblastoma and Other Primary Brain Malignancies in Adults</title>
+		<author>
+			<persName><forename type="first">Lauren</forename><forename type="middle">R</forename><surname>Schaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jama.2023.0023</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<title level="j" type="abbrev">JAMA</title>
+		<idno type="ISSN">0098-7484</idno>
+		<imprint>
+			<biblScope unit="volume">329</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">574</biblScope>
+			<date type="published" when="2023-02-21">2023</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">L.R. Schaff, I.K. Mellinghoff, Glioblastoma and other primary brain malignancies in adults. Jama 2023; 329(7)</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Mitotic index is (still) important for grading isocitrate dehydrogenase (IDH)-mutant astrocytoma</title>
+		<author>
+			<persName><forename type="first">Kaleigh</forename><forename type="middle">F</forename><surname>Roberts</surname></persName>
+			<idno type="ORCID">0000-0001-6483-9153</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sonika</forename><forename type="middle">M</forename><surname>Dahiya</surname></persName>
+			<idno type="ORCID">0000-0002-5585-0964</idno>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noad063</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1450" to="1451" />
+			<date type="published" when="2023-04-25">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">K.F. Roberts, S.M. Dahiya, Mitotic index is (still) important for grading isocitrate dehydrogenase (IDH)-mutant Astrocytoma. Neuro-Oncology. 25(8), 1450-1451 (2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Isocitrate dehydrogenase (IDH) mutant gliomas: A Society for Neuro-Oncology (SNO) consensus review on diagnosis, management, and future directions</title>
+		<author>
+			<persName><forename type="first">Julie</forename><forename type="middle">J</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Nicolas</forename><surname>Gonzalez Castro</surname></persName>
+			<idno type="ORCID">0000-0001-7699-5188</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Mcbrayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jana</forename><surname>Portnow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ovidiu</forename><surname>Andronesi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brigitta</forename><forename type="middle">G</forename><surname>Baumert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+			<idno type="ORCID">0000-0003-1983-4892</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenya</forename><forename type="middle">Linda</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ranjit</forename><surname>Bindra</surname></persName>
+			<idno type="ORCID">0000-0002-3255-0467</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Cahill</surname></persName>
+			<idno type="ORCID">0000-0003-2552-6546</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">F</forename><surname>Costello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Horbinski</surname></persName>
+			<idno type="ORCID">0000-0001-8340-9992</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><forename type="middle">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Jenkins</surname></persName>
+			<idno type="ORCID">0000-0002-4049-694X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">L</forename><surname>Ligon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Burt</forename><surname>Nabors</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><forename type="middle">D</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Schiff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hai</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">G</forename><surname>Kaelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="25" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J.J. Miller, L.N. Gonzalez Castro, S. McBrayer, M. Weller, T. Cloughesy, J. Portnow et al., Isocitrate dehydrogenase (IDH) mutant gliomas: A society for Neuro-Oncology (SNO) consensus review on diagnosis, management, and future directions. Neuro- Oncology. 25(1), 4-25 (2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Comprehensive genomic analysis in NRG are revealed by pseudotemporal ordering of single cells</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Bell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Buckner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Barger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Bullard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="381" to="386" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">E.H. Bell, P. Zhang, E.G. Shaw, J.C. Buckner, G.R. Barger, D.E. Bullard et al., Comprehensive genomic analysis in NRG are revealed by pseudotemporal ordering of single cells. Nat. Bio- technol. 32(4), 381-386 (2014)</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">RNA velocity of single cells</title>
+		<author>
+			<persName><forename type="first">La</forename><forename type="middle">G</forename><surname>Manno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Soldatov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zeisel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hochgerner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Petukhov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">560</biblScope>
+			<biblScope unit="issue">7719</biblScope>
+			<biblScope unit="page" from="494" to="498" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">La G. Manno, R. Soldatov, A. Zeisel, E. Braun, H. Hochgerner, V. Petukhov et al., RNA velocity of single cells. Nature. 560(7719), 494-498 (2018)</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Inference and analysis of cell-cell communication using CellChat</title>
+		<author>
+			<persName><forename type="first">Suoqin</forename><surname>Jin</surname></persName>
+			<idno type="ORCID">0000-0002-5131-0215</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">F</forename><surname>Guerrero-Juarez</surname></persName>
+			<idno type="ORCID">0000-0002-6245-6412</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lihua</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raul</forename><surname>Ramos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen-Hsiang</forename><surname>Kuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peggy</forename><surname>Myung</surname></persName>
+			<idno type="ORCID">0000-0002-2970-4170</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maksim</forename><forename type="middle">V</forename><surname>Plikus</surname></persName>
+			<idno type="ORCID">0000-0002-8845-2559</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Nie</surname></persName>
+			<idno type="ORCID">0000-0002-8804-3368</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-021-21246-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-02-17">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Jin, C.F. Guerrero-Juarez, L. Zhang, I. Chang, R. Ramos, C.-H. Kuan et al., Inference and analysis of cell-cell communication using cellchat. Nat. Commun. 2021; 12(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Signatures of T cell dysfunction and exclusion predict cancer immunotherapy response</title>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0002-7828-5486</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shengqing</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deng</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingxin</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avinash</forename><surname>Sahu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xihao</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><surname>Traugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><forename type="middle">J</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Myles</forename><forename type="middle">A</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><forename type="middle">W</forename><surname>Wucherpfennig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Shirley</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-018-0136-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1550" to="1558" />
+			<date type="published" when="2018-08-20">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">P. Jiang, S. Gu, D. Pan, J. Fu, A. Sahu, X. Hu et al., Signatures of T cell dysfunction and exclusion predict cancer immunotherapy response. Nat. Med. 24(10), 1550-1558 (2018)</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">GSVA: gene set variation analysis for microarray and RNA-seq data</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sonja Hänzelmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Castelo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guinney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Bioinf</title>
+		<imprint>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">7</biblScope>
+			<date type="published" when="2013-01-16">2013 Jan 16</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R. 1 Sonja Hänzelmann, Castelo, Justin Guinney,. GSVA: gene set variation analysis for microarray and RNA-seq data. BMC Bioinf. 2013 Jan 16: 14:7</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Robust decomposition of cell type mixtures in spatial transcriptomics</title>
+		<author>
+			<persName><forename type="first">Dylan</forename><forename type="middle">M</forename><surname>Cable</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luli</forename><forename type="middle">S</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandrina</forename><surname>Goeva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">Z</forename><surname>Macosko</surname></persName>
+			<idno type="ORCID">0000-0002-2794-5165</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2308-3649</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><forename type="middle">A</forename><surname>Irizarry</surname></persName>
+			<idno type="ORCID">0000-0002-3944-4309</idno>
+		</author>
+		<idno type="DOI">10.1038/s41587-021-00830-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biotechnology</title>
+		<title level="j" type="abbrev">Nat Biotechnol</title>
+		<idno type="ISSN">1087-0156</idno>
+		<idno type="ISSNe">1546-1696</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="517" to="526" />
+			<date type="published" when="2021-02-18">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D.M. Cable, E. Murray, L.S. Zou, A. Goeva, E.Z. Macosko, F. Chen et al., Robust decomposition of cell type mixtures in Spatial transcriptomics. Nat. Biotechnol. 40(4), 517-526 (2021)</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</title>
+		<author>
+			<persName><forename type="first">Jovan</forename><surname>Tanevski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">Omar Ramirez</forename><surname>Flores</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Attila</forename><surname>Gabor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denis</forename><surname>Schapiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julio</forename><surname>Saez-Rodriguez</surname></persName>
+			<idno type="ORCID">0000-0002-8552-8976</idno>
+		</author>
+		<idno type="DOI">10.1186/s13059-022-02663-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Genome Biology</title>
+		<title level="j" type="abbrev">Genome Biol</title>
+		<idno type="ISSNe">1474-760X</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2022-04-14">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. Tanevski, R.O.R. Flores, A. Gabor, D. Schapiro, J. Saez-Rodri- guez, Explainable multiview framework for dissecting Spatial relationships from highly multiplexed data. Genome Biol. 2022; 23(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Robust mapping of spatiotemporal trajectories and cell–cell interactions in healthy and diseased tissues</title>
+		<author>
+			<persName><forename type="first">Duy</forename><surname>Pham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brad</forename><surname>Balderson</surname></persName>
+			<idno type="ORCID">0000-0002-5153-6601</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0000-0002-2262-9999</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">F</forename><surname>Grice</surname></persName>
+			<idno type="ORCID">0000-0002-9813-4722</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sohye</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">F</forename><surname>Willis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minh</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pui</forename><forename type="middle">Yeng</forename><surname>Lam</surname></persName>
+			<idno type="ORCID">0000-0003-4031-367X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arti</forename><surname>Raghubar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priyakshi</forename><surname>Kalita-De Croft</surname></persName>
+			<idno type="ORCID">0000-0001-8877-7655</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sunil</forename><surname>Lakhani</surname></persName>
+			<idno type="ORCID">0000-0003-1879-2555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jana</forename><surname>Vukovic</surname></persName>
+			<idno type="ORCID">0000-0002-3739-1688</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">J</forename><surname>Ruitenberg</surname></persName>
+			<idno type="ORCID">0000-0002-6917-0708</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><forename type="middle">H</forename><surname>Nguyen</surname></persName>
+			<idno type="ORCID">0000-0001-7870-5703</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-023-43120-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-11-25">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D. Pham, X. Tan, B. Balderson, J. Xu, L.F. Grice, S. Yoon et al., Robust mapping of spatiotemporal trajectories and cell-cell interactions in healthy and diseased tissues. Nat. Commun. 2023; 14(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Protocol for Explant Cultures of IDH1-mutant Diffuse Low-grade Gliomas</title>
+		<author>
+			<persName><forename type="first">Kasandra</forename><surname>Aguilar-Cázarez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donovan</forename><surname>Pineau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonor</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guo-Hao</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng-Qing</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugues</forename><surname>Duffau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Philippe</forename><surname>Hugnot</surname></persName>
+		</author>
+		<idno type="DOI">10.3791/67260</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Visualized Experiments</title>
+		<title level="j" type="abbrev">JoVE</title>
+		<idno type="ISSNe">1940-087X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">219</biblScope>
+			<biblScope unit="page">219</biblScope>
+			<date type="published" when="2025-05-09">2025 May</date>
+			<publisher>MyJove Corporation</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">K. Aguilar-Cázarez, D. Pineau, L. Garcia, G.-H. Huang, S.-Q. Lv, H. Duffau et al., A protocol for explant cultures of IDH1-mutant diffuse low-grade gliomas. J. Visualized Experiments. 9, 219 (2025 May)</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Single-cell spatial immune landscapes of primary and metastatic brain tumours</title>
+		<author>
+			<persName><forename type="first">Elham</forename><surname>Karimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miranda</forename><forename type="middle">W</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0003-3902-0124</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">M</forename><surname>Maritan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><forename type="middle">J M</forename><surname>Perus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morteza</forename><surname>Rezanejad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Sorin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Dankner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parvaneh</forename><surname>Fallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Doré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongmei</forename><surname>Zuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Fiset</surname></persName>
+			<idno type="ORCID">0000-0003-0372-8868</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daan</forename><forename type="middle">J</forename><surname>Kloosterman</surname></persName>
+			<idno type="ORCID">0000-0003-1082-070X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Leeann</forename><surname>Ramsay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuhong</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roa</forename><surname>Alsajjan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">R</forename><surname>Watson</surname></persName>
+			<idno type="ORCID">0000-0002-6025-3080</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gloria</forename><surname>Roldan Urgoiti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morag</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0001-5400-606X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dieta</forename><surname>Brandsma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donna</forename><forename type="middle">L</forename><surname>Senger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">A</forename><surname>Chan</surname></persName>
+			<idno type="ORCID">0000-0001-9798-1551</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Leila</forename><surname>Akkari</surname></persName>
+			<idno type="ORCID">0000-0001-5479-641X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Petrecca</surname></persName>
+			<idno type="ORCID">0000-0002-8140-6402</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Christine</forename><surname>Guiot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Siegel</surname></persName>
+			<idno type="ORCID">0000-0002-5568-6586</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniela</forename><forename type="middle">F</forename><surname>Quail</surname></persName>
+			<idno type="ORCID">0000-0002-6969-3250</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Logan</forename><forename type="middle">A</forename><surname>Walsh</surname></persName>
+			<idno type="ORCID">0000-0001-8771-2577</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-05680-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">614</biblScope>
+			<biblScope unit="issue">7948</biblScope>
+			<biblScope unit="page" from="555" to="563" />
+			<date type="published" when="2023-02-01">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">E. Karimi, M.W. Yu, S.M. Maritan, L.J.M. Perus, M. Rezanejad, M. Sorin et al., Single-cell Spatial immune landscapes of pri- mary and metastatic brain tumours. Nature. 614(7948), 555-563 (2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Decoupling genetics, lineages, and microenvironment in IDH-mutant gliomas by single-cell RNA-seq</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">S</forename><surname>Venteicher</surname></persName>
+			<idno type="ORCID">0000-0003-0643-0493</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Itay</forename><surname>Tirosh</surname></persName>
+			<idno type="ORCID">0000-0001-5477-2987</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Hebert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keren</forename><surname>Yizhak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cyril</forename><surname>Neftel</surname></persName>
+			<idno type="ORCID">0000-0002-6356-1142</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mariella</forename><forename type="middle">G</forename><surname>Filbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Hovestadt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leah</forename><forename type="middle">E</forename><surname>Escalante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mckenzie</forename><forename type="middle">L</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Rodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">M</forename><surname>Gillespie</surname></persName>
+			<idno type="ORCID">0000-0003-1913-0860</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Danielle</forename><surname>Dionne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christina</forename><forename type="middle">C</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0001-9872-7432</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hiranmayi</forename><surname>Ravichandran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ravindra</forename><surname>Mylvaganam</surname></persName>
+			<idno type="ORCID">0000-0001-5336-6557</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Mount</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maristela</forename><forename type="middle">L</forename><surname>Onozato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">V</forename><surname>Nahed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroaki</forename><surname>Wakimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">T</forename><surname>Curry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">John</forename><surname>Iafrate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><forename type="middle">N</forename><surname>Rivera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">P</forename><surname>Frosch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">R</forename><surname>Golub</surname></persName>
+			<idno type="ORCID">0000-0003-0113-2403</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Priscilla</forename><forename type="middle">K</forename><surname>Brastianos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gad</forename><surname>Getz</surname></persName>
+			<idno type="ORCID">0000-0002-0936-0753</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anoop</forename><forename type="middle">P</forename><surname>Patel</surname></persName>
+			<idno type="ORCID">0000-0001-7078-9535</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Monje</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Cahill</surname></persName>
+			<idno type="ORCID">0000-0003-2552-6546</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Orit</forename><surname>Rozenblatt-Rosen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+			<idno type="ORCID">0000-0002-9423-4099</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">E</forename><surname>Bernstein</surname></persName>
+			<idno type="ORCID">0000-0002-5726-6278</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aviv</forename><surname>Regev</surname></persName>
+			<idno type="ORCID">0000-0003-3293-3158</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><forename type="middle">L</forename><surname>Suvà</surname></persName>
+			<idno type="ORCID">0000-0001-9898-5351</idno>
+		</author>
+		<idno type="DOI">10.1126/science.aai8478</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<title level="j" type="abbrev">Science</title>
+		<idno type="ISSN">0036-8075</idno>
+		<idno type="ISSNe">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">355</biblScope>
+			<biblScope unit="issue">6332</biblScope>
+			<date type="published" when="2017-03-31">2017</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A.S. Venteicher, I. Tirosh, C. Hebert, K. Yizhak, C. Neftel, M.G. Filbin et al., Decoupling genetics, lineages, and microenviron- ment in IDH-mutant gliomas by single-cell RNA-seq. Science 2017; 355(6332)</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">An alternative cell cycle coordinates multiciliated cell differentiation</title>
+		<author>
+			<persName><forename type="first">Semil</forename><forename type="middle">P</forename><surname>Choksi</surname></persName>
+			<idno type="ORCID">0000-0002-9319-7230</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lauren</forename><forename type="middle">E</forename><surname>Byrnes</surname></persName>
+			<idno type="ORCID">0000-0001-5991-8201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mia</forename><forename type="middle">J</forename><surname>Konjikusic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedict</forename><forename type="middle">W H</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Deleon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanlong</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0002-4261-5121</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">J</forename><surname>Westlake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><forename type="middle">F</forename><surname>Reiter</surname></persName>
+			<idno type="ORCID">0000-0002-6512-320X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-07476-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">630</biblScope>
+			<biblScope unit="issue">8015</biblScope>
+			<biblScope unit="page" from="214" to="221" />
+			<date type="published" when="2024-05-29">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S.P. Choksi, L.E. Byrnes, M.J. Konjikusic, B.W.H. Tsai, R. Deleon, Q. Lu et al., An alternative cell cycle coordinates multi- ciliated cell differentiation. Nature. 630(8015), 214-221 (2024)</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Mechanical tibial loading remotely suppresses brain tumors by dopamine-mediated downregulation of CCN4</title>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rongrong</forename><surname>Zha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomohiko</forename><surname>Sano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengzhi</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-3286-5071</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">D</forename><surname>Woollam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xun</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kexin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Motoki</forename><surname>Egi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fangjia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazumasa</forename><surname>Minami</surname></persName>
+			<idno type="ORCID">0000-0002-3864-6478</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">P</forename><surname>Siegel</surname></persName>
+			<idno type="ORCID">0000-0003-4112-0212</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takashi</forename><surname>Horiuchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mangilal</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiro</forename><surname>Sudo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harikrishna</forename><surname>Nakshatri</surname></persName>
+			<idno type="ORCID">0000-0001-8876-0052</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bai-Yan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroki</forename><surname>Yokota</surname></persName>
+			<idno type="ORCID">0000-0002-7881-8959</idno>
+		</author>
+		<idno type="DOI">10.1038/s41413-021-00144-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bone Research</title>
+		<title level="j" type="abbrev">Bone Res</title>
+		<idno type="ISSNe">2095-6231</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-05-24">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y. Fan, R. Zha, T. Sano, X. Zhao, S. Liu, M.D. Woollam et al., Mechanical tibial loading remotely suppresses brain tumors by dopamine-mediated downregulation of CCN4. Bone Res. 2021; 9(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Mutational Landscape of Secondary Glioblastoma Guides MET-Targeted Trial in Brain Tumor</title>
+		<author>
+			<persName><forename type="first">Huimin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanhua</forename><surname>Mu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaoshi</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiyun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kuanyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoonhee</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Biaobin</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">K</forename><surname>Sa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hee-Jin</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nam-Gu</forename><surname>Her</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuanbao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xun</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuqing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zenghui</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiliang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoyu</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiangwei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoguang</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenbin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Do-Hyun</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolong</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiguang</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-6923-4097</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2018.09.038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">175</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1665" to="1678.e18" />
+			<date type="published" when="2018-11">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Hu, Q. Mu, Z. Bao, Y. Chen, Y. Liu, J. Chen et al., Mutational landscape of secondary glioblastoma guides MET-Targeted trial in brain tumor. Cell. 175(6), 1665-78e18 (2018)</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Interrogation of the Microenvironmental Landscape in Brain Tumors Reveals Disease-Specific Alterations of Immune Cells</title>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Klemm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roeltje</forename><forename type="middle">R</forename><surname>Maas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">L</forename><surname>Bowman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mara</forename><surname>Kornete</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klara</forename><surname>Soukup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sina</forename><surname>Nassiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Philippe</forename><surname>Brouland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><forename type="middle">A</forename><surname>Iacobuzio-Donahue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cameron</forename><surname>Brennan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viviane</forename><surname>Tabar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">H</forename><surname>Gutin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roy</forename><forename type="middle">T</forename><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><forename type="middle">E</forename><surname>Hegi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><forename type="middle">A</forename><surname>Joyce</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2020.05.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">181</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1643" to="1660.e17" />
+			<date type="published" when="2020-06">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">F. Klemm, R.R. Maas, R.L. Bowman, M. Kornete, K. Soukup, S. Nassiri et al., Interrogation of the microenvironmental landscape in brain tumors reveals Disease-Specific alterations of immune cells. Cell. 181(7), 1643-60e17 (2020)</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Homeobox genes &lt;i&gt;Gsx1&lt;/i&gt; and &lt;i&gt;Gsx2&lt;/i&gt; differentially regulate telencephalic progenitor maturation</title>
+		<author>
+			<persName><forename type="first">Zhenglei</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Motoshi</forename><surname>Nagao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masato</forename><surname>Nakafuku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><surname>Campbell</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1008824108</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1675" to="1680" />
+			<date type="published" when="2011-01-04">2011</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Z. Pei, B. Wang, G. Chen, M. Nagao, M. Nakafuku, K. Campbell, Homeobox genes Gsx1 and Gsx2 differentially regulate telence- phalic progenitor maturation. Proceedings of the National Acad- emy of Sciences. 2011; 108(4): 1675-80</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Spatiotemporal Decline of BMP Signaling Activity in Neural Progenitors Mediates Fate Transition and Safeguards Neurogenesis</title>
+		<author>
+			<persName><forename type="first">Tsz</forename><forename type="middle">Ching</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keng</forename><forename type="middle">Ioi</forename><surname>Vong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kin</forename><forename type="middle">Ming</forename><surname>Kwan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.celrep.2020.02.089</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Reports</title>
+		<title level="j" type="abbrev">Cell Reports</title>
+		<idno type="ISSN">2211-1247</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3616" to="3624.e4" />
+			<date type="published" when="2020-03">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">T.C. Ma, K.I. Vong, K.M. Kwan, Spatiotemporal decline of BMP signaling activity in neural progenitors mediates fate transition and safeguards neurogenesis. Cell. Rep. 30(11), 3616-24e4 (2020)</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Gsx1 expression defines neurons required for prepulse inhibition</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Bergeron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Carrier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Burgess</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/mp.2014.106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Psychiatry</title>
+		<title level="j" type="abbrev">Mol Psychiatry</title>
+		<idno type="ISSN">1359-4184</idno>
+		<idno type="ISSNe">1476-5578</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="974" to="985" />
+			<date type="published" when="2014-09-16">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S.A. Bergeron, N. Carrier, G.H. Li, S. Ahn, H.A. Burgess, Gsx1 expression defines neurons required for prepulse Inhibition. Mol. Psychiatry. 20(8), 974-985 (2014)</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">EGFR alteration is an adverse prognostic factor in IDH-mutant astrocytoma</title>
+		<author>
+			<persName><forename type="first">Cheyanne</forename><forename type="middle">C</forename><surname>Slocum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phuong</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meenakshi</forename><surname>Vij</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymund</forename><forename type="middle">L</forename><surname>Yong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Samanamud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satomi</forename><surname>Hiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carolina</forename><surname>Maldonado-Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Umphlett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thenzing</forename><forename type="middle">J</forename><surname>Silva-Hurtado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kimmo</forename><forename type="middle">J</forename><surname>Hatanpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariano</forename><forename type="middle">S</forename><surname>Viapiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kalil</forename><forename type="middle">G</forename><surname>Abdullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">K</forename><surname>Mcbrayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dolores</forename><surname>Hambardzumyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><forename type="middle">M</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadejda</forename><forename type="middle">M</forename><surname>Tsankova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">E</forename><surname>Richardson</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-025-02928-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2025-08-19">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">C.C. Slocum, P. Nguyen, M. Vij, R.L. Yong, J. Samanamud, S. Hiya et al., EGFR alteration is an adverse prognostic factor in IDH-mutant Astrocytoma. Acta Neuropathol. 2025; 150(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Faculty Opinions recommendation of Randomized trial of radiation therapy plus procarbazine, lomustine, and vincristine chemotherapy for supratentorial adult low-grade glioma: initial results of RTOG 9802.</title>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Chamberlain</surname></persName>
+		</author>
+		<idno type="DOI">10.3410/f.717954685.793461108</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Clin. Oncol</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">29</biblScope>
+			<biblScope unit="page" from="3407" to="3417" />
+			<date type="published" when="2020">2020</date>
+			<publisher>H1 Connect</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">oncology/RTOG 9802: a phase III trial of radiation versus radia- tion plus procarbazine, lomustine (CCNU), and vincristine in high-risk low-grade glioma. J. Clin. Oncol. 38(29), 3407-3417 (2020)</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Comprehensive, Integrative Genomic Analysis of Diffuse Lower-Grade Gliomas</title>
+		<author>
+			<persName><surname>Comprehensive</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa1402121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">372</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="2481" to="2498" />
+			<date type="published" when="2015-06-25">2015</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Comprehensive, Integrative Genomic Analysis of Diffuse Lower- Grade Gliomas, N. Engl. J. Med. 372(26), 2481-2498 (2015)</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Glioma Groups Based on 1p/19q,&lt;i&gt;IDH&lt;/i&gt;, and&lt;i&gt;TERT&lt;/i&gt;Promoter Mutations in Tumors</title>
+		<author>
+			<persName><forename type="first">Jeanette</forename><forename type="middle">E</forename><surname>Eckel-Passow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">H</forename><surname>Lachance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><forename type="middle">M</forename><surname>Molinaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><forename type="middle">M</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugues</forename><surname>Sicotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terri</forename><surname>Rice</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><forename type="middle">L</forename><surname>Kosel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><forename type="middle">V</forename><surname>Smirnov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gobinda</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alissa</forename><forename type="middle">A</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Kollmeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinne</forename><forename type="middle">E</forename><surname>Praska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anisha</forename><forename type="middle">R</forename><surname>Chada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandralekha</forename><surname>Halder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helen</forename><forename type="middle">M</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucie</forename><forename type="middle">S</forename><surname>Mccoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paige</forename><forename type="middle">M</forename><surname>Bracci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roxanne</forename><surname>Marshall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shichun</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><forename type="middle">F</forename><surname>Reis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">R</forename><surname>Pico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">P</forename><surname>O’neill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">C</forename><surname>Buckner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Giannini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">T</forename><surname>Huse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarik</forename><surname>Tihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Prados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Wiemels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">K</forename><surname>Wiencke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margaret</forename><forename type="middle">R</forename><surname>Wrensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Jenkins</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa1407279</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">372</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="2499" to="2508" />
+			<date type="published" when="2015-06-25">2015</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J.E. Eckel-Passow, D.H. Lachance, A.M. Molinaro, K.M. Walsh, P.A. Decker, H. Sicotte et al., Glioma groups based on 1p/19q, IDH, and tertpromoter mutations in tumors. N. Engl. J. Med. 372(26), 2499-2508 (2015)</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Mitotic count is prognostic in IDH mutant astrocytoma without homozygous deletion of CDKN2A/B. Results of consensus panel review of EORTC trial 26053 (CATNON) and EORTC trial 22033-26033</title>
+		<author>
+			<persName><forename type="first">Johan</forename><forename type="middle">M</forename><surname>Kros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><surname>Rushing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aimé</forename><forename type="middle">L</forename><surname>Uwimana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aurelio</forename><surname>Hernández-Laín</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Michotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maysa</forename><surname>Al-Hussaini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franck</forename><surname>Bielle</surname></persName>
+			<idno type="ORCID">0000-0001-6564-6388</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Mawrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Marucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Mircea S</forename><surname>Tesileanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brigitta</forename><surname>Baumert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pim</forename><forename type="middle">J</forename><surname>French</surname></persName>
+			<idno type="ORCID">0000-0002-0668-9529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Gorlia</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac282</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1443" to="1449" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J.M. Kros, E. Rushing, A.L. Uwimana, A. Hernández-Laín, A. Michotte, M. Al-Hussaini et al., Mitotic count is prognos- tic in IDH mutant astrocytoma without homozygous deletion of CDKN2A/B. Results of consensus panel review of EORTC trial 26053 (CATNON) and EORTC trial 22033-26033. Neuro- Oncology. 2023; 25(8): 1443-9</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Single-cell RNA sequencing reveals evolution of immune landscape during glioblastoma progression</title>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">T</forename><surname>Yeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shruti</forename><surname>Rawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bethany</forename><surname>Delcuze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthos</forename><surname>Christofides</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agata</forename><surname>Atayde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Strauss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonora</forename><surname>Balaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vaughn</forename><forename type="middle">A</forename><surname>Rogers</surname></persName>
+			<idno type="ORCID">0000-0002-6423-5197</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">J</forename><surname>Uhlmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hemant</forename><surname>Varma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bob</forename><forename type="middle">S</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vassiliki</forename><forename type="middle">A</forename><surname>Boussiotis</surname></persName>
+			<idno type="ORCID">0000-0002-3963-1518</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Al</forename><surname>Charest</surname></persName>
+			<idno type="ORCID">0000-0002-1548-6950</idno>
+		</author>
+		<idno type="DOI">10.1038/s41590-022-01215-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Immunology</title>
+		<title level="j" type="abbrev">Nat Immunol</title>
+		<idno type="ISSN">1529-2908</idno>
+		<idno type="ISSNe">1529-2916</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="971" to="984" />
+			<date type="published" when="2022-05-27">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A.T. Yeo, S. Rawal, B. Delcuze, A. Christofides, A. Atayde, L. Strauss et al., Single-cell RNA sequencing reveals evolution of immune landscape during glioblastoma progression. Nat. Immu- nol. 23(6), 971-984 (2022)</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Natural Coevolution of Tumor and Immunoenvironment in Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Lingxiang</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0003-4319-7862</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-6228-0605</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junxia</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-1622-8045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0001-8945-9632</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Liangyu</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-3540-7551</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mengyan</forename><surname>Zhu</surname></persName>
+			<idno type="ORCID">0000-0003-2953-8309</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-8779-7782</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0001-9256-0176</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fengqi</forename><surname>Zhou</surname></persName>
+			<idno type="ORCID">0000-0003-4070-8153</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Du</surname></persName>
+			<idno type="ORCID">0000-0001-7429-3238</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rui-Chao</forename><surname>Chai</surname></persName>
+			<idno type="ORCID">0000-0003-3451-8871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-7800-3189</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoguang</forename><surname>Qiu</surname></persName>
+			<idno type="ORCID">0000-0002-6806-9827</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Quanzhong</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4248-3285</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyu</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-1570-0152</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-5905-3359</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kening</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-9750-1810</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Apeng</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-1936-2007</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yinan</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0001-5644-6261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangwei</forename><surname>Xiao</surname></persName>
+			<idno type="ORCID">0000-0003-0890-9203</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Zou</surname></persName>
+			<idno type="ORCID">0000-0002-3574-3379</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rashmi</forename><surname>Srivastava</surname></persName>
+			<idno type="ORCID">0000-0002-8773-3973</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tingting</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-8345-4897</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Cai</surname></persName>
+			<idno type="ORCID">0000-0002-5402-8143</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Liang</surname></persName>
+			<idno type="ORCID">0000-0002-9143-9670</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-4602-1782</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ruohan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-7099-7067</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Lin</surname></persName>
+			<idno type="ORCID">0000-0001-9169-9416</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lang</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0001-7627-652X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiuxing</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-5993-9368</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Qian</surname></persName>
+			<idno type="ORCID">0000-0003-1533-8568</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sali</forename><surname>Lv</surname></persName>
+			<idno type="ORCID">0000-0002-5159-5062</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Baoli</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0002-2737-6871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Siyuan</forename><surname>Zheng</surname></persName>
+			<idno type="ORCID">0000-0002-1031-9424</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhibin</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0002-8277-5234</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hongbing</forename><surname>Shen</surname></persName>
+			<idno type="ORCID">0000-0002-2581-5906</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yongping</forename><surname>You</surname></persName>
+			<idno type="ORCID">0000-0003-4753-5515</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roel</forename><forename type="middle">G W</forename><surname>Verhaak</surname></persName>
+			<idno type="ORCID">0000-0003-2773-0436</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0002-7008-6351</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qianghu</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3488-1059</idno>
+		</author>
+		<idno type="DOI">10.1158/2159-8290.cd-22-0196</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Discovery</title>
+		<idno type="ISSN">2159-8274</idno>
+		<idno type="ISSNe">2159-8290</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2820" to="2837" />
+			<date type="published" when="2022-09-19">2022</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">W. Lingxiang Wu, J. Wu, Z. Zhang, L. Zhao, M. Li, Zhu et al., Natural Coevolution of tumor and immunoenvironment in glio- blastoma. Cancer Discov. 12(12), 2820-2837 (2022)</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Identification of hypoxic macrophages in glioblastoma with therapeutic potential for vasculature normalization</title>
+		<author>
+			<persName><forename type="first">Wenying</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianran</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuhong</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingjing</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoning</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuegang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoyue</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaidi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhicheng</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuaishuai</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongyi</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunhua</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xindong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuqi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weikai</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingya</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuanghui</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lele</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lujing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linrong</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qin</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghua</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhihong</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Fang</forename><surname>Ping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiu-Wu</forename><surname>Bian</surname></persName>
+			<idno type="ORCID">0000-0003-4383-0197</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ccell.2024.03.013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<title level="j" type="abbrev">Cancer Cell</title>
+		<idno type="ISSN">1535-6108</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="815" to="832.e12" />
+			<date type="published" when="2024-05">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">W. Wang, T. Li, Y. Cheng, F. Li, S. Qi, M. Mao et al., Identifi- cation of hypoxic macrophages in glioblastoma with therapeutic potential for vasculature normalization. Cancer Cell. 2024; 42(5): 815 -32.e12.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Dictionary learning for integrative, multimodal and scalable single-cell analysis</title>
+		<author>
+			<persName><forename type="first">Yuhan</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Stuart</surname></persName>
+			<idno type="ORCID">0000-0002-3044-0897</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Madeline</forename><forename type="middle">H</forename><surname>Kowalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saket</forename><surname>Choudhary</surname></persName>
+			<idno type="ORCID">0000-0001-5202-7633</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Hoffman</surname></persName>
+			<idno type="ORCID">0000-0002-7693-8957</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Austin</forename><surname>Hartman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avi</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gesmira</forename><surname>Molla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaista</forename><surname>Madad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Fernandez-Granda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Satija</surname></persName>
+			<idno type="ORCID">0000-0001-9448-8833</idno>
+		</author>
+		<idno type="DOI">10.1038/s41587-023-01767-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biotechnology</title>
+		<title level="j" type="abbrev">Nat Biotechnol</title>
+		<idno type="ISSN">1087-0156</idno>
+		<idno type="ISSNe">1546-1696</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="293" to="304" />
+			<date type="published" when="2023-05-25">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y. Hao, T. Stuart, M.H. Kowalski, S. Choudhary, P. Hoffman, A. Hartman et al., Dictionary learning for integrative, multimodal and scalable single-cell analysis. Nat. Biotechnol. 42(2), 293-304 (2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">DoubletFinder: Doublet Detection in Single-Cell RNA Sequencing Data Using Artificial Nearest Neighbors</title>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">S</forename><surname>Mcginnis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lyndsay</forename><forename type="middle">M</forename><surname>Murrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zev</forename><forename type="middle">J</forename><surname>Gartner</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cels.2019.03.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Systems</title>
+		<title level="j" type="abbrev">Cell Systems</title>
+		<idno type="ISSN">2405-4712</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="329" to="337.e4" />
+			<date type="published" when="2019-04">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">C.S. McGinnis, L.M. Murrow, Z.J. Gartner, DoubletFinder, Dou- blet detection in single-cell RNA sequencing data using artificial nearest neighbors. Cell. Syst. 2019; 8(4): 329 -37.e4.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Mapping the cellular biogeography of human bone marrow niches using single-cell transcriptomics and proteomic imaging</title>
+		<author>
+			<persName><forename type="first">Shovik</forename><surname>Bandyopadhyay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">P</forename><surname>Duffy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyung</forename><forename type="middle">Jin</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">H</forename><surname>Sussman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minxing</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gwendolyn</forename><surname>Duncan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iris</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yulieh</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamjid</forename><surname>Imtiaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chia-Hui</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anusha</forename><surname>Thadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changya</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Reichart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zachary</forename><surname>Martinez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Diorio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chider</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinodh</forename><surname>Pillai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oraine</forename><surname>Snaith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Derek</forename><surname>Oldridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddharth</forename><surname>Bhattacharyya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Maillard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Carroll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Tan</surname></persName>
+			<idno type="ORCID">0000-0002-9104-5567</idno>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2024.04.013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3120" to="3140.e29" />
+			<date type="published" when="2024-06">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Bandyopadhyay, M.P. Duffy, K.J. Ahn, J.H. Sussman, M. Pang, D. Smith et al., Mapping the cellular biogeography of human bone marrow niches using single-cell transcriptomics and pro- teomic imaging. Cell. 187(12), 3120-40e29 (2024)</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Visualizing and interpreting cancer genomics data via the Xena platform</title>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">J</forename><surname>Goldman</surname></persName>
+			<idno type="ORCID">0000-0002-9808-6388</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Craft</surname></persName>
+			<idno type="ORCID">0000-0003-3334-6983</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mim</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristupas</forename><surname>Repečka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fran</forename><surname>Mcdade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Kamath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayan</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunhai</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0001-6948-2042</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dave</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angela</forename><forename type="middle">N</forename><surname>Brooks</surname></persName>
+			<idno type="ORCID">0000-0002-7898-3073</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jingchun</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Haussler</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41587-020-0546-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biotechnology</title>
+		<title level="j" type="abbrev">Nat Biotechnol</title>
+		<idno type="ISSN">1087-0156</idno>
+		<idno type="ISSNe">1546-1696</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="675" to="678" />
+			<date type="published" when="2020-05-22">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M.J. Goldman, B. Craft, M. Hastie, K. Repečka, F. McDade, A. Kamath et al., Visualizing and interpreting cancer genomics data via the Xena platform. Nat. Biotechnol. 38(6), 675-678 (2020)</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Chinese Glioma Genome Atlas (CGGA): A Comprehensive Resource with Functional Genomic Data for Chinese Glioma Patients</title>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0001-8945-9632</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ke’nan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-7270-569X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qiangwei</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-7308-049X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guanzhang</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-0353-5751</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Zeng</surname></persName>
+			<idno type="ORCID">0000-0001-5351-2155</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-7613-6188</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0001-9256-0176</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ruichao</forename><surname>Chai</surname></persName>
+			<idno type="ORCID">0000-0003-3451-8871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-1687-6990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chuanbao</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-2615-4190</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-7800-3189</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaoshi</forename><surname>Bao</surname></persName>
+			<idno type="ORCID">0000-0003-4922-4470</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0002-7008-6351</idno>
+		</author>
+		<idno type="DOI">10.1101/2020.01.20.911982</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Genom. Proteom. Bioinform</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2021">2021</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Z. Zhao, K.-N. Zhang, Q. Wang, G. Li, F. Zeng, Y. Zhang et al., Chinese glioma genome atlas (CGGA): A comprehensive resource with functional genomic data from Chinese glioma patients. Genom. Proteom. Bioinform. 19(1), 1-12 (2021)</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">IOBR2: Multidimensional Decoding Tumor Microenvironment for Immuno-Oncology Research</title>
+		<author>
+			<persName><forename type="first">Dongqiang</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiran</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0002-8215-2045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjun</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shixiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rongfang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenchao</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiatong</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianqian</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yonghong</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangchuang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wangjun</forename><surname>Liao</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2024.01.13.575484</idno>
+	</analytic>
+	<monogr>
+		<title level="j">h t t p s</title>
+		<imprint>
+			<biblScope unit="issue">1 0</biblScope>
+			<date type="published" when="2001">2024. . 0 1 . 1 3 . 5 7 5 4 8</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note>bioRxiv</note>
+	<note type="raw_reference">D. Zeng, Y. Fang, P. Luo, W. Qiu, S. Wang, R. Shen et al., IOBR2: multidimensional decoding tumor microenvironment for immuno-oncology research. bioRxiv; 2024. h t t p s : / / d o i . o r g / 1 0 . 1 1 0 1 / 2 0 2 4 . 0 1 . 1 3 . 5 7 5 4 8</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The Molecular Signatures Database Hallmark Gene Set Collection</title>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Liberzon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chet</forename><surname>Birger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helga</forename><surname>Thorvaldsdóttir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><surname>Ghandi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">P</forename><surname>Mesirov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Tamayo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cels.2015.12.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Systems</title>
+		<title level="j" type="abbrev">Cell Systems</title>
+		<idno type="ISSN">2405-4712</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="417" to="425" />
+			<date type="published" when="2015-12">2015</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Liberzon, C. Birger, H. Thorvaldsdóttir, M. Ghandi, P. Mesirov Jill, P. Tamayo, The molecular signatures database hallmark gene set collection. Cell. Syst. 1(6), 417-425 (2015)</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">GseaVis: An R Package for Enhanced Visualization of Gene Set Enrichment Analysis in Biomedicine</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyuan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjun</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhou</surname></persName>
+			<idno type="ORCID">0000-0001-7261-2207</idno>
+		</author>
+		<idno type="DOI">10.1002/mdr2.70000</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Med Research</title>
+		<title level="j" type="abbrev">Med Research</title>
+		<idno type="ISSN">2998-4963</idno>
+		<idno type="ISSNe">2998-4971</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="131" to="135" />
+			<date type="published" when="2025-03-31">2025</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. Zhang, H. Li, W. Tao, J. Zhou, GseaVis: an R package for enhanced visualization of gene set enrichment analysis in bio- medicine. Med. Res. 1(1), 131-135 (2025)</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">A scalable SCENIC workflow for single-cell gene regulatory network analysis</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sande</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Flerin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Davie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Waegeneer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hulselmans</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Aibar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Protoc</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2247" to="2276" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Van de B. Sande, C. Flerin, K. Davie, De M. Waegeneer, G. Hulselmans, S. Aibar et al., A scalable SCENIC workflow for single-cell gene regulatory network analysis. Nat. Protoc. 15(7), 2247-2276 (2020)</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Single-cell RNA sequencing identifies critical transcription factors of tumor cell invasion induced by hypoxia microenvironment in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Yanru</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengqian</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaiyuan</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rongkai</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingchen</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaohan</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihan</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.7150/thno.81407</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Theranostics</title>
+		<title level="j" type="abbrev">Theranostics</title>
+		<idno type="ISSN">1838-7640</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3744" to="3760" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Ivyspring International Publisher</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y. Zhang, B. Zhang, C. Lv, N. Zhang, K. Xing, Z. Wang et al., Single-cell RNA sequencing identifies critical transcription fac- tors of tumor cell invasion induced by hypoxia microenvironment in glioblastoma. Theranostics. 13(11), 3744-3760 (2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The dynamics and regulators of cell fate decisions (MIF) expression in human malignant gliomas contributes to immune escape and tumour progression</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Trapnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cacchiarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Grimsby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pokharel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Morse</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathol</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="353" to="365" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">C. Trapnell, D. Cacchiarelli, J. Grimsby, P. Pokharel, S. Li, M. Morse et al., The dynamics and regulators of cell fate decisions (MIF) expression in human malignant gliomas contributes to immune escape and tumour progression. Acta Neuropathol. 122(3), 353-365 (2011)</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">EPCO-30. PROTEIN-BASED CLASSIFICATION REVEALS AN IMMUNE-HOT SUBTYPE IN IDH MUTANT ASTROCYTOMA WITH WORSE PROGNOSIS</title>
+		<author>
+			<persName><forename type="first">Jihong</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhua</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuyan</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiguang</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaf201.0030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">Supplement_5</biblScope>
+			<biblScope unit="page" from="v8" to="v8" />
+			<date type="published" when="2025-09">2025 Sep. 11. 25</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note>Publisher&apos;s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional afÏliations</note>
+	<note type="raw_reference">J. Tang, W. Fan, Y. Ruan, X. Liu, F. Qiu, J. Feng et al., Protein- based classification reveals an immune-hot subtype in IDH mutant Astrocytoma with worse prognosis. Cancer Cell. 2025 Sep. 11:S1535-6108(25)00363-0. Publisher&apos;s note Springer Nature remains neutral with regard to juris- dictional claims in published maps and institutional afÏliations.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Surgical resection of glioblastomas induces pleiotrophin-mediated self-renewal of glioblastoma stem cells in recurrent tumors</title>
+		<author>
+			<persName><forename type="first">Arnon</forename><forename type="middle">Møldrup</forename><surname>Knudsen</surname></persName>
+			<idno type="ORCID">0000-0003-0191-1714</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Halle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oriane</forename><surname>Cédile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Burton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Baun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helge</forename><surname>Thisgaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atul</forename><surname>Anand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Hubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mads</forename><surname>Thomassen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Signe</forename><forename type="middle">Regner</forename><surname>Michaelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitte</forename><forename type="middle">Brinkmann</forename><surname>Olsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rikke</forename><forename type="middle">Hedegaard</forename><surname>Dahlrot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rolf</forename><surname>Bjerkvig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><forename type="middle">Durla</forename><surname>Lathia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjarne</forename><forename type="middle">Winther</forename><surname>Kristensen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab302</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1074" to="1087" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A.M. Knudsen, B. Halle, O. Cédile, M. Burton, C. Baun, H. Thisgaard et al., Surgical resection of glioblastomas induces pleiotrophin-mediated self-renewal of glioblastoma stem cells in recurrent tumors. Neuro-Oncology. 24(7), 1074-1087 (2022)</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Tumour-associated macrophages secrete pleiotrophin to promote PTPRZ1 signalling in glioblastoma stem cells for tumour growth</title>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Fang</forename><surname>Ping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenchao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi-Cheng</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bai-Shi-Jiao</forename><surname>Bian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xun</forename><surname>Lan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xian-Chao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ti-Wei</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao-Ning</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mian-Fu</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoguang</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiuxing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao-Hong</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shi-Cang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">You-Hong</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><forename type="middle">N</forename><surname>Rich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shideng</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiu-Wu</forename><surname>Bian</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncomms15080</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2017-06-01">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y. Shi, Y.-F. Ping, W. Zhou, Z.-C. He, C. Chen, B.-S.-J. Bian et al., Tumour-associated macrophages secrete Pleiotrophin to pro- mote PTPRZ1 signalling in glioblastoma stem cells for tumour growth. Nat. Commun. 2017; 8(1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Secreted and O-GlcNAcylated MIF binds to the human EGF receptor and inhibits its activation</title>
+		<author>
+			<persName><forename type="first">Yanhua</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinjian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yugang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jong-Ho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Hawke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxin</forename><surname>Lyu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhimin</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncb3222</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Cell Biology</title>
+		<title level="j" type="abbrev">Nat Cell Biol</title>
+		<idno type="ISSN">1465-7392</idno>
+		<idno type="ISSNe">1476-4679</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1348" to="1355" />
+			<date type="published" when="2015-08-17">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y. Zheng, X. Li, X. Qian, Y. Wang, J.-H. Lee, Y. Xia et al., Secreted and O-GlcNAcylated MIF binds to the human EGF receptor and inhibits its activation. Nat. Cell Biol. 17(10), 1348-1355 (2015)</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Macrophage migration inhibitory factor (MIF) expression in human malignant gliomas contributes to immune escape and tumour progression</title>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Mittelbronn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pia</forename><surname>Zeiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvonne</forename><surname>Dombrowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brigitte</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cornelia</forename><surname>Zachskorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">N</forename><surname>Harter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jörg</forename><surname>Wischhusen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-011-0858-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="353" to="365" />
+			<date type="published" when="2011-07-21" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. Mittelbronn, M. Platten, P. Zeiner, Y. Dombrowski, B. Frank, C. Zachskorn et al., Macrophage migration inhibitory factor</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

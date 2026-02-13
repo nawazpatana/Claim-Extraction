@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Using machine learning-based radiomics to differentiate between glioma and solitary brain metastasis from lung cancer and its subtypes</title>
+				<funder ref="#_4VP69u3 #_33Uymcv">
+					<orgName type="full">Medical Science Foundation of Hebei University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2023-12-06">2023-12-06</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Feng-Ying</forename><surname>Zhu</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yu-Feng</forename><surname>Sun</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> College of Electronic Information Engineering , Hebei University , Baoding 071002 , China.</note>
+								<orgName type="department">College of Electronic Information Engineering</orgName>
+								<orgName type="institution">Hebei University</orgName>
+								<address>
+									<postCode>071002</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiao-Ping</forename><surname>Yin</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yu</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Li-Hong</forename><surname>Xing</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ze-Peng</forename><surname>Ma</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lin-Yan</forename><surname>Xue</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> College of Quality and Technical Supervision , Hebei University , No.180 of Wusi Road , Lianchi District , Baoding 071002 , China.</note>
+								<orgName type="department">College of Quality and Technical Supervision</orgName>
+								<orgName type="institution">Hebei University</orgName>
+								<address>
+									<addrLine>No.180 of Wusi Road</addrLine>
+									<postCode>071002</postCode>
+									<settlement>Lianchi District Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Jia-Ning</forename><surname>Wang</surname></persName>
+							<email>jianingwang06@outlook.com</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Affiliated Hospital of Hebei University , No.212 of Yuhua Road , Lianchi District , Baoding 071000 , China.</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Affiliated Hospital of Hebei University</orgName>
+								<address>
+									<addrLine>No.212 of Yuhua Road Lianchi District</addrLine>
+									<postCode>071000</postCode>
+									<settlement>Baoding</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Using machine learning-based radiomics to differentiate between glioma and solitary brain metastasis from lung cancer and its subtypes</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Discover Oncology</title>
+						<title level="j" type="abbrev">Discov Onc</title>
+						<idno type="eISSN">2730-6011</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">14</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2023-12-06" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">D3004BE65F61BEE264DB9418E17E23FA</idno>
+					<idno type="DOI">10.1007/s12672-023-00837-6</idno>
+					<note type="submission">Received: 3 August 2023 / Accepted: 22 November 2023</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-08T08:33+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Glioma</term>
+					<term>Multiple layer perceptron</term>
+					<term>Non-small cell lung cancer</term>
+					<term>Radiomics</term>
+					<term>Small cell lung cancer</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Objective To establish a machine learning-based radiomics model to differentiate between glioma and solitary brain metastasis from lung cancer and its subtypes, thereby achieving accurate preoperative classification. Materials and methods A retrospective analysis was conducted on MRI T1WI-enhanced images of 105 patients with glioma and 172 patients with solitary brain metastasis from lung cancer, which were confirmed pathologically. The patients were divided into the training group and validation group in an 8:2 ratio for image segmentation, extraction, and filtering; multiple layer perceptron (MLP), support vector machine (SVM), random forest (RF), and logistic regression (LR) were used for modeling; fivefold cross-validation was used to train the model; the validation group was used to evaluate and assess the predictive performance of the model, ROC curve was used to calculate the accuracy, sensitivity, and specificity of the model, and the area under curve (AUC) was used to assess the predictive performance of the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>The accuracy and AUC of the MLP differentiation model for high-grade glioma and solitary brain metastasis in the validation group was 0.992, 1.000, respectively, while the sensitivity and specificity were 1.000, 0.968, respectively. The accuracy and AUC for the MLP and SVM differentiation model for high-grade glioma and small cell lung cancer brain metastasis in the validation group was 0.966, 1.000, respectively, while the sensitivity and specificity were 1.000, 0.929, respectively. The accuracy and AUC for the MLP differentiation model for high-grade glioma and non-small cell lung cancer brain metastasis in the validation group was 0.982, 0.999, respectively, while the sensitivity and specificity were 0.958, 1.000, respectively. Conclusion The application of machine learning-based radiomics has a certain clinical value in differentiating glioma from solitary brain metastasis from lung cancer and its subtypes. In the HGG/SBM and HGG/NSCLC SBM validation groups, the MLP model had the best diagnostic performance, while in the HGG/SCLC SBM validation group, the MLP and SVM models had the best diagnostic performance.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>There is an increasing incidence of intracranial tumors with poor prognosis, especially in patients above 65 years of age. Gliomas approximately account for 30% of central nervous system (CNS) neoplasms, and 81% of CNS malignancies <ref type="bibr" target="#b0">[1]</ref>, wherein, the most common one is glioblastoma, with a five-year survival rate of 5% <ref type="bibr" target="#b1">[2]</ref>. Brain metastasis is the most common type of tumor; common primary tumors include lung cancer, breast cancer, melanoma, and gastroenteric tumor, wherein, brain metastasis from lung cancer approximately accounts for 41-55% of all brain metastases <ref type="bibr" target="#b2">[3]</ref>. Gliomas generally feature in a single lesion and occasionally in multiple lesions, while brain metastases feature in multiple lesions-only about 30% feature in a single lesion <ref type="bibr" target="#b3">[4]</ref>. Previously, imaging differentiation mainly relied on conventional magnetic resonance imaging (MRI), and on some images, single brain metastasis and glioma could not be easily differentiated due to tumor enhancement, peritumor edema, and central necrosis, especially in patients with the initial symptom of single intracranial occupancy. Glioma and brain metastasis differ in origin. In the case of glioma, only the intracranial lesions are treated, while systemic conditions are rarely assessed. In the case of brain metastasis with unknown primary lesions, key sites should be screened to identify the primary lesions for developing the corresponding treatment plan. In addition to treatment, they also differ from each other in terms of staging, prognosis, and follow-up; therefore, it is important to carry out preoperative identification.</p><p>So far, some studies have conducted differential diagnoses with respect to high-grade glioma (HGG) and solitary brain metastasis (SBM) based on multiparametric MRI, and single and combined application of diffusion weighted imaging (DWI), perfusion weighted imaging (ASL, PWI), magnetic resonance spectroscopy (MRS), and diffusion tensor imaging (DTI), which have achieved some progress. Tsougos et al. <ref type="bibr" target="#b4">[5]</ref> evaluated the role of 1HMRS, DWI, DTI, and DSCE in distinguishing glioblastoma from solitary brain metastases and found that peritumoral NAA/Cr, Cho/Cr, and rCBV were significantly distinguishable, with no significant difference between ADC and FA. Aslan et al. <ref type="bibr" target="#b5">[6]</ref> found that the combination of ADCmin, rCBV, and Cho/NAA parameters in the peritumoral area was helpful in distinguishing SBM and HGG, with a diagnostic accuracy of 97%. Lin et al. <ref type="bibr" target="#b6">[7]</ref> used 3D-ASL to differentiate between SBM and HGG and found that the CBF gradient of peritumoral edema may be more meaningful. Currently, no standards have been developed to apply the study findings into clinical practice, and limited by the scanning and post-processing conditions, the clinical applications of ASL, PWI, MRS, and DTI are not as widespread as conventional MRI.</p><p>With the development of radiomics, many scholars have combined it with conventional MRI for differential diagnosis of glioma and brain metastasis. Ortiz-Ramón et al. <ref type="bibr" target="#b7">[8]</ref> analyzed T1WI of 50 brain metastases and 50 HGGs using six texture analysis methods and calculated 88 rotationally invariant texture features for each segmented lesion. The results showed that AUC reached 0.896, which indicated that the radiomics-based differentiation of 2D texture features extracted from MR images could accurately identify HGG and metastasis. Shrot et al. <ref type="bibr" target="#b8">[9]</ref> applied machine learning to study 41 cases of glioblastoma, 38 cases of metastatic tumor, 50 cases of meningioma, and 12 cases of primary central nervous system lymphoma. They found that the accuracy, sensitivity, and specificity of binary SVM classification for glioblastoma, metastatic tumor, meningioma, and primary central nervous system lymphoma were 95.7%, 81.6%, and 91.2%, respectively; 92.7%, 95.1%, and 93.6%; 97%, 90.8%, and 58.3% and 91.5%, 90%, and 96.9%. Chen et al. <ref type="bibr" target="#b9">[10]</ref> constructed thirty diagnostic models for distinguishing glioblastoma and brain metastasis, calculated the sensitivity, specificity, accuracy, and area under curve (AUC) of each model, and selected two models with an AUC of 0.80. There have been several related studies <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b11">12]</ref>, however, they mainly focus on the differentiation between HGG and SBM originating from a different primary focus. Approximately more than half of brain metastases are the metastasis from lung cancer, particularly SBM <ref type="bibr" target="#b2">[3]</ref>. In clinical practice, larger SBMs originating from lung cancer and glioma are harder to differentiate <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b13">14]</ref>. Therefore, we used the machine learning approach based on conventional T1WI-enhanced images in this study to explore the differentiation between gliomas and solitary brain metastases from lung cancer, and establishing a model, thus achieving preoperative accurate differentiation.</p><p>Due to the difference in the treatment of brain metastases from small cell lung cancer (SCLC) and non-small cell lung cancer (NSCLC), it is important to differentiate between them and gliomas. In this study, we also tried to establish a radiomics model based on machine learning, to differentiate between HGG and the subtypes of solitary brain metastasis from lung cancer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Study participants</head><p>We collected the data of 125 patients with gliomas that were pathologically confirmed at the Affiliated Hospital of Hebei University from January 2017 to September 2022. All these patients underwent preoperative contrast-enhanced T1WI (CE-T1WI), based on which, 20 patients with poor image quality were excluded. We collected the data of 800 patients with suspected brain metastases confirmed at the Affiliated Hospital of Hebei University from April 2016 to January 2022 based on the following inclusion criteria: primary lesions or metastases were pathologically confirmed; the primary lesion was lung cancer; the intracranial lesion was solitary; and the patients underwent CE-T1WI prior to the treatment of intracranial lesions. Finally, we included 105 patients with gliomas (70 males and 35 females, with the mean age of 52 and age range of 17-72) and 172 patients with SBM from lung cancer (103 males and 69 females, with the mean age of 62, and age range of 44-80). The patients with gliomas and those with brain metastasis from lung cancer were divided into the training group and validation group in an 8:2 ratio. This study was approved by the Ethics Committee of the Affiliated Hospital of Hebei University (No. HDFY-LL-2022-084). Due to the retrospective nature of this study, a waiver of informed consent was obtained.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">MRI scan</head><p>A 1.5 T MAGNETOM Amira MRI scanner and GE 3.0T Discovery MR750 scanner (Siemens) were used for scanning. CE-T1WI parameters were 1.5 T MAGNETOM Amira MRI (depth of stratum = 5 mm, TR = 339, TE = 3.54, matrix 256 × 256 mm); 3.0 T Discovery MR750 (depth of stratum = 5 mm, TR = 1750, TE = 24.5-25.2, matrix 256 × 256 mm); the contrast agent was gadopentetate dimeglumine (0.2 ml/kg).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Image pre-processing</head><p>The original DICOM images were imported into ITK-SNAP (version: 3.8.0, <ref type="url" target="http://itksnap.drg/">http:// itksn ap. drg/</ref>) for manual outlining of the CE-T1WI images according to the following principles: (1) The outlining range was a high signal area on each CE-T1WI image, avoiding the edema, necrosis, and cystic areas; (2) If there was no high signal area, the low signal area would be filled with solid tumor, and all the area should be outlined as a low signal area. All images were outlined independently by two experienced CNS radiologists (with 5 and 7 years of experience), and they did not know the age, gender, clinical history, and pathological findings of the patients. If the difference in ROI between the two radiologists was smaller than 5%, the images could be fused directly, and if the difference in ROI was greater than 5%, a third senior radiologist (with 10 years of experience) was asked to determine the final outlining area.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Feature extraction and modeling</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.1">Feature extraction</head><p>To improve the efficiency and extract high number of features from MRI images, we further processed the magnified ROI images with nine filters, including the origin (without a filter), square, square root, logarithm, gradient, wavelet transform, local binary pattern (LBP), and Laplacian of Gaussian (LoG). The first five filters converted based on image intensity and produced the corresponding derived images. It should be noted that wavelet transform can decompose each image into eight different frequency sub-bands. LBP is a simple and a computationally efficient method for obtaining gray level and rotationally invariant representation, which is a popular texture descriptor in medical image analysis. To enhance the edges of each image, LoG was performed for the original image. The original image was first smoothed and denoised by Gaussian kernel, then convoluted by the LoG kernel to highlight the areas with rapid intensity changes.</p><p>Several quantitative radiomics features were extracted to describe tumor heterogeneity. We extracted meaningful and reliable features from the NET area of the original image and the corresponding filtered images. A total of 1521 quantitative features were extracted from the images. They were subdivided into seven categories, including firstorder statistics (304 features), shape (17 features), gray level co-occurrence matrix (GLCM, 384 features), gray level dependence matrix (GLDM, 224 features), gray level run matrix (GLRLM, 256 features), gray level size zone matrix (GLSZM, 256 features), and neighborhood graytone difference matrix (NGTDM, 80 features). Each category described tumor heterogeneity from its respective perspective. Therefore, these categories of features were deemed as multiview features, which could provide additional information for the description of tumor heterogeneity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.2">Standardized processing and feature screening</head><p>To further improve the accuracy of classification, it is necessary to pre-process the extracted features, specifically, by normalizing and filtering them.</p><p>Due to the large differences between different features, Z-score method was used to normalize the features. To apply the Z-score method, it is necessary to calculate the mean and standard deviation of each feature vector. Then, the mean is subtracted from each feature and divided by the standard deviation, which helps improve the accuracy of classification. It can be calculated as follows:</p><p>Due to the large number of features, we screened the features using Pearson's Correlation Coefficient (PCC). The PCC was calculated for each pair of normalized features and if it was greater than the preset threshold, we removed it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.3">Data enhancement and modeling</head><p>We established the authoritative multiple layer perceptron (MLP) classifier based on the PyTorch framework to explore the differentiation between glioma and solitary brain metastasis from lung cancer and its subtypes. The MLP classifier consists of three fully connected layers: at the first layer, the number of neurons was determined by the number of input features; while at the second and the third layers, there were 10 and 8 neurons, which were determined based on experience. To contrast with the MLP, we also adopted three authoritative classifiers, namely the support vector machine (SVM), random forest (RF), and logistic regression (LR). We calculated the sensitivity, specificity, accuracy, and area under curve (AUC) of the receiver operating characteristic (ROC) in the training group and validation group (Fig. <ref type="figure">1</ref>).</p><p>(1) z = (x -)</p><p>Fig. <ref type="figure">1</ref> Workflow of the study 3 Results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Features of patients</head><p>In this study, a total of 105 patients with gliomas were included, including 71 patients with HGG, and 34 patients with low-grade glioma (LGG). A total of 172 patients with lung cancer SBM were also included, with 34 patients with small cell lung cancer SBM, and 138 with non-small cell lung cancer (104 with lung adenocarcinoma, 24 with squamous carcinoma, 5 with adenosquamous carcinoma, 3 with large cell lung cancer, and 2 with other tumors). The patients were divided into the training group and validation group in an 8:2 ratio. There was no significant difference in gender and age between the groups (Table <ref type="table">1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Differentiation of high/low grade glioma and SBM</head><p>The </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Differentiation between HGG and brain metastasis from small cell lung cancer</head><p>The data of SBM from small cell lung cancer were enhanced for 71 cases, and the HGG/SCLC SBM differentiation models were established. Eleven features were extracted, and the results showed that the MLP and SVM classifier model in the validation groups had the best diagnostic efficiency; the accuracy of the MLP and SVM classifier model for HGG/SCLC SBM in the validation group was 0.966 and AUC was 1.000 (Table <ref type="table" target="#tab_2">4</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Differentiation between HGG and brain metastasis from non-small cell lung cancer</head><p>The data of HGG were enhanced for 138 cases, and the HGG/NSCLC SBM differentiation models were established. Thirteen features were extracted, and the results showed that the MLP classifier model in the validation groups had the best diagnostic efficiency; the accuracy of the MLP classifier model for HGG/SCLC SBM in the validation group was 0.982 and AUC was 0.999 (Table <ref type="table" target="#tab_3">5</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>In this retrospective we differentiated between glioma and solitary brain metastasis from lung cancer and its subtypes by using a radiomics approach, and also adopted MLP, SVM, RF, and LR models. The results showed that the radiomics models had a high diagnostic efficiency in the differentiation of high grade glioma and solitary brain metastasis from lung cancer and its subtypes, in which, the MLP model had the best diagnostic efficiency in the validation groups.</p><p>One of the findings in this study was that the radiomics model was established for accurate preoperative differentiation of HGG and SBM. Since HGG had similar imaging findings to brain metastasis, especially solitary brain metastasis, the accuracy of preoperative diagnosis was low. Glioma and brain metastasis had different origins, as well as staging, screening, and treatment methods. Generally, gliomas only require focus on intracranial lesions, which rarely metastasize to other sites. As for brain metastasis with unknown primary lesions, key sites should be screened to identify the primary lesions for staging, to determine the subsequent treatment. Therefore, preoperative differentiation played an important role. Although the operation or aspiration biopsy can differentiate between the two tumors, when the tumor was close to or in a functional area of the brain or when the patient was too weak to undergo the operation, only the non-invasive mode could be selected for differentiation <ref type="bibr" target="#b14">[15]</ref>. Conventional MRI is the most commonly used imaging differentiation method, however, it has low accuracy, for example, HGG was the most common type with peritumor enhancement of T1WI (about 40%), followed by tumor metastasis (about 30%) <ref type="bibr" target="#b15">[16]</ref>. Some studies showed that multi-parameter MRI could better differentiate between the two tumors <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>. In the case of multiparametric joint application, Kerim et al. <ref type="bibr" target="#b5">[6]</ref> established an optimal model for the differentiation of HGG and brain metastasis, with an AUC of 0.970. However, the results are affected by the scanning machine, scanning conditions, and the post-processing methods used in clinical practice <ref type="bibr" target="#b16">[17]</ref>.</p><p>The radiomics approach has become a promising method for tumor diagnosis, outcome prediction, and prognosis evaluation <ref type="bibr" target="#b17">[18]</ref>. It was found to have outstanding advantages in the analysis of different types of tumors and their prognosis. Currently, studies have been conducted involving the lung, liver, cardiovascular, and neurological areas <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref><ref type="bibr" target="#b21">[22]</ref>. Moran et al. <ref type="bibr" target="#b22">[23]</ref> analyzed 212 patients with glioblastoma and 227 patients with brain metastasis based on machine learning, and concluded that the SVM classifier could best differentiate between the glioblastoma and brain metastasis, with the average accuracy of 0.85, sensitivity of 0.86, specificity of 0.85, and AUC of 0.96. In this study, the accuracy and AUC of the four HGG/SBM classifiers were higher than those in the previous studies; MLP had the highest comprehensive diagnostic effectiveness, and the accuracy and AUC in the validation groups of the HGG/SBM were 0.992 (accuracy) and 1.000 (AUC), respectively. Karoline et al. <ref type="bibr" target="#b23">[24]</ref> demonstrated that the heterogeneity of the solid part of the tumor had no significant difference; however, the heterogeneity of GBM peritumoral edema was significantly higher than that of solitary brain metastasis, with the sensitivity and specificity of 80% and 90%, respectively. In contrast to the study conducted by Karoline et al., Qin et al. <ref type="bibr" target="#b24">[25]</ref> extracted the features of the solid part of the tumor, differentiated between glioblastoma and SBM based on machine learning, and obtained an AUC of 0.94 and accuracy of 95%. Our results are consistent with the results of their study. Machiko et al. <ref type="bibr" target="#b25">[26]</ref> found that machine learning based on a combination of texture parameters from multiple sequences outperformed machine learning from individual sequences. The AUC of the model for differentiating HGG and brain metastasis in combination with T2WI, CE-T1WI, and ADC was 0.92, and the AUC of a simple sequence was inferior to the results of the combination. Studies have used radiomics methods based on CT, PET, and PET-CT fusion to predict the survival of patients with head and neck squamous cell carcinoma, and have achieved good results <ref type="bibr" target="#b26">[27,</ref><ref type="bibr" target="#b27">28]</ref>. Here, we studied the single sequence of CE-T1WI The reasons are as follows: (1) In the delineation and feature extraction of ROI, there are more single sequences with less workload and shorter time required. This study attempts to explore simpler, faster, and more efficient radiomics methods for distinguishing; (2) Some lung cancer patients only underwent a single sequence examination to determine whether there was intracranial metastasis. In order to obtain more data and make the model more accurate, this study first only used CE-T1WI images. We obtained better results. As for the reasons, firstly, the authoritative algorithm SVM was generally used in the past, however in this study, we used MLP, which was confirmed to be significantly superior to SVM. Secondly, previous studies focused on the differentiation of HGG and brain metastases of multiple primary foci (lung, breast, gastrointestinal tract, etc.); whereas in clinical practice, the larger SBM from lung cancer was harder to be differentiated from glioma, and there was a higher incidence of brain metastasis from lung cancer. Therefore, the results of this study are more accurate and have greater clinical significance.</p><p>As per the results of several studies, the most commonly used classifiers for differentiating glioma and tumor metastasis were support vector machine (SVM) and k-nearest neighbor (KNN); SVM performed well, and as a traditional machine learning method, it is a commonly used algorithm in neuroradiological predictive modeling by virtue of its simplicity and flexibility <ref type="bibr" target="#b28">[29]</ref>. We used the MLP classifier in this study. With a wide application scope and strong scalability, MLP can fit complex functions with a generic function approximation method, and solve the non-linear classification problem. As no classifier is universally considered the best and accepted in clinical practice, we compared MLP and the three authoritative classifiers, and evaluated their diagnostic efficiency in this study. The results revealed that MLP had good diagnostic efficiency in the validation group, and the results of other classifiers were higher than the previous diagnostic efficiency. New directions and ideas have been provided for future radiomics research to distinguish between gliomas, metastatic tumors, and other brain tumors. Our research also utilized data augmentation methods to address the most common issue of small data volume in radiomics training models.</p><p>In this study, we explored the machine learning method for preoperative differentiation of low-grade glioma and brain metastasis. For most low-grade gliomas, especially those that are Grade I as classified by the WHO guidelines, the MRI showed a low signal without significant enhancement, and no edema, necrosis, or cystic areas. The imaging findings of these gliomas and brain metastases were significantly different, and they could be easily differentiated preoperatively. Some lesions tent to have similar imaging findings to brain metastases, such as ring enhancement and peritumoral edema. Peritumoral edema of low-grade glioma and brain metastasis may be caused by secondary ischemia due to the stress of the tumor on the peripheral cerebral parenchyma; therefore, they cannot be easily differentiated based on conventional MRI and even functional MRI (such as MRS and ASL). In this study, a total of 14 features extracted by machine learning were used for modeling and differentiating LGG/SBM, and a higher accuracy and AUC were obtained.</p><p>Another finding in this study is that the radiomics model based on machine learning can differentiate between HGG and brain metastasis from small cell lung cancer/non-small cell lung cancer. At present, there is no research on distinguishing subtypes of gliomas from solitary lung cancer brain metastases and lung cancer brain metastases. Small cell lung cancer and non-small cell lung cancer have different treatment modalities, and the treatment of brain metastasis may differ greatly. As for patients with asymptomatic brain metastasis from NSCLC, systemic therapy can be performed, and as for symptomatic patients with no more than three brain metastases, surgery, stereotactic radiotherapy (SRT), or SRT combined with whole brain radiotherapy (WBRT) can be performed. For patients with asymptomatic brain metastasis from SCLC, systemic chemotherapy can be performed, followed by WBRT, while for symptomatic patients, WBRT can be performed actively <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b30">31]</ref>. Patients with brain metastasis from SCLC and NSCLC are treated with different chemotherapy drugs <ref type="bibr" target="#b31">[32,</ref><ref type="bibr" target="#b32">33]</ref>. In this study, we explored a method that can differentiate between brain metastasis from SCLC/NSCLC and glioma, and its diagnostic efficiency was high. Therefore, it can identify whether the primary focus in the lung is small cell lung cancer, thereby providing a reference for clinical treatment and medication; furthermore, some patients cannot undergo surgery or aspiration biopsy to determine the pathological types of lung cancer due to physical or other reasons.</p><p>This study has several limitations, firstly, as a retrospective study, the sample may be biased; secondly, the data volume of high/low grade glioma was small-there were only 34 patients with low grade glioma, and 172 patients with glioma, showing a big difference in data, however, the data enhancement method adopted in this study reduced the difference. ROI was outlined manually, showing strong subjectivity, great workload, and low efficiency. The data in the training and validation groups were collected from the same hospital, and were not validated by an external validation set; they had the same scanning parameters and a single source of patients. Another drawback of this study is that the clinical symptoms and laboratory indicators of gliomas and brain metastases were not included in the study. We only used machine learning methods and did not explore deep learning methods. In terms of experimental design, only a single sequence CE-TIWI was used to study the tumor enhancement area, without including edema around gliomas and metastatic tumors, adjacent cortical signal changes, other sequences other than CE-T1WI, or CT, PET, and other images. When delineating ROI, there is also uncertainty in determining the boundary of the necrotic zone. In the future, these shortcomings can be resolved by expanding the sample size, working with multiple centers, including the clinical symptoms and laboratory indicators of gliomas and brain metastases, and exploring automatic outlining of ROI <ref type="bibr" target="#b33">[34]</ref><ref type="bibr" target="#b34">[35]</ref><ref type="bibr" target="#b35">[36]</ref>.</p><p>To summarize, the MRI radiomics model has a certain application value for the differentiation of glioma and solitary brain metastasis from lung cancer and its subtypes, and can provide more information for clinical evaluation, staging, medication, and prognosis, thereby offering new ideas for precise differentiation of glioma and solitary brain metastasis from lung cancer and its subtypes. In the future, we can also conduct research on machine learning or deep learning based on tumor surrounding edema, adjacent cortical signal changes, sequences other than CE-T1WI, or images such as CT and PET.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="4,184.25,389.42,360.00,326.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2</head><label>2</label><figDesc>data of high/low grade glioma were enhanced for 172 cases and the HGG/SBM and LGG/SBM differentiation models were established, and 12/14 features were extracted, respectively. The results showed that MLP classifier model in the validation groups had the best diagnostic efficiency; the accuracy of the HGG/SBM MLP classifier model in the validation group was 0.992 and AUC was 1.000; while the highest accuracy of the LGG/SBM MLP and RF classifier model in the validation group was 0.986 and the SVM classifier model with the highest AUC was 0.999. (The accuracy, sensitivity, specificity, and AUC of each classifier in the training and validation groups are shown in Tables2 and 3.)Classification results for the HGG and SBM HGG, high-grade glioma; SBM, solitary brain metastasis; val, validation; MLP, multiple layer perceptron; SVM, support vector machine; RF, Random Forest; LR, Logistic regression</figDesc><table><row><cell cols="3">Table1 Patient characteristics table</cell><cell></cell><cell></cell><cell>HGG</cell><cell></cell><cell>LGG</cell><cell cols="2">SCLC</cell><cell>NSCLC</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">Patients (277)</cell><cell>71</cell><cell></cell><cell>34</cell><cell>34</cell><cell></cell><cell>138</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">Age years (mean)</cell><cell>61</cell><cell></cell><cell>53</cell><cell>68</cell><cell></cell><cell>62</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Male</cell><cell></cell><cell>48</cell><cell></cell><cell>22</cell><cell>20</cell><cell></cell><cell>83</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Female</cell><cell></cell><cell>23</cell><cell></cell><cell>12</cell><cell>14</cell><cell></cell><cell>55</cell></row><row><cell></cell><cell>Val</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Train</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Accuracy</cell><cell>AUC</cell><cell>Precision</cell><cell>Sensitivity</cell><cell>Specificity</cell><cell>Accuracy</cell><cell>AUC</cell><cell>Precision</cell><cell>Sensitivity</cell><cell>Specificity</cell></row><row><cell>MLP</cell><cell>0.992</cell><cell>1.000</cell><cell>0.982</cell><cell>1.000</cell><cell>0.968</cell><cell>0.980</cell><cell>0.998</cell><cell>0.980</cell><cell>0.980</cell><cell>0.980</cell></row><row><cell>SVM</cell><cell>0.978</cell><cell>0.996</cell><cell>0.982</cell><cell>0.982</cell><cell>0.969</cell><cell>0.970</cell><cell>0.994</cell><cell>0.980</cell><cell>0.960</cell><cell>0.980</cell></row><row><cell>RF</cell><cell>0.989</cell><cell>1.000</cell><cell>0.983</cell><cell>1.000</cell><cell>0.969</cell><cell>0.950</cell><cell>1.000</cell><cell>0.909</cell><cell>1.000</cell><cell>0.900</cell></row><row><cell>LR</cell><cell>0.989</cell><cell>1.000</cell><cell>0.983</cell><cell>1.000</cell><cell>0.969</cell><cell>0.940</cell><cell>0.993</cell><cell>0.907</cell><cell>0.980</cell><cell>0.900</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3</head><label>3</label><figDesc>Classification results for the LGG and SBM</figDesc><table><row><cell>Val</cell></row></table><note><p>LGG, low-grade glioma; SBM, solitary brain metastasis; val, validation; MLP, multiple layer perceptron; SVM, support vector machine; RF, Random Forest; LR, Logistic regression</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4</head><label>4</label><figDesc>Classification results for the HGG and SCLC SBM HGG, high-grade glioma; SCLC, small cell lung canser; SBM, solitary brain metastasis; val, validation; MLP, multiple layer perceptron; SVM, support vector machine; RF, Random Forest; LR, Logistic regression</figDesc><table><row><cell>Val</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5</head><label>5</label><figDesc>Classification results for the HGG and NSCLC SBM HGG, high-grade glioma; SCLC, non-small cell lung canser; SBM, solitary brain metastasis; val, validation; MLP, multiple layer perceptron; SVM, support vector machine; RF, Random Forest; LR, Logistic regression</figDesc><table><row><cell>Val</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Vol.:(0123456789)</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Vol:.(1234567890)</p></note>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We would like to acknowledge the hard and dedicated work of all the staff that implemented the intervention and evaluation components of the study.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div><p>Funding <rs type="programName">2021 Government-funded clinical medicine talent training</rs> project (No. <rs type="grantNumber">2021379</rs>). Supported by <rs type="funder">Medical Science Foundation of Hebei University</rs> (No. <rs type="grantNumber">2023X01</rs>). <rs type="institution">Hebei Key Laboratory</rs> of precise imaging of inflammation related tumors.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_4VP69u3">
+					<idno type="grant-number">2021379</idno>
+					<orgName type="program" subtype="full">2021 Government-funded clinical medicine talent training</orgName>
+				</org>
+				<org type="funding" xml:id="_33Uymcv">
+					<idno type="grant-number">2023X01</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Data availability All data generated or analysed during this study are included in this article. Further enquiries can be directed to the corresponding author.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Author contributions Conception and design of the research: FYZ, JNW. Acquisition of data: LHX, ZPM. Analysis and interpretation of the data: YFS, YZ, LYX. Statistical analysis: XPY, LHX. Obtaining financing: JNW, XPY, FYZ, YZ, LHX, ZPM. Writing of the manuscript: FYZ, YFS. Critical revision of the manuscript for intellectual content: JNW, LYX. All authors read and approved the final draft.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Ethics approval and consent to participate This study was conducted with approval from the Ethics Committee of Affiliated Hospital of Hebei University (HDFY-LL-2022-084). This study was conducted in accordance with the declaration of Helsinki. Due to the retrospective nature of this study, a waiver of informed consent was obtained.</p><p>Consent for publication Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare that they have no competing interests.</p><p>Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ref type="url" target="http://creativecommons.org/licenses/by/4.0/">http:// creat iveco mmons. org/ licen ses/ by/4. 0/</ref>.</p><p>Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Epidemiology of Gliomas</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haley</forename><surname>Gittleman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lindsay</forename><surname>Stetson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Selene</forename><forename type="middle">M</forename><surname>Virk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-12048-5_1</idno>
+		<ptr target="https://doi.org/10.1007/978-3-319-12048-5_1" />
+	</analytic>
+	<monogr>
+		<title level="m">Cancer Treatment and Research</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Gittleman H, Stetson L, Virk SM, Barnholtz-Sloan JS. Epidemiology of gliomas. Cancer Treat Res. 2015;163:1-14. https:// doi. org/ 10. 1007/ 978-3-319-12048-5_1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The epidemiology of glioma in adults: a &quot;state of the science&quot; review</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bauchet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">G</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Deltour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Langer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Schwartzbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Wrensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/nou087</idno>
+		<ptr target="https://doi.org/10.1093/neuonc/nou087" />
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<title level="j" type="abbrev">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="896" to="913" />
+			<date type="published" when="2014-05-19">2014</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Bauchet L, Davis FG, Deltour I, Fisher JL, Langer CE, Pekmezci M, Schwartzbaum JA, Turner MC, Walsh KM, Wrensch MR, Barnholtz-Sloan JS. The epidemiology of glioma in adults: a &quot;state of the science&quot; review. Neuro Oncol. 2014;16(7):896-913. https:// doi. org/ 10. 1093/ neuonc/ nou087.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The evolving clinical management of cerebral metastases</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sinha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Sage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Watts</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejso.2016.10.006</idno>
+		<ptr target="https://doi.org/10.1016/j.ejso.2016.10.006" />
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Surgical Oncology (EJSO)</title>
+		<title level="j" type="abbrev">European Journal of Surgical Oncology (EJSO)</title>
+		<idno type="ISSN">0748-7983</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1173" to="1185" />
+			<date type="published" when="2017-07">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sinha R, Sage W, Watts C. The evolving clinical management of cerebral metastases. Eur J Surg Oncol. 2017;43(7):1173-85. https:// doi. org/ 10. 1016/j. ejso. 2016. 10. 006.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Metastasis in Adult Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Ramon</forename><forename type="middle">Francisco</forename><surname>Barajas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soonmee</forename><surname>Cha</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nic.2016.06.008</idno>
+		<ptr target="https://doi.org/10.1016/j.nic.2016.06.008" />
+	</analytic>
+	<monogr>
+		<title level="j">Neuroimaging Clinics of North America</title>
+		<title level="j" type="abbrev">Neuroimaging Clinics of North America</title>
+		<idno type="ISSN">1052-5149</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="601" to="620" />
+			<date type="published" when="2016-11">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barajas RF Jr, Cha S. Metastasis in adult brain tumors. Neuroimaging Clin N Am. 2016;26(4):601-20. https:// doi. org/ 10. 1016/j. nic. 2016. 06. 008.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Differentiation of glioblastoma multiforme from metastatic brain tumor using proton magnetic resonance spectroscopy, diffusion and perfusion metrics at 3 T</title>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Tsougos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Svolos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evanthia</forename><surname>Kousi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantinos</forename><surname>Fountas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyriaki</forename><surname>Theodorou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Fezoulidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eftychia</forename><surname>Kapsalaki</surname></persName>
+		</author>
+		<idno type="DOI">10.1102/1470-7330.2012.0038</idno>
+		<ptr target="https://doi.org/10.1102/1470-7330.2012.0038" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Imaging</title>
+		<title level="j" type="abbrev">Cancer Imaging</title>
+		<idno type="ISSNe">1470-7330</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="423" to="436" />
+			<date type="published" when="2012">2012</date>
+			<publisher>E-MED LTD</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tsougos I, Svolos P, Kousi E, Fountas K, Theodorou K, Fezoulidis I, Kapsalaki E. Differentiation of glioblastoma multiforme from metastatic brain tumor using proton magnetic resonance spectroscopy, diffusion and perfusion metrics at 3 T. Cancer Imaging. 2012;12(3):423-36. https:// doi. org/ 10. 1102/ 1470-7330. 2012. 0038.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Multiparametric MRI in differentiating solitary brain metastasis from high-grade glioma: diagnostic value of the combined use of diffusion-weighted imaging, dynamic susceptibility contrast imaging, and magnetic resonance spectroscopy parameters</title>
+		<author>
+			<persName><forename type="first">Kerim</forename><surname>Aslan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hediye</forename><forename type="middle">Pinar</forename><surname>Gunbey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leman</forename><surname>Tomak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lutfi</forename><surname>Incesu</surname></persName>
+		</author>
+		<idno type="DOI">10.5603/pjnns.a2019.0024</idno>
+		<ptr target="https://doi.org/10.5603/PJNNS.a2019.0024" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurologia i Neurochirurgia Polska</title>
+		<title level="j" type="abbrev">Neurol Neurochir Pol.</title>
+		<idno type="ISSN">0028-3843</idno>
+		<idno type="ISSNe">1897-4260</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="227" to="237" />
+			<date type="published" when="2019">2019</date>
+			<publisher>VM Media Group sp. z o.o</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aslan K, Gunbey HP, Tomak L, Incesu L. Multiparametric MRI in differentiating solitary brain metastasis from high-grade glioma: diagnostic value of the combined use of diffusion-weighted imaging, dynamic susceptibility contrast imaging, and magnetic resonance spectroscopy parameters. Neurol Neurochir Pol. 2019;53(3):227-37. https:// doi. org/ 10. 5603/ PJNNS. a2019. 0024.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The role of cerebral blood flow gradient in peritumoral edema for differentiation of glioblastomas from solitary metastatic lesions</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunjing</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hailong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinming</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodan</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.18632/oncotarget.12053</idno>
+		<ptr target="https://doi.org/10.18632/oncotarget.12053" />
+	</analytic>
+	<monogr>
+		<title level="j">Oncotarget</title>
+		<title level="j" type="abbrev">Oncotarget</title>
+		<idno type="ISSNe">1949-2553</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">42</biblScope>
+			<biblScope unit="page" from="69051" to="69059" />
+			<date type="published" when="2016-09-15">2016</date>
+			<publisher>Impact Journals, LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lin L, Xue Y, Duan Q, Sun B, Lin H, Huang X, Chen X. The role of cerebral blood flow gradient in peritumoral edema for differentiation of glioblastomas from solitary metastatic lesions. Oncotarget. 2016;7(42):69051-9. https:// doi. org/ 10. 18632/ oncot arget. 12053.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Glioblastomas and brain metastases differentiation following an MRI texture analysis-based radiomics approach</title>
+		<author>
+			<persName><forename type="first">Rafael</forename><surname>Ortiz-Ramón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silvia</forename><surname>Ruiz-España</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrique</forename><surname>Mollá-Olmos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Moratal</surname></persName>
+			<idno type="ORCID">0000-0002-2825-3646</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ejmp.2020.06.016</idno>
+		<ptr target="https://doi.org/10.1016/j.ejmp.2020.06.016" />
+	</analytic>
+	<monogr>
+		<title level="j">Physica Medica</title>
+		<title level="j" type="abbrev">Physica Medica</title>
+		<idno type="ISSN">1120-1797</idno>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="44" to="54" />
+			<date type="published" when="2020-08">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ortiz-Ramón R, Ruiz-España S, Mollá-Olmos E, Moratal D. Glioblastomas and brain metastases differentiation following an MRI texture analysis-based radiomics approach. Phys Med. 2020;76:44-54. https:// doi. org/ 10. 1016/j. ejmp. 2020. 06. 016.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Application of MR morphologic, diffusion tensor, and perfusion imaging in the classification of brain tumors using machine learning scheme</title>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Shrot</surname></persName>
+			<idno type="ORCID">0000-0001-8954-3244</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Moshe</forename><surname>Salhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nir</forename><surname>Dvorski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eli</forename><surname>Konen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>Averbuch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00234-019-02195-z</idno>
+		<ptr target="https://doi.org/10.1007/s00234-019-02195-z" />
+	</analytic>
+	<monogr>
+		<title level="j">Neuroradiology</title>
+		<title level="j" type="abbrev">Neuroradiology</title>
+		<idno type="ISSN">0028-3940</idno>
+		<idno type="ISSNe">1432-1920</idno>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="757" to="765" />
+			<date type="published" when="2019-04-04">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shrot S, Salhov M, Dvorski N, Konen E, Averbuch A, Hoffmann C. Application of MR morphologic, diffusion tensor, and perfusion imag- ing in the classification of brain tumors using machine learning scheme. Neuroradiology. 2019;61(7):757-65. https:// doi. org/ 10. 1007/ s00234-019-02195-z.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Radiomics-Based Machine Learning in Differentiation Between Glioblastoma and Metastatic Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Chaoyue</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejin</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuelei</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2019.00806</idno>
+		<ptr target="https://doi.org/10.3389/fonc.2019.00806" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">806</biblScope>
+			<date type="published" when="2019-08-22">2019</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen C, Ou X, Wang J, Guo W, Ma X. Radiomics-based machine learning in differentiation between glioblastoma and metastatic brain tumors. Front Oncol. 2019;22(9):806. https:// doi. org/ 10. 3389/ fonc. 2019. 00806.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Development and Validation of a Deep Learning–Based Model to Distinguish Glioblastoma from Solitary Brain Metastasis Using Conventional MR Images</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Shin</surname></persName>
+			<idno type="ORCID">0000-0002-2046-9426</idno>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0001-7778-8973</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Ahn</surname></persName>
+			<idno type="ORCID">0000-0002-0503-5558</idno>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sohn</surname></persName>
+			<idno type="ORCID">0000-0002-6765-8056</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bae</surname></persName>
+			<idno type="ORCID">0000-0002-5048-4627</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-4419-4682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-9477-7421</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S-K</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0001-5646-4072</idno>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a7003</idno>
+		<ptr target="https://doi.org/10.3174/ajnr.A7003" />
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="838" to="844" />
+			<date type="published" when="2021-03-18">2021</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shin I, Kim H, Ahn SS, Sohn B, Bae S, Park JE, Kim HS, Lee SK. Development and validation of a deep learning-based model to distinguish glioblastoma from solitary brain metastasis using conventional MR images. AJNR Am J Neuroradiol. 2021;42(5):838-44. https:// doi. org/ 10. 3174/ ajnr. A7003.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Distinct tumor signatures using deep learning-based characterization of the peritumoral microenvironment in glioblastomas and brain metastases</title>
+		<author>
+			<persName><forename type="first">Zahra</forename><forename type="middle">Riahi</forename><surname>Samani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wes</forename><surname>Hodges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Brem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-93804-6</idno>
+		<ptr target="https://doi.org/10.1038/s41598-021-93804-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">14469</biblScope>
+			<date type="published" when="2021-07-14">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Samani ZR, Parker D, Wolf R, Hodges W, Brem S, Verma R. Distinct tumor signatures using deep learning-based characterization of the peritumoral microenvironment in glioblastomas and brain metastases. Sci Rep. 2021;11(1):14469. https:// doi. org/ 10. 1038/ s41598-021-93804-6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Webster</forename><forename type="middle">K</forename><surname>Cavenee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroko</forename><surname>Ohgaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otmar</forename><forename type="middle">D</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Kleihues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-016-1545-1</idno>
+		<ptr target="https://doi.org/10.1007/s00401-016-1545-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="803" to="820" />
+			<date type="published" when="2016-05-09">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis DN, Perry A, Reifenberger G, von Deimling A, Figarella-Branger D, Cavenee WK, Ohgaki H, Wiestler OD, Kleihues P, Ellison DW. The 2016 World Health Organization classification of tumors of the central nervous system: a summary. Acta Neuropathol. 2016;131(6):803-20. https:// doi. org/ 10. 1007/ s00401-016-1545-1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">From Whole-Brain Radiotherapy to Immunotherapy: A Multidisciplinary Approach for Patients with Brain Metastases from NSCLC</title>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Protopapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vassilis</forename><surname>Kouloulias</surname></persName>
+			<idno type="ORCID">0000-0003-2082-7323</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Styliani</forename><surname>Nikoloudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Papadimitriou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giannis</forename><surname>Gogalis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Zygogianni</surname></persName>
+			<idno type="ORCID">0000-0001-9698-6852</idno>
+		</author>
+		<idno type="DOI">10.1155/2019/3267409</idno>
+		<ptr target="https://doi.org/10.1155/2019/3267409" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Oncology</title>
+		<title level="j" type="abbrev">Journal of Oncology</title>
+		<idno type="ISSN">1687-8450</idno>
+		<idno type="ISSNe">1687-8469</idno>
+		<imprint>
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2019-02-03">2019. 2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Protopapa M, Kouloulias V, Nikoloudi S, Papadimitriou C, Gogalis G, Zygogianni A. From whole-brain radiotherapy to immunotherapy: a multidisciplinary approach for patients with brain metastases from NSCLC. J Oncol. 2019;3(2019):3267409. https:// doi. org/ 10. 1155/ 2019/ 32674 09.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Discrimination between Metastasis and Glioblastoma Multiforme Based on Morphometric Analysis of MR Images</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Blanchet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W T</forename><surname>Krooshof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">J</forename><surname>Postma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Idema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Goraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heerschap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M C</forename><surname>Buydens</surname></persName>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a2269</idno>
+		<ptr target="https://doi.org/10.3174/ajnr.A2269" />
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="67" to="73" />
+			<date type="published" when="2011">2011</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Blanchet L, Krooshof PW, Postma GJ, Idema AJ, Goraj B, Heerschap A, Buydens LM. Discrimination between metastasis and glioblastoma multiforme based on morphometric analysis of MR images. AJNR Am J Neuroradiol. 2011;32(1):67-73. https:// doi. org/ 10. 3174/ ajnr. A2269.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Pattern of T2 hypointensity associated with ring-enhancing brain lesions can help to differentiate pathology</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lucchinetti</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00234-005-0024-5</idno>
+		<ptr target="https://doi.org/10.1007/s00234-005-0024-5" />
+	</analytic>
+	<monogr>
+		<title level="j">Neuroradiology</title>
+		<title level="j" type="abbrev">Neuroradiology</title>
+		<idno type="ISSN">0028-3940</idno>
+		<idno type="ISSNe">1432-1920</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="143" to="149" />
+			<date type="published" when="2006-01-31">2006</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schwartz KM, Erickson BJ, Lucchinetti C. Pattern of T2 hypointensity associated with ring-enhancing brain lesions can help to differentiate pathology. Neuroradiology. 2006;48(3):143-9. https:// doi. org/ 10. 1007/ s00234-005-0024-5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Differentiation of primary central nervous system lymphoma from high-grade glioma and brain metastasis using arterial spin labeling and dynamic contrast-enhanced magnetic resonance imaging</title>
+		<author>
+			<persName><forename type="first">Yi-Bin</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao-Wei</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ning</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting-Ting</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan-Qiang</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guang</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Yin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejrad.2019.01.008</idno>
+		<ptr target="https://doi.org/10.1016/j.ejrad.2019.01.008" />
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Radiology</title>
+		<title level="j" type="abbrev">European Journal of Radiology</title>
+		<idno type="ISSN">0720-048X</idno>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page" from="59" to="64" />
+			<date type="published" when="2019-03">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xi YB, Kang XW, Wang N, Liu TT, Zhu YQ, Cheng G, Wang K, Li C, Guo F, Yin H. Differentiation of primary central nervous system lymphoma from high-grade glioma and brain metastasis using arterial spin labeling and dynamic contrast-enhanced magnetic resonance imaging. Eur J Radiol. 2019;112:59-64. https:// doi. org/ 10. 1016/j. ejrad. 2019. 01. 008.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Radiomics: Images Are More than Pictures, They Are Data</title>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">J</forename><surname>Gillies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">E</forename><surname>Kinahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hedvig</forename><surname>Hricak</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2015151169</idno>
+		<ptr target="https://doi.org/10.1148/radiol.2015151169" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">278</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="563" to="577" />
+			<date type="published" when="2016-02">2016</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gillies RJ, Kinahan PE, Hricak H. Radiomics: images are more than pictures, they are data. Radiology. 2016;278(2):563-77. https:// doi. org/ 10. 1148/ radiol. 20151 51169.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Software performance in segmenting ground-glass and solid components of subsolid nodules in pulmonary adenocarcinomas</title>
+		<author>
+			<persName><forename type="first">Julien</forename><forename type="middle">G</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Mo</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roh-Eul</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><forename type="middle">Min</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><forename type="middle">Hyun</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bram</forename><surname>Van Ginneken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doo</forename><forename type="middle">Hyun</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Young</forename><forename type="middle">Tae</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-016-4317-3</idno>
+		<ptr target="https://doi.org/10.1007/s00330-016-4317-3" />
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="4465" to="4474" />
+			<date type="published" when="2016-04-05">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cohen JG, Goo JM, Yoo RE, Park CM, Lee CH, van Ginneken B, Chung DH, Kim YT. Software performance in segmenting ground-glass and solid components of subsolid nodules in pulmonary adenocarcinomas. Eur Radiol. 2016;26(12):4465-74. https:// doi. org/ 10. 1007/ s00330-016-4317-3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Radiomics-based classification of hepatocellular carcinoma and hepatic haemangioma on precontrast magnetic resonance images</title>
+		<author>
+			<persName><forename type="first">Jingjun</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ailian</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingjing</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anliang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingwei</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lizhi</forename><surname>Xie</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-019-0321-9</idno>
+		<ptr target="https://doi.org/10.1186/s12880-019-0321-9" />
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">23</biblScope>
+			<date type="published" when="2019-03-11">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wu J, Liu A, Cui J, Chen A, Song Q, Xie L. Radiomics-based classification of hepatocellular carcinoma and hepatic haemangioma on pre- contrast magnetic resonance images. BMC Med Imaging. 2019;19(1):23. https:// doi. org/ 10. 1186/ s12880-019-0321-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Maximization of the usage of coronary CTA derived plaque information using a machine learning based algorithm to improve risk stratification; insights from the CONFIRM registry</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">R</forename><surname>Van Rosendael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Maliakal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kranthi</forename><forename type="middle">K</forename><surname>Kolli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><surname>Beecy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Subhi</forename><forename type="middle">J</forename><surname>Al’aref</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aeshita</forename><surname>Dwivedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gurpreet</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohit</forename><surname>Panday</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyue</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Achenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mouaz</forename><forename type="middle">H</forename><surname>Al-Mallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniele</forename><surname>Andreini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><forename type="middle">J</forename><surname>Bax</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Berman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">J</forename><surname>Budoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filippo</forename><surname>Cademartiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tracy</forename><forename type="middle">Q</forename><surname>Callister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyuk-Jae</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kavitha</forename><surname>Chinnaiyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">J W</forename><surname>Chow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">C</forename><surname>Cury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Augustin</forename><surname>Delago</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gudrun</forename><surname>Feuchtner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Hadamitzky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joerg</forename><surname>Hausleiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><forename type="middle">A</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong-Jin</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathon</forename><forename type="middle">A</forename><surname>Leipsic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erica</forename><surname>Maffei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Marques</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Pontone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gilbert</forename><forename type="middle">L</forename><surname>Raff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronen</forename><surname>Rubinshtein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leslee</forename><forename type="middle">J</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Villines</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heidi</forename><surname>Gransar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erica</forename><forename type="middle">C</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jessica</forename><forename type="middle">M</forename><surname>Peña</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fay</forename><forename type="middle">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">K</forename><surname>Min</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jcct.2018.04.011</idno>
+		<ptr target="https://doi.org/10.1016/j.jcct.2018.04.011" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cardiovascular Computed Tomography</title>
+		<title level="j" type="abbrev">Journal of Cardiovascular Computed Tomography</title>
+		<idno type="ISSN">1934-5925</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="204" to="209" />
+			<date type="published" when="2018-05">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">van Rosendael AR, Maliakal G, Kolli KK, Beecy A, Al&apos;Aref SJ, Dwivedi A, Singh G, Panday M, Kumar A, Ma X, Achenbach S, Al-Mallah MH, Andreini D, Bax JJ, Berman DS, Budoff MJ, Cademartiri F, Callister TQ, Chang HJ, Chinnaiyan K, Chow BJW, Cury RC, DeLago A, Feuchtner G, Hadamitzky M, Hausleiter J, Kaufmann PA, Kim YJ, Leipsic JA, Maffei E, Marques H, Pontone G, Raff GL, Rubinshtein R, Shaw LJ, Villines TC, Gransar H, Lu Y, Jones EC, Peña JM, Lin FY, Min JK. Maximization of the usage of coronary CTA derived plaque information using a machine learning based algorithm to improve risk stratification; insights from the CONFIRM registry. J Cardiovasc Comput Tomogr. 2018;12(3):204-9. https:// doi. org/ 10. 1016/j. jcct. 2018. 04. 011.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Early Identification of High-Risk TIA or Minor Stroke Using Artificial Neural Network</title>
+		<author>
+			<persName><forename type="first">Ka</forename><forename type="middle">Lung</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyi</forename><surname>Leng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weinan</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanli</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannie</forename><surname>Soo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ka</forename><forename type="middle">Sing</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">W</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fneur.2019.00171</idno>
+		<ptr target="https://doi.org/10.3389/fneur.2019.00171" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neurology</title>
+		<title level="j" type="abbrev">Front. Neurol.</title>
+		<idno type="ISSNe">1664-2295</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">171</biblScope>
+			<date type="published" when="2019-03-01">2019</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chan KL, Leng X, Zhang W, Dong W, Qiu Q, Yang J, Soo Y, Wong KS, Leung TW, Liu J. Early identification of high-risk TIA or minor stroke using artificial neural network. Front Neurol. 2019;1(10):171. https:// doi. org/ 10. 3389/ fneur. 2019. 00171.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Differentiation between glioblastoma, brain metastasis and subtypes using radiomics analysis</title>
+		<author>
+			<persName><forename type="first">Moran</forename><surname>Artzi</surname></persName>
+			<idno type="ORCID">0000-0003-4214-1875</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Idan</forename><surname>Bressler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dafna</forename><surname>Ben Bashat</surname></persName>
+			<idno type="ORCID">0000-0001-8396-1031</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.26643</idno>
+		<ptr target="https://doi.org/10.1002/jmri.26643" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="519" to="528" />
+			<date type="published" when="2019-01-11">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Artzi M, Bressler I, Ben BD. Differentiation between glioblastoma, brain metastasis and subtypes using radiomics analysis. J Magn Reson Imaging. 2019;50(2):519-28. https:// doi. org/ 10. 1002/ jmri. 26643.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Texture analysis on diffusion tensor imaging: discriminating glioblastoma from single brain metastasis</title>
+		<author>
+			<persName><forename type="first">Karoline</forename><surname>Skogen</surname></persName>
+			<idno type="ORCID">0000-0003-2452-4178</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anselm</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eirik</forename><surname>Helseth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Ganeshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johann</forename><forename type="middle">Baptist</forename><surname>Dormagen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrès</forename><surname>Server</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0284185118780889</idno>
+		<ptr target="https://doi.org/10.1177/0284185118780889" />
+	</analytic>
+	<monogr>
+		<title level="j">Acta Radiologica</title>
+		<title level="j" type="abbrev">Acta Radiol</title>
+		<idno type="ISSN">0284-1851</idno>
+		<idno type="ISSNe">1600-0455</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="356" to="366" />
+			<date type="published" when="2019">2019</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Skogen K, Schulz A, Helseth E, Ganeshan B, Dormagen JB, Server A. Texture analysis on diffusion tensor imaging: discriminating glioblas- toma from single brain metastasis. Acta Radiol. 2019;60(3):356-66. https:// doi. org/ 10. 1177/ 02841 85118 780889.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Histogram analysis of absolute cerebral blood volume map can distinguish glioblastoma from solitary brain metastasis</title>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donghai</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanna</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weicheng</forename><surname>Yao</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/md.0000000000017515</idno>
+		<ptr target="https://doi.org/10.1097/MD.0000000000017515" />
+	</analytic>
+	<monogr>
+		<title level="j">Medicine</title>
+		<idno type="ISSN">0025-7974</idno>
+		<idno type="ISSNe">1536-5964</idno>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">42</biblScope>
+			<biblScope unit="page">e17515</biblScope>
+			<date type="published" when="2019-10">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+			<pubPlace>Baltimore)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qin J, Li Y, Liang D, Zhang Y, Yao W. Histogram analysis of absolute cerebral blood volume map can distinguish glioblastoma from solitary brain metastasis. Medicine (Baltimore). 2019;98(42): e17515. https:// doi. org/ 10. 1097/ MD. 00000 00000 017515.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">An initial experience of machine learning based on multi-sequence texture parameters in magnetic resonance imaging to differentiate glioblastoma from brain metastases</title>
+		<author>
+			<persName><forename type="first">Machiko</forename><surname>Tateishi</surname></persName>
+			<idno type="ORCID">0000-0002-9586-8341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takeshi</forename><surname>Nakaura</surname></persName>
+			<idno type="ORCID">0000-0002-9010-0341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mika</forename><surname>Kitajima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Uetani</surname></persName>
+			<idno type="ORCID">0000-0002-0547-1210</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Masataka</forename><surname>Nakagawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taihei</forename><surname>Inoue</surname></persName>
+			<idno type="ORCID">0000-0003-2960-3668</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jun-Ichiro</forename><surname>Kuroda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akitake</forename><surname>Mukasa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasuyuki</forename><surname>Yamashita</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jns.2019.116514</idno>
+		<ptr target="https://doi.org/10.1016/j.jns.2019.116514" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Neurological Sciences</title>
+		<title level="j" type="abbrev">Journal of the Neurological Sciences</title>
+		<idno type="ISSN">0022-510X</idno>
+		<imprint>
+			<biblScope unit="volume">410</biblScope>
+			<biblScope unit="issue">410</biblScope>
+			<biblScope unit="page">116514</biblScope>
+			<date type="published" when="2020-03">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tateishi M, Nakaura T, Kitajima M, Uetani H, Nakagawa M, Inoue T, Kuroda JI, Mukasa A, Yamashita Y. An initial experience of machine learn- ing based on multi-sequence texture parameters in magnetic resonance imaging to differentiate glioblastoma from brain metastases. J Neurol Sci. 2020;15(410): 116514. https:// doi. org/ 10. 1016/j. jns. 2019. 116514.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Fusion-based tensor radiomics using reproducible features: Application to survival prediction in head and neck cancer</title>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">R</forename><surname>Salmanpour</surname></persName>
+			<idno type="ORCID">0000-0002-9515-789X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mahdi</forename><surname>Hosseinzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Masoud</forename><surname>Rezaeijo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arman</forename><surname>Rahmim</surname></persName>
+			<idno type="ORCID">0000-0002-9980-2403</idno>
+		</author>
+		<idno type="DOI">10.1016/j.cmpb.2023.107714</idno>
+		<ptr target="https://doi.org/10.1016/j.cmpb.2023.107714" />
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods and Programs in Biomedicine</title>
+		<title level="j" type="abbrev">Computer Methods and Programs in Biomedicine</title>
+		<idno type="ISSN">0169-2607</idno>
+		<imprint>
+			<biblScope unit="volume">240</biblScope>
+			<biblScope unit="page">107714</biblScope>
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Salmanpour MR, Hosseinzadeh M, Rezaeijo SM, Rahmim A. Fusion-based tensor radiomics using reproducible features: Application to survival prediction in head and neck cancer. Comput Methods Programs Biomed. 2023;240: 107714. https:// doi. org/ 10. 1016/j. cmpb. 2023. 107714.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Deep versus Handcrafted Tensor Radiomics Features: Prediction of Survival in Head and Neck Cancer Using Machine Learning and Fusion Techniques</title>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">R</forename><surname>Salmanpour</surname></persName>
+			<idno type="ORCID">0000-0002-9515-789X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Masoud</forename><surname>Rezaeijo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahdi</forename><surname>Hosseinzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arman</forename><surname>Rahmim</surname></persName>
+			<idno type="ORCID">0000-0002-9980-2403</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13101696</idno>
+		<ptr target="https://doi.org/10.3390/diagnostics13101696" />
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">1696</biblScope>
+			<date type="published" when="2023-05-11">2023</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Salmanpour MR, Rezaeijo SM, Hosseinzadeh M, Rahmim A. Deep versus handcrafted tensor radiomics features: prediction of survival in head and neck cancer using machine learning and fusion techniques. Diagnostics (Basel). 2023;13(10):1696. https:// doi. org/ 10. 3390/ diagn ostic s1310 1696.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Machine Learning Applications for Differentiation of Glioma from Brain Metastasis—A Systematic Review</title>
+		<author>
+			<persName><forename type="first">Leon</forename><surname>Jekel</surname></persName>
+			<idno type="ORCID">0000-0001-9954-3328</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Waverly</forename><forename type="middle">R</forename><surname>Brim</surname></persName>
+			<idno type="ORCID">0000-0001-5921-1062</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Von Reppert</surname></persName>
+			<idno type="ORCID">0000-0003-4623-7401</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Staib</surname></persName>
+			<idno type="ORCID">0000-0002-9516-5136</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Cassinelli Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Merkaj</surname></persName>
+			<idno type="ORCID">0000-0003-1147-4968</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Harry</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Zeevi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seyedmehdi</forename><surname>Payabvash</surname></persName>
+			<idno type="ORCID">0000-0003-4628-0370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khaled</forename><surname>Bousabarah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingde</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Cui</surname></persName>
+			<idno type="ORCID">0000-0003-4638-6466</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandria</forename><surname>Brackett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Mahajan</surname></persName>
+			<idno type="ORCID">0000-0002-6532-2209</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Omuro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michele</forename><forename type="middle">H</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Veronica</forename><forename type="middle">L</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Malhotra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Björn</forename><surname>Scheffler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariam</forename><forename type="middle">S</forename><surname>Aboian</surname></persName>
+			<idno type="ORCID">0000-0002-4877-8271</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers14061369</idno>
+		<ptr target="https://doi.org/10.3390/cancers14061369" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">1369</biblScope>
+			<date type="published" when="2022-03-08">2022</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jekel L, Brim WR, von Reppert M, Staib L, Cassinelli Petersen G, Merkaj S, Subramanian H, Zeevi T, Payabvash S, Bousabarah K, Lin M, Cui J, Brackett A, Mahajan A, Omuro A, Johnson MH, Chiang VL, Malhotra A, Sche er B, Aboian MS. Machine learning applications for dif- ferentiation of glioma from brain metastasis-a systematic review. Cancers (Basel). 2022;14(6):1369. https:// doi. org/ 10. 3390/ cance rs140 61369.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Integrated treatment of brain metastases</title>
+		<author>
+			<persName><forename type="first">Nicola</forename><surname>Rosenfelder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Brada</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/cco.0000000000000573</idno>
+		<ptr target="https://doi.org/10.1097/CCO.0000000000000573" />
+	</analytic>
+	<monogr>
+		<title level="j">Current Opinion in Oncology</title>
+		<idno type="ISSN">1040-8746</idno>
+		<idno type="ISSNe">1531-703X</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="501" to="507" />
+			<date type="published" when="2019-11">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rosenfelder N, Brada M. Integrated treatment of brain metastases. Curr Opin Oncol. 2019;31(6):501-7. https:// doi. org/ 10. 1097/ CCO. 00000 00000 000573.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Congress of Neurological Surgeons Systematic Review and Evidence-Based Guidelines on the Role of Surgery in the Management of Adults With Metastatic Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">V</forename><surname>Nahed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Alvarez-Breckenridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priscilla</forename><forename type="middle">K</forename><surname>Brastianos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helen</forename><surname>Shih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Ammirati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">S</forename><surname>Kuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Ryken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">N</forename><surname>Kalkanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">J</forename><surname>Olson</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuros/nyy542</idno>
+		<ptr target="https://doi.org/10.1093/neuros/nyy542" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgery</title>
+		<title level="j" type="abbrev">Neurosurg.</title>
+		<idno type="ISSN">0148-396X</idno>
+		<idno type="ISSNe">1524-4040</idno>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="E152" to="E155" />
+			<date type="published" when="2019-01-09">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nahed BV, Alvarez-Breckenridge C, Brastianos PK, Shih H, Sloan A, Ammirati M, Kuo JS, Ryken TC, Kalkanis SN, Olson JJ. Congress of neu- rological surgeons systematic review and evidence-based guidelines on the role of surgery in the management of adults with metastatic brain tumors. Neurosurgery. 2019;84(3):E152-5. https:// doi. org/ 10. 1093/ neuros/ nyy542.</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Brain metastasis</title>
+		<author>
+			<persName><forename type="first">Adrienne</forename><surname>Boire</surname></persName>
+			<idno type="ORCID">0000-0002-9029-1248</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Priscilla</forename><forename type="middle">K</forename><surname>Brastianos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Livia</forename><surname>Garzia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Valiente</surname></persName>
+			<idno type="ORCID">0000-0002-0647-7542</idno>
+		</author>
+		<idno type="DOI">10.1038/s41568-019-0220-y</idno>
+		<ptr target="https://doi.org/10.1038/s41568-019-0220-y" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Cancer</title>
+		<title level="j" type="abbrev">Nat Rev Cancer</title>
+		<idno type="ISSN">1474-175X</idno>
+		<idno type="ISSNe">1474-1768</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="11" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Boire A, Brastianos PK, Garzia L, Valiente M. Brain metastasis. Nat Rev Cancer. 2020;20(1):4-11. https:// doi. org/ 10. 1038/ s41568-019-0220-y.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Osimertinib in Untreated &lt;i&gt;EGFR&lt;/i&gt; -Mutated Advanced Non–Small-Cell Lung Cancer</title>
+		<author>
+			<persName><forename type="first">Jean-Charles</forename><surname>Soria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuichiro</forename><surname>Ohe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><surname>Vansteenkiste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thanyanan</forename><surname>Reungwetwattana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Busyamas</forename><surname>Chewaskulyong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ki</forename><forename type="middle">Hyeong</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arunee</forename><surname>Dechaphunkul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fumio</forename><surname>Imamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoyuki</forename><surname>Nogami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takayasu</forename><surname>Kurata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isamu</forename><surname>Okamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caicun</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Byoung</forename><forename type="middle">Chul</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eun</forename><forename type="middle">Kyung</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pei</forename><forename type="middle">Jye</forename><surname>Voon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Planchard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wu-Chou</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jhanelle</forename><forename type="middle">E</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siow-Ming</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Hodge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><surname>Marotti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuri</forename><surname>Rukazenkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suresh</forename><forename type="middle">S</forename><surname>Ramalingam</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa1713137</idno>
+		<ptr target="https://doi.org/10.1056/NEJMoa1713137" />
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">378</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="113" to="125" />
+			<date type="published" when="2018-01-11">2018</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Soria JC, Ohe Y, Vansteenkiste J, Reungwetwattana T, Chewaskulyong B, Lee KH, Dechaphunkul A, Imamura F, Nogami N, Kurata T, Okamoto I, Zhou C, Cho BC, Cheng Y, Cho EK, Voon PJ, Planchard D, Su WC, Gray JE, Lee SM, Hodge R, Marotti M, Rukazenkov Y, Ramalingam SS, FLAURA Investigators. Osimertinib in untreated EGFR-mutated advanced non-small-cell lung cancer. N Engl J Med. 2018;378(2):113-25. https:// doi. org/ 10. 1056/ NEJMo a1713 137.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Machine learning approach for automated predicting of COVID-19 severity based on clinical and paraclinical characteristics: Serum levels of zinc, calcium, and vitamin D</title>
+		<author>
+			<persName><forename type="first">Azam</forename><surname>Jahangirimehr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elham</forename><surname>Abdolahi Shahvali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Masoud</forename><surname>Rezaeijo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azam</forename><surname>Khalighi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azam</forename><surname>Honarmandpour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fateme</forename><surname>Honarmandpour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostafa</forename><surname>Labibzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nasrin</forename><surname>Bahmanyari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sahel</forename><surname>Heydarheydari</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clnesp.2022.07.011</idno>
+		<ptr target="https://doi.org/10.1016/j.clnesp.2022.07.011" />
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Nutrition ESPEN</title>
+		<title level="j" type="abbrev">Clinical Nutrition ESPEN</title>
+		<idno type="ISSN">2405-4577</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="404" to="411" />
+			<date type="published" when="2022-10">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jahangirimehr A, Abdolahi Shahvali E, Rezaeijo SM, Khalighi A, Honarmandpour A, Honarmandpour F, Labibzadeh M, Bahmanyari N, Heydarheydari S. Machine learning approach for automated predicting of COVID-19 severity based on clinical and paraclinical charac- teristics: serum levels of zinc, calcium, and vitamin D. Clin Nutr ESPEN. 2022. https:// doi. org/ 10. 1016/j. clnesp. 2022. 07. 011.</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Segmentation of the prostate, its zones, anterior fibromuscular stroma, and urethra on the MRIs and multimodality image fusion using U-Net model</title>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Masoud</forename><surname>Rezaeijo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shabnam</forename><surname>Jafarpoor Nesheli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Fatan Serj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Javad</forename><surname>Tahmasebi Birgani</surname></persName>
+		</author>
+		<idno type="DOI">10.21037/qims-22-115</idno>
+		<ptr target="https://doi.org/10.21037/qims-22-115" />
+	</analytic>
+	<monogr>
+		<title level="j">Quantitative Imaging in Medicine and Surgery</title>
+		<title level="j" type="abbrev">Quant Imaging Med Surg</title>
+		<idno type="ISSN">2223-4292</idno>
+		<idno type="ISSNe">2223-4306</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="4786" to="4804" />
+			<date type="published" when="2022-10">2022</date>
+			<publisher>AME Publishing Company</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rezaeijo SM, Jafarpoor Nesheli S, Fatan Serj M, Tahmasebi Birgani MJ. Segmentation of the prostate, its zones, anterior fibromuscular stroma, and urethra on the MRIs and multimodality image fusion using U-Net model. Quant Imaging Med Surg. 2022;12(10):4786-804. https:// doi. org/ 10. 21037/ qims-22-115.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Within-Modality Synthesis and Novel Radiomic Evaluation of Brain MRI Scans</title>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Masoud</forename><surname>Rezaeijo</surname></persName>
+			<idno type="ORCID">0000-0002-4525-0025</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nahid</forename><surname>Chegeni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fariborz</forename><surname>Baghaei Naeini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Makris</surname></persName>
+			<idno type="ORCID">0000-0001-6170-0236</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers15143565</idno>
+		<ptr target="https://doi.org/10.3390/cancers15143565" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">3565</biblScope>
+			<date type="published" when="2023-07-10">2023</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rezaeijo SM, Chegeni N, Baghaei Naeini F, Makris D, Bakas S. Within-modality synthesis and novel radiomic evaluation of brain MRI scans. Cancers (Basel). 2023;15(14):3565. https:// doi. org/ 10. 3390/ cance rs151 43565.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

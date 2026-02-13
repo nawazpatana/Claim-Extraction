@@ -1,0 +1,2773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Histogram analysis of IVIM MRI for differentiating glioma IDH-1 status, grade, and Ki-67 expression: a comparison of bi-exponential models at multiple B-value</title>
+				<funder ref="#_RwJRagR">
+					<orgName type="full">Central Guidance Funds for Local Science and Technology Development</orgName>
+				</funder>
+				<funder ref="#_crb96Uy #_VkG9tB6">
+					<orgName type="full">Natural Science Basic Research Program of Shanxi Province</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-03">2025-12-03</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Yifei</forename><surname>Su</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shanxi Medical University , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution" key="instit1">Shanxi Provincial People&apos;s Hospital</orgName>
+								<orgName type="institution" key="instit2">Shanxi Medical University</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lei</forename><surname>Ji</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Junhao</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> The Neurosurgery Department , Shanxi Province Integrated Traditional and Western Medicine Hospital , Taiyuan , Shanxi 030013 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution">Shanxi Province Integrated Traditional and Western Medicine Hospital</orgName>
+								<address>
+									<postCode>030013</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ding</forename><surname>Jia</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution">Shanxi Provincial People&apos;s Hospital</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xuanchen</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shanxi Medical University , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution" key="instit1">Shanxi Provincial People&apos;s Hospital</orgName>
+								<orgName type="institution" key="instit2">Shanxi Medical University</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaochen</forename><surname>Niu</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> RWTH Aachen University , Pauwelsstraße 30 , D-52074 Aachen , Germany</note>
+								<orgName type="institution">RWTH Aachen University</orgName>
+								<address>
+									<addrLine>Pauwelsstraße 30</addrLine>
+									<postCode>D-52074</postCode>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yaoju</forename><surname>Meng</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shanxi Medical University , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution" key="instit1">Shanxi Provincial People&apos;s Hospital</orgName>
+								<orgName type="institution" key="instit2">Shanxi Medical University</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chunhong</forename><surname>Wang</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution">Shanxi Provincial People&apos;s Hospital</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yexin</forename><surname>He</surname></persName>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> The Radiology Department , Shanxi Provincial People&apos;s Hospital , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Radiology Department</orgName>
+								<orgName type="institution">Shanxi Provincial People&apos;s Hospital</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Hongming</forename><surname>Ji</surname></persName>
+							<email>hongmingj@sina.com</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> The Neurosurgery Department , Shanxi Provincial People&apos;s Hospital , Shanxi Medical University , Shuangtasi Street , Taiyuan , Shanxi 030012 , P. R. China</note>
+								<orgName type="department">The Neurosurgery Department</orgName>
+								<orgName type="institution" key="instit1">Shanxi Provincial People&apos;s Hospital</orgName>
+								<orgName type="institution" key="instit2">Shanxi Medical University</orgName>
+								<address>
+									<addrLine>Shuangtasi Street</addrLine>
+									<postCode>030012</postCode>
+									<settlement>Taiyuan</settlement>
+									<region>Shanxi</region>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Histogram analysis of IVIM MRI for differentiating glioma IDH-1 status, grade, and Ki-67 expression: a comparison of bi-exponential models at multiple B-value</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">BMC Medical Imaging</title>
+						<title level="j" type="abbrev">BMC Med Imaging</title>
+						<idno type="eISSN">1471-2342</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">26</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-12-03" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">029D9EEA04E1C93454B7FBAF82875B1B</idno>
+					<idno type="DOI">10.1186/s12880-025-02101-5</idno>
+					<note type="submission">Received: 29 July 2025 / Accepted: 28 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-02T02:10+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Intravoxel incoherent motion</term>
+					<term>Glioma</term>
+					<term>Diffusion</term>
+					<term>Perfusion</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background Intravoxel Incoherent Motion (IVIM) offers valuable insights into tumor microstructural heterogeneity through diffusion and perfusion. However, the relationship between these features and glioma grading, IDH-1 status, and Ki-67 expression remains insufficiently explored, and there is no consensus on the optimal B-value range for IVIM imaging, which may impact the consistency of results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>We retrospectively analyzed IVIM data from 73 glioma patients (mean age, 52.83 years ± 12.79 [SD]; 40 male). Histogram features of IVIM parameters, calculated with four B-value ranges (0-800, 0-1200, 0-1500, and 0-2000 s/mm²), were extracted from the tumor parenchyma. These features were compared across different IDH-1 status, tumor grade, and Ki-67 proliferation index. After checking for multicollinearity, parameters with significant differences were further analyzed using logistic regression, receiver operating characteristic analysis, and decision curve analysis to compare their performance. And Bonferroni correction was applied to adjust p-values for multiple comparisons.</p><p>Results Independent risk factors of IDH-1 status, tumor grade and Ki-67 level were identified through multivariate logistic regression in B800, B1200, B1500 and B2000 model. ROC analysis revealed that all models showed similar AUCs for IDH-1 status, tumor grade, and Ki-67 level prediction. The B800 model had the highest specificity (0.87) for IDH-1 status prediction, the B1500 model had the highest specificity (0.91) for tumor grade prediction, and the B1200 model Histogram analysis of IVIM MRI for differentiating glioma IDH-1 status, grade,</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>Genotyping was considered the most sophisticated and important procedure in glioma classification since the publication of the 2016 World Health Organization classification of central nervous system tumors <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>.</p><p>e isocitrate dehydrogenase (IDH) is a key molecular marker in glioma, with IDH-1 mutation subtype being the most common, particularly in lower-grade glioma (LGG), where it is typically associated with a better prognosis <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. In contrast, Ki-67, a protein associated with cellular proliferation, is an important indicator of tumor aggressiveness. High Ki-67 expression is often linked to high-grade glioma (HGG), indicating more aggressive growth and a poorer prognosis <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>. Given this, glioma varies not only in the morphological features but also in the distribution of tumor cells, microenvironmental characteristics (e.g., vascularization and cell density), and the variability significantly affects the tumor's biological behavior, treatment response, and prognosis <ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref>.</p><p>Intravoxel Incoherent Motion (IVIM), a non-invasive and contrast-free diffusion-weighted MRI, offers valuable insights into tumor microstructural through diffusion at higher B-value and perfusion at lower B-value (usually b &lt; 200-400 s/mm 2 ) <ref type="bibr" target="#b10">[11]</ref>. Several studies have demonstrated the effectiveness of IVIM in glioma grading and genotype differentiation <ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref>, including histogram and radiomics analysis of IVIM derived diffusion and perfusion parameters <ref type="bibr" target="#b12">[13]</ref>. However, few studies have addressed the selection of B-value ranges in glioma research, and no standardized protocol for B-value selection has been established <ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref>. Furthermore, the relationship between diffusion and perfusion histogram features and glioma characteristics remains underexplored.</p><p>us, this study aims to evaluate the diagnostic potential of IVIM-derived diffusion and perfusion histogram features across varying B-value ranges (0-800, 0-1200, 0-1500, and 0-2000 s/mm²) in glioma grading, IDH-1 mutation status and Ki-67 level prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Study participants</head><p>is retrospective study was based on IVIM datasets originally acquired for a prior study on glioma classification. For the present analysis, we focused on the impact of different b-value ranges on IVIM-derived parameters.</p><p>Ethical approval for the reuse of data with this new analytic focus was obtained from our hospital. (2024 Research Review No. 942). All methods were performed in accordance with the Declaration of Helsinki. We selected patients who were newly diagnosed with glioma, based on the WHO 2016 Classification, at our institution between December 2020 and November 2024. A total of 89 patients were included, all with a confirmed diagnosis of glioma (grades II-IV), aged between 18 and 75 years, and who underwent MRI imaging within one week prior to surgery. Sixteen patients were excluded, including 11 due to incomplete data and 5 due to poor image quality.</p><p>e study flowchart is presented in Fig. <ref type="figure">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>MRI parameters</head><p>MR imaging was conducted using a 3.0T scanner equipped with a 24-channel head-neck coil (Discovery MR 750 W, GE Healthcare, Waukesha, WI, USA). e sequences included T1-weighted (T1W), T2-weighted (T2W), T2 fluid-attenuated inversion recovery (FLAIR), IVIM, and contrast-enhanced T1-weighted (T1W + C) imaging. For axial IVIM, 12 B-value (0, <ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b38">40,</ref><ref type="bibr">80,</ref><ref type="bibr">110,</ref><ref type="bibr">150,</ref><ref type="bibr">200</ref>, 400, 800, 1200, 1500, and 2000 s/mm²) with corresponding excitation times of 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 4 were adopted, with diffusion gradients applied in three orthogonal directions and imaging slices covering the entire brain. e following parameters were applied: repetition time/echo time (TR/TE) = 5400ms/90ms, the field of view (FOV) = 220 × 220mm 2 , matrix size = 110 × 110, slice thickness = 4.0 mm, number of slices = 24, slice gap = 1.0 mm, acquisition time = 5:28 min. And other imaging parameters are detailed in Supplemental Tables 1, and the total duration of the imaging protocol was approximately 25 min.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Imaging processing</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Tumor segmentation</head><p>Whole-tumor parenchyma segmentation is a commonly used approach in neuroimaging studies to comprehensively characterize tumor tissue while excluding nontumor components such as edema, cystic degeneration, hemorrhage, and calcification <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b19">20]</ref>. In this study, multi-sequence MRI images-including T1-weighted (T1W), T2-weighted (T2W), fluid-attenuated inversion recovery (FLAIR), and contrast-enhanced T1-weighted (T1W + C) sequences-were utilized as anatomical references. (Figs. 2a, 3.1a-e &amp; Fig. <ref type="figure">3</ref>.2a-e) e tumor parenchyma ROI was manually delineated independently on the IVIM b = 0 s/mm² images, with anatomical scans used as reference by a neurosurgeon, and subsequently reviewed and confirmed by a neuroradiologist with 20 years of experience. For tumors with obvious contrast enhancement, the T1W + C images served as the primary reference. Areas showing necrosis or cystic degeneration-characterized by hypointensity on T1W and hyperintensity on T2W images-and hemorrhagic components were excluded from the ROI (Supplemental Fig. <ref type="figure">1</ref>.1). For tumors without clear enhancement, delineation was mainly based on T2W images, with careful exclusion of hyperintense regions on FLAIR corresponding to peritumoral edema, especially those located along cortical sulci and brain surface (Supplemental Fig. <ref type="figure">1</ref></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>.2)</head><p>.And all diffusion-weighted images were co-registered to the b0 images to ensure spatial alignment prior to IVIM parameter fitting. Finally, all tumor ROIs were delineated by a single experienced rater, and inter-observer variability was therefore not evaluated, which may limit the generalizability of the ROI-based results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bi-exponential model fitting</head><p>To calculate the slow diffusion coefficient (Dslow), fast diffusion coefficient (Dfast), and perfusion fraction (frac) within the ROI, an in-house program was developed using MATLAB 2018b.</p><p>e program employed a biexponential fitting method defined by:</p><formula xml:id="formula_0">Sb/S0 =f rac × exp (-b × Df ast) + (1 -f rac) × exp(-b × Dslow) (1)</formula><p>where Sb and S0 represents the signal intensity under b &gt;0 s/mm 2 and b = 0 s/mm 2 , respectively. e diffusion data were fitted to the bi-exponential model using a bound-constrained optimization mini-search approach, as implemented in the MATLAB code <ref type="bibr">[21]</ref>. In the present study, we used 200 s/mm 2 as the b threshold to perform the bi-exponential model calculation, with highest B-value of 800, 1200, 1500 and 2000 s/mm 2 , respectively. Furthermore, prior to fitting, a linear regression was performed on the logarithm of the diffusion data for b &gt;200 s/mm² to generate the Dslow parametric map.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Histogram feature extraction</head><p>A custom-developed program was used to extract ROI histogram features of Dslow, frac, and Dfast, including the 10th, 25th, 75th, and 90th percentile (p10, p25, p75 and p90) mean, median, and distribution characteristics (kurtosis, skewness, and entropy) within B800, B1200, B1500 and B2000 model, respectively (Figs. <ref type="figure">2c</ref>, <ref type="figure">3</ref>.1g-r &amp; 3.2g-r).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Molecular studies</head><p>IDH-1 mutation status and Ki-67 expression were assessed using immunohistochemistry. Specifically, IDH-1 positivity was defined as ≥ 10% cytoplasmic immunoreactivity with an R132H-specific antibody, in line with previous studies <ref type="bibr" target="#b20">[22,</ref><ref type="bibr" target="#b21">23]</ref>. In addition, Ki-67 expression was evaluated using an anti-Ki67 monoclonal antibody. e Ki-67 index was then calculated as the ratio of Ki-67 positive cells to the total cell count in uniformly stained areas. Based on this, Ki-67 level was categorized as high (≥ 10%) and low (&lt; 10%) <ref type="bibr" target="#b22">[24]</ref><ref type="bibr" target="#b23">[25]</ref><ref type="bibr" target="#b24">[26]</ref>. Fig. 2 Workflow of the study  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis</head><p>Quantitative variables were expressed as mean (SD) or median (IQR) after confirming normality and homogeneity of variance. Differences of histogram features across IDH-1 status, tumor grade, and Ki-67 level were compared using Student's t-test or Mann-Whitney U test.</p><p>e Chi-square test was used to compare binary variables across tumor grade, while Fisher's exact test and ANOVA F-test were used to compare tumor type and age across tumor grade.</p><p>Parameters with significant differences were further analyzed using logistic regression to establish models for predicting IDH-1 status, glioma grade, and Ki-67 level, after excluding variables with a variance inflation factor (VIF) &gt; 3. Additionally, receiver operating characteristic (ROC) analysis, area under the curve (AUC) and decision curve analysis (DCA) were performed to evaluate model performance. All statistical analyses were conducted using R software (version 4.4.2) with a significance threshold of p &lt; 0.05. Bonferroni correction was applied to adjust p-values for multiple comparisons, and bootstrap resampling method was employed to validate the robustness of our logistic regression models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Demographic and clinical characteristics of patients with grade II, III, and IV gliomas</head><p>e demographic and clinical characteristics of 73 glioma patients (Grade II: 18, Grade III: 13, Grade IV: 42) (Table <ref type="table" target="#tab_0">1</ref>) revealed significant differences across tumor grade. ere was no significant difference in gender distribution (p = 0.293), but tumor type varied significantly (p &lt; 0.001), with Grade II glioma primarily being diffuse astrocytoma and oligodendroglioma, Grade III mainly anaplastic oligodendroglioma, and Grade IV predominantly glioblastoma. IDH-1 mutation was highest in Grade II (100%), decreasing in Grade III (53.8%) and Grade IV (31%) (p &lt; 0.001). Ki-67 &lt; 10% was more common in Grade II (88.9%) and lower in Grades III (15.4%) and IV (7.1%) (p &lt; 0.001). Age increased significantly with tumor grade (Grade II: 42.7, Grade III: 51.7, Grade IV: 57.5, p &lt; 0.001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparison of IVIM histogram parameters across four models in different glioma subgroups B800 model (Supplemental table 2.1)</head><p>For IDH-1 status, no significant differences were found in Dfast and frac histogram features. In contrast, all percentiles of Dslow (mean, p10, p25, median, p75, and p90) were significantly higher in the IDH-1 mutant group (all p &lt; 0.001). Dslow skewness was higher in the wild-type group (p = 0.004) (Supplemental Fig. <ref type="figure">2</ref>.1 &amp; Supplemental Fig. <ref type="figure" target="#fig_6">6</ref>).</p><p>Regarding tumor grade, no Dfast features showed significant differences except for higher entropy in HGG (p = 0.033). For Dslow, all percentiles were significantly higher in LGG (all p &lt; 0.01), while skewness was significantly higher in HGG (p &lt; 0.001). Entropy and kurtosis of frac was not significant (p = 0.233 and p = 0.111), but HGG exhibited significantly higher mean, p10, p25, and median values for frac (all p &lt; 0.05), and LGG showed significantly higher skewness of frac (p = 0.049) (Supplemental Fig. <ref type="figure">2</ref>.2 &amp; Supplemental Fig. <ref type="figure">7</ref>).</p><p>In Ki-67 level differentiation, Dfast features showed no significant differences. For Dslow, all percentiles except p90 (p = 0.151) were significantly higher in the low Ki-67 group (all p &lt; 0.05). And significantly higher skewness was found in high Ki-67 group (p = 0.003). Frac percentiles (p10, p25) were significantly lower in the low Ki-67 group (p = 0.018 and p = 0.041), while skewness was higher (p = 0.014) (Supplemental Fig. <ref type="figure">2</ref>.3 &amp; Supplemental Fig. <ref type="figure">8</ref>). In the IDH-1 comparison, Dfast features remained nonsignificant. All Dslow percentiles were higher in the mutant group (all p &lt; 0.001), but not the skewness and kurtosis (p = 0.003 and p = 0.026). And frac entropy was significantly higher in the wild-type group (p = 0.025) (Supplemental Fig. <ref type="figure">3</ref>.1 &amp; Supplemental Fig. <ref type="figure" target="#fig_6">6</ref>).</p><p>For tumor grade, Dfast features were not significant (all p &gt; 0.05). Dslow percentiles were significantly higher in LGG (all p &lt; 0.05), while skewness and kurtosis were higher in HGG (p &lt; 0.001 and p = 0.015). And frac entropy was significantly higher in HGG (p = 0.022) (Supplemental Fig. <ref type="figure">3</ref>.2 &amp; Supplemental Fig. <ref type="figure">7</ref>).</p><p>With Ki-67 level, Dfast showed no significant differences (all p &gt; 0.05). Dslow percentiles, except p90 (p = 0.052), were significantly higher in the low Ki-67 group (all p &lt; 0.05). while skewness and kurtosis were significantly higher in the high Ki-67 group (p = 0.002 and p = 0.029). Frac p90 was significantly higher in the high Ki-67 group (p = 0.034) (Supplemental Fig. <ref type="figure">3</ref>.3 &amp; Supplemental Fig. <ref type="figure">8</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B1500 model (Supplemental table 2.3)</head><p>For IDH-1 status, Dfast remained nonsignificant (all p &gt; 0.05). Dslow percentiles were significantly higher in the mutant group (all p &lt; 0.05), while skewness and kurtosis were higher in the wild-type group (p &lt; 0.001 and p = 0.002). Frac entropy was elevated in the wild-type group (p = 0.026) (Supplemental Fig. <ref type="figure" target="#fig_3">4</ref>.1 &amp; Supplemental Fig. <ref type="figure" target="#fig_6">6</ref>).</p><p>In tumor grade comparisons, Dfast p90 was significantly higher in HGG (p = 0.04). Dslow percentiles were significantly higher in LGG (all p &lt; 0.001), with HGG showing greater skewness and kurtosis (all p &lt; 0.001). Frac entropy was significantly increased in HGG (p = 0.006) (Supplemental Fig. <ref type="figure" target="#fig_3">4</ref>.2 &amp; Supplemental Fig. <ref type="figure">7</ref>).</p><p>In Ki-67 level differentiation, no Dfast differences were observed (all p &gt; 0.05). Dslow percentiles were all significantly higher in the low Ki-67 group (all p &lt; 0.05), while the high Ki-67 group showing greater skewness and kurtosis (p = 0.001 and p = 0.006). Frac entropy was significantly higher in the high Ki-67 group (p = 0.03) (Supplemental Fig. <ref type="figure" target="#fig_3">4</ref>.3 &amp; Supplemental Fig. <ref type="figure">8</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B2000 model (Supplemental table 2.4)</head><p>For IDH-1, Dfast again showed no significant differences (all p &gt; 0.05). Dslow percentiles were significantly higher in the IDH-1 mutant group (all p &lt; 0.001), while skewness and kurtosis were significantly higher in the wild-type group (all p &lt; 0.001). Frac entropy was significantly higher in the wild-type group (p = 0.029), and frac p10 was significantly elevated in the mutant group (p = 0.028) (Supplemental Fig. <ref type="figure" target="#fig_5">5</ref>.1 &amp; Supplemental Fig. <ref type="figure" target="#fig_6">6</ref>).</p><p>In tumor grade, Dfast mean (p = 0.049), median (p = 0.031), and p75 (p = 0.034) were significantly higher in HGG. Dslow percentiles were significantly higher in LGG (all p &lt; 0.001), while skewness and kurtosis were higher in HGG (all p &lt; 0.001). Frac entropy was also significantly higher in HGG (p &lt; 0.001). while kurtosis and p10 was significantly higher in LGG (p = 0.043 and p = 0.048) (Supplemental Fig. <ref type="figure" target="#fig_5">5</ref>.2 &amp; Supplemental Fig. <ref type="figure">7</ref>).</p><p>For Ki-67 expression, Dfast features showed no group differences (all p &gt; 0.05). Dslow percentiles were significantly higher in the low Ki-67 group (all p &lt; 0.05).</p><p>e high Ki-67 group had greater Dslow skewness and kurtosis (p = 0.002 and p = 0.001), while the low Ki-67 group showed higher Dslow entropy (p = 0.041). Frac entropy was significantly higher in the high Ki-67 group (p = 0.008) (Supplemental Fig. <ref type="figure" target="#fig_5">5</ref>.3 &amp; Supplemental Fig. <ref type="figure">8</ref>).</p><p>Representative images of high-grade glioma (WHO Grade IV, IDH-1 wild type, Ki-67 index &gt; 10%) and lowergrade glioma (WHO Grade Ⅱ, IDH-1 mutant type, Ki-67 index &lt; 10%) cases with ROI segmentation and IVIM histogram plot were shown in Fig. <ref type="figure">3</ref>.1 and 3.2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Univariate and multivariate logistic regression analysis of IVIM histogram features (Fig. 4) B800 model (Supplemental table 3.1)</head><p>In the B800 model, Dslow(mean, skewness and all percentiles) was significantly associated with IDH-1 mutation status in univariate analysis (all p &lt; 0.05), with p10 remaining significant in the multivariate analysis (OR = 3,12, 95% CI: 1.66-5.88, p &lt; 0.001). No significant associations were found for Dfast and frac parameters with IDH-1 mutation.</p><p>For tumor grade, Dfast(entropy) showed significance in univariate analysis (OR = 1.79, 95% CI: 1.03-3.12, p = 0.039), while Dslow(mean, skewness, and all percentiles) was significantly associated (all p &lt; 0.05); however, none remained significant in the multivariate analysis. Frac percentiles (p10 and p25) were significant in univariate analysis (p = 0.013, p = 0.028), and p10 retained significance in multivariate analysis (OR = 2.95, 95% CI: 1.09-8.03, p = 0.030).</p><p>Regarding Ki-67 expression, Dslow(mean, skewness and all percentiles except for p90) was significant in univariate analysis (all p &lt; 0.05), and Dslow(skewness) remained significant in the multivariate analysis (OR = 0.33, 95% CI: 0.16-0.68, p = 0.003). For frac, p10, p25, and skewness showed univariate significance (all p &lt; 0.05), but only skewness retained in the multivariate model (OR = 2.38, 95% CI: 1.27-4.48, p = 0.007). No significant associations were found for Dfast parameters with Ki-67 expression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B1200 model (Supplemental table 3.2)</head><p>In the B1200 model, Dslow(skewness and all percentiles) was significantly associated with IDH-1 mutation in univariate analysis (all p &lt; 0.05), with Dslow(p10) remaining significant in multivariate analysis (OR = 3.42, 95% CI: 1.76-6.67, p &lt; 0.001). Frac(entropy) was significant in univariate analysis (OR = 0.57, 95% CI: 0.34-0.95, p = 0.03), but not retained in the multivariate model. No significant associations were found for Dfast parameters with IDH-1 status.</p><p>For tumor grade, univariate analysis revealed significant associations between Dslow(mean, skewness, and all percentiles), frac(entropy) with tumor grade (all p &lt; 0.05), In multivariate analysis, Dslow(p10) (OR = 0.19, 95% CI: 0.04-0.81, p = 0.030) and frac(entropy) (OR = 3.69, 95% CI: 1.33-10.23, p = 0.010) remained significant.</p><p>In terms of Ki-67 expression, univariate analysis showed significant associations between Dslow(mean, skewness, p10, p25, Median, and p75), and frac(entropy, p90) with Ki-67 expression (all p &lt; 0.05). In multivariate analysis, Dslow(p10) (OR = 3.69, 95% CI: 1.7-8.03, p = 0.001) and frac(p90) (OR = 0.42, 95% CI: 0.2-0.89, p = 0.024) remained significant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B1500 model (Supplemental table 3.3)</head><p>For the B1500 model, Dslow(mean, skewness, kurtosis, and all percentiles) and frac(entropy) were significantly associated with IDH-1 mutation in univariate analysis, with Dslow(p10) (OR = 2.83, 95% CI: 1.32-6.08, p = 0.008) and frac(entropy) (OR = 0.47, 95% CI: 0.24-0.9, p = 0.022) remaining significant in multivariate analysis.</p><p>Regarding tumor grade, all Dslow histogram parameters and frac(entropy) were significant in univariate analysis (all p &lt; 0.05), and Dslow(skewness) (OR = 4.24, 95% CI: 1.33-13.5, p = 0.014), Dslow(p90) (OR = 0.31, 95% CI: 0.1-0.94, p = 0.039) and frac(entropy) (OR = 7.61, 95% CI: 2.13-127.11, p = 0.002) remained significant in multivariate analysis.</p><p>For Ki-67 expression, Dslow(mean, skewness, and all percentiles) and frac(entropy and p90) were significant in univariate analysis (all p &lt; 0.05), while Dslow(p10) (OR = 3.58, 95% CI: 1.69-7.55, p &lt; 0.001) and frac(p90) (OR = 0.49, 95% CI: 0.25-0.94, p = 0.032) remained significant in multivariate analysis,</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B2000 model (Supplemental table 3.4)</head><p>In the B2000 model, all Dslow histogram features and frac(entropy and p10) were significantly associated with IDH-1 mutation in univariate analysis, Dslow(skewness) (OR = 0.49, 95% CI: 0.24-0.99, p = 0.048), Dslow(p10) (OR = 2.83, 95% CI: 1.37-5.86, p = 0.005) and frac(entropy) (OR = 0.51, 95% CI: 0.28-0.92, p = 0.026) remaining significant in multivariate analysis.</p><p>For tumor grade, all Dslow histogram features and frac(entropy) were significant in univariate analysis (all p &lt; 0.05), while Dslow(skewness) (OR = 3.2, 95% CI: 1.32-7.8, p = 0.010) and frac(kurtosis) (OR = 0.47, 95% CI: 0.24-0.91, p = 0.026) were significant in multivariate analysis.</p><p>As for Ki-67, Dslow(mean, skewness and all percentiles) and frac(entropy) retained significance in univariate analysis (all p &lt; 0.05), while Dslow(p10) (OR = 3.76, 95% CI: 1.76-8.02, p = 0.001) and frac(entropy) (OR = 0.46, 95% CI: 0.24-0.87, p = 0.018) were significant in multivariate analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multivariate logistic regression performance of different models in differentiating IDH-1 status, tumor grades, and Ki-67 level</head><p>For IDH-1 status prediction, all B-value models showed similar AUC and sensitivity (all adjusted p &gt; 0.05), but the B800 model had the highest specificity (0.87) with adjusted p &lt; 0.05 (Table <ref type="table" target="#tab_1">2</ref>; Fig. <ref type="figure" target="#fig_5">5a</ref>, Supplemental Table <ref type="table">4</ref>). For tumor grade prediction, all B-value models demonstrated similar AUC and sensitivity (all adjusted p &gt; 0.05), with the B1500 model showing the highest specificity (0.91) and adjusted p &lt; 0.001 (Table <ref type="table" target="#tab_1">2</ref>; Fig. <ref type="figure" target="#fig_5">5b</ref>, Supplemental Table <ref type="table">4</ref>). For Ki-67 level prediction, all B-value models exhibited similar AUC and specificity (all adjusted p &gt; 0.05), while the B1200 model showed the highest sensitivity (0.94) with adjusted p &lt; 0.001 (Table <ref type="table" target="#tab_1">2</ref>; Fig. <ref type="figure" target="#fig_5">5c</ref>, Supplemental Table <ref type="table">4</ref>).</p><p>e calibration analysis with a bootstrap method (boot = 1000) showed a good correlation between apparent and bias-corrected multivariate logistic regression in all models (Supplemental Fig. <ref type="figure">9</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Decision curve analysis for different B-value models to predict IDH-1 status, tumor grade and Ki-67 level</head><p>For IDH-1 status, the B1500 model demonstrates the best net benefit in most threshold ranges. (Fig. <ref type="figure" target="#fig_6">6a</ref>) For tumor grade, B1500 and B1200 models exhibit the highest net benefit across most thresholds, outperforming other models and baseline strategies. e B2000 model also shows competitive performance at certain thresholds. (Fig. <ref type="figure" target="#fig_6">6b</ref>) For Ki-67 level, e B2000 model provides the greatest net benefit across a wide range of high-risk thresholds, followed by the B1500 model. (Fig.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Our retrospective study found similar AUCs across all models for predicting IDH-1 status, tumor grade, and Ki-67 level.</p><p>e B800 model demonstrated the highest specificity (0.87) for IDH-1 prediction, the B1500 model showed the highest specificity (0.91) for tumor grade prediction, and the B1200 model exhibited the highest sensitivity (0.94) for Ki-67 level prediction.</p><p>Initially, we found that LGG are significantly associated with a higher incidence of IDH-1 mutations and lower Ki-67 expression (&lt; 10%). Subsequently, we observed that IDH-1 mutation, LGG, and low Ki-67 expression are linked to significantly higher Dslow percentile values. In addition, other studies have also observed lower Dslow values in high-grade gliomas (HGG), along with higher ADC values in the IDH-1 mutation group and lower ADC minimum values in the low Ki-67 group <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b25">[27]</ref><ref type="bibr" target="#b26">[28]</ref><ref type="bibr" target="#b27">[29]</ref>. On the other hand, parameters such as Dfast and frac showed some variation in IDH-1 status differentiation, but they were generally not statistically significant, which is consistent with previous studies <ref type="bibr" target="#b27">[29,</ref><ref type="bibr" target="#b28">30]</ref>. Similarly, higher skewness and kurtosis of ADC were observed in the IDH-1 wild type and HGG group <ref type="bibr" target="#b29">[31,</ref><ref type="bibr" target="#b30">32]</ref>, which is in consistent with our findings. Furthermore, we found higher positive skewness and kurtosis, along with lower entropy, in the high Ki-67 group. Interestingly, Kurokawa et al. found a lower entropy of normalized ADC in the molecular grade 4 (Mol-4) and molecular grade 2/3 glioma (diagnosed according to the World Health Organization classification 2021, CNS 5) and they further found that the entropy of normalized ADC and age at diagnosis were independent predictive parameters for the Mol-4 group with an AUC of 0.92 <ref type="bibr" target="#b31">[33]</ref>.</p><p>Kurtosis represents the peakedness of a distribution, skewness indicates the asymmetry, and entropy reflects the disorder or chaos within the distribution. In our study, higher positive skewness and kurtosis, along with lower entropy, indicate that the Dslow distribution is more concentrated toward smaller values. is suggests that Dslow is generally consistent and small across all regions. In other words, the water diffusion in the IDH-1 wild type, HGG, and high Ki-67 group is more restricted, reflecting a more heterogeneous microstructure in these groups. Taken together, these results underscore the potential of Dslow as a key imaging biomarker for distinguishing glioma characteristics. Similarly, the multivariate logistic regression analyses further support this conclusion.</p><p>Frac percentile values demonstrated significant differences between HGG and LGG, with higher frac values in HGG at the B800 model. However, at higher B-value models, these differences became less consistent, though they remained significant at certain points (e.g., frac2000_p10). For Ki-67 level identification, frac also exhibited significant differences at specific B-value, such as the B1500 and B2000 models, although these differences were less consistent. Additionally, we observed higher percentiles of Dfast and frac, as well as increased frac entropy in high B-value models. As analyzed above, this suggests a more chaotic distribution of capillary circulation, indicating microvascular or neovascular perfusion in the IDH-1 wild type, HGG, and high Ki-67 groups.</p><p>Dfast exhibited a trend toward higher values in HGG compared to LGG, especially at higher B-value. However, the differences were not always statistically significant, which was also observed for IDH-1 status and Ki-67 level identification, consistent with previous studies <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b27">29,</ref><ref type="bibr" target="#b28">30,</ref><ref type="bibr" target="#b32">34,</ref><ref type="bibr" target="#b33">35]</ref>, as is shown in the representative image Fig. <ref type="figure">3</ref>.1 and 3.2, and more in supplemental files. is is further reflected in our multivariate logistic regression models, where Dslow-related features, including skewness, entropy, and specific percentiles (e.g., p10, p25), were more frequently retained, indicating the greater robustness and biological relevance of Dslow in IVIM Bi-exponential model fitting. However, the AUCs of the different models showed no significant difference. Nonetheless,   (0.842) compared to normalized Dfast (0.685). In Gu et al. 's study, 12 B-value (0-2800 s/mm²) were used in their bi-exponential model for differentiating IDH-mutant gliomas and glioma grades.</p><p>e AUC values for HGG identification were Dslow (0.816), Dfast (0.398), and frac (0.498), while for IDH-1 mutation identification, the AUCs were Dslow (0.873), Dfast (0.501), and frac (0.633) <ref type="bibr" target="#b36">[38]</ref>. All of the above studies demonstrated the efficiency of high B-value selection in glioma characteristic identification, with the hotspot method used for ROI delineation in each study. However, to date, no comparative study has been found that discusses B-value selection within a single IVIM series using the entire tumor histogram analysis method. We believe that our results warrant further investigation in future studies.</p><p>Previous studies have shown that both the apparent diffusion coefficient (ADC) and Dslow reflect the molecular diffusion of water in tumor tissue. Specifically, a lower Dslow value indicates greater restriction of water diffusion and higher cell density <ref type="bibr" target="#b37">[39,</ref><ref type="bibr" target="#b38">40]</ref>. While studies also highlighted that perfusion-related parameters may still capture aspects of microvascular heterogeneity, offering complementary biological insights <ref type="bibr" target="#b39">[41,</ref><ref type="bibr" target="#b40">42]</ref>.</p><p>erefore, our aim was to determine whether incorporating higher b-values could enhance model robustness-not only for Dslow but also across all IVIM-derived metrics. e choice of fitting methodology is critical for accurate IVIM quantification, particularly when jointly estimating diffusion-and perfusion-related components. While the segmented fitting approach provides a practical and clinically feasible solution, it may not fully overcome the inherent instability of frac and Dfast in low-perfusion settings <ref type="bibr" target="#b41">[43,</ref><ref type="bibr" target="#b42">44]</ref>, especially in a context characterized by inherently low microperfusion, such as gliomas <ref type="bibr" target="#b43">[45]</ref>. In this study, we retained the bi-exponential IVIM framework to achieve a comprehensive assessment of both diffusion and perfusion compartments in gliomas.</p><p>Our results confirmed that-frac and Dfast were indeed unstable and had limited predictive value. However, Dslow-based histogram metrics (e.g., p10, entropy, skewness) showed the strongest associations with glioma features, particularly under high b-values. ese findings emphasize that the practical diagnostic value in gliomas primarily stems from the diffusion component, while the IVIM framework still provides a physiologically interpretable modeling basis. Moreover, Recent advances in Bayesian inference and deep learning-based fitting strategies have demonstrated substantially improved accuracy, robustness, and spatial consistency compared with conventional nonlinear least squares methods <ref type="bibr" target="#b41">[43,</ref><ref type="bibr" target="#b44">46,</ref><ref type="bibr" target="#b45">47]</ref> Although differences in Dslow estimation across methods are typically minor, frac and Dfast can benefit considerably from these advanced algorithms. Future work should therefore explore the integration of such techniques to further improve the reproducibility and clinical interpretability of IVIM analysis in glioma imaging.</p><p>And to specifically isolate the effect of the maximum b-value, we systematically varied only the highest b-value (up to 2000 s/mm²) while keeping all other b-values constant.</p><p>is strategy allowed a direct evaluation of the influence of the maximum b-value without introducing confounding factors. Also, previous studies have suggested that using excessively high b-values in IVIM imaging does not significantly enhance the accuracy of parameter estimation and may even degrade it due to increased noise and reduced signal-to-noise ratio (SNR), particularly affecting Dfast and frac <ref type="bibr" target="#b46">[48]</ref><ref type="bibr" target="#b47">[49]</ref><ref type="bibr" target="#b48">[50]</ref><ref type="bibr" target="#b49">[51]</ref><ref type="bibr" target="#b50">[52]</ref>.In our study, we addressed this concern by increasing the number of excitations (NEX) for higher b-values and applying GE's ASSET parallel imaging technique, which helped maintain image quality while keeping the total acquisition time clinically acceptable (Supplemental Fig. <ref type="figure">10</ref>).</p><p>Among the evaluated ranges, a maximum b-value of 1500 s/mm² yielded the most robust and consistent performance across tumor grading, IDH-1 mutation status, and Ki-67 expression. is may be explained by the fact that b = 1500 s/mm² offers an optimal balance: it effectively suppresses perfusion contamination in signal decay, allowing Dslow to better reflect true tissue diffusivity, while avoiding the severe SNR degradation observed at b = 2000 s/mm². In contrast, b = 2000 s/mm² contributed less diagnostic value and added marginal scan time despite multiple excitations, which may not be justified in routine clinical use. Notably, while the focus of this study was on exploring the impact of higher b-values, low b-values were held constant across all acquisition schemes. is design may explain why perfusion-related IVIM parameters contributed less to the multivariate models.</p><p>Clinically, high-grade gliomas account for up to 85% of all newly diagnosed malignant primary brain tumors <ref type="bibr" target="#b51">[53]</ref>, with GBM comprising more than 45-50% of these cases <ref type="bibr" target="#b52">[54]</ref>. A Ki-67 index of ≥ 10% has been reported in over 40% of patients <ref type="bibr" target="#b53">[55,</ref><ref type="bibr" target="#b54">56]</ref>, and IDH-1-R132H mutation occurs approximately 60-90% of diffuse and anaplastic gliomas and secondary glioblastomas as is reviewed by Preusser et al. <ref type="bibr" target="#b55">[57]</ref> From a clinical standpoint, our findings support the use of a maximum b-value of 1500 s/ mm² in IVIM protocols aimed at glioma characterization. Given that this parameter setting improves diagnostic performance with minimal increase in excitation timeespecially when paired with acceleration techniquesit may offer a practical and noninvasive alternative to more time-consuming contrast-enhanced or spectroscopic sequences. It is also important to note that our study primarily focused on the impact of higher b-values, while low b-values were kept consistent across all models.</p><p>is consistency may partially explain the limited contribution of Dfast and perfusion fraction in the final multivariate models. Future studies will further explore the influence of low b-value selection, as it also plays a critical role in estimating perfusion-related parameters in IVIM.</p><p>is study has several limitations. First, the sample size was relatively small, and multi-center studies are needed to validate our findings. Second, although higher B-values were evaluated, further optimization of both the maximum B-value and the number of B-values may affect parameter estimation and warrants investigation. ird, integrating vascular-related markers or perfusion imaging in future studies could better elucidate the microvascular basis of IVIM-derived features. Finally, while a segmented IVIM fitting approach was adopted for simplicity and clinical feasibility, advanced Bayesian or deep learning-based methods may further improve the accuracy and reproducibility of perfusion-related parameters and should be explored in future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In sum, histogram features of IVIM parameters performed well in differentiating glioma characteristics. Additionally, using higher B-value for IVIM bi-exponential fitting could optimize diagnostic performance and improve clinical utility.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 Fig. 2</head><label>12</label><figDesc>Fig. 1 Patient enrollment</figDesc><graphic coords="3,119.08,84.00,357.12,212.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3 . 1</head><label>31</label><figDesc>Fig. 3.1 Representative high-grade glioma case with ROI segmentation and IVIM histogram distributions</figDesc><graphic coords="5,123.58,84.00,348.12,609.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 . 2</head><label>32</label><figDesc>Fig. 3.2 Representative lower-grade glioma case with ROI segmentation and IVIM histogram distributions</figDesc><graphic coords="6,114.64,84.00,366.00,609.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Odds ratios from multivariate logistic regression analysis of IDH-1 status (a), Tumor Grade (b) and ki-67 level (c)</figDesc><graphic coords="9,143.32,84.00,308.64,524.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><figDesc>the higher B-value models may offer enhanced clinical utility, as suggested by the Decision Curve Analysis.In reference to other high B-value DWI analyses, Guo et al. used 5 B-value (0-8000 s/mm²) in their monoexponential model for glioma molecular grading, with ADC8000-based histogram parameters yielding the highest AUC (0.897)<ref type="bibr" target="#b34">[36]</ref>. Similarly, Wang et al. used 9 B-value (0-10,000 s/mm²) in their monoexponential model for glioma genotype and subtype identification, with ADCb500/B8000 providing the highest AUC (0.866) for differentiating IDH-mutant gliomas<ref type="bibr" target="#b35">[37]</ref>. In Yu et al. 's study, 14 B-value (0-2000 s/mm²) were used in their bi-exponential model for differentiating IDH-mutant gliomas, with normalized Dslow showing a higher AUC</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5</head><label>5</label><figDesc>Fig. 5 ROC curves for different B-value models to distinguish IDH-1 Status (a), Tumor Grade (b) and Ki-67 level (c)</figDesc><graphic coords="12,56.69,84.00,481.92,529.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 6</head><label>6</label><figDesc>Fig. 6 Decision curve analysis for models built with different B-value to predict IDH-1 status (a), Tumor Grade (b) and ki-67 level (c)</figDesc><graphic coords="13,56.69,84.00,481.92,457.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Demographic and clinical characteristics of patients with grade II, III, and IV gliomas</figDesc><table><row><cell></cell><cell>GⅡ</cell><cell>GⅢ</cell><cell>GⅣ</cell><cell cols="2">Test stat. p</cell></row><row><cell>Total</cell><cell>18</cell><cell>13</cell><cell>42</cell><cell></cell><cell></cell></row><row><cell>gender</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male/Total (%)</cell><cell>7/18</cell><cell>8/13</cell><cell>25/42</cell><cell>Chisq.</cell><cell>0.293</cell></row><row><cell></cell><cell>(38.9%)</cell><cell>(61.5%)</cell><cell>(59.5%)</cell><cell>(2</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>df ) = 2.46</cell><cell></cell></row><row><cell>Tumor type</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>AOG</cell><cell>0</cell><cell>9</cell><cell>0</cell><cell>Fisher's</cell><cell>&lt; 0.001 *</cell></row><row><cell>(%)</cell><cell>(0)</cell><cell>(69.2)</cell><cell>(0)</cell><cell>exact test</cell><cell></cell></row><row><cell>OG</cell><cell>7</cell><cell>1</cell><cell>0</cell><cell></cell><cell></cell></row><row><cell>(%)</cell><cell>(38.9)</cell><cell>(7.7)</cell><cell>(0)</cell><cell></cell><cell></cell></row><row><cell>DA</cell><cell>11</cell><cell>1</cell><cell>3</cell><cell></cell><cell></cell></row><row><cell>(%)</cell><cell>(61.1)</cell><cell>(7.7)</cell><cell>(7.1)</cell><cell></cell><cell></cell></row><row><cell>GBM</cell><cell>0</cell><cell>0</cell><cell>39</cell><cell></cell><cell></cell></row><row><cell>(%)</cell><cell>(0)</cell><cell>(0)</cell><cell>(92.9)</cell><cell></cell><cell></cell></row><row><cell>AA</cell><cell>0</cell><cell>2</cell><cell>0</cell><cell></cell><cell></cell></row><row><cell>(%)</cell><cell>(0)</cell><cell>(15.4)</cell><cell>(0)</cell><cell></cell><cell></cell></row><row><cell>IDH-1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>mutant/Total</cell><cell>18/18</cell><cell>7/13</cell><cell>13/42</cell><cell>Chisq.</cell><cell>&lt; 0.001 *</cell></row><row><cell>(%)</cell><cell>(100%)</cell><cell>(53.8%)</cell><cell>(31%)</cell><cell>(2</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>df ) = 24.09</cell><cell></cell></row><row><cell>Ki-67</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>&lt; 10%</cell><cell>16/18</cell><cell>2/13</cell><cell>3/42</cell><cell>Chisq.</cell><cell>&lt; 0.001*</cell></row><row><cell>(%)</cell><cell>(88.9%)</cell><cell>(15.4%)</cell><cell>(7.1%)</cell><cell>(2</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>df ) = 42.47</cell><cell></cell></row><row><cell>age</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Mean</cell><cell>42.7</cell><cell>51.7</cell><cell>57.5</cell><cell>ANOVA</cell><cell>&lt; 0.001 *</cell></row><row><cell>(SD)</cell><cell>(10.4)</cell><cell>(14)</cell><cell>(10.8)</cell><cell>F-test</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(2, 70</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>df ) = 10.96</cell><cell></cell></row></table><note><p>* p &lt; 0.05, statistically significant AOG: Anaplastic Oligodendroglioma; OG: Oligodendroglioma; DA: Diffuse Astrocytoma; GBM: Glioblastoma; AA: Anaplastic Astrocytoma B1200 model (Supplemental table 2.1)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Multivariate performance of different models in differentiating IDH-1 Status, tumor grade and Ki-67 level</figDesc><table><row><cell></cell><cell>AUC</cell><cell>Sensitivity</cell><cell>Specificity</cell><cell>TP</cell><cell>FP</cell><cell>FN</cell><cell>TN</cell><cell>Accuracy</cell><cell>Threshold</cell></row><row><cell></cell><cell>(95%CI)</cell><cell>(95%)</cell><cell>(95% CI)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">IDH-1 Status (wild type vs. mutation type)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B800</cell><cell>0.76</cell><cell>0.96</cell><cell>0.66</cell><cell>33</cell><cell>12</cell><cell>5</cell><cell>23</cell><cell>0.77</cell><cell>0.73</cell></row><row><cell></cell><cell>(0.65,0.88)</cell><cell>(0.72,0.96)</cell><cell>(0.48,0.81)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1200</cell><cell>0.79</cell><cell>0.87</cell><cell>0.77</cell><cell>28</cell><cell>8</cell><cell>10</cell><cell>27</cell><cell>0.75</cell><cell>0.28</cell></row><row><cell></cell><cell>(0.68,0.89)</cell><cell>(0.57,0.87)</cell><cell>(0.6,0.9)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1500</cell><cell>0.8</cell><cell>0.74</cell><cell>0.91</cell><cell>22</cell><cell>3</cell><cell>16</cell><cell>32</cell><cell>0.74</cell><cell>0.09</cell></row><row><cell></cell><cell>(0.7,0.9)</cell><cell>(0.41,0.74)</cell><cell>(0.77,0.98)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B2000</cell><cell>0.79</cell><cell>0.74</cell><cell>0.91</cell><cell>22</cell><cell>3</cell><cell>16</cell><cell>32</cell><cell>0.74</cell><cell>0.11</cell></row><row><cell></cell><cell>(0.69,0.89)</cell><cell>(0.41,0.74)</cell><cell>(0.77,0.98)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">Tumor Grade (HGG vs. LGG)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B800</cell><cell>0.76</cell><cell>0.96</cell><cell>0.66</cell><cell>49</cell><cell>4</cell><cell>6</cell><cell>14</cell><cell>0.86</cell><cell>1.00</cell></row><row><cell></cell><cell>(0.65,0.88)</cell><cell>(0.72,0.96)</cell><cell>(0.48,0.81)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1200</cell><cell>0.79</cell><cell>0.87</cell><cell>0.77</cell><cell>45</cell><cell>2</cell><cell>10</cell><cell>16</cell><cell>0.84</cell><cell>1.00</cell></row><row><cell></cell><cell>(0.68,0.89)</cell><cell>(0.57,0.87)</cell><cell>(0.6,0.9)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1500</cell><cell>0.8</cell><cell>0.74</cell><cell>0.91</cell><cell>50</cell><cell>2</cell><cell>5</cell><cell>16</cell><cell>0.90</cell><cell>1.00</cell></row><row><cell></cell><cell>(0.7,0.9)</cell><cell>(0.41,0.74)</cell><cell>(0.77,0.98)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B2000</cell><cell>0.79</cell><cell>0.74</cell><cell>0.91</cell><cell>48</cell><cell>3</cell><cell>7</cell><cell>15</cell><cell>0.86</cell><cell>0.23</cell></row><row><cell></cell><cell>(0.69,0.89)</cell><cell>(0.41,0.74)</cell><cell>(0.77,0.98)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">Ki-67 level (≥ 10% vs.&lt; 10%)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B800</cell><cell>0.79</cell><cell>0.62</cell><cell>0.88</cell><cell>13</cell><cell>6</cell><cell>8</cell><cell>46</cell><cell>0.81</cell><cell>0.58</cell></row><row><cell></cell><cell>(0.67,0.92)</cell><cell>(0.38,0.82)</cell><cell>(0.77,0.96)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1200</cell><cell>0.65</cell><cell>0.38</cell><cell>0.94</cell><cell>8</cell><cell>3</cell><cell>13</cell><cell>49</cell><cell>0.78</cell><cell>0.00</cell></row><row><cell></cell><cell>(0.51,0.8)</cell><cell>(0.18,0.62)</cell><cell>(0.84,0.99)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B1500</cell><cell>0.79</cell><cell>0.86</cell><cell>0.63</cell><cell>18</cell><cell>19</cell><cell>3</cell><cell>49</cell><cell>0.70</cell><cell>0.04</cell></row><row><cell></cell><cell>(0.67,0.92)</cell><cell>(0.64,0.97)</cell><cell>(0.49,0.76)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>B2000</cell><cell>0.83</cell><cell>0.81</cell><cell>0.83</cell><cell>17</cell><cell>9</cell><cell>4</cell><cell>43</cell><cell>0.82</cell><cell>0.03</cell></row><row><cell></cell><cell>(0.71,0.94)</cell><cell>(0.58,0.95)</cell><cell>(0.7,0.92)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">AUC: area under the curve; TP: true positives; TN: true negatives; FP: false positives; FN: false negatives</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>Not applicable.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div><head>Funding</head><p>This work was supported by <rs type="funder">Natural Science Basic Research Program of Shanxi Province</rs>(Grant numbers <rs type="grantNumber">20210302124380</rs> and <rs type="grantNumber">20210302124386</rs>) and <rs type="funder">Central Guidance Funds for Local Science and Technology Development</rs> (<rs type="grantNumber">ID:2022.12Y283</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_crb96Uy">
+					<idno type="grant-number">20210302124380</idno>
+				</org>
+				<org type="funding" xml:id="_VkG9tB6">
+					<idno type="grant-number">20210302124386</idno>
+				</org>
+				<org type="funding" xml:id="_RwJRagR">
+					<idno type="grant-number">ID:2022.12Y283</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The datasets generated during and/or analyzed during the current study are available from the corresponding author on reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consent for publication</head><p>Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Using germline variants to estimate glioma and subtype risks</title>
+		<author>
+			<persName><forename type="first">Jeanette</forename><forename type="middle">E</forename><surname>Eckel-Passow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><forename type="middle">L</forename><surname>Kosel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Kollmeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><forename type="middle">M</forename><surname>Molinaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terri</forename><surname>Rice</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alissa</forename><forename type="middle">A</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristen</forename><forename type="middle">L</forename><surname>Drucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinne</forename><forename type="middle">E</forename><surname>Praska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helen</forename><forename type="middle">M</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucie</forename><forename type="middle">S</forename><surname>Mccoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paige</forename><forename type="middle">M</forename><surname>Bracci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claudia</forename><forename type="middle">F</forename><surname>Lucchinetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">L</forename><surname>Wiemels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">K</forename><surname>Wiencke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">L</forename><surname>Bondy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Beatrice</forename><surname>Melin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terry</forename><forename type="middle">C</forename><surname>Burns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Giannini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">H</forename><surname>Lachance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margaret</forename><forename type="middle">R</forename><surname>Wrensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Jenkins</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noz009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="451" to="461" />
+			<date type="published" when="2019-01-08">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eckel-Passow JE, Decker PA, Kosel ML, Kollmeyer TM, Molinaro AM, Rice T, Caron AA, Drucker KL, Praska CE, Pekmezci M, et al. Using germline variants to estimate glioma and subtype risks. Neuro Oncol. 2019;21(4):451-61.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Webster</forename><forename type="middle">K</forename><surname>Cavenee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroko</forename><surname>Ohgaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otmar</forename><forename type="middle">D</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Kleihues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-016-1545-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="803" to="820" />
+			<date type="published" when="2016-05-09">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis DN, Perry A, Reifenberger G, von Deimling A, Figarella-Branger D, Cavenee WK, Ohgaki H, Wiestler OD, Kleihues P, Ellison DW. The 2016 world health organization classification of tumors of the central nervous system: a summary. Acta Neuropathol. 2016;131(6):803-20.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Molecular profiling reveals biologically discrete subsets and pathways of progression in diffuse glioma</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ceccarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">P</forename><surname>Barthel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Malta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Sabedot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Salama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Morozova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Newton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Radenbaugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Pagnotta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<imprint>
+			<biblScope unit="volume">164</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="550" to="563" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ceccarelli M, Barthel FP, Malta TM, Sabedot TS, Salama SR, Murray BA, Moro- zova O, Newton Y, Radenbaugh A, Pagnotta SM, et al. Molecular profiling reveals biologically discrete subsets and pathways of progression in diffuse glioma. Cell. 2016;164(3):550-63.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Glioma Subclassifications and Their Clinical Significance</title>
+		<author>
+			<persName><forename type="first">Ricky</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Smith-Cohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">L</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><surname>Colman</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13311-017-0519-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurotherapeutics</title>
+		<title level="j" type="abbrev">Neurotherapeutics</title>
+		<idno type="ISSN">1878-7479</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="284" to="297" />
+			<date type="published" when="2017-04">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen R, Smith-Cohn M, Cohen AL, Colman H. Glioma subclassifications and their clinical significance. Neurotherapeutics. 2017;14(2):284-97.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Evaluation of the proliferation marker Ki-67 in gliomas: Interobserver variability and digital quantification</title>
+		<author>
+			<persName><forename type="first">Ljudmilla</forename><forename type="middle">A G</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><forename type="middle">A</forename><surname>Bangsø</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kim</forename><forename type="middle">H</forename><surname>Lindahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rikke</forename><forename type="middle">H</forename><surname>Dahlrot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><forename type="middle">V B</forename><surname>Hjelmborg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steinbjørn</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjarne</forename><forename type="middle">W</forename><surname>Kristensen</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13000-018-0711-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostic Pathology</title>
+		<title level="j" type="abbrev">Diagn Pathol</title>
+		<idno type="ISSNe">1746-1596</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">38</biblScope>
+			<date type="published" when="2018-06-09">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nielsen LAG, Bangsø JA, Lindahl KH, Dahlrot RH, Hjelmborg JVB, Hansen S, Kristensen BW. Evaluation of the proliferation marker Ki-67 in glio- mas: interobserver variability and digital quantification. Diagn Pathol. 2018;13(1):38.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Based on clinical Ki-67 expression and serum infiltrating lymphocytes related nomogram for predicting the diagnosis of glioma-grading</title>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiguo</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingbin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guohua</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinbiao</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxiong</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linlin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinhong</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunliang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Qiu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2022.696037</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">696037</biblScope>
+			<date type="published" when="2022-08-25">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang Z, Gu W, Hu M, Zhang G, Yu F, Xu J, Deng J, Xu L, Mei J, Wang C, Qiu F. Based on clinical Ki-67 expression and serum infiltrating lymphocytes related nomogram for predicting the diagnosis of glioma-grading. Front Oncol. 2022;12:696037.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Low expression of Ki-67/MIB-1 labeling index in IDH wild type glioblastoma predicts prolonged survival independently by MGMT methylation status</title>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Tini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariya</forename><surname>Yavoroska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Antonietta</forename><surname>Mazzei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clelia</forename><surname>Miracco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luigi</forename><surname>Pirtoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miriam</forename><surname>Tomaciello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Marampon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-2826545/v1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Neurooncol</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="339" to="344" />
+			<date type="published" when="2023-04-19">2023</date>
+			<publisher>Research Square Platform LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tini P, Yavoroska M, Mazzei MA, Miracco C, Pirtoli L, Tomaciello M, Marampon F, Minniti G. Low expression of Ki-67/MIB-1 labeling index in IDH wild type glioblastoma predicts prolonged survival independently by MGMT methyla- tion status. J Neurooncol. 2023;163(2):339-44.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Spontaneous development of intratumoral heterogeneity in a transposon‐induced mouse model of glioma</title>
+		<author>
+			<persName><forename type="first">Keisuke</forename><surname>Sumiyoshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideto</forename><surname>Koso</surname></persName>
+			<idno type="ORCID">0000-0002-8986-7617</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sumiko</forename><surname>Watanabe</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/cas.13579</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Science</title>
+		<title level="j" type="abbrev">Cancer Science</title>
+		<idno type="ISSN">1347-9032</idno>
+		<idno type="ISSNe">1349-7006</idno>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1513" to="1523" />
+			<date type="published" when="2018-04-15">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sumiyoshi K, Koso H, Watanabe S. Spontaneous development of intratumoral heterogeneity in a transposon-induced mouse model of glioma. Cancer Sci. 2018;109(5):1513-23.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Uncovering Spatiotemporal Heterogeneity of High-Grade Gliomas: From Disease Biology to Therapeutic Implications</title>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Comba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">M</forename><surname>Faisal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Luisa</forename><surname>Varela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Hollon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><forename type="middle">N</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshie</forename><surname>Umemura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felipe</forename><forename type="middle">J</forename><surname>Nunez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastien</forename><surname>Motsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">G</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><forename type="middle">R</forename><surname>Lowenstein</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2021.703764</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">703764</biblScope>
+			<date type="published" when="2021-08-05">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Comba A, Faisal SM, Varela ML, Hollon T, Al-Holou WN, Umemura Y, Nunez FJ, Motsch S, Castro MG, Lowenstein PR. Uncovering Spatiotemporal heteroge- neity of High-Grade gliomas: from disease biology to therapeutic implica- tions. Front Oncol. 2021;11:703764.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Microenvironment-Derived Regulation of HIF Signaling Drives Transcriptional Heterogeneity in Glioblastoma Multiforme</title>
+		<author>
+			<persName><forename type="first">Dieter</forename><forename type="middle">Henrik</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><surname>Gaebelein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><surname>Börries</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Wörner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nils</forename><surname>Pompe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><surname>Franco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabrina</forename><surname>Heynckes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bartholomae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darren</forename><forename type="middle">Ó</forename><surname>Hailín</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Stella</forename><surname>Carro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Prinz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irina</forename><surname>Mader</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Delev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Schnell</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/1541-7786.mcr-17-0680</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Cancer Research</title>
+		<idno type="ISSN">1541-7786</idno>
+		<idno type="ISSNe">1557-3125</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="655" to="668" />
+			<date type="published" when="2018-04-01">2018</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Heiland DH, Gaebelein A, Börries M, Wörner J, Pompe N, Franco P, Heynckes S, Bartholomae M, hAilín D, Carro MS, et al. Microenvironment-Derived regula- tion of HIF signaling drives transcriptional heterogeneity in glioblastoma multiforme. Mol Cancer Res. 2018;16(4):655-68.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The capillary network: a link between ivim and classical perfusion</title>
+		<author>
+			<persName><forename type="first">Denis</forename><forename type="middle">Le</forename><surname>Bihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Turner</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/mrm.1910270116</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medicine</title>
+		<title level="j" type="abbrev">Magnetic Resonance in Med</title>
+		<idno type="ISSN">0740-3194</idno>
+		<idno type="ISSNe">1522-2594</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="171" to="178" />
+			<date type="published" when="1992-09">1992</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Le Bihan D, Turner R. The capillary network: a link between IVIM and classical perfusion. Magn Reson Med. 1992;27(1):171-8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A three-component multi-b-value diffusion-weighted imaging might be a useful biomarker for detecting microstructural features in gliomas with differences in malignancy and IDH-1 mutation status</title>
+		<author>
+			<persName><forename type="first">Mengqiu</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoqing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongming</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-022-09212-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2871" to="2880" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cao M, Wang X, Liu F, Xue K, Dai Y, Zhou Y. A three-component multi-b-value diffusion-weighted imaging might be a useful biomarker for detecting microstructural features in gliomas with differences in malignancy and IDH-1 mutation status. Eur Radiol. 2023;33(4):2871-80.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Noninvasively evaluating the grade and IDH mutation status of gliomas by using mono-exponential, bi-exponential diffusion-weighted imaging and three-dimensional pseudo-continuous arterial spin labeling</title>
+		<author>
+			<persName><forename type="first">Da</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Binghu</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejrad.2023.110721</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Radiology</title>
+		<title level="j" type="abbrev">European Journal of Radiology</title>
+		<idno type="ISSN">0720-048X</idno>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="page">110721</biblScope>
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guo D, Jiang B. Noninvasively evaluating the grade and IDH mutation status of gliomas by using mono-exponential, bi-exponential diffusion-weighted imaging and three-dimensional pseudo-continuous arterial spin labeling. Eur J Radiol. 2023;160:110721.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Application of a Simplified Method for Estimating Perfusion Derived from Diffusion-Weighted MR Imaging in Glioma Grading</title>
+		<author>
+			<persName><forename type="first">Mengqiu</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiteng</forename><surname>Suo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yawen</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weina</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxun</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnagi.2017.00432</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Aging Neuroscience</title>
+		<title level="j" type="abbrev">Front. Aging Neurosci.</title>
+		<idno type="ISSNe">1663-4365</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">432</biblScope>
+			<date type="published" when="2017">2017</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cao M, Suo S, Han X, Jin K, Sun Y, Wang Y, Ding W, Qu J, Zhang X, Zhou Y. Application of a simplified method for estimating perfusion derived from Diffusion-Weighted MR imaging in glioma grading. Front Aging Neurosci. 2017;9:432.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Differentiation of high-grade and low-grade diffuse gliomas by intravoxel incoherent motion MR imaging</title>
+		<author>
+			<persName><forename type="first">Osamu</forename><surname>Togao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akio</forename><surname>Hiwatashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koji</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazufumi</forename><surname>Kikuchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masahiro</forename><surname>Mizoguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koji</forename><surname>Yoshimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satoshi</forename><forename type="middle">O</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toru</forename><surname>Iwaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Makoto</forename><surname>Obara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Van Cauteren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroshi</forename><surname>Honda</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/nov147</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<title level="j" type="abbrev">Neuro Oncol</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="132" to="141" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Togao O, Hiwatashi A, Yamashita K, Kikuchi K, Mizoguchi M, Yoshimoto K, Suzuki SO, Iwaki T, Obara M, Van Cauteren M, Honda H. Differentiation of high-grade and low-grade diffuse gliomas by intravoxel incoherent motion MR imaging. Neuro Oncol. 2016;18(1):132-41.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Impact of &lt;i&gt;b&lt;/i&gt;-Value Sampling Scheme on Brain IVIM Parameter Estimation in Healthy Subjects</title>
+		<author>
+			<persName><forename type="first">Stéren</forename><surname>Chabert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Verdu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gamaliel</forename><surname>Huerta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristian</forename><surname>Montalba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Riveros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>Uribe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Salas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandro</forename><surname>Veloz</surname></persName>
+		</author>
+		<idno type="DOI">10.2463/mrms.mp.2019-0061</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medical Sciences</title>
+		<title level="j" type="abbrev">MRMS</title>
+		<idno type="ISSN">1347-3182</idno>
+		<idno type="ISSNe">1880-2206</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="216" to="226" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Japanese Society for Magnetic Resonance in Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chabert S, Verdu J, Huerta G, Montalba C, Cox P, Riveros R, Uribe S, Salas R, Veloz A. Impact of b-Value sampling scheme on brain IVIM parameter Estima- tion in healthy subjects. Magn Reson Med Sci. 2020;19(3):216-26.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Distribution of intravoxel incoherent motion MRI-related parameters in the brain: evidence of interhemispheric asymmetry</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.crad.2016.09.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Radiology</title>
+		<title level="j" type="abbrev">Clinical Radiology</title>
+		<idno type="ISSN">0009-9260</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="94.e1" to="94.e6" />
+			<date type="published" when="2017-01">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang C, Ren D, Guo Y, Xu Y, Feng Y, Zhang X, Mei Y, Chen M, Xiao X. Distribu- tion of intravoxel incoherent motion MRI-related parameters in the brain: evidence of interhemispheric asymmetry. Clin Radiol. 2017;72(1):94. e91-94 e96.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Quantification of intravoxel incoherent motion with optimized b‐values using deep neural network</title>
+		<author>
+			<persName><forename type="first">Wonil</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-2144-0211</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Byungjai</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-9320-1391</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunwook</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-4757-1922</idno>
+		</author>
+		<idno type="DOI">10.1002/mrm.28708</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medicine</title>
+		<title level="j" type="abbrev">Magnetic Resonance in Med</title>
+		<idno type="ISSN">0740-3194</idno>
+		<idno type="ISSNe">1522-2594</idno>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="230" to="244" />
+			<date type="published" when="2021-02-16">2021</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee W, Kim B, Park H. Quantification of intravoxel incoherent motion with optimized b-values using deep neural network. Magn Reson Med. 2021;86(1):230-44.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Applying protein-based amide proton transfer MR imaging to distinguish solitary brain metastases from glioblastoma</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiling</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyu</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xianlong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanshan</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongqing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongxing</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunxiu</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianbin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qihong</forename><surname>Rui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianyuan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhibo</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-017-4867-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4516" to="4524" />
+			<date type="published" when="2017-05-22">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yu H, Lou H, Zou T, Wang X, Jiang S, Huang Z, Du Y, Jiang C, Ma L, Zhu J, et al. Applying protein-based amide proton transfer MR imaging to distinguish solitary brain metastases from glioblastoma. Eur Radiol. 2017;27(11):4516-24.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Diffusion- and perfusion-weighted MRI radiomics model may predict isocitrate dehydrogenase (IDH) mutation and tumor aggressiveness in diffuse lower grade glioma</title>
+		<author>
+			<persName><forename type="first">Minjae</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">So</forename><forename type="middle">Yeong</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Eun</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-4419-4682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yeongheun</forename><surname>Jo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seo</forename><forename type="middle">Young</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soo</forename><forename type="middle">Jung</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeong</forename><forename type="middle">Hoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ho</forename><forename type="middle">Sung</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-019-06548-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2142" to="2151" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kim M, Jung SY, Park JE, Jo Y, Park SY, Nam SJ, Kim JH, Kim HS. Diffusion-and perfusion-weighted MRI radiomics model May predict isocitrate dehydroge- nase (IDH) mutation and tumor aggressiveness in diffuse lower grade glioma. Eur Radiol. 2020;30(4):2142-51.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Determining IDH-Mutational Status in Gliomas Using IDH1-R132H Antibody and Polymerase Chain Reaction</title>
+		<author>
+			<persName><forename type="first">Dibson</forename><forename type="middle">D</forename><surname>Gondim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">A</forename><surname>Gener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kendra</forename><forename type="middle">L</forename><surname>Curless</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">A</forename><surname>Cohen-Gadol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eyas</forename><forename type="middle">M</forename><surname>Hattab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Cheng</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/pai.0000000000000702</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Immunohistochemistry &amp; Molecular Morphology</title>
+		<idno type="ISSN">1541-2016</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="722" to="725" />
+			<date type="published" when="2019-11">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gondim DD, Gener MA, Curless KL, Cohen-Gadol AA, Hattab EM, Cheng L. Determining IDH-Mutational status in gliomas using IDH1-R132H antibody and polymerase chain reaction. Appl Immunohistochem Mol Morphol. 2019;27(10):722-5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Detection of IDH1 mutation in human gliomas: comparison of immunohistochemistry and sequencing</title>
+		<author>
+			<persName><forename type="first">Shingo</forename><surname>Takano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masahide</forename><surname>Matsuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tetsuya</forename><surname>Yamamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eiichi</forename><surname>Ishikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mika</forename><forename type="middle">Kato</forename><surname>Kaneko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kentaro</forename><surname>Yamazaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yukinari</forename><surname>Kato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akira</forename><surname>Matsumura</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10014-011-0023-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Tumor Pathology</title>
+		<title level="j" type="abbrev">Brain Tumor Pathol</title>
+		<idno type="ISSN">1433-7398</idno>
+		<idno type="ISSNe">1861-387X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="115" to="123" />
+			<date type="published" when="2011-02-23">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Takano S, Tian W, Matsuda M, Yamamoto T, Ishikawa E, Kaneko MK, Yamazaki K, Kato Y, Matsumura A. Detection of IDH1 mutation in human gliomas: comparison of immunohistochemistry and sequencing. Brain Tumor Pathol. 2011;28(2):115-23.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Prediction of Ki-67 labeling index, ATRX mutation, and MGMT promoter methylation status in IDH-mutant astrocytoma by morphological MRI, SWI, DWI, and DSC-PWI</title>
+		<author>
+			<persName><forename type="first">Xiefeng</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengcong</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingfu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dairong</forename><surname>Cao</surname></persName>
+			<idno type="ORCID">0000-0002-0051-3143</idno>
+		</author>
+		<idno type="DOI">10.1007/s00330-023-09695-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="7003" to="7014" />
+			<date type="published" when="2023-05-03">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang X, Hu C, Xing Z, Lin Y, Su Y, Wang X, Cao D. Prediction of Ki-67 labeling index, ATRX mutation, and MGMT promoter methylation status in IDH- mutant Astrocytoma by morphological MRI, SWI, DWI, and DSC-PWI. Eur Radiol. 2023;33(10):7003-14.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Analysis of Mutant Isocitrate Dehydrogenase 1 Immunoexpression, Ki-67 and Programmed Death Ligand 1 in Diffuse Astrocytic Tumours : Study of Single Center in Bandung, Indonesia</title>
+		<author>
+			<persName><forename type="first">Hendrikus</forename><forename type="middle">Masang Ban</forename><surname>Bolly</surname></persName>
+			<idno type="ORCID">0000-0002-8924-4495</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmad</forename><surname>Faried</surname></persName>
+			<idno type="ORCID">0000-0003-2967-8125</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yulius</forename><surname>Hermanto</surname></persName>
+			<idno type="ORCID">0000-0003-2937-8130</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Billy</forename><forename type="middle">Parulian</forename><surname>Lubis</surname></persName>
+			<idno type="ORCID">0000-0002-6156-0306</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Firman</forename><forename type="middle">Priguna</forename><surname>Tjahjono</surname></persName>
+			<idno type="ORCID">0000-0001-5827-8679</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bethy</forename><forename type="middle">Suryawathy</forename><surname>Hernowo</surname></persName>
+			<idno type="ORCID">0000-0003-2426-2534</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Zafrullah</forename><surname>Arifin</surname></persName>
+			<idno type="ORCID">0000-0003-2529-9371</idno>
+		</author>
+		<idno type="DOI">10.3340/jkns.2020.0071</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Korean Neurosurgical Society</title>
+		<title level="j" type="abbrev">J Korean Neurosurg Soc</title>
+		<idno type="ISSN">2005-3711</idno>
+		<idno type="ISSNe">1598-7876</idno>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="100" to="109" />
+			<date type="published" when="2021-01-01">2021</date>
+			<publisher>Korean Neurosurgical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bolly HMB, Faried A, Hermanto Y, Lubis BP, Tjahjono FP, Hernowo BS, Arifin MZ. Analysis of mutant isocitrate dehydrogenase 1 Immunoexpression, Ki-67 and programmed death ligand 1 in diffuse astrocytic tumours: study of single center in Bandung, Indonesia. J Korean Neurosurg Soc. 2021;64(1):100-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Machine-Learning and Radiomics-Based Preoperative Prediction of Ki-67 Expression in Glioma Using MRI Data</title>
+		<author>
+			<persName><forename type="first">Jiaying</forename><surname>Ni</surname></persName>
+			<idno type="ORCID">0009-0006-6803-3345</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hongjian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junqing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianing</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junxia</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheming</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuhong</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongli</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junjie</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongping</forename><surname>You</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.acra.2024.02.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Academic Radiology</title>
+		<title level="j" type="abbrev">Academic Radiology</title>
+		<idno type="ISSN">1076-6332</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="3397" to="3405" />
+			<date type="published" when="2024-08">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ni J, Zhang H, Yang Q, Fan X, Xu J, Sun J, Zhang J, Hu Y, Xiao Z, Zhao Y, et al. Machine-Learning and Radiomics-Based preoperative prediction of Ki-67 expression in glioma using MRI data. Acad Radiol. 2024;31(8):3397-405.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Perfusion and diffusion MRI signatures in histologic and genetic subtypes of WHO grade II–III diffuse gliomas</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Leu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Garrett</forename><forename type="middle">A</forename><surname>Ott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phioanh</forename><forename type="middle">L</forename><surname>Nghiemphu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Whitney</forename><forename type="middle">B</forename><surname>Pope</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">H</forename><surname>Yong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><forename type="middle">M</forename><surname>Liau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">M</forename><surname>Ellingson</surname></persName>
+			<idno type="ORCID">0000-0002-2764-6640</idno>
+		</author>
+		<idno type="DOI">10.1007/s11060-017-2506-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="177" to="188" />
+			<date type="published" when="2017-05-25">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Leu K, Ott GA, Lai A, Nghiemphu PL, Pope WB, Yong WH, Liau LM, Clough- esy TF, Ellingson BM. Perfusion and diffusion MRI signatures in histologic and genetic subtypes of WHO grade II-III diffuse gliomas. J Neurooncol. 2017;134(1):177-88.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Non-invasive prediction of p53 and Ki-67 labelling indices and O-6-methylguanine-DNA methyltransferase promoter methylation status in adult patients with isocitrate dehydrogenase wild-type glioblastomas using diffusion-weighted imaging and dynamic susceptibility contrast-enhanced perfusion-weighted imaging combined with conventional MRI</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.crad.2022.03.015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Radiology</title>
+		<title level="j" type="abbrev">Clinical Radiology</title>
+		<idno type="ISSN">0009-9260</idno>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="e576" to="e584" />
+			<date type="published" when="2022-08">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xing Z, Huang W, Su Y, Yang X, Zhou X, Cao D. Non-invasive prediction of p53 and Ki-67 labelling indices and O-6-methylguanine-DNA methyltransferase promoter methylation status in adult patients with isocitrate dehydrogenase wild-type glioblastomas using diffusion-weighted imaging and dynamic susceptibility contrast-enhanced perfusion-weighted imaging combined with conventional MRI. Clin Radiol. 2022;77(8):e576-84.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Non-Gaussian diffusion MR imaging of glioma: comparisons of multiple diffusion parameters and correlation with histologic grade and MIB-1 (Ki-67 labeling) index</title>
+		<author>
+			<persName><forename type="first">Ren</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pang</forename><surname>Haopeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Xiaoyuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wu</forename><surname>Jinsong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhang</forename><surname>Jiawen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Chengjun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiu</forename><surname>Tianming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiong</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ding</forename><surname>Yueyue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhang</forename><surname>Yong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luo</forename><surname>Jianfeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Zhenwei</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00234-015-1606-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroradiology</title>
+		<title level="j" type="abbrev">Neuroradiology</title>
+		<idno type="ISSN">0028-3940</idno>
+		<idno type="ISSNe">1432-1920</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="121" to="132" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yan R, Haopeng P, Xiaoyuan F, Jinsong W, Jiawen Z, Chengjun Y, Tianming Q, Ji X, Mao S, Yueyue D, et al. Non-Gaussian diffusion MR imaging of glioma: comparisons of multiple diffusion parameters and correlation with histologic grade and MIB-1 (Ki-67 labeling) index. Neuroradiology. 2016;58(2):121-32.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The diagnostic efficiency of integration of 2HG MRS and IVIM versus individual parameters for predicting IDH mutation status in gliomas in clinical scenarios: A retrospective study</title>
+		<author>
+			<persName><forename type="first">Meimei</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyi</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuzhu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huicong</forename><surname>Shen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-024-04609-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="305" to="313" />
+			<date type="published" when="2024-02-29">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yu M, Ge Y, Wang Z, Zhang Y, Hou X, Chen H, Chen X, Ji N, Li X, Shen H. The diagnostic efficiency of integration of 2HG MRS and IVIM versus individual parameters for predicting IDH mutation status in gliomas in clinical scenarios: A retrospective study. J Neurooncol. 2024;167(2):305-13.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Diffusion Weighted Imaging in Gliomas: A Histogram-Based Approach for Tumor Characterization</title>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Gihr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><surname>Horvath-Rizea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Kohlhof-Meinecke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Ganslandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><surname>Henkes</surname></persName>
+			<idno type="ORCID">0000-0002-6534-036X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Härtig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aneta</forename><surname>Donitza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Skalej</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Schob</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers14143393</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">3393</biblScope>
+			<date type="published" when="2022-07-13">2022</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gihr G, Horvath-Rizea D, Kohlhof-Meinecke P, Ganslandt O, Henkes H, Härtig W, Donitza A, Skalej M, Schob S. Diffusion weighted imaging in gliomas: a histogram-based approach for tumor characterization. Cancers (Basel) 2022;14(14).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The diagnostic value of ADC histogram and direct ADC measurements for coexisting isocitrate dehydrogenase mutation and O6-methylguanine-DNA methyltransferase promoter methylation in glioma</title>
+		<author>
+			<persName><forename type="first">Zhiyan</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jixian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruizhi</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chongfeng</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Song</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiping</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingchao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuangshuang</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejun</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnins.2022.1099019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neuroscience</title>
+		<title level="j" type="abbrev">Front. Neurosci.</title>
+		<idno type="ISSNe">1662-453X</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page">1099019</biblScope>
+			<date type="published" when="2022">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xie Z, Li J, Zhang Y, Zhou R, Zhang H, Duan C, Liu S, Niu L, Zhao J, Liu Y, et al. The diagnostic value of ADC histogram and direct ADC measurements for coexisting isocitrate dehydrogenase mutation and O6-methylguanine- DNA methyltransferase promoter methylation in glioma. Front Neurosci. 2022;16:1099019.</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Diffusion histogram profiles predict molecular features of grade 4 in histologically lower-grade adult diffuse gliomas following WHO classification 2021</title>
+		<author>
+			<persName><forename type="first">Ryo</forename><surname>Kurokawa</surname></persName>
+			<idno type="ORCID">0000-0002-1186-8900</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Akifumi</forename><surname>Hagiwara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariko</forename><surname>Kurokawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">M</forename><surname>Ellingson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akira</forename><surname>Baba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toshio</forename><surname>Moritani</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-023-10071-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1367" to="1375" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kurokawa R, Hagiwara A, Kurokawa M, Ellingson BM, Baba A, Moritani T. Diffu- sion histogram profiles predict molecular features of grade 4 in histologically lower-grade adult diffuse gliomas following WHO classification 2021. Eur Radiol. 2024;34(2):1367-75.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Grading of Gliomas by Using Monoexponential, Biexponential, and Stretched Exponential Diffusion-weighted MR Imaging and Diffusion Kurtosis MR Imaging</title>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yusong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dapeng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingliang</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">Mark</forename><surname>Haacke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyuan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meiyun</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2015142173</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">278</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="496" to="504" />
+			<date type="published" when="2016-02">2016</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bai Y, Lin Y, Tian J, Shi D, Cheng J, Haacke EM, Hong X, Ma B, Zhou J, Wang M. Grading of gliomas by using Monoexponential, Biexponential, and stretched exponential diffusion-weighted MR imaging and diffusion kurtosis MR imag- ing. Radiology. 2016;278(2):496-504.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Intravoxel incoherent motion diffusion‐weighted imaging analysis of diffusion and microperfusion in grading gliomas and comparison with arterial spin labeling for evaluation of tumor perfusion</title>
+		<author>
+			<persName><forename type="first">Nanxi</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingyun</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingjing</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rifeng</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changliang</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenzhen</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.25191</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="620" to="632" />
+			<date type="published" when="2016-02-16">2016</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shen N, Zhao L, Jiang J, Jiang R, Su C, Zhang S, Tang X, Zhu W. Intravoxel inco- herent motion diffusion-weighted imaging analysis of diffusion and micro- perfusion in grading gliomas and comparison with arterial spin labeling for evaluation of tumor perfusion. J Magn Reson Imaging. 2016;44(3):620-32.</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Ultra high b-value diffusion weighted imaging enables better molecular grading stratification over histological grading in adult-type diffuse glioma</title>
+		<author>
+			<persName><forename type="first">Jiahe</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiuwei</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haolang</forename><surname>Ming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengping</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huijie</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cuiyun</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejun</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejrad.2023.111140</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Radiology</title>
+		<title level="j" type="abbrev">European Journal of Radiology</title>
+		<idno type="ISSN">0720-048X</idno>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="page">111140</biblScope>
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guo J, Fu X, Li Y, Ming H, Lin Y, Yu S, Wei H, Sun C, Zhang K, Yang X. Ultra high b-value diffusion weighted imaging enables better molecular grading strati- fication over histological grading in adult-type diffuse glioma. Eur J Radiol. 2023;168:111140.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Ultra-high b-value DWI accurately identifies isocitrate dehydrogenase genotypes and tumor subtypes of adult-type diffuse gliomas</title>
+		<author>
+			<persName><forename type="first">Xueqin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinru</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pingping</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiting</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingqian</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomei</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifan</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huinan</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wanyi</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunjing</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rifeng</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0001-6959-0027</idno>
+		</author>
+		<idno type="DOI">10.1007/s00330-024-10708-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="6751" to="6762" />
+			<date type="published" when="2024-03-25">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang X, Shu X, He P, Cai Y, Geng Y, Hu X, Sun Y, Xiao H, Zheng W, Song Y, et al. Ultra-high b-value DWI accurately identifies isocitrate dehydrogenase genotypes and tumor subtypes of adult-type diffuse gliomas. Eur Radiol. 2024;34(10):6751-62.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Evaluation of gliomas peritumoral diffusion and prediction of IDH1 mutation by IVIM-DWI</title>
+		<author>
+			<persName><forename type="first">Taifu</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianglong</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongxin</forename><surname>Ying</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinlan</forename><surname>Xiao</surname></persName>
+		</author>
+		<idno type="DOI">10.18632/aging.202751</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Aging</title>
+		<title level="j" type="abbrev">Aging</title>
+		<idno type="ISSNe">1945-4589</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="9948" to="9959" />
+			<date type="published" when="2021-03-26">2021</date>
+			<publisher>Impact Journals, LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gu T, Yang T, Huang J, Yu J, Ying H, Xiao X. Evaluation of gliomas peritu- moral diffusion and prediction of IDH1 mutation by IVIM-DWI. Aging. 2021;13(7):9948-59.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Apparent diffusion coefficient and intravoxel incoherent motion-diffusion kurtosis model parameters in invasive breast cancer: Correlation with the histological parameters of whole-slide imaging</title>
+		<author>
+			<persName><forename type="first">Naoko</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chihiro</forename><surname>Inoue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hajime</forename><surname>Tamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tatsuo</forename><surname>Nagasaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hainan</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satoko</forename><surname>Sato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minoru</forename><surname>Miyashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shunji</forename><surname>Mugikura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kei</forename><surname>Takase</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mri.2022.04.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">0730-725X</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="53" to="60" />
+			<date type="published" when="2022-07">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mori N, Inoue C, Tamura H, Nagasaka T, Ren H, Sato S, Mori Y, Miyashita M, Mugikura S, Takase K. Apparent diffusion coefficient and intravoxel incoher- ent motion-diffusion kurtosis model parameters in invasive breast cancer: correlation with the histological parameters of whole-slide imaging. Magn Reson Imaging. 2022;90:53-60.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The diagnostic value of intravoxel incoherent motion imaging in differentiating high-grade from low-grade gliomas: a systematic review and meta-analysis</title>
+		<author>
+			<persName><forename type="first">Hechuan</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>He</surname></persName>
+			<idno type="ORCID">0000-0002-1852-5257</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weiqin</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sijie</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1259/bjr.20201321</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The British Journal of Radiology</title>
+		<idno type="ISSN">0007-1285</idno>
+		<idno type="ISSNe">1748-880X</idno>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">1121</biblScope>
+			<biblScope unit="page">20201321</biblScope>
+			<date type="published" when="1121">2021. 1121</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Luo H, He L, Cheng W, Gao S. The diagnostic value of intravoxel incoherent motion imaging in differentiating high-grade from low-grade gliomas: a systematic review and meta-analysis. Br J Radiol. 2021;94(1121):20201321.</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Intratumoral Heterogeneity of Fibrosarcoma Xenograft Models: Whole-Tumor Histogram Analysis of DWI and IVIM</title>
+		<author>
+			<persName><forename type="first">Shaobo</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanyu</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenzhen</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yajie</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiqing</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenyu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaowu</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.acra.2022.11.016</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Academic Radiology</title>
+		<title level="j" type="abbrev">Academic Radiology</title>
+		<idno type="ISSN">1076-6332</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2299" to="2308" />
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fang S, Yang Y, Tao J, Yin Z, Liu Y, Duan Z, Liu W, Wang S. Intratumoral hetero- geneity of fibrosarcoma xenograft models: Whole-Tumor histogram analysis of DWI and IVIM. Acad Radiol. 2023;30(10):2299-308.</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Diagnostic Accuracy of the Apparent Diffusion Coefficient for Microvascular Invasion in Hepatocellular Carcinoma: A Meta-analysis</title>
+		<author>
+			<persName><forename type="first">Yuhui</forename><surname>Deng</surname></persName>
+			<idno type="ORCID">0000-0002-6964-8791</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jisheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0000-0002-4236-3825</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahong</forename><surname>Ren</surname></persName>
+			<idno type="ORCID">0000-0003-3189-8354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenchang</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-8190-6469</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dawei</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-1868-2746</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenghan</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-3986-1732</idno>
+		</author>
+		<idno type="DOI">10.14218/jcth.2021.00254</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical and Translational Hepatology</title>
+		<title level="j" type="abbrev">J Clin Transl Hepatol</title>
+		<idno type="ISSN">2225-0719</idno>
+		<idno type="ISSNe">2310-8819</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="642" to="650" />
+			<date type="published" when="2022-01-04">2022</date>
+			<publisher>Xia &amp; He Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Deng Y, Li J, Xu H, Ren A, Wang Z, Yang D, Yang Z. Diagnostic accuracy of the apparent diffusion coefficient for microvascular invasion in hepatocellular carcinoma: A Meta-analysis. J Clin Transl Hepatol. 2022;10(4):642-50.</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">A comparative simulation study of bayesian fitting approaches to intravoxel incoherent motion modeling in diffusion‐weighted MRI</title>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">T</forename><surname>While</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/mrm.26598</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medicine</title>
+		<title level="j" type="abbrev">Magnetic Resonance in Med</title>
+		<idno type="ISSN">0740-3194</idno>
+		<idno type="ISSNe">1522-2594</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2373" to="2387" />
+			<date type="published" when="2017-03-31">2017</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">While PT. A comparative simulation study of bayesian fitting approaches to intravoxel incoherent motion modeling in diffusion-weighted MRI. Magn Reson Med. 2017;78(6):2373-87.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A Multi-Variate framework to assess reliability and discrimination power of Bayesian estimation of Intravoxel Incoherent Motion parameters</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Scalco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mastropietro</surname></persName>
+			<idno type="ORCID">0000-0003-3358-7111</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bodini</surname></persName>
+			<idno type="ORCID">0000-0002-3419-3184</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Marzi</surname></persName>
+			<idno type="ORCID">0000-0002-9845-4400</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Rizzo</surname></persName>
+			<idno type="ORCID">0000-0002-6341-1304</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ejmp.2021.07.025</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physica Medica</title>
+		<title level="j" type="abbrev">Physica Medica</title>
+		<idno type="ISSN">1120-1797</idno>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="11" to="19" />
+			<date type="published" when="2021-09">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Scalco E, Mastropietro A, Bodini A, Marzi S, Rizzo G. A Multi-Variate framework to assess reliability and discrimination power of bayesian Estimation of intravoxel incoherent motion parameters. Phys Med. 2021;89:11-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Necrotic reshaping of the glioma microenvironment drives disease progression</title>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">M</forename><surname>Markwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">L</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheryl</forename><forename type="middle">L</forename><surname>Olson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-021-02401-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">143</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="291" to="310" />
+			<date type="published" when="2022-01-17">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Markwell SM, Ross JL, Olson CL, Brat DJ. Necrotic reshaping of the glioma microenvironment drives disease progression. Acta Neuropathol. 2022;143(3):291-310.</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">A novel bayesian approach with conditional autoregressive specification for intravoxel incoherent motion diffusion‐weighted MRI</title>
+		<author>
+			<persName><forename type="first">Ettore</forename><surname>Lanzarone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfonso</forename><surname>Mastropietro</surname></persName>
+			<idno type="ORCID">0000-0003-3358-7111</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Scalco</surname></persName>
+			<idno type="ORCID">0000-0003-2721-5792</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Antonello</forename><surname>Vidiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanna</forename><surname>Rizzo</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/nbm.4201</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NMR in Biomedicine</title>
+		<title level="j" type="abbrev">NMR in Biomedicine</title>
+		<idno type="ISSN">0952-3480</idno>
+		<idno type="ISSNe">1099-1492</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">4201</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lanzarone E, Mastropietro A, Scalco E, Vidiri A, Rizzo G. A novel bayesian approach with conditional autoregressive specification for intravoxel incoher- ent motion diffusion-weighted MRI. NMR Biomed. 2020;33(3):e4201.</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Leveraging deep learning for improving parameter extraction from perfusion MR images: A narrative review</title>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Scalco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanna</forename><surname>Rizzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicola</forename><surname>Bertolino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfonso</forename><surname>Mastropietro</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejmp.2025.104978</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physica Medica</title>
+		<title level="j" type="abbrev">Physica Medica</title>
+		<idno type="ISSN">1120-1797</idno>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="page">104978</biblScope>
+			<date type="published" when="2025-05">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Scalco E, Rizzo G, Bertolino N, Mastropietro A. Leveraging deep learning for improving parameter extraction from perfusion MR images: A narrative review. Phys Med. 2025;133:104978.</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Intravoxel Incoherent Motion Protocol Evaluation and Data Quality in Normal and Malignant Liver Tissue and Comparison to the Literature</title>
+		<author>
+			<persName><forename type="first">Edwin</forename><forename type="middle">E G W</forename><surname>Ter Voert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaspar</forename><surname>Delso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><surname>Porto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Huellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Veit-Haibach</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/rli.0000000000000207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Investigative Radiology</title>
+		<title level="j" type="abbrev">Investigative Radiology</title>
+		<idno type="ISSN">0020-9996</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="90" to="99" />
+			<date type="published" when="2016-02">2016</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">ter Voert EE, Delso G, Porto M, Huellner M, Veit-Haibach P. Intravoxel incoher- ent motion protocol evaluation and data quality in normal and malignant liver tissue and comparison to the literature. Invest Radiol. 2016;51(2):90-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Optimization of intra-voxel incoherent motion imaging at 3.0 Tesla for fast liver examination</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Leporq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Saint-Jalmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cecile</forename><surname>Rabrait</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Pilleul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Guillaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Dumortier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Yves</forename><surname>Scoazec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Beuf</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.24693</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">J. Magn. Reson. Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1209" to="1217" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Leporq B, Saint-Jalmes H, Rabrait C, Pilleul F, Guillaud O, Dumortier J, Scoazec JY, Beuf O. Optimization of intra-voxel incoherent motion imaging at 3.0 Tesla for fast liver examination. J Magn Reson Imaging. 2015;41(5):1209-17.</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Separation of diffusion and perfusion in intravoxel incoherent motion MR imaging</title>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Bihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Breton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lallemand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Aubin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Vignaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laval-Jeantet</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="497" to="505" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Le Bihan D, Breton E, Lallemand D, Aubin ML, Vignaud J, Laval-Jeantet M. Separation of diffusion and perfusion in intravoxel incoherent motion MR imaging. Radiology. 1988;168(2):497-505.</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Intravoxel incoherent motion perfusion MR imaging: a wake-up call</title>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Bihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="748" to="752" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Le Bihan D. Intravoxel incoherent motion perfusion MR imaging: a wake-up call. Radiology. 2008;249(3):748-52.</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">What can we see with IVIM MRI?</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Bihan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page" from="56" to="67" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bihan L D. What can we see with IVIM MRI? NeuroImage. 2019;187:56-67.</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">High-Grade Gliomas</title>
+		<author>
+			<persName><forename type="first">Joe</forename><forename type="middle">M</forename><surname>Das</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-13253-7_15</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Neuro-Oncology Explained Through Multiple Choice Questions</title>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Das</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="147" to="156" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Das JM. High-grade gliomas. In: Das JM, editor. Neuro-oncology explained through multiple choice questions. Cham: Springer International Publishing; 2023. p. 147-156.</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The epidemiology of glioma in adults: a &quot;state of the science&quot; review</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bauchet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">G</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Deltour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Langer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Schwartzbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Wrensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/nou087</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<title level="j" type="abbrev">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="896" to="913" />
+			<date type="published" when="2014-05-19">2014</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Bauchet L, Davis FG, Deltour I, Fisher JL, Langer CE, Pekmezci M, Schwartzbaum JA, Turner MC, Walsh KM, et al. The epidemiology of glioma in adults: a state of the science review. Neuro Oncol. 2014;16(7):896-913.</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Immunohistochemical expression of PDL1 and Ki67 in glioma and its correlation with treatment and overall survival</title>
+		<author>
+			<persName><forename type="first">Vineet</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shivanjali</forename><surname>Raghuvanshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shalini</forename><surname>Bhalla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shalini</forename><surname>Rawat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bal</forename><forename type="middle">Krishna</forename><surname>Ojha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chhitij</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Madhu</forename><forename type="middle">Mati</forename><surname>Goel</surname></persName>
+		</author>
+		<idno type="DOI">10.4103/jcrt.jcrt_2405_23</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cancer Research and Therapeutics</title>
+		<idno type="ISSN">0973-1482</idno>
+		<idno type="ISSNe">1998-4138</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="145" to="150" />
+			<date type="published" when="2025-01">2025</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar V, Raghuvanshi S, Bhalla S, Rawat S, Ojha BK, Srivastava C, Goel MM. Immunohistochemical expression of PDL1 and Ki67 in glioma and its correla- tion with treatment and overall survival. J Cancer Res Ther. 2025;21(1):145-50.</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Immunohistochemical Expression of IDH1, ATRX, Ki67, GFAP, and Prognosis in Indonesian Glioma Patients</title>
+		<author>
+			<persName><forename type="first">Dody</forename><surname>Priambada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhamad</forename><surname>Thohar Arifin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdi</forename><surname>Saputro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azka</forename><surname>Muzakka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vega</forename><surname>Karlowee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udadi</forename><surname>Sadhana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuriz</forename><surname>Bakhtiar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krisna</forename><forename type="middle">Tsaniadi</forename><surname>Prihastomo</surname></persName>
+			<idno type="ORCID">0000-0002-0792-2943</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ajid</forename><surname>Risdianto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Happy</forename><forename type="middle">Kurnia</forename><surname>Brotoarianto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erie</forename><surname>Andar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zainal</forename><surname>Muttaqin</surname></persName>
+			<idno type="ORCID">0000-0002-9054-1809</idno>
+		</author>
+		<idno type="DOI">10.2147/ijgm.s397550</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of General Medicine</title>
+		<title level="j" type="abbrev">IJGM</title>
+		<idno type="ISSNe">1178-7074</idno>
+		<imprint>
+			<biblScope unit="volume">Volume 16</biblScope>
+			<biblScope unit="page" from="393" to="403" />
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Priambada D, Thohar Arifin M, Saputro A, Muzakka A, Karlowee V, Sadhana U, Bakhtiar Y, Prihastomo KT, Risdianto A, Brotoarianto HK, et al. Immunohisto- chemical expression of IDH1, ATRX, Ki67, GFAP, and prognosis in Indonesian glioma patients. Int J Gen Med. 2023;16:393-403.</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">IDH testing in diagnostic neuropathology: review and practical guideline article invited by the Euro-CNS research committee</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Preusser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Capper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hartmann</surname></persName>
+		</author>
+		<idno type="DOI">10.5414/np300422</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Neuropathology</title>
+		<title level="j" type="abbrev">NP</title>
+		<idno type="ISSN">0722-5091</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">09</biblScope>
+			<biblScope unit="page" from="217" to="230" />
+			<date type="published" when="2011-09-01">2011</date>
+			<publisher>Dustri-Verlgag Dr. Karl Feistle</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Preusser M, Capper D, Hartmann C. IDH testing in diagnostic neuropathol- ogy: review and practical guideline Article invited by the Euro-CNS research committee. Clin Neuropathol. 2011;30(5):217-30.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

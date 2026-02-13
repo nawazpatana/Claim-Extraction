@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">IPD-Brain: An Indian histopathology dataset for glioma subtype classification</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-12-19">2024-12-19</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ekansh</forename><surname>Chauhan</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Amit</forename><surname>Sharma</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Megha</forename><forename type="middle">S</forename><surname>Uppin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Manasa</forename><surname>Kondamadugu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">C</forename><forename type="middle">V</forename><surname>Jawahar</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Vinod</surname></persName>
+							<email>vinod.pk@iiit.ac.in</email>
+							<idno type="ORCID">0000-0003-2968-498X</idno>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Centre for Visual Information Technology , International Institute of Information Technology , Hyderabad , 500032 , india.</note>
+								<orgName type="department">Centre for Visual Information Technology</orgName>
+								<orgName type="institution">International Institute of Information Technology</orgName>
+								<address>
+									<postCode>500032</postCode>
+									<settlement>Hyderabad</settlement>
+									<country key="IN">india</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Pathology , Nizam&apos;s Institute Of Medical Sciences , Hyderabad , 500082 , India.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution">Nizam&apos;s Institute Of Medical Sciences</orgName>
+								<address>
+									<postCode>500082</postCode>
+									<settlement>Hyderabad</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> IHub-Data , International Institute of Information Technology , Hyderabad , 500032 , India.</note>
+								<orgName type="department">IHub-Data</orgName>
+								<orgName type="institution">International Institute of Information Technology</orgName>
+								<address>
+									<postCode>500032</postCode>
+									<settlement>Hyderabad</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> center for computational natural Sciences and Bioinformatics , International Institute of Information Technology , Hyderabad , 500032 , India.</note>
+								<orgName type="department">center for computational natural Sciences and Bioinformatics</orgName>
+								<orgName type="institution">International Institute of Information Technology</orgName>
+								<address>
+									<postCode>500032</postCode>
+									<settlement>Hyderabad</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">IPD-Brain: An Indian histopathology dataset for glioma subtype classification</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Scientific Data</title>
+						<title level="j" type="abbrev">Sci Data</title>
+						<idno type="eISSN">2052-4463</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">11</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2024-12-19" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">A418FAAC590F8F42072A506CD7C42DD5</idno>
+					<idno type="DOI">10.1038/s41597-024-04225-9</idno>
+					<note type="submission">Received: 9 May 2024; Accepted: 3 December 2024;</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T19:13+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>present the IPD-Brain Dataset, a crucial resource for the neuropathological community, comprising</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background &amp; Summary</head><p>Brain tumors, characterized by abnormal cell growth within the central nervous system (CNS), pose significant health risks, leading to neurological dysfunction. e World Health Organization classification for primary CNS neoplasms (WHO CNS 5) combines histopathology and molecular biomarkers for integrated diagnostics 1 . In India, CNS tumor incidence ranges between 5 and 10 per 100,000 people, influenced by genetic, environmental, and lifestyle factors 2,3 . Glial tumors, particularly astrocytoma, glioblastoma, and oligodendroglioma, are the most prevalent, with glioblastoma being the most aggressive, comprising about 57% of all gliomas 4,5 . Despite aggressive treatments, median survival is only 12-15 months, primarily due to its high recurrence and infiltrative nature <ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b6">7</ref> . Astrocytoma and Oligodendroglioma are characterized by IDH and ATRX mutations and 1p19q co-deletion, respectively 1 .</p><p>Techniques like Hematoxylin and Eosin (H&amp;E) staining and Immunohistochemistry (IHC) are vital for tissue analysis and cancer diagnosis. H&amp;E staining highlights cellular and tissue structures, aiding in tumor subtype identification and grading, while IHC staining, which uses tagged antibodies and detects specific proteins, plays a crucial role in identifying molecular biomarkers <ref type="bibr" target="#b0">1,</ref><ref type="bibr" target="#b7">8,</ref><ref type="bibr" target="#b8">9</ref> . Integrating deep learning with histopathology offers the potential to predict various biomarkers using H&amp;E stained whole slide images (WSIs). is approach seeks to reduce intra-and inter-observer variability among pathologists and bridge the gap between tumor morphology and genetics, thereby assisting in diagnosis.</p><p>In recent years, the field of histopathology has undergone a significant transformation, primarily due to the emergence of digital histopathology 10 . e available datasets like e Cancer Genome Atlas (TCGA) 11 , IvyGAP 12 , Digital Brain Tumour Atlas (EBRAINS) 13 or TCIA 14 primarily consist of digitized fresh frozen tissue sections. ese types of preparations o en exhibit relatively poor tissue morphology compared to formalin-fixed and paraffin-embedded (FFPE) tissues, thus restricting the application of deep learning methods for analysis <ref type="bibr" target="#b14">15,</ref><ref type="bibr" target="#b15">16</ref> .</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>e evolution of brain tumor research underscores the importance of incorporating broader demographic datasets, encompassing diverse populations beyond conventional cohorts. is comprehensive understanding, facilitated by datasets from various demographics, helps capture the diversity of cellular and morphological characteristics necessary for further developing deep learning algorithms and extending their applicability to the entire spectrum of brain tumor types.</p><p>To address the need for diverse data in brain tumor research, we present the Indian Pathology Brain Dataset (IPD-Brain) containing digitized H&amp;E-stained WSI images of brain tumor from an Indian cohort, each accompanied by relevant clinical data. e thorough manual review process ensures the scan quality and diagnostic accuracy. is dataset contributes to the digital and computational pathology field and makes it a valuable resource for educational purposes. It is specially designed to identify glioma subtypes, WHO grade, and IHC biomarkers such as TP53, ATRX, IDH1, and Ki67 without requiring IHC slides for these markers. TP53 and ATRX are tumor suppressors implicated in glioma formation, IDH1 is involved in metabolic pathways, with its mutations serving as valuable prognostic markers, and Ki67 is a marker for cell proliferation <ref type="bibr" target="#b16">17</ref> . An overview of data acquisition and deep learning framework, elaborated in the technical validation section, is depicted in Fig. <ref type="figure" target="#fig_0">1</ref>.</p><p>Moreover, this dataset, coming from a referral tertiary care institute in southern India, is perhaps the largest dataset available in Asia. It is developed to support global collaboration in brain tumor research, enhance diversity among existing cohorts, and provide insights into potential regional and ethnic variations in the disease.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data acquisition.</head><p>e IPD-Brain dataset containing H&amp;E stained slides of brain tumors were retrospectively compiled over the period 2019-2023 at Nizam's Institute Of Medical Sciences (NIMS), Hyderabad, a premier tertiary hospital in India. A total of 547 slides from 367 patients were acquired from the hospital archives. Among these, 484 slides from 328 patients were diagnosed with Glioblastoma, Astrocytoma, and Oligodendroglioma. e remaining slides, lacking associated metadata, also pertain to neuropathology. A waiver of consent was given since the data was collected retrospectively. e study was approved by Nizam's Institute of Medical Sciences Institutional Ethics Committee (NIMS-IEC) (reference number: EC/NIMS/2868/2021). e patient's identity information, including pathology case ID numbers, was anonymized, and new case numbers were assigned accordingly to protect the patient's rights and comply with ethical guidelines. All the consecutive adult-type diffuse gliomas were selected from the archival samples. e H&amp;E stained slides, and the diagnosis was reviewed with the help of available immunohistochemistry. e best slide featuring the classic histopathologic feature was selected for scanning. e representative slide was recut from the FFPE tissue block and re-stained to maintain the good quality of the scanned WSI. An experienced pathologist (M.S.U.) supervised this procedure along with the project coordinator (M.K.).</p><p>e digitization process was performed with the Morphle DigiPath 6 T Scanner at a 40x magnification, 0.22 microns/pixel, mirroring the detailed observation possible under traditional microscopy. Manual quality control measures were carefully applied to ensure digital representations maintain a high level of accuracy, with the presence of minor artifacts reflecting the natural variability and complexity of real-world cases in the digitization process (refer Technical Validation section for more details). Figure <ref type="figure" target="#fig_1">2</ref> shows the dataset sample for each class and real-world artifacts in our dataset. Exported images were stored in .tiff format at four levels with level downsamples of 1, 4, 16, and 32. Metadata at each level was also exported, and hue &amp; saturation were set to 100, contrast to 66, and brightness to 73 as exportation standard parameters to maintain high color fidelity. is careful approach has created a valuable resource for advancing the understanding of brain tumor pathology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Clinical data acquisition.</head><p>e clinical data, including the age, gender, location, and radioimaging findings, were obtained from the patient request forms. e variables included in the database are shown in Table <ref type="table">1</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Variable Name Description</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Case Number</head><p>Anonymized unique identifier for each patient. Table <ref type="table">1</ref>. Description of available clinical variables in the dataset.</p><p>Personal identifiers were removed, and data aggregation techniques were employed to prevent the identification of individual patients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data preprocessing.</head><p>e process begins by segmenting tissue regions within digitized slides. A er smoothing, the image is converted to the HSV color space, and a mask is created by thresholding the saturation channel. Morphological operations fill gaps and holes, and contours are filtered based on area. We have included optimal segmentation parameters in a.csv file in the dataset. Following segmentation, the algorithm crops 256 × 256 patches, as used in <ref type="bibr" target="#b14">15</ref> , from within the segmented WSI regions based on user-specified magnification without overlap.</p><p>Baseline models. In this section, we describe baseline models used for classification tasks on our dataset following the weakly-supervised multiple-instance learning (MIL) framework due to the large size of histopathology images and the lack of patch-level labels in a WSI <ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b18">19</ref> . Unlike traditional supervised learning, which relies on precisely labeled instances (pixel or patch level), MIL operates on 'bags' of instances, with the label determined by the collective characteristics of these instances (slide-level). It is a two-stage framework: (i) Feature extractor and (ii) Feature Aggregator. We benchmarked our dataset using ResNet-50 pre-trained on ImageNet and three domain-specific pre-trained (Histopathology) networks as feature extractors. ese domain-specific pre-trained networks include a ResNet-50 model pre-trained via the Barlow Twins method <ref type="bibr" target="#b19">20</ref> , a Vision Transformer model pre-trained using the DINO method <ref type="bibr" target="#b20">21</ref> , and CTransPath, a hybrid model merging a convolutional neural network (CNN) with a multiscale Swin Transformer architecture, pre-trained through semantically-relevant contrastive learning <ref type="bibr" target="#b21">22</ref> . By incorporating these diverse options, we aimed to comprehensively evaluate their generalizability to the IPD-Brain histopathology dataset.</p><p>For feature aggregation, we employed three feature aggregator models, which are described briefly below. ese models were selected based on their performance across various tasks. ey all use attention-based learning to classify WSIs and highlight diagnostically significant sub-regions within the WSIs.</p><p>• CLAM <ref type="bibr" target="#b14">15</ref> : It uses gated attention to assign scores to patches within a whole slide, leveraging these scores for slide-level aggregation through a weighted average for multi-class classification. It operates with n parallel attention branches for n class-specific representations, though studies show the single-branch configuration o en performs better. It incorporates domain knowledge for additional guidance in instance-level clustering. • DSMIL <ref type="bibr" target="#b22">23</ref> : It employs a dual-stream architecture with self-supervised contrastive learning, for instance, embeddings. One stream identifies the key instance, whereas another aggregates embeddings for a comprehensive bag representation. It uses a unique approach to weight instance contributions based on similarity to the key instance, enhancing the final bag score through an attention mechanism. • DTFD <ref type="bibr" target="#b23">24</ref> : It generates pseudo-bags from bag divisions, maintaining the original label for each. It utilizes a twotier attention-based MIL model, first estimating pseudo-bag probabilities, then deriving instance probabilities and distilled features for final parent bag likelihood prediction. Despite potential noise, it leverages deep neural network resilience, focusing on Aggregated Feature Selection (AFS) for feature distillation in this context.</p><p>Transfer learning for IHC biomarkers. Our investigation sought to evaluate whether H&amp;E stained slides are sufficient to diagnose biomarkers of gliomas (IDH1, ATRX, TP53, and Ki67), which are generally detected by IHC-stained slides. We do so by determining the capability of our MIL deep learning subtype classification model in predicting common diagnostic molecular markers from glioma H&amp;E slides. We also evaluate its potential utility as a clinical secondary check or a cost-effective alternative to molecular biology experiments. Using transfer learning, a technique that adapts a model trained on one task to a related new task, we systematically explored the effectiveness of the best-performing model, initially trained for tumor subtype classification, in inferring molecular biomarkers within a weakly supervised context. Fine-tuning was performed on a model initially trained for subtyping three glioma classes to adapt it for six distinct binary classification tasks. ese tasks involved identifying the presence or absence of somatic mutations in IDH1, TP53, and ATRX genes and evaluating the proliferation of tumor cells using the Ki-67 marker at three cutoff levels commonly applied by pathologists (5%, 10%, 20%).</p><p>We adhered to official implementations of the deep learning methods wherever possible, exerting diligent efforts to replicate the code accurately. A comprehensive evaluation was conducted to benchmark our dataset for every combination of feature extractors and aggregators. e dataset was divided into training, validation, and testing sets with proportions of 80%, 10%, and 10%, respectively, on a patient-wise basis.</p><p>is approach ensured data leakage prevention, meaning all slides from a single patient were exclusively allocated to one of these sets. Additionally, we implemented a 10-fold cross-validation for each experimental setup.</p><p>Training of the models was conducted for a minimum of 50 epochs and a maximum of 200 epochs, with early stopping implemented with a patience of 25 epochs on validation loss. e Adam optimizer was used with a batch size of 1. Specific learning rates and weight decay parameters were set for each aggregator: DSMIL at 2e-4 (learning rate) with a 5e-3 weight decay, CLAM-sb (CLAM) at 2e-4 (learning rate) with a 1e-3 weight decay, and DTFD at 1e-4 (learning rate) with a 1e-4 weight decay. ese parameters were broadly consistent with those defined in the original implementations of these methods. All experiments were performed using Python 3.10.10, Pytorch 2.0.0 + cu117 on RTX 3080ti 12GB GPU. For version details of all the libraries, we have included requirement.txt in GitHub. e dataset details can be accessed through Figshare <ref type="bibr" target="#b24">25</ref> . e dataset, comprising of high resolution images, can be directly accessed via Data Foundation Portal (<ref type="url" target="https://datafoundation.iiit.ac.in/dataset-versions/cb5917e1-6e56-4984-b6d1-f91d52ccd36c">https://datafoundation.iiit.ac.in/dataset-versions/cb5917e1-6e56- 4984-b6d1-f91d52ccd36c</ref>) under the Healthcare Dataset category (IPD Brain) a er user registration. is process facilitates the easy download and utilization of the dataset by researchers and clinicians interested in brain tumor research, specifically in the study of glioma subtypes. Table <ref type="table">2</ref> and Fig. <ref type="figure" target="#fig_3">3</ref> summarize multiple statistics of the IPD-Brain dataset. is repository contains labeled and unlabeled images, which can be used per research needs, such as machine learning model training and histopathological analysis. e organization is as follows:</p><p>• Readme.txt: Provides detailed information on the dataset's structure and content.</p><p>• IPD_Brain.zip: Contains two folders, 'Labeled' and 'Unlabeled' , each containing the H&amp;E stained histopathology images in .tiff format.</p><p>• e 'Labeled' folder (661.1 GB) was subdivided into four subfolders, each uploaded as a separate zip file, to replace a single large zip file. is approach is optimal as it facilitates easier downloads, reducing the</p><p>Patient level Slide level Scan Statistics: Total Scanned WSIs 367 547 Scanned WSIs w/complete EHR record 328 484 Glioma Subtype Statistics: Glioblastoma (GBM) 168 (51.22%) 246 (50.83%) Astrocytoma (A) 88 (26.83%) 133 (27.48%) Oligodendroglioma (O) 72 (21.95%) 105 (21.69%) Phenotypic Statistics of Glioma Patients: Sex: Female 136 (41.46%) Male 192 (58.54%) Age 45.89 ± 12.91 Female 45.37 ± 12.59 Male 46.27 ± 13.11</p><p>Table 2. Statistics of IPD-Brain histopathology dataset. burden of downloading and extracting a large volume of data all at once, and enables better data management. It includes slides that are annotated, identified with specific glioma subtypes, and have complete metadata records. • e 'Unlabeled' folder (80.7 GB) contains slides that are yet to be annotated, do not pertain to gliomas and include some that were rejected due to missing metadata. is provides opportunities for testing and training algorithms.  <ref type="figure" target="#fig_1">2(g</ref>). e spreadsheet, "IPD_Brain.csv", contains clinical information for each case in the 'Labeled' folder, and a complete overview of it can be found in Table <ref type="table">1</ref>. A rigorous quality control process overseen by experienced neuropathologist ensures the high quality of slide images. Slides with excessive artifacts were rescanned for improved clarity when feasible. ose causing diagnostic confusion were excluded from the dataset. is approach was adopted to preserve the integrity and utility of the collection for research purposes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>technical Validation</head><p>Quality control was applied multiple times at different stages. Before digitization, each slide was evaluated using a light microscope to verify staining quality, ensuring digital scans accurately represent the histopathological features necessary for precise analysis. Subsequent scans were reviewed, and suboptimal scans were rescanned, if possible, or excluded. We purposefully include a few WSIs with artifacts of real-world slide imperfections. Clinical annotations, including age, sex, diagnosis, radiology findings, clinical features (C/F), grade, immunohistochemistry (IHC) biomarker statuses (IDH1R132H, ATRX, TP53), and the Ki67 index, were retrieved directly from the patient's records to ensure authenticity and accuracy. To validate the reliability of these annotations, a subset of samples was randomly selected for independent review. is cross-checking process involved confirming the original annotations against the expert diagnosis (M.S.U.), affirming the correctness of labels and diagnoses provided. Such validation of annotations reinforces the dataset's value as a trustworthy resource for training diagnostic models. e primary performance metric used for all the experiments is the Area Under Curve (AUC), which offers a comprehensive assessment and is less susceptible to class imbalance. Additionally, we consider slide-level accuracy (Acc) and the macro-averaged F1 score. ese metrics collectively provide a holistic view of model performance. e AUC score indicates the ability to differentiate between classes, whereas the F1 score offers insight into the actual performance in the context of imbalanced data.</p><p>Table <ref type="table" target="#tab_2">3</ref> shows the IPD-Brain dataset evaluation for the glioma subtype using various deep-learning methods. e combination of ResNet-50 pre-trained on existing available histopathological datasets via the Barlow twin SSL method and the DTFD aggregator performed most effectively among all, achieving an average AUC of 88.08%, an accuracy of 79.83% and an F1 score of 75.87%. Additionally, variation in AUC and F1 scores across 10-folds for all the combinations can be observed in Fig. <ref type="figure" target="#fig_5">4</ref> Figure <ref type="figure" target="#fig_6">5</ref> enhances the interpretability of feature aggregators across glioma subtypes by analyzing attention weights assigned to tissue patches. is visualization highlights critical tissue patches that guide the glioma subtype classification. By employing a gradient scale from blue to red, our model signifies the importance of specific regions within the WSI, with blue indicating regions of lesser significance and red highlighting the most critical areas. In comparison, the traditional manual microscopic examination by neuropathologist in clinical settings is an exhaustive process, requiring extensive scrutiny of the entire slide to identify significant glioma morphological patterns.</p><p>e models, trained on our data, were further validated for practical applicability and accuracy through a rigorous single-blind evaluation conducted with an experienced neuropathologist (M.S.U.). e pathologist was presented with the WSI prediction generated by our model. e pathologist scrutinized specific regions within the WSIs to formulate their diagnoses, some of which are shown as 'Raw Patch' in Fig. <ref type="figure" target="#fig_6">5</ref>.</p><p>By qualitatively analyzing, we can observe DTFD's superior ability to focus on regions indicative of each tumor's clinical characteristics, aligned with known pathological features. e key diagnostic features of glioblastoma, such as microvascular proliferation and palisading necrosis, were accurately highlighted by DTFD. In astrocytoma, the emphasis is on cellular structures devoid of necrosis, showcasing gemistocytic features. e classic histopathologic features of oligodendroglioma, such as the "chicken wire" vascular pattern and "fried egg" appearance of the cells, are also accurately identified. is assessment underlines DTFD's effectiveness in marking diagnostically relevant regions, enhancing model transparency and reliability in histopathological evaluations.</p><p>e model demonstrated proficiency in identifying critical morphological microstructures, showing a solid alignment between its focus on important regions and the key areas within the raw WSIs essential for glioma subtype classification. is congruence closely mirrors the diagnostic strategies employed by pathologists, underscoring the model's ability to prioritize and analyze patch segments in a manner similar to how experts identify glioma patterns.</p><p>Interestingly, applying stain normalization using StainNet 26 led to a reduction in model performance metrics, with the AUC decreasing from 88.08% to 86.34% and macro F1 score from 75.87% to 70.81%. ese results suggest a minimal presence of stain variability within the IPD-Brain dataset and indicate that the employed feature extractor was capable enough to handle subtle stain variability.</p><p>e efficacy of the model in identifying IHC molecular biomarkers (IDH, ATRX, and TP53) is represented in Table <ref type="table" target="#tab_3">4</ref>. ese results highlight the potential of the model in identifying molecular biomarkers using H&amp;E slides. Moreover, the model shows remarkable performance in classifying the Ki67 at various cutoffs (Table <ref type="table">5</ref>), which is crucial for assessing tumor cell proliferation rates. e optimal cutoff value was observed as 10%, achieving an AUC of 89.55% and an F1 score of 91.17%. is level of performance in IDH1R132H and Ki67 classification emphasizes the model's accuracy and practical utility in providing essential prognostic information necessary for effective treatment planning and patient management.</p><p>In conclusion, this dataset is a technically validated resource, characterized by its detailed annotation, high-quality image preparation, and the performance of deep learning methods in classifying glioma subtypes, grades, and, IHC biomarkers. Future efforts will focus on adding survival and treatment data, offering a more comprehensive understanding of patient outcomes. We also plan to leverage pathomics <ref type="bibr" target="#b26">27</ref> to investigate the relationship between morphological features and phenotypes, providing deeper insights into how these characteristics influence disease diagnosis, progression, and treatment responses. Additionally, since the dataset includes radiological reports, further studies can be carried out to integrate radiological findings, morphological features and clinical data to improve diagnostic accuracy and predicting patient's outcomes.</p><p>All the 547 WSIs included in this dataset have been saved as standard tiff format images. e corresponding clinical data is provided in a spreadsheet file, available through the Figshare <ref type="bibr" target="#b24">25</ref> . is dataset can be combined with other datasets for training machine learning models and for educational purposes. Despite its valuable applications, the dataset has limitations. ere is a class imbalance that can affect the training and generalization of machine learning models. While the dataset includes labels for IHC biomarkers, it lacks the actual IHC slides, which may limit its utility for certain types of molecular marker analysis. Additionally, all images were captured using a single scanner at a single site, which may limit the generalizability of machine learning models developed only with this dataset. Acknowledging these limitations is essential for researchers planning to use this dataset.  Table 5. Ki-67 as classification task results.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 (a) Data Acquisition and Digitization: Data collection starts from tissue sectioning, followed by a quality check (QC) of the raw WSI. Digitization of the WSI is then obtained, and QC of the same is done. (b) Patchbased Feature Extraction and Classification: Deep learning-based Multi-Instance Learning framework-based models are used for subtype classification in brain histopathology. Patch-level features are extracted using a pre-trained feature extractor network. Subsequently, the feature aggregation method pools the patch-level representation into slide-level representation, which is then classified to determine tumor type, grade, and molecular markers. (c) Attention Map and Interpretability: it is used for interpretability, providing critical insights into the neural network's decision-making process.</figDesc><graphic coords="2,98.64,46.50,456.00,291.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 Visual inspection of the dataset across three glioma subtypes. (a) Glioblastoma is characterized by highly dense cell regions with notable necrosis, (b) Astrocytoma displays a more diffused cellularity with infiltrative edges, and (c) Oligodendroglioma is marked by a honeycomb-like structure with calcifications. e bottom row highlights common natural artifacts within the dataset, including tissue folding (d), the presence of blood cells (e), and miscellaneous artifacts (f), which are critical for understanding sample quality. (g) shows two crosssections from the same patient, highlighting the dataset's ability to present multiple perspectives of the same tissue to aid in accurate diagnosis.</figDesc><graphic coords="3,98.64,46.50,456.00,203.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>Age (Years) Age of the patient at diagnosis. Sex Sex of the patient (M = Male, F = Female). C/F Clinical Features: Presenting clinical symptoms or features. Radiology Summary of key radiological findings. Diagnosis Pathological diagnosis based on whole slide images. WHO Grade Tumor grade according to the World Health Organization classification. Site Anatomical location of the tumor. Subtype Subtype of glioma (OLIGODENDROGLIOMA/ ASTROCYTOMA/ GLIOBLASTOMA) Ki-67 (%) Percentage of Ki-67 positive tumor cells indicating proliferative activity. IDH1R132H Presence of IDH1 R132H mutation (0: Negative/ 1: Positive). ATRX Status of ATRX protein expression (Lost = loss of expression, indicative of mutation; Retained = normal expression). p53 Presence of p53/TP53 mutation (0: Negative/ 1: Positive).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3</head><label>3</label><figDesc>Fig. 3 Distribution of phenotypic information and labels in IPD-Brain. e centerline inside of the box plot represents the median in (a) and (b). (c) and (d) presents the distribution of samples stratified by immunohistochemical (IHC) biomarkers and World Health Organization (WHO) grades, respectively. Grade 1 cases, which are generally infrequent in histopathological laboratories and are underrepresented in our dataset.</figDesc><graphic coords="5,155.64,259.04,396.00,248.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>•</head><figDesc>IPD_Brain.csv:A comprehensive spreadsheet contains clinical data associated with each case. Whole Slide images within the zip file follow the convention "IN Brain-xxxx" where 'xxxx' is an anonymized patient number or Case Number which increases incrementally, e.g., IN Brain-0039, IN Brain-0263(a), IN Brain-0263(b). is approach ensures patient confidentiality while providing a systematic method to reference specific cases. Cases with multiple slides due to routine checkups are indicated with additional letters (e.g., IN Brain-xxxx(a), IN Brain-xxxx(n)), and each slide may have multiple cross-sections to ensure comprehensive tissue examination, Fig.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Comparative analysis of feature extractors and aggregation methods. e box plots illustrate the distribution of 10-fold AUC and macro F1 scores for all feature extractor and aggregation combinations used. Dots within each box indicate mean values, whereas lines represent medians.</figDesc><graphic coords="7,98.64,46.50,456.00,144.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 5</head><label>5</label><figDesc>Fig. 5 Attention heatmap visualization for brain tumor WSI classification, with green and red dots on the bottom le corner indicating correct classifications and misclassifications, respectively, across all feature aggregators.</figDesc><graphic coords="8,98.64,46.50,456.00,304.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>. e same model configuration was used to classify glioma grades (Low-Grade Glioma [LGG], comprising 0 &amp; 1 WHO grades, Glioma subtype classification results on IPD-Brain. Feature extractor ResNet-50, pre-trained on Histopathology data using Barlow-twin self-supervised method combined with DTFD depicts the best performance on the IPD-Brain dataset.versus High-Grade Glioma [HGG], comprising of 2 &amp; 3 WHO grades), achieving an AUC of 92.64%, accuracy of 89.25%, and F1 of 92.79%, underscoring the potential of deep learning in enhancing diagnostic accuracy for brain tumor pathology.</figDesc><table><row><cell>Feature</cell><cell></cell><cell></cell><cell>Feature</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Extractor</cell><cell>Dataset Category</cell><cell>SSL Method</cell><cell>Aggregator</cell><cell>AUC</cell><cell>ACC</cell><cell>F1</cell></row><row><cell></cell><cell></cell><cell></cell><cell>CLAM-sb</cell><cell>78.85 ± 6.27</cell><cell>65.9 ± 6.72</cell><cell>56.86 ± 12.79</cell></row><row><cell>ResNet-50</cell><cell>Imagenet</cell><cell>Supervised</cell><cell>DSMIL</cell><cell>79.72 ± 5.78</cell><cell>69.29 ± 6</cell><cell>61.37 ± 7.47</cell></row><row><cell></cell><cell></cell><cell></cell><cell>DTFD</cell><cell>80.5 ± 3.88</cell><cell>75.62 ± 4.11</cell><cell>69.78 ± 5.08</cell></row><row><cell></cell><cell></cell><cell></cell><cell>CLAM-sb</cell><cell>84.55 ± 4.09</cell><cell>73.27 ± 5.38</cell><cell>67.61 ± 7.03</cell></row><row><cell>ResNet-50</cell><cell>Histopathology</cell><cell>Barlow Twin</cell><cell>DSMIL</cell><cell>80.87 ± 2.56</cell><cell>67.12 ± 5.95</cell><cell>59.98 ± 6.80</cell></row><row><cell></cell><cell></cell><cell></cell><cell>DTFD</cell><cell>88.08 ± 3.98</cell><cell>79.83 ± 3.31</cell><cell>75.87± 4.79</cell></row><row><cell></cell><cell></cell><cell></cell><cell>CLAM-sb</cell><cell>83.33 ± 3.63</cell><cell>72.08 ± 5.70</cell><cell>68.11 ± 5.57</cell></row><row><cell>CTransPath</cell><cell>Histopathology</cell><cell>SRCL</cell><cell>DSMIL</cell><cell>83.32 ± 5.16</cell><cell>69.73 ± 7.11</cell><cell>65.08 ± 7.68</cell></row><row><cell></cell><cell></cell><cell></cell><cell>DTFD</cell><cell>87.12 ± 3.96</cell><cell>78.75 ± 5.78</cell><cell>75.73 ± 6.43</cell></row><row><cell></cell><cell></cell><cell></cell><cell>CLAM-sb</cell><cell>82.95 ± 5.04</cell><cell>69.88 ± 6.96</cell><cell>65.2 ± 7.17</cell></row><row><cell>ViT-S</cell><cell>Histopathology</cell><cell>DINO</cell><cell>DSMIL</cell><cell>81.96 ± 6.06</cell><cell>68.84 ± 5.56</cell><cell>62.61 ± 7.64</cell></row><row><cell></cell><cell></cell><cell></cell><cell>DTFD</cell><cell>87.67 ± 4.14</cell><cell>78.89 ± 3.98</cell><cell>75.41 ± 3.50</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>IHC biomarkers classification results on IPD-Brain.</figDesc><table><row><cell>Task</cell><cell>AUC</cell><cell>ACC</cell><cell></cell><cell>F1</cell></row><row><cell>IDH</cell><cell>90.66 ± 5.22</cell><cell cols="2">86.65 ± 4.58</cell><cell>86 ± 4.58</cell></row><row><cell>ATRX</cell><cell>84.07 ± 6.10</cell><cell cols="2">83.61 ± 8.68</cell><cell cols="2">67.3 ± 6.49</cell></row><row><cell>TP53</cell><cell>73.32 ± 8.63</cell><cell cols="2">77.43 ± 9.53</cell><cell cols="2">65.83 ± 10.93</cell></row><row><cell>Task</cell><cell cols="2">Cutoff Value AUC</cell><cell>ACC</cell><cell></cell><cell>F1</cell></row><row><cell></cell><cell>5</cell><cell>86.76 ± 6.92</cell><cell cols="2">91.73 ± 6.56</cell><cell>92.23 ± 2.19</cell></row><row><cell>Ki-67</cell><cell>10</cell><cell>89.55 ± 5.27</cell><cell cols="2">86.93 ± 4.79</cell><cell>91.17 ± 3.33</cell></row><row><cell></cell><cell>20</cell><cell>86.81 ± 6.82</cell><cell cols="2">83.4 ± 6.65</cell><cell>85.99 ± 6.38</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Scientific Data | (2024) 11:1403 | https://doi.org/10.1038/s41597-024-04225-9</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>author contributions</head><p>Conceptualization: M.S.U., C.V.J. and P.K.V.; Methodology and formal analysis: E.C. and A.S.; Investigation: E.C., A.S. and M.K.; Data curation: M.S.U. and M.K.; Writing -Original Dra : E.C. and A.S.; Writing -Review &amp; Editing: M.S.U., C.V.J. and P.K.V.; Supervision: M.S.U., C.V.J. and P.K.V. All authors have read and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>e authors declare no competing interests.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">WHO Classification of Tumors of the Central Nervous System: A Summary</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><surname>The</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-oncology</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021">2021. 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. The 2021 WHO Classification of Tumors of the Central Nervous System: A Summary. Neuro-oncology, 23(8), 1231-1251 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Overall survival from breast cancer in Kerala, India, in relation to menstrual, reproductive, and clinical factors</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Krishnan</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sankaranarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Sukumaran</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">Sreedevi</forename><surname>Amma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cherian</forename><surname>Varghese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Padmakumari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Cherian</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/1097-0142(19930301)71:5&lt;1791::aid-cncr2820710513&gt;3.0.co;2-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<title level="j" type="abbrev">Cancer</title>
+		<idno type="ISSN">0008-543X</idno>
+		<idno type="ISSNe">1097-0142</idno>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1791" to="1796" />
+			<date type="published" when="2005">2005</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nair, M. Varghese, Cherian, and Swaminathan. Cancer: Current scenario, intervention strategies and projections for 2015. NCHM Bac ground Papers-Burden of Disease in India, 219-225 (2005).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Indian data on central nervous tumors: A summary of published work</title>
+		<author>
+			<persName><forename type="first">Archya</forename><surname>Dasgupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tejpal</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rakesh</forename><surname>Jalali</surname></persName>
+		</author>
+		<idno type="DOI">10.4103/2278-330x.187589</idno>
+		<ptr target="https://doi.org/10.4103/2278-330X.187589" />
+	</analytic>
+	<monogr>
+		<title level="j">South Asian Journal of Cancer</title>
+		<title level="j" type="abbrev">South Asian J Cancer</title>
+		<idno type="ISSN">2278-330X</idno>
+		<idno type="ISSNe">2278-4306</idno>
+		<imprint>
+			<biblScope unit="volume">05</biblScope>
+			<biblScope unit="issue">03</biblScope>
+			<biblScope unit="page" from="147" to="153" />
+			<date type="published" when="2016-07" />
+			<publisher>Georg Thieme Verlag KG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dasgupta, A., Gupta, T. &amp; Jalali, . Indian Data on Central Nervous Tumors: A Summary of Published Wor . South Asian Journal of Cancer 5(3), 147-153, https://doi.org/10.4103/2278-330X.187589</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A study on morphologic and histological pattern of the central nervous system tumors</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Gahine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">,</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename></persName>
+		</author>
+		<idno type="DOI">10.18203/2320-6012.ijrms20184699</idno>
+		<ptr target="https://doi.org/10.18203/2320-6012.ijrms20184699" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of esearch in Medical Sciences</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3879" to="3882" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">a ur, A. S., Gahine, . &amp; ul arni, V. A study on morphologic and histological pattern of the central nervous system tumors. International Journal of esearch in Medical Sciences, 6(12), 3879-3882 https://doi.org/10.18203/2320-6012.ijrms20184699 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Glioblastoma multiforme: a review of its epidemiology and pathogenesis through clinical presentation and treatment</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hanif</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Asian Pacific Journal of Cancer Prevention: APJCP</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">3</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hanif, F. Glioblastoma multiforme: a review of its epidemiology and pathogenesis through clinical presentation and treatment. Asian Pacific Journal of Cancer Prevention: APJCP 18(1), 3 (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2014–2018</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab200</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">Supplement_3</biblScope>
+			<biblScope unit="page" from="iii1" to="iii105" />
+			<date type="published" when="2021-10-01">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom, Q. T. et al. CBT US statistical report: primary brain and other central nervous system tumors diagnosed in the United States in 2014-2018. Neuro-oncology, 23(Supplement_3) (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Warren</forename><forename type="middle">P</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J B</forename><surname>Taphoorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Belanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alba</forename><forename type="middle">A</forename><surname>Brandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Marosi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulrich</forename><surname>Bogdahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Curschmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Janzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">K</forename><surname>Ludwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Gorlia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anouk</forename><surname>Allgeier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denis</forename><surname>Lacombe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Gregory</forename><surname>Cairncross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Eisenhauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">René</forename><forename type="middle">O</forename><surname>Mirimanoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa043330</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">352</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="987" to="996" />
+			<date type="published" when="2005-03-10">2005</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stupp, . et al. adiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. New England Journal of Medicine 352(10), 987-996 (2005).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Automated brain histology classification using machine learning</title>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Ker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yeqi</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hwei</forename><forename type="middle">Yee</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jai</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lipo</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jocn.2019.05.019</idno>
+		<ptr target="https://doi.org/10.1016/j.jocn.2019.05.019" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Clinical Neuroscience</title>
+		<idno type="ISSN">0967-5868</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="239" to="245" />
+			<date type="published" when="2019-08" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">er, J. &amp; Bai, Y. Automated brain histology classification using machine learning. Journal of Clinical Neuroscience 66, 239-245, https://doi.org/10.1016/j.jocn.2019.05.019</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Classification of the glioma grading using radiomics analysis</title>
+		<author>
+			<persName><forename type="first">Hwan-Ho</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung-Hak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonghoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunjin</forename><surname>Park</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj.5982</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PeerJ</title>
+		<idno type="ISSNe">2167-8359</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">e5982</biblScope>
+			<date type="published" when="2018-11-22">2018</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cho, H.-H., Lee, S.-H., im, J. &amp; Par , H. Classification of the glioma grading using radiomics analysis. PeerJ 6, e5982 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Methods for Nuclei Detection, Segmentation, and Classification in Digital Histopathology: A Review—Current Status and Future Potential</title>
+		<author>
+			<persName><forename type="first">Humayun</forename><surname>Irshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antoine</forename><surname>Veillard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ludovic</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Racoceanu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/rbme.2013.2295804</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Reviews in Biomedical Engineering</title>
+		<title level="j" type="abbrev">IEEE Rev. Biomed. Eng.</title>
+		<idno type="ISSN">1937-3333</idno>
+		<idno type="ISSNe">1941-1189</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="97" to="114" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Irshad, H., Veillard, A., oux, L. &amp; acoceanu, D. Methods for nuclei detection, segmentation, and classification in digital histopathology: a review-current status and future potential. IEEE eviews in Biomedical Engineering, 7, 97-114 (IEEE 2013).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository</title>
+		<author>
+			<persName><forename type="first">Kenneth</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><surname>Vendt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kirk</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Koppel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanley</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Maffitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Pringle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Tarbox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fred</forename><surname>Prior</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10278-013-9622-7</idno>
+		<ptr target="https://doi.org/10.1007/s10278-013-9622-7" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Digital Imaging</title>
+		<title level="j" type="abbrev">J Digit Imaging</title>
+		<idno type="ISSN">0897-1889</idno>
+		<idno type="ISSNe">1618-727X</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1045" to="1057" />
+			<date type="published" when="2013-07-25" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Clar , . et al. e Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information epository. Journal of Digital Imaging 26(6), 1045-1057, https://doi.org/10.1007/s10278-013-9622-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Anatomic Gene Expression Atlas Fuels Glioblastoma Discovery</title>
+		<author>
+			<persName><forename type="first">,</forename><forename type="middle">B</forename><surname>Puchals</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/2159-8290.cd-nb2018-066</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Discovery</title>
+		<title level="j" type="abbrev">Cancer Discov</title>
+		<idno type="ISSN">2159-8274</idno>
+		<idno type="ISSNe">2159-8290</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="OF4" to="OF4" />
+			<date type="published" when="2018-05-14">2018</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Puchals i, . B. et al. An anatomic transcriptional atlas of human glioblastoma. Science, 360(6389), 660-663 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Digital Brain Tumour Atlas, an open histopathology resource</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Roetzer-Pejrimovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna-Christina</forename><surname>Moser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baran</forename><surname>Atli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clemens</forename><forename type="middle">Christian</forename><surname>Vogel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petra</forename><forename type="middle">A</forename><surname>Mercea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romana</forename><surname>Prihoda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ellen</forename><surname>Gelpi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Haberler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romana</forename><surname>Höftberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">A</forename><surname>Hainfellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Baumann</surname></persName>
+			<idno type="ORCID">0000-0001-6419-1932</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Langs</surname></persName>
+			<idno type="ORCID">0000-0002-5536-6873</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adelheid</forename><surname>Woehrer</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41597-022-01157-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">55</biblScope>
+			<date type="published" when="2022-02-15">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">oetzer-Pejrimovs y, T. and others. e digital brain tumour atlas, an open histopathology resource. Scientific Data, 9(1), 55 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Clinical Proteomic Tumor Analysis Consortium Glioblastoma Multiforme Collection (CPTAC-GBM)</title>
+		<idno type="DOI">10.7937/K9/TCIA.2018.3RJE41Q1</idno>
+		<ptr target="https://doi.org/10.7937/9/TCIA.2018.3JE41Q1" />
+	</analytic>
+	<monogr>
+		<title level="j">The Cancer Imaging Archive</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+		<respStmt>
+			<orgName>National Cancer Institute Clinical Proteomic Tumor Analysis Consortium (CPTAC</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">National Cancer Institute Clinical Proteomic Tumor Analysis Consortium (CPTAC). e Clinical Proteomic Tumor Analysis Consortium Glioblastoma Multiforme Collection (CPTAC-GBM). The Cancer Imaging Archive. https://doi.org/10.7937/ 9/ TCIA.2018.3 JE41Q1 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Data-efficient and weakly supervised computational pathology on whole-slide images</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matteo</forename><surname>Barbieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-020-00682-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="555" to="570" />
+			<date type="published" when="2021-03-01">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. Data-efficient and wea ly supervised computational pathology on whole-slide images. Nature Biomedical Engineering, 5(6), 555-570 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Neural Image Compression for Gigapixel Histopathology Image Analysis</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Tellez</surname></persName>
+			<idno type="ORCID">0000-0001-8500-2491</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Geert</forename><surname>Litjens</surname></persName>
+			<idno type="ORCID">0000-0003-1554-1291</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Van Der Laak</surname></persName>
+			<idno type="ORCID">0000-0001-7982-0754</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Ciompi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2019.2936841</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="567" to="578" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tellez, D., Litjens, G., van der Laa , J. &amp; Ciompi, F. Neural image compression for gigapixel histopathology image analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence, 43(2), 567-578 (IEEE 2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The Diagnostic Use of Immunohistochemical Surrogates for Signature Molecular Genetic Alterations in Gliomas</title>
+		<author>
+			<persName><forename type="first">Jantima</forename><surname>Tanboon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">A</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/jnen/nlv009</idno>
+		<ptr target="https://doi.org/10.1093/jnen/nlv009" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuropathology &amp; Experimental Neurology</title>
+		<title level="j" type="abbrev">J Neuropathol Exp Neurol</title>
+		<idno type="ISSN">0022-3069</idno>
+		<idno type="ISSNe">1554-6578</idno>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="18" />
+			<date type="published" when="2015-12-15">2015</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tanboon, J., Williams, E. A. &amp; Louis, D. N. e Diagnostic Use of Immunohistochemical Surrogates for Signature Molecular Genetic Alterations in Gliomas. Journal of Neuropathology &amp; Experimental Neurology, 75(1), 4-18, https://doi.org/10.1093/jnen/nlv009 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Deep multiple instance learning for digital histopathology</title>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Ilse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><forename type="middle">M</forename><surname>Tomczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-816176-0.00027-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Medical Image Computing and Computer Assisted Intervention</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="521" to="546" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ilse, M., Tomcza , J. &amp; Welling, M. Attention-based Deep Multiple Instance Learning. In Proceedings of the 35th International Conference on Machine Learning, 80, 2127-2136, 10-15 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Clinical-grade computational pathology using weakly supervised deep learning on whole slide images</title>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Campanella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">G</forename><surname>Hanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luke</forename><surname>Geneslaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allen</forename><surname>Miraflor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitor</forename><surname>Werneck Krauss Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">J</forename><surname>Busam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edi</forename><surname>Brogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">E</forename><surname>Reuter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">S</forename><surname>Klimstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Fuchs</surname></persName>
+			<idno type="ORCID">0000-0001-7603-8687</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-019-0508-1</idno>
+		<ptr target="https://doi.org/10.1038/s41591-019-0508-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1301" to="1309" />
+			<date type="published" when="2019-07-15" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Campanella, G. et al. Clinical-grade computational pathology using wea ly supervised deep learning on whole slide images. Nature Medicine, 25(8), 1301-1309, https://doi.org/10.1038/s41591-019-0508-1</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Benchmar ing Self-Supervised Learning on Diverse Pathology Datasets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Par</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP )</title>
+		<meeting>the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP )</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="3344" to="3354" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">ang, M., Song, H., Par , S., Yoo, D. &amp; Pereira, S. Benchmar ing Self-Supervised Learning on Diverse Pathology Datasets. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP ), 3344-3354 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Scaling Vision Transformers to Gigapixel Images via Hierarchical Self-Supervised Learning</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengkuan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yicong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">D</forename><surname>Trister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><forename type="middle">G</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01567</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+			<biblScope unit="page" from="16123" to="16134" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, . J. et al. Scaling Vision Transformers to Gigapixel Images via Hierarchical Self-Supervised Learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP ), 16144-16155 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Transformer-based unsupervised contrastive learning for histopathological image classification</title>
+		<author>
+			<persName><forename type="first">Xiyue</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3597-9090</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sen</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minghui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junzhou</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2022.102559</idno>
+		<ptr target="https://doi.org/10.1016/j.media.2022.102559" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page">102559</biblScope>
+			<date type="published" when="2022-10" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, X. et al. Transformer-based unsupervised contrastive learning for histopathological image classification. Medical Image Analysis 81, 102559, https://doi.org/10.1016/j.media.2022.102559</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Dual-stream Multiple Instance Learning Network for Whole Slide Image Classification with Self-supervised Contrastive Learning</title>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">W</forename><surname>Eliceiri</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.01409</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+			<biblScope unit="page" from="14313" to="14323" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, B., Li, Y. &amp; Eliceiri, . W. Dual-Stream Multiple Instance Learning Networ for Whole Slide Image Classification With Self- Supervised Contrastive Learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP ), 14318-14328 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">DTFD-MIL: Double-Tier Feature Distillation Multiple Instance Learning for Histopathology Whole Slide Image Classification</title>
+		<author>
+			<persName><forename type="first">Hongrun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanda</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yitian</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihong</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">E</forename><surname>Coupland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yalin</forename><surname>Zheng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01824</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+			<biblScope unit="page" from="18780" to="18790" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, H. et al. DTFD-MIL: Double-Tier Feature Distillation Multiple Instance Learning for Histopathology Whole Slide Image Classification. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern ecognition (CVP ), 18802-18812 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">IPD-Brain: An Indian histopathology dataset for glioma subtype classification</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Chauhan</surname></persName>
+		</author>
+		<idno type="DOI">10.6084/m9.figshare.27186087</idno>
+		<ptr target="https://doi.org/10.6084/m9.figshare.27186087" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chauhan, E. et al. IPD-Brain: An Indian histopathology dataset for glioma subtype classification. https://doi.org/10.6084/ m9.figshare.27186087 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">StainNet: A Fast and obust Stain Normalization Networ</title>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<idno type="DOI">10.3389/fmed.2021.746307</idno>
+		<ptr target="https://doi.org/10.3389/fmed.2021.746307" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Medicine</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">ang, H. et al. StainNet: A Fast and obust Stain Normalization Networ . Frontiers in Medicine, 8, https://doi.org/10.3389/ fmed.2021.746307 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The Emergence of Pathomics</title>
+		<author>
+			<persName><forename type="first">Rajarsi</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tahsin</forename><surname>Kurc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><forename type="middle">S</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Saltz</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s40139-019-00200-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Pathobiology Reports</title>
+		<title level="j" type="abbrev">Curr Pathobiol Rep</title>
+		<idno type="ISSNe">2167-485X</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="73" to="84" />
+			<date type="published" when="2019-07-27">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gupta, ., urc, T., Sharma, A., Almeida, J. S. &amp; Saltz, J. e emergence of pathomics. Current Pathobiology eports, 7, 73-84 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Small Efficient Scale as a Foundation for Walrasian Equilibrium**We wish to acknowledge the helpful comments of the referee and also to thank the National Science Foundation for financial support.</title>
+		<author>
+			<persName><forename type="first">William</forename><surname>Novshek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Sonnenschein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-476750-8.50011-7</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Noncooperative Approaches to the Theory of Perfect Competition</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="1982">1-002</date>
+			<biblScope unit="page" from="127" to="139" />
+		</imprint>
+	</monogr>
+	<note>Akula Rajesh Goud for data digitalization and organization</note>
+	<note type="raw_reference">acknowledgements We acknowledge IHub-Data, IIIT Hyderabad (H1-002), for financial assistance. We also thank Ms. Ramya Alugam and Mr. Akula Rajesh Goud for data digitalization and organization.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

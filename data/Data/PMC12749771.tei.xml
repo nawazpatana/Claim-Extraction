@@ -1,0 +1,2611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">AI-augmented intraoperative decision-making workflows in diffuse midline glioma biopsy using cryosection pathology</title>
+				<funder ref="#_sbYUw8B">
+					<orgName type="full">Clinical Competence Improvement and Advancement in Neurosurgery</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Shanghai Artificial Intelligence laboratory (CFS</orgName>
+				</funder>
+				<funder ref="#_66pyD8y">
+					<orgName type="full">Shanghai Hospital Development Centre</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">AI4S Climber Initiative, Intern Discovery</orgName>
+				</funder>
+				<funder ref="#_PGEFD9H">
+					<orgName type="full">Noncommunicable Chronic Diseases-National Science and Technology Major Project</orgName>
+				</funder>
+				<funder ref="#_RfeYz7d">
+					<orgName type="full">National Key Research and Development Program of China, MOST</orgName>
+				</funder>
+				<funder ref="#_sMfjpfe">
+					<orgName type="full">Fujian Province Science and Technology Innovation Joint Fund</orgName>
+				</funder>
+				<funder ref="#_B8sjHPp">
+					<orgName type="full">Shanghai Urban Digital Transformation Specializing Fund</orgName>
+				</funder>
+				<funder ref="#_Xe5qJ28 #_955XtRQ #_y2GFNJ3">
+					<orgName type="full">National Natural Science Foundation of China</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-11-26">2025-11-26</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Yifan</forename><surname>Yuan</surname></persName>
+							<idno type="ORCID">0000-0003-1072-5825</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , National Centre for Neurological Disorders , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit1">National Centre for Neurological Disorders</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Qi</forename><surname>Yue</surname></persName>
+							<idno type="ORCID">0000-0003-1841-0449</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , National Centre for Neurological Disorders , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit1">National Centre for Neurological Disorders</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yining</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , National Centre for Neurological Disorders , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit1">National Centre for Neurological Disorders</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zunguo</forename><surname>Du</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Pathology , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution" key="instit1">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xingfu</forename><surname>Wang</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Pathology , National Regional Medical Centre , The First Affiliated Hospital Binhai Campus , Fujian Medical University , Fuzhou , Fujian , China.</note>
+								<orgName type="department" key="dep1">Department of Pathology</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital Binhai Campus</orgName>
+								<orgName type="institution" key="instit1">National Regional Medical Centre</orgName>
+								<orgName type="institution" key="instit2">Fujian Medical University</orgName>
+								<address>
+									<settlement>Fuzhou Fujian</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Fang</forename><surname>Yan</surname></persName>
+							<idno type="ORCID">0009-0004-4216-3876</idno>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Haixia</forename><surname>Cheng</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Pathology , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution" key="instit1">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kaitao</forename><surname>Chen</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zanyi</forename><surname>Wu</surname></persName>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> Department of Neurosurgery , National Regional Medical Centre , The First Affiliated Hospital Binhai Campus , Fujian Medical University , Fuzhou , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital Binhai Campus</orgName>
+								<orgName type="institution" key="instit1">National Regional Medical Centre</orgName>
+								<orgName type="institution" key="instit2">Fujian Medical University</orgName>
+								<address>
+									<settlement>Fuzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jianping</forename><surname>Song</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , National Centre for Neurological Disorders , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit1">National Centre for Neurological Disorders</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> Department of Neurosurgery , National Regional Medical Centre , The First Affiliated Hospital Binhai Campus , Fujian Medical University , Fuzhou , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital Binhai Campus</orgName>
+								<orgName type="institution" key="instit1">National Regional Medical Centre</orgName>
+								<orgName type="institution" key="instit2">Fujian Medical University</orgName>
+								<address>
+									<settlement>Fuzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Department of Neurosurgery , National Regional Medical Centre , Huashan Hospital Fujian Campus , Fudan University , Fuzhou , Fujian , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital Fujian Campus</orgName>
+								<orgName type="institution" key="instit1">National Regional Medical Centre</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Fuzhou Fujian</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chunfeng</forename><surname>Song</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lei</forename><surname>Bai</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mu</forename><surname>Zhou</surname></persName>
+							<email>muzhou1@gmail.com</email>
+							<idno type="ORCID">0000-0003-4902-0259</idno>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> Department of Computer Science , Rutgers University , New Brunswick , New Jersey , USA.</note>
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">Rutgers University</orgName>
+								<address>
+									<settlement>New Brunswick</settlement>
+									<region>New Jersey</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mianxin</forename><surname>Liu</surname></persName>
+							<email>liumianxin@pjlab.org.cn</email>
+							<idno type="ORCID">0000-0001-5171-778X</idno>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Shanghai Artificial Intel- ligence Laboratory , Shanghai , China.</note>
+								<orgName type="institution">Shanghai Artificial Intel- ligence Laboratory</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ying</forename><surname>Mao</surname></persName>
+							<email>maoying@fudan.edu.cn</email>
+							<idno type="ORCID">0000-0001-8055-115X</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurosurgery , National Centre for Neurological Disorders , Huashan Hospital , Fudan University , Shanghai , China.</note>
+								<orgName type="department" key="dep1">Department of Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Huashan Hospital</orgName>
+								<orgName type="institution" key="instit1">National Centre for Neurological Disorders</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">AI-augmented intraoperative decision-making workflows in diffuse midline glioma biopsy using cryosection pathology</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Nature Communications</title>
+						<title level="j" type="abbrev">Nat Commun</title>
+						<idno type="eISSN">2041-1723</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">16</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-11-26" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">2A03161E25EE5322A8782D6525474D08</idno>
+					<idno type="DOI">10.1038/s41467-025-66853-y</idno>
+					<note type="submission">Received: 5 September 2025 Accepted: 14 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T19:21+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cryosection pathology is essential for intraoperative diagnosis of diffuse midline gliomas, yet it often leads to diagnostic errors and may prompt unnecessary re-biopsies before completion of the formal molecular assessment. In this study, we propose an AI-augmented framework, CryoAID, for rapid molecular outcome prediction during surgery for patients with diffuse midline glioma. CryoAID integrates a generative model to correct cryosection artefacts and a pathology foundation model to predict molecular statuses directly from cryosection images. We validate CryoAID across multiple cohorts to predict tumoural molecular statuses in the internal (n = 326), external multicentre (n = 52), and consecutive (n = 68) datasets. In particular, CryoAID accurately predicts major molecular statuses (e.g., ATRX, H3K27M, and TP53) using cryosection images that were previously deemed disqualified for molecular examinations. Beyond tumour cells, CryoAID reveals highly differential clinical features, including glial cell proliferation, abundant cytoplasm, and localised endothelial proliferation. In the retrospective analyses, CryoAID reduces re-biopsy rates by 26.4% and 26.6% in the internal and consecutive datasets, respectively. Our findings demonstrate that the AI-augmented pathology workflow can extract diagnostic value from specimens previously considered non-viable by traditional histopathology. This approach represents a shift towards real-time molecular pathology, potentially reducing re-biopsies and improving diagnostic precision for patients with diffuse midline glioma.</p><p>Diffuse midline gliomas (DMGs) predominantly affect children and adolescents and have become the leading cause of death among paediatric brain tumours 1-3 . Major molecular biomarkers, including H3K27M 4 , TP53 5 , ATRX 6 , and BRAF 7 , serve as independent prognostic factors and therapeutic targets for improving patient survival 8,9 . In the surgical setting, a timely assessment of these biomarkers remains difficult in the surgical environment. The deeply infiltrative nature of DMGs, combined with their location near vital brain regions, makes the</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>surgical removal highly challenging and hazardous. Therefore, clinical practice routinely combines biopsy and intraoperative frozen section examination with comprehensive molecular analysis for diagnostic confirmation <ref type="bibr" target="#b9">10,</ref><ref type="bibr" target="#b10">11</ref> .</p><p>The neurosurgical biopsy process involves a complex interaction between the pathologist and the surgeon, constrained by limited operative time, tissue availability, and imaging quality. In this process, only qualified biopsy samples are selected for detailed molecular diagnoses using immunohistochemistry (IHC) and sequencing <ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref> . During surgery, pathologists must make timely decisions on the biopsy samples, typically classifying them as either Pass or No-Pass samples. This assessment directly influences the surgeon's decision to continue or terminate the surgical operation. However, the accuracy of such real-time evaluations is often compromised by the inherent challenge in cryosection pathology. Two common scenarios frequently result in undesired No-Pass outcomes, thereby increasing the risk of re-biopsy: (i) artefacts or atypical cellular morphology introduced during cryosectioning may obscure tumour cells, preventing their identification; and (ii) even when tumour tissue is present, suboptimal visual cues from cryosections can reduce diagnostic confidence and prompt surgeons to request additional samples.</p><p>Reducing unnecessary re-biopsies is particularly critical for DMGs as multiple biopsies significantly heighten the risk of patient disability or death <ref type="bibr" target="#b14">15</ref> . Two major challenges persist in the current frozen section practice. First, the precise molecular profiling has not been fully extended to the intraoperative frozen section evaluation. Formalinfixed, paraffin-embedded (FFPE) specimens remain the primary source for immunohistochemical (IHC) and molecular analyses <ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref> . However, the FFPE procedure is time-consuming and precludes rapid feedback via the trial-and-error operation. Second, it remains unclear which histological features from cryosectioning can reliably inform molecular diagnostics. The current "Pass" criterion primarily relies on visual detection of sufficient tumour cells, without accounting for the link between histopathological appearance and molecular profiles. Emerging studies indicate that genetic signals of tumour can be detected in adjacent non-tumour tissues <ref type="bibr" target="#b18">19</ref> , indicating that intraoperative decisionmaking for cryosectioned samples requires a more nuanced assessment of tissue-level imaging features.</p><p>Clinical artificial intelligence (AI) has advanced the characterization of cryosection images and accelerated molecular diagnosis <ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b20">21</ref> . The use of generative AI promises to enhance the assessment of cryosection pathology and mitigate cryosection-induced artifacts <ref type="bibr" target="#b21">22</ref> . For instance, pre-trained foundation models excel at extracting subtle image features that are challenging to discern with the naked eye, thereby augmenting the capacity of molecular diagnostics in clinical examinations <ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref> . Despite their potential clinical impact, these advances have primarily focused on FFPE tissue analysis <ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref><ref type="bibr" target="#b28">[29]</ref> . Extending AI-based prediction directly to frozen sections would enable pathologists to receive immediate diagnostic support, facilitating sample adequacy assessment, tissue abnormality detection, and reducing unnecessary re-biopsies.</p><p>In this study, we explore the clinical impact of AI-driven assessment for DMG patients by proposing the CryoAID as a Cryosectionbased AI for Intraoperative Diagnosis (Fig. <ref type="figure">1A</ref>, <ref type="figure">B</ref>). Our primary objective is to enable AI-powered rapid molecular diagnostics with interpretable visual cues, both on the "Pass" cryosectioned pathology samples and on difficult samples previously deemed "No-Pass" by clinical experts. CryoAID aims to repurpose No-Pass samples and reduce unnecessary re-biopsies within the routine diagnostic process of cryosectioned pathology. We evaluate a retrospective multi-centre collection of cryosection pathology data from the DMG biopsy operation. We illustrate that using CryoAID could potentially reduce the re-biopsy triggered by unnecessary "No-Pass" decisions, thereby improving the intraoperative decision-making and minimising the surgical risks of patients with DMG.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CryoAID strongly predicts mutant statuses in Pass images</head><p>This experiment involved passing cryosection images to demonstrate the capacity of CryoAID for predicting major mutant statuses (ATRX, H3K27M, and TP53. Fig. <ref type="figure">1D Part I</ref>). In Fig. <ref type="figure" target="#fig_2">2A-C</ref>, we see that CryoAID demonstrates strong improvements over all other methods with statistical significance. For the tasks of predicting TP53, H3K27M, and ATRX, CryoAID obtains area under the curve (AUC) = 0.866 ± 0.051 (95% confidence interval, CIs = [0.828, 0.905]), AUC = 0.788 ± 0.044 (CIs = [0.754, 0.821]), and AUC = 0.774 ± 0.048 (CIs = [0.737, 0.810]). These AUCs from CryoAID are all significant for the three genes (Fig. <ref type="figure" target="#fig_2">2D</ref>), along with positive predictions in terms of multiple performance metrics (Fig. <ref type="figure" target="#fig_2">2G</ref>). On ARTX, CryoAID exhibits accuracy (ACC) = 0.709 ± 0. We evaluated the generalizability of CryoAID using the consecutive testing dataset and the multi-centre external testing dataset. In Fig. <ref type="figure" target="#fig_2">2E</ref>, under consecutive external testing, CryoAID accurately detects the TP53, H3K27M, and ATRX statuses with AUC = 0.772 (CIs = [0.656, 0.887], p &lt; 0.001), AUC = 0.707 (CIs = [0.581, 0.834], p = 0.001), and AUC = 0.662 (CIs = [0.529, 0.795], p = 0.017). Correspondingly, the other performance metrics are ACC = 0.716, F1 = 0.689, SEN = 0.700, SPE = 0.730, p &lt; 0.001 for H3K27M, and ACC = 0.716, F1 = 0.740, SEN = 0.677, SPE = 0.750, p &lt; 0.001 for TP53 (Fig. <ref type="figure" target="#fig_2">2H</ref>). The metrics for ATRX are relatively restricted but significant (ACC = 0.597, SEN = 0.560, SPE = 0.619, p &lt; 0.05; F1 = 0.562, p &lt; 0.001). And in the multicentre testing (Fig. <ref type="figure" target="#fig_2">2F</ref>, <ref type="figure">G</ref>), on the combined result (centre-wise results in Fig. <ref type="figure" target="#fig_2">S2</ref>), the model's prediction capacity remains positive in ATRX (AUC = 0.789, CIs = [0.665, 0.914], p &lt; 0.001), H3K27M (AUC = 0.793, CIs = [0.668, 0.919], p &lt; 0.001), and TP53 (AUC = 0.840, CIs = [0.728, 0.951], p &lt; 0.001). In the challenging multi-centre evaluation (Fig. <ref type="figure" target="#fig_2">2I</ref>), the performance metrics remain favourable, where CryoAID yielded ACC = 0.765, F1 = 0.647, SEN = 0.769, SPE = 0.763, p &lt; 0.001 for ATRX, ACC = 0.725, F1 = 0.727, SEN = 0.696, SPE = 0.750, p &lt; 0.001 for H3K27M, and ACC = 0.765, F1 = 0.776, SEN = 0.750, SPE = 0.778, p &lt; 0.001 for TP53. Overall, CryoAID, based on Pass cryosection images, displays a high capability in the task of molecular diagnoses under various external settings.</p><p>In Fig. <ref type="figure" target="#fig_3">3</ref>, we visualized the predictive features for the H3K27M mutant from CryoAID. From Fig. <ref type="figure" target="#fig_3">3A</ref>, <ref type="figure">B</ref>, scant tissue displays diffusely infiltrating tumour cells with prominent cytoplasmic processes and small round nuclei, exhibiting nuclear atypia, high cellular density, and rare mitotic figures. In the 2021 WHO Classification <ref type="bibr" target="#b29">30</ref> , the H3K27Mmutant DMGs are all assigned grade 4 gliomas with astrocytic morphology in histopathology. This consistent evidence supports that CryoAID enables clinically relevant feature detection in cryosection images of the H3K27M mutant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CryoAID enables the molecular diagnosis in No-Pass images</head><p>We explored the challenging setting by using CryoAID to predict mutant status on No-Pass images in two different scenarios (Fig. <ref type="figure">1D</ref> Part II). First, we directly transferred models trained on Pass images to evaluate on the No-Pass images (Fig. <ref type="figure" target="#fig_4">4</ref>). Second, we re-trained another set of models based solely on No-Pass images (Fig. <ref type="figure" target="#fig_5">5</ref>). We assessed the significance of the predictability and investigated the predictive features in No-Pass images in Fig. <ref type="figure" target="#fig_5">5</ref>.</p><p>In We hypothesized that these shared features could be the tumour cells that escaped the visual examinations. To evaluate, we selected the cryosectioned slides with the H3K27M mutant being accurately detected and sent the corresponding predictive patches to the pathologist for visual re-checking. The pathologist identified malignant, uncertain, and benign patches, which were exemplified in Fig. <ref type="figure" target="#fig_4">4D</ref>. The statistics support that most of the predictive patches are malignant (Fig. <ref type="figure" target="#fig_4">4E</ref>, 715/1035, 69.1%). Malignant patches demonstrate moderately dense infiltrates of oval tumour cells with marked nuclear atypia and prominent cytoplasmic processes. Mitotic figures are readily identifiable, with focal vascular endothelial proliferation observed in some cases. Most of the tumour cells in these re-identified malignant patches appear in the tissue boundary, where the tumour cells can be hidden from previous examinations of pathologists. The uncertain patches manifest broken tissue showing increased cell density, formation of foamy cells in sheets accompanied by glial proliferation, a few small round cells with projections scattered throughout, and some nuclei being slightly atypical. The benign patches involve normal cell morphology or slight swelling of some cell cytoplasm, with no obvious nuclear atypia. As we expected, the tumourrelated features can be detected in a large part of cryosectioned slides (Fig. <ref type="figure" target="#fig_4">4F</ref>, 60/69, 86.9%), potentially caused by the missed examination. However, there also exists a certain amount of predictive patches (Fig. <ref type="figure" target="#fig_4">4E</ref>, uncertain: 212/1035, 20.5%; benign: 108/1035, 10.4%) and slides (Fig. <ref type="figure" target="#fig_4">4F</ref>, <ref type="figure" target="#fig_3">3</ref>.1%) being not tumour-related.</p><p>In Fig. <ref type="figure" target="#fig_5">5A-C</ref>, we display that in the No-Pass-based training and predictions, AUCs range from 0.736 to 0.793 and P-values are all less than 0.001. Note that the AUC for ATRX is higher than that in Fig. <ref type="figure" target="#fig_5">5A</ref>, supporting that without learning on Pass images, CryoAID can identify a set of specific features associated with the mutant status. In other words, there exist predictive features specific to No-Pass images that are not strongly related to tumour tissues.</p><p>We explored No-Pass image-specific features using a representative case of a 19-year-old female patient with a glioma located in the bilateral pons and medulla oblongata and confirmed H3K27M mutant. Due to the tumour's diffuse infiltration within the brainstem, the pontine lesion was targeted for biopsy (Fig. <ref type="figure" target="#fig_5">5D</ref>). Previous intraoperative cryosection pathology analysis indicated glial proliferation with mild nuclear atypia, recommending further sampling (No-Pass image shown in Fig. <ref type="figure" target="#fig_5">5D</ref>). Following the analysis of CryoAID with No-Pass-based training, the tissue imaging exhibited indications of H3K27M mutation. In Fig. <ref type="figure" target="#fig_5">5E</ref>, we observe a small proportion of nuclear atypia cells (i.e., suspected tumour cells), a rich presence of glial cells, with localised evidence of endothelial cell proliferation (Fig. <ref type="figure" target="#fig_5">5F</ref>, <ref type="figure">G</ref>). In the meantime, we confirmed that this H3K27M mutation was identified via IHC imaging from the same sample (Fig. <ref type="figure" target="#fig_5">5H</ref>). While CryoAID successfully detected suspected tumour cells in this low-density case, traditional pathology would consider such sparse tumour cells insufficient for confident diagnosis. Notably, CryoAID overcame this limitation by extracting information largely from the tumour's surrounding tissues-including the abundant glial cells and endothelial proliferation-rather than relying solely on the scarce tumour cells themselves, thereby achieving accurate mutant status prediction despite the challenging sample.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A retrospective biopsy re-checking with assistance of CryoAID</head><p>CryoAID could generate rapid decision-making support during the biopsy operation on both No-Pass and Pass images. In this analysis, we retrained models based on all Pass and No-Pass samples. The models were applied to a retrospective biopsy re-checking analysis, mimicking intraoperative conditions (Fig. <ref type="figure">1D</ref> Part III. Illustration for details in Fig. <ref type="figure" target="#fig_7">6A</ref>) under a simplified setting. In particular, we strictly maintained the arriving order of the collected retrospective cryosection images and sequentially input them to our established models. Then CryoAID independently assessed the mutant status of each arriving sample. We compared the actual biopsy counts by humans and AI detection counts for any mutant correctly, as mutations in any of the three diagnostic genes (ATRX, H3K27M, and TP53) suggest tumour presence. Please note that this statistical process may be optimistic to a certain extent, as in real-world practice, there is no ground-truth mutation status available during surgery, only the pathologist's judgment. We expect that the actual biopsy counts achieved through AI-pathologist collaboration will exceed the estimation in this analysis, but remain lower than those from human experts alone.</p><p>In Fig. <ref type="figure" target="#fig_7">6B</ref>, we observe a range of significant predictability from such trained models. Using the information about sampling order, we were able to calculate the prediction performance of CryoAID within the first two times of biopsies (Fig. <ref type="figure" target="#fig_7">6D</ref>, <ref type="figure">E</ref> and Table <ref type="table">S2</ref>). By properly adjusting a decision threshold, using once sampling (n = 315), the model can obtain 0.675-0.733 ACC and 0.722-0.781 AUC for different mutant predictions. Under twice sampling (n = 173), the model yields further increased performances, with 0.680-0.775 ACC and 0.777-0.844 AUC. We see that CryoAID underpins the intraoperative decision support and reduces re-biopsy. In Fig. <ref type="figure" target="#fig_7">6F</ref>, in the internal dataset, the averaged biopsy counts for humans are 1.73, while expected to be 1.27 for "AI". The AI process would significantly reduce 149 times of biopsy out of 564 times in total (326 patients, the reduction ratio is 26.4%, p = 2.89e-26, t(325) = 11.52, one-sided paired t-test).</p><p>We further re-trained a set of models based on all internal data and applied them to all consecutive testing data. The predictive performance for the three genes remains satisfactory (Fig. <ref type="figure" target="#fig_7">6C</ref>, ATRX: AUC = 0.604, CIs = [0.508, 0.700], p = 0.017; H3K27M: AUC = 0.704, CIs = [0.619, 0.789], p &lt; 0.001; TP53: AUC = 0.753, CIs = [0.672, 0.834], p &lt; 0.001)). In Fig. <ref type="figure" target="#fig_7">6G</ref>, using the consecutive data, the averaged biopsy counts for "human" are 2.10 and 1.54 for "AI". The AI process could significantly save 38 times of biopsy out of 143 times in the 68 patients (reduces 26.6%, p = 6.61e-10, t(67) = 7.03). Note that the patients with 6 and 4 times of biopsy in the internal and consecutive datasets are confirmed with no mutant, and thus AI can not reduce the re-biopsy. Despite the model advance, this indicates the existence of extreme cases that cannot benefit from CryoAID.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dual validation for low-grade midline gliomas</head><p>It is noteworthy that a subset of midline gliomas, including pilocytic astrocytomas (PAs), are low-grade, underscoring the substantial differences in clinical management strategies. PAs require maximal resection, whereas the presence of an H3K27M mutation could make Fig. <ref type="figure">1</ref> | CryoAID enhances the efficiency of the clinical biopsy workflow and reduces the surgical risk of DMG patients. A In the conventional biopsy process, after receiving the specimen from the surgeon, the pathologist decides whether the cryosection slide is "Pass" or "No-Pass." Due to the limited image quality of cryosection slides and the lack of clear visual features to ensure molecular adequacy, unnecessary "No-Pass" decisions are frequently made. This often leads to significant time delays (exceeding 30 minutes) and increases biopsy-related risks for patients with DMG. The proposed CryoAID provides both the likelihood of molecular diagnosis for a given slide and corresponding visual evidence. CryoAID's output can trigger re-examination of slides, allowing pathologists to revise incorrect "No-Pass" decisions to "Pass," thereby potentially reducing unnecessary rebiopsies. B The algorithmic workflow of CryoAID. CryoAID employs an AI-FFPE generative model to enhance the visual quality of cryosection slides and leverages a pathology-specific pre-trained foundation model to extract reliable representations. The slide-level features are integrated via a Transformer-based classifier to generate probabilistic predictions of gene mutation status. C Multicentre data collection for internal cross-validation, external validation, and consecutive validation datasets. D The detailed validation pipeline. The three components correspond to the major result sections (I-III). Part I follows the standard clinical workflow, focusing on AI-based molecular diagnosis using "Pass" cryosection images. Part II demonstrates CryoAID's ability to repurpose "No-Pass" images to improve molecular diagnostic performance. This part includes two experiments: transfer learning and direct training. Part III jointly uses both "No-Pass" and "Pass" images to evaluate CryoAID's capability to reduce re-biopsies through retrospective re-checking analysis. CryoAID re-examines images in the same sequence as in the surgical workflow and provides predictive assessments with reduced biopsy counts based on combined "Pass" and "No-Pass" inputs. surgeons more conservative, which creates a contradiction. To address this hurdle, we extend to propose a dual-validation protocol using CryoAID, where CryoAID offers both molecular diagnosis on key genes and histopathological diagnosis about low-grade tumours (Fig. <ref type="figure" target="#fig_8">7A</ref>). We performed a five-fold cross-validation (8:2 train-test split) with 301 subjects (33 pilocytic astrocytoma). Preliminary analysis suggests that CryoAID obtains above 80% ACC with a near 0.90 AUC on PA histopathological identification on Pass frozen sections (Fig. <ref type="figure" target="#fig_8">7B</ref>, <ref type="figure">C</ref>). The F1 scores remain limited, potentially due to the small PA sample size for training. Given the hallmarked histopathological feature of PA, i.e., Rosenthal fibers, the rechecking of a pathologist can confirm the potential diagnosis of PA, even upon a false positive prediction on H3K27M from CryoAID. This dual-validation procedure provides valuable guidance for neurosurgeons towards improved resection for full-spectrum midline gliomas.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Reducing the surgical risk of midline glioma is crucial for improving the quality of care and enhancing the efficiency of surgical workflow. In this study, we developed and evaluated an AI system, CryoAID, employing a cryosection-based approach for the molecular diagnosis of DMG. We demonstrated that CryoAID improves the prediction accuracy and workflow efficiency for genetic mutation detection from cryosection images across multiple centres. In particular, CryoAID exhibits a remarkable sensitivity in evaluating No-Pass cryosections, underscoring its potential to refine the decision-making protocols in routine biopsy operations. Our findings support the notion that CryoAID could potentially reduce the incidence of unnecessary No-Pass outcomes, shorten operation durations, and mitigate surgical hazards in DMG surgeries.</p><p>Most prior studies have focused on molecular assessment in FFPE samples <ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref><ref type="bibr" target="#b28">[29]</ref> and those passed cryosection images <ref type="bibr" target="#b19">20</ref> . While these results are promising, they overlooked the challenges of intraoperative diagnosis arising from the presence of No-Pass images. Furthermore, prior studies have not demonstrated whether such models can generalize in a real-world surgical deployment to support efficient clinical decision-making. In this study, we provide a robust, multi-centre evidence of AI performance across both Passed and No-Pass cryosectioned cryosection images. The emphasis on AI-assisted intraoperative diagnosis distinguishes our study from prior works <ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b26">27</ref> . In the consecutive data evaluation (Fig. <ref type="figure" target="#fig_7">6G</ref>), CryoAID saved 38 biopsy attempts out of 143 times in the 68 patients, demonstrating substantially greater efficiency than conventional human-based workflows. This improved efficiency allows clinicians to minimize repeat biopsies-an important advancement for high-stakes DMG treatment and patient care.</p><p>CryoAID offers opportunities to repurpose specimens previously deemed non-viable in traditional histopathology. We offered key evidence to support that tumour's genetic information could be recovered from No-Pass cryosectioned images even when tumour cells are visually obscured (Figs. <ref type="figure" target="#fig_4">4</ref>, <ref type="figure" target="#fig_5">5</ref>). Key molecular alterations in midline gliomas, such as the H3K27M mutation, have become definitive criteria for pathological diagnosis <ref type="bibr" target="#b30">31</ref> . However, the lengthy clinical process of FFPE, IHC, and genetic testing hinders rapid intraoperative molecular interpretation. To respond, the CryoAID model directly extracts the genetically related image features from both Pass and No-Pass cryosection images. Moreover, Moreover, growing evidence links tumour genotypes to morphological transformations in peritumoural cells <ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b18">19</ref> , suggesting that mutated tumour cells may induce distinct morphological signatures in adjacent tissues <ref type="bibr" target="#b17">18</ref> . In our study, CryoAID revealed explainable diagnostic features, including suspected tumour cells, glial cell proliferation, abundant cytoplasm, and localised endothelial cell proliferation (Fig. <ref type="figure" target="#fig_5">5</ref>). This key finding reflects that CryoAID is able to discern peritumoural cues that elude human detection to infer the challenging molecular-level information <ref type="bibr" target="#b31">32,</ref><ref type="bibr" target="#b32">33</ref> .</p><p>A key contribution of our study lies in leveraging the generative power of AI to extend the scope of pathological foundation models, typically pre-trained on large-scale FFPE samples. Unlike prior studies demonstrating their validity in FFPE-based tasks <ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref> , we found that directly transferring a pathological foundation model to cryosection images yielded suboptimal performance (Fig. <ref type="figure" target="#fig_2">2C</ref>). In our study, the state-of-the-art AI-FFPE module introduces a generationbased domain adaptation strategy <ref type="bibr" target="#b33">34,</ref><ref type="bibr" target="#b34">35</ref> , preserving the performance of pre-trained models while avoiding the need for extensive finetuning on cryosection datasets. The AI-FFPE generative model effectively transforms cryosection images into FFPE analogues, bridging the imaging gap and enabling high-fidelity feature extraction. The success of this generative approach is further reflected in the model's ability to generalize to other tasks. For instance, through the integration of AI-FFPE and CHIEF models, our framework demonstrates strong adaptability, requiring only minimal Transformer fine-tuning to analyse other tumour types (such as PA) that demand intraoperative diagnostics. The development of CryoAID aligns with the advances of Fas-tGlioma model <ref type="bibr" target="#b35">36</ref> , which established a foundation model based on stimulated Raman histology (SRH) to facilitate intraoperative detection of glioma infiltration and reduce the duration of surgical procedures. While both approaches aim to accelerate intraoperative workflows, CryoAID uniquely focuses on reducing unnecessary biopsies and mitigating surgical risks and patient morbidity. In particular, CryoAID provides a dual-validation by considering both molecular and histopathology assessments, thereby supporting multi-dimensional intraoperative decision-making. The clinical utility of FastGlioma is limited to the availability of SRH imaging systems, whereas CryoAID is designed to operate seamlessly within the routine neurosurgical workflow using standard cryosection images. This compatibility with existing diagnostic infrastructure greatly enhances CryoAID's translational potential across diverse clinical environments.</p><p>Our study has several limitations that warrant further investigation. Owing to limited sample sizes, BRAF alterations (including V600E mutations and KIAA1549-BRAF fusions) were analyzed as a unified category without subclassification. Similarly, other molecular alterations, such as IDH mutations and MYCN amplifications, were excluded due to insufficient representation. Future multi-centre collaborations could validate CryoAID's performance through expanded genomic profiling efforts. Additionally, our current approach may not benefit extremely challenging cases requiring multiple repeated biopsies. Enhancements may involve incorporating a broader spectrum of molecular markers and implementing dual-validation strategies from both histological and genetic perspectives. Finally, as this study was conducted retrospectively without pathologist involvement, a prospective clinical trial integrating AI-pathologist collaboration is warranted to assess CryoAID's real-world robustness in reducing biopsy frequency. In conclusion, this study demonstrates the real-time value of AI-augmented workflows in reducing re-biopsy efforts during DMG surgeries. Our findings underscore the clinical utility of cryosection pathology and its explainable contribution to informed neurosurgical decision-making. By leveraging the strengths of foundation models, CryoAID has the potential to improve diagnostic efficiency, enhance the quality of care for patients with DMG, and accelerate the broader integration of AI into intraoperative surgical practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample acquisition and pathological diagnosis</head><p>In this retrospective study, the data inclusion and exclusion are illustrated in Fig. <ref type="figure">1C</ref>   <ref type="table">S1</ref>. Sex was selfreported by participants and included in the demographics information analysis.</p><p>All imaging sequences were imported into the neuro-navigation system (Medtronic S7, Minneapolis, MN, USA) and co-registered with preoperative magnetic resonance images. For biopsy surgery, targets were carefully chosen and marked by senior neurosurgeons (10-year experience). After craniotomy and before a complete dural opening, cylindrical samples were obtained under conventional stereotactic biopsy procedures. For resection surgery, after craniotomy and dural opening, suspicious tissues were selected and sampled for further cryosection pathologic diagnosis. The pathologic assessment of the cryosection slides was performed by two senior pathologists independently. The genetic mutant status was determined using IHC.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Whole slide imaging acquisition and pre-processing</head><p>We preprocessed the cryosection WSI using the protocol proposed in Lu et al. <ref type="bibr" target="#b36">37</ref> , which includes tissue segmentation and patching. The WSI was initially downscaled by 20× and converted from read-green-blue (RGB) to hue-saturation-value (HSV) colour space. Then a binary mask was created for tissue areas by thresholding the saturation channel and smoothing edges with median blurring, followed by morphological closing to eliminate small gaps. Only the foreground objects that meet a specific area threshold are kept for further analysis, and a segmentation mask is produced for each slide. In this study, we directly adopted the "biopsy" configuration provided by Lu et al. <ref type="bibr" target="#b36">37</ref> to set the hyperparameters for the segmentation algorithm. Post-segmentation,  Scatter offers individual data. ***: Metric is significantly higher than chance level at p &lt; 0.001 level using one-sided permutation tests (not adjusted). Source data are provided as a Source Data file.</p><p>patches with a size of 224 × 224 pixels were extracted from these foreground areas at a 20× magnification. To refine the quality of segmentation results, we further filtered out image patches that are contaminated (e.g., black regions, manual markers, or dust) or fail to show segmented tissues (e.g., blank regions) by applying the RGB thresholds. The filtered results were sampled and double-checked visually.</p><p>CryoAID AI-FFPE. Towards strong feature extraction on cryosection images, we applied the AI-FFPE method <ref type="bibr" target="#b21">22</ref> to transfer cryosection patches to FFPElike patches. AI-FFPE is a generative adversarial network incorporating an attention mechanism and a self-regularisation constraint, namely Contrastive Unpaired Translation (CUT) <ref type="bibr" target="#b37">38</ref> . In particular, it can rectify the cryosection artefacts and change the appearance of cryosection images similar to real FFPE images. In the whole process, the clinically relevant visual features, such as the cell structure, are preserved for quantitative analysis. Exemplified pairs of inputted cryosection images and generated AI-FFPE images are shown in Figs. <ref type="figure">1B</ref> and <ref type="figure" target="#fig_3">S3</ref>. Note that the generation will not introduce new artefacts.</p><p>Foundation model for feature extraction. All AI-FFPE processed patches were fed into a pre-trained pathology foundation model, called CHIEF <ref type="bibr" target="#b38">39</ref> (Clinical Histopathology Imaging Evaluation Foundation), for the feature extraction. CHIEF is a pathology foundation model developed to enhance cancer diagnosis and prognosis prediction. Trained on 15 million unlabeled image patches and over 60,000 whole-slide images across 19 cancer types, CHIEF employed selfsupervised and weakly supervised learning to extract robust features from histopathology images. It demonstrates strong accuracy in tasks of cancer detection, tumour origin identification, genomic mutation prediction, and survival prognosis. We thus leveraged CHIEF's information-extraction ability in our tasks of multiple molecular diagnoses.</p><p>Transformer classifier. After feature extraction, we utilised a Transformer architecture <ref type="bibr" target="#b39">40</ref> to build a classifier model to predict the mutant status of patients. A Transformer block consists of a self-attention layer, a multi-layer perceptron (MLP) layer, and skip connections. The self-attention layer enables the model to weigh the importance of different patches. Differing to conventional attention, self-attention computes the importance based on both individual patch features and their relationships. Following the self-attention layer, the output is passed through a layer normalisation step and then an MLP layer. The MLP consists of two fully-connected layers with a ReLU activation in between, allowing the model to learn complex mappings from the selfattention outputs. We also employ skip connections (known as residual connections) around both the self-attention and MLP layers. We use the skip connection as it helps mitigate the vanishing gradient problem by allowing the gradient to flow directly through the network. Layer normalisation is then applied to stabilise and accelerate the training process. We denote the inputted patches as x, and N x as the number of inputted patches. Formally, the process is expressed as:</p><formula xml:id="formula_0">K x ð Þ = W K x, Q x ð Þ = W Q x, V x ð Þ = W V x,<label>ð1Þ</label></formula><formula xml:id="formula_1">A = softmax K x ð Þ ð Þ T Q x ð Þ ,<label>ð2Þ</label></formula><formula xml:id="formula_2">y sa = x + MLP AV x ð Þ ð Þ,<label>ð3Þ</label></formula><formula xml:id="formula_3">y MLP = y sa + MLP y sa À Á ,<label>ð4Þ</label></formula><p>where A is a N x -by-N x self-attention weight matrix, y sa is the intermediate output from self-attention layer, and y MLP is the output from the MLP layer in the Transformer block. Note that we did not implement positional embedding and relied on the feature representation from the used foundation model.</p><p>Feature visualisation. The self-attention layer in the Transformer enables an exploration of the importance of each patch in a slide during the prediction. Following Qu et al. <ref type="bibr" target="#b40">41</ref> , based on Eqs. ( <ref type="formula" target="#formula_1">2</ref>) and (3), we regarded the averaged logarithmic value for each column in A as a rough estimation for the weight on each patch. Denote W i is the importance weight on the ith patch,</p><formula xml:id="formula_4">W i = 1 N x X N x j log A ij :<label>ð5Þ</label></formula><p>We analysed patches with top weights in a slide and utilised representative patches for visualisations. The weights were also mapped back to the original location to produce the "heat map" for checking the spatial distribution of features.</p><p>Implementation. We applied the pre-trained parameters of the AI-FFPE model (trained on brain tumour images) and the CHIEF model without further tuning. In the classifier implementation, after the processing of one Transformer block (one-head self-attention, attention encoding dimension = 64, MLP dimension = 1024), an average pooling is utilised to integrate the patch-level feature into the WSI-level feature. And one MLP (input dimension = 768, output dimension=2) with Softmax following the Transformer block works on the WSI-level feature to generate the prediction probability.</p><p>A ten-fold cross-validation was implemented in the internal dataset with a train-vs-test split ratio of 9:1 for each round. We trained the Transformer classifier with training epochs = 80, learning rate = 1e-4, and batch size = 1. We used the Adam algorithm to automatically optimise the trainable parameters with a weight decay of 5e-3. A weighted sampler was used to tackle the issue of class imbalance. Cross-entropy was used as the loss function. Other parameters of the neural network models were initialised with random weights. The training was accelerated with a single Nvidia GTX 4090 GPU.</p><p>For the external testing, we trained a new model based on the internal cross-validation dataset and applied the new model to the target testing dataset. The prediction models for different genes were independently established. In the Pass-to-No-Pass analysis (Fig. <ref type="figure" target="#fig_4">4</ref>), the ten models trained on internal Pass images during cross-validations were directly applied to all internal No-Pass images. A probability-level majority voting was conducted by averaging the prediction probabilities from the ten models, resulting in the final prediction results. For feature visualization in Fig. <ref type="figure" target="#fig_4">4</ref>, one of the ten models showing the highest AUC in No-Pass images was selected to generate the predictive patches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparison methods</head><p>To assess the effectiveness of each component in CryoAID, we systematically compared three classes of competing methods in terms of classifier, foundation model, and generative ability. All methods were evaluated using a consistent training and validation pipeline with hyperparameters tuned on the same validation splits to ensure fair comparison. We compared all methods using the internal crossvalidation dataset, as it represents the large-scale collected data.</p><p>First, we compared different choices of classifiers, within attention-based multiple instance learning (ABMIL) <ref type="bibr" target="#b41">42</ref> , CLAM <ref type="bibr" target="#b36">37</ref> , TransMIL <ref type="bibr" target="#b42">43</ref> , and Transformer (CryoAID). ABMIL classifier learns to select disease-related instances in a given bag of batches via an attention mechanism for classification. CLAM classifier is based on conventional ABMIL, with the aid of a support vector machine loss to increase the discrepancy of the embedded feature of two classes. TransMIL combines MIL and Vision Transformer. The cross-talk among patch features is introduced using a Vision Transformer, and the integrative "cls_token" over all instance features is used for classification. However, the increased TransMIL model complexity can result in overfitting under small training samples.</p><p>Second, we compared pathology foundation models in CryoAID, including ResNet50, UNI <ref type="bibr" target="#b22">23</ref> , Pathoduet 26 , Virchow2 24 , Gigapath <ref type="bibr" target="#b24">25</ref> , and CHIEF 39 (CryoAID). ResNet50 was trained on large-scale natural images rather than pathology images. UNI and Pathoduet were trained on roughly 100 K WSIs and focused on visual tasks such as segmentation and tumour detection. Gigapath and Virchow2 were respectively trained on 170 K and 3,1 M WSIs and demonstrated the scalability of the foundation model for real-world applications, including rare tumour diagnosis.</p><p>Finally, we made an effort to skip the AI-FFPE step in CryoAID to assess the effectiveness of using generative-based image enhancement of CryoAID.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis</head><p>Model comparison. To evaluate the model's performance on the internal cross-validation and external test, we used the area under the ROC curve (AUC). The ROC curve was created by plotting the true positive rate against the false positive rate at various decision probability thresholds. AUC informs the capability of a model in distinguishing between two classes. Additionally, we computed the accuracy (ACC), sensitivity (SEN), and specificity (SPE), based on the optimal decision probability threshold on the ROC curve, achieving the balance between SEN and SPE. F1 score is also reported, yielded from a separate F1-oriented threshold searching. Two distinct thresholds were used because the optimal operating point for maximizing F1 often differs from that for balancing sensitivity and specificity, reflecting different trade-offs between false positives and false negatives. For models from different folds or different centres, the thresholds were estimated separately, and the thresholded decision values were combined. To compare CryoAID with different models, we applied a one-sided two-sample t-test on these AUCs from folds and assessed the significance (P-value) of the improvement. In the internal cross-validation, we reported the mean, standard deviation (STD), and 95% confidence interval (CI) from the folds. For AUC based on onetime testing, the CI is estimated using DeLong's method. In addition, the significance of the AUC score was estimated by 1000 permutations on the truth label to estimate the distribution of the AUC under the chance level. For cross-validation-based results, including ACC, SEN, SPE, and AUCs, the permutation test is performed based on the integrated predictions and labels over all folds.</p><p>Retrospective biopsy re-checking. The AUCs of the model's prediction given once and twice biopsies were both calculated. To estimate the prediction probability upon twice biopsies for AUC computation, we averaged the probabilities of the model's prediction on the first and the second sampling. The corresponding ACC, SEN, and SPE were also computed by the optimal cut-off on the ROC curve as mentioned above. This is to demonstrate the model's capacity to detect mutant samples while making the least-mistaken recall in normal samples. The biopsy counts for achieving molecular diagnosis by human (pathologists) were obtained as the real counts of biopsies to obtain the Pass cryosectioned image. The biopsy counts for AI were determined by the order of the first image in the sequence, where CryoAID accurately predicted any mutant. This statistic indicates the potential maximum reduction in re-biopsies when using CryoAID, while practical implementation relies on a proper collaboration between CryoAID and the pathologist. The statistical comparison for the biopsy counts was performed using a one-sided paired t-test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethical approval</head><p>This research was approved by the Institutional Review Board of Huashan Hospital (KY2024-1242) and was registered in the Chinese Clinical Registry (No. ChiCTR2400093046). Patients have signed informed consent forms for enrolling in the CNS disease bank in advance of operations, authorizing to use their pathological images for this study.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>054 (CIs = [0.668, 0.750]), F1 = 0.654 ± 0.052 (CIs = [0.614, 0.693]), sensitivity (SEN) = 0.656 ± 0.078 (CIs = [0.597, 0.714]), and specificity (SPE) = 0.730 ± 0.070 (CIs = [0.678, 0.783]). For H3K27M, CryoAID has ACC = 0.742 ± 0.040 (CIs = [0.712, 0.773]), F1 = 0.789 ± 0.024 (CIs = [0.771, 0.808]), SEN = 0.708 ± 0.040 (CIs = [0.678, 0.739]), and SPE = 0.780 ± 0.052 (CIs = [0.741, 0.819]). For TP53, the metrics are ACC = 0.800 ± 0.054 (CIs = [0.759, 0.841]), F1 = 0.798 ± 0.053 (CIs = [0.759, 0.838]), SEN = 0.762 ± 0.064 (CIs = [0.713, 0.810]), and SPE = 0.826 ± 0.058 (CIs = [0.783, 0.870]).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>Fig. 4A-C, we observe that our model can detect mutant statuses of ATRX, H3K27M, and TP53 in No-Pass images using Pass-image pre-trained models. Although AUC values are relatively low in this challenging setting, the significance levels are statistically satisfactory (AUC = 0.557, CIs = [0.479, 0.634], p = 0.071 for ATRX; AUC = 0.728, CIs = [0.665, 0.790], p &lt; 0.001 for H3K27M; AUC = 0.732, CIs = [0.665, 0.798], p &lt; 0.001 for TP53). This observation suggests that certain predictive features are shared in Pass and No-Pass images.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 |</head><label>2</label><figDesc>Fig. 2 | CryoAID captures multiple mutant statuses in Pass images. A Distributions of obtained AUC from folds on predictions of ATRX, H3K27M, and TP53, using different classifiers. B AUC distributions for different mutant predictions using different foundation models (FMs). C AUC distributions without and with AI-FFPE generation. A-C For boxplots, the centre line indicates the median, the lower and upper limits of the box indicate the 25% and 75% percentiles, and whiskers give the maximum and minimum values. Outliers are indicated with "o". All boxplots in (A-C) are derived from results of the ten-fold cross-validations (n = 10). *: CryoAID shows significant improvement over the indicated methods at p &lt; 0.05 level using one-sided t-test (not adjusted). **: p &lt; 0.01. ***: p &lt; 0.001. The significance asterisks should be read vertically. D-F The receiver operating characteristic (ROC) curves based on predictions of ATRX, H3K27M, and TP53, in internal, consecutive, and multi-centre dataset, respectively. P-values are from onesided permutation tests (not adjusted). D presents the averaged AUC over folds. For the multi-centre dataset, the predictions from Fujian Hospital and North Hospital are combined. Centre-specific results are offered in Fig. S2. G-I We report accuracy, F1 score, sensitivity, and specificity of CryoAID for different predictions, in the internal, consecutive, and multi-centre dataset respectively. ACC: accuracy. F1: F1 score. SEN: sensitivity. SPE: specificity. The metrics are estimated under the optimal threshold. Data in (G) are presented as mean +/-standard deviation STD (n = 10). Scatter in (G) depicts individual data from each fold (n = 10). *: Metric is significantly higher than chance level at p &lt; 0.05 level using one-sided permutation tests (not adjusted). ***: p &lt; 0.001. Source data are provided as a Source Data file.</figDesc><graphic coords="5,60.49,48.76,480.02,497.03" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 |</head><label>3</label><figDesc>Fig. 3 | CryoAID offers explainable features for the H3K27M mutant status prediction in Pass images. A, B The exemplified slide and the corresponding heat map showing the spatial distribution of attention weights. The representative predictive patches from high attention regions are selected and attached. B Exemplified predictive patches from other patients.</figDesc><graphic coords="6,60.49,48.76,480.02,407.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 4 |</head><label>4</label><figDesc>Fig. 4 | CryoAID trained on Pass images detects mutant status in No-Pass images. A-C The ROC curves from Pass image pre-trained CryoAID on predictions of ATRX, H3K27M, and TP53 in No-Pass images, respectively. P-values are associated with the AUC values, yielded from permutation tests. D The exemplified top predictive patches from accurately mutant-identified No-Pass images grouped into malignant, uncertain, and benign patches based on visual checking of pathologists. E Bar plots for the distributions of counts of the grouped top predictive patches. F Slide-level counts of slides with and without tumour cells identified. Source data are provided as a Source Data file.</figDesc><graphic coords="7,60.49,48.76,480.02,444.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 |</head><label>5</label><figDesc>Fig. 5 | CryoAID learns on No-Pass images to assess mutant status. A-C The averaged ROC curves from CryoAID trained on No-Pass images on predictions of ATRX, H3K27M, and TP53 in No-Pass images, respectively. The p-values are associated with the AUC values, yielded from one-sided permutation tests (not adjusted). The shading represents the STD over folds. D Biopsy positions in the magnetic resonance image, highlighted by red arrows. E, F The exemplified slide and the corresponding heat map showing the spatial distribution of attention weights. G The exemplified predictive patches. H IHC results using cryosection samples in (E), supporting a H3K27M mutant. Source data are provided as a Source Data file.</figDesc><graphic coords="8,60.49,48.76,480.02,448.78" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><figDesc>and S1. The cryosection whole slide image (WSI) from Huashan main campus (n = 107), west campus (n = 202), and Shanghai Gamma Hospital (n = 17) were used for internal cross-validation (cases were retrospectively collected from January 2018 to December 2022). There were a total of 564 WSIs from 326 patients (238 No-Pass images). After the model was established, we used the consecutive dataset (cases enrolled after January 2023), containing 143 WSIs from 68 patients (75 No-Pass images), which was collected from the west campus of Huashan for a consecutive validation. In addition, the Pass images from the First Affiliated Hospital of Fujian Medical University (n = 17) and the north campus (n = 35) were collected for the multicentre external validation. The demographics information and mutant information for each dataset are shown in Table</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 6 |</head><label>6</label><figDesc>Fig. 6 | CryoAID trained on both Pass and No-Pass images can assist DMG biopsy decision making. A An illustration of the retrospective biopsy re-checking scheme. B The averaged ROC curves for ATRX, H3K27M, and TP53 predictions using CryoAID in all data (both Pass and No-Pass images) of internal datasets. C Corresponding ROC curves in all data of consecutive testing dataset. In B, C, pvalues are associated with the AUC values, yielded from one-sided permutation tests (not adjusted). D, E The accuracy (ACC), F1 score, sensitivity (SEN), specificity (SPE) and AUC for model's prediction, given the first two times of biopsies in the internal dataset. Data are presented as mean +/-STD (n = 10). Scatters show individual data from each fold (n = 10). ***: Metric is significantly higher than chance level at p &lt; 0.001 level using one-sided permutation tests (not adjusted). F, G The Sankey diagrams for the changes of biopsy counts to accurately detect any mutant by human and AI in internal and consecutive testing datasets. The flow between category bars indicates the corresponding changes. The format "Hn m" means human successes with n times biopsies has m samples. "An m" offers the corresponding data from CryoAID. Source data are provided as a Source Data file.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 7 |</head><label>7</label><figDesc>Fig. 7 | Diagnostic performance of CryoAID on pilocytic astrocytoma. A Workflow of dual validation. PA: pilocytic astrocytoma. B Averaged ROC curves over folds. Shading indicates the STD. C Averaged prediction metrics. Data are presented as mean +/-STD (n = 5). Error bar indicates the standard deviation.</figDesc><graphic coords="10,60.49,158.34,480.02,314.02" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Nature Communications | (2025) 16:11667</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>This study is supported in part by <rs type="funder">National Key Research and Development Program of China, MOST</rs> (No. <rs type="grantNumber">2023YFC2510000</rs> to YM), <rs type="funder">Noncommunicable Chronic Diseases-National Science and Technology Major Project</rs> (No. <rs type="grantNumber">2023ZD0511800</rs> to YFY), <rs type="funder">National Natural Science Foundation of China</rs> (No. <rs type="grantNumber">82272063</rs>, <rs type="grantNumber">82127801</rs> and <rs type="grantNumber">82227806</rs> to QY), <rs type="funder">Shanghai Urban Digital Transformation Specializing Fund</rs> (No. <rs type="grantNumber">202301071</rs> to YM), <rs type="funder">Shanghai Hospital Development Centre</rs> (<rs type="programName">Clinical Research Plan</rs> of <rs type="grantNumber">SHDC 2022CRW004</rs> and <rs type="funder">Clinical Competence Improvement and Advancement in Neurosurgery</rs> plan of <rs type="grantNumber">SHDC22024312</rs> to YM), the <rs type="funder">Fujian Province Science and Technology Innovation Joint Fund</rs> (No. <rs type="grantNumber">2021Y9135</rs> to JPS), <rs type="funder">AI4S Climber Initiative, Intern Discovery</rs>, and <rs type="funder">Shanghai Artificial Intelligence laboratory (CFS</rs>, LB, and MXL).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_RfeYz7d">
+					<idno type="grant-number">2023YFC2510000</idno>
+				</org>
+				<org type="funding" xml:id="_PGEFD9H">
+					<idno type="grant-number">2023ZD0511800</idno>
+				</org>
+				<org type="funding" xml:id="_Xe5qJ28">
+					<idno type="grant-number">82272063</idno>
+				</org>
+				<org type="funding" xml:id="_955XtRQ">
+					<idno type="grant-number">82127801</idno>
+				</org>
+				<org type="funding" xml:id="_y2GFNJ3">
+					<idno type="grant-number">82227806</idno>
+				</org>
+				<org type="funding" xml:id="_B8sjHPp">
+					<idno type="grant-number">202301071</idno>
+				</org>
+				<org type="funding" xml:id="_66pyD8y">
+					<idno type="grant-number">SHDC 2022CRW004</idno>
+					<orgName type="program" subtype="full">Clinical Research Plan</orgName>
+				</org>
+				<org type="funding" xml:id="_sbYUw8B">
+					<idno type="grant-number">SHDC22024312</idno>
+				</org>
+				<org type="funding" xml:id="_sMfjpfe">
+					<idno type="grant-number">2021Y9135</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The multi-centre clinical dataset (extracted pathology image feature and gene mutant label, being anonymous, together with trained model and data splits) generated in this study has been deposited in the Zenodo database under accession code 17373753 [DOI: 10.5281/ zenodo.17373753]. The data are available under restricted access for the privacy protection restriction of the hospital; access can be obtained by sending an online request via Zenodo. The request will be reviewed online and responded to within one week. The approval will be given based on the reasonableness of the research purposes of the request, and commercial usage is strictly forbidden. Source data are provided with this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Code availability</head><p>We used Python 3.10 and PyTorch 2.2.2. For previously published models and methods: The model for AI-FFPE is available at <ref type="url" target="https://github.com/DeepMIALab/AI-FFPE">https://  github.com/DeepMIALab/AI-FFPE</ref>. The CHIEF model is available at <ref type="url" target="https://github.com/hms-dbmi/CHIEF">https://github.com/hms-dbmi/CHIEF</ref>. UNI model is available at <ref type="url" target="https://github.com/mahmoodlab/UNI">https://  github.com/mahmoodlab/UNI</ref>. The Gigapath model is available at <ref type="url" target="https://github.com/prov-gigapath/prov-gigapath">https://github.com/prov-gigapath/prov-gigapath</ref>. Virchow2 model is available at <ref type="url" target="https://huggingface.co/paige-ai/Virchow2">https://huggingface.co/paige-ai/Virchow2</ref>. The PathoDuet model is available at <ref type="url" target="https://github.com/openmedlab/PathoDuet">https://github.com/openmedlab/PathoDuet</ref>. The code for ABMIL is available at <ref type="url" target="https://github.com/AMLab-Amsterdam/AttentionDeepMIL">https://github.com/AMLab-Amsterdam/  AttentionDeepMIL</ref>. The code for CLAM and the ResNet model is available at <ref type="url" target="https://github.com/mahmoodlab/CLAM">https://github.com/mahmoodlab/CLAM</ref>. The code for TransMIL is available at <ref type="url" target="https://github.com/szc19990412/TransMIL">https://github.com/szc19990412/TransMIL</ref>. Our self-developed codes are documented at <ref type="url" target="https://github.com/MianxinLiu/CryoAID">https://github.com/  MianxinLiu/CryoAID</ref> (<ref type="url" target="https://doi.org/10.5281/zenodo.17393827">https://doi.org/10.5281/zenodo.17393827</ref>) <ref type="bibr" target="#b43">44</ref> and released under MIT license.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reporting summary</head><p>Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional information</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary information</head><p>The online version contains supplementary material available at <ref type="url" target="https://doi.org/10.1038/s41467-025-66853-y">https://doi.org/10.1038/s41467-025-66853-y</ref>.</p><p>Correspondence and requests for materials should be addressed to Qi Yue, Mu Zhou, Mianxin Liu or Ying Mao.</p><p>Peer review information Nature Communications thanks Aaron Diaz and the other anonymous reviewer(s) for their contribution to the peer review of this work. A peer review file is available.</p><p>Reprints and permissions information is available at <ref type="url" target="http://www.nature.com/reprints">http://www.nature.com/reprints</ref> Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p><p>Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ref type="url" target="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/  licenses/by/4.0/</ref>.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Glioma</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Dirven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Monje</surname></persName>
+			<idno type="ORCID">0000-0002-3547-237X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41572-024-00516-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Disease Primers</title>
+		<title level="j" type="abbrev">Nat Rev Dis Primers</title>
+		<idno type="ISSNe">2056-676X</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2024-05-09">2024. 2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weller, M. et al. Glioma. Nat. Rev. Dis. Prim. 101, 1-23 (2024). 2024.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Preclinical therapeutic targets in diffuse midline glioma</title>
+		<author>
+			<persName><forename type="first">Michaël</forename><forename type="middle">Hananja</forename><surname>Meel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gertjan</forename><forename type="middle">J L</forename><surname>Kaspers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Hulleman</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.drup.2019.06.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Drug Resistance Updates</title>
+		<title level="j" type="abbrev">Drug Resistance Updates</title>
+		<idno type="ISSN">1368-7646</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="15" to="25" />
+			<date type="published" when="2019-05">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Meel, M. H., Kaspers, G. J. L. &amp; Hulleman, E. Preclinical therapeutic targets in diffuse midline glioma. Drug Resist. Update 44, 15-25 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The landscape of tumor cell states and spatial organization in H3-K27M mutant diffuse midline glioma across age and location</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Genet</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="1881" to="1894" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, I. et al. The landscape of tumor cell states and spatial organi- zation in H3-K27M mutant diffuse midline glioma across age and location. Nat. Genet. 54, 1881-1894 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Histone H3F3A and HIST1H3B K27M mutations define two subgroups of diffuse intrinsic pontine gliomas with different prognosis and phenotypes</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Castel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cathy</forename><surname>Philippe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphaël</forename><surname>Calmon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ludivine</forename><surname>Le Dret</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathalène</forename><surname>Truffaux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathalie</forename><surname>Boddaert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mélanie</forename><surname>Pagès</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><forename type="middle">R</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Saulnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ludovic</forename><surname>Lacroix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Mackay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Sainte-Rose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Blauwblomme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felipe</forename><surname>Andreiuolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>Puget</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacques</forename><surname>Grill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascale</forename><surname>Varlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie-Anne</forename><surname>Debily</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-015-1478-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="815" to="827" />
+			<date type="published" when="2015-09-23">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Castel, D. et al. Histone H3F3A and HIST1H3B K27M mutations define two subgroups of diffuse intrinsic pontine gliomas with dif- ferent prognosis and phenotypes. Acta Neuropathol. 130, 815-827 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Current knowledge on the immune microenvironment and emerging immunotherapies in diffuse midline glioma</title>
+		<author>
+			<persName><forename type="first">Gabrielle</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandros</forename><surname>Bouras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dolores</forename><surname>Hambardzumyan</surname></persName>
+			<idno type="ORCID">0000-0003-1975-4665</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Constantinos</forename><forename type="middle">G</forename><surname>Hadjipanayis</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ebiom.2021.103453</idno>
+	</analytic>
+	<monogr>
+		<title level="j">eBioMedicine</title>
+		<title level="j" type="abbrev">eBioMedicine</title>
+		<idno type="ISSN">2352-3964</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page">103453</biblScope>
+			<date type="published" when="2021-07">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Price, G., Bouras, A., Hambardzumyan, D. &amp; Hadjipanayis, C. G. Current knowledge on the immune microenvironment and emer- ging immunotherapies in diffuse midline glioma. eBioMedicine 69, 103453 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Insights from a multicenter study on adult H3 K27M-mutated glioma: Surgical resection’s limited influence on overall survival, ATRX as molecular prognosticator</title>
+		<author>
+			<persName><forename type="first">Alice</forename><surname>Ryba</surname></persName>
+			<idno type="ORCID">0000-0002-0130-8838</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zeynep</forename><surname>Özdemir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitzan</forename><surname>Nissimov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Hönikl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Neidert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Jakobs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darius</forename><surname>Kalasauskas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandrs</forename><surname>Krigers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claudius</forename><surname>Thomé</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">F</forename><surname>Freyschlag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Ringel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Unterberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Dao Trong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieter</forename><forename type="middle">Henrik</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Vajkoczy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Onken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Stummer</surname></persName>
+			<idno type="ORCID">0000-0002-3460-0640</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Suero Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Gempt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Westphal</surname></persName>
+			<idno type="ORCID">0000-0003-3483-6335</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ulrich</forename><surname>Schüller</surname></persName>
+			<idno type="ORCID">0000-0002-8731-1121</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Malte</forename><surname>Mohme</surname></persName>
+			<idno type="ORCID">0000-0003-0627-9092</idno>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noae061</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1479" to="1493" />
+			<date type="published" when="2024-03-20">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ryba, A. et al. Insights from a multicentre study on adult H3 K27M- mutated glioma: Surgical resection&apos;s limited influence on overall survival, ATRX as molecular prognosticator. Neuro. Oncol. 26, 1479-1493 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">EXTH-11. PEDIATRIC GLIOMA IMMUNE PROFILING IDENTIFIES TIM3 AS A THERAPEUTIC TARGET IN BRAF-FUSION PILOCYTIC ASTROCYTOMA</title>
+		<author>
+			<persName><forename type="first">Shashwat</forename><surname>Tripathi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hinda</forename><surname>Najem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Dussold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Pacheco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruochen</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moloud</forename><surname>Sooreshjani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Chandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Sonabend</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Horbinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rimas</forename><surname>Lukas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joanne</forename><surname>Xiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Theodore</forename><surname>Nicolaides</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valerie</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitin</forename><surname>Wadhwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandi</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ganesh</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><surname>Heimberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Decuypere</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noae165.0942</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">Supplement_8</biblScope>
+			<biblScope unit="page" from="viii238" to="viii238" />
+			<date type="published" when="2024-11-01">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tripathi, S. et al. Pediatric glioma immune profiling identifies TIM3 as a therapeutic target in BRAF-Fusion pilocytic astrocytoma. J. Clin. Invest. 134, e177413 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Response to ONC201 by Prior Radiotherapy Regimen in Recurrent H3 K27M-Mutant Diffuse Midline Glioma</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Arrillaga-Romany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Haggiagi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Odia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijrobp.2024.07.487</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Radiation Oncology*Biology*Physics</title>
+		<title level="j" type="abbrev">International Journal of Radiation Oncology*Biology*Physics</title>
+		<idno type="ISSN">0360-3016</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="e215" to="e216" />
+			<date type="published" when="2024-10">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arrillaga-Romany, I. et al. ONC201 (Dordaviprone) in Recurrent H3 K27M-Mutant Diffuse Midline Glioma. J. Clin. Oncol. 42, 1542-1552 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">GD2-CAR T-cell Therapy is Safe in H3K27M&lt;sup&gt;+&lt;/sup&gt; Diffuse Midline Glioma</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Majzner</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/2159-8290.cd-rw2024-140</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Discovery</title>
+		<title level="j" type="abbrev">cancerdiscovery</title>
+		<idno type="ISSNe">2159-8290</idno>
+		<imprint>
+			<biblScope unit="volume">603</biblScope>
+			<biblScope unit="page" from="934" to="941" />
+			<date type="published" when="2022">2022</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Majzner, R. G. et al. GD2-CAR T cell therapy for H3K27M-mutated diffuse midline gliomas. Nature 603, 934-941 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Circumscribed/non-diffuse histology confers a better prognosis in H3K27M-mutant gliomas</title>
+		<author>
+			<persName><forename type="first">Drew</forename><surname>Pratt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siva</forename><forename type="middle">Kumar</forename><surname>Natarajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Banda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Giannini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pankaj</forename><surname>Vats</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Koschmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajen</forename><surname>Mody</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arul</forename><surname>Chinnaiyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sriram</forename><surname>Venneti</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-018-1805-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">135</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="299" to="301" />
+			<date type="published" when="2018-01-04">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pratt, D. et al. Circumscribed/non-diffuse histology confers a better prognosis in H3K27M-mutant gliomas. Acta Neuropathol. 135, 299-301 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Frozen Section and the Surgical Pathologist: A Point of View</title>
+		<author>
+			<persName><forename type="first">Jerome</forename><forename type="middle">B</forename><surname>Taxy</surname></persName>
+		</author>
+		<idno type="DOI">10.5858/133.7.1135</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of Pathology &amp; Laboratory Medicine</title>
+		<idno type="ISSN">0003-9985</idno>
+		<idno type="ISSNe">1543-2165</idno>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1135" to="1138" />
+			<date type="published" when="2009-07-01">2009</date>
+			<publisher>Archives of Pathology and Laboratory Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Taxy, J. B. Frozen section and the surgical pathologist: a point of view. Arch. Pathol. Lab. Med. 133, 1135-1138 (2009).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Rapid detection of IDH mutations in gliomas by intraoperative mass spectrometry</title>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenpeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junhan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinqi</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahdiyeh</forename><surname>Shahi</surname></persName>
+			<idno type="ORCID">0009-0005-0128-0379</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoyue</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Jiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minjie</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaowen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinsen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qijun</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diogo</forename><forename type="middle">Moniz</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaisorn</forename><surname>Chaichana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Graham</forename><surname>Cooks</surname></persName>
+			<idno type="ORCID">0000-0002-9581-9603</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfredo</forename><surname>Quinones-Hinojosa</surname></persName>
+			<idno type="ORCID">0000-0003-4262-5968</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.2318843121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">2318843121</biblScope>
+			<date type="published" when="2024-05-28">2024</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hua, W. et al. Rapid detection of IDH mutations in gliomas by intraoperative mass spectrometry. Proc. Natl Acad. Sci. Usa. 121, e2318843121 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Intraoperative rapid immunohistochemistry with noncontact antibody mixing for undiagnosed pulmonary tumors</title>
+		<author>
+			<persName><forename type="first">Kazuhiro</forename><surname>Imai</surname></persName>
+			<idno type="ORCID">0000-0003-4490-7862</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroshi</forename><surname>Nanjo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wataru</forename><surname>Shigeeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamotsu</forename><surname>Sugai</surname></persName>
+			<idno type="ORCID">0000-0002-4896-3557</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tomoo</forename><surname>Ito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshimasa</forename><surname>Maniwa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shinogu</forename><surname>Takashima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hajime</forename><surname>Saito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoki</forename><surname>Yanagawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yugo</forename><surname>Tanaka</surname></persName>
+			<idno type="ORCID">0000-0002-6541-1754</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takefumi</forename><surname>Doi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuko</forename><surname>Hiroshima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyoko</forename><surname>Nomura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mishie</forename><surname>Tanino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shinya</forename><surname>Tanaka</surname></persName>
+			<idno type="ORCID">0000-0001-6470-3301</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshihiro</forename><surname>Minamiya</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/cas.15616</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Science</title>
+		<title level="j" type="abbrev">Cancer Science</title>
+		<idno type="ISSN">1347-9032</idno>
+		<idno type="ISSNe">1349-7006</idno>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="702" to="711" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Imai, K. et al. Intraoperative rapid immunohistochemistry with noncontact antibody mixing for undiagnosed pulmonary tumors. Cancer Sci. 114, 702-711 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Microfluidics for rapid cytokeratin immunohistochemical staining in frozen sections</title>
+		<author>
+			<persName><forename type="first">Saska</forename><surname>Brajkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><forename type="middle">G</forename><surname>Dupouy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurence</forename><surname>De Leval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">Am</forename><surname>Gijs</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/labinvest.2017.49</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Laboratory Investigation</title>
+		<title level="j" type="abbrev">Laboratory Investigation</title>
+		<idno type="ISSN">0023-6837</idno>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="983" to="991" />
+			<date type="published" when="2017-08">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brajkovic, S., Dupouy, D. G., De Leval, L. &amp; Gijs, M. A. M. Microfluidics for rapid cytokeratin immunohistochemical staining in frozen sec- tions. Lab. Investig. 97, 983-991 (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A road map for the treatment of pediatric diffuse midline glioma</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Koschmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Koschmann, C. et al. A road map for the treatment of pediatric diffuse midline glioma. Cancer Cell 42, 1-5 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Why Formalin-fixed, Paraffin-embedded Biospecimens Must Be Used in Genomic Medicine: An Evidence-based Review and Conclusion</title>
+		<author>
+			<persName><forename type="first">William</forename><surname>Mathieson</surname></persName>
+			<idno type="ORCID">0000-0002-1328-5629</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Geraldine</forename><forename type="middle">A</forename><surname>Thomas</surname></persName>
+		</author>
+		<idno type="DOI">10.1369/0022155420945050</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Histochemistry &amp; Cytochemistry</title>
+		<title level="j" type="abbrev">J Histochem Cytochem.</title>
+		<idno type="ISSN">0022-1554</idno>
+		<idno type="ISSNe">1551-5044</idno>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="543" to="552" />
+			<date type="published" when="2020-07-22">2020</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mathieson, W. &amp; Thomas, G. A. Why Formalin-fixed, Paraffin- embedded Biospecimens Must Be Used in Genomic Medicine: An Evidence-based Review and Conclusion. J. Histochem. Cytochem. 68, 543-552 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Glioblastoma Multiforme Regional Genetic and Cellular Expression Patterns: Influence on Anatomic and Physiologic MR Imaging</title>
+		<author>
+			<persName><forename type="first">Ramon</forename><forename type="middle">F</forename><surname>Barajas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Graeme</forename><surname>Hodgson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><forename type="middle">S</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">R</forename><surname>Vandenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ru-Fang</forename><surname>Yeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">T</forename><surname>Parsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">W</forename><surname>Mcdermott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">P</forename><surname>Dillon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soonmee</forename><surname>Cha</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.09090663</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">254</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="564" to="576" />
+			<date type="published" when="2010-02">2010</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barajas, R. F. et al. Glioblastoma multiforme regional genetic and cellular expression patterns: Influence on anatomic and physiolo- gic MR imaging. Radiology 254, 564-576 (2010).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Glioblastoma Microenvironment: Morphology, Metabolism, and Molecular Signature of Glial Dynamics to Discover Metabolic Rewiring Sequence</title>
+		<author>
+			<persName><forename type="first">Assunta</forename><surname>Virtuoso</surname></persName>
+			<idno type="ORCID">0000-0002-5304-247X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roberto</forename><surname>Giovannoni</surname></persName>
+			<idno type="ORCID">0000-0002-7706-0672</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ciro</forename><surname>De Luca</surname></persName>
+			<idno type="ORCID">0000-0002-8146-5736</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francesca</forename><surname>Gargano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michele</forename><surname>Cerasuolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicola</forename><surname>Maggio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marialuisa</forename><surname>Lavitrano</surname></persName>
+			<idno type="ORCID">0000-0003-4852-1318</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michele</forename><surname>Papa</surname></persName>
+			<idno type="ORCID">0000-0002-6609-7453</idno>
+		</author>
+		<idno type="DOI">10.3390/ijms22073301</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Molecular Sciences</title>
+		<title level="j" type="abbrev">IJMS</title>
+		<idno type="ISSNe">1422-0067</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">3301</biblScope>
+			<date type="published" when="2021-03-24">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Virtuoso, A. et al. The glioblastoma microenvironment: Morphol- ogy, metabolism, and molecular signature of glial dynamics to discover metabolic rewiring sequence. Int. J. Mol. Sci. 22, 3301 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Pathological and Molecular Features of Glioblastoma and Its Peritumoral Tissue</title>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>D’alessio</surname></persName>
+			<idno type="ORCID">0000-0002-3340-2634</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriella</forename><surname>Proietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gigliola</forename><surname>Sica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bianca</forename><forename type="middle">Maria</forename><surname>Scicchitano</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers11040469</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">469</biblScope>
+			<date type="published" when="2019-04-03">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D&apos;Alessio, A., Proietti, G., Sica, G. &amp; Scicchitano, B. M. Pathological and molecular features of glioblastoma and its peritumoral tissue. Cancers 11, 469 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Machine learning for cryosection pathology predicts the 2021 WHO classification of glioma</title>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junhan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><forename type="middle">Che</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Meredith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eliana</forename><surname>Marostica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">L</forename><surname>Ligon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">A</forename><surname>Golden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun-Hsing</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0001-9892-8218</idno>
+		</author>
+		<idno type="DOI">10.1016/j.medj.2023.06.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Med</title>
+		<title level="j" type="abbrev">Med</title>
+		<idno type="ISSN">2666-6340</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="526" to="540.e4" />
+			<date type="published" when="2023-08">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nasrallah, M. P. et al. Machine learning for cryosection pathology predicts the 2021 WHO classification of glioma. Med 4, 526-540.e4 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Revolutionizing Digital Pathology With the Power of Generative Artificial Intelligence and Foundation Models</title>
+		<author>
+			<persName><forename type="first">Asim</forename><surname>Waqas</surname></persName>
+			<idno type="ORCID">0000-0002-6834-4710</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marilyn</forename><forename type="middle">M</forename><surname>Bui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">F</forename><surname>Glassy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Issam</forename><surname>El Naqa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Borkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">A</forename><surname>Borkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ghulam</forename><surname>Rasool</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.labinv.2023.100255</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Laboratory Investigation</title>
+		<title level="j" type="abbrev">Laboratory Investigation</title>
+		<idno type="ISSN">0023-6837</idno>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">100255</biblScope>
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Waqas, A. et al. Revolutionizing digital pathology with the power of generative artificial intelligence and foundation models. Lab. Investig. 103, 100255 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A deep-learning model for transforming the style of tissue images from cryosectioned to formalin-fixed and paraffin-embedded</title>
+		<author>
+			<persName><forename type="first">Kutsev</forename><forename type="middle">Bengisu</forename><surname>Ozyoruk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sermet</forename><surname>Can</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Berkan</forename><surname>Darbaz</surname></persName>
+			<idno type="ORCID">0000-0002-4699-6849</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kayhan</forename><surname>Başak</surname></persName>
+			<idno type="ORCID">0000-0003-1960-8924</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Derya</forename><surname>Demir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guliz</forename><forename type="middle">Irem</forename><surname>Gokceler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gurdeniz</forename><surname>Serin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uguray</forename><forename type="middle">Payam</forename><surname>Hacisalihoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emirhan</forename><surname>Kurtuluş</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Funda</forename><surname>Yılmaz</surname></persName>
+			<idno type="ORCID">0000-0003-1837-6498</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mehmet</forename><surname>Turan</surname></persName>
+			<idno type="ORCID">0000-0002-0913-2531</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-022-00952-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat. Biomed. Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1407" to="1419" />
+			<date type="published" when="2022-12-23">2022. 2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ozyoruk, K. B. et al. A deep-learning model for transforming the style of tissue images from cryosectioned to formalin-fixed and paraffin-embedded. Nat. Biomed. Eng. 612, 1407-1419 (2022). 2022.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Towards a general-purpose foundation model for computational pathology</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Jaume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">H</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-9432-2793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Shaban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mane</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukas</forename><surname>Oldenburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><forename type="middle">L</forename><surname>Weishaupt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Judy</forename><forename type="middle">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anurag</forename><surname>Vaidya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><forename type="middle">Phi</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Gerber</surname></persName>
+			<idno type="ORCID">0000-0002-9149-5509</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sharifa</forename><surname>Sahai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walt</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-02857-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="850" to="862" />
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, R. J. et al. Towards a general-purpose foundation model for computational pathology. Nat. Med. 30, 850-862 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A foundation model for clinical-grade computational pathology and rare cancers detection</title>
+		<author>
+			<persName><forename type="first">Eugene</forename><surname>Vorontsov</surname></persName>
+			<idno type="ORCID">0000-0002-4530-533X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alican</forename><surname>Bozkurt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Casson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Shaikovski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Zelechowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristen</forename><surname>Severson</surname></persName>
+			<idno type="ORCID">0000-0002-0412-4217</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><surname>Tenenholtz</surname></persName>
+			<idno type="ORCID">0000-0003-1250-3716</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolo</forename><surname>Fusi</surname></persName>
+			<idno type="ORCID">0000-0002-4102-0169</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ellen</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Van Eck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donghun</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julian</forename><surname>Viret</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Robert</surname></persName>
+			<idno type="ORCID">0009-0002-7587-9817</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><forename type="middle">Kan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><forename type="middle">D</forename><surname>Kunz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">C H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">H</forename><surname>Bernhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ran</forename><forename type="middle">A</forename><surname>Godrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerard</forename><surname>Oakley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ewan</forename><surname>Millar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Hanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">A</forename><surname>Retamero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">A</forename><surname>Moye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Razik</forename><surname>Yousfi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Kanan</surname></persName>
+			<idno type="ORCID">0000-0002-6412-995X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">S</forename><surname>Klimstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brandon</forename><surname>Rothrock</surname></persName>
+			<idno type="ORCID">0000-0003-2237-6589</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-4169-7567</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Fuchs</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-03141-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2924" to="2935" />
+			<date type="published" when="2024-07-22">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vorontsov, E. et al. A foundation model for clinical-grade compu- tational pathology and rare cancers detection. Nat. Med. 30, 2924-2935 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A whole-slide foundation model for digital pathology from real-world data</title>
+		<author>
+			<persName><forename type="first">Hanwen</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoto</forename><surname>Usuyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaspreet</forename><surname>Bagga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajesh</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tristan</forename><surname>Naumann</surname></persName>
+			<idno type="ORCID">0000-0003-2150-1747</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cliff</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zelalem</forename><surname>Gero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Gu</surname></persName>
+			<idno type="ORCID">0000-0002-1704-1744</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yanbo</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0009-0006-7692-6709</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mu</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuming</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Furu</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianwei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunyuan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianfeng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaylen</forename><surname>Rosemon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tucker</forename><surname>Bower</surname></persName>
+			<idno type="ORCID">0009-0002-0183-5483</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Soohee</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roshanthi</forename><surname>Weerasinghe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bill</forename><forename type="middle">J</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ari</forename><surname>Robicsek</surname></persName>
+			<idno type="ORCID">0009-0005-7792-0483</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Piening</surname></persName>
+			<idno type="ORCID">0000-0002-2683-8157</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlo</forename><surname>Bifulco</surname></persName>
+			<idno type="ORCID">0000-0003-1922-6977</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-0439-5199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hoifung</forename><surname>Poon</surname></persName>
+			<idno type="ORCID">0000-0002-9067-0918</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-07441-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">630</biblScope>
+			<biblScope unit="issue">8015</biblScope>
+			<biblScope unit="page" from="181" to="188" />
+			<date type="published" when="2024-05-22">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu, H. et al. A whole-slide foundation model for digital pathology from real-world data. Nature 630, 181-188 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">PathoDuet: Foundation models for pathological slide analysis of H&amp;E and IHC stains</title>
+		<author>
+			<persName><forename type="first">Shengyi</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><surname>Yan</surname></persName>
+			<idno type="ORCID">0009-0004-4216-3876</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tianle</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaofan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-3999-1449</idno>
+		</author>
+		<idno type="DOI">10.1016/j.media.2024.103289</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page">103289</biblScope>
+			<date type="published" when="2024-10">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hua, S., Yan, F., Shen, T., Ma, L. &amp; Zhang, X. PathoDuet: Foundation models for pathological slide analysis of H&amp;E and IHC stains. Med. Image Anal. 97, 103289 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A transformer-based weakly supervised computational pathology method for clinical-grade diagnosis and molecular marker discovery of gliomas</title>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0002-7533-3753</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoxu</forename><surname>Yin</surname></persName>
+			<idno type="ORCID">0009-0001-2947-6382</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pengshuai</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingchao</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiao</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodan</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Shang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liling</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fufeng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuegong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-9684-5643</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongliang</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0003-3144-1004</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hairong</forename><surname>Lv</surname></persName>
+			<idno type="ORCID">0000-0003-1568-6861</idno>
+		</author>
+		<idno type="DOI">10.1038/s42256-024-00868-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Machine Intelligence</title>
+		<title level="j" type="abbrev">Nat Mach Intell</title>
+		<idno type="ISSNe">2522-5839</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="876" to="891" />
+			<date type="published" when="2024-07-18">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jiang, R. et al. A transformer-based weakly supervised computa- tional pathology method for clinical-grade diagnosis and molecular marker discovery of gliomas. Nat. Mach. Intell. 6, 876-891 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Prediction of DNA methylation-based tumor types from histopathology in central nervous system tumors with deep learning</title>
+		<author>
+			<persName><forename type="first">Danh-Tai</forename><surname>Hoang</surname></persName>
+			<idno type="ORCID">0000-0003-2640-4196</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eldad</forename><forename type="middle">D</forename><surname>Shulman</surname></persName>
+			<idno type="ORCID">0000-0002-1859-8819</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rust</forename><surname>Turakulov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zied</forename><surname>Abdullaev</surname></persName>
+			<idno type="ORCID">0000-0001-6345-2088</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Omkar</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emma</forename><forename type="middle">M</forename><surname>Campagnolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lalchungnunga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">A</forename><surname>Stone</surname></persName>
+			<idno type="ORCID">0000-0002-2725-4209</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+			<idno type="ORCID">0000-0003-4861-0898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eytan</forename><surname>Ruppin</surname></persName>
+			<idno type="ORCID">0000-0002-7862-3940</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><surname>Aldape</surname></persName>
+			<idno type="ORCID">0000-0001-5119-7550</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-02995-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1952" to="1961" />
+			<date type="published" when="2024-05-17">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hoang, D. T. et al. Prediction of DNA methylation-based tumor types from histopathology in central nervous system tumors with deep learning. Nat. Med. 30, 1952-1961 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Accelerating histopathology workflows with generative AI-based virtually multiplexed tumour profiling</title>
+		<author>
+			<persName><forename type="first">Pushpak</forename><surname>Pati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sofia</forename><surname>Karkampouna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Bonollo</surname></persName>
+			<idno type="ORCID">0000-0003-3609-5956</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eva</forename><surname>Compérat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Radić</surname></persName>
+			<idno type="ORCID">0000-0002-4093-839X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Spahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adriano</forename><surname>Martinelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Wartenberg</surname></persName>
+			<idno type="ORCID">0000-0002-5378-3825</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marianna</forename><surname>Kruithof-De Julio</surname></persName>
+			<idno type="ORCID">0000-0002-6085-7706</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marianna</forename><surname>Rapsomaniki</surname></persName>
+			<idno type="ORCID">0000-0003-3883-4871</idno>
+		</author>
+		<idno type="DOI">10.1038/s42256-024-00889-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Machine Intelligence</title>
+		<title level="j" type="abbrev">Nat Mach Intell</title>
+		<idno type="ISSNe">2522-5839</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1077" to="1093" />
+			<date type="published" when="2024-09-09">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pati, P. et al. Accelerating histopathology workflows with generative virtually multiplexed tumour profiling. Nat. Mach. Intell. 6, 1077-1093 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">WHO Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro. Oncol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021">2021. 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D. N. et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro. Oncol. 23, 1231-1251 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">H3K27M mutant glioma: Disease definition and biological underpinnings</title>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">M</forename><surname>Saratsis</surname></persName>
+			<idno type="ORCID">0000-0002-4913-2771</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Truman</forename><surname>Knowles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonela</forename><surname>Petrovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javad</forename><surname>Nazarian</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noad164</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">Supplement_2</biblScope>
+			<biblScope unit="page" from="S92" to="S100" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saratsis, A. M., Knowles, T., Petrovic, A. &amp; Nazarian, J. H3K27M mutant glioma: Disease definition and biological underpinnings. Neuro. Oncol. 26, S92-S100 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI</title>
+		<author>
+			<persName><forename type="first">Erico</forename><surname>Tjoa</surname></persName>
+			<idno type="ORCID">0000-0002-1599-1594</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cuntai</forename><surname>Guan</surname></persName>
+			<idno type="ORCID">0000-0002-0872-3276</idno>
+		</author>
+		<idno type="DOI">10.1109/tnnls.2020.3027314</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Neural Networks and Learning Systems</title>
+		<title level="j" type="abbrev">IEEE Trans. Neural Netw. Learning Syst.</title>
+		<idno type="ISSN">2162-237X</idno>
+		<idno type="ISSNe">2162-2388</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4793" to="4813" />
+			<date type="published" when="2021-11">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tjoa, E. &amp; Guan, C. A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI. IEEE Trans. Neural Netw. Learn. Syst. 32, 4793-4813 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Transparency of deep neural networks for medical image analysis: A review of interpretability methods</title>
+		<author>
+			<persName><forename type="first">Zohaib</forename><surname>Salahuddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><forename type="middle">C</forename><surname>Woodruff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avishek</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compbiomed.2021.105111</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Biology and Medicine</title>
+		<title level="j" type="abbrev">Computers in Biology and Medicine</title>
+		<idno type="ISSN">0010-4825</idno>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="page">105111</biblScope>
+			<date type="published" when="2022-01">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Salahuddin, Z., Woodruff, H. C., Chatterjee, A. &amp; Lambin, P. Trans- parency of deep neural networks for medical image analysis: A review of interpretability methods. Comput. Biol. Med. 140, 105111 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Domain Adaptation for Medical Image Analysis: A Survey</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Guan</surname></persName>
+			<idno type="ORCID">0000-0002-8117-4584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mingxia</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-0598-5692</idno>
+		</author>
+		<idno type="DOI">10.1109/tbme.2021.3117407</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Biomedical Engineering</title>
+		<title level="j" type="abbrev">IEEE Trans. Biomed. Eng.</title>
+		<idno type="ISSN">0018-9294</idno>
+		<idno type="ISSNe">1558-2531</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1173" to="1185" />
+			<date type="published" when="2022-03">2022</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guan, H. &amp; Liu, M. Domain adaptation for medical image analysis: a survey. IEEE Trans. Biomed. Eng. 69, 1173-1185 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Generative adversarial network in medical imaging: A review</title>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ekta</forename><surname>Walia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Babyn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2019.101552</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page">101552</biblScope>
+			<date type="published" when="2019-12">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yi, X., Walia, E. &amp; Babyn, P. Generative adversarial network in medical imaging: A review. Med. Image Anal. 58, 101552 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Foundation models for fast, label-free detection of glioma infiltration</title>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Kondepudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Pekmezci</surname></persName>
+			<idno type="ORCID">0000-0003-2548-8359</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xinhai</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katie</forename><surname>Scotford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0003-1759-4960</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">S</forename><surname>Harake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asadur</forename><surname>Chowdury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Pandey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><forename type="middle">R</forename><surname>Lowenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">G</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">Irina</forename><surname>Koerner</surname></persName>
+			<idno type="ORCID">0000-0002-9227-461X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Roetzer-Pejrimovsky</surname></persName>
+			<idno type="ORCID">0000-0001-8875-7304</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+			<idno type="ORCID">0000-0001-6014-0273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Misha</forename><surname>Movahed-Ezazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><surname>Hervey-Jumper</surname></persName>
+			<idno type="ORCID">0000-0003-4699-260X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Hollon</surname></persName>
+			<idno type="ORCID">0000-0001-5987-6531</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-08169-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">637</biblScope>
+			<biblScope unit="issue">8045</biblScope>
+			<biblScope unit="page" from="439" to="445" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kondepudi, A. et al. Foundation models for fast, label-free detection of glioma infiltration. Nature 637, 439-445 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Data-efficient and weakly supervised computational pathology on whole-slide images</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matteo</forename><surname>Barbieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-020-00682-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="555" to="570" />
+			<date type="published" when="2021-03-01">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. Data-efficient and weakly supervised computational pathology on whole-slide images. Nat. Biomed. Eng. 5, 555-570 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Contrastive Learning for Unpaired Image-to-Image Translation</title>
+		<author>
+			<persName><forename type="first">Taesung</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun-Yan</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58545-7_19</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">12354</biblScope>
+			<biblScope unit="page" from="319" to="345" />
+		</imprint>
+	</monogr>
+	<note>LNCS</note>
+	<note type="raw_reference">Park, T., Efros, A. A., Zhang, R. &amp; Zhu, J. Y. Contrastive Learning for Unpaired Image-to-Image Translation. In Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) vol. 12354 LNCS 319-345 (Springer Science and Business Media Deutschland GmbH, 2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">A pathology foundation model for cancer diagnosis and prognosis prediction</title>
+		<author>
+			<persName><forename type="first">Xiyue</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3597-9090</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junhan</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0002-0316-8365</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eliana</forename><surname>Marostica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jietian</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruijiang</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-0232-5998</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hongping</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kanran</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yulong</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junyou</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-2663-053X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deborah</forename><surname>Dillon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><forename type="middle">U</forename><surname>Lin</surname></persName>
+			<idno type="ORCID">0000-0003-2263-5413</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lynette</forename><surname>Sholl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Denize</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Meredith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">L</forename><surname>Ligon</surname></persName>
+			<idno type="ORCID">0000-0002-7733-600X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sabina</forename><surname>Signoretti</surname></persName>
+			<idno type="ORCID">0000-0002-5000-9105</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shuji</forename><surname>Ogino</surname></persName>
+			<idno type="ORCID">0000-0002-3909-2323</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">A</forename><surname>Golden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+			<idno type="ORCID">0000-0003-4861-0898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0002-5151-6547</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sen</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-0639-4122</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kun-Hsing</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0001-9892-8218</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-07894-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">634</biblScope>
+			<biblScope unit="issue">8035</biblScope>
+			<biblScope unit="page" from="970" to="978" />
+			<date type="published" when="2024-09-04">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, X. et al. A pathology foundation model for cancer diagnosis and prognosis prediction. Nature 634, 970-978 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Attention is all you need</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="5999" to="6009" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaswani, A. et al. Attention is all you need. Adv. Neural Inf. Process. Syst. 30, 5999-6009 (2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Genetic mutation and biological pathway prediction based on whole slide images in breast carcinoma using deep learning</title>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Qu</surname></persName>
+			<idno type="ORCID">0000-0002-4260-3809</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mu</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhennan</forename><surname>Yan</surname></persName>
+			<idno type="ORCID">0000-0001-7128-1696</idno>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinod</forename><forename type="middle">K</forename><surname>Rustgi</surname></persName>
+			<idno type="ORCID">0000-0002-4105-5783</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoting</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-0057-2944</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Gevaert</surname></persName>
+			<idno type="ORCID">0000-0002-9965-5466</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><forename type="middle">N</forename><surname>Metaxas</surname></persName>
+			<idno type="ORCID">0000-0001-7142-7640</idno>
+		</author>
+		<idno type="DOI">10.1038/s41698-021-00225-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Precision Oncology</title>
+		<title level="j" type="abbrev">npj Precis. Onc.</title>
+		<idno type="ISSNe">2397-768X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2021-09-23">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qu, H. et al. Genetic mutation and biological pathway prediction based on whole slide images in breast carcinoma using deep learning. npj Precis. Oncol. 5, 1-11 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Deep multiple instance learning for digital histopathology</title>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Ilse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><forename type="middle">M</forename><surname>Tomczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-816176-0.00027-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Medical Image Computing and Computer Assisted Intervention</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="521" to="546" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ilse, M., Tomczak, J. M. &amp; Welling, M. Attention-based deep multiple instance learning. in 35th International Conference on Machine Learning, ICML 2018 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">TransMIL: Transformer based correlated multiple instance learning for whole slide image classification</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="2136" to="2147" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shao, Z. et al. TransMIL: Transformer based correlated multiple instance learning for whole slide image classification. Adv. Neural Inf. Process. Syst. 3, 2136-2147 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">AI-augmented Intraoperative Decision-making Workflows in Diffuse Midline Glioma Biopsy using Cryosection Pathology</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.17393827</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.17393827" />
+	</analytic>
+	<monogr>
+		<title level="j">CryoAID</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, K. et al. AI-augmented Intraoperative Decision-making Workflows in Diffuse Midline Glioma Biopsy using Cryosection Pathology. CryoAID. https://doi.org/10.5281/zenodo. 17393827. (2025).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

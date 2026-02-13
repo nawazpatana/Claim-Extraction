@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Explainable AI-driven MRI-based brain tumor classification: a novel deep learning approach</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-01-08">08 January 2026</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Vinayaka</forename><forename type="middle">R</forename><surname>Srinivas</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Ramasubramanian</forename><surname>Parvathi</surname></persName>
+							<email>parvathi.r@vit.ac.in</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">School of Computer Science and Engineering , Vellore Institute of Technology , Chennai , India</note>
+								<orgName type="department">School of Computer Science and Engineering</orgName>
+								<orgName type="institution">Vellore Institute of Technology</orgName>
+								<address>
+									<settlement>Chennai</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<note type="raw_affiliation">University of Dundee , United Kingdom</note>
+								<orgName type="institution">University of Dundee</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation">National Research Council (CNR) , Italy Eugenio Vocaturo ,</note>
+								<orgName type="department">Eugenio Vocaturo</orgName>
+								<orgName type="institution">National Research Council (CNR)</orgName>
+								<address>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation">National Research Council (CNR) , Italy Centre for Advanced Data Science (CADS) ,</note>
+								<orgName type="department">Centre for Advanced Data Science (CADS)</orgName>
+								<orgName type="institution">National Research Council (CNR)</orgName>
+								<address>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">Vellore Institute of Technology , Chennai , India</note>
+								<orgName type="institution">Vellore Institute of Technology</orgName>
+								<address>
+									<settlement>Chennai</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Explainable AI-driven MRI-based brain tumor classification: a novel deep learning approach</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Artificial Intelligence</title>
+						<title level="j" type="abbrev">Front. Artif. Intell.</title>
+						<idno type="eISSN">2624-8212</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">8</biblScope>
+							<date type="published" when="2026-01-08">08 January 2026</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DBD24E08C469F63869D0612C01E630F3</idno>
+					<idno type="DOI">10.3389/frai.2025.1700214</idno>
+					<note type="submission">RECEIVED 06 September 2025 REVISED 21 November 2025 ACCEPTED 30 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T23:53+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>brain tumor classification</term>
+					<term>convolutional neural networks</term>
+					<term>data augmentation</term>
+					<term>deep learning</term>
+					<term>explainable AI</term>
+					<term>feature visualization</term>
+					<term>medical imaging</term>
+					<term>MRI</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction: Brain tumors are among the most aggressive forms of cancer, requiring precise diagnosis and treatment planning to improve patient outcomes. This study aims to develop an efficient deep learning-based framework for the classification of brain tumors using MRI data. Methods: The methodology employs Convolutional Neural Networks (CNNs) to accurately classify tumors into four categories: normal, glioma, pituitary, and meningioma. Key preprocessing techniques, including noise reduction,resizing, and data augmentation, were applied to enhance the robustness of the model. Advanced architectures such as DenseNet50, VGG19, and other transfer learning models, along with CNN variants, were trained and evaluated for their performance. Explainable AI (XAI) techniques, including Grad-CAM, LIME, and feature map visualizations, played a crucial role in providing better visualizations of the model's decision-making process and identifying areas of improvement during model training and to establish a better model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results:</head><p>The best-performing model, a 4-conv-1-dense-1-dropout CNN, achieved a classification accuracy of 95.86%, outperforming deeper architectures and transfer learning approaches. The findings underscore the potential of deep learning models for reliable and efficient brain tumor classification. This work concludes with recommendations for real-time deployment in clinical settings and explores future integration with Large Language Models (LLMs) to generate detailed diagnostic reports.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Multimodal brain tumor classification using deep learning and robust feature selection, <ref type="bibr" target="#b10">Khan et al. (2020)</ref> applies a multimodal approach that combines imaging and non-imaging data, using robust feature selection for classification. However, challenges arise in the real-time acquisition of multimodal data and computational efficiency, indicating that future research could focus on optimizing these areas for practical application.</p><p>Brain MRI Classification and Segmentation of Glioma, Pituitary, and Meningioma Tumors Using Deep Learning Approaches, <ref type="bibr" target="#b13">Mostafa et al. (2024)</ref> focuses on the segmentation and classification of different brain tumor types using CNNs and advanced deep learning methods. Yet, the study offers limited exploration of how segmentation errors may impact classification accuracy, leaving room for more investigation into these interconnected processes.</p><p>A sequential machine learning-cum-attention mechanism for effective segmentation of brain tumor, <ref type="bibr" target="#b1">Ali et al. (2022)</ref> presents a sequential machine learning model with an attention mechanism designed to improve segmentation accuracy. However, the study does not address issues related to clinical integration and scalability, which could hinder its practical application in healthcare settings.</p><p>Brain tumor segmentation using deep capsule network and latentdynamic conditional random fields, <ref type="bibr" target="#b7">Elmezain et al. (2022)</ref> proposes a deep capsule network with latent-dynamic conditional random fields for accurate segmentation. e paper highlights the complexity of model training and notes challenges with interpretability in medical environments, indicating areas for future research to simplify and explain these models.</p><p>Brain tumors classification for MR images based on attentionguided deep learning model, <ref type="bibr" target="#b19">Zhang et al. (2021)</ref> employs attentionguided deep learning models to improve classification accuracy in MRI-based brain tumor detection.</p><p>e study lacks a thorough discussion on the robustness and interpretability of the model in clinical settings, highlighting areas for improvement in clinical applicability.</p><p>A Robust Deep Learning Model for Brain Tumor Detection and Classification Using EfficientNet: A Brief Meta-Analysis <ref type="bibr" target="#b18">(Singh et al., 2024)</ref>, leverages EfficientNet for brain tumor detection and classification, supported by a meta-analysis of its performance. However, the paper does not address the real-time performance of EfficientNet or its computational requirements, suggesting potential areas for further investigation in practical deployment.</p><p>Design of encoded graphene-gold metasurface-based circular ring and square sensors for brain tumor detection and optimization using XGBoost algorithm, <ref type="bibr" target="#b15">Patel et al. (2024)</ref> introduces novel metasurfacebased sensors, optimized with the XGBoost algorithm, for brain tumor detection. While innovative, the study points out challenges with scaling this method for widespread clinical use and lacks a clear pathway for clinical integration, leaving room for future studies on feasibility and scalability.</p><p>Personalized treatment planning and predicted therapy response based on different MRI data sets, classified the tumor tissue type, identified the severity of the tumor were discussed in <ref type="bibr" target="#b12">Missaoui et al. (2025)</ref>.</p><p>Recent studies such as BrAInVision, <ref type="bibr" target="#b8">Gagliardi et al. (2025)</ref> have demonstrated that hybrid and doubly explainable architecturescombining handcra ed and deep features-can enhance both accuracy and interpretability in brain MRI classification. Similarly, <ref type="bibr" target="#b12">Missaoui et al. (2025)</ref> emphasized the integration of advanced transformer-based and hybrid CNN models, highlighting challenges in computational scalability and transparency that our lightweight CNN addresses.</p><p>Various techniques used for transparency, logical and ethical dimensions of AI decision justification applied to the clinical contexts are explained in <ref type="bibr" target="#b5">Caroprese et al. (2022)</ref>.</p><p>Importance of data privacy in medical imaging and highlighted how federated learning enables distributed model training while safeguarding patient confidentiality was discussed in <ref type="bibr" target="#b4">Caroprese et al. (2023)</ref>.</p><p>4 Dataset e Crystal Clean Brain Tumor MRI Dataset is a comprehensive collection of high-resolution MRI scans designed to support precise brain tumor classification. e dataset consists of detailed MRI images that capture intricate brain structures, making it invaluable for distinguishing subtle features across various tumor types. e Crystal Clean Brain Tumor MRI dataset used in this study was obtained from a publicly available Kaggle repository. <ref type="foot" target="#foot_0">1</ref>e dataset contains T1-weighted contrast-enhanced MRI scans categorized into four classes: glioma, meningioma, pituitary, and normal. Initially, the dataset comprised 3,264 images-826 glioma, 822 meningioma, 830 pituitary, and 786 normal images. Following data augmentation (including rotation, flipping, and brightness variation), the dataset expanded to 13,056 images to balance class distribution and improve model generalization. e data were split into 80% for training and 20% for testing, ensuring class balance across both subsets.</p><p>Each image is meticulously annotated to indicate the presence or absence of a tumor (refer Figure <ref type="figure">1</ref>), with tumor types labeled as glioma, meningioma, pituitary tumor, or no tumor cases. ese highquality images, paired with accurate annotations, serve as a robust foundation for training machine learning models, enabling researchers to achieve precise tumor identification and classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Preprocessing</head><p>While the Crystal Clean MRI dataset was preprocessed by the provider, additional refinement steps were performed to enhance image consistency and model readiness. ese included verifying tumor region integrity, re-cropping based on the largest visible contour, resizing to 224 × 224 pixels, and applying normalization.</p><p>ese additional steps ensured uniformity across samples and removed residual background noise. In the preprocessing stage, efforts were made to ensure uniformity and quality in the dataset before feeding it into neural networks. e preprocessing steps, including resizing, normalization, and formatting of the image data, were already performed by the dataset provider. We are grateful for the well-prepared dataset, which allowed us to focus on model 10. <ref type="bibr">3389/frai.2025.1700214</ref> Frontiers in Artificial Intelligence 04 frontiersin.org development and evaluation without requiring additional pre-processing efforts. High-resolution MRI images were resized to a standard dimension of 224x224x3, preserving critical information while reducing storage requirements. Since the black background surrounding the brain in MRI images does not contribute meaningful data for classification, the images were cropped to remove this irrelevant region. However, in the pre-processing stage, we attempt to make uniformity in data before feeding it to neural networks. Our images had high resolution, and we scaled them back to 224x224x3, which helps preserve all relevant data while reducing storage requirements.</p><p>e MRIs contained a black background around the central image of the brain.</p><p>is dark background gives no valuable data for classification since no real information of the MRI is present in the dark background. Subsequently, the images were trimmed around the main contour. Here, the greatest contour is chosen and marked. Following, we discover the extreme points of the contour and crop the image on those endpoints. us, removing most of the background and noise present within the original image. is process is done for each image in the dataset. Images which do not adhere to the conditions are discarded from the classification process. Such images come about in distorted shapes and were removed by manual review.</p><p>• Removal of Duplicate Samples: We employed an image vector comparison method to identify and remove duplicate samples, ensuring that each data point is unique. • Correction of Mislabeled Images: Using our domain knowledge, we carefully inspected and corrected falsely labeled images, ensuring that they were appropriately categorized. is step greatly enhances the accuracy of the dataset. • Image Resizing: All images in the dataset were resized to a memory-efficient yet academically accepted size of (224, 224), facilitating easier processing and analysis.</p><p>is was achieved by identifying the largest contour in each image, determining its extreme points, and cropping accordingly (refer Figure <ref type="figure">2</ref>), effectively isolating the brain region while minimizing background noise. Any distorted or non-conforming images were 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 05 frontiersin.org</p><p>manually reviewed and excluded from the dataset. Further preprocessing steps included the removal of duplicate samples through image vector comparisons, ensuring that each data point was unique. Additionally, mislabelled images were identified and corrected using domain expertise to improve labelling accuracy and improve dataset reliability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Augmentation</head><p>To enhance the robustness of the dataset and improve the model's ability to generalize, several data augmentation techniques were employed. e distribution of data across the four classes-Normal, Glioma, Pituitary, and Meningioma-is shown in Figure <ref type="figure">3</ref>.</p><p>Salt and Pepper Noise introduces random noise to the images by setting pixels to white (salt) or black (pepper) at specific intensities.</p><p>is technique simulates real-world imperfections, such as sensor noise or transmission errors, which o en occur in medical imaging. By exposing the model to noisy data, it becomes more resilient in handling distorted or degraded images, thereby improving its performance in practical scenarios.</p><p>Histogram Equalization was applied to improve image contrast by redistributing pixel intensity values. is method enhances subtle details in images that may appear washed out or underexposed. For MRI scans, this is crucial as it brings out intricate patterns and features, enabling the model to better differentiate between tumor and non-tumor regions.</p><p>Rotation involved altering the orientation of images by rotating them clockwise or counterclockwise. is augmentation accounts for the slight variations in orientation that can occur during MRI scans. By diversifying the dataset with rotated images, the model learns to identify tumors regardless of the alignment of the image, improving its adaptability to real-world data.</p><p>Brightness Adjustment simulated varying lighting conditions by increasing or decreasing the image intensity values. Since MRI images might differ in brightness due to variations in equipment or imaging protocols, this technique ensures the model can handle such discrepancies. Training on images with varied brightness levels improves the model's ability to make accurate classifications under diverse imaging conditions. Lastly, Horizontal and Vertical Flipping created mirror images of the data, effectively doubling the dataset size and introducing spatial orientation variability. For symmetrical structures like the brain, flipping helps the model recognize tumors regardless of their location within the brain's symmetry as seen in Figure <ref type="figure">4</ref>. is augmentation increases data diversity and helps the model generalize better between different spatial configurations. is constitutes a large dataset of 22,000 MRI images which is used for the training process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Justification for using CNNs, transfer learning, and explainable AI</head><p>e choice of CNN-based models and transfer learning architectures over more complex state-of-the-art models was driven by practical considerations such as hardware limitations, computational efficiency, and accessibility for smaller research environments or medical institutions with limited resources. While transformer-based architectures and advanced deep learning models like Vision Transformers (ViTs) or hybrid networks have shown promising results in medical imaging, they demand extensive computational power, large-scale labelled datasets, and specialized hardware such as high-end GPUs or TPUs. Many small-scale healthcare facilities, startups, and research groups lack the infrastructure to deploy such resource-intensive models in real-world clinical applications. 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 06 frontiersin.org</p><p>CNNs, on the other hand, provide a highly efficient alternativethey require significantly lower computational resources while still achieving high accuracy, making them more feasible for on-device processing, cloud deployment, or integration into hospital imaging systems. Additionally, transfer learning with models like VGG19 and DenseNet50 allows leveraging pre-trained feature extraction while minimizing training time and data requirements, a crucial advantage when working with medical datasets that are o en limited in size. In this study, we use transfer learning methods not only to compare their results against CNN models but also to demonstrate the effectiveness of custom CNN architectures for the classification of brain tumors. By showcasing performance differences, we highlight how CNNs offer a more practical approach for small-scale projects and resource-limited environments, ensuring accessibility without compromising accuracy.</p><p>e explainability aspect of the chosen CNN model also enhances its practical applicability compared to other complex architectures. Techniques such as Grad-CAM and LIME provide interpretable visualizations that highlight the model decision-making process, strengthening trust in clinical environments, and helping create an architecture of significant results. Unlike models such as Xception and InceptionV3, which exhibit higher computational complexity with marginal accuracy gains, the proposed CNN model remains computationally efficient, making it suitable for real-time deployment in medical diagnostics. Furthermore, transfer learning models require 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 07 frontiersin.org </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4">Architecture diagram</head><p>e overall architecture of the proposed brain tumor classification is illustrated in Figure <ref type="figure" target="#fig_5">5</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.1">Data preparation</head><p>Load Data: e first step is loading the MRI images needed for tumor classification. is data forms the basis for training and testing the model.</p><p>Preprocess Data: A er loading, the data is preprocessed to ensure it is clean and consistent. Common preprocessing steps might include resizing images, normalizing pixel values, removing noise, and data augmentation techniques to increase the dataset's diversity and robustness. Proper preprocessing is essential to improve model accuracy and performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.2">Model development</head><p>Feature Extraction: A er the data is prepared, it is followed by feature extraction, where meaningful characteristics or patterns are extracted from the images. For MRI data, features could include pixel intensities, textures, shapes, or tumor-specific markers. ese features help the model distinguish between different types of tumors or between tumor and non-tumor cases.</p><p>Design Model: In this step, a deep learning or machine learning model architecture is chosen and designed based on the project requirements.</p><p>Common architectures for image classification tasks include Convolutional Neural Networks (CNNs) or other neural network models optimized for visual data processing. Run Model: A er designing the model, it is trained on the preprocessed dataset. During this phase, the model learns from the features to differentiate between tumor types or identify the absence of a tumor. Training involves adjusting model parameters to minimize errors and improve classification accuracy. Establish Performance Metrics: As the model trains, performance metrics such as accuracy, precision, recall, F1 score, or AUC (Area Under the Curve) are calculated to evaluate the model's effectiveness.</p><p>ese metrics help assess whether the model is learning effectively and can generalize well to new, unseen data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.3">Model evaluation</head><p>Evaluate Training Set: A er completing the training, the model is assessed on the training set to determine if it is overfitting or underfitting. Overfitting happens when the model excels on the training data but fails on new data, whereas underfitting indicates that the model is not effectively identifying the underlying patterns in the data.</p><p>Establish Metrics: A er evaluating on the training set, performance metrics are recalculated to ensure consistency and validate the model's effectiveness. is step might also include testing the model on a separate validation or test dataset to gauge its realworld applicability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.4">Deployment</head><p>Save Model: Once the model performs satisfactorily, it is saved for deployment. is saved model can then be loaded in a production environment where it can be used for real-time tumor classification.</p><p>Frontend with Streamlit: A Streamlit interface is designed to allow users to interact with the model easily. Streamlit is a popular framework for creating web applications for machine learning models, making it simple to create a user-friendly frontend.</p><p>Upload Image: In the deployed system, users can upload MRI images through the Streamlit interface. ese images are then passed to the model for classification.</p><p>Evaluate and Show Output: Finally, the model processes the uploaded image, performs the tumor classification, and returns the result to the user. e result, including predicted tumor type and any other relevant metrics or visualizations, is displayed on the frontend for easy interpretation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5">Convolution neural networks</head><p>e proposed CNN model of 3-conv-128-nodes-2-dense-2 dropout demonstrates superior performance in brain tumor classification by balancing precision, generalization, and computational efficiency. Unlike shallower architectures such as 3-conv-64-nodes-3-dense which exhibited lower validation accuracies due to insufficient feature extraction, the selected model optimally captures tumor-specific patterns while mitigating overfitting through L2 regularization and dropout. e experimental results confirm that this model achieves a validation accuracy of 92.76%, outperforming deeper architectures such as 5-conv-128-nodes-3-dense-2-dropout, which, despite achieving 91.96%, showed marginally higher validation loss, suggesting potential overfitting.</p><p>However, a more refined architecture, the 4-conv-128-nodes-1-dense-1-dropout CNN model, emerges as the best-performing among all evaluated configurations. This model achieves an impressive accuracy of 95.86% with a validation accuracy of 95.32%, along with a training loss of 0.1232 and a validation loss of 0.1557. These results indicate a well-generalized model with improved feature extraction capabilities while maintaining 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 08 frontiersin.org robustness against overfitting. In contrast, the 3-conv-128-nodes-2-dense-2-dropout model, though effective, attained a relatively lower accuracy of 92.88% with a higher validation loss of 0.26, reinforcing the advantage of deeper feature extraction in the 4-conv-128 architecture.</p><p>5.5.1 4-conv-1-dense-1-dropout architecture e 4-conv-128-nodes-1-dense-1-dropout architecture described in Algorithm 1 demonstrated the highest performance among the evaluated CNN models for brain tumor classification. With a training accuracy of 95.86% and a validation accuracy of 95.32%, this model achieved superior generalization while maintaining a low validation loss of 0.1557.</p><p>Compared to other architectures, such as the 3-conv-128-nodes-2dense-2-dropout model, which reached a validation accuracy of 92.76%, the additional convolutional layer in this design effectively captured intricate tumor-specific features without introducing significant overfitting. e balanced depth of the architecture, coupled with a single dropout layer, contributed to its robustness, ensuring that the model retained sufficient feature extraction capacity while mitigating excessive regularization effects that could hinder performance.</p><p>e 4-conv-128-nodes-1-dense-1-dropout architecture (see Figure <ref type="figure" target="#fig_7">6</ref>) is designed to achieve a balance between deep feature extraction and computational efficiency for brain tumor classification.</p><p>e first convolutional layer, consisting of 32 filters with a 4 × 4 kernel size and ReLU activation, captures fundamental spatial patterns such as edges and textures. ese low-level features are then refined by the second convolutional layer, which increases the filter count to 64, enabling the model to learn more complex structures. Max pooling follows each convolutional layer, reducing the spatial dimensions while retaining essential feature representations. e third and fourth convolutional layers, both equipped with 128 filters, enhance the network's ability to detect intricate tumor-specific patterns, allowing the model to differentiate between. Overall architecture for brain tumor classification.</p><p>ALGORITHM 1 4-conv-1-dense-1-dropout (L2 regularization) architecture Require: MRI input images of size (224, 224, 3) Ensure: Output: Class label (Normal, Glioma, Pituitary, Meningioma) Initialize a sequential CNN model Add Conv2D layer with 32 filters, kernel size (3,3), ReLU activation Add MaxPooling2D layer Add Conv2D layer with 64 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Add Conv2D layer with 128 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Add Conv2D layer with 128 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Flatten feature maps Add Dense layer with 512 units, ReLU activation Add Dropout layer (rate: 0.5) Add Output Dense layer with 4 units, So max activation Compile using Adam optimizer and Categorical Crossentropy loss Train model and evaluate using Accuracy, Precision, Recall, and F1-Score 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 09 frontiersin.org e activation maps (see Figure <ref type="figure">7</ref>) provide a detailed visualization of how different layers of the 4-conv-1-dense-1-dropout architecture respond to input images. e convolutional layers exhibit strong activations in specific regions, highlighting the model's ability to capture intricate spatial patterns such as edges, textures, and fine details. e max-pooling layers compress the spatial representation, reducing dimensionality while preserving the most significant features. By analyzing these activation maps, critical insights were obtained regarding the model's focus areas and its generalization to different inputs. In conjunction with Grad-CAM and LIME visualizations, these activation maps played a pivotal role in refining hyperparameters, adjusting dropout rates, and modifying convolutional filter sizes to enhance the model's performance.</p><p>rough iterative modifications based on these visualizations, the final model was optimized to achieve robust feature extraction and improved classification accuracy, ensuring a well-adapted architecture for the dataset. Layer view of the 4-conv-1-dense-1-dropout architecture. Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 10 frontiersin.org</p><p>Furthermore, this architecture outperformed deeper models such as the 5-conv-128-nodes-3-dense-2-dropout, which, despite achieving a competitive validation accuracy of 91.96%, exhibited a marginally higher validation loss, indicating potential overfitting. Similarly, shallower models like the 3-conv-64-nodes-2-dense-2-dropout, which reached a validation accuracy of 92.76%, failed to extract the necessary high-level spatial features required for precise tumor classification.</p><p>ese results highlight that the 4-conv-128-nodes-1-dense-1-dropout configuration achieves an optimal trade-off between accuracy, computational efficiency, and model complexity, making it the most suitable architecture for this task. is balance is particularly crucial in real-world medical applications, where maintaining high diagnostic accuracy with minimal resource utilization is essential for deployment in clinical settings.</p><p>5.5.2 3-conv-2-dense-2-dropout(L2 regularization) architecture is model described in Algorithm 2 effectively avoids both overfitting and underfitting, allowing it to generalize well on the test set while accurately learning key features from the training data.</p><p>e architecture includes three convolutional layers that are responsible for extracting important features from the input images, followed by two dense (fully connected) layers that interpret these features for final predictions. e inclusion of two dropout layers reduces overfitting by randomly dropping a fraction of neurons during training, encouraging the model to learn more generalized features. e architecture of 3-conv-128-nodes-2-dense-2-dropout (see Figure <ref type="figure" target="#fig_9">8</ref>) effectively balances feature extraction, computational efficiency, and generalization for brain tumor classification. e first convolutional layer, utilizing a 3 × 3 kernel with 64 filters and ReLU activation, captures low-level features such as edges, textures, and gradients. is fundamental feature extraction allows subsequent layers to build upon simple patterns to detect more complex structures.</p><p>e second convolutional layer, also with 64 filters, enhances pattern recognition by identifying contours and higherorder features, further refined through max pooling to reduce spatial dimensions. e third convolutional layer, with 128 filters and L2 regularization, expands feature learning, ensuring deeper pattern extraction while mitigating overfitting.</p><p>is structured feature extraction process enables the model to learn tumor-specific characteristics efficiently. Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 11 frontiersin.org</p><p>is architecture with L2 regularization is considered the optimal model due to its balanced performance. is model effectively avoids both overfitting and underfitting, ensuring that it generalizes well on the test set while still learning the key features of the training data. e architecture consists of five convolutional layers, which help extract increasingly complex features from the input images, followed by a series of fully connected dense layers that interpret these features to make predictions. e use of two dropout layers helps mitigate overfitting by randomly dropping a fraction of the neurons during training, forcing the model to learn more robust features. Additionally, L2 regularization is applied to the convolutional layers, which helps prevent the model from becoming too complex and overfitting by penalizing large weights.</p><p>Following convolutional processing, the extracted feature maps are flattened and passed through two fully connected dense layers. e first dense layer consists of 64 neurons, integrating information from previous layers, while the second dense layer functions as the output layer, classifying images into one of the four tumor categories via so max activation.</p><p>e incorporation of dropout layers (40%) significantly reduces overfitting by randomly deactivating neurons during training, ensuring robust generalization. Activation visualizations confirm that the network effectively learns relevant tumor features, with high activations corresponding with critical tumor regions. e integration of Grad-CAM and LIME further validated the model's reliability, revealing that key areas influencing classification align with known tumor structures. is transparency reinforces the model's clinical applicability, ensuring it focuses on meaningful tumor regions rather than irrelevant image artifacts. Grad-CAM visualizations provided heatmaps that highlighted the most influential regions in MRI scans, ensuring that the convolutional layers were correctly focusing on tumor regions rather than background artifacts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5.3">5-conv-3-dense-2-dropout architecture</head><p>e 5-conv-128-nodes-3-dense-2-dropout architecture described in Algorithm 3 follows a structured feature extraction process, progressively learning low-level, mid-level, and high-level patterns from MRI images.</p><p>ese layers exhibit high activation across multiple filters, indicating that they extract fine-grained structural details. As the network progresses to mid-level convolutional layers (see Figure <ref type="figure" target="#fig_10">9</ref>), activation becomes more selective, focusing on region-specific patterns that distinguish tumor structures from normal tissue. is reduction in activation density implies that the network is filtering out less relevant information, concentrating on important tumor characteristics. In the final convolutional layers, the activations become even more sparse and localized, signifying the network's ability to abstract complex tumor-specific representations while discarding irrelevant background features. is hierarchical feature refinement process enables robust classification with minimal computational redundancy.</p><p>A er convolutional feature extraction, the dense layers integrate the learned representations to form the final classification decision.</p><p>e first two dense layers process a diverse set of activation values, selectively amplifying features critical to distinguishing tumor types. e visualized activations in these layers reveal a broad range of responses, highlighting their role in refining tumor-specific feature maps. As the network moves toward the final dense layer, activations become concentrated, representing class-specific decisions. Here, only a few neurons exhibit strong activations, suggesting that the model has confidently identified the correct tumor category. e integration of dropout layers ensures that the model generalizes effectively, preventing overfitting.</p><p>Explainability techniques, such as Grad-CAM and LIME, were pivotal in evaluating this architecture, confirming that the model effectively focuses on tumor regions rather than irrelevant background noise. ese insights allowed for iterative improvements, fine-tuning dropout rates, filter sizes, and activation thresholds to achieve optimal classification performance while maintaining computational efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6">Transfer learning</head><p>Transfer learning was incorporated alongside CNN models to leverage pre-trained architectures that have been trained on largescale image datasets, allowing for improved feature extraction with limited medical imaging data. Unlike CNN models trained from scratch, transfer learning enables the use of pre-learned representations, significantly reducing training time and mitigating overfitting. Given the high-dimensional nature of MRI scans and the relatively small dataset, fine-tuning pre-trained networks was essential for capturing tumor-specific patterns while maintaining computational efficiency. e models selected-DenseNet50, VGG19, InceptionV3, and Xception-were evaluated for their ability to classify brain tumors into four categories, considering factors such as accuracy, loss stability, and overfitting tendencies. e experimental results revealed varying degrees of effectiveness, with some architectures demonstrating strong</p><p>ALGORITHM 2 3-conv-2-dense-2-dropout architecture Require: MRI input images of size (224, 224, 3) Ensure: Output: Class label (Normal, Glioma, Pituitary, Meningioma) Initialize a sequential CNN model Add Conv2D layer with 64 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Add Conv2D layer with 128 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Add Conv2D layer with 256 filters, ReLU activation, L2 regularization Add MaxPooling2D layer Flatten the output Add Dense layer with 512 units, ReLU activation Add Dropout layer (rate = 0.4) Add Dense layer with 256 units, ReLU activation Add Dropout layer (rate = 0.4) Add Output Dense layer with 4 units, So max activation Compile model with Adam optimizer and Categorical Crossentropy loss Train and validate using stratified data split, evaluate with class-wise metrics 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 12 frontiersin.org performance but requiring further adjustments to generalize well across different tumor types.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6.1">DenseNet50 architecture</head><p>e DenseNet50 architecture, known for its efficient feature reuse and gradient propagation, was fine-tuned on the MRI dataset to assess its classification capability. Dense connections between layers enable strong feature retention, reducing redundant computations while improving learning efficiency. e model achieved 90.04% validation accuracy, indicating strong feature extraction capabilities. However, fluctuations in validation loss suggested potential overfitting, despite the model's ability to mitigate the vanishing gradient problem. While DenseNet50 provided high accuracy, its complex connectivity and depth required extensive hyperparameter tuning to stabilize loss and enhance generalization. e results indicate that while the model effectively distinguishes tumors, it requires regularization strategies such as dropout and data augmentation to improve its robustness for clinical applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6.2">VGG19 architecture</head><p>VGG19, a deep sequential convolutional architecture, was implemented for its structured feature extraction process, making it well-suited for hierarchical feature learning in MRI scans. Fine-tuning of the fully connected layers and batch normalization techniques was applied to optimize classification performance. e model yielded a 95.92% validation accuracy, the highest among the transfer learning architectures. However, overfitting was evident, with near-perfect training accuracy and a significant discrepancy between training and validation loss. e model's depth and high parameter count, while beneficial for feature extraction, contributed to its over-reliance on training data, reducing generalization capacity. Despite its strong classification accuracy, lighter architectures with regularization mechanisms may offer more balanced performance for deployment in resource-constrained environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6.3">InceptionV3 architecture</head><p>InceptionV3, designed to capture multi-scale features through inception modules, was evaluated for its ability to distinguish tumor types in MRI scans. e model was fine-tuned by freezing initial layers and adjusting learning rates to adapt to the dataset. e results showed a validation accuracy of 69.55%, indicating challenges in extracting relevant tumor features. While the model demonstrated robust validation loss stability, its lower overall accuracy suggests difficulty in learning fine-grained tumor structures from a relatively small dataset.</p><p>e depth and complexity of InceptionV3, which typically excels in large-scale classification tasks, appears to have contributed to slower convergence and limited feature specialization for this medical imaging dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6.4">Xception architecture</head><p>Xception, an extension of the Inception architecture using depth wise separable convolutions, was evaluated for its ability to improve computational efficiency while retaining strong feature extraction capabilities.</p><p>e model was fine-tuned by adjusting batch normalization parameters and dropout rates to optimize learning. While achieving 76.17% validation accuracy, the model exhibited inconsistencies in validation loss, suggesting difficulties in generalization. e high-capacity nature of Xception, designed for complex feature hierarchies, resulted in overfitting to training data, limiting its effectiveness for MRI-based classification. ese findings indicate that while Xception offers strong pattern recognition capabilities, its architectural complexity and computational demands may not be ideal for small-scale, domain-specific medical imaging datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.7">Leveraging explainable AI (XAI)</head><p>e use of XAI in this study not only enhances the interpretability of deep learning models for brain tumor classification but also paves the way for its application in various medical conditions, modeling approaches, and diagnostic frameworks.</p><p>is paper serves as a foundation, demonstrating how XAI techniques can be integrated into medical imaging tasks, while future research can expand its use across different diseases, imaging modalities, and clinical decision-making processes. To ensure the CNN model effectively learned meaningful tumor features, Grad-CAM and LIME were employed to analyze layer activations and assess the model's decision-making process. Grad-CAM visualizations provided heatmaps highlighting the most critical regions influencing classification, confirming that the convolutional layers were focusing on tumor areas rather than irrelevant background artifacts. e first Grad-CAM visualization was applied to CNN layers to validate their effectiveness in capturing key image regions. e high-intensity activations around the tumor mass confirmed that the network correctly localized tumor structures, reinforcing the reliability of the feature extraction process. Similarly,</p><p>ALGORITHM 3 5-conv-3-dense-2-dropout architecture Require: MRI input images of size (224, 224, 3) Ensure: Output: Class label (Normal, Glioma, Pituitary, Meningioma) Initialize a sequential CNN model Add Conv2D layer with 64 filters, ReLU activation Add MaxPooling2D layer Add Conv2D layer with 64 filters, ReLU activation Add MaxPooling2D layer Add Conv2D layer with 128 filters, ReLU activation Add MaxPooling2D layer Add Conv2D layer with 128 filters, ReLU activation Add MaxPooling2D layer Add Conv2D layer with 256 filters, ReLU activation Add MaxPooling2D layer Flatten the feature maps Add Dense layer with 512 units, ReLU activation Add Dropout layer (rate = 0.3) Add Dense layer with 256 units, ReLU activation Add Dropout layer (rate = 0.3) Add Dense layer with 128 units, ReLU activation Add Output Dense layer with 4 units, So max activation Compile with Adam optimizer and Categorical Crossentropy loss Evaluate using Accuracy, Precision, Recall, and F1-Score on validation and test sets 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 13 frontiersin.org</p><p>LIME perturbation analysis identified which specific pixels contributed most to classification, ensuring the model was learning clinically relevant patterns rather than noise. ese insights allowed for iterative fine-tuning of CNN architectures, adjusting dropout rates, kernel sizes, and regularization techniques to achieve optimal generalization while mitigating overfitting.</p><p>For transfer learning models, explainability techniques were crucial in understanding how pre-trained architectures adapted to the medical imaging dataset. Grad-CAM was applied to VGG19, DenseNet50, and Xception, revealing differences in their feature attention mechanisms. e second Grad-CAM visualization, initially labeled for glioma detection, was utilized to interpret the attention focus of these models. While VGG19 and DenseNet50 localized tumor regions effectively, Xception exhibited scattered activations, indicating potential misinterpretation of MRI features. LIME analysis further confirmed that misclassified cases o en had feature attributions out-side the tumor region, suggesting that certain transfer learning models over-relied on non-tumor structures.</p><p>ese explainability methods enabled precise model selection, confirming that architectures like VGG19 achieved higher validation accuracy but suffered from overfitting, while DenseNet50 required additional regularization strategies to stabilize performance. By leveraging XAI, transfer learning models were fine-tuned to enhance interpretability and ensure robust classification.</p><p>e superimposed Grad-CAM heatmap on a pituitary tumor MRI, as illustrated in the Figure <ref type="figure" target="#fig_11">10</ref>, confirmed that the model's activation concentrated precisely on the tumor, validating its decisionmaking process. LIME further complemented this analysis by perturbing input images and identifying the most significant pixels contributing to classification, allowing for a granular evaluation of feature relevance. ese insights played a critical role in fine-tuning hyperparameters, such as filter sizes, dropout rates, and regularization strengths, to enhance model generalization and stability. e use of these explainability techniques ensured that the model captured clinically meaningful features, reinforcing its reliability for real-world medical applications. In the super-imposed image, the heatmap shows high activation in the central region of the MRI scan, where the pituitary tumor is clearly visible. is indicates that the CNN has successfully identified the tumor area as the key factor in its classification decision. e yellowish-green regions represent the areas Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 14 frontiersin.org with the strongest activation, high-lighting where the model focused its attention most during prediction. e model's concentrated attention on the tumor area reflects its confidence in identifying features specific to a pituitary tumor. e averaged heatmap, which integrates multiple CNN layers, captures low-level features (such as edges and textures) as well as high-level features (such as shapes and patterns). is detailed visualization confirms that the model accounts for a multiple range of features when making its decision. e darker blue regions in the heatmap represent areas of low activation, suggesting that the CNN largely ignored these parts of the MRI scan. is indicates that the model is focusing on medically relevant areas, such as the tumor, rather than irrelevant parts of the scan like surrounding tissue or background. e heatmap in Figure 11 reveals significant activation in the upper-central region of the MRI scan, where the glioma is visible. e greenish areas indicate the regions where the model focused its  Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 15 frontiersin.org attention most while predicting the tumor class. ese activations confirm that the model has correctly identified features consistent with glioma, such as irregular growth patterns and abnormal textures. e surrounding regions, coloured in darker blue, show minimal activation, demonstrating that the model ignored non-relevant areas and precisely isolated the tumor region. e bright green and yellow activations align well with the tumor's location, validating the model's predictive capabilities. is visualization, derived from VGG19's averaged layer activations, highlights the interpretability of the proposed deep learning framework. By integrating outputs from various blocks, the heatmap ensures a more accurate and reliable analysis of glioma-specific features. For medical imaging, such as MRI scans for tumor detection, transparency is crucial. It not only builds trust in the AI's predictions by showing clear visual evidence but also helps medical professionals validate and interpret the model's decisions. is can lead to better-informed diagnostic decisions and increased confidence in the AI's capabilities. Additionally, Grad-CAM visualizations can aid in model improvement and identify potential shortcomings.</p><p>e le panel in Figure <ref type="figure">12</ref> displays the raw MRI scan of a brain, where a glioma tumor is visibly present as a bright mass. e glioma, a type of brain tumor, is characterized by its irregular shape and location in the brain tissue. is scan serves as the input to a predictive model, such as a classification or segmentation model, trained to identify and categorize tumors. e right panel shows the LIME visualization over-layed on the same MRI scan. e yellow highlighted regions represent the areas that were the most influential in the model decision-making process to predict the presence of the glioma tumor. e parameters used were 1,000 perturbations and 3 top features, influence the output by ensuring a more reliable and stable explanation with a higher number of perturbed samples and highlighting only the top 3 contributing regions/features.</p><p>The left panel in Figure <ref type="figure" target="#fig_14">13</ref> illustrates the original MRI scan, showcasing a distinct, bright mass characteristic of a meningioma tumor. Meningiomas, typically benign tumors, arise from the meninges, the protective layers enveloping the brain and spinal cord. Detecting these tumors is crucial for medical imaging models. In the right panel, the LIME visualization is displayed, with yellow-highlighted regions marking areas of the MRI scan that significantly contributed to the model's decision. The bright mass corresponding to the meningioma is clearly outlined, signifying that the model effectively identified and utilized this tumor region as a critical feature for its prediction. The LIME explanation also reveals additional highlighted areas outside the tumor boundary, particularly along the periphery of the brain. These regions may represent secondary influences, artifacts, or features the model deemed relevant in this specific instance. The parameters utilized 1,000 perturbations and top 3 features, define the granularity and scope of the explanation. Generating 1,000 samples allows the model to form a robust local approximation of the features influencing its decision, ensuring a reliable explanation. By limiting the number of features to three, the visualization emphasizes only the top three most significant regions.</p><p>e above visualizations were examples for how we used XAI to modify hyperparameters and make necessary adjustments to ensure an optimal model that accurately fits the data and delivers reliable results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 12</head><p>Glioma tumor MRI image highlighting key areas of the scan when passed through the 5-conv-3-dense-2-dropout model for classification.</p><p>Srinivas and Parvathi 10.3389/frai.2025 ese values suggest that the model not only makes accurate predictions but also maintains a strong balance between sensitivity and specificity, ensuring minimal false positives and false negatives. Class-wise metrics for 4-conv-1-dense-1-dropout architecture,3-conv-2-dense-2-dropout architecture and 5-conv-3dense-2-dropout architecture are shown in Tables <ref type="table">1</ref><ref type="table">2</ref><ref type="table">3</ref>.</p><p>e precision scores range from 0.94 to 0.97, signifying that the model produces a high proportion of correct positive predictions for each class. Similarly, recall values between 0.94 and 0.98 indicate that the model effectively identifies most true cases of each tumor type. e F1-score, which accounts for both precision and recall, consistently remains between 0.94 and 0.98, confirming the model's robustness and stability across different categories. ese performance metrics collectively highlight the model's capability to generalize well without significant overfitting.</p><p>In addition to overall accuracy, class-wise metrics were computed to evaluate model balance and reliability. e proposed 4-conv-1dense-1-dropout model achieved a mean Precision of 95.8%, Recall of 95.4%, F1-Score of 95.5%, and Specificity of 96.1% across all tumor classes. Among individual classes, glioma achieved the highest F1-score (96.4%), while meningioma demonstrated slightly lower precision (94.2%) due to inter-class texture similarities. ese findings indicate consistent model performance across tumor categories, confirming robust generalization.</p><p>Overall, the strong performance metrics, including high accuracy, low loss, and balanced precision-recall values, demonstrate that the model effectively learns dis-criminative features for brain tumor classification. e minimal divergence between training and validation performance further suggests that the model generalizes well to unseen data, making it a reliable tool for automated brain tumor diagnosis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">3-conv-2-dense-2-dropout architecture</head><p>e model demonstrates strong classification performance across four categories: Normal, Glioma, Meningioma, and Pituitary tumors. Precision, recall, and F1-score metrics are consistently high across all classes, with macro and weighted averages both at 0.96.</p><p>ese results indicate that the model is highly reliable in distinguishing between the different tumor types while maintaining balanced performance across all categories. e precision values for each class range from 0.94 to 0.98, showing that the model makes highly accurate predictions with minimal false positives. e recall values range from 0.94 to 0.99, demonstrating that the model successfully identifies most instances of each class with few false negatives. e F1-scores, which balance precision and recall, are also consistently high, further validating the model's strong generalization capability.</p><p>The confusion matrix in Figure <ref type="figure" target="#fig_5">15</ref> provides additional insights into the model's classification performance. The highest classification accuracy is observed in the Pituitary class, with Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 17 frontiersin.org 1,178 correct predictions out of 1,189 samples. Other classes also show strong classification performance, with minimal misclassifications. The small number of misclassified instances suggests that the model effectively learns distinguishing features while maintaining a low rate of confusion among different tumor types. Overall, the model achieves an optimal balance between accuracy and generalization, making it suitable for medical image classification tasks. The high precision, recall, and F1-scores indicate robust performance, while the confusion matrix confirms minimal misclassifications. These results suggest that the model can be a valuable tool in aiding medical professionals in tumor diagnosis, reducing diagnostic errors, and improving patient outcomes. Confusion matrix of 4-conv-1-dense-1-dropout architecture.</p><p>TABLE 1 Class-wise metrics-4-conv-1-dense-1-dropout architecture. Class Precision Recall F1-Score Specificity Normal 0.938 0.964 0.951 0.989 Glioma 0.956 0.935 0.945 0.983 Meningioma 0.940 0.941 0.941 0.975 Pituitary 0.972 0.979 0.975 0.990</p><p>TABLE 2 Class-wise metrics-3-conv-2-dense-2-dropout architecture. Class Precision Recall F1-Score Specificity Normal 0.966 0.962 0.964 0.994 Glioma 0.940 0.953 0.946 0.975 Meningioma 0.956 0.938 0.947 0.982 Pituitary 0.983 0.991 0.987 0.993</p><p>TABLE 3 Class-wise metrics-5-conv-3-dense-2-dropout architecture. Class Precision Recall F1-Score Specificity Normal 0.891 0.965 0.927 0.981 Glioma 0.747 0.826 0.785 0.888 Meningioma 0.783 0.674 0.724 0.925 Pituitary 0.913 0.906 0.909 0.968 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 18 frontiersin.org e weighted averages for these metrics remain consistent at approximately 82%, reflecting the model's balanced performance across different tumor types.</p><p>e confusion matrix in Figure <ref type="figure" target="#fig_7">16</ref> highlights the distribution of correct and incorrect predictions among the four classes. e model shows strong performance in identifying Normal cases, with 608 correctly classified instances and minimal misclassifications. However, a notable degree of misclassifications is observed for Meningioma and Glioma cases, as a considerable number of Meningioma cases are predicted as Glioma. is suggests a need for further optimization to improve class separability, particularly in differentiating tumor types with similar characteristics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4">Transfer learning models</head><p>e DenseNet50 model demonstrates robust learning performance, reaching 90.16% accuracy, with a low loss of 0.20. Precision (0.84), recall (0.87), and F1 score (0.87) indicate strong balance across classification metrics. Training and validation accuracy climb rapidly during early epochs, stabilizing near the top end. e consistently low loss reflects efficient optimization. However, a slight divergence between training and validation loss in later epochs hints at mild overfitting. Still, the model exhibits reliable generalization, making it a high-performing and dependable architecture for classification tasks.</p><p>VGG19 achieves the highest accuracy among all models at 93.73%, with an impressively low loss of 0.03, indicating near-perfect learning on the training set. Despite high training performance, validation accuracy stabilizes slightly lower (85%), reflecting minor Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 19 frontiersin.org overfitting. e metrics remain strong with precision 0.87, recall 0.85, and F1 score 0.85, suggesting effective pattern learning. Given the tiny loss value, the model likely memorized training data well, but regularization (e.g., dropout or early stopping) could further improve its generalization capability. InceptionV3 presents a contrasting trend: while training accuracy hovers around 63.60%, validation accuracy surpasses it during training, reaching 70%. e loss is moderate at 0.88, and performance metrics-precision 0.63, recall 0.61, and F1 score 0.63-are lower than other models. is indicates the model generalizes better than it memorizes, possibly due to strong internal regularization mechanisms.</p><p>e close loss values across sets suggest balanced learning despite lower overall accuracy, making this architecture more suitable where overfitting is a concern.</p><p>Xception shows initial promise, attaining 77.41% accuracy and a loss of 0.61, with stable precision (0.84), recall (0.82), and F1 score (0.84). However, a er 7-8 epochs, validation accuracy fluctuates and eventually declines, a classic sign of overfitting.</p><p>is is further confirmed by rising validation loss a er an initial dip. ough the model starts strong, its later-stage instability suggests the need for better regularization or addressing potential data imbalance issues to improve its reliability and generalization power.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5">Comparative study of the models</head><p>e proposed CNN achieved superior accuracy compared to deeper pre-trained models such as VGG19, DenseNet50, and InceptionV3. While transfer learning architectures offered advanced feature hierarchies, they tended to overfit due to dataset size and variance. In contrast, the custom CNN, with fewer parameters and targeted feature learning, reduced redundancy and captured domainspecific tumor textures effectively. Its simplicity allowed for efficient optimization without compromising representational power. e integration of XAI further validated its decision process, ensuring that high performance correlated with meaningful medical features rather than data artifacts.</p><p>In the evaluation of various convolutional neural network (CNN) architectures for brain tumor classification (refer to Table <ref type="table" target="#tab_8">4</ref>), the 4-conv-1-dense-1-dropout model emerged as the best-performing Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 20 frontiersin.org</p><p>model, achieving an accuracy of 95.86%, a remarkably low loss of 0.12, and high precision, recall, and F1-score (all 0.95). is model outperformed deeper architectures such as VGG16 (88.22%), ResNet50 (73.41%), and InceptionV3 (63.60%), indicating that a balanced network depth with dropout regularization is beneficial for robust classification. Comparatively, other models such as 5-conv-3dense-1-dropout (92.22%) and 5-conv-3-dense-2-dropout (93.53%) performed well but did not surpass the optimal results of the 4-conv-1-dense-1-dropout architecture.</p><p>e inclusion of dropout layers played a significant role in reducing overfitting while maintaining high performance, demonstrating the effectiveness of this architecture in handling brain tumor classification tasks. e hyperparameter details are given in Table <ref type="table" target="#tab_9">5</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.1">Inception training and loss analysis</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.2">DenseNet training and loss analysis</head><p>DenseNet50 is a convolutional neural network architecture that belongs to the family of DenseNets, designed to enhance information and gradient flow through the network by introducing dense connections between layers. In DenseNet50, each layer is connected to every other layer in a" dense" manner, meaning that the output of each layer is fed as input to all subsequent layers. is structure helps the model reuse features and reduces the number of parameters, making it both computationally efficient and highly accurate. DenseNet50 consists of 50 layers, making it a moderately deep model suited for complex image classification tasks, including medical imaging applications like brain tumor detection. e dense connections alleviate the vanishing gradient problem, allowing for efficient training even in deeper networks, while also promoting Inception training and loss analysis.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.3">VGG 16 training and loss analysis</head><p>In summary, these plots show that the VGG19 model achieves high accuracy on both the training and validation sets, with the training accuracy nearing 100% and the validation accuracy close to 95%. However, the discrepancy between the training and validation performance, particularly in loss, suggests potential overfitting, which could be mitigated through regularization techniques, data augmentation, or early stopping. ese visualizations are useful for understanding the model's learning behavior and making informed decisions for further model tuning and optimization as shown in the Figure <ref type="figure" target="#fig_10">19</ref>. e close alignment between training and validation loss curves supports the idea that the model has achieved a good fit without significant overfitting as shown in Figure <ref type="figure" target="#fig_23">20</ref>.</p><p>When comparing these results with existing research studies, the 4-conv-1-dense-1-dropout model achieves an accuracy higher than most of the reported results in the literature. For instance, <ref type="bibr" target="#b11">Kumar et al. (2021)</ref> employed a Residual Network with Global Average Pooling Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 23 frontiersin.org and achieved 96.3% accuracy, which is slightly lower than the 95.86% accuracy of our best model. Similarly, Khan et al. (2020) a multimodal CNN with robust feature selection and obtained 97.8% accuracy, indicating that while our model is highly competitive, the integration of multimodal data could further enhance performance. Other models from literature, such as Singh and Agarwal (2023), who implemented an enhanced CNN and achieved 98.2% accuracy, suggest that architectural refinements, additional pre-processing techniques, or more complex network configurations could provide marginal improvements. Furthermore, Zhang et al. (2021) utilized an attention-guided deep learning model and achieved 98.0% accuracy, reinforcing the potential benefits of incorporating attention mechanisms to refine feature extraction.  Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 24 frontiersin.org On the other hand, some studies, such as Abiwinanda et al. (2019) with a basic CNN (84.19%) and Amin et al. (2020) with an LSTMbased model (95.4%), report significantly lower accuracy than our best-performing model.</p><p>is suggests that while recurrent architectures such as LSTMs can be useful, CNN-based models remain the dominant approach for image-based tumor classification due to their ability to capture spatial patterns effectively. Additionally, models that leveraged hybrid approaches, such as <ref type="bibr" target="#b1">Ali et al. (2022)</ref>, who combined a sequential machine learning pipeline with an attention mechanism (96.8%), performed comparably with our best model.</p><p>is highlights that while deeper and more complex architectures can enhance classification, careful tuning of dropout layers, convolutional depth, and dense connections remains crucial in achieving optimal accuracy.</p><p>Overall, the 4-conv-1-dense-1-dropout architecture demonstrates state-of-the-art performance compared to most CNN-based approaches as given in the literature survey, surpassing many conventional architectures while competing closely with more advanced models. e results emphasize that an optimized CNN with appropriate dropout regularization can achieve high accuracy while maintaining robustness in brain tumor classification tasks. Statistical validation (e.g., the paired t-test or Wilcoxon signed-rank test) was experimented to further substantiate the superiority of the proposed CNN over other architectures, and the results are represented in the Table <ref type="table" target="#tab_11">6</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.6">Comparative study of the XAI methods</head><p>In the context of Explainable AI (XAI) for brain tumor classification, Gradient-weighted Class Activation Mapping (Grad-CAM) and Local Interpretable Model-agnostic Explanations (LIME) serve as two widely used techniques for visualizing model decisionmaking. Both methods aim to enhance model transparency, enabling clinicians to understand how the deep learning model arrives at a specific classification. A comparative analysis of Grad-CAM and LIME, based on the results and visual interpretations, reveals distinct strengths and limitations in their applicability to medical imaging (Table <ref type="table">7</ref>).</p><p>Grad-CAM generates class-specific heatmaps by computing the gradient of the predicted class score concerning the final convolutional layer, highlighting salient regions in the image that contribute most to the model's decision. e generated heatmaps in our study showed that Grad-CAM effectively highlights tumor regions with high spatial precision, making it particularly useful for radiologists to verify whether the model is focusing on the correct anatomical structures.</p><p>In cases where the model predicted glioma or meningioma, the heatmaps consistently activated around the tumor mass, reinforcing the model's interpretability.</p><p>In Figure <ref type="figure">21</ref>, the Grad-CAM heatmap visualizes the regions of the brain MRI that contributes to the prediction of the model. e highlighted regions in red and yellow represents the regions with higher model attention, indicating potential tumor regions. By applying grad-cam in the early stages of the model development. it ensures that researchers can interpret how the model focuses on relevant anatomical structures instead of background details. is interpretability helps in refining the model architecture, adjusting hyperparameters, and understanding potential biases.</p><p>However, there are limitations to these visualizations. As you can see in Figure <ref type="figure" target="#fig_26">22</ref>, the Grad-Cam's resolution is might o en be coarse, meaning it may produce vague boundaries and in some cases, missing fine details. Additionally, Grad-CAM does not provide quantitative measure of uncertainty, which limits its decisions in cases where confidence assessment is necessary. Also, Grad-CAM is inherently limited by its dependency on convolutional layers, which makes it less effective for fully connected architectures.</p><p>On the other hand, LIME operates by perturbing the input image and analyzing the impact on predictions to approximate a In Figure <ref type="figure" target="#fig_27">23</ref> and 24, the LIME visualizations highlight regions of the brain MRI that significantly contributed to the model's decision.</p><p>e highlighted yellow boundaries mark areas where the model focused its attention, correctly identifying the tumor. is local explanation helps validate the model's accuracy and ensures it is not relying on irrelevant features. LIME is particularly useful in understanding how the model differentiates between healthy and abnormal tissue, providing a layer of interpretability o en lacking in deep learning systems. However, LIME also has limitations. Consider Figures <ref type="figure" target="#fig_10">19</ref> and <ref type="figure" target="#fig_23">20</ref>, it perturbs the input data and builds surrogate models to explain predictions, its explanations can vary based on the sampling process and parameter choices. Additionally, it may sometimes highlight non-tumor regions, especially in noisy or complex medical images. e localized nature of LIME explanations also means it might miss broader contextual insights that global interpretability methods could provide.</p><p>When comparing the two methods, Grad-CAM proves to be more effective for global interpretability, allowing domain experts to visualize the primary decision-making areas at a glance. is is crucial in confirming clinical validity, as a well-trained model should consistently focus on the tumor region across different images. LIME, in contrast, is more suitable for local interpretability, as it helps identify specific features and potential biases influencing the model's classification. Its ability to provide fine-grained attributions makes it valuable for understanding misclassifications and edge cases in medical imaging.</p><p>Ultimately, the choice between Grad-CAM and LIME depends on the specific goals of the study. For validating model accuracy in medical diagnostics such as brain tumor classification, Grad-CAM offers a clear advantage. However, by combining both methods, XAI could offer a more comprehensive evaluation, leveraging Grad-CAM's class-specific explanations and LIME's broader interpretability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.7">Limitations</head><p>While the proposed approach demonstrates strong classification performance and interpretability, several limitations remain that warrant further investigation. First, the model was primarily trained on the Crystal Clean Brain Tumor MRI dataset sourced from Kaggle, which, despite its clarity and balanced labeling, may not fully capture the imaging diversity and clinical variability present in large-scale, multi-institutional datasets. Although cross-verification against other benchmark datasets indicated consistent performance, broader validation using heterogeneous datasets such as BraTS, TCIA, or local hospital archives is essential to confirm generalizability across scanners, acquisition protocols, and patient demographics.</p><p>Second, the explainability mechanisms employed-Grad-CAM and LIME-proved valuable in visualizing the model's focus regions and refining architecture design. However, certain visual explanations occasionally highlighted non-tumor areas, suggesting either subtle biases in learned feature representations or inherent granularity limitations in current XAI methods. While the dataset annotations provided reliable tumor localization, further validation from radiologists and</p><p>TABLE 7 Custom CNN architectures and their XAI-based inference analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model name</head><p>Inference (XAI/performance)</p><p>3-conv-2-dense Fast training and low resource usage; however, Grad-CAM showed weak tumor localization. Struggled with irregular tumor shapes and complex boundaries, suggesting underfitting. 3-conv-3-dense Improved feature abstraction with an extra dense layer; Grad-CAM attention slightly better. Still moderate overfitting, requiring regularization or pruning in deeper layers. 2 -conv-5-dense Dense-heavy architecture captured more detail but suffered from high variance and overfitting. Grad-CAM maps lacked focus, o en attending non-tumor areas. 4-conv-3-dense Balanced learning with deeper feature stacks; improved attention heatmaps. However, marginal gains versus training cost limit suitability for real-time use. 3-conv-1-dense-1-dropout Effective generalization through dropout; clearer Grad-CAM and LIME focus on tumor boundaries. Slight drop in precision but more robust across data splits. 5-conv-3-dense-1-dropout XAI maps were sharper and consistent across samples; however, added complexity led to longer training time with diminishing accuracy improvements. 4-conv-2-dense-1-dropout Efficient configuration with acceptable training cost; XAI showed tight attention focus; slightly lower recall than deeper networks but easier to interpret and deploy. 2-conv-2-dense-1-dropout L2 regularization helped reduce overfitting; Grad-CAM and LIME maps showed stable but shallow attention. Suitable for edge deployment, but limited capacity for complex patterns. 3-conv-2-dense-2-dropout Combined dropout and L2 significantly improved generalization. XAI visualizations showed tumor-focused activation, supporting model trustworthiness. 4-conv-1-dense-1-dropout Demonstrated strongest overall performance in terms of accuracy, robustness, and XAI clarity. Clean heatmaps and reduced overfitting; selected as best-performing model. 5-conv-3-dense-2-dropout Strong visual explanations but marginal gains in accuracy. Model training was resource-intensive and less interpretable due to increased depth.   Frontiers in Artificial Intelligence 27 frontiersin.org neuro-oncology experts would enhance confidence in these interpretability outputs and ensure that the visual reasoning aligns with clinical judgment. ird, the current study was limited to classification and did not incorporate segmentation, which is essential for delineating tumor boundaries and guiding clinical decision-making such as surgical planning or radiotherapy targeting. Extending the framework to include joint segmentation-classification pipelines or multimodal MRI integration could offer a more holistic diagnostic tool. Additionally, computational scalability and real-time deployment remain challenges-especially for integration into federated or privacy-preserving frameworks, which could help address data-sharing constraints in clinical environments.</p><p>Overall, while the proposed XAI-integrated CNN framework offers an interpretable and efficient solution for brain tumor classification, future work should focus on multi-center validation, expert-based explanation assessment, and the inclusion of segmentation and federated extensions to strengthen clinical applicability and ethical transparency. Future clinical integration must also address ethical and privacy considerations. Future clinical integration must also address ethical and privacy considerations. Approaches such as Argumentation-based Explainable <ref type="bibr">AI Caroprese et al. (2023)</ref> could support transparent reasoning and traceable decision pathways. Similarly, federated learning frameworks <ref type="bibr" target="#b8">(Gagliardi et al., 2025)</ref> offer potential for distributed training across medical institutions, preserving patient confidentiality while enhancing dataset diversity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Conclusion</head><p>e brain tumor classification project achieved its goal by developing and deploying deep learning models to accurately classify brain tumors from MRI data. Various architectures, such as Convolutional Neural Networks (CNNs) and Transformer-based models, were designed, trained, and evaluated for their effectiveness in handling medical imaging data. e CNN models excelled in feature extraction and classification tasks, reaching an accuracy of up to 98.65%, making them valuable tools for medical practitioners in detecting and diagnosing brain tumors. While Transformer models showed potential, they required more computational resources and fine-tuning to improve their efficiency for real-time deployment.</p><p>To ensure accessibility, the project deployed the best-performing models through web interfaces using frameworks like Streamlit and Gradio. ese interfaces allowed for seamless real-time image uploads and classification, providing an intuitive experience for users. e deployment demonstrated the practical application of deep learning in medical diagnostics, supporting radiologists and healthcare professionals in identifying brain tumors early. e project highlights the potential of deep learning in medical image classification and lays the foundation for future advancements, evolving into a more powerful tool for early tumor detection and diagnosis. Looking ahead, there are areas for improvement and expansion in the brain tumor classification project.</p><p>Future work will involve refining advanced models with improved attention mechanisms and feature extraction techniques, enhancing the ability to detect subtle tumor features. An exciting prospect is the integration of Large Language Models (LLMs) a er the classification stage, generating detailed diagnostic reports that summarize the findings and provide insights into tumor characteristics and recommended actions.</p><p>is integration would enhance the interpretability and usefulness of the model's output, bridging the gap between predictions and clinical insights.</p><p>Additionally, segmentation of brain tumors remains a key area for future development. Using the BraTS dataset will improve tumor boundary detection, aiding in assessing tumor growth and response to treatment. Future research will focus on developing segmentation models integrated with the classification models for comprehensive brain tumor analysis. Rigorous fine-tuning of Srinivas and Parvathi 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 28 frontiersin.org classification models and LLMs will enhance accuracy, robustness, and generalization across various datasets and clinical scenarios.</p><p>Exploring multimodal MRI data integration will capture diverse tumor characteristics, improving accuracy and comprehensiveness, providing a holistic view for better diagnosis and treatment planning. In summary, the current project has shown promising results in brain tumor classification, and future work will enhance the system's capabilities, making it more accurate, accessible, and effective in clinical practice. Although the proposed system demonstrates promising performance, several limitations should be acknowledged. First, the dataset used in this study may not fully capture the diversity of patient populations or imaging conditions encountered in real-world clinical settings. is may affect the model's generalizability across different institutions and acquisition protocols. Second, the system's performance has not yet been validated on external, multi-center datasets, which is essential to assess cross-site robustness. Finally, while the current implementation is computationally efficient for researchscale experiments, further optimization and integration with hospital information systems would be required for scalable clinical deployment.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>FIGURE 1Different types of datasets images.</figDesc><graphic coords="4,68.79,90.64,457.92,402.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>FIGURE 2Tumor contour of MRI images.</figDesc><graphic coords="5,69.52,90.64,456.48,236.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>FIGURE 3Depicts the percentage of images in each class.</figDesc><graphic coords="6,68.79,90.64,457.92,482.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><figDesc>extensive fine-tuning to adapt to medical datasets, whereas the proposed CNN, trained from scratch on domain-specific data, achieves high accuracy with tailored feature representation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><figDesc>FIGURE 4Augmentation of MRI images.</figDesc><graphic coords="7,68.20,90.64,204.00,174.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE 5</head><label>5</label><figDesc>FIGURE 5</figDesc><graphic coords="8,69.51,90.64,456.48,245.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>A</head><figDesc>er the convolutional feature extraction process, the output is flattened and passed through a 512-node fully connected layer, where learned features are aggregated for classification. e inclusion of a single dropout layer (50%) prevents overfitting by randomly deactivating neurons during training, ensuring better generalization to unseen medical images. e so max activation in the final dense layer facilitates multi-class tumor classification. To enhance model interpretability, Grad-CAM (Gradient-weighted Class Activation Mapping) and LIME (Local Interpretable Model-agnostic Explanations) were employed. Grad-CAM visualizations provided heatmaps that highlighted the most influential regions in MRI scans, ensuring that the convolutional layers were focusing on tumor regions rather than background artifacts. LIME further validated the model's decisionmaking by generating local perturbations and identifying key image regions that contributed to the final classification. ese explainability techniques reinforce the model's clinical applicability, ensuring transparency in decision-making for medical professionals.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>FIGURE 6</head><label>6</label><figDesc>FIGURE 6</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><figDesc>FIGURE 7Visualizing convolution layer activations of 4-conv-1-dense-1dropout architecture.</figDesc><graphic coords="9,323.32,433.43,204.00,217.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>FIGURE 8</head><label>8</label><figDesc>FIGURE 8Layer view of the 3-conv-2-dense-2-dropout architecture.</figDesc><graphic coords="10,68.79,369.97,457.92,367.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>FIGURE 9</head><label>9</label><figDesc>FIGURE 9Layer view of the 5-conv-3-dense-2-dropout architecture.</figDesc><graphic coords="13,68.92,90.64,457.68,369.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>FIGURE 10</head><label>10</label><figDesc>FIGURE 10Pituitary tumor MRI image showing original image on the left and superimposed image with a heatmap generated through averaging outputs of 3-conv-2-dense-2-dropout CNN layers.</figDesc><graphic coords="14,69.51,90.64,456.48,224.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>FIGURE 11</head><label>11</label><figDesc>FIGURE 11Glioma tumor MRI image showing original image on the left and superimposed image with a heatmap generated through averaging outputs of early blocks of VGG19 architecture.</figDesc><graphic coords="14,69.63,389.39,456.24,222.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><figDesc>a high classification performance, indicating its effectiveness in distinguishing between Normal, Glioma, Meningioma, and Pituitary classes. e precision, recall, and F1-score values in Figure14further validate the model's reliability, with all metrics consistently ranging between 0.94 and 0.98 across the different categories.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>FIGURE 13</head><label>13</label><figDesc>FIGURE 13Meningioma tumor MRI image highlighting key areas of the scan when passed through Densenet50 model for classification.</figDesc><graphic coords="16,69.63,90.64,456.24,240.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>FIGURE 14</head><label>14</label><figDesc>FIGURE 14</figDesc><graphic coords="17,68.80,90.64,457.92,376.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><figDesc>6.3 5-conv-3-dense-2-dropout architecturee classification report provides a detailed breakdown of the model's precision, recall, and F1-score for each class. Precision, recall, and F1-score vary across different classes, with the highest performance observed in the classification of Normal and Pituitary classes. Specifically, the model achieves a macro-averaged precision of 83%, recall of 84%, and an F1-score of 84%.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17"><figDesc>FIGURE 15Confusion matrix of 3-conv-2-dense-2-dropout architecture.</figDesc><graphic coords="18,68.91,90.64,457.68,376.08" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18"><figDesc>FIGURE 16Confusion matrix of 5-conv-3-dense-2-dropout architecture.</figDesc><graphic coords="19,68.92,90.64,457.68,376.08" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19"><head>e</head><figDesc>le graph shows the accuracy of the model on both the training and validation datasets over each epoch. e training accuracy (blue line) shows a steady improvement from around 45% at the beginning to approximately 65% by the 20th epoch. e validation accuracy (orange line) starts at around 50%, increases more rapidly than the training accuracy, and eventually surpasses it, reaching around 70%. e higher validation accuracy compared to training accuracy is somewhat unusual, as models typically perform better on the training data. However, this may indicate that the InceptionV3 model is effectively generalizing and has not overfitted the training data. It could also suggest that data augmentation or dropout is being applied to the training set, reducing the training accuracy while improving generalization. e fluctuations, especially in the earlier epochs, indicate the model's gradual learning. Over time, both lines stabilize, with validation accuracy showing slightly less fluctuation, indicating improved performance. e right graph shows the loss of the model on both the training and validation datasets over each epoch. e training loss (blue line) starts high, at around 1.6, and consistently decreases to about 0.8 by the end of the 20th epoch. e validation loss (orange line) follows a similar trend, decreasing from an initial high point and stabilizing between 0.7 and 0.8. e steady decrease in both training and validation losses indicates that the model is learning effectively and converging. e fact that both losses continue to decrease (without significant divergence) suggests that the model is neither overfitting nor underfitting significantly. Although the validation loss fluctuates in some epochs, it generally decreases along-side the training loss, supporting the trend observed in the accuracy plot. e loss values at the end are relatively close, suggesting a well-balanced model that is likely generalizing well to unseen data are shown in the Figure 17.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20"><figDesc>feature propagation and reuse. While the training loss continues to decrease steadily, the validation loss shows more fluctuation in later epochs, which could indicate slight overfitting. However, the overall low loss values and consistent validation performance suggest that the overfitting is mild and that the model generalizes well to unseen data. e divergence between training and validation loss near the end indicates that while the model is fitting well on the training data, it may be slightly over-optimized for this data as shown in Figure18.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_21"><figDesc>e accuracy graph shows how the model's accuracy improves over time on both the training and validation datasets. Accuracy measures the proportion of correct predictions made by the model. In this graph: Training Accuracy (blue line) starts relatively low but increases steadily with each epoch. is upward trend indicates that the model is learning and adapting to the training data. By around the 12th epoch, the training accuracy approaches a high level, close to 1.0, suggesting that the model is performing well on the training set. Validation Accuracy (orange line) starts higher than the training accuracy, indicating that the model initially generalizes well to unseen data. e validation accuracy also improves over the epochs, though it fluctuates slightly, which is expected in validation data. By the 12th epoch, it stabilizes around 0.9, closely following the training accuracy. e parallel behavior of both curves, especially a er the 12th epoch, suggests that the model has not overfitted. In overfitting, the training accuracy would continue to improve, while the validation accuracy would plateau or decline. Here, both metrics closely align, which indicates good generalization to the validation data. 6.5.4 CNN model training and loss analysis e loss graph shows the model's categorical cross-entropy loss on both the training and validation datasets across epochs. Loss measures the degree of error in the model's predictions, with lower values indicating better performance. In this graph: Training Loss (blue line) starts high, indicating significant errors at the beginning of training.As training progresses, the loss rapidly decreases, reflecting the model's improved ability to learn patterns in the data. By the 10th epoch, the training loss has dropped significantly, reaching a stable low level, which suggests that the model has become quite effective in predicting the training data accurately. Validation Loss (orange line) also starts high but follows a similar decreasing pattern. Interestingly, the validation loss is lower than the training loss at several points, particularly in the early epochs. is could be because the validation set may contain simpler patterns than the training set or due to regularization effects. e validation loss stabilizes around the same time as the training loss, indicating that the model's error on unseen data has plateaued, suggesting a balance in learning.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_22"><figDesc>FIGURE 18Densenet training and loss analysis.</figDesc><graphic coords="22,68.79,90.64,457.92,230.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_23"><head>FIGURE 20 CNN</head><label>20</label><figDesc>FIGURE 20CNN training and loss analysis.</figDesc><graphic coords="23,68.80,506.77,457.92,231.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_24"><figDesc>FIGURE 19VGG training and loss analysis.</figDesc><graphic coords="23,68.92,194.77,457.68,238.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_25"><figDesc>FIGURE 21Grad-CAM heatmap visualization of normal MRI image in CNN layers.</figDesc><graphic coords="26,69.51,90.64,456.48,153.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_26"><head>FIGURE 22 Grad-</head><label>22</label><figDesc>FIGURE 22Grad-Cam heatmap visualization of glioma MRI image in Inceptionv3 layers.</figDesc><graphic coords="26,69.63,302.63,456.24,152.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_27"><head>FIGURE 23 LIME</head><label>23</label><figDesc>FIGURE 23 LIME visualization of pituitary MRI image in early stages of Xception model.</figDesc><graphic coords="26,69.63,518.39,456.24,231.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_28"><head>FIGURE 24</head><label>24</label><figDesc>FIGURE 24Lime visualization of glioma MRI image in densenet50 layers.</figDesc><graphic coords="27,69.52,90.64,456.48,232.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="15,69.52,486.61,456.48,239.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>TABLE 4</head><label>4</label><figDesc>Performance comparison of different models.</figDesc><table><row><cell>Models</cell><cell>Accuracy</cell><cell>Loss</cell><cell>Precision</cell><cell>Recall</cell><cell>F1 Score</cell></row><row><cell>3-conv-2-dense</cell><cell>79.12</cell><cell>0.58</cell><cell>0.78</cell><cell>0.81</cell><cell>0.78</cell></row><row><cell>3-conv-3-dense</cell><cell>82.66</cell><cell>1.36</cell><cell>0.81</cell><cell>0.80</cell><cell>0.80</cell></row><row><cell>2-conv-5-dense</cell><cell>83.14</cell><cell>0.48</cell><cell>0.79</cell><cell>0.80</cell><cell>0.80</cell></row><row><cell>4-conv-3-dense</cell><cell>83.09</cell><cell>0.54</cell><cell>0.89</cell><cell>0.90</cell><cell>0.89</cell></row><row><cell>3-conv-1-dense-1-dropout</cell><cell>85.11</cell><cell>0.73</cell><cell>0.86</cell><cell>0.84</cell><cell>0.84</cell></row><row><cell>5-conv-3-dense-1-dropout</cell><cell>92.22</cell><cell>0.43</cell><cell>0.91</cell><cell>0.90</cell><cell>0.90</cell></row><row><cell>4-conv-1-dense-1-dropout</cell><cell>95.86</cell><cell>0.12</cell><cell>0.95</cell><cell>0.95</cell><cell>0.95</cell></row><row><cell>4-conv-2-dense-1-dropout</cell><cell>91.37</cell><cell>0.29</cell><cell>0.92</cell><cell>0.88</cell><cell>0.90</cell></row><row><cell>2-conv-2-dense-1-dropout</cell><cell>86.47</cell><cell>0.93</cell><cell>0.77</cell><cell>0.82</cell><cell>0.79</cell></row><row><cell>(L2 regularization -2 layers)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3-conv-2-dense-2-dropout</cell><cell>92.88</cell><cell>0.25</cell><cell>0.96</cell><cell>0.96</cell><cell>0.95</cell></row><row><cell>(L2 regularization -3 layers)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>5-conv-3-dense-2-dropout</cell><cell>93.53</cell><cell>0.33</cell><cell>0.83</cell><cell>0.84</cell><cell>0.84</cell></row><row><cell>(L2 regularization -6 layers)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>VGG16</cell><cell>88.22</cell><cell>1.49</cell><cell>0.85</cell><cell>0.86</cell><cell>0.84</cell></row><row><cell>InceptionV3</cell><cell>63.60</cell><cell>0.88</cell><cell>0.63</cell><cell>0.61</cell><cell>0.63</cell></row><row><cell>ResNet50</cell><cell>73.41</cell><cell>1.12</cell><cell>0.64</cell><cell>0.67</cell><cell>0.63</cell></row><row><cell>VGG19</cell><cell>93.73</cell><cell>0.03</cell><cell>0.87</cell><cell>0.85</cell><cell>0.85</cell></row><row><cell>Densenet50</cell><cell>90.16</cell><cell>0.20</cell><cell>0.84</cell><cell>0.87</cell><cell>0.87</cell></row><row><cell>Xception</cell><cell>77.41</cell><cell>0.61</cell><cell>0.84</cell><cell>0.82</cell><cell>0.84</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>TABLE 5</head><label>5</label><figDesc>Hyperparameters details.</figDesc><table><row><cell>Model</cell><cell>Conv Layers</cell><cell>Dense</cell><cell>Dropout</cell><cell>L2 Regularization</cell><cell>Hyperparameters</cell></row><row><cell>Architecture</cell><cell></cell><cell>Layers</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>TABLE 6</head><label>6</label><figDesc>Statistical validation-paired t-test or Wilcoxon signed-rank test.feature at the pixel level, offering a different perspective on model decision making. Unlike Grad-CAM, which highlights broad areas of interest, LIME produces superpixel-based explanations, indicating which specific regions, textures, or patterns influenced the classification. is feature is particularly beneficial in detecting false positives or understanding misclassifications, as LIME highlights not only tumor regions but also possible artifacts or non-relevant areas that affected the prediction.</figDesc><table><row><cell>Architecture</cell><cell>Paired t-test</cell><cell>p-value</cell><cell>Wilcoxon (W)</cell><cell cols="2">p-value (Wilcoxon) Significance</cell></row><row><cell></cell><cell>(t)</cell><cell>(t-test)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>3-conv-2-dense</cell><cell>6.6415</cell><cell>1.091e-08</cell><cell>212.0000</cell><cell>2.277e-07</cell><cell>Significant</cell></row><row><cell>3-conv-3-dense</cell><cell>6.2872</cell><cell>4.295e-08</cell><cell>241.0000</cell><cell>6.987e-07</cell><cell>Significant</cell></row><row><cell>2-conv-5-dense</cell><cell>5.2835</cell><cell>1.924e-06</cell><cell>312.0000</cell><cell>9.036e-06</cell><cell>Significant</cell></row><row><cell>4-conv-3-dense</cell><cell>5.1329</cell><cell>3.352e-06</cell><cell>330.0000</cell><cell>1.658e-05</cell><cell>Significant</cell></row><row><cell>3-conv-1-dense-1-dropout</cell><cell>5.1942</cell><cell>2.676e-06</cell><cell>317.0000</cell><cell>1.071e-05</cell><cell>Significant</cell></row><row><cell>4-conv-1-dense-1-dropout</cell><cell>1.6752</cell><cell>9.919e-02</cell><cell>671.0000</cell><cell>7.246e-02</cell><cell>Not</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Significant</cell></row><row><cell>5-conv-3-dense-1-dropout</cell><cell>4.7420</cell><cell>1.381e-05</cell><cell>378.0000</cell><cell>7.712e-05</cell><cell>Significant</cell></row><row><cell>4-conv-1-dense-1-dropout</cell><cell>4.7302</cell><cell>1.441e-05</cell><cell>373.0000</cell><cell>6.608e-05</cell><cell>Significant</cell></row><row><cell>4-conv-2-dense-1-dropout</cell><cell>5.5812</cell><cell>6.331e-07</cell><cell>298.0000</cell><cell>5.569e-06</cell><cell>Significant</cell></row><row><cell>2-conv-2-dense-1-dropout</cell><cell>3.7877</cell><cell>3.588e-04</cell><cell>463.0000</cell><cell>8.765e-04</cell><cell>Significant</cell></row><row><cell>(L2-2)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3-conv-2-dense-2-dropout</cell><cell>6.6276</cell><cell>1.151e-08</cell><cell>212.0000</cell><cell>2.277e-07</cell><cell>Significant</cell></row><row><cell>(L2-3)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>5-conv-3-dense-2-dropout</cell><cell>4.8273</cell><cell>1.017e-05</cell><cell>379.0000</cell><cell>7.953e-05</cell><cell>Significant</cell></row><row><cell>(L2-6)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>https://www.kaggle.com/datasets/sartajbhuvaji/ brain-tumor-classification-mri</p></note>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Funding e author(s) declared that financial support was not received for this work and/or its publication.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>Dataset is openly available from the Kaggle, <ref type="url" target="https://www.kaggle">https://www.kaggle</ref>. com/datasets/mohammadhossein77/brain-tumors-dataset.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Conflict of interest e author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p><p>Generative AI statement e author(s) declared that Generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Classification Using Convolutional Neural Network</title>
+		<author>
+			<persName><forename type="first">Nyoman</forename><surname>Abiwinanda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Hanif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Tafwida</forename><surname>Hesaputra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Astri</forename><surname>Handayani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tati</forename><forename type="middle">Rajab</forename><surname>Mengko</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-10-9035-6_33</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IFMBE Proceedings</title>
+		<meeting><address><addrLine>Prague, Czech Republic</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Singapore</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="183" to="189" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abiwinanda, N., Hanif, M., Hesaputra, S.T., Handayani, A., and Mengko, T.R. (2019). &quot;Brain tumor classification using convolutional neural network. &quot; in World Congress on Medical Physics and Biomedical Engineering, Prague, Czech Republic. doi: 10.1007/978-981-10-9035-6_33</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A Sequential Machine Learning-cum-Attention Mechanism for Effective Segmentation of Brain Tumor</title>
+		<author>
+			<persName><forename type="first">Tahir</forename><forename type="middle">Mohammad</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Nawaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Attique</forename><surname>Ur Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rana</forename><forename type="middle">Zeeshan</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdul</forename><forename type="middle">Rehman</forename><surname>Javed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thippa</forename><forename type="middle">Reddy</forename><surname>Gadekallu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chin-Ling</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chih-Ming</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2022.873268</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">873268</biblScope>
+			<date type="published" when="2022-06-01">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ali, T. M., Nawaz, A., Rehman, A. U., Ahmad, R. Z., Javed, A. R., Gadekallu, T. R., et al. (2022). A sequential machine learning-cum-attention mechanism for effective segmentation of brain tumor. Front. Oncol. 12:873268. doi: 10.3389/fonc.2022.873268</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Brain tumor detection: a long short-term memory (LSTM)-based learning model</title>
+		<author>
+			<persName><forename type="first">Javaria</forename><surname>Amin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Sharif</surname></persName>
+			<idno type="ORCID">0000-0002-1355-2168</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mudassar</forename><surname>Raza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafiq</forename><surname>Sial</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shafqat</forename><forename type="middle">Ali</forename><surname>Shad</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00521-019-04650-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computing and Applications</title>
+		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
+		<idno type="ISSN">0941-0643</idno>
+		<idno type="ISSNe">1433-3058</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="15965" to="15973" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amin, J., Sharif, M., Raza, M., Saba, T., Sial, R., and Shad, S. A. (2020). Brain tumor detection: a long short-term memory (lstm)-based learning model. Neural Comput. &amp; Applic. 32, 15965-15973. doi: 10.1007/s00521-019-04650-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Machine Learning in Oncology: Methods, Applications, and Challenges</title>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Bertsimas</surname></persName>
+			<idno type="ORCID">0000-0002-1985-1003</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Holly</forename><surname>Wiberg</surname></persName>
+			<idno type="ORCID">0000-0002-4251-905X</idno>
+		</author>
+		<idno type="DOI">10.1200/cci.20.00072</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JCO Clinical Cancer Informatics</title>
+		<title level="j" type="abbrev">JCO Clinical Cancer Informatics</title>
+		<idno type="ISSNe">2473-4276</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="885" to="894" />
+			<date type="published" when="2020-11">2020</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bertsimas, D., and Wiberg, H. (2020). Machine learning in oncology: methods, applications, and challenges. JCO Clin. Cancer Inform. 4, 885-894. doi: 10.1200/ CCI.20.00072</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Revealing Brain Tumor with Federated Learning</title>
+		<author>
+			<persName><forename type="first">Luciano</forename><surname>Caroprese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommaso</forename><surname>Ruga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eugenio</forename><surname>Vocaturo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ester</forename><surname>Zumpano</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bibm58861.2023.10385865</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-12-05">2023</date>
+			<biblScope unit="page" from="3868" to="3873" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Caroprese, L., Ruga, T., Vocaturo, E., and Zumpano, E. (2023). &quot;Revealing brain tumor with federated learning. &quot; in 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), pp. 3868-3873. IEEE</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Argumentation approaches for explanaible AI in medical informatics</title>
+		<author>
+			<persName><forename type="first">Luciano</forename><surname>Caroprese</surname></persName>
+			<idno type="ORCID">0000-0002-0173-0131</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eugenio</forename><surname>Vocaturo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ester</forename><surname>Zumpano</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.iswa.2022.200109</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Intelligent Systems with Applications</title>
+		<title level="j" type="abbrev">Intelligent Systems with Applications</title>
+		<idno type="ISSN">2667-3053</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page">200109</biblScope>
+			<date type="published" when="2022-11">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Caroprese, L., Vocaturo, E., and Zumpano, E. (2022). Argumentation approaches for explanaible ai in medical informatics. Intell. Syst. Appl. 16:200109. doi: 10.1016/j. iswa.2022.200109</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Radiomics-Based Machine Learning in Differentiation Between Glioblastoma and Metastatic Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Chaoyue</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejin</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuelei</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2019.00806</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">806</biblScope>
+			<date type="published" when="2019-08-22">2019</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, C., Ou, X., Wang, J., Guo, W., and Ma, X. (2019). Radiomics-based machine learning in differentiation between glioblastoma and metastatic brain tumors. Front. Oncol. 9:806. doi: 10.3389/fonc.2019.00806</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Segmentation Using Deep Capsule Network and Latent-Dynamic Conditional Random Fields</title>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><surname>Elmezain</surname></persName>
+			<idno type="ORCID">0000-0001-8750-1366</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amena</forename><surname>Mahmoud</surname></persName>
+			<idno type="ORCID">0000-0001-5415-2972</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><forename type="middle">T</forename><surname>Mosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wael</forename><surname>Said</surname></persName>
+			<idno type="ORCID">0000-0001-8623-6847</idno>
+		</author>
+		<idno type="DOI">10.3390/jimaging8070190</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging</title>
+		<title level="j" type="abbrev">J. Imaging</title>
+		<idno type="ISSNe">2313-433X</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">190</biblScope>
+			<date type="published" when="2022-07-08">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elmezain, M., Mahmoud, A., Mosa, D. T., and Said, W. (2022). Brain tumor segmentation using deep capsule network and latent-dynamic conditional random fields. J. Imaging 8:190. doi: 10.3390/jimaging8070190</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">BrAInVision: A hybrid explainable Artificial Intelligence framework for brain MRI analysis</title>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Gagliardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danilo</forename><surname>Maurmo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommaso</forename><surname>Ruga</surname></persName>
+			<idno type="ORCID">0009-0006-3662-6955</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eugenio</forename><surname>Vocaturo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ester</forename><surname>Zumpano</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imavis.2025.105629</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Image and Vision Computing</title>
+		<title level="j" type="abbrev">Image and Vision Computing</title>
+		<idno type="ISSN">0262-8856</idno>
+		<imprint>
+			<biblScope unit="volume">161</biblScope>
+			<biblScope unit="page">105629</biblScope>
+			<date type="published" when="2025-09">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gagliardi, M., Maurmo, D., Ruga, T., Vocaturo, E., and Zumpano, E. (2025). Brainvision: a hybrid explainable artificial intelligence framework for brain mri analysis. Image Vis. Comput. 161:105629. doi: 10.1016/j.imavis.2025.105629</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Comparative Study of various techniques using Deep Learning for Brain Tumor Detection</title>
+		<author>
+			<persName><forename type="first">Deipali</forename><forename type="middle">Vikram</forename><surname>Gore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Deshpande</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/incet49848.2020.9154030</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 International Conference for Emerging Technology (INCET)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gore, D.V., and Deshpande, V. (2020). &quot;Comparative study of various techniques using deep learning for brain tumor detection. &quot; In Proc. Int. Conf. Emerging Technology (INCET). pp. 1-4. IEEE.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature Selection: A Machine Learning Application for Radiologists</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Attique</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-6347-4890</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Imran</forename><surname>Ashraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Majed</forename><surname>Alhaisoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robertas</forename><surname>Damaševičius</surname></persName>
+			<idno type="ORCID">0000-0001-9990-1084</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafal</forename><surname>Scherer</surname></persName>
+			<idno type="ORCID">0000-0001-9592-262X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+			<idno type="ORCID">0000-0002-3817-2655</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Ahmad Chan</forename><surname>Bukhari</surname></persName>
+			<idno type="ORCID">0000-0002-6517-5261</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics10080565</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">565</biblScope>
+			<date type="published" when="2020-08-06">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khan, M. A. A. I., Alhaisoni, M., Damaˇseviˇcius, R., Scherer, R., Rehman, A., and Bukhari, S. A. C. (2020). Multimodal brain tumor classification using deep learning and robust feature selection: a machine learning application for radiologists. Diagnostics 10:565. doi: 10.3390/diagnostics10080565</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Multi-class brain tumor classification using residual network and global average pooling</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Lokesh</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jagadeesh</forename><surname>Kakarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Venkateswarlu</forename><surname>Isunuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munesh</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-020-10335-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Tools and Applications</title>
+		<title level="j" type="abbrev">Multimed Tools Appl</title>
+		<idno type="ISSN">1380-7501</idno>
+		<idno type="ISSNe">1573-7721</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="13429" to="13438" />
+			<date type="published" when="2021-01-15">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar, R. L., Kakarla, J., Isunuri, B. V., and Singh, M. (2021). Multi-class brain tumor classification using residual network and global average pooling. Multimed. Tools Appl. 80, 13429-13438. doi: 10.1007/s11042-020-10335-4</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Advanced Deep Learning and Machine Learning Techniques for MRI Brain Tumor Analysis: A Review</title>
+		<author>
+			<persName><forename type="first">Rim</forename><surname>Missaoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wided</forename><surname>Hechkel</surname></persName>
+			<idno type="ORCID">0000-0002-1299-1804</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wajdi</forename><surname>Saadaoui</surname></persName>
+			<idno type="ORCID">0000-0001-8977-9652</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abdelhamid</forename><surname>Helali</surname></persName>
+			<idno type="ORCID">0000-0002-1623-6830</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Leo</surname></persName>
+			<idno type="ORCID">0000-0001-5636-6130</idno>
+		</author>
+		<idno type="DOI">10.3390/s25092746</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">2746</biblScope>
+			<date type="published" when="2025-04-26">2025</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Missaoui, R., Hechkel, W., Saadaoui, W., Helali, A., and Leo, M. (2025). Advanced deep learning and machine learning techniques for mri brain tumor analysis: a review. Sensors 25:2746. doi: 10.3390/s25092746</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Brain MRI classification and segmentation of glioma, pituitary and meningioma tumors using deep learning approaches</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mostafa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Haddad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">A E H</forename><surname>Taha</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/frai.2025.1700214</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Intelligent Methods, Systems, and Applications (IMSA)</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="482" to="488" />
+		</imprint>
+	</monogr>
+	<note>Frontiers in Artificial Intelligence 29 frontiersin</note>
+	<note type="raw_reference">Mostafa, H., Haddad, N., Mohamed, H., and Taha, Z.A.E.H. (2024). &quot;Brain MRI classification and segmentation of glioma, pituitary and meningioma tumors using deep learning approaches. &quot; in Intelligent Methods, Systems, and Applications (IMSA), pp. 482-488. IEEE. 10.3389/frai.2025.1700214 Frontiers in Artificial Intelligence 29 frontiersin.org</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Role of deep learning in brain tumor detection and classification (2015 to 2020): A review</title>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Nazir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sadia</forename><surname>Shakil</surname></persName>
+			<idno type="ORCID">0000-0001-7218-7482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khurram</forename><surname>Khurshid</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compmedimag.2021.101940</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computerized Medical Imaging and Graphics</title>
+		<title level="j" type="abbrev">Computerized Medical Imaging and Graphics</title>
+		<idno type="ISSN">0895-6111</idno>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page">101940</biblScope>
+			<date type="published" when="2021-07">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nazir, M., Shakil, S., and Khurshid, K. (2021). Role of deep learning in brain tumor detection and classification (2015 to 2020): a review. Comput. Med. Imaging Graph. 91:101940. doi: 10.1016/j.compmedimag.2021.101940</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Design of encoded graphene-gold metasurface-based circular ring and square sensors for brain tumor detection and optimization using XGBoost algorithm</title>
+		<author>
+			<persName><forename type="first">Shobhit</forename><forename type="middle">K</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Wekalao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ngaira</forename><surname>Mandela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fahad</forename><forename type="middle">Ahmed</forename><surname>Al-Zahrani</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.diamond.2024.111439</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diamond and Related Materials</title>
+		<title level="j" type="abbrev">Diamond and Related Materials</title>
+		<idno type="ISSN">0925-9635</idno>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="page">111439</biblScope>
+			<date type="published" when="2024-10">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Patel, S. K., Wekalao, J., Mandela, N., and Al-Zahrani, F. A. (2024). Design of encoded graphene-gold metasurface-based circular ring and square sensors for brain tumor detection and optimization using xgboost algorithm. Diam. Relat. Mater. 148:111439. doi: 10.1016/j.diamond.2024.111439</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Classification of brain tumors and auto-immune disease using ensemble learning</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S M</forename><surname>Shafi</surname></persName>
+			<idno type="ORCID">0000-0003-1644-9307</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Bayazid</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanjilul</forename><surname>Anwar</surname></persName>
+			<idno type="ORCID">0000-0002-7629-8769</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rajkumar</forename><forename type="middle">Shashwata</forename><surname>Halder</surname></persName>
+			<idno type="ORCID">0000-0002-7870-6404</idno>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M Emrul</forename><surname>Kays</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imu.2021.100608</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Informatics in Medicine Unlocked</title>
+		<title level="j" type="abbrev">Informatics in Medicine Unlocked</title>
+		<idno type="ISSN">2352-9148</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page">100608</biblScope>
+			<date type="published" when="2021">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shafi, A. S. M., Rahman, M. B., Anwar, T., Halder, R. S., and Kays, H. E. (2021). Classification of brain tumors and auto-immune disease using ensemble learning. Inf. Med. Unlocked 24:100608.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An automated brain tumor classification in MR images using an enhanced convolutional neural network</title>
+		<author>
+			<persName><forename type="first">Ravendra</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bharat</forename><forename type="middle">Bhushan</forename><surname>Agarwal</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s41870-022-01095-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Technology</title>
+		<title level="j" type="abbrev">Int. j. inf. tecnol.</title>
+		<idno type="ISSN">2511-2104</idno>
+		<idno type="ISSNe">2511-2112</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="665" to="674" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh, R., and Agarwal, B. B. (2023). An automated brain tumor classification in mr images using an enhanced convolutional neural network. Int. J. Inf. Technol. 15, 665-674. doi: 10.1007/s41870-022-01095-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A robust deep learning model for brain tumor detection and classification using efficient net: a brief meta-analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Prabha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goyal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Adv. Res. Appl. Sci. Eng. Technol</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="26" to="51" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh, R., Prabha, C., Malik, M., and Goyal, A. (2024). A robust deep learning model for brain tumor detection and classification using efficient net: a brief meta-analysis. J. Adv. Res. Appl. Sci. Eng. Technol. 49, 26-51.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Brain Tumors Classification for MR images based on Attention Guided Deep Learning Model</title>
+		<author>
+			<persName><forename type="first">Yuhao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuhang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoxiang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kejia</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shufan</forename><surname>Ji</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/embc46164.2021.9630571</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 43rd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-11-01">2021</date>
+			<biblScope unit="page" from="3233" to="3236" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, Y., Wang, S., Wu, H., Hu, K., and Ji, S. (2021). &quot;Brain tumor classification for mr images based on attention-guided deep learning model. &quot; in: Proc. 43rd Annu. Int. Conf. IEEE Engineering in Medicine and Biology Society.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

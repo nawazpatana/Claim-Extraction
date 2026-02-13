@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Generating crossmodal gene expression from cancer histopathology improves multimodal AI predictions</title>
+				<funder ref="#_UmqjZB9">
+					<orgName type="full">CRUK City of London Centre</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">IIT KGP AI4ICPS Chanakya Fellowship</orgName>
+				</funder>
+				<funder ref="#_JKSRRtv">
+					<orgName type="full">Indo-Swedish DBT-Vinnova</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Turing-Roche Strategic Partnership</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-31">2025-12-31</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Samiran</forename><surname>Dey</surname></persName>
+							<idno type="ORCID">0009-0009-6818-3505</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> School of Mathematical &amp; Computational Sciences , Indian Association for the Cultivation of Science , Kolkata , India.</note>
+								<orgName type="department">School of Mathematical &amp; Computational Sciences</orgName>
+								<orgName type="institution">Indian Association for the Cultivation of Science</orgName>
+								<address>
+									<settlement>Kolkata</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Christopher</forename><forename type="middle">R S</forename><surname>Banerji</surname></persName>
+							<idno type="ORCID">0000-0002-4373-7657</idno>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Alan Turing Institute , London , UK.</note>
+								<orgName type="institution">The Alan Turing Institute</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Comprehensive Cancer Center , King&apos;s College London , London , UK.</note>
+								<orgName type="department">Comprehensive Cancer Center</orgName>
+								<orgName type="institution">King&apos;s College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Partha</forename><surname>Basuchowdhuri</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> School of Mathematical &amp; Computational Sciences , Indian Association for the Cultivation of Science , Kolkata , India.</note>
+								<orgName type="department">School of Mathematical &amp; Computational Sciences</orgName>
+								<orgName type="institution">Indian Association for the Cultivation of Science</orgName>
+								<address>
+									<settlement>Kolkata</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sanjoy</forename><forename type="middle">K</forename><surname>Saha</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Computer Science and Engineering , Jadavpur University , Kolkata , India.</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Jadavpur University</orgName>
+								<address>
+									<settlement>Kolkata</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Deepak</forename><surname>Parashar</surname></persName>
+							<idno type="ORCID">0000-0003-1280-3663</idno>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Tapabrata</forename><surname>Chakraborti</surname></persName>
+							<email>t.chakraborty@ucl.ac.uk</email>
+							<idno type="ORCID">0000-0002-5597-908X</idno>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Alan Turing Institute , London , UK.</note>
+								<orgName type="institution">The Alan Turing Institute</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> UCL Cancer Institute , Dept of Medical Physics &amp; Biomedical Engineering , University College London , London , UK.</note>
+								<orgName type="department">Dept of Medical Physics &amp; Biomedical Engineering</orgName>
+								<orgName type="institution" key="instit1">UCL Cancer Institute</orgName>
+								<orgName type="institution" key="instit2">University College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Generating crossmodal gene expression from cancer histopathology improves multimodal AI predictions</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Nature Communications</title>
+						<title level="j" type="abbrev">Nat Commun</title>
+						<idno type="eISSN">2041-1723</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">17</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-12-31" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">744B17242EF01E02B724A44C7617064B</idno>
+					<idno type="DOI">10.1038/s41467-025-66961-9</idno>
+					<note type="submission">Received: 19 February 2025 Accepted: 19 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-02T10:57+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Emerging research has highlighted that artificial intelligence-based multimodal fusion of digital pathology and transcriptomic features can improve cancer diagnosis (grading/subtyping) and prognosis (survival risk) prediction. However, such direct fusion is impractical in clinical settings, where histopathology remains the gold standard and transcriptomic tests are rarely requested in public healthcare. We experiment on two publicly available multimodal datasets, The Cancer Genomic Atlas and the Clinical Proteomic Tumor Analysis Consortium, spanning four independent cohorts: gliomaglioblastoma, renal, uterine, and breast, and observe significant performance gains in gradation and risk estimation (p-value &lt; 0.05) when incorporating synthesized transcriptomic data with WSIs. Also, predictions using synthesized features were statistically close to those obtained with real transcriptomic data (p-value &gt; 0.05), consistently across cohorts. Here we show that with our diffusion based crossmodal generative AI model, PathGen, gene expressions synthesized from digital histopathology jointly predict cancer grading and patient survival risk with high accuracy (state-of-the-art performance), certainty (through conformal coverage guarantee) and interpretability (through distributed co-attention maps). PathGen code is available on GitHub at <ref type="url" target="https://github.com/Samiran-Dey/PathGen">https://github.com/Samiran-Dey/PathGen</ref> for open use.</p><p>Histopathological assessment is the gold standard for cancer diagnosis and provides information essential for accurate staging to inform prognosis. However, aging populations, strained healthcare services and the increasing diagnostic and prognostic complexity of modern medicine are contributing to an unsustainable workload for practising histopathologists 1 . Modern artificial intelligence (AI) algorithms, particularly deep learning models, can predict cancer grade and sub-types from digital hematoxylin and eosin (H&amp;E) stained pathology slides, complementing and supporting pathology workflows and potentially reducing the high workload burden 2-7 . Very recently, the emergence of pathology foundation models using large vision transformers (ViT) has greatly increased model flexibility, enabling support with a wide variety of downstream tasks and providing greater utility for pathologists <ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref> .</p><p>Classically, histopathology has relied on microscopic assessment of H&amp;E-stained tissue sections, often complemented by targeted panels of immunohistochemical and other special stains, to confirm and refine diagnoses. As technology has advanced, a broader range of</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>molecular tests has become routine for assessing certain tumours. These include genetic analyses such as IDH mutation status, which is required to appropriately subtype gliomas according to the WHO <ref type="bibr" target="#b10">11</ref> and EGFR mutation status, which is essential to guide therapy decisions in non-small cell lung cancers <ref type="bibr" target="#b11">12</ref> . More recently, a range of transcriptomic tests have been developed, which show clear evidence for guiding treatment decisions in specific malignancies <ref type="bibr" target="#b12">13</ref> . Following extensive clinical evaluation, several of these tests have been granted regulatory approval for clinical use <ref type="bibr" target="#b13">14</ref> . However, guidelines, especially in public healthcare systems, strictly limit the application of these transcriptomic tests to a small minority of patients, largely due to their high financial cost and infrastructural requirements <ref type="bibr" target="#b14">15</ref> .</p><p>Recently, AI models employing a multimodal fusion of digital pathology and transcriptomic features, trained on large public datasets, like The Cancer Genomic Atlas (TCGA), have led to significant improvements in the predictive accuracy of both grading and survival risk estimation, compared to unimodal models employing digital H&amp;E slides alone <ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref> . Though these powerful models have the potential to convey substantial health benefits, they are developed in a setting disjoint from the current reality of the clinic. Translation of these models into most healthcare systems is infeasible at present, as the required transcriptomic data is very seldom collected. Future translation requires rigorous, costly and widespread clinical evaluation to determine which patients would benefit from these models sufficiently to justify the cost of transcriptomic data.</p><p>Crossmodal generative AI models can be trained to synthesize one unavailable data modality (transcriptomics) from routinely available modalities (digital pathology) <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref> . Coupled with a multimodal AI model, this could facilitate a cost-effective screening tool to estimate the added value of collecting transcriptomic data for diagnostic/ prognostic assessment of each individual patient. Such an approach could support cost-efficient clinical evaluation, and sustainable translation of multimodal AI models to support pathology workflows.</p><p>In this work, we introduce a diffusion based crossmodal generative model, PathGen <ref type="bibr" target="#b21">22</ref> , that synthesizes transcriptomic data from digital images of H&amp;E-stained slides. We evaluate our model on two publicly available multimodal datasets: The Cancer Genomic Atlas (TCGA) <ref type="bibr" target="#b22">23</ref> and the Clinical Proteomic Tumor Analysis Consortium (CPTAC) <ref type="bibr" target="#b23">24</ref> , using data from four independent cancer cohorts: glioma-glioblastoma, renal, uterine and breast. We find that the generated transcriptomic data are highly similar to the corresponding real transcriptomic data in a hold-out test set. We further demonstrate that the predictive performance of both diagnosis (cancer grading) and prognosis (survival risk) significantly improves when the synthesised transcriptomic data is combined with features learned from the corresponding digital pathology image, using a state-of-the-art ViT-based model through a co-attention mechanism. For practical utility, our model must be trusted by clinicians and attune to emerging regulation <ref type="bibr" target="#b24">25</ref> . We thus provide transparency via detailed attention-based heatmaps for both grading and survival risk prediction, allowing pathologists to visually affirm the clinical relevance of the regions contributing most towards the AI decision. We provide uncertainty quantification, via conformal analysis <ref type="bibr" target="#b25">26</ref> , to allow pathologist users a measure of certainty in the added value of the synthesized transcriptomic data for each patient. Finally, to evaluate algorithmic fairness, we apply our conformal uncertainty quantification to assess model performance analysis across various patient demographics. Our work builds on preliminary studies in crossmodal prediction <ref type="bibr" target="#b7">8,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18</ref> , to provide a road map for sustainable, safe and cost-effective translation of multimodal AI models supporting cancer diagnostics/prognostics, to the clinic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dataset and study design</head><p>Our experiments use publicly available data from TCGA and CPTAC, specifically from four independent cancer cohorts -Glioblastoma Multiforme and Brain Lower Grade Glioma (TCGA-GBM, TCGA-LGG, CPTAC-GBM), Kidney Renal Clear Cell Carcinoma (TCGA-KIRC), Uterine Corpus Endometrial Carcinoma (TCGA-UCEC, CPTAC-UCEC), and Breast Invasive Carcinoma (TCGA-BRCA). For TCGA-GBMLGG, 912 whole slide images (WSIs) coming from 745 cases are used, of which 183 cases belong to TCGA-GBM <ref type="bibr" target="#b26">27</ref> and 562 cases belong to TCGA-LGG <ref type="bibr" target="#b27">28</ref> . We consider 485 WSIs from 462 cases for TCGA-KIRC <ref type="bibr" target="#b28">29</ref> , 294 WSIs from 267 cases for TCGA-UCEC <ref type="bibr" target="#b29">30</ref> , 1010 WSIs from 946 cases for TCGA-BRCA <ref type="bibr" target="#b30">31</ref> , 242 WSIs from 62 cases for CPTAC-GBM <ref type="bibr" target="#b31">32</ref> , and 364 WSIs from 71 cases for CPTAC-UCEC <ref type="bibr" target="#b32">33</ref> for our experiments. The slides have been split into training, validation, calibration, and test sets (Supplementary Table <ref type="table">1</ref>). The models trained using the TCGA data have been evaluated on the corresponding CPTAC cohorts, without any further training or fine-tuning. Cases with missing grade, survival data or transcriptomic data were excluded. The data distribution across various demographic groups like gender, age, censorship status, etc. varies for all cohorts (Supplementary Table <ref type="table">3</ref>).</p><p>Transcriptomic features are selected to match those employed in the successful multimodal models <ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18</ref> . As proposed previously <ref type="bibr" target="#b17">18</ref> , transcriptomic data for each patient is divided into 6 broad categories of genes-tumour suppressor genes, oncogenes, protein kinases, cell differentiation markers, transcription factors, and cytokines and growth factors. However, a gene may occur in multiple gene groups. The number of available gene expression levels for each gene group differs across cohorts but remains same for the TCGA and CPTAC datasets for the same cancer cohort (Supplementary Table <ref type="table">2</ref>). When discussing gene expression levels throughout this paper, we refer to transcript abundance, rather than protein levels.</p><p>Our methodology synthesizes transcriptomic data from WSIs using our diffusion based generative model, PathGen. Synthesized transcriptomes are then used for automated cancer gradation and survival risk estimation to assess whether transcriptomic tests should be performed (Fig. <ref type="figure" target="#fig_0">1</ref>). Transcriptomic data (both real and synthesized) is used at two stages in the predictive model (MCAT_GR)-to co-attend to the WSI patch embeddings and learn a combined feature map that is suitable to predict both grade and survival, and to predict the survival risk of a patient in a learnable ensemble method along with the coattended feature maps. We perform extensive experiments using synthesized transcriptomic data to decide on this model setting (Supplementary Table <ref type="table">4</ref>). The model is trained end-to-end for performing both gradation and survival risk estimation together using the loss function L = λ × L survival + (1 -λ) × L grade , where L survival is the loss for survival risk estimation, L grade is the loss for gradation and λ is the loss coefficient to balance the emphasis between survival risk estimation and gradation. Experiments show that at λ = 0.3 the model performance is optimal with close and high scores for both gradation and survival risk estimation together across glioblastoma-glioma and renal cohorts (Supplementary Fig. <ref type="figure" target="#fig_0">1</ref> and Supplementary Table <ref type="table">4</ref>). Thus, for all results reported in the paper, we use λ = 0.3. For uncertainty estimation using conformal prediction, we choose the error rate α = 0.1. Further details of model architecture, loss function and training methodology are provided in Methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Similarity evaluation of synthesized and real transcriptomic data</head><p>The transcriptomic data synthesized by our model, PathGen, is compared to the real patient transcriptomes to assess similarity. The Spearman correlation coefficient for all gene groups between real and synthesized transcriptomic features evaluates to 0.713 for TCGA-GBMLGG, 0.717 for TCGA-KIRC, 0.436 for TCGA-UCEC, 0.642 for TCGA-BRCA, 0.662 for CPTAC-GBM, and 0.669 for CPTAC-UCEC (Fig. <ref type="figure" target="#fig_1">2a</ref>.i and Supplementary Table <ref type="table">5</ref>). Thus, showing highly significant correlation between real and synthesized transcriptomic data (Spearman correlation p-value &lt; 0.05). The corresponding normalized mean absolute error (nMAE) over all gene groups evaluates to 0.141, 0.160, 0.173, 0.155, 0.167, and 0.178 for TCGA-GBMLGG, TCGA-KIRC, TCGA-UCEC, TCGA-BRCA, CPTAC-GBM, and CPTAC-UCEC, respectively (Fig. <ref type="figure" target="#fig_1">2a</ref>.i and Supplementary Table <ref type="table">5</ref>). Though there exists a high correlation and low MAE between synthetic and real transcriptomic data, there are some variations in correlation across the gene sets and data cohorts (Fig. <ref type="figure" target="#fig_1">2a</ref>.ii, iii and Supplementary Table <ref type="table">5</ref>). Notably, synthesized and real oncogene expression levels are highly correlated for glioblastoma-glioma, renal and breast cohorts (Fig. <ref type="figure" target="#fig_1">2a</ref>.iii and Supplementary Table <ref type="table">5</ref>). This is particularly beneficial for cancer grading or survival estimation because oncogenes, when aberrantly active can serve as biomarkers that drive tumour progression, facilitating the prediction of cancer prognosis <ref type="bibr" target="#b33">34</ref> . Thus, we conclude that the synthesized transcriptomic data are highly correlated with the real transcriptomic data and we gain confidence towards using the former in the predictive pipeline.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Performance evaluation of synthesized transcriptomic data in multimodal prediction</head><p>We next analyse whether PathGen synthesised transcriptomes significantly add value to automated gradation and survival risk estimation, over and above WSIs alone. Evaluation metrics used for grade prediction and survival risk estimation are the Area Under Curve (AUC) and the concordance index (C Index) respectively. For survival risk estimation, the C Index obtained using WSIs alone are 0.842, 0.671, 0.663, 0.603, 0.547, 0.518 for TCGA-GBMLGG, TCGA-KIRC, TCGA-UCEC, TCGA-BRCA, CPTAC-GBM, and CPTAC-UCEC, respectively (Fig. <ref type="figure" target="#fig_1">2b</ref>.i and Supplementary Table <ref type="table">6</ref>). And for gradation, we obtain an AUC of 0.823 for TCGA-GBMLGG, 0.714 for TCGA-KIRC, 0.796 for TCGA-UCEC, 0.736 for CPTAC-GBM, and 0.508 for CPTAC-UCEC (Fig. <ref type="figure" target="#fig_1">2b</ref>.ii and Supplementary Table <ref type="table">6</ref>). Since TCGA-BRCA does not report cancer grades in the clinical data, only survival risk estimation could be performed. The performance significantly improves when PathGen synthesized transcriptomics are used alongside WSIs (Wilcoxon rank-sum test p-value &lt; 0.05), resulting in an AUC of 0.890 and C Index of 0.861 for TCGA-GBMLGG, AUC of 0.773 and C Index of 0.681 for TCGA-KIRC, AUC of 0.821 and C Index of 0.673 for TCGA-UCEC, C Index of 0.720 for TCGA-BRCA, AUC of 0.865 and C Index of 0.565 for CPTAC-GBM, and AUC of 0.593 and C Index of 0.530 for CPTAC-UCEC (Fig. <ref type="figure" target="#fig_1">2b</ref>.i, ii and Supplementary Table <ref type="table">6</ref>). A significant improvement was also noted on evaluating jointly over survival and gradation for using synthesized transcriptomic data with WSIs for prediction (ANOSIM test p-value = 0.001, Supplementary Table <ref type="table">6</ref>), consistent over datasets and cohorts. Thus, in the absence of real transcriptomic data, adding synthesized transcriptomic data significantly improves diagnostic and prognostic predictions compared to using only WSI features.</p><p>We further compare gradation and survival risk predictions using WSIs and PathGen synthesized transcriptomic data to predictions using WSIs and real transcriptomic data. Combining real transcriptomic data with WSIs yields an AUC of 0.907 and C Index of 0.866 for TCGA-GBMLGG jointly, AUC of 0.778 and C Index of 0.697 for TCGA-KIRC, AUC of 0.828 and C Index of 0.680 for TCGA-UCEC, C Index of 0.720 for TCGA-BRCA, AUC of 0.863 and C Index of 0.564 for CPTAC-GBM, and AUC of 0.593 and C Index of 0.533 for CPTAC-UCEC and the corresponding result using synthesized transcriptomic data is provided above (Fig. <ref type="figure" target="#fig_1">2b</ref>.i, ii and Supplementary Table <ref type="table">6</ref>). Remarkably, model performance on using real transcriptomic data is not significantly different to using PathGen synthesized transcriptomes (Wilcoxon rank-sum test p-value &gt; 0.05 and ANOSIM test p-value &gt; 0.05) for gradation and survival risk estimation, both separately and jointly, in all considered TCGA and CPTAC cohorts (Supplementary Table <ref type="table">6</ref>). Thus, the transcriptomic data synthesized by our model, PathGen, consistently performs comparably for gradation and survival risk estimation with no significant difference on average from real transcriptomic data.</p><p>We also compare the performance of our methodology with the state-of-the-art models for using real transcriptomic data and WSI patches. For TCGA-GBMLGG, the C Index evaluated for GSCNN <ref type="bibr" target="#b15">16</ref> is 0.781, DeepAttnMISL 35 is 0.734, MCAT 18 is 0.817, Pathomic fusion 17 is 0.826, whereas our methodology yields a C Index of 0.866 using real transcriptomic data and a C Index of 0.861 using synthesized transcriptomic data for survival risk estimation. PathGen-X 36 obtains a C-Index of 0.81 on the TCGA-GBM cohort; however, their inference stage is unimodal and only considers a section of patients (Grade IV). For gradation, Pathomic fusion 17 has an AUC of 0.906, whereas our methodology has an AUC of 0.907 on real transcriptomic data and an AUC of 0.890 on synthesized transcriptomic data. For TCGA-KIRC, the C Index evaluated for Pathomic fusion 17 is 0.720, whereas for our methodology is 0.697 on real transcriptomic data and 0.681 on synthesized transcriptomic data. However, Pathomic fusion uses ROIs annotated by expert pathologists for predicting grades, while we use transcriptomic features to co-attend to the WSI patch embeddings without requiring any expert intervention, thus reducing expert annotation overheads. For TCGA-UCEC, DeepSets 37 , DeepAttnMISL <ref type="bibr" target="#b34">35</ref> , and MCAT <ref type="bibr" target="#b17">18</ref> achieve a C Index of 0.593, 0.586, and 0.622, respectively, whereas our methodology yields a C Index of 0.680 and 0.673 using real and synthesized transcriptomes, respectively, for survival risk estimation. On TCGA-BRCA, our methodology achieved a C-index of 0.720 for both rel and synthesized transcriptomic profiles, compared to 0.522, 0.577, and 0.580 for DeepSets 37 , DeepAttnMISL <ref type="bibr" target="#b34">35</ref> , and MCAT <ref type="bibr" target="#b17">18</ref> , respectively. We note that the considered SOTA models, DeepSets, DeepAttnMISL, and MCAT, do not perform gradation, so a direct comparison on grade prediction was not possible. For similar reasons, we could only compare the performance of our model with Pathomic fusion for TCGA-GBMLGG gradation and TCGA-KIRC survival risk estimation. Since our model performs better or at least comparably with the state-of-the-art models using real transcriptomic data, and we observe that the predictive performance between using real or synthesized transcriptomic data is very close with no significant difference for the test set population (Wilcoxon rank-sum test p-value &gt; 0.05, Supplementary Table <ref type="table">6</ref>), we may conclude that we achieve stateof-the-art performance using gene expression levels synthesized by our model, PathGen.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transparency evaluation for clinical interpretability</head><p>To visualize intra-tumour heterogeneity, we use our trained model to predict grade and survival risk for individual WSI patches independently. The distributed prediction allows the identification of regions of varied grades within a WSI, highlighting the heterogeneity for clinical assistance (Figs. <ref type="figure" target="#fig_2">3b</ref> and <ref type="figure" target="#fig_3">4b</ref> and Supplementary Figs. <ref type="figure" target="#fig_4">3b-5b</ref>). It is evident that higher-grade regions are correlated to higher risks, as is expected (Fig. <ref type="figure" target="#fig_3">4e</ref>). By observing distributed predictions at different magnification levels corresponding to a WSI, we find that using WSIs at higher resolution helps to obtain more precise predictions for tissue regions, as is expected (Supplementary Fig. <ref type="figure" target="#fig_1">2</ref>).</p><p>Further, we consider the aggregate of the heterogeneous (distributed) predictions and compare it with the grade predicted by the model, considering all WSI patches as input (non-distributed prediction). For the TCGA cohorts, the distributed gradation performance is not significantly different from a one-time prediction with all WSI patches (Wilcoxon ranksum test p-value &gt; 0.05, Fig. <ref type="figure" target="#fig_4">5a</ref>.i). Thus, we see from the results that there is indeed a distributed variation of grade when predicted locally for patches and mapped onto the WSIs as a heatmap, both within and across cohorts, which may provide an additional visual presentation of tumour heterogeneity to the clinician expert (pathologist) to choose whether or not to draw any further intuition from them.</p><p>To add explainability, we next study how transcriptomic data coattends to the corresponding WSI patched. We compare the coattention maps obtained using real and synthesized gene expression levels using Spearman correlation coefficient and nMAE. A higher correlation with a high corresponding nMAE would denote that the range of co-attention values is large for the particular gene group, but the co-attention map is still correlated. TCGA-GBMLGG obtains a correlation of 0.939 and nMAE of 0.043, TCGA-KIRC obtains a correlation of 0.851 and nMAE of 0.063, TCGA-UCEC obtains a correlation of 0.997 and nMAE of 0.022, TCGA-BRCA obtains a correlation of 0.992 and nMAE of 0.014, CPTAC-GBM obtains a correlation of 0.993 and nMAE of 0.013, and CPTAC-UCEC obtains a correlation of 0.998 and   different gene groups. e comparative study of intra-tumour heterogeneity and corresponding co-attention maps obtained for prediction using synthesized transcriptomic data for chosen regions marked with different coloured rectangles.</p><p>nMAE of 0.021 over all gene groups (Fig. <ref type="figure" target="#fig_4">5b</ref>.i). These significantly high correlation values (Spearman correlation p-value &lt; 0.05) and low nMAEs between co-attention maps for real and synthesized transcriptomic data explains the reason for no significant difference between using the same for gradation and survival risk estimation across cohorts and datasets (Wilcoxon ranksum test p-value &gt; 0.05, ANOSIM test p-value &gt; 0.05, Supplementary Table <ref type="table">6</ref>). For all cohorts, co-attention maps attributing to oncogenes are most correlated with a low nMAE, followed by transcription factor genes and tumour suppressor genes (Fig. <ref type="figure" target="#fig_4">5b</ref>.ii, iii). Oncogenes usually drive cell division and survival, thus promoting cancer. Inactivation of tumour suppressor genes can lead to cancer by failing to regulate uncontrolled cell growth <ref type="bibr" target="#b37">38</ref> . So the general co-attention observations above are not unexpected, although a rigorous inference would need a detailed analysis of gene set functional significance, which is outside the scope of this work.</p><p>We further study the contribution of synthesized transcriptomic features in co-attending to the WSI patch embeddings and observe that there are variances in the percentage contribution of individual gene groups in co-attention for all cohorts and datasets (Fig. <ref type="figure" target="#fig_4">5c</ref>.i, ii and Supplementary Table <ref type="table">8</ref>). For most cohorts, the transcription factor genes and oncogenes have the highest co-attention values with the WSI patches for both real and synthesized gene expression levels and hence contribute the most to the prediction (Figs. <ref type="figure" target="#fig_2">3d</ref> and <ref type="figure" target="#fig_3">4d</ref> and Supplementary Figs. <ref type="figure" target="#fig_4">3d-5d</ref>). Since activation of oncogenes is known to drive tumour proliferation <ref type="bibr" target="#b33">34</ref> , having these as one of the higher contributors to co-attention would be aligned with clinical expectations.</p><p>We next visualise specific regions of the WSI and compare the distributed grades, distributed risk and the co-attention maps between synthesized transcriptomic features and the WSI patches (Figs. <ref type="figure" target="#fig_2">3e</ref> and <ref type="figure" target="#fig_3">4e</ref> and Supplementary Figs. <ref type="figure" target="#fig_4">3e-5e</ref>). We observe that ground truth grade regions correspond to higher attention scores and other grade regions correspond to low attention values (Figs. <ref type="figure" target="#fig_4">3-5a</ref>.ii).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Uncertainty quantification for clinical reliability</head><p>We observe that the uncertainty profile of using synthesized transcriptomic data matches that of using real transcriptomic data for both gradation and survival risk estimation, for different patient demographics and stratification across cohorts, by performing conformal prediction (CP) as described in Methods. For TCGA-GBMLGG, the marginal uncertainty (M unc ) for the overall data population evaluates to 0.407 and 0.413 for gradation, and 0.446 and 0.438 for survival risk estimation, on using real and synthesized transcriptomic data, respectively (Fig. <ref type="figure" target="#fig_1">2c</ref>). For TCGA-UCEC, a M unc of 0.337 for gradation and 1.0 for survival is obtained, for both real and synthesized transcriptomic data (Fig. <ref type="figure" target="#fig_1">2c</ref>). For TCGA-KIRC, gradation M unc increases from 0.292 to 0.334, and the survival M unc increases from 0.898 to 0.909 on using synthesized transcriptomic data over their real counterparts (Fig. <ref type="figure" target="#fig_1">2c</ref>). However, the changes in M unc are not significant, proving the similarity in the uncertainty profile between the use of real and synthesized transcriptmic data (Wilcoxon rank sum test pvalue &gt; 0.05, Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref><ref type="table">12</ref><ref type="table">13</ref>).</p><p>Furthermore, we observe that the uncertainty profile remains similar across different demographic groups for real and synthesised transcriptomic data, with no significant difference in uncertainty, by performing stratified conditional conformal prediction as described in Methods (Wilcoxon rank-sum test p-value &gt; 0.05, Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref><ref type="table">12</ref><ref type="table">13</ref>). Additionally, stratifying by demographic categories helps achieve fairness in the distribution of coverage across the population by ensuring each group within the category independently obtains the desired coverage. We find variations in both conditional uncertainty (C unc ) across demographic categories and marginal uncertainty (M unc ) across groups in a category, which is expected (Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref><ref type="table">12</ref><ref type="table">13</ref>). For instance, in comparison to the overall M unc of 0.413, when stratified by gender, C unc decreases to 0.312 (real) and 0.323 (synthesized), and when stratified by time bin, it decreases to 0.335 (real) and 0.331 (synthesized), for TCGA-GBMLGG (Supplementary Table <ref type="table">9</ref>).</p><p>We also find that models trained on the TCGA datasets adapt and calibrate well over the corresponding CPTAC cohorts, not always with a drastic increase in uncertainty, which otherwise is expected. The model trained on TCGA-GBMLGG when calibrated and tested over CPTAC-GBM has a M unc of 0.465 for gradation and 0.206 for survival for both real and synthesized transcriptomic data (Fig. <ref type="figure" target="#fig_1">2c</ref>). On calibrating and testing the model trained on TCGA-UCEC over CPTAC-UCEC, a gradation M unc of 0.821 for real, and 0.818 for synthesized transcriptomic data and a survival M unc of 1.0 for both real and synthesized transcriptomes is observed (Fig. <ref type="figure" target="#fig_1">2c</ref>).</p><p>It may be observed that for a few population groups across some cohorts, the obtained coverage does not always match the desired coverage because of fewer samples in the calibration set. These coverage slacks are expected and can be theoretically computed as a function of the cardinality of the calibration set <ref type="bibr" target="#b25">26</ref> . We find that all obtained coverages that are less than the desired coverage of 0.9 fall within the expected deviation for the corresponding calibration set size of the demographic group (Supplementary Tables <ref type="table">3</ref> and <ref type="table">14</ref>). For many such cases, using synthesized data has increased the coverage at the cost of an insignificant increase in uncertainty (Wilcoxon rank-sum test p-value &gt; 0.05, Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref><ref type="table">12</ref><ref type="table">13</ref>). As risk estimation directly uses the transcriptomic data for prediction and not just for co-attention, such differences in obtained coverage are expected even for minimal differences in the gene expression levels between the synthesized and real transcriptomic features. Moreover, the uncertainty estimates are derived from conformal sets for gradation and risk bounds for survival estimation, which helps to understand the extent to which we may rely on the model predictions. Additionally, the gradation conformal sets provide a range of alternative grades to consider before making the final decision.</p><p>Next, we investigate algorithmic fairness by assessing whether the performance in gradation and survival risk predictions shows demographic biases. We observe that the predicted risk is less for patients who are reported to be alive and more for deceased patients, which is as expected (Fig. <ref type="figure" target="#fig_5">6a</ref>, <ref type="figure">c</ref>, <ref type="figure">d</ref>). Also, the uncertainty of survival risk estimation decreases with increasing risk (Fig. <ref type="figure" target="#fig_5">6a-c</ref>), which is expected because the actual survival time of patients who are alive is beyond the reported survival time. Thus, the model estimated survival risk should correspond to a time beyond the reported survival time and have a higher uncertainty measure when compared in terms of reported survival time. It may also be observed that the model tends to correlate higher risks with the highest grade, for all data cohorts (Fig. <ref type="figure" target="#fig_5">6</ref>). In general, the uncertainty of survival risk estimation is always greater if the survival time reported for a living patient is less (Fig. <ref type="figure" target="#fig_5">6</ref>). Also, the uncertainty of prediction for alive patients is mostly high, except for gradation in TCGA-KIRC (Fig. <ref type="figure" target="#fig_5">6</ref> and Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref><ref type="table">12</ref><ref type="table">13</ref>). The uncertainty of grade and survival prediction is more for male patients than females except for gradation in TCGA-GBMLGG (Supplementary Tables <ref type="table">9</ref><ref type="table">10</ref><ref type="table">11</ref>). The uncertainty of risk estimation decreases with age for all TCGA cohorts (Supplementary Tables <ref type="table">9</ref>, <ref type="table">11</ref>, and <ref type="table">12</ref>). Thus, these results provide an analysis from a health equity and predictive fairness point of view as to how the performance varies across patient demographics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this paper, we present PathGen, a crossmodal generative diffusion model for synthesizing transcriptomic features from WSIs of H&amp;E stained slides. Our results are based on assessment of two publicly available cancer datasets-TCGA and CPTAC, using data from four cancer cohorts: glioma-glioblastoma, renal, uterine and breast. We demonstrated that PathGen synthesized transcriptomic features are highly correlated to true patient transcriptomes. By using a multimodal AI model to predict cancer grade and survival risk from WSIs and transcriptomic features, with state-of-the-art performance, we demonstrated that combining the features learnt from WSIs using a vision transformer based foundation model with the synthesized transcriptomic features from PathGen, significantly improved predictive accuracy compared to WSIs alone. Remarkably, we found that there was no significant difference in accuracy when real patient transcriptomic data were used instead of PathGen synthesized transcriptomic data in the multimodal model, demonstrating that PathGen captures the independent gradation/survival information in true patient gene expressions. To further check for generalizability, the models trained on the TCGA dataset were evaluated on the same CPTAC cohorts. We observed that our claims that synthesized transcriptomic data provides significant added value over WSI-only predictions, and that predictions based on real and synthesized transcriptomic data remain significantly close, generalizes well across independent datasets and cohorts.</p><p>H&amp;E stained slides of tumour tissue are essential for diagnostic and prognostic assessment of malignancy, and are collected routinely. However, transcriptomic tests, though they have the potential to inform prognosis and guide treatment selection <ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14</ref> are not routinely performed, especially in the public sector <ref type="bibr" target="#b14">15</ref> . This is due to a number of reasons, including economic cost, infrastructural requirements and incomplete knowledge about patient benefit. PathGen can synthesize realistic and informative patient transcriptomic features, from routine and inexpensive WSIs of H&amp;E stained slides. Also, we note the average inference time for cross-modal synthesis of transcriptomic data from WSIs using PathGen is 21.15 s, and the average time for estimating survival and grade is 0.71 s, which varies over the magnification level and the size of the WSI, as expected. Thus, in the future, we envision that PathGen can be studied as a low cost screening tool, to guide the targeted collection of transcriptomic data modalities, by potentially selecting patients who would benefit from transcriptomic assessment for more accurate diagnosis/prognosis. This would of course need a dedicated follow up study which would include patient response to treatment when selected in this manner, that would entail a separate clinical validation project.</p><p>Moreover, to be useful in the clinic, AI models must be trusted <ref type="bibr" target="#b38">39</ref> . Thus, to add explainability to the model predictions, we have undertaken measures with design choices guided by emerging regulatory requirements (e.g., EU AI Act Articles 13-15) <ref type="bibr" target="#b24">25</ref> and in consultation with a practising histopathologist based at University College Hospitals, London. Firstly, by employing co-attention tools for model transparency, we visualize the role of the gene groups and WSI patches in predicting survival and grades, and by mapping distributed gradation and survival risk estimates back onto the WSI images, we provide a window into intra-tumour heterogeneity. These facilitate additional visual presentations to the clinician experts to choose whether or not to draw any further intuition from them. Secondly, we have employed conformal prediction for assessment of model reliability, providing not simply point estimates for gradation and survival risk, but ranges that contain true values with a specified certainty. This analysis has also allowed us to assess model fairness by comparing model reliability across patient demographics such as age and gender. Importantly, we found that there was no significant difference in model reliability or fairness when using PathGen synthesized transcriptomic features compared to real patient transcriptomes. For reproducibility of research and ethos of open science, we have made the code fully available online through our GitHub repository <ref type="bibr" target="#b21">22</ref> .</p><p>However, though the PatheGen synthesized transcriptomic features corresponding to the six considered gene groups (both synthesized and real) contain important diagnostic/prognostic information, they do not capture the full diversity of the transcriptome. There is likely a limit to how much of the full transcriptome can be synthesized from only knowledge of WSIs. Also, evaluating the clinically important but less abundant synthesized gene expressions would require substantial domain expertise. Hence, we do not claim that PathGen replaces the need for real transcriptomic data, but rather it provides a potential way of estimating the benefit of collecting the full data across the population. The increasing use of techniques such as spatial transcriptomics <ref type="bibr" target="#b39">40</ref> will provide insight into this question, as well as WSI patch level resolution of transcriptomics, to guide development of synthesized transcriptomic data with a greater number of features in the near future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>The paper aims to use synthesized transcriptomic data for the automated selection of whole slide image (WSI) features for risk estimation and gradation of cancer and evaluate the value added by the use of synthesized transcriptomic data over WSI-only predictions and the difference in using real transcriptomic data instead (Fig. <ref type="figure" target="#fig_0">1</ref>). The WSIs are patchified and the corresponding patch embeddings are obtained using UNI <ref type="bibr" target="#b7">8</ref> . Our model, PathGen, generates transcriptomic features from the patch embeddings. Together, the patch embeddings and the gene embeddings obtained from the transcriptomic features are thus used by MCAT_GR for gradation and risk estimation. In the following subsections, we discuss the steps of the proposed methodology in detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Preprocessing multimodal data</head><p>Histopathology data. The diagnostic WSIs for a patient are divided into 224 × 224 patches, as required for obtaining patch embeddings using the pre-trained foundation model, UNI. The magnification level of the WSI is randomly chosen from the available options to make the model magnification level agnostic. The patches having normalized mean intensity more than 0.8 are excluded. It is observed that such patches consist mostly of the background region and hence, they do not contribute to the prediction. We do not use stain normalization in preprocessing the WSIs in line with recent works that find no significant effect of using stain normalization as a preprocessing step <ref type="bibr" target="#b40">41</ref> . The 224 × 224 patches are provided as input to UNI to obtain the patch embeddings of dimension 1 × 1024. UNI 8 is a pre-trained vision encoder for histopathology developed using private datasets, and thus is not based on the public datasets used in our experiments.</p><p>Transcriptomic data. As proposed in MCAT <ref type="bibr" target="#b17">18</ref> , the corresponding transcriptomic data of the patient is divided into 6 broad categories of genes-tumour suppressor genes, oncogenes, protein kinases, cell differentiation markers, transcription factors, and cytokines and growth factors. The gene expression levels are z-score normalized if not already done. Our model, PathGen, is trained to synthesize such transcriptomic data from the corresponding WSIs. The gene encoders are trained to obtain embeddings of dimension 1 × 1024 for the gene expression levels of each category.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Synthesizing transcriptomic data from histopathology images</head><p>Background of diffusion. The process of diffusion is represented as a Markov chain where, in the forward process, noise is added in each step to degrade the the data for a predetermined timestep T 42 . Diffusion models are trained to predict the noise introduced in each step from a noisy sample. In the reverse process, the noise is given as input to the diffusion model and denoising is performed for T timesteps to obtain the synthesized data <ref type="bibr" target="#b42">43</ref> .</p><p>The forward process begins with a data sample x 0 and gradually adds Gaussian noise at each timestep t 44 following the equation,</p><formula xml:id="formula_0">qðx t jx tÀ1 Þ = N ðx t ; ffiffiffiffiffiffiffiffiffiffiffiffi ffi 1 À β t q x tÀ1 , β t IÞ,<label>ð1Þ</label></formula><p>where β t is a predefined noise variance schedule. For any given timestep t, the sample x t is obtained directly from the initial data x 0 as per the following equation, <ref type="bibr" target="#b42">43</ref> . This simplifies to the equation,</p><formula xml:id="formula_1">qðx t jx 0 Þ = N ðx t ; ffiffiffiffiffi α t p x 0 , ð1 À α t ÞIÞ,<label>ð2Þ</label></formula><formula xml:id="formula_2">where α t = Q t s = 1 ð1 À β s Þ</formula><formula xml:id="formula_3">x t = ffiffiffiffiffi α t p x 0 + ffiffiffiffiffiffiffiffiffiffiffiffiffi 1 À α t p ϵ,<label>ð3Þ</label></formula><p>with ϵ $ N ð0, IÞ.</p><p>The reverse process aims to denoise the sample back to the ground truth data. A learnable model is used to predict the noise at each step to obtain the sample x t-1 from x t 44 .</p><formula xml:id="formula_4">p θ ðx tÀ1 jx t Þ = N ðx tÀ1 ; μ θ ðx t , tÞ, σ θ ðx t , tÞÞ,<label>ð4Þ</label></formula><p>where μ θ and σ θ are learned parameters and given the following equations,</p><formula xml:id="formula_5">μ θ ðx t , tÞ : = 1 ffiffiffiffiffi α t p x t À β t ffiffiffiffiffiffiffiffiffiffiffiffiffi 1 À α t p ϵ θ ðx t ,<label>tÞ</label></formula><formula xml:id="formula_6">! ,<label>ð5Þ</label></formula><formula xml:id="formula_7">σ θ ðx t , tÞ : = β1 2 t , t 2 fT, T À 1, . . . , 1g:<label>ð6Þ</label></formula><p>The model is trained to minimize the difference between the true noise ϵ and the predicted noise ϵ θ using the simplified equation,</p><formula xml:id="formula_8">L dif f = E t, x 0 , ϵ k ϵ À ϵ θ ðx t , tÞk 2 Â Ã :<label>ð7Þ</label></formula><p>Architecture of PathGen. The architecture of our model, PathGen <ref type="bibr" target="#b21">22</ref> , to generate transcriptomic features from WSIs is illustrated in Fig. <ref type="figure" target="#fig_6">7a</ref> with further details in Fig. <ref type="figure" target="#fig_6">7c</ref>-f. To obtain the transcriptomic features at a timestep t -1, x t-1 , the transcriptomic features at timestep t and the WSI path embeddings are provided as input. The process is performed for T timesteps, where x T is noise and x 0 is the synthesized transcriptomic data. The embedding of the gene expression levels in the transcriptomic data at x t is obtained using the gene encoder consisting of four linear layers with ELU activation as illustrated in Fig. <ref type="figure" target="#fig_6">7d</ref>. The gene embedding and the corresponding patch embedding obtained using UNI <ref type="bibr" target="#b7">8</ref> goes as input to the PathGen transformer, illustrated in Fig. <ref type="figure" target="#fig_6">7c</ref>. The PathGen transformer comprises genomic-guided coattention illustrated in Fig. <ref type="figure" target="#fig_6">7e</ref>, proposed in MCAT <ref type="bibr" target="#b17">18</ref> , and the transformer encoder layers <ref type="bibr" target="#b44">45</ref> . Genomic-guided co-attention is inspired by the self-attention introduced in the transformer <ref type="bibr" target="#b44">45</ref> . The gene embeddings attend to the WSI embeddings to produce co-attended embeddings, which comprise the most relevant combined features learned while training. Co-attention is performed thrice to ensure that the generated transcriptomic features have correspondence to the input WSI. Further, the transformer embeddings are decoded to gene expression levels using specific gene decoders for the different gene groups. The gene decoders comprise linear layers to ELU activation except the last, as illustrated in Fig. <ref type="figure" target="#fig_6">7f</ref>.</p><p>Training and inference. Box 1 gives the training algorithm. The model is trained with the loss function in Eq. ( <ref type="formula" target="#formula_8">7</ref>) for T = 1000 timesteps with a learning rate of 1 × 10 -4 . For training, a sample is considered at a random intermediate timestep t sampled uniformly. Box 2 specifies the inference algorithm. The inference is performed for T = 1000 timesteps by initially providing random noise sampled from mean meanzero, unit-variance Gaussian distribution as input using Eq. ( <ref type="formula" target="#formula_4">4</ref>). All experiments were performed with an NVIDIA A100 GPU, including training and inference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multimodal cancer gradation and survival risk estimation</head><p>The PathGen synthesized transcriptomic data along with the corresponding WSIs, is used for gradation and risk estimation, using the predictive model MCAT_GR.</p><p>Architecture. The architecture used for gradation and risk estimation using multi-modal histopathology and synthesized transcriptomic data is MCAT <ref type="bibr" target="#b17">18</ref> with an additional pipeline for gradation. The modified MCAT architecture, MCAT_GR, is illustrated in Fig. <ref type="figure" target="#fig_6">7b</ref>. The co-attended features processed using the pathomic transformer of MCAT_GR are used for gradation by passing through a separate global attention pooling. However, transcriptomic feature embeddings from the gene transformer are not used directly for gradation, as we experiment to see that not including the transcriptomic data for grade prediction performs better. The global attention pooling performed for risk estimation and gradation is separate to decrease the dependency between the grade and risk.</p><p>Training details. The loss used for training gradation is binary cross entropy loss <ref type="bibr" target="#b46">46</ref> (L grade ), and the loss used for training risk estimation is negative log-likelihood survival loss <ref type="bibr" target="#b17">18</ref> (L risk ). Thus, the total loss for MCAT_GR is given by the equation,</p><formula xml:id="formula_9">L MCAT GR = λ × L grade + ð1 À λÞ × L risk<label>ð8Þ</label></formula><p>where λ is a hyperparameter to control the contribution of gradation and survival loss in the training. We use λ = 0.3 for our experiments. However, on unavailability of gradation annotations, models are trained for survival only using L risk (λ = 0). The learning rate used is 2 × 10 -4 . The models were trained using an NVIDIA A100 GPU.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Uncertainty estimation using conformal prediction</head><p>Conformal for gradation. Conformal prediction is performed to estimate the reliability of model-predicted grades and to provide clinicians with a conformal set of the most probable grade options. Marginal conformal prediction ensures that the coverage of prediction obtained for a population is more than 1 -α, where α is a chosen BOX 1</p><p>PathGen training algorithm</p><p>repeat x 0 ~q(x 0 t ~Uniform({1, …, T}) ϵ $ N ð0, IÞ Take gradient descent step on ∇ θ k ϵ À ϵ θ ð ffiffiffiffiffi α t p x 0 + ffiffiffiffiffiffiffiffiffiffiffiffi ffi 1 À α t p ϵ, tÞk 2 until converged BOX 2 PathGen inference algorithm x T $ N ð0, IÞ for t = T, …, 1 do z $ N ð0, IÞ if t &gt; 1, else z = 0 x tÀ1 = 1 ffiffiffi ffi α t p x t À 1Àα t ffiffiffiffiffiffiffi ffi 1À α t p ϵ θ ðx t , tÞ + σ t z end for return x 0 error rate <ref type="bibr" target="#b25">26</ref> . The marginal coverage property for gradation is given by the equation,</p><formula xml:id="formula_10">1 À α ≤ P ðY test 2 CðX test ÞÞ<label>ð9Þ</label></formula><p>where C represents the conformal set consisting of probable prediction classes to gain the desired coverage of at least 1 -α. While marginal calibration ensures desired coverage for the entire population, it fails to ensure the fairness of coverage stratified over demographic groups. For instance, given a desired coverage of 90%, female patients may have obtained 100% coverage while male patients may have obtained 80% coverage, still satisfying the marginal coverage property. Thus, we further ensure coverage stratified over groups for all demographic categories. The stratified conditional coverage property for gradation is given by the equation,</p><formula xml:id="formula_11">1 À α ≤ P ðY test 2 CðX test Þ j X test 2 g i Þ, 8 g i 2 G<label>ð10Þ</label></formula><p>where G represents the demographic category (gender, age, etc.) and g i represents the groups (male, female, age &lt; 40, age &gt; 60, etc) in the category. Box 3 specifies the procedure for performing conformal prediction for gradation <ref type="bibr" target="#b25">26</ref> . The uncertainty for gradation is computed using the predicted conformal set by the equation,</p><formula xml:id="formula_12">uncertainty = jCj N × Δ max N À 1<label>ð11Þ</label></formula><p>where |C| represents the cardinality of the conformal set, N represents the number of grade classes, and Δ max stands for the maximum difference between the grades in the conformal set.</p><p>Conformal for survival risk estimation. For survival risk estimation, conformal prediction is performed to estimate the upper and lower bounds for the estimated risk. The marginal coverage property for risk estimation ensures that the ground truth survival is covered within the predicted bounds by a probability of more than 1 -α, where α is a chosen error rate, and is given by the equation,</p><formula xml:id="formula_13">1 À α ≤ P ðY test 2 ½risk lb , risk ub Þ<label>ð12Þ</label></formula><p>where risk lb and risk ub are the conformalized lower and upper bounds of the risk predicted from X test . For risk estimation, the survival time in months is divided into 4 time bins for a given population, considering the vital status. The time bins covered between the lower and upper bounds of the risk give the conformal set C. Similar to gradation, stratified conditional conformal prediction is performed to ensure fairness in coverage over different demographic groups. The stratified conditional coverage property for survival risk estimation is given by the equation, 1 À α ≤ P ðY test 2 ½risk lb , risk ub j X test 2 g i Þ, 8</p><formula xml:id="formula_14">g i 2 G<label>ð13Þ</label></formula><p>where G represents the demographic category and g i represents the groups in the category. Box 4 mentions the detailed conformal procedure for survival risk estimation. The uncertainty for risk estimation is further computed as, uncertainty = jCj N × jrisk ub À risk lb j jrisk high À risk low j ð14Þ</p><p>where N = 4, the number of time bins, risk high = is the highest possible risk, and risk low = is the lowest possible risk score.</p><p>Both the uncertainty measures given in Eqs. ( <ref type="formula" target="#formula_12">11</ref>) and ( <ref type="formula">14</ref>) are metrics to quantify uncertainty for gradation and survival risk estimation, respectively.</p><p>Estimation of coverage slack. However, though conformal properties (Eqs. ( <ref type="formula" target="#formula_10">9</ref>), ( <ref type="formula" target="#formula_11">10</ref>), (12), and ( <ref type="formula" target="#formula_14">13</ref>)) ensure that the obtained coverage is at least 1 -α, the coverage of conformal prediction conditionally on the calibration set is a random quantity <ref type="bibr" target="#b25">26</ref> . The deviation in coverage is a function of the cardinality of the calibration set (n), and the error rate (α), and follows the distribution: Beta(n + 1 -l, l), where l = ⌊(n + 1)α⌋ <ref type="bibr" target="#b47">47</ref> . The expected deviation (ε) can be computed using the equation, εðn, αÞ = maxðð1 À αÞ À L, U À ð1 À αÞ, 0Þ</p><p>where L and U are the lower and upper bounds for the 90% confidencetype interval around 1 -α, for α = 0.1, and is given by, ½L, U = ½F À1 Betaða, bÞ ð0:05Þ, F À1 Betaða, bÞ ð0:95Þ</p><p>Hence, conformalized coverage slack of α ± ε is inherent for finite set calibration. The expected deviations in coverage have been computed for different calibration set sizes, using Eq. ( <ref type="formula" target="#formula_15">15</ref>), and presented in Supplementary Table <ref type="table">14</ref>, for α = 0.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>BOX 3</head><p>Algorithm of conformal prediction for gradation</p><p>Input: Calibration samples fx i , y i g n i = 1 , error rate α ⊳ y i is the true grade Step 1: Compute conformal scores: for each calibration sample i do score i 1 À p i y i ⊳ where p i y i is the predicted probability of the true class y i end for Step 2: Compute adjusted quantile: q dðn + 1ÞÁð1ÀαÞe n q quantile ðfscore i g, qÞ Step 3: Form conformal sets: for each test sample do if p j ! 1 À q then Include class j in the conformal set ⊳ where p j is the predicted probability of belonging to class j end if end for BOX 4 Algorithm of conformal prediction for survival risk estimation Input: Calibration samples fx i , risk i g n i = 1 , error rate α ⊳ risk i is the risk corresponding to the ground truth time bin Step 1: Compute conformal scores: for each calibration sample i do score i jrisk i À risk i j ⊳ where risk i is the predicted risk end for Step 2: Compute adjusted quantile: q dðn + 1ÞÁð1ÀαÞe n q quantile ðfscore i g, qÞ Step 3: Compute uncertainty bounds and form conformal sets: for each test sample do risk lb risk À q risk ub risk + q if risk lb ≤t lb or t ub ≤risk ub then Include time bin t in the conformal set ⊳ t lb and t ub the lower and upper bound risks for time bin end if end for</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 |</head><label>1</label><figDesc>Fig. 1 | Methodology overview. Pipeline for the proposed methodology. Our diffusion-based crossmodal generative model, PathGen, synthesizes transcriptomic features from whole slide image patch embeddings obtained using a state-of-the-art foundation model from the whole slide images.Multimodal prediction is performed for both diagnosis (cancer grading) and prognosis (survival risk) using the synthesized transcriptomic data and histopathology images to predict the added value of transcriptomic data, for each patient. Uncertainty quantification provides a patient-level estimate of model reliability and provides clinicians with survival risk bounds and tumour grade prediction sets, which are guaranteed to contain the ground truth with a specified probability. Distributed predictions also provide a window to understand the intra-tumour heterogeneity.</figDesc><graphic coords="3,60.49,48.76,480.02,152.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 |</head><label>2</label><figDesc>Fig. 2 | Evaluation of synthesized transcriptomic data. a Comparison between real and synthesized gene expression levels over all genes and for different gene groups. b Plot of significant performance improvement on using synthesized transcriptomic data over using WSIs alone (marked as without), and closeness of using synthesized and real transcriptomic data for survival risk estimation and gradation. c Plot for comparison of uncertainty and obtained coverage for survival risk and grade predictions using real and synthesized transcriptomic data. Source data are provided as a Source Data file.</figDesc><graphic coords="4,60.49,48.76,480.02,340.33" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 |</head><label>3</label><figDesc>Fig. 3 | Explainability maps for a male patient of age 58, ground truth grade III, survival time 10.71 months, and survival status alive from the TCGA-LGG cohort. a whole slide image (WSI). b intra-tumour gradation heterogeneity. c intra-tumour survival heterogeneity. d co-attention maps for real and synthesized transcriptomic data and WSI patches for different genegroups. e comparative study of intra-tumour heterogeneity and corresponding co-attention maps obtained for prediction using synthesized transcriptomic data for chosen regions marked with different coloured rectangles.</figDesc><graphic coords="5,62.87,48.76,475.20,599.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 |</head><label>4</label><figDesc>Fig. 4 | Explainability maps for a male patient of age 40, ground truth grade IV, survival time 33.99 months, and survival status deceased from the TCGA-KIRC cohort. a whole slide image (WSI). b intra-tumour gradation heterogeneity. c intra-tumour survival heterogeneity. d co-attention maps for real and synthesized transcriptomic data and WSI patches for</figDesc><graphic coords="6,60.95,48.76,479.06,599.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 |</head><label>5</label><figDesc>Fig. 5 | Explainability analysis. a (i) Plot for comparison between distributed and non-distributed WSI predictions for gradation using both real and synthesized transcriptomic data. (ii) Plot showing normalized average co-attention value for the true grade is higher than that of false grades. b Comparison between co-attention maps obtained using real and synthesized transcriptomic data over all genes and for different gene groups. c Plot illustrating the percentage contribution of the gene groups in co-attention for different TCGA and CPTAC data cohorts. Source data are provided as a Source Data file.</figDesc><graphic coords="7,60.49,48.76,480.02,384.38" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 |</head><label>6</label><figDesc>Fig. 6 | Illustrative result for evaluating fairness in model predictions across demographic categories and data cohorts. The cases have been arranged in ascending order of predicted patient risk. The estimated uncertainty in survival risk and grade prediction is also shown. Source data are provided as a Source Data file.</figDesc><graphic coords="9,60.49,48.76,480.02,491.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 |</head><label>7</label><figDesc>Fig. 7 | Model architecture. a Architecture of our diffusion model, PathGen, used for synthesizing gene expression levels from histopathology images. b Architecture of the modified MCAT model for gradation and risk estimation, MCAT_GR. c Detailed architecture of PathGen transformer. d Architecture of gene encoder that converts gene expression level to gene embeddings. e Representation of genomic-guided co-attention function. f Architecture of gene decoder that converts gene embeddings back to gene expression levels.</figDesc><graphic coords="11,60.49,48.76,480.02,298.83" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Nature Communications | (2026) 17:259</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p><rs type="person">S Dey</rs> was supported by the <rs type="funder">IIT KGP AI4ICPS Chanakya Fellowship</rs>. P Basuchowdhuri is supported by the <rs type="funder">Indo-Swedish DBT-Vinnova</rs> project, <rs type="grantNumber">BT/PR41025/Swdn/135/9/2020</rs>. CRSB was supported by the <rs type="funder">CRUK City of London Centre</rs> Award [<rs type="grantNumber">CTRQQR-2021/100004</rs>]. <rs type="person">T Chakraborti</rs> is supported by the <rs type="funder">Turing-Roche Strategic Partnership</rs>. We are grateful to <rs type="person">Prof Benjamin MacArthur</rs> from the <rs type="affiliation">Alan Turing Institute</rs> and <rs type="person">Mr. Chris Harbron</rs> from <rs type="affiliation">Roche Pharmaceuticals</rs> for their insightful comments and constructive feedback throughout this project.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_JKSRRtv">
+					<idno type="grant-number">BT/PR41025/Swdn/135/9/2020</idno>
+				</org>
+				<org type="funding" xml:id="_UmqjZB9">
+					<idno type="grant-number">CTRQQR-2021/100004</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>For all our experiments, we use data from two anonymised publicly available open-access datasets -The Cancer Genomic Atlas (TCGA) and the Clinical Proteomic Tumor Analysis Consortium (CPTAC). The TCGA data can be accessed at <ref type="url" target="https://www.cancer.gov/tcga">https://www.cancer.gov/tcga</ref>, and the CPTAC data can be accessed at <ref type="url" target="https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/clinical-proteomic-tumor-analysis-consortium-cptac">https://gdc.cancer.gov/about-gdc/  contributed-genomic-data-cancer-research/clinical-proteomic-tumor- analysis-consortium-cptac</ref>. We use the corresponding transcriptomic data downloaded from cBioPortal (<ref type="url" target="https://www.cbioportal.org">https://www.cbioportal.org</ref>) for all cohorts and datasets. The gene categories used are found at <ref type="url" target="https://github.com/mahmoodlab/MCAT/blob/master/datasets_csv_sig/signatures.csv">https://  github.com/mahmoodlab/MCAT/blob/master/datasets_csv_sig/</ref> signatures.csv. No primary data was collected as part of this study. Source data are provided with this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Code availability</head><p>For the reproducibility of research and ethos of open science, we have made the code fully available online through our GitHub repository at <ref type="url" target="https://github.com/Samiran-Dey/PathGen">https://github.com/Samiran-Dey/PathGen</ref> 22 under the CC-BY-NC-ND 4.0 license.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethical approval</head><p>The author team includes researchers from the UK and India, and contributions reflect international collaboration. Although the data sets analysed were publicly available, we acknowledge that patient cohorts may not fully represent global populations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reporting summary</head><p>Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>S. Dey has contributed to conceptualization, methodology development, experimental studies, and writing. P. Basuchowdhuri, S.K. Saha, D. Parashar contributed to overall feedback, knowledge sharing and writing/editing of the manuscript. T. Chakraborti has contributed to conceptualization, problem setting, overall research direction, project supervision and writing/editing the manuscript. C.R.S. Baernji has provided clinical expertise and feedback, and contributed to writing/editing the manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional information</head><p>Supplementary information The online version contains supplementary material available at <ref type="url" target="https://doi.org/10.1038/s41467-025-66961-9">https://doi.org/10.1038/s41467-025-66961-9</ref>.</p><p>Correspondence and requests for materials should be addressed to Tapabrata Chakraborti.</p><p>Peer review information Nature Communications thanks Yiqing Shen, Shuo Wang and Yuanning Zheng for their contribution to the peer review of this work. A peer review file is available.</p><p>Reprints and permissions information is available at <ref type="url" target="http://www.nature.com/reprints">http://www.nature.com/reprints</ref> Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p><p>Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ref type="url" target="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://  creativecommons.org/licenses/by-nc-nd/4.0/</ref>.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Job Stress, Burnout, Work-Life Balance, Well-Being, and Job Satisfaction Among Pathology Residents and Fellows</title>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Kelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Soles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edna</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iman</forename><surname>Kundu</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/ajcp/aqaa013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Clinical Pathology</title>
+		<idno type="ISSN">0002-9173</idno>
+		<idno type="ISSNe">1943-7722</idno>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="449" to="469" />
+			<date type="published" when="2020-02-21">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kelly, M., Soles, R., Garcia, E. &amp; Kundu, I. Job stress, burnout, work- life balance, well-being, and job satisfaction among pathology residents and fellows. Am. J. Clin. Pathol. 153, 449-469 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Image analysis with deep learning to predict breast cancer grade, ER status, histologic subtype, and intrinsic subtype</title>
+		<author>
+			<persName><forename type="first">Heather</forename><forename type="middle">D</forename><surname>Couture</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lindsay</forename><forename type="middle">A</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Geradts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">J</forename><surname>Nyante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ebonee</forename><forename type="middle">N</forename><surname>Butler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Marron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">M</forename><surname>Perou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">A</forename><surname>Troester</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Niethammer</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41523-018-0079-1</idno>
+		<ptr target="https://doi.org/10.1038/s41523-018-0079-1" />
+	</analytic>
+	<monogr>
+		<title level="j">npj Breast Cancer</title>
+		<title level="j" type="abbrev">npj Breast Cancer</title>
+		<idno type="ISSNe">2374-4677</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2018-09-03">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Couture, H. D. et al. Image analysis with deep learning to predict breast cancer grade, ER status, histologic subtype, and intrinsic subtype. npj Breast Cancer 4, https://doi.org/10.1038/s41523-018-0079-1 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Automated Gleason grading of prostate cancer tissue microarrays via deep learning</title>
+		<author>
+			<persName><forename type="first">Eirini</forename><surname>Arvaniti</surname></persName>
+			<idno type="ORCID">0000-0003-3045-9309</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kim</forename><forename type="middle">S</forename><surname>Fricker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Moret</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niels</forename><surname>Rupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Hermanns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Fankhauser</surname></persName>
+			<idno type="ORCID">0000-0002-4073-5488</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Norbert</forename><surname>Wey</surname></persName>
+			<idno type="ORCID">0000-0002-3578-2968</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">J</forename><surname>Wild</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">H</forename><surname>Rüschoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Claassen</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-018-30535-1</idno>
+		<ptr target="https://doi.org/10.1038/s41598-018-30535-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2018-08-13">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arvaniti, E. et al. Automated gleason grading of prostate cancer tissue microarrays via deep learning. Sci. Rep. 8, https://doi.org/10. 1038/s41598-018-30535-1 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Computer-aided diagnosis system for grading brain tumor using histopathology images based on color and texture features</title>
+		<author>
+			<persName><forename type="first">Naira</forename><surname>Elazab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wael</forename><surname>Gab allah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Elmogy</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-024-01355-9</idno>
+		<ptr target="https://doi.org/10.1186/s12880-024-01355-9" />
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024-07-19">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elazab, N., Gab Allah, W. &amp; Elmogy, M. Computer-aided diagnosis system for grading brain tumor using histopathology images based on color and texture features. BMC Med. Imaging 24, https://doi. org/10.1186/s12880-024-01355-9 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Cancer detection in histopathology whole-slide images using conditional random fields on deep embedded spaces</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">G</forename><surname>Zanjani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H N</forename><surname>De With</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med. Imaging : Digital Pathology, Proc. SPIE</title>
+		<imprint>
+			<biblScope unit="volume">10581</biblScope>
+			<biblScope unit="page">105810I</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zanjani, F. G., Zinger, S. &amp; de With, P. H. N. Cancer detection in histopathology whole-slide images using conditional random fields on deep embedded spaces. Med. Imaging : Digital Pathology, Proc. SPIE 10581, 105810I (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Breast Cancer Detection from Histology Images Using Deep Feature Selection</title>
+		<author>
+			<persName><forename type="first">Susovan</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akash</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samiran</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilpa</forename><surname>Saha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samir</forename><surname>Malakar</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-19-0105-8_31</idno>
+		<ptr target="https://doi.org/10.1007/978-981-19-0105-8_31" />
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Networks and Systems</title>
+		<imprint>
+			<publisher>Springer Nature Singapore</publisher>
+			<date type="published" when="2022-06-28">2022</date>
+			<biblScope unit="page" from="323" to="330" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Das, S., Chatterjee, A., Dey, S., Saha, S. &amp; Malakar, S. Breast Cancer Detection from Histology Images Using Deep Feature Selection 323-330. https://doi.org/10.1007/978-981-19-0105-8_31 (Springer Nature Singapore, 2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Khosla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gargeya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Irshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Beck</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1606.05718" />
+		<title level="m">Deep learning for identifying metastatic breast cancer</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint at</note>
+	<note type="raw_reference">Wang, D., Khosla, A., Gargeya, R., Irshad, H. &amp; Beck, A. H. Deep learning for identifying metastatic breast cancer. Preprint at https:// arxiv.org/abs/1606.05718 (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Towards a general-purpose foundation model for computational pathology</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Jaume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">H</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-9432-2793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Shaban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mane</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukas</forename><surname>Oldenburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><forename type="middle">L</forename><surname>Weishaupt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Judy</forename><forename type="middle">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anurag</forename><surname>Vaidya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><forename type="middle">Phi</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Gerber</surname></persName>
+			<idno type="ORCID">0000-0002-9149-5509</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sharifa</forename><surname>Sahai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walt</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-02857-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="850" to="862" />
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, R. J. et al. Towards a general-purpose foundation model for computational pathology. Nat. Med. 30, 850-862 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Visual Language Pretrained Multiple Instance Zero-Shot Transfer for Histopathology Images</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><forename type="middle">Phi</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yung-Sung</forename><surname>Chuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52729.2023.01893</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06">2023</date>
+			<biblScope unit="page" from="19764" to="19775" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. Visual language pretrained multiple instance zero- shot transfer for histopathology images. In Proc. IEEE/CVF Con- ference on Computer Vision and Pattern Recognition (CVPR) 19764-19775 (IEEE, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A visual-language foundation model for computational pathology</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivy</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Jaume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Igor</forename><surname>Odintsov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><forename type="middle">Phi</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Gerber</surname></persName>
+			<idno type="ORCID">0000-0002-9149-5509</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anil</forename><forename type="middle">V</forename><surname>Parwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-9432-2793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-024-02856-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="863" to="874" />
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, M. Y. et al. A visual-language foundation model for computa- tional pathology. Nat. Med. 30, 863-874 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Updates on the WHO diagnosis of IDH-mutant glioma</title>
+		<author>
+			<persName><forename type="first">David.</forename><forename type="middle">E</forename><surname>Reuss</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-023-04250-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="461" to="469" />
+			<date type="published" when="2023-01-30">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reuss, D. E. Updates on the WHO diagnosis of IDH-mutant glioma. J. Neuro-Oncol. 162, 461-469 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">EGFR mutations as a prognostic and predictive marker in non-small-cell lung cancer</title>
+		<author>
+			<persName><forename type="first">Zhehai</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shu</forename><surname>Fang</surname></persName>
+		</author>
+		<idno type="DOI">10.2147/dddt.s69690</idno>
+		<ptr target="https://doi.org/10.2147/dddt.s69690" />
+	</analytic>
+	<monogr>
+		<title level="j">Drug Design, Development and Therapy</title>
+		<title level="j" type="abbrev">DDDT</title>
+		<idno type="ISSNe">1177-8881</idno>
+		<imprint>
+			<biblScope unit="page">1595</biblScope>
+			<date type="published" when="1595">1595. 2014</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, Z. &amp; Fang, S. EGFR mutations as a prognostic and predictive marker in non-small-cell lung cancer. Drug Des. Devel. Ther. 1595 https://doi.org/10.2147/dddt.s69690 (2014).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Gene Expression–Guided Adjuvant Chemotherapy in Breast Cancer</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Sparano</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmc1810515</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">379</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="1680" to="1682" />
+			<date type="published" when="2018-10-25">2018</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sparano, J. A. et al. Adjuvant chemotherapy guided by a 21-gene expression assay in breast cancer. N. Engl. J. Med. 379, 111-121 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Leveraging transcriptomics for precision diagnosis: Lessons learned from cancer and sepsis</title>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Tsakiroglou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munir</forename><surname>Pirmohamed</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fgene.2023.1100352</idno>
+		<ptr target="https://doi.org/10.3389/fgene.2023.1100352" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Genetics</title>
+		<title level="j" type="abbrev">Front. Genet.</title>
+		<idno type="ISSNe">1664-8021</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<date type="published" when="2023-03-10">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tsakiroglou, M., Evans, A. &amp; Pirmohamed, M. Leveraging tran- scriptomics for precision diagnosis: Lessons learned from cancer and sepsis. Front. Genet. 14, https://doi.org/10.3389/fgene.2023. 1100352 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Tumour profiling tests to guide adjuvant chemotherapy decisions in early breast cancer: a systematic review and economic analysis</title>
+		<author>
+			<persName><forename type="first">Sue</forename><surname>Harnan</surname></persName>
+			<idno type="ORCID">0000-0002-9318-9206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Tappenden</surname></persName>
+			<idno type="ORCID">0000-0001-6612-2332</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katy</forename><surname>Cooper</surname></persName>
+			<idno type="ORCID">0000-0002-7702-8103</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Stevens</surname></persName>
+			<idno type="ORCID">0000-0002-9867-7209</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alice</forename><surname>Bessey</surname></persName>
+			<idno type="ORCID">0000-0001-7677-0309</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rachid</forename><surname>Rafia</surname></persName>
+			<idno type="ORCID">0000-0002-6914-1990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sue</forename><surname>Ward</surname></persName>
+			<idno type="ORCID">0000-0002-3344-0913</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ruth</forename><surname>Wong</surname></persName>
+			<idno type="ORCID">0000-0002-4536-4794</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Stein</surname></persName>
+			<idno type="ORCID">0000-0003-2969-0415</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Janet</forename><surname>Brown</surname></persName>
+		</author>
+		<idno type="DOI">10.3310/hta23300</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Health Technology Assessment</title>
+		<title level="j" type="abbrev">Health Technol Assess</title>
+		<idno type="ISSN">1366-5278</idno>
+		<idno type="ISSNe">2046-4924</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">30</biblScope>
+			<biblScope unit="page" from="1" to="328" />
+			<date type="published" when="2019-06">2019</date>
+			<publisher>National Institute for Health and Care Research</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Harnan, S. et al. Tumour profiling tests to guide adjuvant che- motherapy decisions in early breast cancer: a systematic review and economic analysis. Health Technol. Assess. (Winch., Engl.) 23, 1 (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Predicting cancer outcomes from histology and genomics using convolutional networks</title>
+		<author>
+			<persName><forename type="first">Pooya</forename><surname>Mobadersany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Safoora</forename><surname>Yousefi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Amgad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Gutman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">E</forename><surname>Velázquez Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><forename type="middle">A D</forename><surname>Cooper</surname></persName>
+			<idno type="ORCID">0000-0002-3504-4965</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.1717139115</idno>
+		<ptr target="https://doi.org/10.1073/pnas.1717139115" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<date type="published" when="2018-03-12">2018</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mobadersany, P. et al. Predicting cancer outcomes from histology and genomics using convolutional networks. Proc. Natl. Acad. Sci. USA 115, https://doi.org/10.1073/pnas.1717139115 (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingwen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">J</forename><surname>Rodig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neal</forename><forename type="middle">I</forename><surname>Lindeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2020.3021387</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="757" to="770" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, R. J. et al. Pathomic fusion: an integrated framework for fusing histopathology and genomic features for cancer diagnosis and prognosis. IEEE Trans. Med. Imaging 41, 757-770 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Multimodal Co-Attention Transformer for Survival Prediction in Gigapixel Whole Slide Images</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei-Hung</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">Fk. </forename><surname>Williamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Manz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maha</forename><surname>Shady</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00398</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="page" from="3995" to="4005" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, R. J. et al. Multimodal co-attention transformer for survival prediction in gigapixel whole slide images. In Proc. IEEE/CVF International Conference on Computer Vision (ICCV) 4015-4025 (IEEE, 2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Transcriptome-wide prediction of prostate cancer gene expression from histopathology images using co-expression-based convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Weitz</surname></persName>
+			<idno type="ORCID">0000-0002-1788-0716</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yinxi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kimmo</forename><surname>Kartasalo</surname></persName>
+			<idno type="ORCID">0000-0002-9470-4783</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Egevad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><surname>Lindberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henrik</forename><surname>Grönberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Eklund</surname></persName>
+			<idno type="ORCID">0000-0001-5032-5266</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mattias</forename><surname>Rantalainen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btac343</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="3462" to="3469" />
+			<date type="published" when="2022-05-20">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weitz, P. et al. Transcriptome-wide prediction of prostate cancer gene expression from histopathology images using co-expression- based convolutional neural networks. Bioinformatics 38, 3462-3469 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Digital profiling of gene expression from histology images with linearized attention</title>
+		<author>
+			<persName><forename type="first">Marija</forename><surname>Pizurica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanning</forename><surname>Zheng</surname></persName>
+			<idno type="ORCID">0000-0002-0018-3252</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Carrillo-Perez</surname></persName>
+			<idno type="ORCID">0000-0003-0974-4092</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Humaira</forename><surname>Noor</surname></persName>
+			<idno type="ORCID">0000-0001-8887-8122</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Wohlfart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antoaneta</forename><surname>Vladimirova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathleen</forename><surname>Marchal</surname></persName>
+			<idno type="ORCID">0000-0002-2169-4588</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Gevaert</surname></persName>
+			<idno type="ORCID">0000-0002-9965-5466</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-024-54182-5</idno>
+		<ptr target="https://doi.org/10.1038/s41467-024-54182-5" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024-11-14">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pizurica, M. et al. Digital profiling of gene expression from histology images with linearized attention. Nat. Commun. 15, https://doi.org/ 10.1038/s41467-024-54182-5 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Identifying transcriptomic correlates of histology using deep learning</title>
+		<author>
+			<persName><forename type="first">Liviu</forename><surname>Badea</surname></persName>
+			<idno type="ORCID">0000-0002-1301-8985</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emil</forename><surname>Stănescu</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0242858</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">e0242858</biblScope>
+			<date type="published" when="2020-11-25">2020</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Badea, L. &amp; Stănescu, E. Identifying transcriptomic correlates of histology using deep learning. PLoS ONE 15, e0242858 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dey</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.17315073</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.17315073" />
+	</analytic>
+	<monogr>
+		<title level="j">Samiran-dey/pathgen: Pathgen v</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dey, S. et al. Samiran-dey/pathgen: Pathgen v1.0.0 https://doi.org/ 10.5281/zenodo.17315073 (2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The Cancer Genome Atlas Pan-Cancer analysis project</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">N</forename><surname>Weinstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">A</forename><surname>Collisson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><forename type="middle">B</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenna</forename><forename type="middle">R Mills</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brad</forename><forename type="middle">A</forename><surname>Ozenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><surname>Ellrott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Shmulevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">M</forename><surname>Stuart</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ng.2764</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Genetics</title>
+		<title level="j" type="abbrev">Nat Genet</title>
+		<idno type="ISSN">1061-4036</idno>
+		<idno type="ISSNe">1546-1718</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1113" to="1120" />
+			<date type="published" when="2013-09-26">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">The Cancer Genome Atlas Research Network. The Cancer Genome Atlas Pan-Cancer Analysis Nat. Genet. 45, 1113-1120 (2013).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The CPTAC Data Portal: A Resource for Cancer Proteomics Research</title>
+		<author>
+			<persName><forename type="first">Nathan</forename><forename type="middle">J</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Oberti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratna</forename><forename type="middle">R</forename><surname>Thangudu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">B</forename><surname>Mcgarvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shine</forename><surname>Jacob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Subha</forename><surname>Madhavan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><forename type="middle">A</forename><surname>Ketchum</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/pr501254j</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Proteome Research</title>
+		<title level="j" type="abbrev">J. Proteome Res.</title>
+		<idno type="ISSN">1535-3893</idno>
+		<idno type="ISSNe">1535-3907</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2707" to="2713" />
+			<date type="published" when="2015-05-04">2015</date>
+			<publisher>American Chemical Society (ACS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Edwards, N. J. et al. The CPTAC data portal: a resource for cancer proteomics research. J. Proteome Res. 14, 2707-2713 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A Critical Overview of the Fundamental Aspects of the Proposal for a Regulation of the European Parliament and of the Council Laying Down Harmonised Rules on Artificial Intelligence</title>
+		<author>
+			<persName><forename type="first">Liza</forename><surname>Mozgunova</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4724557</idno>
+		<ptr target="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX" />
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2021">10 December 2024, 2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>European Commission</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">European Commission. Proposal for a Regulation of the European Parliament and of the Council Laying Down Harmonized rules on Artificial Intelligence (Artificial Intelligence Act) (Official Journal of the European Union, accessed 10 December 2024, 2021); https:// eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Conformal Prediction: A Gentle Introduction</title>
+		<author>
+			<persName><forename type="first">Anastasios</forename><forename type="middle">N</forename><surname>Angelopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Bates</surname></persName>
+		</author>
+		<idno type="DOI">10.1561/9781638281597</idno>
+		<ptr target="https://arxiv.org/abs/2107.07511" />
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<publisher>Now Publishers</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint at</note>
+	<note type="raw_reference">Angelopoulos, A. N. &amp; Bates, S. A gentle introduction to conformal prediction and distribution-free uncertainty quantification. Preprint at https://arxiv.org/abs/2107.07511 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Comprehensive genomic characterization defines human glioblastoma genes and core pathways</title>
+		<author>
+			<persName><forename type="first">The</forename><surname>Cancer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Genome</forename><surname>Atlas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Research</forename><surname>Network</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature07385</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">455</biblScope>
+			<biblScope unit="issue">7216</biblScope>
+			<biblScope unit="page" from="1061" to="1068" />
+			<date type="published" when="2008-09-04">2008</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">The Cancer Genome Atlas Research Network. Comprehensive genomic characterization defines human glioblastoma genes and core pathways. Nature 455, 1061-1068 (2008).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Comprehensive, Integrative Genomic Analysis of Diffuse Lower-Grade Gliomas</title>
+		<idno type="DOI">10.1056/nejmoa1402121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">372</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="2481" to="2498" />
+			<date type="published" when="2015-06-25">2015</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">The Cancer Genome Atlas Research Network. Comprehensive, integrative genomic analysis of diffuse lower-grade gliomas. N. Engl. J. Med. 372, 2481-2498 (2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Comprehensive molecular characterization of clear cell renal cell carcinoma</title>
+		<author>
+			<persName><forename type="first">The</forename><surname>Cancer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Genome</forename><surname>Atlas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Research</forename><surname>Network</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature12222</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">499</biblScope>
+			<biblScope unit="issue">7456</biblScope>
+			<biblScope unit="page" from="43" to="49" />
+			<date type="published" when="2013-06-23">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">The Cancer Genome Atlas Research Network. Comprehensive molecular characterization of clear cell renal cell carcinoma. Nature 499, 43-49 (2013).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mutch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lippmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jarosz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Cancer Genome Atlas Uterine Corpus Endometrial Carcinoma Collection (TCGA-UCEC)</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Erickson, B. J., Mutch, D., Lippmann, L. &amp; Jarosz, R. The Cancer Genome Atlas Uterine Corpus Endometrial Carcinoma Collection (TCGA-UCEC). Cancer Imaging Archive (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lingle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Cancer Genome Atlas Breast Invasive Carci-Collection (TCGA-BCRAC)</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lingle, W. et al. The Cancer Genome Atlas Breast Invasive Carci- Collection (TCGA-BCRAC). Cancer Imaging Archive (2016).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Clinical Proteomic Tumor Analysis Consortium</title>
+		<idno type="DOI">10.32388/ppf7tw</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Clinical Proteomic Tumor Analysis Consortium Glioblastoma Multiforme Collection (CPTAC-GBM)</title>
+		<imprint>
+			<publisher>Qeios</publisher>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>National Cancer Institute Clinical Proteomic Tumor Analysis Consortium</note>
+	<note type="raw_reference">National Cancer Institute Clinical Proteomic Tumor Analysis Con- sortium et al. The Clinical Proteomic Tumor Analysis Consortium Glioblastoma Multiforme Collection (CPTAC-GBM). Cancer Imaging Archive (2018).</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A Description of the Clinical Proteomic Tumor Analysis Consortium (CPTAC) Common Data Analysis Pipeline</title>
+		<idno type="DOI">10.1021/acs.jproteome.5b01091.s002</idno>
+		<ptr target="https://www.cancerimagingarchive.net/collection/cptac-ucec/" />
+	</analytic>
+	<monogr>
+		<title level="m">National Cancer Institute Clinical Proteomic Tumor Analysis Consortium et al. The Clinical Proteomic Tumor Analysis Consortium Uterine Corpus Endometrial Carcinoma Collection (CPTAC-UCEC)</title>
+		<imprint>
+			<publisher>American Chemical Society (ACS)</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note>Cancer Imaging Archive</note>
+	<note type="raw_reference">National Cancer Institute Clinical Proteomic Tumor Analysis Con- sortium et al. The Clinical Proteomic Tumor Analysis Consortium Uterine Corpus Endometrial Carcinoma Collection (CPTAC-UCEC). Cancer Imaging Archive https://www.cancerimagingarchive.net/ collection/cptac-ucec/ (2019).</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Role of oncogenes in cancer prognosis: a molecular approach</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Shay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="5877" to="5881" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shay, J. W. Role of oncogenes in cancer prognosis: a molecular approach. Cancer Res. 59, 5877s-5881s (1999).</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Whole slide images based cancer survival prediction using attention guided deep multiple instance learning networks</title>
+		<author>
+			<persName><forename type="first">Jiawen</forename><surname>Yao</surname></persName>
+			<idno type="ORCID">0000-0001-7429-2964</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xinliang</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jitendra</forename><surname>Jonnagaddala</surname></persName>
+			<idno type="ORCID">0000-0002-9912-2344</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junzhou</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2020.101789</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page">101789</biblScope>
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yao, J., Zhu, X., Jonnagaddala, J., Hawkins, N. &amp; Huang, J. Whole slide images based cancer survival prediction using attention gui- ded deep multiple instance learning networks. Med. Image Anal. 65, 101789 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Pathogen-X: A Cross-Modal Genomic Feature Trans-Align Network for Enhanced Survival Prediction from Histopathology Images</title>
+		<author>
+			<persName><forename type="first">Akhila</forename><surname>Krishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikhil</forename><forename type="middle">Cherian</forename><surname>Kurian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhijeet</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amruta</forename><surname>Parulekar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Sethi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/isbi60581.2025.10981028</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Krishna, A., Kurian, N. C., Patil, A., Parulekar, A. &amp; Sethi, A. Pathogen- x: a cross-modal genomic feature trans-align network for enhanced survival prediction from histopathology images. In IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 1-4 (IEEE, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Video Comment on Zaheer Nabi et al.</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zaheer</surname></persName>
+		</author>
+		<idno type="DOI">10.1055/a-0577-1500</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Endoscopy</title>
+		<title level="j" type="abbrev">Endoscopy</title>
+		<idno type="ISSN">0013-726X</idno>
+		<idno type="ISSNe">1438-8812</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">04</biblScope>
+			<biblScope unit="page" from="v16" to="v16" />
+			<date type="published" when="2018-03-27" />
+			<publisher>Georg Thieme Verlag KG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zaheer, M. et al. Deep Sets. NIPS&apos;17, 3394-3404 (</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The Hallmarks of Cancer</title>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Hanahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">A</forename><surname>Weinberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0092-8674(00)81683-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="70" />
+			<date type="published" when="2000-01">2000</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hanahan, D. &amp; Weinberg, R. A. The hallmarks of cancer. Cell 100, 57-70 (2000).</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Clinical AI tools must convey predictive uncertainty for each individual patient</title>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R S</forename><surname>Banerji</surname></persName>
+			<idno type="ORCID">0000-0002-4373-7657</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tapabrata</forename><surname>Chakraborti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Harbron</surname></persName>
+			<idno type="ORCID">0000-0002-4353-5780</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">D</forename><surname>Macarthur</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-023-02562-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2996" to="2998" />
+			<date type="published" when="2023-10-11">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Banerji, C. R. S., Chakraborti, T., Harbron, C. &amp; MacArthur, B. D. Clinical AI tools must convey predictive uncertainty for each indi- vidual patient. Nat. Med. 29, 2996-2998 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">An introduction to spatial transcriptomics for biomedical research</title>
+		<author>
+			<persName><forename type="first">Cameron</forename><forename type="middle">G</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyun</forename><forename type="middle">Jae</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takahiro</forename><surname>Asatsuma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roser</forename><surname>Vento-Tormo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashraful</forename><surname>Haque</surname></persName>
+			<idno type="ORCID">0000-0003-2260-0026</idno>
+		</author>
+		<idno type="DOI">10.1186/s13073-022-01075-1</idno>
+		<ptr target="https://doi.org/10.1186/s13073-022-01075-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Medicine</title>
+		<title level="j" type="abbrev">Genome Med</title>
+		<idno type="ISSNe">1756-994X</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2022-06-27">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Williams, C. G., Lee, H. J., Asatsuma, T., Vento-Tormo, R. &amp; Haque, A. An introduction to spatial transcriptomics for biomedical research. Genome Med. 14, https://doi.org/10.1186/s13073-022-01075- 1 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Evaluating the effectiveness of stain normalization techniques in automated grading of invasive ductal carcinoma histopathological images</title>
+		<author>
+			<persName><forename type="first">Wingates</forename><surname>Voon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><forename type="middle">Chai</forename><surname>Hum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yee</forename><forename type="middle">Kai</forename><surname>Tee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wun-She</forename><surname>Yap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Humaira</forename><surname>Nisar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hamam</forename><surname>Mokayed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neha</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khin</forename><forename type="middle">Wee</forename><surname>Lai</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-46619-6</idno>
+		<ptr target="https://doi.org/10.1038/s41598-023-46619-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-11-22">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Voon, W. et al. Evaluating the effectiveness of stain normalization techniques in automated grading of invasive ductal carcinoma histopathological images. Sci. Rep. 13, https://doi.org/10.1038/ s41598-023-46619-6 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Deep unsupervised learning using nonequilibrium thermodynamics</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sohl-Dickstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Maheswaranathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ganguli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Francis</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Bach</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Blei</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="2256" to="2265" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sohl-Dickstein, J., Weiss, E. A., Maheswaranathan, N. &amp; Ganguli, S. Deep unsupervised learning using nonequilibrium thermo- dynamics. In International Conference on Machine Learning (ICML), Vol. 37 (eds Francis R. Bach &amp; David M. Blei) 2256-2265 (JMLR.org, 2015).</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Denoising diffusion probabilistic models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Abbeel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="6840" to="6851" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ho, J., Jain, A. &amp; Abbeel, P. Denoising diffusion probabilistic models. Adv. Neural Inf. Process. Syst. 33, 6840-6851 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Score-based generative modeling through stochastic differential equations</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Learning Representations</title>
+		<imprint>
+			<publisher>Curran Associates Inc</publisher>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Song, Y. et al. Score-based generative modeling through stochastic differential equations. In International Conference on Learning Representations (ICLR) (Curran Associates Inc., 2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Attention is all you need</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 31st International Conference on Neural Information Processing Systems, NIPS&apos;17</title>
+		<meeting>31st International Conference on Neural Information essing Systems, NIPS&apos;17</meeting>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Vaswani, A. et al. Attention is all you need. In Proc. 31st International Conference on Neural Information Processing Systems, NIPS&apos;17 (eds</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">I</forename><surname>Guyon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Curran Associates Inc</publisher>
+			<biblScope unit="page" from="6000" to="6010" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guyon, I. et al.) 6000-6010 (Curran Associates Inc., 2017).</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Cross-entropy loss functions: theoretical analysis and applications</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 40th International Conference on Machine Learning. ICML&apos;23</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Krause</surname></persName>
+		</editor>
+		<meeting>40th International Conference on Machine Learning. ICML&apos;23</meeting>
+		<imprint>
+			<publisher>JMLR.org</publisher>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mao, A., Mohri, M. &amp; Zhong, Y. Cross-entropy loss functions: the- oretical analysis and applications. In Proc. 40th International Conference on Machine Learning. ICML&apos;23 (eds Krause, A. et al.) (JMLR.org, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Conditional validity of inductive conformal predictors</title>
+		<author>
+			<persName><forename type="first">Vladimir</forename><surname>Vovk</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10994-013-5355-6</idno>
+		<ptr target="https://proceedings.mlr.press/v25/vovk12.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning</title>
+		<title level="j" type="abbrev">Mach Learn</title>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">C H</forename><surname>Hoi</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Buntine</surname></persName>
+		</editor>
+		<idno type="ISSN">0885-6125</idno>
+		<idno type="ISSNe">1573-0565</idno>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="349" to="376" />
+			<date type="published" when="2012">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+			<pubPlace>W.; Singapore</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Management University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+	<note type="raw_reference">Vovk, V. Conditional validity of inductive conformal predictors. In Proc. Asian Conference on Machine Learning, volume 25 of Pro- ceedings of Machine Learning Research (eds Hoi, S. C. H. &amp; Buntine, W.) 475-490, https://proceedings.mlr.press/v25/vovk12.html (Sin- gapore Management University, Singapore, 2012).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

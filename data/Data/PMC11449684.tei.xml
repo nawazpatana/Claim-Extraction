@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Enhancing brain tumor detection: a novel CNN approach with advanced activation functions for accurate medical imaging analysis</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-09-20">20 September 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Reham</forename><surname>Kaifi</surname></persName>
+							<email>kaifir@ksau-hs.edu.sa</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiological Sciences , College of Applied Medical Sciences , King Saud bin Abdulaziz University for Health Sciences , Jeddah , Saudi Arabia ,</note>
+								<orgName type="department" key="dep1">Department of Radiological Sciences</orgName>
+								<orgName type="department" key="dep2">College of Applied Medical Sciences</orgName>
+								<orgName type="institution" key="instit1">King Saud</orgName>
+								<orgName type="institution" key="instit2">Abdulaziz University for Health Sciences</orgName>
+								<address>
+									<settlement>Jeddah</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> King Abdullah International Medical Research Center , Jeddah , Saudi Arabia ,</note>
+								<orgName type="institution">King Abdullah International Medical Research Center</orgName>
+								<address>
+									<settlement>Jeddah</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Medical Imaging Department , Ministry of the National Guard-Health Affairs , Jeddah , Saudi Arabia</note>
+								<orgName type="department">Medical Imaging Department</orgName>
+								<orgName type="institution">Ministry of the National Guard-Health Affairs</orgName>
+								<address>
+									<settlement>Jeddah</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ramin</forename><surname>Ranjbarzadeh</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Govindaraj</forename><surname>Ramkumar</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>Dr.</roleName><forename type="first">Shivajirao</forename><surname>Jadhav</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation">Dublin City University , Ireland</note>
+								<orgName type="institution">Dublin City University</orgName>
+								<address>
+									<country key="IE">Ireland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">Saveetha University , India</note>
+								<orgName type="institution">Saveetha University</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<note type="raw_affiliation">Babasaheb Ambedkar Technological University , India</note>
+								<orgName type="institution">Babasaheb Ambedkar Technological University</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Enhancing brain tumor detection: a novel CNN approach with advanced activation functions for accurate medical imaging analysis</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Oncology</title>
+						<title level="j" type="abbrev">Front. Oncol.</title>
+						<idno type="eISSN">2234-943X</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">14</biblScope>
+							<date type="published" when="2024-09-20">20 September 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">3F254BB58850D2A20D40C6C52FACDA70</idno>
+					<idno type="DOI">10.3389/fonc.2024.1437185</idno>
+					<note type="submission">RECEIVED 24 May 2024 ACCEPTED 29 August 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T13:45+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>brain tumors</term>
+					<term>Convolutional neural networks</term>
+					<term>detection</term>
+					<term>medical imaging</term>
+					<term>computeraided diagnosis tools (CAD) Frontiers in Oncology frontiersin.org 01</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction: Brain tumors are characterized by abnormal cell growth within or around the brain, posing severe health risks often associated with high mortality rates. Various imaging techniques, including magnetic resonance imaging (MRI), are commonly employed to visualize the brain and identify malignant growths. Computer-aided diagnosis tools (CAD) utilizing Convolutional Neural Networks (CNNs) have proven effective in feature extraction and predictive analysis across diverse medical imaging modalities.</p><p>Methods: This study explores a CNN trained and evaluated with nine activation functions, encompassing eight established ones from the literature and a modified version of the soft sign activation function.</p><p>Results: The latter demonstrates notable efficacy in discriminating between four types of brain tumors in MR images, achieving an accuracy of 97.6%. The sensitivity for glioma is 93.7%; for meningioma, it is 97.4%; for cases with no tumor, it is 98.8%; and for pituitary tumors, it reaches 100%.</p><p>Discussion: In this manuscript, we propose an advanced CNN architecture that integrates a newly developed activation function. Our extensive experimentation and analysis showcase the model's remarkable ability to precisely distinguish between different types of brain tumors within a substantial and diverse dataset. The findings from our study suggest that this model could serve as an invaluable supplementary tool for healthcare practitioners, including specialized medical professionals and resident physicians, in the accurate diagnosis of brain tumors.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The brain is an essential organ responsible for regulating the nervous systems in both humans and animals <ref type="bibr" target="#b0">(1)</ref>. Brain tumors are severe conditions characterized by abnormal cell proliferation within or near the brain, often resulting in high mortality rates <ref type="bibr" target="#b1">(2)</ref>. These tumors can be categorized as either primary or secondary based on their point of origin and as benign or malignant based on their characteristics. Primary tumors develop within the brain, while secondary tumors metastasize to the brain from elsewhere. Malignant tumors exhibit rapid growth and tend to infiltrate healthy cells in other body areas <ref type="bibr" target="#b2">(3)</ref>. The early detection and accurate diagnosis of brain tumors is crucial for effective treatment and improving patient outcomes.</p><p>Some prevalent forms of primary brain tumors consist of gliomas, meningiomas, pituitary adenomas, and schwannomas. Gliomas, mainly grades 3 and 4, are the most frequently occurring malignant tumors. Meningiomas and pituitary tumors are the prevailing benign tumors. Meningiomas arise from the membranes enveloping the spinal cord and brain, while pituitary tumors develop from the pituitary gland at the brain's base <ref type="bibr" target="#b3">(4,</ref><ref type="bibr" target="#b4">5)</ref>.</p><p>Imaging techniques, such as magnetic resonance imaging, are widely employed for visualizing the brain and identifying tumors. MRI utilizes a combination of a magnetic field and radio waves to generate detailed images of body tissues and organs, facilitating precise diagnosis and evaluation of tumor-related damage <ref type="bibr" target="#b5">(6)</ref>. In certain instances, tumor typing may require a biopsy. Improvements in computer technology have enhanced processing speed and memory capabilities. Many healthcare professionals acknowledge the necessity for creating reliable predictive models to confront their ongoing challenges. These models aim to recognize and categorize patterns, assisting medical experts in patient diagnosis and treatment strategies <ref type="bibr" target="#b6">(7)</ref>.</p><p>Deep Learning, a subset of machine learning, has become widely known for its ability to construct intricate structures or non-linear transformations through neural networks with multiple layers. This approach has shown significant promise in radiology and medical imaging by enhancing the precision and speed of tasks like image classification, segmentation, and anomaly detection <ref type="bibr" target="#b7">(8)</ref>.</p><p>Training deep learning models on extensive medical images allows them to extract essential features and patterns autonomously. This capability empowers them to recognize and categorize various medical conditions, such as brain tumors, lung diseases, and cardiovascular abnormalities <ref type="bibr" target="#b8">(9)</ref>.</p><p>Various medical imaging modalities, including MRI, CT, and PET scans, have benefited from successfully applying different types of deep learning models like convolutional neural networks. These CNNs are designed with convolutional layers for extracting features and densely connected layers for classification <ref type="bibr" target="#b9">(10)</ref>. Through extensive image data analysis and understanding of intricate patterns, CNNs have enhanced disease diagnosis and prognosis accuracy. A standard CNN typically comprises four layers: a convolutional layer, an activation function layer, a pooling layer, and a fully connected layer. These layers work together to process the input image, extract relevant features, and make predictions based on those features <ref type="bibr" target="#b10">(11)</ref>.</p><p>The activation function layer enables the network to capture non-linear correlations between input and output. Incorporating non-linearity into the network facilitates the representation of intricate patterns and connections within the data <ref type="bibr" target="#b11">(12)</ref>.</p><p>Transfer learning is commonly used to simplify the development of new models for similar tasks. It entails utilizing a pre-trained model trained on a large dataset as a basis for a specific task. This approach enables us to capitalize on the knowledge and features already captured by the pre-trained model, eliminating the necessity to train an entirely new model from the beginning. Numerous transfer learning models exist, including VGG, EfficientNet, ResNet, Inception, MobileNet, DenseNet, and others <ref type="bibr" target="#b12">(13)</ref>.</p><p>This work is applicable in the field of medical imaging, specifically for detecting and diagnosing brain tumors using advanced deep-learning models. The proposed method utilizes Convolutional Neural Networks (CNNs) with tailored activation functions to improve the accuracy and efficiency of brain tumor detection in MRI or CT scan images. The aim is to support radiologists, residents, and medical professionals by offering a more precise and automated tool for early diagnosis, which is essential for effective treatment planning. The proposed work introduces an innovative approach to brain tumor detection by developing and implementing a novel CNN architecture enhanced with advanced activation functions. This CNN model is specifically designed to analyze medical imaging data, such as MRI or CT scans, and accurately identify the presence of brain tumors. The primary innovation is the introduction of these advanced activation functions, which enhance the model's capacity to recognize intricate patterns and subtle features within medical images. This approach can potentially enable more reliable and earlier detection of brain tumors, ultimately improving patient outcomes.</p><p>This study involved the development of a novel model utilizing CNN to categorize various forms of brain cancer using (MRI). We have made the following critical contributions to this study: a. This study introduces an innovative CNN methodology for classifying four distinct types of brain tumors: glioma, meningioma, pituitary tumors, and no tumor.</p><p>b. We utilized various activation functions and conducted a comparative analysis between them.</p><p>c. After comparing them, we proposed a new type of activation function, which proved to be the most effective.</p><p>d. By attaining the best accuracy score on the Kaggle dataset, the study's findings demonstrate that the suggested methodology performs better than current methods.</p><p>Comparisons with previously used techniques and pretrained models were also made to evaluate the approach's prediction ability.</p><p>The remaining sections of this paper are structured as follows: Section 2 provides an overview of the related work, while Section 3 describes the proposed model for brain tumor classification. In Section 4, we present the experimental results. Finally, Section 5 concludes the paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related work</head><p>The intricate clinical significance of brain tumor classification using MR images makes this an important study field. Automation can be achieved using Deep Learning (DL) and Machine Learning (ML). The manual tumor segmentation and feature extraction processes of ML-based systems are their bottlenecks. DL-based methods, such as Convolutional Neural Networks (CNNs), are gaining ground on diagnosis challenges due to their superior performance in medical image processing. In this section, we focused on methods for brain tumor classification using deep learning. Researchers either utilized the same dataset in this study or created new CNN architectures and applied them to different datasets. Additionally, we included studies that employed transfer learning.</p><p>Elena McCain-Nino and her colleagues created a CRISP-DM model to identify brain cancers by adding a classification header to a ResNet-50 framework <ref type="bibr" target="#b13">(14)</ref>. They constructed a data generator to split pixels by 255 using a dataset of 3847 brain MRI images scaled to 256 × 256. The model demonstrated 92% accuracy and 94% precision throughout the test procedure. Using three distinct networks, including GoogleNet, Manish and Rajiv (15) used the idea of transfer learning to diagnose brain cancer images. 224 of the 696 MR-type images in the dataset are benign, while 472 are malignant. An accuracy of 96.65 is attained using the suggested framework.</p><p>Muhammad Altaf et al. proposed an approach to classification that uses pre-trained Google Net and deep transfer learning <ref type="bibr" target="#b15">(16)</ref>. This work examines a three-class method to differentiate between three prevalent brain cancer types: pituitary tumors, meningiomas, and gliomas. They used 930 images of pituitary tumors, 708 images of meningiomas, and 1426 MRI images of brains affected by gliomas. The accuracy was 91% when they used updated GoogleNet to power independently softmax classifiers. It is important to note that a hybrid approach that combines deep learning and machine learning was used in this study to improve accuracy. Accuracy increased to 95% after machine learning techniques were applied.</p><p>The seven recent CNNs for categorizing meningioma, glioma, and pituitary-type cancers were assessed by Anaya-Isaza et al. <ref type="bibr" target="#b16">(17)</ref>. The outcomes show that neural network detection and classification methods are quite good. First, the InceptionResNetV2 network outperformed the other networks with accuracy levels as high as 97%-next, a new network design known as the cross-transformer was added to the experiment. The FLAIR sequence was more effective in detecting brain tumors, with an essential level below 0.03 in six out of eight networks. Furthermore, it was demonstrated that the crosstransformer obtained accuracy values that were nearly 90%.</p><p>Ravinder et al. <ref type="bibr" target="#b17">(18)</ref> proposed a CNN-based model to predict brain tumor types (Meningioma, Pituitary, Glioma, or No tumor) using non-Euclidean distances in image data. The model achieved an accuracy of 95.01%, with Net-2 with Graph input-based CNN and Gaussian Adjacency matrix achieving the highest accuracy. This model is considered a vital alternative for detecting brain tumors in suspected patients.</p><p>The study in (1) investigated the CNN structure and its ability to classify data, and the low number of layers revealed shortcomings. The effect of the VGG16Net, in addition to DenseNet models, on success rates was examined. The approach was not applied since transfer learning had no discernible impact on the success rate in the health industry. Positive outcomes in thick layers were shown by DenseNet analysis; however, not to the anticipated extent. The training step was finished in person using CNN architecture. It was possible to locate a dataset with approximately 7,000 photos split between 80% training and 20% testing phases. The model's success rate was 94-97% without using transfer learning techniques.</p><p>This study created a CNN In <ref type="bibr" target="#b18">(19)</ref> to identify brain cancers from MRI data. The network was trained using a sixteen-layer VGG 16 model that had already been trained. The study aimed to find brain tumors (Meningioma, Pituitary, and Glioma). With various processing activities to increase efficiency, the suggested network design detected cancers remarkably effectively. With an accuracy rate of 96%, the CNN model performed substantially better than earlier research.</p><p>Manali <ref type="bibr">Gupta et al. (20)</ref> used image edge detection and cropping to detect ROI in MRI images, then expanded datasets using data preparation. A basic CNN network containing 14 layers was proposed as a practical classification approach for brain tumors. The approach achieved 96% accuracy, surpassing VGG-16, even with a small dataset, potentially aiding in tumor identification in individuals with brain malignancies.</p><p>Zobeda Al-Azzwi1 and Nazarov2 <ref type="bibr" target="#b20">(21)</ref> utilized CNN models to classify images of cancer disease using stacking ensemble DL methodology. Three models, VGG19, Inception v3, and Resnet 101, were used to train the data set of unhealthy and normal brains. The 96.6% accuracy demonstrates the efficacy of ensemble models for binary categorization, which was attained by using the Adam optimizer and a Loss binary cross-entropy model.</p><p>A novel diagnostic system utilizing CNN with DWT data processing was introduced in (22) to diagnose brain glioma tumors. Discrete Wavelet Transformation (DWT) was used to transfer original MRI pictures to the frequency domain, allowing the suggested CNN model to employ temporal and spatial data instead of typical pixel intensities. The original photographs receive no pre-processing. MRI slices from 382 adult patients are used to train the model. When using the DWT format data and the suggested CNN model, the performance numbers are higher than when using the MRI intensity values as input data. The experimental results demonstrated the superior performance of CNN based on DWT details for binary classification of glioma tumors, with an accuracy of 0.97.</p><p>The authors Kibriya et al. <ref type="bibr" target="#b22">(23)</ref> suggested developing a 13-layer CNN architecture that is lightweight, has fewer layers, and has learnable parameters to classify brain cancers from MRI data. The proposed model was tested using a benchmark dataset for glioma, pituitary, and meningioma, and it performed best with an accuracy of 97.2%.</p><p>Innovative methods for categorizing brain tumor scans were proposed in <ref type="bibr" target="#b23">(24)</ref>, including hybrid CNNs and transfer learning. There were four classes in each of the 2880 T1-weighted MRI brain scans that made up the dataset (no tumor, glioma, meningioma, and pituitary tumor). The brain tumor types were classified, and two CNNs (AlexNet and GoogleNet) were fine-tuned using transfer learning approaches. They obtained a 97% accuracy rate.</p><p>In <ref type="bibr" target="#b24">(25)</ref>, the study used 3264 MRI images to classify brain tumors using various models. The ResNet-50 model performed best with 80% accuracy, 75% recall, 84% precision, and 75% F1 score. The VGG-19 model had the lowest accuracy rate. The transfer learning approach was more effective than peer studies, especially with small data and fewer epochs. The study highlighted the importance of preprocessing raw MRI scan images for training.</p><p>The potential advantages of combining the Python Imaging Library (PIL) with the VGG16 DL algorithm for brain tumor identification have been illustrated by Karamehićand Jukić <ref type="bibr" target="#b25">(26)</ref>. Accurate and dependable tumor detection has been achieved by integrating the feature collection powers of VGG16 with PIL's picture preprocessing and processing capabilities. The study's findings demonstrate the efficacy of this method in accurately classifying various kinds of tumors. With 96.9% accuracy, the research's methodology delivered reliable identification of tumors across the dataset. VGG-16 achieves the best accuracy of all the algorithms they propose coming in at 97%.</p><p>A unique deep-learning model that makes use of a soft attention mechanism was presented by Mohanty et al. <ref type="bibr" target="#b29">(30)</ref> They used a CNN Network with four convolution layers. Their method gathers and combines attributes from all layers instead of obtaining features only from the last layer, as is typical in many models. This guarantees that each layer's essential qualities are retained and combined into a strong, comprehensive feature vector instead of being lost. The accuracy rate of the suggested model was 95.1%. <ref type="bibr">Kurniawan et al. (31)</ref> used the InceptionResNetV2 structure and data augmentation and Transfer Learning to classify images of brain tumors. In Scenario 1, the accuracy of the suggested architecture used in the test data evaluation was 94.18%. Scenario 2, which paired InceptionResNetV2 augmentation with augmentation, demonstrated an accuracy boost of 95.10%. Moreover, Scenario 3's accuracy of 96.63% was achieved by combining InceptionResNetV2 via Transfer Learning and augmentation.</p><p>This study aims to automate the detection of four types of brain tumors using MRI images. We proposed a classification system using CNN. In the beginning, we used existing activation functions and compared their results. Then, we selected the best-performing function and proposed modifications to enhance its performance further. These modifications improved accuracy compared to the current state-of-the-art.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>This section presents the proposed methodology for identifying and categorizing brain cancers using a unique CNN framework. The suggested method has two main parts. First, the dataset must be prepared, and then a custom CNN must be built to extract deep characteristics and classify brain tumors. First, we resized and normalized MRI images. The suggested 16-layered CNN architecture is then fed these images. The general process of the suggested method is depicted in Figure <ref type="figure">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 1</head><p>The structure of CNN is proposed.</p><p>Kaifi 10.3389/fonc.2024.1437185 Frontiers in Oncology frontiersin.org</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dataset</head><p>The model was created using the Convolutional Neural Network (CNN) architecture, a popular deep-learning algorithm for image classification. To assess the performance of our model, we used the open-source Brain Tumor MRI Dataset available on Kaggle, a platform for data science competitions and projects, which can be accessed through the following link: <ref type="url" target="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset?select=Training">https://  www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-</ref>dataset?select=Training. Three datasets (figshare, SARTAJ, and Br35H) were combined to create this dataset <ref type="bibr" target="#b31">(32)</ref>. The diverse dataset provides the model with a wide range of brain tumor images. This helps the model learn different behaviors and features, improving its ability to predict new, unseen data. As a result, bias towards a specific subset of the dataset is reduced, leading to the development of fairer AI systems. Training on a broad dataset also enhances the model's robustness and adaptability, allowing it to handle a wider array of situations and data variances.</p><p>The data collection consists of four classes, as shown in Figure <ref type="figure">2</ref>. These are brain MRI images of healthy people, meningiomas, gliomas, and other tumors. Images for gliomas (1621), meningiomas (1645), pituitaries (1757), and healthy individuals (2000) are available. The figshare dataset includes 3,064 T1-weighted, contrast-enhanced images from 233 patients. These images represent three different types of brain tumors: meningioma (708 slices), glioma (1,426 slices), and pituitary tumor (930 slices). The SARTAJ dataset contains 3,260 T1-weighted, contrast-enhanced images undergoing thorough cleaning and augmentation. Lastly, the Br35H dataset consists of 3,060 Brain MRI Images. Table <ref type="table" target="#tab_0">1</ref> presents the information related to the dataset.</p><p>There were 7023 MRI pictures used in all. The Kaggle software offers the dataset as open source. The 512 × 512 JPEG images each have a label identifying the kind of brain tumor. Every model used this data set as input data. 70% and 10% of the images were used for the training and validation tasks, respectively. 20% of the images, however, served as test data. However, to give the dataset a suitable input size for every model, resizing was done during the preparation phase.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CNN Overview</head><p>Convolutional neural networks (CNNs) are now the most widely used DL networks. CNNs can process various data inputs, including 1D signals and 2D pictures. An algorithm for deep learning that can assess an input image, rank different visual characteristics according to importance, and differentiate between them is a ConvNet/CNN <ref type="bibr" target="#b32">(33)</ref>. Compared to other classification methods, ConvNet requires comparatively less preprocessing. While the filters in outdated methods are made by hand, ConvNets can learn about these filters and their attributes. A CNN typically consists of multiple layers, including the input, convolutional, Activation function, fully connected, classification, and output layers. CNN's core algorithm is a convolution that uses an adaptable filter with preset weight and size values that are changed throughout the training phase's downsampling to achieve high accuracy. Figure <ref type="figure">3</ref> presents the suggested strategy for this work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Activation function</head><p>Neural network activation functions are essential because they compute the weighted total of input and biases to decide whether a neuron can fire or not. Through gradient processing-most commonly gradient descent-they change data and generate an output containing the parameters found in the input. These functions, which can be non-linear or linear, regulate outputs in several fields, such as cancer detection systems, segmentation, object recognition, and speech systems. Here are some commonly used activation functions in deep learning: i. ReLU</p><p>The Rectified Linear Unit (ReLU) is a non-linear activation function that can carry out the derivative operation. While leaving positive values unaltered, the ReLU function makes all negative values zero. The problem of the vanishing gradient can be prevented, which is why ReLU's simplicity has made it popular <ref type="bibr" target="#b33">(34)</ref>. It is possible to define the ReLU function mathematically as</p><formula xml:id="formula_0">F(x) = 0, x &lt; 0</formula><p>x, x ≥ 0 where x is the input value (</p><p>ii. Leaky ReLU The "dying ReLU" issue is addressed by the Leaky ReLU function, an adaptation of the ReLU algorithm that allows negative values to descend modestly rather than being set to zero <ref type="bibr" target="#b33">(34)</ref>.</p><formula xml:id="formula_2">FIGURE 2</formula><p>Classes for brain tumors in the dataset <ref type="bibr" target="#b31">(32)</ref>.</p><p>Kaifi 10.3389/fonc.2024.1437185</p><p>Frontiers in Oncology frontiersin.org</p><formula xml:id="formula_3">F(x) = a * x, x &lt; 0 x , x ≥ 0</formula><p>where a is the scalar number</p><formula xml:id="formula_4">( (<label>2</label></formula><formula xml:id="formula_5">)</formula><p>iii. Clipped ReLU An update to ReLU called Clipped ReLU applies a threshold operation. Every value entered below zero is set to zero, and any value that exceeds the clipping threshold is set to that limit <ref type="bibr" target="#b35">(36)</ref>.</p><formula xml:id="formula_6">F(x) = 0, x &lt; 0 x , constant &gt; x ≥ 0 constant, x ≥ constant 8 &gt; &gt; &lt; &gt; &gt; :<label>(3)</label></formula><p>iv. Exponential Linear Units (ELUs) Another kind of AF suggested by Clevert et al. ( <ref type="formula">2015</ref>) is called ELUs, which is used to expedite the training of DNN <ref type="bibr" target="#b33">(34)</ref>. The primary benefit of ELUs is their ability to enhance learning features and mitigate the vanishing gradient issue by employing identity for positive values. Their negative values push the mean unit activation closer to zero, lowering computational cost and accelerating learning <ref type="bibr" target="#b34">(35)</ref>. Because it reduces bias shifts by driving mean activation towards zero during training, the ELU is a good substitute for the ReLU.</p><formula xml:id="formula_7">F(x) = a : e x -1, x &lt; 0 x , x ≥ 0 ( (<label>4</label></formula><formula xml:id="formula_8">)</formula><p>Where a is the ELU hyperparameter, typically set to 1.0, regulates the saturation level for negative net inputs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>v. Gaussian Error Linear Unit</head><p>The Gaussian Error Linear Unit (GELU) was introduced as an alternative to more conventional activation functions like ReLU <ref type="bibr" target="#b36">(37)</ref>. GELU seeks to offer a smooth and distinct non-linearity to enhance the network's learning and performance.</p><formula xml:id="formula_9">GELU(x) = x 2 : (1 + erf (0:707 * x))<label>(5)</label></formula><p>In this case, the mathematical function that represents the degree of divergence of a normal distribution over zero is called the error function, or erf(x).</p><p>vi. Hyperbolic Tangent Function A popular non-linear activation function in neural networks is the hyperbolic tangent function or tanh for short. The conventional tangent function is extended to the hyperbolic space in this way. In some circumstances, the zerocenteredness of the tanh function makes it preferable to the sigmoid function. Tanh, which has a mean value around zero, might enhance learned dynamics in neural networks and lessen the effects of the vanishing gradient issue <ref type="bibr" target="#b37">(38)</ref>. Tanh function has the following mathematical expression:</p><formula xml:id="formula_10">F(x) = e x -e -x e x + e -x<label>(6)</label></formula><p>vii. Softsign A non-linear AF that transfers the value of the input to a range between -1 and 1 is the Softsign activation function.</p><p>Apart from the point of origin, the function is continuous, smooth, and differentiable everywhere <ref type="bibr" target="#b35">(36)</ref>. The following defines the Softsign function:</p><formula xml:id="formula_11">F(x) = x 1 + x j j<label>(7)</label></formula><p>The key difference between the tanh and Softsign functions is that the latter converges exponentially, while the former converges in polynomial form.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>viii. Swish Activation Function</head><p>In 2017, Google researchers unveiled the Swish, a nonlinear activation function. It is intended to offer a smooth</p><note type="other">FIGURE 3</note><p>Structure of the suggested approach for classifying brain tumors. and effective activation function in terms of computing, which may enhance the capabilities of DL <ref type="bibr" target="#b35">(36)</ref>. The Swish generally possesses a single, uninterrupted positive or negative derivative throughout the construction. Furthermore, it has negative derivatives over some points instead of merely taking positive ones across every point. Through testing on difficult datasets, the developers have shown that the swish function performs better than the widely used ReLU activation function. The mathematical expression for the Swish activation function is:</p><formula xml:id="formula_12">F(x) = x 1 + e -x<label>(8)</label></formula><p>ix. Proposed modified softsign Activation Function In this study, we proposed a new type of activation function by modifying the softsign function. In the positive direction, we kept it as it was in softsign, but in the negative direction, we multiplied it by zero. The mathematical expression for the proposed type is:</p><formula xml:id="formula_13">F(x) = x 1+ x j j , x ≥ 0 0 , x &lt; 0 ( )<label>(9)</label></formula><p>The ReLU has a drawback in that it readily overfits when compared to the soft sign function; however, the dropout approach has been used to lessen the effect of ReLU overfitting, and the rectified networks increased the performance of deep neural networks.</p><p>Furthermore, the Softsign function increases polynomially rather than exponentially. This softer non-linearity leads to improved and more rapid learning since it eliminates the need to struggle with diminishing gradients. Due to this modification, the learning process is disrupted by dying of some neurons because negative responses cannot discriminate. Figure <ref type="figure" target="#fig_3">4</ref> compares the Softsign, ReLU, and proposed functions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proposed CNN</head><p>This paper's CNN structure started at the input layer, containing an image size of 224 x 224 x 3, as Figure <ref type="figure" target="#fig_4">5</ref> illustrates. CNN's structure comprised three convolutional layers to extract deep features and generate the most accurate features map. The batch normalization layer came after each map and oversaw determining the training procedure and lowering the number of epochs needed for CNN structures to learn. The layer with the activation function was placed after the batch normalization layer. The max pooling layer then downsampled the features map. An ultimately linked layer with two neurons was used; in the second stage, this was changed to three neurons.</p><p>Within the initial convolutional layer, thirty-two filters with a 3 × 3 size were utilized. Smaller kernel sizes, such as 1x1, 2x2, 3x3, and 4x4, offer advantages over larger sizes like 5x5 and beyond. One of the primary reasons for preferring smaller kernel sizes is their ability to reduce computational costs and promote weight sharing, resulting in fewer weights for backpropagation. However, it is not recommended to use a 1x1 kernel as it generates finely grained and local features without considering information from neighboring pixels. Moreover, the 2x2 and 4x4 sizes are generally less favorable because odd-sized filters symmetrically divide the previous layer's pixels around the output pixel. Therefore, the optimal choice is a 3x3 kernel. The same kernel size was used for the second and third convolutional layers, which had 64 and 32 filters. To determine the number of filters, we followed a methodology that involved starting with a small number and gradually optimizing them. Our goal was to find the right balance between accuracy and computational efficiency. Ultimately, we selected several filters that allowed us to learn the necessary features effectively. Three × three stride by two padding sizes were used in all convolutional layers. The classification layer was involved to differentiate between the demand classifications. Table <ref type="table" target="#tab_1">2</ref> illustrates the configuration of our CNN.</p><p>A thorough study was conducted on the suggested framework, emphasizing accuracy, F1-score, precision, and recall <ref type="bibr" target="#b36">(37)</ref>. F1-score assesses the trade-off between accuracy and recall, measuring the model's ability to minimize misclassifying negative instances as positive and recall accurately classifying the appropriate tumor type. Accuracy divides the percentage of correct classifications to determine the model's overall performance. The receiver operating characteristic curve, or ROC curve, is a graph that illustrates a classification model's performance overall categorization stages. The term AUC represents "Area under the ROC Curve." In other words, AUC calculates the area in two dimensions beneath the ROC curve, ranging from (0,0) to (1,1). The AUC score has a value between 0 and 1. The model is better the higher its AUC score.</p><p>Table <ref type="table">3</ref> presents the critical performance metrics alongside their respective mathematical equations.</p><p>Regarding the previous equations, the number of expected positive instances is known as True Positive (TP). The number of expected negative cases is True Negative (TN). False Negative (FN), often called a (type two) error, is the number of expected adverse events that turn out to be positive. The number of anticipated positive outcomes that are negative is known as a false positive (FP).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and discussion</head><p>This paper introduces the impact of the activation layer on the classification accuracy for four types of brain tumors. The proposed CNN is trained using various activation layers, as mentioned in the methodology section, and then the trained models are tested. The confusion matrix is generated for each simulation to show how the activation layer affects the accuracy of the brain tumor images. The corresponding confusion matrices are for the testing phase. The data is split into 70% training, 10% validation, and 20% testing. MATLAB 2023a was utilized to carry out the tasks. The simulation was run on an Intel(R) Core i5 CPU with 8GB RAM and Windows 10 software. Figure <ref type="figure" target="#fig_5">6</ref> shows the performance of the proposed model after using the ReLU activation layer. All experiments are carried out using the following hyperparameters; Adaptive Moment Estimation (Adam) optimizer with initial learning rate of 0.0001, minibatch size of 64, and maximum epoch of 64.</p><p>After applying ReLU, 254 out of 300 glioma cases were accurately identified, resulting in a sensitivity of 84.7%. Among these, 41 cases were incorrectly classified as meningioma, one as having no tumor, and four as pituitary. Conversely, one meningioma case was misclassified as glioma. The precision for glioma was high at 99.6%. Furthermore, 299 meningioma cases were correctly identified, yielding a recall of 97.7%. However, four cases were misclassified as having no tumor, two as pituitary, and only one as glioma. Notably, the lowest precision among the four classes was observed for no tumor cases, with a rate of 87.7%. The highest sensitivity was achieved in no tumor cases, reaching 100%, with a precision of 98.8%. Pituitary cases demonstrated promising results in actual predictive rate (99.7%) and precision (98%). The overall accuracy obtained in the experiment is 95.9%. The F1-score, representing the geometric mean between sensitivity and precision, has been evaluated at 95.55%.</p><p>The same experiment is carried out using Leaky -ReLU. Figure <ref type="figure">7</ref> shows the performance of the proposed model.</p><p>Upon applying Leaky ReLU, 233 glioma cases out of 300 were correctly identified, resulting in a sensitivity of 77.7%. Among these, 52 cases were erroneously classified as meningioma and 15 as pituitary. Conversely, three meningioma cases were misclassified as glioma. The precision for glioma was notably high at 97.9%. Additionally, 258 meningioma cases were accurately identified, producing a recall of 84.3%. However, 22 cases were misclassified as having no tumor, 19 as pituitary, and three as glioma. Notably, a moderate precision among the four classes was observed for no tumor cases, with a rate of 93.3%. The sensitivity in no tumor cases was remarkable, reaching 98.8%, with a precision of 93.9%. Pituitary cases demonstrated the highest results in true predictive rate (99.7%) and a moderate precision of 98%. The overall accuracy achieved using Leaky ReLU was 90.8%. The F1-score, calculated as the geometric mean between sensitivity and precision, is 90.15%.</p><p>An identical experiment was conducted utilizing Clipped ReLU, and Figure <ref type="figure">8</ref> displays the performance of the proposed model.</p><p>Upon employing clipped ReLU, 240 out of 300 glioma cases were accurately identified, resulting in the lowest recall among all four classes, with a sensitivity of 80.0%. Among these, 53 cases were misclassified as meningioma, one as having no tumor, and six as The proposed CNN architecture block.</p><p>pituitary. Conversely, four meningioma cases were misclassified as glioma. The precision for glioma was notably high at 97.6%. Furthermore, 263 meningioma cases were correctly identified, yielding the lowest recall of 84.3%. However, 23 cases were misclassified as having no tumor, 16 as pituitary, and four as glioma. Notably, a moderate precision among the four classes was observed for no tumor cases, with a rate of 81.2%. The sensitivity in no tumor cases was remarkable, reaching 98.3%, with a precision of 94.3%. Pituitary cases exhibited the highest results in true predictive rate (98.7%) and a moderate precision of 92.8%. The overall accuracy achieved using clipped ReLU was 91.3%. The F1-score is calculated, representing the geometric mean between sensitivity and precision, resulting in 90.82%. The same experiment uses ELU, and Figure <ref type="figure">9</ref> illustrates the performance of proposed model.</p><p>Utilizing ELU, 262 out of 300 glioma cases were correctly identified, resulting in the lowest recall among all four classes, </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Name Definition equation</head><p>Accuracy Accuracy is defined as the ratio of accurate predictions to the total number of data points. TP + TN TP + TN + FP + FN</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Precision</head><p>Precision is the percentage of positive forecasts in the all-positive category.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TP TP + FP</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Recall</head><p>The amount of true positive (TP) results divided by a total amount of positive class TP TP + FN F1-score F1 score represents a harmonic average of recall and precision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">* Recall * Precision Recall + Precision</head><p>The receiver operating characteristics (ROC)</p><p>The correlation between the rate of true positives and the rate of false positives.</p><p>AUC the classifier's capacity to discriminate between classes, which is measured and used to summarize the ROC curve. The performance of the ReLU activation layer (A) Test confusion matrix. (B) ROC curve.</p><note type="other">FIGURE 7</note><p>The performance of the Leaky-ReLU activation layer (A) Test confusion matrix. (B) ROC curve.</p><note type="other">FIGURE 8</note><p>The performance of the clipped ReLU activation layer (A) Test confusion matrix (B) ROC curve. with a sensitivity of 87.3%. Among these, 37 cases were misclassified as meningioma and one as pituitary. Conversely, four meningioma cases were misclassified as glioma. The precision for glioma was notably high at 96.7%. Additionally, 294 meningioma cases were accurately identified, achieving a high recall of 96.1%. However, six cases were misclassified as having no tumor, two as pituitary, and four as glioma. Notably, the highest precision among the four classes was observed for no tumor cases, with a rate of 98.5%. The sensitivity in no tumor cases was the highest, reaching 98.3%. Pituitary cases demonstrated the highest results in positive predictive value (99.0%) and a moderate recall of 95.3%. The overall accuracy achieved using ELU was 94.6%. The F1score is assessed, representing the geometric mean between sensitivity and precision, yielding a value of 94.33%.</p><p>The identical experiment uses the Gaussian Error Linear Unit (GELU), and Figure <ref type="figure" target="#fig_1">10</ref> depicts the performance of proposed model.</p><p>Using GELU, 270 out of 300 glioma cases were accurately identified, resulting in the lowest recall among all four classes with a sensitivity of 90%. Among these, 30 cases were misclassified as meningioma. Conversely, two meningioma cases and two no-tumor cases were incorrectly classified as glioma. The precision for glioma was notably high at 98.2%.</p><p>Furthermore, 281 meningioma cases were correctly identified, achieving a high recall of 91.8%. However, nineteen cases were misclassified as having no tumor, four as pituitary, and two as glioma. Notably, the highest sensitivity among the four classes was observed for no tumor cases, with a rate of 99.3%. The precision in no tumor cases was high, reaching 95.5%. Pituitary cases demonstrated the highest results in positive predictive value (98.3%) and a true positive rate of 98.5%. The overall accuracy achieved using GELU was 95.3%. The F1-score is assessed, representing the geometric mean between sensitivity and precision, yielding a value of 95.10%.</p><p>The activation layer is changed to a Hyperbolic Tangent Function, and the corresponding test confusion matrix depicts the performance of the trained model. An identical experiment was conducted utilizing Hyperbolic Tangent, and Figure <ref type="figure" target="#fig_7">11</ref> displays the performance of proposed model.</p><p>With the utilization of the hyperbolic tangent activation function, 226 out of 300 glioma cases were correctly identified, resulting in the lowest recall among all four classes with a sensitivity of 75.3%. Among</p><note type="other">FIGURE 9</note><p>The performance of the ELUs activation layer (A) Test confusion matrix. (B) ROC curve.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 10</head><p>The performance of the GLEU activation layer (A) Test confusion matrix. (B) ROC curve.</p><p>these, 69 cases were misclassified as meningioma. Conversely, three meningioma cases and one pituitary case were inaccurately classified as glioma. The precision for glioma was notably high at 98.3%. Additionally, 274 meningioma cases were accurately identified, achieving a high true positive rate of 89.5%. However, twenty-four cases were misclassified as having no tumor, five as pituitary, and three as glioma. Notably, the highest sensitivity among the four classes was observed for no tumor cases, with a rate of 98.5%. The precision in no tumor cases was high, reaching 93.53%. Pituitary cases demonstrated high performance in positive predictive value (96.7%) and a true positive rate of 98.3%. The overall accuracy achieved using the hyperbolic tangent activation function was 91.1%. The F1-score, representing the geometric mean between sensitivity and precision, is evaluated at 90.59%.</p><p>The activation layer has been switched to the soft sign activation function, and the accompanying test confusion matrix illustrates the performance of the trained model. An identical experiment was conducted utilizing soft signs, and Figure <ref type="figure">12</ref> displays the performance of proposed model.</p><p>Utilizing the soft sign activation function, 276 out of 300 glioma cases were accurately identified, resulting in the lowest recall among all four classes, with a sensitivity of 92%. Among these, 20 cases were misclassified as meningioma, while four were inaccurately classified as glioma. The precision for glioma was notably high at 96.8%. Furthermore, 284 meningioma cases were correctly identified, achieving a high true positive rate of 97.8%. However, nine cases were misclassified as having no tumor, six as pituitary, and seven as glioma. Notably, the highest sensitivity among the four classes was observed for no tumor cases, with a rate of 99.8%. The precision in no tumor cases was the highest, reaching 97.8%. Pituitary cases demonstrated high performance in positive predictive value (96.8%) and a sensitivity rate of 98.3%. The overall accuracy achieved using the soft sign activation function was 96.3%. The F1-score, which assesses the geometric mean between sensitivity and precision, is determined to be 96.03%.</p><p>The activation layer has been changed to the swish activation function, and the corresponding test confusion matrix showcases the performance of the trained model. The same experiment uses swish, and Figure <ref type="figure" target="#fig_8">13</ref> illustrates the performance of proposed model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 12</head><p>The performance of the soft sign activation layer (A) Test confusion matrix. (B) ROC curve. Using the swish activation function, 268 out of 300 glioma cases were correctly identified, resulting in the lowest recall among all four classes with a sensitivity of 89.3%. Among these, 29 cases were misclassified as meningioma, while 16 were inaccurately classified as glioma. The precision for glioma was notably high at 93.7%. Furthermore, 255 meningioma cases were correctly identified, achieving the lowest true positive rate of 83.3%. However, twentyseven cases were misclassified as having no tumor, and eight as pituitary. Notably, the highest sensitivity among the four classes was observed for no tumor cases, with a rate of 99.8%. The precision in no tumor cases was high, reaching 93.5%. Pituitary cases demonstrated high performance in positive predictive value (96.7%) and a sensitivity rate of 97.3%. The overall accuracy achieved using the swish activation function was 96.3%. The F1-score, representing the geometric mean between sensitivity and precision, is evaluated at 92.61%.</p><p>The activation function proposed is a modified version of the soft sign function applied in the activation layer. The model undergoes training and testing, and the performance of the confusion matrix is visually represented in the corresponding figures. Figure <ref type="figure" target="#fig_3">14A</ref> delineates the instances correctly classified across all classes at the same time; Figure <ref type="figure" target="#fig_3">14B</ref> illustrates the receiver operating characteristics curve (ROC), which defines the area under the curve (AUC) of the proposed function. This AUC graph depicts the relationship between the true positive rate on the y-axis and the false positive rate on the x-axis.</p><p>Applying the proposed activation function, 281 out of 300 glioma cases were accurately identified, resulting in a high true positive rate of 93.7%. Among these, 18 cases were misclassified as meningioma, and only two meningioma cases were inaccurately classified as glioma. The precision for glioma was notably high at 99.3%. Furthermore, 298 meningioma cases were correctly identified, achieving the lowest true positive rate of 92.8%. However, only five cases were misclassified as having no tumor. Notably, a remarkably high sensitivity was obtained in no tumor cases, with a rate of 98.8%. The precision in no tumor cases was the highest, reaching 99.5%. Pituitary cases demonstrated high performance in positive predictive value (98.4%) and the highest sensitivity rate of 100%. The overall accuracy achieved using the proposed activation function was 97.6%. The F1-score, calculated as</p><note type="other">FIGURE 14</note><p>The performance of the proposed activation function is as follows: (A) Test confusion matrix and (B) ROC curve. The performance of the swish activation layer (A) Test confusion matrix. (B) ROC curve.</p><note type="other">FIGURE 16</note><p>Grad-CAM representations of several tumor types. Comparison between various activation functions in terms of accuracy. the geometric mean between sensitivity and precision, is determined to be 97.44%. Moreover, Figure <ref type="figure" target="#fig_3">14B</ref> elucidates the superiority of the proposed function with an AUC almost equal to 1 for all classes. This indicates the robustness of the proposed CNN with the proposed activation function in discriminating between the four types of brain tumors. The proposed method overcomes all challenges presented in the previously mentioned activation functions, enabling the utilization of a vast dataset and making the proposed model applicable in healthcare sectors.</p><p>The corresponding figure shows the impacts of changing activation functions on the accuracy of the proposed model for classifying brain MR images.</p><p>As depicted in Figure <ref type="figure" target="#fig_9">15</ref>, the proposed method exhibits a notable capability in classifying brain MR images into four distinct classes. This approach is characterized by its speed, accuracy, and remarkable results. This paper uses Grad-CAM to generate a class activation map, as shown in Figure <ref type="figure" target="#fig_5">16</ref>. The degree to which a certain component aids in distinguishing between distinct brain tumors corresponds directly with the color of that component.</p><p>A consistent comparative table briefly describes every key feature of every previously published study paper in this field (Table <ref type="table" target="#tab_2">4</ref>). Table <ref type="table" target="#tab_2">4</ref> is a summary of the strategies used thus far. The collected results, along with some limitations and weaknesses, have been noted for further research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Convolutional neural networks for brain tumor classification have paved the way for improved tumor identification and This work provides a new CNN-based approach for MRI image classification. The four classes into which the proposed approach can identify tumors are Glioma, Meningioma, Pituitary, and No-tumor. In deep learning designs, activation functions determine whether information should be transferred to the next neuron. There are 16 layers in total in the architecture, including layers for convolution, batch normalization, activation function, and maxpooling. In this work, we experimented with several types of activation functions, and in addition, we proposed a new type of activation function.</p><p>Our suggested approach achieved 97.6% accuracy on 7023 MRI pictures from the dataset, which is accessible to the public. The proposed CNN architecture does not require manual lesion segmentation before classification. The results show that our proposed approach is more effective than current approaches and that physicians can use it to identify and categorize tumor types from MRI scans in real-time. Even though the performance of our suggested approach is promising, in future work, we will use a variety of imaging modalities and segmentation approaches to obtain the best estimation of affected areas in the brain and isolate them from unaffected regions. Different modalities with image registration differences will provide essential image traits in the fixed image and perform the best classification, improving precision and accuracy.</p><p>In addition, we plan to expand our database and analyze a larger set of data in the future to design and conduct clinical experiments more efficiently, deepening our understanding of brain cancer behavior and therapeutic responses from different groups of patients.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>Sarada et al. (27) utilized a modified ResNet50V2 deep learning model to classify four types of brain tumor images. The traditional resNet model was enhanced using batch normalization, maxpooling, and dropout layers. The proposed model achieved an accuracy rate of 96.33%. Al-Otaibi et al. (28) implemented VGG16 and 2D-CNN to present a unique neural network-based feature engineering technique. Without human involvement, the resulting 2DCNN-VGG16 model extracted spatial features from MRI images. To diagnose brain cancers, machine learning models are then trained using the newly generated hybrid feature set. Using a k-fold accuracy performance score of 0.96. Shamshad et al. (29). classified benign and malignant brain tumors using MRI images by comparing pre-trained CNN architectures, including VGG16, MobileNet, and ResNet-50.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Kaifi 10 .</head><label>10</label><figDesc>3389/fonc.2024.1437185 Frontiers in Oncology frontiersin.org</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Kaifi 10 .</head><label>10</label><figDesc>3389/fonc.2024.1437185</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 4</head><label>4</label><figDesc>FIGURE 4Softsign, ReLU, and proposed functions Comparison Diagram.</figDesc><graphic coords="7,113.56,602.47,368.50,134.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIGURE 5</head><label>5</label><figDesc>FIGURE 5</figDesc><graphic coords="8,99.38,88.84,396.85,205.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE 6</head><label>6</label><figDesc>FIGURE 6    </figDesc><graphic coords="10,113.50,331.93,368.50,161.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>FIGURE 11 The</head><label>11</label><figDesc>FIGURE 11The performance of the Hyperbolic Tangent activation layer (A) Test confusion matrix. (B) ROC curve.</figDesc><graphic coords="12,113.50,88.84,368.50,161.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>FIGURE 13</head><label>13</label><figDesc>FIGURE 13    </figDesc><graphic coords="13,113.50,575.20,368.50,161.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>FIGURE 15</head><label>15</label><figDesc>FIGURE 15    </figDesc><graphic coords="14,63.89,88.84,467.72,250.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="11,113.50,88.84,368.50,161.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="11,113.50,575.20,368.50,161.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Dataset description.</figDesc><table><row><cell></cell><cell>figshare</cell><cell>SARTAJ</cell><cell>Br35H</cell><cell>Total</cell></row><row><cell>gliomas</cell><cell>1426</cell><cell>195</cell><cell></cell><cell>1621</cell></row><row><cell>meningiomas</cell><cell>708</cell><cell>937</cell><cell></cell><cell>1645</cell></row><row><cell>pituitaries</cell><cell>930</cell><cell>827</cell><cell></cell><cell>1757</cell></row><row><cell>normal</cell><cell></cell><cell>500</cell><cell>1500</cell><cell>2000</cell></row><row><cell>Total</cell><cell></cell><cell></cell><cell></cell><cell>7023</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2</head><label>2</label><figDesc>CNN configuration.</figDesc><table><row><cell>Layer name</cell><cell>Type</cell><cell>Layer configuration</cell><cell>Number of Learnables</cell></row><row><cell>imageinput</cell><cell>Input</cell><cell>224 * 224 *3</cell><cell>0</cell></row><row><cell></cell><cell></cell><cell>Number of Filters = 32</cell><cell></cell></row><row><cell>conv_1</cell><cell>Convolution</cell><cell>Kernel Size =3*3</cell><cell>896</cell></row><row><cell></cell><cell></cell><cell>stride 3*3</cell><cell></cell></row><row><cell>batchnorm</cell><cell>batch Normalization Layer</cell><cell>scale: 1*1*32</cell><cell>64</cell></row><row><cell>functionLayer</cell><cell>activation function</cell><cell></cell><cell>0</cell></row><row><cell>maxpool1</cell><cell>Max pooling layer</cell><cell>Kernel Size =3*3 stride 1*1</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Number of Filters = 64</cell><cell></cell></row><row><cell>conv_2</cell><cell>Convolution</cell><cell>Kernel Size =3*3</cell><cell>18496</cell></row><row><cell></cell><cell></cell><cell>stride 3*3</cell><cell></cell></row><row><cell>batchnorm</cell><cell>batch Normalization Layer</cell><cell>scale: 1*1*64</cell><cell>128</cell></row><row><cell>functionLayer</cell><cell>activation function</cell><cell></cell><cell>0</cell></row><row><cell>maxpool2</cell><cell>Max pooling layer</cell><cell>Kernel Size =3*3 stride 1*1</cell><cell>0</cell></row><row><cell></cell><cell></cell><cell>Number of Filters = 32</cell><cell></cell></row><row><cell>conv_3</cell><cell>Convolution</cell><cell>Kernel Size =3*3</cell><cell>18464</cell></row><row><cell></cell><cell></cell><cell>stride 3*3</cell><cell></cell></row><row><cell>batchnorm</cell><cell>batch Normalization Layer</cell><cell>scale: 1*1*64</cell><cell>64</cell></row><row><cell>functionLayer</cell><cell>activation function</cell><cell></cell><cell>0</cell></row><row><cell>maxpool3</cell><cell>Max pooling layer</cell><cell>Kernel Size =3*3 stride 1*1</cell><cell>0</cell></row><row><cell>Fc</cell><cell>fully connected layer</cell><cell>Weights: 4*2592</cell><cell>10372</cell></row><row><cell>softmax</cell><cell>soft max Layer</cell><cell></cell><cell></cell></row><row><cell>classoutput</cell><cell>Classification layer</cell><cell></cell><cell></cell></row><row><cell>TABLE 3 Performance metrics.</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 4</head><label>4</label><figDesc>Detailed comparison of the results with those from previous studies.MRI is the most extensively used method for detecting and classifying brain tumors. Because of their apparent efficient feature extraction capabilities, DL-based algorithms have recently received increased attention and efficiency compared to traditional medical imaging classification techniques. If cancer is detected, many lives can be saved, and the appropriate grade is identified using simple and inexpensive diagnostic methods.</figDesc><table><row><cell>Ref</cell><cell>year</cell><cell>classes</cell><cell># of Images</cell><cell>Method</cell><cell>Acc</cell><cell cols="2">Drawback</cell></row><row><cell>14</cell><cell>2023</cell><cell>2</cell><cell>3847</cell><cell>Transfer learning</cell><cell>92.00%</cell><cell>Low accuracy</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology</cell></row><row><cell>15</cell><cell>2023</cell><cell>2</cell><cell>696</cell><cell>Transfer learning</cell><cell>96.65%</cell><cell cols="2">lacked novelty.</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology lacked</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">novelty. Absent a</cell></row><row><cell>16</cell><cell>2023</cell><cell>3</cell><cell>3064</cell><cell>Transfer learning</cell><cell>91.00%</cell><cell cols="2">comparative examination.</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">Absent a comparative examination. Long</cell></row><row><cell>17</cell><cell>2023</cell><cell>3</cell><cell>3064</cell><cell>Transfer learning</cell><cell>97.00%</cell><cell cols="2">Processing time</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Complex design</cell><cell>High rate</cell></row><row><cell>18</cell><cell>2023</cell><cell>4</cell><cell>3094</cell><cell>Proposed CNN</cell><cell>95.01%</cell><cell>of learning</cell></row><row><cell>1</cell><cell>2023</cell><cell>4</cell><cell>7021</cell><cell>Proposed CNN</cell><cell>96.00%</cell><cell cols="2">long time for training</cell></row><row><cell>19</cell><cell>2022</cell><cell>3</cell><cell>253</cell><cell>Proposed CNN</cell><cell>96.00%</cell><cell cols="2">The small dataset used to train the model</cell></row><row><cell>20</cell><cell>2023</cell><cell>2</cell><cell>253</cell><cell>Proposed CNN</cell><cell>96.00%</cell><cell cols="2">The small dataset used to train the model</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The small dataset used to train the model</cell></row><row><cell>21</cell><cell>2023</cell><cell>2</cell><cell>250</cell><cell>Transfer learning</cell><cell>96.60%</cell><cell cols="2">Absent a comparative examination.</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The small dataset used to train the model</cell></row><row><cell>22</cell><cell>2023</cell><cell>2</cell><cell>572</cell><cell>Proposed CNN</cell><cell>97.00%</cell><cell cols="2">Complex design</cell></row><row><cell>23</cell><cell>2022</cell><cell>3</cell><cell>3046</cell><cell>Proposed CNN</cell><cell>97.20%</cell><cell></cell></row><row><cell>24</cell><cell>2023</cell><cell>4</cell><cell>2880</cell><cell>Transfer learning</cell><cell>97.00%</cell><cell>Basic Model</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology lacked</cell></row><row><cell>25</cell><cell>2022</cell><cell>4</cell><cell>3264</cell><cell>Transfer learning</cell><cell>80.00%</cell><cell cols="2">novelty. Low accuracy</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology lacked</cell></row><row><cell>26</cell><cell>2023</cell><cell>4</cell><cell>7021</cell><cell>Transfer learning</cell><cell>96.90%</cell><cell cols="2">novelty. Basic Model</cell></row><row><cell>27</cell><cell>2024</cell><cell>4</cell><cell>7023</cell><cell>Modified ResNet50V2</cell><cell>96.33%</cell><cell cols="2">long time for training</cell></row><row><cell>28</cell><cell>2024</cell><cell>4</cell><cell>21,672</cell><cell>Transfer learning</cell><cell>96.00%</cell><cell cols="2">Complex design</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology</cell></row><row><cell>29</cell><cell>2024</cell><cell>4</cell><cell>3096</cell><cell>Transfer learning</cell><cell>97.00%</cell><cell cols="2">lacked novelty.</cell></row><row><cell>30</cell><cell>2024</cell><cell>3</cell><cell>11,538</cell><cell>Proposed CNN</cell><cell>95.10%</cell><cell cols="2">long time for training</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">The employed methodology</cell></row><row><cell>31</cell><cell>2024</cell><cell>4</cell><cell>3264</cell><cell>Transfer learning</cell><cell>96.63%</cell><cell cols="2">lacked novelty.</cell></row><row><cell></cell><cell>The proposed Method</cell><cell>4</cell><cell></cell><cell>Novel CNN with Novel activation function</cell><cell>97.6%</cell><cell cols="2">New approach with new Activation function</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Oncology frontiersin.org</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>10.3389/fonc.2024.1437185 Frontiers in Oncology frontiersin.org</p></note>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) declare that no financial support was received for the research, authorship, and/or publication of this article.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The original contributions presented in the study are included in the article/supplementary material. Further inquiries can be directed to the corresponding author/s.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>RK: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Supervision, Validation, Visualization, Writingoriginal draft, Writingreview &amp; editing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The author declares that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Multiple Brain Tumor Classification with Dense CNN Architecture Using Brain MRI Images</title>
+		<author>
+			<persName><forename type="first">Osman</forename><surname>Özkaraca</surname></persName>
+			<idno type="ORCID">0000-0002-0964-8757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Okan</forename><forename type="middle">İhsan</forename><surname>Bağrıaçık</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hüseyin</forename><surname>Gürüler</surname></persName>
+			<idno type="ORCID">0000-0003-1855-1882</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Faheem</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0001-6220-0225</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jamil</forename><surname>Hussain</surname></persName>
+			<idno type="ORCID">0000-0003-3862-8787</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jawad</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0001-8263-7213</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Umm</forename><forename type="middle">E</forename><surname>Laila</surname></persName>
+			<idno type="ORCID">0000-0001-8050-5081</idno>
+		</author>
+		<idno type="DOI">10.3390/life13020349</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Life</title>
+		<title level="j" type="abbrev">Life</title>
+		<idno type="ISSNe">2075-1729</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">349</biblScope>
+			<date type="published" when="2023-01-28">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Özkaraca O, Bagȓıacik OI ̇., Gürüler H, Khan F, Hussain J, Khan J, et al. Multiple brain tumor classification with dense CNN architecture using brain MRI images. Life. (2023) 13:349. doi: 10.3390/life13020349</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Primary brain tumours in adults</title>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Lapointe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">A</forename><surname>Butowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0140-6736(18)30990-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet</title>
+		<title level="j" type="abbrev">The Lancet</title>
+		<idno type="ISSN">0140-6736</idno>
+		<imprint>
+			<biblScope unit="volume">392</biblScope>
+			<biblScope unit="issue">10145</biblScope>
+			<biblScope unit="page" from="432" to="446" />
+			<date type="published" when="2018-08">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lapointe S, Perry A, Butowski N. Primary brain tumours in adults. Lancet. (2018) 392:432-46. doi: 10.1016/s0140-6736(18)30990-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Webster</forename><forename type="middle">K</forename><surname>Cavenee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroko</forename><surname>Ohgaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otmar</forename><forename type="middle">D</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Kleihues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-016-1545-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="803" to="820" />
+			<date type="published" when="2016-05-09">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis DN, Perry A, Reifenberger G, Von Deimling A, Figarella-Branger D, Cavenee WK, et al. The 2016 world health organization classification of tumors of the central nervous system: a summary. Acta Neuropathologica. (2016) 131:803-20. doi: 10.1007/s00401-016-1545-1</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">MBTFCN: A novel modular fully convolutional network for MRI brain tumor multi-classification</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">I</forename><surname>Shahin</surname></persName>
+			<idno type="ORCID">0000-0001-6426-1806</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Walaa</forename><surname>Aly</surname></persName>
+			<idno type="ORCID">0000-0003-3638-589X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saleh</forename><surname>Aly</surname></persName>
+			<idno type="ORCID">0000-0002-1772-4254</idno>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2022.118776</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">212</biblScope>
+			<biblScope unit="page">118776</biblScope>
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shahin AI, Aly W, Aly S. MBTFCN: A novel modular fully convolutional network for MRI brain tumor multi-classification. Expert Syst With Appl. (2023) 212:118776. doi: 10.1016/j.eswa.2022.118776</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Brain Tumor MR Image Classification Using Convolutional Dictionary Learning With Local Constraint</title>
+		<author>
+			<persName><forename type="first">Xiaoqing</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zongxuan</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiqing</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tongguang</forename><surname>Ni</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnins.2021.679847</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neuroscience</title>
+		<title level="j" type="abbrev">Front. Neurosci.</title>
+		<idno type="ISSNe">1662-453X</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">679847</biblScope>
+			<date type="published" when="2021-05-28">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gu X, Shen Z, Xue J, Yu F, Ni T. Brain tumor MR image classification using convolutional dictionary learning with local constraint. Front Neurosci. (2021) 15:679847. doi: 10.3389/fnins.2021.679847</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Magnetic resonance imaging-based brain tumor grades classification and grading via convolutional neural networks and genetic algorithms</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Anaraki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ayati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kazemi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bbe.2018.10.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biocybernetics Biomed Eng</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="63" to="74" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Anaraki AK, Ayati M, Kazemi F. Magnetic resonance imaging-based brain tumor grades classification and grading via convolutional neural networks and genetic algorithms. Biocybernetics Biomed Eng. (2019) 39:63-74. doi: 10.1016/j.bbe.2018.10.004</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Deep learning for healthcare: review, opportunities and challenges</title>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Miotto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoqian</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">T</forename><surname>Dudley</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bib/bbx044</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Briefings in Bioinformatics</title>
+		<idno type="ISSN">1467-5463</idno>
+		<idno type="ISSNe">1477-4054</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1236" to="1246" />
+			<date type="published" when="2017-05-06">2017</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Miotto R, Wang F, Wang S, Jiang X, Dudley JT. Deep learning for healthcare: review, opportunities and challenges. Briefings Bioinf. (2017) 19:1236-46. doi: 10.1093/bib/bbx044</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A review of the application of deep learning in medical image classification and segmentation</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingyang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.21037/atm.2020.02.44</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Translational Medicine</title>
+		<title level="j" type="abbrev">Ann Transl Med</title>
+		<idno type="ISSN">2305-5839</idno>
+		<idno type="ISSNe">2305-5847</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="713" to="713" />
+			<date type="published" when="2020-06">2020</date>
+			<publisher>AME Publishing Company</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cai L, Gao J, Zhao D. A review of the application of deep learning in medical image classification and segmentation. Ann Trans Med. (2020) 8:713. doi: 10.21037/ atm.2020.02.44</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Deep Learning in Medical Image Analysis</title>
+		<author>
+			<persName><forename type="first">Dinggang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guorong</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heung-Il</forename><surname>Suk</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-bioeng-071516-044442</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Biomedical Engineering</title>
+		<title level="j" type="abbrev">Annu. Rev. Biomed. Eng.</title>
+		<idno type="ISSN">1523-9829</idno>
+		<idno type="ISSNe">1545-4274</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="221" to="248" />
+			<date type="published" when="2017-06-21">2017</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shen D, Wu G, Suk H. Deep learning in medical image analysis. Annu Rev Biomed Eng. (2017) 19:221-48. doi: 10.1146/annurev-bioeng-071516-044442</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Convolutional neural networks for medical image analysis: State-of-the-art, comparisons, improvement and perspectives</title>
+		<author>
+			<persName><forename type="first">Hang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurence</forename><forename type="middle">T</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingchen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Armstrong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Jamal</forename><surname>Deen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neucom.2020.04.157</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<title level="j" type="abbrev">Neurocomputing</title>
+		<idno type="ISSN">0925-2312</idno>
+		<imprint>
+			<biblScope unit="volume">444</biblScope>
+			<biblScope unit="page" from="92" to="110" />
+			<date type="published" when="2021-07">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yu H, Yang LT, Zhang Q, Armstrong D, Deen MJ. Convolutional neural networks for medical image analysis: State-of-the-art, comparisons, improvement and perspectives. Neurocomputing. (2021) 444:92-110. doi: 10.1016/j.neucom.2020.04.157</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Deep convolutional neural network based medical image classification for disease diagnosis</title>
+		<author>
+			<persName><forename type="first">Samir</forename><forename type="middle">S</forename><surname>Yadav</surname></persName>
+			<idno type="ORCID">0000-0002-8880-9685</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shivajirao</forename><forename type="middle">M</forename><surname>Jadhav</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40537-019-0276-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Big Data</title>
+		<title level="j" type="abbrev">J Big Data</title>
+		<idno type="ISSNe">2196-1115</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2019-12">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yadav SS, Jadhav SM. Deep convolutional neural network based medical image classification for disease diagnosis. J Big Data. (2019) 6:1-18. doi: 10.1186/s40537-019-0276-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">A comprehensive hands-on guide to transfer learning with real-world applications in deep learning</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sarkar</surname></persName>
+		</author>
+		<ptr target="https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<publisher>Medium</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sarkar D. A comprehensive hands-on guide to transfer learning with real-world applications in deep learning. Medium. (2022). https://towardsdatascience.com/a-comprehensive-hands-on- guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Transfer Learning based Performance Comparison of the Pre-Trained Deep Neural Networks</title>
+		<author>
+			<persName><forename type="first">Jayapalan</forename><forename type="middle">Senthil</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syahid</forename><surname>Anuar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noor</forename><forename type="middle">Hafizah</forename><surname>Hassan</surname></persName>
+		</author>
+		<idno type="DOI">10.14569/ijacsa.2022.0130193</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Advanced Computer Science and Applications</title>
+		<title level="j" type="abbrev">IJACSA</title>
+		<idno type="ISSN">2158-107X</idno>
+		<idno type="ISSNe">2156-5570</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2022">2022</date>
+			<publisher>The Science and Information Organization</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar JS, Anuar S, Hassan NH. Transfer learning based performance comparison of the pre-trained deep neural networks. Int J Advanced Comput Sci Appl. (2022) 13. doi: 10.14569/ijacsa.2022.0130193</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Classification Deep Learning Model Using Neural Networks</title>
+		<author>
+			<persName><forename type="first">Gisella</forename><forename type="middle">Luisa Elena</forename><surname>Maquen-Niño</surname></persName>
+			<idno type="ORCID">0000-0002-9224-5456</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ariana</forename><forename type="middle">Ayelen</forename><surname>Sandoval-Juarez</surname></persName>
+			<idno type="ORCID">0000-0002-5534-6370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robinson</forename><forename type="middle">Andres</forename><surname>Veliz-La Rosa</surname></persName>
+			<idno type="ORCID">0000-0003-2064-6629</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gilberto</forename><surname>Carrión-Barco</surname></persName>
+			<idno type="ORCID">0000-0002-1104-6229</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Adrianzén-Olano</surname></persName>
+			<idno type="ORCID">0000-0002-1910-2854</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Vega-Huerta</surname></persName>
+			<idno type="ORCID">0000-0002-4268-5808</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Percy</forename><surname>De-La-Cruz-Vdv</surname></persName>
+			<idno type="ORCID">0000-0002-4943-7620</idno>
+		</author>
+		<idno type="DOI">10.3991/ijoe.v19i09.38819</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Online and Biomedical Engineering (iJOE)</title>
+		<title level="j" type="abbrev">Int. J. Onl. Eng.</title>
+		<idno type="ISSNe">2626-8493</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">09</biblScope>
+			<biblScope unit="page" from="81" to="92" />
+			<date type="published" when="2023-07-07">2023</date>
+			<publisher>International Association of Online Engineering (IAOE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elena Maquen-Niño GL, Ayelen Sandoval-Juarez A, Rosa VL, Andres R, Carrioń-Barco G, Adrianzeń-Olano I, et al. Brain tumor classification deep learning model using neural networks. Int J Online Biomed Eng. (2023) 19. doi: 10.3991/ ijoe.v19i09.38819</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Classification Using Deep CNN-Based Transfer Learning Approach</title>
+		<author>
+			<persName><forename type="first">Manish</forename><surname>Arya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Agrawal</surname></persName>
+		</author>
+		<idno type="DOI">10.46300/91011.2023.17.1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Biology and Biomedical Engineering</title>
+		<idno type="ISSNe">1998-4510</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2023-03-03">2023</date>
+			<publisher>North Atlantic University Union (NAUN)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arya M, Agrawal R. Brain tumor classification using deep CNN-Based Transfer Learning approach. Int J Biol Biomed Eng. (2023) 17:1-7. doi: 10.46300/ 91011.2023.17.1</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Brain tumor classification by using extracted deep CNN features with multiple base classifiers</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Altaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nadeem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Mamtaz</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.7593997</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Zenodo (CERN Eur Organ Nucl Research)</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Altaf M, Nadeem M, Mamtaz Z. Brain tumor classification by using extracted deep CNN features with multiple base classifiers. Zenodo (CERN Eur Organ Nucl Research). (2023). doi: 10.5281/zenodo.7593997</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Optimizing MRI-based brain tumor classification and detection using AI: A comparative analysis of neural networks, transfer learning, data augmentation, and the cross-transformer network</title>
+		<author>
+			<persName><forename type="first">Andrés</forename><surname>Anaya-Isaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonel</forename><surname>Mera-Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucía</forename><surname>Verdugo-Alejo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><surname>Sarasti</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejro.2023.100484</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Radiology Open</title>
+		<title level="j" type="abbrev">European Journal of Radiology Open</title>
+		<idno type="ISSN">2352-0477</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">100484</biblScope>
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Anaya-Isaza A, Mera-Jimeńez L, Verdugo-Alejo L, Sarasti L. Optimizing MRI- based brain tumor classification and detection using AI: A comparative analysis of neural networks, transfer learning, data augmentation, and the cross-transformer network. Eur J Radiol Open. (2023) 10:100484. doi: 10.1016/j.ejro.2023.100484</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Enhanced brain tumor classification using graph convolutional neural network architecture</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ravinder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Garima</forename><surname>Saluja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Allabun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">S</forename><surname>Alqahtani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Abbas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manal</forename><surname>Othman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">Othman</forename><surname>Soufiene</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-41407-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2023-09-11">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ravinder M, Saluja G, Allabun S, Alqahtani MS, Abbas M, Othman M, et al. Enhanced brain tumor classification using graph convolutional neural network architecture. Sci Rep. (2023) 13. doi: 10.1038/s41598-023-41407-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Analysis Using Deep Learning and VGG-16 Ensembling Learning Approaches</title>
+		<author>
+			<persName><forename type="first">Ayesha</forename><surname>Younis</surname></persName>
+			<idno type="ORCID">0000-0002-4754-2144</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Qiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">Okanda</forename><surname>Nyatega</surname></persName>
+			<idno type="ORCID">0000-0003-1783-7811</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Jajere</forename><surname>Adamu</surname></persName>
+			<idno type="ORCID">0000-0002-0374-5847</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Halima</forename><forename type="middle">Bello</forename><surname>Kawuwa</surname></persName>
+			<idno type="ORCID">0000-0003-4772-8376</idno>
+		</author>
+		<idno type="DOI">10.3390/app12147282</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Sciences</title>
+		<title level="j" type="abbrev">Applied Sciences</title>
+		<idno type="ISSNe">2076-3417</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">7282</biblScope>
+			<date type="published" when="2022-07-20">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Younis A, Li Q, Nyatega CO, Adamu MJ, Kawuwa HB. Brain tumor analysis using deep learning and VGG-16 ensembling learning approaches. Appl Sci. (2022) 12:7282. doi: 10.3390/app12147282</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Classification of Brain Tumor Images Using CNN</title>
+		<author>
+			<persName><forename type="first">Manali</forename><surname>Gupta</surname></persName>
+			<idno type="ORCID">0000-0001-6876-817X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjay</forename><forename type="middle">Kumar</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">C</forename><surname>Sampada</surname></persName>
+			<idno type="ORCID">0000-0001-7150-8512</idno>
+		</author>
+		<idno type="DOI">10.1155/2023/2002855</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Intelligence and Neuroscience</title>
+		<title level="j" type="abbrev">Computational Intelligence and Neuroscience</title>
+		<idno type="ISSN">1687-5265</idno>
+		<idno type="ISSNe">1687-5273</idno>
+		<imprint>
+			<biblScope unit="volume">2023</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gupta M, Sharma SK, Sampada GC. Classification of brain tumor images using CNN. Comput Intell Neurosci. (2023) 2023:1-6. doi: 10.1155/2023/2002855</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Brain tumor classification based on improved stacked ensemble deep learning methods</title>
+		<author>
+			<persName><forename type="first">Al-Azzwi Zhn</forename><surname>Nazarov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename></persName>
+		</author>
+		<idno type="DOI">10.31557/APJCP.2023.24.6.2141</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Asian Pacific J Cancer prevention: APJCP</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="2141" to="2148" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al-Azzwi ZHN, Nazarov AN. Brain tumor classification based on improved stacked ensemble deep learning methods. Asian Pacific J Cancer prevention: APJCP. (2023) 24:2141-8. doi: 10.31557/APJCP.2023.24.6.2141</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Tumor Diagnosis against Other Brain Diseases Using T2 MRI Brain Images and CNN Binary Classifier and DWT</title>
+		<author>
+			<persName><forename type="first">Theodoros</forename><forename type="middle">N</forename><surname>Papadomanolakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eleftheria</forename><forename type="middle">S</forename><surname>Sergaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><forename type="middle">A</forename><surname>Polydorou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonios</forename><forename type="middle">G</forename><surname>Krasoudakis</surname></persName>
+			<idno type="ORCID">0000-0003-0423-6013</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georgios</forename><forename type="middle">N</forename><surname>Makris-Tsalikis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexios</forename><forename type="middle">A</forename><surname>Polydorou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaos</forename><forename type="middle">M</forename><surname>Afentakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sofia</forename><forename type="middle">A</forename><surname>Athanasiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><forename type="middle">O</forename><surname>Vardiambasis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michail</forename><forename type="middle">E</forename><surname>Zervakis</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/brainsci13020348</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Sciences</title>
+		<title level="j" type="abbrev">Brain Sciences</title>
+		<idno type="ISSNe">2076-3425</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">348</biblScope>
+			<date type="published" when="2023-02-17">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Papadomanolakis TN, Sergaki E, Polydorou A, Krasoudakis A, Makris-Tsalikis GN, Polydorou A, et al. Tumor diagnosis against other brain diseases using T2 MRI brain images and CNN binary classifier and DWT. Brain Sci. (2023) 13:348. doi: 10.3390/brainsci13020348</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Multiclass classification of brain tumors using a novel CNN architecture</title>
+		<author>
+			<persName><forename type="first">Hareem</forename><surname>Kibriya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Momina</forename><surname>Masood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marriam</forename><surname>Nawaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tahira</forename><surname>Nazir</surname></persName>
+			<idno type="ORCID">0000-0001-8130-3721</idno>
+		</author>
+		<idno type="DOI">10.1007/s11042-022-12977-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Tools and Applications</title>
+		<title level="j" type="abbrev">Multimed Tools Appl</title>
+		<idno type="ISSN">1380-7501</idno>
+		<idno type="ISSNe">1573-7721</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page" from="29847" to="29863" />
+			<date type="published" when="2022-04-05">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kibriya H, Masood M, Nawaz M, Nazir T. Multiclass classification of brain tumors using a novel CNN architecture. Multimedia Tools Appl. (2022) 81:29847-63. doi: 10.1007/s11042-022-12977-y</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Refined Automatic Brain Tumor Classification Using Hybrid Convolutional Neural Networks for MRI Scans</title>
+		<author>
+			<persName><forename type="first">Fatma</forename><forename type="middle">E</forename><surname>Altahhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ghada</forename><forename type="middle">A</forename><surname>Khouqeer</surname></persName>
+			<idno type="ORCID">0000-0001-6229-3687</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarmad</forename><surname>Saadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Elgarayhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Sallah</surname></persName>
+			<idno type="ORCID">0000-0003-2063-8979</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13050864</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">864</biblScope>
+			<date type="published" when="2023-02-23">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al-Tahhan FE, Khouqeer GA, Saadi S, Elgarayhi A, Sallah M. Refined automatic brain tumor classification using hybrid convolutional neural networks for MRI scans. Diagnostics. (2023) 13:864. doi: 10.3390/diagnostics13050864</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Multiclass Brain Tumor Classification from MRI Images using Pre-Trained CNN Model</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Asad</forename><surname>Arshed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aqsa</forename><surname>Shahzad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamran</forename><surname>Arshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danial</forename><surname>Karim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahzad</forename><surname>Mumtaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Tanveer</surname></persName>
+		</author>
+		<idno type="DOI">10.21015/vtse.v10i4.1182</idno>
+	</analytic>
+	<monogr>
+		<title level="j">VFAST Transactions on Software Engineering</title>
+		<title level="j" type="abbrev">VFAST trans. softw. eng.</title>
+		<idno type="ISSN">2411-6246</idno>
+		<idno type="ISSNe">2309-3978</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="22" to="28" />
+			<date type="published" when="2022-11-08">2022</date>
+			<publisher>VFAST Research Platform</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arshed MA, Shahzad A, Arshad K, Karim D, Mumtaz S, Tanveer M. Multiclass brain tumor classification from MRI images using pre-trained CNN model. VFAST Trans Software Eng. (2022) 10:22-8. doi: 10.21015/vtse.v10i4.1182</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection and Classification Using VGG16 Deep Learning Algorithm and Python Imaging Library</title>
+		<author>
+			<persName><forename type="first">Sulejman</forename><surname>Karamehić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samed</forename><surname>Jukić</surname></persName>
+		</author>
+		<idno type="DOI">10.37868/bes.v4i2.id252</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioengineering Studies</title>
+		<title level="j" type="abbrev">Bioengineering Studies</title>
+		<idno type="ISSNe">2744-1636</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2023-11-17">2023</date>
+			<publisher>Research and Development Academy</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">KaramehićS, JukićS. Brain tumor detection and classification using VGG16 Deep learning algorithm and Python Imaging Library. Bioengineering Stud. (2023) 4:1- 13. doi: 10.37868/bes.v4i2.id252</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Classification Using Modified ResNet50V2 Deep Learning Model</title>
+		<author>
+			<persName><forename type="first">Busi</forename><surname>Sarada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kuppireddynarasimha</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muktisingh</forename><surname>Babu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramesh</forename><surname>Babu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bssv</forename><forename type="middle">Ramesh</forename><surname>Babu</surname></persName>
+		</author>
+		<idno type="DOI">10.12785/ijcds/1571021750</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computing and Digital Systems</title>
+		<title level="j" type="abbrev">IJCDS</title>
+		<idno type="ISSN">2210-142X</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Deanship of Scientific Research</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sarada B, Narasimha Reddy K, Babu R, Ramesh Babu BSSV. Brain tumor classification using modified ResNet50V2 deep learning model. Int J Computing Digital Syst. (2024) 16:1-10.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">CVG-Net: novel transfer learning based deep features for diagnosis of brain tumors using MRI scans</title>
+		<author>
+			<persName><forename type="first">Shaha</forename><surname>Al-Otaibi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Raza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaber</forename><surname>Alyami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.2008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PeerJ Computer Science</title>
+		<idno type="ISSNe">2376-5992</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">e2008</biblScope>
+			<date type="published" when="2024-05-17">2024</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al-Otaibi S, Rehman A, Raza A, Alyami J, Saba T. CVG-Net: novel transfer learning based deep features for diagnosis of brain tumors using MRI scans. PeerJ Comput Sci. (2024) 10:e2008. doi: 10.7717/peerj-cs.2008</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Enhancing Brain Tumor Classification by a Comprehensive Study on Transfer Learning Techniques and Model Efficiency Using MRI Datasets</title>
+		<author>
+			<persName><forename type="first">Nadia</forename><surname>Shamshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danish</forename><surname>Sarwr</surname></persName>
+			<idno type="ORCID">0009-0005-9365-973X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmad</forename><surname>Almogren</surname></persName>
+			<idno type="ORCID">0000-0002-8253-9709</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kiran</forename><surname>Saleem</surname></persName>
+			<idno type="ORCID">0000-0003-0278-6492</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alia</forename><surname>Munawar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ateeq</forename><forename type="middle">Ur</forename><surname>Rehman</surname></persName>
+			<idno type="ORCID">0000-0001-5203-0621</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Salil</forename><surname>Bharany</surname></persName>
+			<idno type="ORCID">0000-0002-2282-0419</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2024.3430109</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="100407" to="100418" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shamshad N, Sarwr D, Almogren A, Saleem K, Munawar A, Rehman AU, et al. Enhancing brain tumor classification by a comprehensive study on transfer learning techniques and model efficiency using MRI datasets. IEEE Access. (2024) 1. doi: 10.1109/access.2024.3430109</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Feature-enhanced deep learning technique with soft attention for MRI-based brain tumor classification</title>
+		<author>
+			<persName><forename type="first">Bipin</forename><forename type="middle">Ch. </forename><surname>Mohanty</surname></persName>
+			<idno type="ORCID">0009-0000-1024-5325</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Subudhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratnakar</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bidyadhar</forename><surname>Mohanty</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s41870-023-01701-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Technology</title>
+		<title level="j" type="abbrev">Int. j. inf. tecnol.</title>
+		<idno type="ISSN">2511-2104</idno>
+		<idno type="ISSNe">2511-2112</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1617" to="1626" />
+			<date type="published" when="2024-01-20">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mohanty BC, Subudhi PK, Dash R, Mohanty B. Feature-enhanced deep learning technique with soft attention for MRI-based brain tumor classification. Int J Inf Technol. (2024) 16:1617-26. doi: 10.1007/s41870-023-01701-0</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">BRAIN TUMOR CLASSIFICATION USING INCEPTIONRESNET-V2 AND TRANSFER LEARNING APPROACH</title>
+		<author>
+			<persName><forename type="first">Vallent</forename><forename type="middle">Austin Theasar</forename><surname>Kurniawan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elan</forename><forename type="middle">Cahya</forename><surname>Niswary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>S.K.Aditya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Didih</forename><forename type="middle">Rizki</forename><surname>Chandranegara</surname></persName>
+		</author>
+		<idno type="DOI">10.33480/jitk.v10i1.5223</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JITK (Jurnal Ilmu Pengetahuan dan Teknologi Komputer)</title>
+		<title level="j" type="abbrev">jitk</title>
+		<idno type="ISSN">2685-8223</idno>
+		<idno type="ISSNe">2527-4864</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="99" />
+			<date type="published" when="2024-07-31">2024</date>
+			<publisher>LPPM Universitas Nusa Mandiri</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kurniawan V, Niswary EC, SKAditya C, Chandranegara DR. Brain tumor classification using inceptionresnet-v2 and transfer learning approach. JITK (Jurnal Ilmu Pengetahuan Dan Teknologi Komputer). (2024) 10:91-9. doi: 10.33480/ jitk.v10i1.5223</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Brain tumor MRI dataset</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nickparvar</surname></persName>
+		</author>
+		<idno type="DOI">10.34740/KAGGLE/DSV/2645886</idno>
+		<imprint>
+			<date type="published" when="2021-11-11">2021. 11 November 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nickparvar M. Brain tumor MRI dataset. (2021). doi: 10.34740/KAGGLE/DSV/ 2645886 (accessed on 11 November 2023)</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Cervical Cancer Classification Using Combined Machine Learning and Deep Learning Approach</title>
+		<author>
+			<persName><forename type="first">Hiam</forename><surname>Alquran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wan</forename><surname>Azani Mustafa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isam</forename><surname>Abu Qasmieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasmeen</forename><surname>Mohd Yacob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Alsalatie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yazan</forename><surname>Al-Issa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Mohammad Alqudah</surname></persName>
+		</author>
+		<idno type="DOI">10.32604/cmc.2022.025692</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers, Materials &amp; Continua</title>
+		<idno type="ISSN">1546-2226</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="5117" to="5134" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Tech Science Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alquran H, Mustafa WA, Qasmieh IA, Yacob YM, Alsalatie M, Al-Issa Y, et al. Cervical cancer classification using combined machine learning and deep learning approach. Computers Materials Continua. (2022) 72:5117-34. doi: 10.32604/ cmc.2022.025692</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">An overview of the activation functions used in deep learning algorithms</title>
+		<author>
+			<persName><forename type="first">Serhat</forename><surname>Kılıçarslan</surname></persName>
+			<idno type="ORCID">0000-0001-9483-4425</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kemal</forename><surname>Adem</surname></persName>
+			<idno type="ORCID">0000-0002-3752-7354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mete</forename><surname>Çelik</surname></persName>
+			<idno type="ORCID">0000-0002-1488-1502</idno>
+		</author>
+		<idno type="DOI">10.54187/jnrs.1011739</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of New Results in Science</title>
+		<idno type="ISSNe">1304-7981</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="75" to="88" />
+			<date type="published" when="2021-12-31">2021</date>
+			<publisher>Gaziosmanpasa University</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kılıcarslan S, Adem K, Çelik M. An overview of the activation functions used in deep learning algorithms. J New Results Sci. (2021) 10:75-88. doi: 10.54187/jnrs. 1011739</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Achieving remanufacturing inspection using deep learning</title>
+		<author>
+			<persName><forename type="first">Chigozie</forename><surname>Nwankpa</surname></persName>
+			<idno type="ORCID">0000-0003-4966-7669</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Solomon</forename><surname>Eze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Winifred</forename><surname>Ijomah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Gachagan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Marshall</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13243-020-00093-9</idno>
+		<ptr target="http://export.arxiv.org/pdf/1811.03378" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Remanufacturing</title>
+		<title level="j" type="abbrev">Jnl Remanufactur</title>
+		<idno type="ISSN">2210-464X</idno>
+		<idno type="ISSNe">2210-4690</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="89" to="105" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>Cornell University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">arXiv</note>
+	<note type="raw_reference">Nwankpa C, Ijomah W, Gachagan A, Marshall S. Activation Functions: Comparison of trends in Practice and Research for Deep Learning. arXiv (Cornell University). (2018). http://export.arxiv.org/pdf/1811.03378.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">End-to-End Mandarin Speech Recognition Combining CNN and BLSTM</title>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-6992-7950</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaohe</forename><surname>Lv</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/sym11050644</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Symmetry</title>
+		<title level="j" type="abbrev">Symmetry</title>
+		<idno type="ISSNe">2073-8994</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">644</biblScope>
+			<date type="published" when="2019-05-07">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang D, Wang X, Lv S. End-to-End Mandarin speech recognition combining CNN and BLSTM. Symmetry. (2019) 11:644. doi: 10.3390/sym11050644</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hendrycks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Gimpel</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arxiv.1606.08415</idno>
+		<title level="m">Gaussian error linear units (GELUS)</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+		<respStmt>
+			<orgName>Cornell University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">arXiv</note>
+	<note type="raw_reference">Hendrycks D, Gimpel K. Gaussian error linear units (GELUS). arXiv (Cornell University). (2016). doi: 10.48550/arxiv.1606.08415</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A New Weighted Deep Learning Feature Using Particle Swarm and Ant Lion Optimization for Cervical Cancer Diagnosis on Pap Smear Images</title>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Alsalatie</surname></persName>
+			<idno type="ORCID">0000-0002-5450-3311</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hiam</forename><surname>Alquran</surname></persName>
+			<idno type="ORCID">0000-0002-2966-6442</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wan</forename><forename type="middle">Azani</forename><surname>Mustafa</surname></persName>
+			<idno type="ORCID">0000-0001-7260-6085</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ala’a</forename><surname>Zyout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">Mohammad</forename><surname>Alqudah</surname></persName>
+			<idno type="ORCID">0000-0002-5417-0043</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Reham</forename><surname>Kaifi</surname></persName>
+			<idno type="ORCID">0000-0002-5490-6639</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suhair</forename><surname>Qudsieh</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13172762</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page">2762</biblScope>
+			<date type="published" when="2023-08-25">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alsalatie M, Alquran H, Mustafa WA, Zyout A, Alqudah AM, Kaifi R, et al. A new weighted deep learning feature using particle swarm and ant lion optimization for cervical cancer diagnosis on PAP smear images. Diagnostics. (2023) 13:2762. doi: 10.3390/diagnostics13172762</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

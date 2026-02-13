@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Development and validation of a convolutional neural network for automatic differentiation of primary central nervous system lymphoma and glioblastoma</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-04">2025-12-04</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Qiang</forename><surname>Ji</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuro-Oncology , Cancer Center , China National Clinical Research Center for Neurological Diseases ,</note>
+								<orgName type="department" key="dep1">Department of Neuro-Oncology</orgName>
+								<orgName type="department" key="dep2">Cancer Center</orgName>
+								<orgName type="institution">National Clinical Research Center for Neurological Diseases</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>2</label> National Institute for Data Science in Health and Medicine , Capital Medical University , Beijing , China</note>
+								<orgName type="department">National Institute for Data Science in Health and Medicine</orgName>
+								<orgName type="institution">Capital Medical University</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zixuan</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuro-Oncology , Cancer Center , China National Clinical Research Center for Neurological Diseases ,</note>
+								<orgName type="department" key="dep1">Department of Neuro-Oncology</orgName>
+								<orgName type="department" key="dep2">Cancer Center</orgName>
+								<orgName type="institution">National Clinical Research Center for Neurological Diseases</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>2</label> National Institute for Data Science in Health and Medicine , Capital Medical University , Beijing , China</note>
+								<orgName type="department">National Institute for Data Science in Health and Medicine</orgName>
+								<orgName type="institution">Capital Medical University</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lili</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuro-Oncology , Cancer Center , China National Clinical Research Center for Neurological Diseases ,</note>
+								<orgName type="department" key="dep1">Department of Neuro-Oncology</orgName>
+								<orgName type="department" key="dep2">Cancer Center</orgName>
+								<orgName type="institution">National Clinical Research Center for Neurological Diseases</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Feng</forename><surname>Chen</surname></persName>
+							<email>chenfeng@bjtth.org</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuro-Oncology , Cancer Center , China National Clinical Research Center for Neurological Diseases ,</note>
+								<orgName type="department" key="dep1">Department of Neuro-Oncology</orgName>
+								<orgName type="department" key="dep2">Cancer Center</orgName>
+								<orgName type="institution">National Clinical Research Center for Neurological Diseases</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Wenbin</forename><surname>Li</surname></persName>
+							<email>liwenbin@ccmu.edu.cn</email>
+							<idno type="ORCID">0000-0001-7638-4395</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuro-Oncology , Cancer Center , China National Clinical Research Center for Neurological Diseases ,</note>
+								<orgName type="department" key="dep1">Department of Neuro-Oncology</orgName>
+								<orgName type="department" key="dep2">Cancer Center</orgName>
+								<orgName type="institution">National Clinical Research Center for Neurological Diseases</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>2</label> National Institute for Data Science in Health and Medicine , Capital Medical University , Beijing , China</note>
+								<orgName type="department">National Institute for Data Science in Health and Medicine</orgName>
+								<orgName type="institution">Capital Medical University</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<note type="raw_affiliation">Beijing Tiantan Hospital , Capital Medical University , Beijing , China</note>
+								<orgName type="institution" key="instit1">Beijing Tiantan Hospital</orgName>
+								<orgName type="institution" key="instit2">Capital Medical University</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Development and validation of a convolutional neural network for automatic differentiation of primary central nervous system lymphoma and glioblastoma</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Cancer Imaging</title>
+						<title level="j" type="abbrev">Cancer Imaging</title>
+						<idno type="eISSN">1470-7330</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">26</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-12-04" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">86FDD06635A3FACD6A51B49D839A7896</idno>
+					<idno type="DOI">10.1186/s40644-025-00967-w</idno>
+					<note type="submission">Received: 6 August 2025 / Accepted: 20 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T22:06+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Convolutional neural network</term>
+					<term>Primary central nervous system lymphoma</term>
+					<term>Glioblastoma</term>
+					<term>Deep learning</term>
+					<term>T1Gd-MRI</term>
+					<term>Automatic differential diagnosis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background Primary central nervous system lymphoma (PCNSL) and glioblastoma (GBM) are two distinct types of malignant brain tumors, each requiring specific therapeutic approaches. Accurate differentiation between these tumors is crucial for selecting appropriate treatments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>We developed and validated a 3D DenseNet264 convolutional neural network (CNN) to automatically differentiate PCNSL and GBM. A total of 141 patients initially admitted to Tiantan Hospital underwent preoperative T1Gd-MRI and were confirmed by histopathology. These patients were randomly divided into training and validation groups at a 7:3 ratio. Subsequently, the DenseNet264 was trained and validated using these datasets. External validation was performed using additional datasets from the Radiological Society of North America (RSNA) and patients previously admitted to Tiantan Hospital. Standardized image preprocessing was conducted following the RSNA-ASNR-MICCAI BraTS 2021 guidelines.</p><p>Result A total of 623 patients (Tiantan Hospital: 535, RSNA: 88) were initially enrolled, of whom 316 patients (Tiantan Hospital: 228 [141 patients enrolled between December 2015 and December 2021, and 87 patients enrolled before November 2015], RSNA: 88; GBM: 159, PCNSL: 157) met the inclusion criteria. The DenseNet264 achieved optimal classification performance in the training set (AUC: 0.98) and validation set (AUC: 0.90). In held-out data from RSNA and patients enrolled earlier at Tiantan Hospital, the model showed similarly consistent performance (C-statistic: 0.77).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>We successfully developed and validated a robust deep-learning model capable of accurately differentiating PCNSL from GBM. This model provides a reliable, efficient, and cost-effective clinical decision-support tool for differential diagnosis.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Primary central nervous system lymphoma (PCNSL) is a rare extranodal non-Hodgkin lymphoma localized exclusively within the brain, spinal cord, eyes, and meninges, representing approximately 4% of intracranial tumors <ref type="bibr" target="#b0">[1]</ref>. Conversely, glioblastoma (GBM) is a prevalent malignant brain tumor with clinical symptoms and MRI imaging features often similar to PCNSL <ref type="bibr" target="#b1">[2]</ref>. However, their treatment modalities differ significantly; GBM generally requires postoperative chemoradiation, whereas surgical resection in PCNSL does not offer clear survival benefits and may cause neurological deficits. erefore, precise differentiation between these tumors can prevent unnecessary surgical interventions <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b2">3]</ref>.</p><p>In many cases, tumors can be differentiated according to conventional MR imaging results because necrosis is usually observed in glioblastoma, and homogeneous enhancement without necrosis suggests PCNSL <ref type="bibr" target="#b3">[4]</ref>. However, in some cases, the two neoplasms may mimic each other on MRI. For instance, a typical glioblastoma with no or little necrosis and atypical PCNSL with necrosis, complicating the discrimination between glioblastoma and PCNSL <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6]</ref>. Some advanced MRI techniques may support the radiological assessment. For example, the cerebral blood volume(rCBV) obtained from T2-based dynamic susceptibility contrast(DSC-MRI) has been higher in glioblastoma than in PCNSL because of neovascularization in glioblastoma. is condition is absent in PCNSL <ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref>. However, high variability in rCBV is commonly encountered. e uncommon hypervascular PCNSLs may be misdiagnosed as GBM, while the atypical GBM without prominent rCBV may be misdiagnosed as PCNSL <ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref>. While conventional MRI typically shows necrosis in GBM and homogeneous enhancement without necrosis in PCNSL, overlapping imaging characteristics complicate differentiation. Advanced MRI techniques, such as dynamic susceptibility contrast MRI, can assist diagnosis, but they are resource-intensive, prone to variability, and rely heavily on clinical expertise, yielding moderate accuracy rates (62.3%-86.9%) <ref type="bibr" target="#b13">[14]</ref>.</p><p>Convolutional neural networks (CNNs) have revolutionized medical image classification by automatically extracting relevant features without manual segmentation of tumor regions. Before CNN was adopted, most Radiomics studies used statistical analysis and texture analysis to extract a large number of quantitative image features from the depicted tumor region of interest (ROI) and then used traditional machine learning classifiers, like random forest and support vector machine, to build a prediction model <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref>. However, radiomics requires accurate segmentation of the ROI of the tumor, which is time-consuming, and descriptions among observers vary.</p><p>is defect hinders the application of radiology in clinical practice. Convolutional neural networks (CNNs) have enabled automatic identification of imaging features relevant to classification tasks, need for time-consuming and potentially unpredictable delineation of ROIs. <ref type="bibr" target="#b17">[18]</ref>.</p><p>Some previous studies have evaluated CNN-based differentiation between GBM and PCNSL by using MRI images of previously untreated patients performed. Due to the low accuracy, the need for more advanced MRI, the instability of manual ROI delineation and the small sample size, hence limiting the general applicability of the model <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref><ref type="bibr" target="#b21">[22]</ref>. Most importantly, previous studies generally lacked external validation, defined as performance assessment on a completely independent dataset collected from a different institution or population to evaluate the model's generalizability. In addition, most of these studies were limited by small sample sizes and the absence of rigorous validation procedures. In contrast, the present study describes both the development and external validation of a CNN designed to accurately differentiate primary central nervous system lymphoma (PCNSL) from glioblastoma (GBM).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>As this retrospective study utilized anonymized patient data, informed consent was waived. All procedures complied with the Declaration of Helsinki (2013 revision).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Study population and data collection</head><p>In this study, we initially identified 623 patients from two cohorts: Beijing Tiantan Hospital (n = 535) and the RSNA-ASNR-MICCAI BraTS 2021 dataset (n = 88). After applying exclusion criteria, 316 patients were finally included. Among them, 141 patients enrolled at Tiantan Hospital from <ref type="bibr">December 31, 2015</ref>, to December 31, 2021, were randomly assigned to training (n = 98) and validation sets (n = 43) following a 7/3 ratio. Patients were randomly divided into a training set (used for model learning) and a validation set (used to fine-tune model parameters and prevent overfitting). Additionally, 175 patients constituted an external test set, comprising 87 patients admitted to Tiantan Hospital before November 2015 and 88 patients from the RSNA-ASNR-MICCAI BraTS 2021 dataset. e exclusion criteria were as follows: 1. No head MRI examination performed in Beijing Tiantan Hospital before surgery; 2. Patients with incomplete T1Gd-MRI sequences were excluded;3. MR image has artifacts; 4. Clinical diagnosis is GBM or PCNSL, but pathological diagnosis is unclear.</p><p>e use of specimens and patient information was approved by the Ethics Committees of the Beijing Tiantan Hospital of Capital Medical University (Approval No. 2,016,004). All patients provided written consent for the use of their specimens and disease information for the study, in accordance with the Ethics Committee approval and the Declaration of Helsinki.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>MR acquisition</head><p>MRI scans utilized a 3T MRI scanner (Discovery 750, GE Healthcare) and a 32-channel head coil. Protocols included T2 fast spin-echo, T2-FLAIR, T1 inversion recovery, contrast-enhanced T1, and diffusion-weighted imaging with specific parameters ensuring standardized imaging quality.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Image preprocessing</head><p>is study applied standardized pre-processing to all the T1Gd-MRI scans, following the RSNA-ASNR-MICCAI BraTS 2021 standard <ref type="bibr" target="#b22">[23]</ref>. Specifically, the applied preprocessing routines included NIfTI file format conversion <ref type="bibr" target="#b23">[24]</ref>, co-registration to the same organizational template (SRI 24) <ref type="bibr" target="#b24">[25]</ref>, resampling and skull-stripping. e specific method we used for skull peeling is based on a novel DL method that is robust across the MRI sequence input and accounts for brain morphology variations <ref type="bibr" target="#b25">[26]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Convolutional neural network</head><p>In this study, we implemented a DenseNet264 convolutional neural network architecture, which consists of three transition blocks (TBs) interspersed with four dense blocks (DBs). DenseNet was initially designed to effectively mitigate the declining accuracy associated with vanishing gradients frequently encountered in deeper neural networks. Given the inherent density and redundancy of MRI features, neural network models are particularly susceptible to gradient loss, consequently leading to model overfitting. Model overfitting refers to a phenomenon in which a neural network performs well on the training data but fails to generalize to unseen data due to memorization of noise or specific patterns. To overcome this limitation, DenseNet utilizes densely connected convolutional layers, enhancing feature propagation through the network.</p><p>is dense connectivity facilitates efficient extraction and retention of discriminative and representative MRI features, thereby effectively addressing the issue of gradient loss.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implementation details</head><p>For the training procedure, the Adam optimizer was employed with an initial learning rate set at 0.0001 and an initial weight decay parameter of 0.00001. e training also incorporated a Cosine Annealing schedule to dynamically adjust the learning rate and utilized a cross-entropy loss function. To enhance the robustness and generalization of the CNN model, dropout was set at 20% in hidden layers during each training iteration. Furthermore, two image patches, each with dimensions of 96 × 96 × 32 pixels, were extracted from each MRI modality. ese patches were subjected to extensive data augmentation techniques, including random scaling, rotation, shearing, translation, and horizontal flipping, to artificially expand the training dataset and substantially minimize the risk of model overfitting <ref type="bibr" target="#b26">[27]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation of models</head><p>e diagnostic performance of the CNN model was comprehensively assessed across training, validation, and external hold-out test datasets. An external validation or test set was used to independently evaluate the model's generalizability.</p><p>e evaluation encompassed several widely recognized metrics, specifically: 1) accuracy; 2) F1-score (the harmonic mean between precision and recall); 3) negative predictive value (NPV); 4) precision, also referred to as positive predictive value (PPV); 5) sensitivity (recall); 6) specificity; and 7) area under the receiver operating characteristics curve (AUC-ROC).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis, software and hardware</head><p>All statistical analyses and model constructions were executed utilizing Python and R programming environments. Statistical significance for all tests was established at a two-tailed p-value threshold of 0.05. Normality of age distributions within cohorts was assessed using the Kolmogorov-Smirnov test. Comparisons of age and gender distributions between GBM and PCNSL cohorts were performed using either Student's t-test or the chi-square test, as appropriate.</p><p>e CNN training and evaluation tasks were performed on a high-performance computing workstation equipped with an Intel Core i7-10700 H processor and an RTX3090 GPU with 12GB memory.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Patient characteristics</head><p>In the present investigation, a total of 141 patients, who were pathologically confirmed as having glioblastoma (GBM) or primary central nervous system lymphoma (PCNSL) at Beijing Tiantan Hospital between December 31, 2015, and December 31, 2021, were initially enrolled. Of these patients, 98 were allocated to the training dataset, while the remaining 43 were assigned to the validation dataset; within these groups, 71 patients were diagnosed with GBM and 70 with PCNSL. Overall, a final analytical cohort comprising 316 patients was established, including 159 individuals diagnosed with GBM and 157 with PCNSL. Specifically, of the 141 patients recruited at Tiantan Hospital within the stated enrollment period, the dataset was partitioned into 98 patients for training purposes and 43 for validation. Additionally, an external testing cohort of 175 patients was formed, encompassing 87 individuals admitted to Tiantan Hospital prior to November 2015 and another 88 patients derived from the RSNA-ASNR-MICCAI BraTS 2021 dataset. Concerning demographic characteristics, the mean ages of patients diagnosed with GBM and PCNSL in the training cohort were 61.5 and 57.6 years, respectively. In the validation cohort, the corresponding mean ages were 60.8 years for GBM patients and 56.9 years for those diagnosed with PCNSL. Regarding gender distribution, male patients represented 55.0% of GBM cases and 47.8% of PCNSL cases within the training cohort. Similarly, the validation group exhibited male proportions of 52.5% and 50.2% for GBM and PCNSL, respectively. Standardized preprocessing procedures, in line with the RSNA-ASNR-MICCAI BraTS 2021 recommendations, were uniformly applied to all T1Gd-MRI scans (Fig. <ref type="figure" target="#fig_0">1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model performance metrics evaluation</head><p>Monitoring the training loss-a quantitative measure of the discrepancy between the model's predicted outputs and the true target values-across multiple epochs, together with evaluating the accuracy, is an effective approach to assess whether the model has achieved adequate convergence during training. Figure <ref type="figure" target="#fig_1">2</ref> shows that as the number of periods increases, the training error decreases and the verification accuracy increases. At the same time, the loss of the training set and the accuracy of the validation set gradually tend to be stable, which clearly shows that the network is learning from the given data and shows the generalizability of our model. e performance of the trained CNN model was systematically assessed across training, validation, and test datasets. As presented in Table <ref type="table" target="#tab_1">1</ref>, the CNN model achieved accuracy values of 0.92, 0.95, and 0.96 for the training, validation, and test sets, respectively. Within the validation cohort, the model achieved an area under the receiver operating characteristic curve (AUC-ROC) of 0.99, with a sensitivity of 0.91, a specificity of 1.0, and an F1 score (harmonic mean of sensitivity and positive predictive value) of 0.95 for PCNSL diagnosis. In the test dataset, the model performed similarly well, achieving an AUC of 1.0, sensitivity of 0.93, specificity of 1.0, and an F1 score of 0.96. For each diagnostic class, detailed AUC-ROC curves across training, validation, and test sets, along with comprehensive global confusion matrices, are illustrated in Fig. <ref type="figure" target="#fig_2">3</ref>. Additionally, model calibration was evaluated using the Hosmer-Lemeshow test, which demonstrated excellent calibration performance of the prediction model (Fig. <ref type="figure">4</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CNN visualization by Grad-CAM heatmaps</head><p>Grad-CAM heatmaps provide visual explanations of the regions that the CNN model deems most relevant for its classification decisions. As shown in Fig. <ref type="figure">5A</ref>, the original MR images serve as the baseline reference.</p><p>e corresponding heatmaps in Figs. <ref type="figure">5B</ref> and <ref type="figure">5C</ref> highlight regions of high model attention, with warmer colors-particularly crimson-indicating greater importance. ese highlighted regions predominantly overlap with the tumor areas seen in the original images, suggesting that the CNN model effectively captures key pathological features essential for accurate classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this research, we used high-performance CNN architecture to realize deep learning and classified GBM and PCNSL with high accuracy (92%-96%) by using T1 weighted images with enhanced contrast. Training and validation set showed consistent discrimination and calibration across Tiantan Hospital,which were confirmed in further validation in the held-out RSNA region. is shows that our model is applicable not only to Asians but also to other races.</p><p>Our model demonstrated exceptionally high sensitivity (100.0%) for identifying GBM compared to other classes, alongside moderately high sensitivity for diagnosing PCNSL (93.0%).</p><p>ese results indicate that our model presents a low probability of misclassifying PCNSL as GBM, and an even lower likelihood of incorrectly classifying GBM as PCNSL. e strong classification performance may partly reflect the inherent imaging distinctions between GBM and PCNSL. Necrosis and heterogeneous enhancement are typical hallmarks of GBM, whereas PCNSL-especially in immunocompetent patients-usually presents as homogeneously enhancing lesions without necrosis. is contrast likely contributes to the high separability achieved by the CNN. Nonetheless, the model maintained high performance even in the temporally and externally validated datasets, suggesting that it captured more comprehensive textural and intensity-based cues beyond necrosis alone. Nonetheless, caution should be exercised regarding surgical decisions for patients diagnosed with GBM by the model, given the observed false-positive rate of 8%-9%. Conversely, there is significantly greater confidence in avoiding surgical intervention for patients classified as having PCNSL,  given the minimal false-positive rate (0%-8%). A small number of misclassified cases were observed, often corresponding to atypical imaging presentations such as necrotic PCNSL or non-necrotic GBM. ese findings reflect true diagnostic ambiguities also encountered by expert radiologists and emphasize the importance of expanding the training dataset with such atypical cases to further improve model robustness. Although expert neuroradiologists can often differentiate GBM and PCNSL using postcontrast T1-weighted MRI, our CNN provides consistent, rapid, and quantitative decision support. Such automation may be particularly beneficial in institutions lacking subspecialty expertise or in emergent settings requiring immediate assessment. Since CNN-extracted image features inherently lack interpretability, we generated coarse localization heatmaps to help illuminate the CNNs decision-making process.</p><p>ese heatmaps highlight critical diagnostic regions identified by the model, clearly demonstrating regions of high importance that correspond closely to tumor areas (Fig. <ref type="figure">5</ref>). e overlap of the depth-important region and the general tumor region indicates that the prediction of the CNN model is based on the image features of tumors rather than the less relevant adjacent brain parenchyma, drawing conclusions based on imaging appearance of pathologic brain tissue.</p><p>e Grad-CAM heatmaps (Fig. <ref type="figure">5</ref>) further revealed that the CNNs attention was concentrated on tumor regions and their peritumoral zones, aligning with known pathophysiologic patterns-such as PCNSLs predilection for deep gray matter and GBMs infiltrative margins. is visual consistency supports the biological plausibility of the learned features and complements quantitative performance metrics.</p><p>In conclusion, the results from our study reinforce the clinical validity and practical applicability of this CNN model, offering significant support to clinicians when determining appropriate diagnostic or surgical interventions. Specifically, these findings assist physicians in deciding whether to proceed with diagnostic biopsies in cases where PCNSL is highly suspected or to opt for aggressive surgical resection in instances more indicative of GBM.</p><p>ese findings assist physicians in deciding whether to proceed with diagnostic biopsies in cases where PCNSL is highly suspected or to opt for aggressive surgical resection in instances. In the acute clinical setting, rapid differentiation between PCNSL and GBM has direct therapeutic implications. Corticosteroids, which are often administered to reduce cerebral edema, can induce marked yet transient tumor regression in CNS lymphoma, potentially leading to false-negative biopsies and diagnostic delays. By providing automated and rapid diagnostic support even in the absence of immediate radiologic interpretation, our CNN model could alert non-radiologist clinicians to the possibility of PCNSL and help avoid premature steroid use prior to biopsy confirmation.</p><p>Although current state-of-the-art MRI techniques have significantly advanced the ability to differentiate various brain tumors, several factors still limit their clinical utility.</p><p>ese limitations include interpretation biases arising from the subjective judgments of operators, inherent heterogeneity among different brain tumor types, and the necessity for specialized hardware and detailed protocol setups. e complex hardware requirements and protocol specifications are typically accessible only in large, well-equipped medical institutions, thereby restricting the widespread application of these advanced diagnostic methods <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b28">29]</ref>. Up to now, some studies have Fig. 4 The calibration curve of the prediction model. The 45-degree gray dotted line represents perfect model calibration</p><p>described the potential for deep learning or machine learning using conventional MRI images to distinguish PCNSL from GBM. However, they all lack external verification, and it is difficult to explain the generalization ability of the model in different races, which limits the extensive application of the model <ref type="bibr">[19-22, 30, 31]</ref>. Compared with previous studies, our CNN achieved superior diagnostic accuracy. is improvement can be attributed to several methodological advances: (1) a substantially larger and more diverse dataset including both institutional and RSNA-BraTS cohorts, (2) standardized preprocessing aligned with the RSNA-ASNR-MICCAI 2021 protocol to reduce inter-scanner variability, and (3) adoption of a deeper DenseNet-264 architecture with dense feature connectivity and advanced data augmentation strategies, which collectively enhanced generalization and minimized overfitting. In addition, the input image format of our model is the NIfTI data format, which can retain more image information than the PNG format used in the research of Leonardo Tariciotti <ref type="bibr" target="#b19">[20]</ref> and Malia McAvoy <ref type="bibr" target="#b18">[19]</ref>. Furthermore, the model in this study adopts a three-dimensional framework with fewer MRI sequences and eliminates the need for manual tumor delineation, making it more convenient and efficient than previous approaches. <ref type="bibr">[20-22, 30, 31]</ref>. What is more, the performance of internal verification and external verification of our model is higher than that of other studies.</p><p>This study has several limitations. First, several misclassified or diagnostically complex cases were observed in the CNN model, indicating that further optimization and expansion of the training dataset are needed. Including more atypical and heterogeneous cases in future training could improve the model's robustness and generalizability. Second, although GBM cases from European and American patients were included in the external test cohort, all PCNSL cases were derived from Tiantan Hospital. To further validate the model's generalizability across populations, future studies should include PCNSL patients from other regions and ethnic backgrounds. Third, the present CNN model was specifically designed for binary differentiation between PCNSL and GBM. However, other intracranial tumors-such as brain metastases-can show overlapping imaging characteristics, which may lead to diagnostic ambiguity. Therefore, future research should focus on developing more advanced multi-class CNN models capable of distinguishing multiple brain tumor types and achieving fully automated diagnostic workflows. Furthermore, this study did not distinguish between immunocompromised and immunocompetent patient populations. Previous research has shown that CNS lymphoma in immunocompromised individuals may present with central necrosis, mimicking glioblastoma and complicating differentiation. Future studies incorporating immune status data and conducting subgroup analyses will help determine whether the CNN model maintains diagnostic accuracy in these clinically challenging cases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>The developed deep-learning model accurately distinguishes PCNSL from GBM using standard T1Gd sequences, providing a practical, rapid, and cost-effective clinical decision-support tool for tumor diagnosis and surgical planning. By relying solely on routine MRI without the need for advanced imaging or manual segmentation, this approach demonstrates strong generalizability across multi-institutional and multiethnic datasets. The model's interpretability, supported by Grad-CAM visualization, confirms that its predictions are biologically and anatomically meaningful, reflecting clinically relevant tumor regions. Integrating such automated analysis into the diagnostic workflow may assist clinicians in improving early differentiation, optimizing biopsy timing, and avoiding inappropriate preoperative steroid use. Future work will focus on expanding the model to multiclass tumor differentiation, incorporating immune status data, and validating performance in broader international cohorts to further enhance its clinical robustness and applicability.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 Examples are shown (right) in the original volume, (left) after application of various pre-processing steps</figDesc><graphic coords="4,119.08,305.54,357.12,410.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 Train loss (left) and validation accuracy (right)</figDesc><graphic coords="5,56.69,84.00,481.92,150.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 (</head><label>3</label><figDesc>Fig. 3 (A) AUC-ROC curves; (B-D) global confusion matrices for each dataset: (B) training set, (C) validation set, and (D) test set. GBM: glioblastoma; PCNSL: primary central nervous system lymphoma</figDesc><graphic coords="6,119.08,84.00,357.12,390.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 Fig. 4</head><label>54</label><figDesc>Fig. 5 Representative MR images and Grad-CAM heatmaps illustrating CNN model attention. (A) original MR images. (B, C) Grad-CAM heatmaps showing regions of highest model attention. The crimson areas in (B) and (C) overlap closely with the tumor regions in (A), indicating the CNNs ability to focus on clinically relevant features</figDesc><graphic coords="7,119.08,362.67,357.12,129.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1</head><label>1</label><figDesc>The trained CNN model performance on the training set, validation set and test set</figDesc><table><row><cell>Dataset</cell><cell>AUC</cell><cell>ACC</cell><cell>SE</cell><cell>SP</cell><cell>F1</cell><cell>PPV</cell><cell>NPV</cell></row><row><cell>Train</cell><cell>0.99</cell><cell>0.92</cell><cell>0.92</cell><cell>0.92</cell><cell>0.92</cell><cell>0.92</cell><cell>0.92</cell></row><row><cell>Validation</cell><cell>0.99</cell><cell>0.95</cell><cell>0.91</cell><cell>1.00</cell><cell>0.95</cell><cell>1.00</cell><cell>0.91</cell></row><row><cell>Test</cell><cell>1.00</cell><cell>0.96</cell><cell>0.93</cell><cell>1.00</cell><cell>0.96</cell><cell>1.00</cell><cell>0.92</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>Wenbin Li and Feng Chen: Conceptualization, Supervision, Funding acquisition, Writing-review &amp; editing; Qiang Ji: Data Curation, Data Analysis, Writing-original draft preparation, Writing-review &amp; editing, Visualization, Software; Qiang ji, Zixuan Yang and Lili Zhou: Writing-review &amp; editing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>We are grateful for the financial support from the National Natural Science Foundation of China (32471036), the Talent Introduction Foundation of Tiantan Hospital (No. RCYJ-2020-2025-LWB to W. B. L.); National and Provincial Clinical Key Specialty Capacity Building Project of 2020 -Li Wenbin; and Clinical Major Specialty Projects of Beijing (2-1-2-038 to W.B.L). The funders did not participate in the study design, data collection, analysis, interpretation, or report writing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The RSNA-ASNR-MICCAI BraTS 2021 dataset used for external testing is publicly available ( h t t p s : / / w w w . k a g g l e . c o m / d a t a s e t s / a w s a f 4 9 / b r a t s 2 0 -d a t a s e t t r a i n i n g). De-identified imaging and clinical data from Beijing Tiantan Hospital can be obtained from the corresponding author upon reasonable request and with institutional review board approval, in compliance with patient-privacy regulations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Primary CNS Lymphoma</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Grommes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">M</forename><surname>Deangelis</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/jco.2017.72.7602</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Oncology</title>
+		<title level="j" type="abbrev">JCO</title>
+		<idno type="ISSN">0732-183X</idno>
+		<idno type="ISSNe">1527-7755</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page" from="2410" to="2418" />
+			<date type="published" when="2017-07-20">2017</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Grommes C, DeAngelis LM. Primary CNS lymphoma. J Clin Oncol: Off J Am Soc Clin Oncol. 2017;35(21):2410-18.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2013–2017</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nirav</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaa200</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">Supplement_1</biblScope>
+			<biblScope unit="page" from="iv1" to="iv96" />
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 9 3 / n e u o n c / n o a a 2 0 0</note>
+	<note type="raw_reference">Ostrom QT, Patil N, Cioffi G, Waite K, Kruchko C, Barnholtz-Sloan J-O. CBTRUS statistical report: primary brain and other central nervous system tumors diagnosed in the United States in 2013-2017. Neuro-oncology. 2020;22(Supplement_1):iv1-96. h t t p s : / / d o i . o r g / 1 0 . 1 0 9 3 / n e u o n c / n o a a 2 0 0.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Primary brain tumours in adults</title>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Lapointe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">A</forename><surname>Butowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0140-6736(18)30990-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet</title>
+		<title level="j" type="abbrev">The Lancet</title>
+		<idno type="ISSN">0140-6736</idno>
+		<imprint>
+			<biblScope unit="volume">392</biblScope>
+			<biblScope unit="issue">10145</biblScope>
+			<biblScope unit="page" from="432" to="446" />
+			<date type="published" when="2018-08">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lapointe S, Perry A, Butowski NA. Primary brain tumours in adults. Lancet (lond, Engl). 2018;392(10145):432-46.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Central Nervous System Lymphoma: Characteristic Findings on Traditional and Advanced Imaging</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">S</forename><surname>Haldorsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Espeland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E-M</forename><surname>Larsson</surname></persName>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a2171</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="984" to="992" />
+			<date type="published" when="2011">2011</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haldorsen IS, Espeland A, Larsson EM. Central nervous system lymphoma: characteristic findings on traditional and advanced imaging. AJNR Am J Neuroradiol. 2011;32(6):984-92.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Intraaxial brain masses: MR imaging-based diagnostic strategy-initial experience</title>
+		<author>
+			<persName><forename type="first">Al-Okaili Rn</forename><surname>Krejza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Woo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">243</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="539" to="550" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al-Okaili RN, Krejza J, Woo JH, et al. Intraaxial brain masses: MR imaging-based diagnostic strategy-initial experience. Radiology. 2007;243(2):539-50.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Atypical Imaging Findings in an Immunocompetent Patient</title>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Savage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Quint</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamaoncol.2015.0298</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Oncology</title>
+		<title level="j" type="abbrev">JAMA Oncol</title>
+		<idno type="ISSN">2374-2437</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">247</biblScope>
+			<date type="published" when="2015-05-01">2015</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Savage J, Quint D. Atypical imaging findings in an immunocompe- tent patient. Primary central nervous system lymphoma. JAMA Oncol. 2015;1(2):247-48.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Evaluation of Microvascular Permeability with Dynamic Contrast-Enhanced MRI for the Differentiation of Primary CNS Lymphoma and Glioblastoma: Radiologic-Pathologic Correlation</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kickingereder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sahm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Roethke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H-P</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Radbruch</surname></persName>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a3915</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">American Journal of Neuroradiology</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1503" to="1508" />
+			<date type="published" when="2014-04-10">2014</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kickingereder P, Sahm F, Wiestler B, et al. Evaluation of microvascular perme- ability with dynamic contrast-enhanced MRI for the differentiation of primary CNS lymphoma and glioblastoma: radiologic-pathologic correlation. AJNR Am J Neuroradiol. 2014;35(8):1503-08.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Primary central nervous system lymphoma: radiologic-pathologic correlation.</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Koeller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Smirniotopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">V</forename><surname>Jones</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiographics.17.6.9397461</idno>
+	</analytic>
+	<monogr>
+		<title level="j">RadioGraphics</title>
+		<title level="j" type="abbrev">RadioGraphics</title>
+		<idno type="ISSN">0271-5333</idno>
+		<idno type="ISSNe">1527-1323</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1497" to="1526" />
+			<date type="published" when="1997-11">1997</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Koeller KK, Smirniotopoulos JG, Jones RV. Primary central nervous system lymphoma: radiologic-pathologic correlation. Radiographics. 1997;17(6):1497-526.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Primary Central Nervous System Lymphoma and Atypical Glioblastoma: Multiparametric Differentiation by Using Diffusion-, Perfusion-, and Susceptibility-weighted MR Imaging</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Kickingereder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedikt</forename><surname>Wiestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><surname>Sahm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Roethke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz-Peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Radbruch</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.14132740</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">272</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="843" to="850" />
+			<date type="published" when="2014-09">2014</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 1 4 8 / r a d i o l . 1 4 1 3 2 7 4 0.</note>
+	<note type="raw_reference">Kickingereder P, Wiestler B, Sahm F, et al. Primary central nervous system lym- phoma and atypical glioblastoma: multiparametric differentiation by using diffusion-, perfusion-, and susceptibility-weighted MR imaging. Radiology. 2014;272(3):843-50. h t t p s : / / d o i . o r g / 1 0 . 1 1 4 8 / r a d i o l . 1 4 1 3 2 7 4 0.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Differentiation among Glioblastomas, Primary Cerebral Lymphomas, and Solitary Brain Metastases Using Diffusion-Weighted Imaging and Diffusion Tensor Imaging: A PRISMA-Compliant Meta-analysis</title>
+		<author>
+			<persName><forename type="first">Pengcheng</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-3894-8572</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acschemneuro.9b00698</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Chemical Neuroscience</title>
+		<title level="j" type="abbrev">ACS Chem. Neurosci.</title>
+		<idno type="ISSN">1948-7193</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="477" to="483" />
+			<date type="published" when="2020-01-10">2020</date>
+			<publisher>American Chemical Society (ACS)</publisher>
+		</imprint>
+	</monogr>
+	<note>h t p s : / / d o i . o r g / 1 0 . 1 0 2 1 / a c s c h e m n e u r o . 9 b 0 0 6 9 8</note>
+	<note type="raw_reference">Zhang P, Liu BJACN. Differentiation among glioblastomas, primary cerebral lymphomas, and solitary brain metastases using diffusion-weighted imaging and diffusion tensor imaging: a PRISMA-compliant meta-analysis. ACS Chem Neurosci. 2020;11(3):477-83. h t p s : / / d o i . o r g / 1 0 . 1 0 2 1 / a c s c h e m n e u r o . 9 b 0 0 6 9 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Imaging of the intracranial venous system with a contrast-enhanced volumetric interpolated examination</title>
+		<author>
+			<persName><forename type="first">Stephan</forename><forename type="middle">G</forename><surname>Wetzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivian</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soonmee</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Glyn</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kim</forename><surname>Nelson</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-002-1714-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1010" to="1018" />
+			<date type="published" when="2002">2002</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wetzel SG, Cha S, Law M, et al. Preoperative assessment of intracranial tumors with perfusion MR and a volumetric interpolated examination: a comparative study with DSA. AJNR Am J Neuroradiol. 2002;23(10):1767-74.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Glioma vascularity correlates with reduced patient survival and increased malignancy</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">M</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Elliott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Forshaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Golfinos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">K</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">J</forename><surname>Kelly</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.surneu.2008.11.012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Surgical Neurology</title>
+		<title level="j" type="abbrev">Surgical Neurology</title>
+		<idno type="ISSN">0090-3019</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="242" to="246" />
+			<date type="published" when="2009-09">2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Russell SM, Elliott R, Forshaw D, Golfinos JG, Nelson PK, Kelly PJ. Glioma vascu- larity correlates with reduced patient survival and increased malignancy. Surg Neurol. 2009;72(3):242-46; discussion 246-247.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">High-resolution blood-pool-contrast-enhanced MR angiography in glioblastoma: tumor-associated neovascularization as a biomarker for patient survival. A preliminary study</title>
+		<author>
+			<persName><forename type="first">Josep</forename><surname>Puig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerard</forename><surname>Blasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josep</forename><surname>Daunis-I-Estadella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angel</forename><surname>Alberich-Bayarri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Essig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajan</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastián</forename><surname>Remollo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Montserrat</forename><surname>Puigdemont</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>Sánchez-González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gloria</forename><surname>Mateu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Wintermark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salvador</forename><surname>Pedraza</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00234-015-1599-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroradiology</title>
+		<title level="j" type="abbrev">Neuroradiology</title>
+		<idno type="ISSN">0028-3940</idno>
+		<idno type="ISSNe">1432-1920</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="17" to="26" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Puig J, Blasco G, Daunis IEJ, et al. High-resolution blood-pool-contrast- enhanced MR angiography in glioblastoma: tumor-associated neovascular- ization as a biomarker for patient survival. A preliminary study. Neuroradiol- ogy. 2016;58(1):17-26.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Machine learning applications for the differentiation of primary central nervous system lymphoma from glioblastoma on imaging: a systematic review and meta-analysis</title>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">V</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">E</forename><surname>Blears</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rishi</forename><forename type="middle">R</forename><surname>Lall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><surname>Ortega-Barnett</surname></persName>
+		</author>
+		<idno type="DOI">10.3171/2018.8.focus18325</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Focus</title>
+		<idno type="ISSNe">1092-0684</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">E5</biblScope>
+			<date type="published" when="2018-11">2018</date>
+			<publisher>Journal of Neurosurgery Publishing Group (JNSPG)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nguyen AV, Blears EE, Ross E, Lall RR, Ortega-Barnett J. Machine learn- ing applications for the differentiation of primary central nervous system lymphoma from glioblastoma on imaging: a systematic review and meta- analysis. Neurosurgical Focus. 2018;45(5):E5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Machine Learning-based Texture Analysis of Contrast-enhanced MR Imaging to Differentiate between Glioblastoma and Primary Central Nervous System Lymphoma</title>
+		<author>
+			<persName><forename type="first">Akira</forename><surname>Kunimatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natsuko</forename><surname>Kunimatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koichiro</forename><surname>Yasaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Akai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kouhei</forename><surname>Kamiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takeyuki</forename><surname>Watadani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harushi</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Osamu</forename><surname>Abe</surname></persName>
+		</author>
+		<idno type="DOI">10.2463/mrms.mp.2017-0178</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medical Sciences</title>
+		<title level="j" type="abbrev">MRMS</title>
+		<idno type="ISSN">1347-3182</idno>
+		<idno type="ISSNe">1880-2206</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="44" to="52" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Japanese Society for Magnetic Resonance in Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 2 4 6 3 / m r m s . m p . 2 0 1 7 -0 1 7 8.</note>
+	<note type="raw_reference">Kunimatsu A, Kunimatsu N, Yasaka K, et al. Machine learning-based texture analysis of contrast-enhanced MR imaging to differentiate between glioblas- toma and primary central nervous system lymphoma. Magn Reson Med Sci. 2019;18(1):44. h t t p s : / / d o i . o r g / 1 0 . 2 4 6 3 / m r m s . m p . 2 0 1 7 -0 1 7 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Radiomics: Images Are More than Pictures, They Are Data</title>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">J</forename><surname>Gillies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">E</forename><surname>Kinahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hedvig</forename><surname>Hricak</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2015151169</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">278</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="563" to="577" />
+			<date type="published" when="2016-02">2016</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gillies RJ, Kinahan PE, Hricak H. Radiomics: images are more than pictures, they are data. Radiology. 2016;278(2):563-77.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Radiomics: Extracting more information from medical images using advanced feature analysis</title>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Rios-Velazquez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralph</forename><surname>Leijenaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruud</forename><forename type="middle">G P M</forename><surname>Van Stiphout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Granton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catharina</forename><forename type="middle">M L</forename><surname>Zegers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Gillies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><surname>Boellard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><surname>Dekker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">J W L</forename><surname>Aerts</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejca.2011.11.036</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Cancer</title>
+		<title level="j" type="abbrev">European Journal of Cancer</title>
+		<idno type="ISSN">0959-8049</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="441" to="446" />
+			<date type="published" when="2012-03">2012</date>
+			<publisher>Elsevier BV</publisher>
+			<pubPlace>Oxford, Engl</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lambin P, Rios-Velazquez E, Leijenaar R, et al. Radiomics: extracting more information from medical images using advanced feature analysis. Eur J Cancer (Oxford, Engl). 2012;48(4):441-46.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Convolutional neural networks: an overview and application in radiology</title>
+		<author>
+			<persName><forename type="first">Rikiya</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mizuho</forename><surname>Nishio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">Kinh Gian</forename><surname>Do</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaori</forename><surname>Togashi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13244-018-0639-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Insights into Imaging</title>
+		<title level="j" type="abbrev">Insights Imaging</title>
+		<idno type="ISSNe">1869-4101</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="611" to="629" />
+			<date type="published" when="2018-06-22">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yamashita R, Nishio M, Rkg D, Togashi K. Convolutional neural networks: an overview and application in radiology. Insights Imag. 2018;9(4):611-29.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Classification of glioblastoma versus primary central nervous system lymphoma using convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Malia</forename><surname>Mcavoy</surname></persName>
+			<idno type="ORCID">0000-0002-9998-4737</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><forename type="middle">Calvachi</forename><surname>Prieto</surname></persName>
+			<idno type="ORCID">0000-0001-5356-0130</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><forename type="middle">R</forename><surname>Kaczmarzyk</surname></persName>
+			<idno type="ORCID">0000-0002-5544-7577</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Iván</forename><forename type="middle">Sánchez</forename><surname>Fernández</surname></persName>
+			<idno type="ORCID">0000-0002-4313-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jack</forename><surname>Mcnulty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun-Hsing</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0001-9892-8218</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">B</forename><surname>Gormley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Arnaout</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-94733-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15219</biblScope>
+			<date type="published" when="2021-07-26">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McAvoy M, Prieto PC, Kaczmarzyk JR, et al. Classification of glioblastoma versus primary central nervous system lymphoma using convolutional neural networks. Sci Rep. 2021;11(1):15219.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A Deep Learning Model for Preoperative Differentiation of Glioblastoma, Brain Metastasis and Primary Central Nervous System Lymphoma: A Pilot Study</title>
+		<author>
+			<persName><forename type="first">Leonardo</forename><surname>Tariciotti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valerio</forename><forename type="middle">M</forename><surname>Caccavella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgio</forename><surname>Fiore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luigi</forename><surname>Schisano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgio</forename><surname>Carrabba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Borsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Giordano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Palmisciano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giulia</forename><surname>Remoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luigi</forename><forename type="middle">Gianmaria</forename><surname>Remore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauro</forename><surname>Pluderi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuela</forename><surname>Caroli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgio</forename><surname>Conte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Triulzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Locatelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giulio</forename><surname>Bertani</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2022.816638</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">816638</biblScope>
+			<date type="published" when="2022-02-24">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tariciotti L, Caccavella VM, Fiore G, et al. A deep learning model for preopera- tive differentiation of glioblastoma, brain metastasis and primary central nervous system lymphoma: a pilot study. Front Oncol. 2022;12:816638.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Automatic Differential Diagnosis of Primary Central Nervous System Lymphoma and Glioblastoma: Multi‐Parametric &lt;scp&gt;Magnetic Resonance Imaging&lt;/scp&gt; Based Convolutional Neural Network Model</title>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haiqing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiuwen</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liqin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zekuan</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daoying</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-2107-6744</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.27592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="880" to="887" />
+			<date type="published" when="2021-03-11">2021</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / j m r i . 2 7 5 9 2</note>
+	<note type="raw_reference">Xia W, Hu B, Li H, et al. Deep learning for automatic differential diagnosis of primary central nervous system lymphoma and glioblastoma. Multi-paramet- ric magnetic resonance imaging based convolutional neural network model. J Magn Reson Imaging. 2021;54(3):880-7. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / j m r i . 2 7 5 9 2.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Classification of glioblastoma versus primary central nervous system lymphoma using convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Malia</forename><surname>Mcavoy</surname></persName>
+			<idno type="ORCID">0000-0002-9998-4737</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><forename type="middle">Calvachi</forename><surname>Prieto</surname></persName>
+			<idno type="ORCID">0000-0001-5356-0130</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><forename type="middle">R</forename><surname>Kaczmarzyk</surname></persName>
+			<idno type="ORCID">0000-0002-5544-7577</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Iván</forename><forename type="middle">Sánchez</forename><surname>Fernández</surname></persName>
+			<idno type="ORCID">0000-0002-4313-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jack</forename><surname>Mcnulty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun-Hsing</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0001-9892-8218</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">B</forename><surname>Gormley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Arnaout</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-94733-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2021-07-26">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 8 -0 2 1 -9 4 7 3 3 -0</note>
+	<note type="raw_reference">McAvoy M, Prieto PC, Kaczmarzyk JR, et al. Classification of glioblastoma versus primary central nervous system lymphoma using convolutional neural networks. Sci Rep. 2021;11(1):1-7. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 8 -0 2 1 -9 4 7 3 3 -0.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghodasara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mohan</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2107.02314</idno>
+		<idno>arXiv 2107.02314</idno>
+		<imprint>
+			<date type="published" when="2021-07">2021. 7 . 0 2 3 1 4.</date>
+		</imprint>
+	</monogr>
+	<note>preprint h t t p s : / / d o i . o r g / 1 0 . 4 8 5 5 0 / a r X i v . 2 1 0</note>
+	<note type="raw_reference">Baid U, Ghodasara S, Mohan S, et al. The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification. arXiv 2107.02314 [preprint]. 2021. h t t p s : / / d o i . o r g / 1 0 . 4 8 5 5 0 / a r X i v . 2 1 0 7 . 0 2 3 1 4.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">14th Annual Meeting of the Organization for Human Brain Mapping</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ashburner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Breman</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2008.04.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page">S1</biblScope>
+			<date type="published" when="2004">2004</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>Paper presented at: 10th</note>
+	<note type="raw_reference">Cox RW, Ashburner J, Breman H, et al. A (sort of ) new image data format stan- dard: NIfTI-1. Paper presented at: 10th Annual Meeting of the Organization for Human Brain Mapping. 2004.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The SRI24 multichannel atlas of normal adult human brain structure</title>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Rohlfing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalie</forename><forename type="middle">M</forename><surname>Zahr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edith</forename><forename type="middle">V</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adolf</forename><surname>Pfefferbaum</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/hbm.20906</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Human Brain Mapping</title>
+		<title level="j" type="abbrev">Human Brain Mapping</title>
+		<idno type="ISSN">1065-9471</idno>
+		<idno type="ISSNe">1097-0193</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="798" to="819" />
+			<date type="published" when="2010">2010</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / h b m . 2 0 9 0 6</note>
+	<note type="raw_reference">Rohlfing T, Zahr NM, Sullivan EV, Pfefferbaum A. The SRI24 multichannel atlas of normal adult human brain structure. Hum Brain Mapp. 2010;31(5):798-819. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / h b m . 2 0 9 0 6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training</title>
+		<author>
+			<persName><forename type="first">Siddhesh</forename><surname>Thakur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimit</forename><surname>Doshi</surname></persName>
+			<idno type="ORCID">0000-0002-2875-5814</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+			<idno type="ORCID">0000-0003-2243-8487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiharu</forename><surname>Sako</surname></persName>
+			<idno type="ORCID">0000-0003-3243-3954</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Min</forename><surname>Ha</surname></persName>
+			<idno type="ORCID">0000-0002-3526-9101</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Shukla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Flanders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aikaterini</forename><surname>Kotrotsou</surname></persName>
+			<idno type="ORCID">0000-0002-0433-7159</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mikhail</forename><surname>Milchenko</surname></persName>
+			<idno type="ORCID">0000-0002-4022-1081</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Liem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">S</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Lombardo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">D</forename><surname>Palmer</surname></persName>
+			<idno type="ORCID">0000-0003-3311-0129</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><surname>Lamontagne</surname></persName>
+			<idno type="ORCID">0000-0002-6752-8518</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arash</forename><surname>Nazeri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjay</forename><surname>Talbar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uday</forename><surname>Kulkarni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Marcus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rivka</forename><surname>Colen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guray</forename><surname>Erus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2020.117081</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">220</biblScope>
+			<biblScope unit="page">117081</biblScope>
+			<date type="published" when="1920">2020. 2 0 . 1 1 7 0 8 1.</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . n e u r o i m a g e . 2 0</note>
+	<note type="raw_reference">Thakur S, Doshi J, Pati S, et al. Brain extraction on MRI scans in presence of diffuse glioma: multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training. Neuroimage. 2020;220:117081. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . n e u r o i m a g e . 2 0 2 0 . 1 1 7 0 8 1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Discriminative Unsupervised Feature Learning with Exemplar Convolutional Neural Networks</title>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jost</forename><forename type="middle">Tobias</forename><surname>Springenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Riedmiller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2015.2496141</idno>
+		<idno>. 2 0 1 5 . 2 4 9 6 1 4 1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1734" to="1747" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note>P A M I</note>
+	<note type="raw_reference">Dosovitskiy A, Springenberg JT, Riedmiller M, Brox T. Discriminative unsuper- vised feature learning with convolutional neural networks. Ieee Trans Pattern Anal Mach Intell. 2014;27. h t t p s : / / d o i . o r g / 1 0 . 1 1 0 9 / T P A M I . 2 0 1 5 . 2 4 9 6 1 4 1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Differentiation of Glioblastoma Multiforme and Single Brain Metastasis by Peak Height and Percentage of Signal Intensity Recovery Derived from Dynamic Susceptibility-Weighted Contrast-Enhanced Perfusion MR Imaging</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Lupo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M-H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lamborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Mcdermott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">P</forename><surname>Dillon</surname></persName>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a0484</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">American Journal of Neuroradiology</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1078" to="1084" />
+			<date type="published" when="2007-06-01">2007</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cha S, Lupo JM, Chen MH, et al. Differentiation of glioblastoma multiforme and single brain metastasis by peak height and percentage of signal intensity recovery derived from dynamic susceptibility-weighted contrast-enhanced perfusion MR imaging. AJNR Am J Neuroradiol. 2007;28(6):1078-84.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Histogram analysis of absolute cerebral blood volume map can distinguish glioblastoma from solitary brain metastasis</title>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donghai</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanna</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weicheng</forename><surname>Yao</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/md.0000000000017515</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medicine</title>
+		<idno type="ISSN">0025-7974</idno>
+		<idno type="ISSNe">1536-5964</idno>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">42</biblScope>
+			<biblScope unit="page">e17515</biblScope>
+			<date type="published" when="2019-10">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qin J, Li Y, Liang D, Zhang Y, Yao W. Histogram analysis of absolute cerebral blood volume map can distinguish glioblastoma from solitary brain metasta- sis. Medicine. 2019;98(42):e17515.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Machine Learning-based Texture Analysis of Contrast-enhanced MR Imaging to Differentiate between Glioblastoma and Primary Central Nervous System Lymphoma</title>
+		<author>
+			<persName><forename type="first">Akira</forename><surname>Kunimatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natsuko</forename><surname>Kunimatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koichiro</forename><surname>Yasaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Akai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kouhei</forename><surname>Kamiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takeyuki</forename><surname>Watadani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harushi</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Osamu</forename><surname>Abe</surname></persName>
+		</author>
+		<idno type="DOI">10.2463/mrms.mp.2017-0178</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medical Sciences</title>
+		<title level="j" type="abbrev">MRMS</title>
+		<idno type="ISSN">1347-3182</idno>
+		<idno type="ISSNe">1880-2206</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="44" to="52" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Japanese Society for Magnetic Resonance in Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kunimatsu A, Kunimatsu N, Yasaka K, et al. Machine learning-based texture analysis of contrast-enhanced MR imaging to differentiate between glioblas- toma and primary central nervous system lymphoma. Magnetic Reson Med Sci. 2019;18(1):44-52.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Automatic Differential Diagnosis of Primary Central Nervous System Lymphoma and Glioblastoma: Multi‐Parametric &lt;scp&gt;Magnetic Resonance Imaging&lt;/scp&gt; Based Convolutional Neural Network Model</title>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haiqing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiuwen</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liqin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zekuan</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daoying</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-2107-6744</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.27592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="880" to="887" />
+			<date type="published" when="2021-03-11">2021</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xia W, Hu B, Li H, et al. Deep learning for automatic differential diagnosis of primary central nervous system lymphoma and glioblastoma: multi-paramet- ric magnetic resonance imaging based convolutional neural network model. J Magnetic Reson Imag: JMRI. 2021;54(3):880-87.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

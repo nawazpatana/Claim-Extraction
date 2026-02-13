@@ -1,0 +1,2686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Repurposing the Public BraTS Dataset for Postoperative Brain Tumour Treatment Response Monitoring</title>
+				<funder ref="#_JRswFEx">
+					<orgName type="full">Danish Cancer Society</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">DCCC Brain Tumor Center</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>MDPI AG</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-09-01">1 September 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Peter</forename><forename type="middle">Jagd</forename><surname>Sørensen</surname></persName>
+							<email>peter.jagd.soerensen@regionh.dk</email>
+							<idno type="ORCID">0000-0003-4998-8032</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Centre of Diagnostic Investigation , Copenhagen University Hospital-Rigshospitalet , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department" key="dep1">Department of Radiology</orgName>
+								<orgName type="department" key="dep2">Centre of Diagnostic Investigation</orgName>
+								<orgName type="institution">Copenhagen University Hospital-Rigshospitalet</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Clinical Medicine , University of Copenhagen , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department">Department of Clinical Medicine</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> The DCCC Brain Tumor Center , 2100 Copenhagen , Denmark;</note>
+								<orgName type="institution">The DCCC Brain Tumor Center</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Claes</forename><forename type="middle">Nøhr</forename><surname>Ladefoged</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Vibeke</forename><forename type="middle">Andrée</forename><surname>Larsen</surname></persName>
+							<email>vibeke.andree.larsen@regionh.dk</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Centre of Diagnostic Investigation , Copenhagen University Hospital-Rigshospitalet , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department" key="dep1">Department of Radiology</orgName>
+								<orgName type="department" key="dep2">Centre of Diagnostic Investigation</orgName>
+								<orgName type="institution">Copenhagen University Hospital-Rigshospitalet</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Clinical Medicine , University of Copenhagen , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department">Department of Clinical Medicine</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Flemming</forename><forename type="middle">Littrup</forename><surname>Andersen</surname></persName>
+							<idno type="ORCID">0000-0003-2821-1849</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Michael</forename><forename type="middle">Bachmann</forename><surname>Nielsen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hans</forename><forename type="middle">Skovgaard</forename><surname>Poulsen</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> The DCCC Brain Tumor Center , 2100 Copenhagen , Denmark;</note>
+								<orgName type="institution">The DCCC Brain Tumor Center</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jonathan</forename><forename type="middle">Frederik</forename><surname>Carlsen</surname></persName>
+							<email>jonathan.frederik.carlsen@regionh.dk</email>
+							<idno type="ORCID">0000-0002-6724-7281</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Centre of Diagnostic Investigation , Copenhagen University Hospital-Rigshospitalet , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department" key="dep1">Department of Radiology</orgName>
+								<orgName type="department" key="dep2">Centre of Diagnostic Investigation</orgName>
+								<orgName type="institution">Copenhagen University Hospital-Rigshospitalet</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Clinical Medicine , University of Copenhagen , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department">Department of Clinical Medicine</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Adam</forename><forename type="middle">Espe</forename><surname>Hansen</surname></persName>
+							<email>adam.espe.hansen@regionh.dk</email>
+							<idno type="ORCID">0000-0002-6457-1537</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Centre of Diagnostic Investigation , Copenhagen University Hospital-Rigshospitalet , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department" key="dep1">Department of Radiology</orgName>
+								<orgName type="department" key="dep2">Centre of Diagnostic Investigation</orgName>
+								<orgName type="institution">Copenhagen University Hospital-Rigshospitalet</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Clinical Medicine , University of Copenhagen , 2100 Copenhagen , Denmark;</note>
+								<orgName type="department">Department of Clinical Medicine</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> The DCCC Brain Tumor Center , 2100 Copenhagen , Denmark;</note>
+								<orgName type="institution">The DCCC Brain Tumor Center</orgName>
+								<address>
+									<postCode>2100</postCode>
+									<settlement>Copenhagen</settlement>
+									<country>Denmark;</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Repurposing the Public BraTS Dataset for Postoperative Brain Tumour Treatment Response Monitoring</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Tomography</title>
+						<title level="j" type="abbrev">Tomography</title>
+						<idno type="eISSN">2379-139X</idno>
+						<imprint>
+							<publisher>MDPI AG</publisher>
+							<biblScope unit="volume">10</biblScope>
+							<biblScope unit="issue">9</biblScope>
+							<biblScope unit="page" from="1397" to="1410"/>
+							<date type="published" when="2024-09-01">1 September 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">07E5C0F9725856A63B001D88720945C0</idno>
+					<idno type="DOI">10.3390/tomography10090105</idno>
+					<note type="submission">Received: 10 June 2024 Revised: 22 August 2024 Accepted: 26 August 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T13:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>brain tumour segmentation</term>
+					<term>treatment monitoring</term>
+					<term>postoperative</term>
+					<term>annotation protocol</term>
+					<term>automatic</term>
+					<term>deep learning algorithm</term>
+					<term>magnetic resonance imaging</term>
+					<term>MRI</term>
+					<term>Brain Tumor Segmentation Challenge</term>
+					<term>BraTS</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The Brain Tumor Segmentation (BraTS) Challenge has been a main driver of the development of deep learning (DL) algorithms and provides by far the largest publicly available expert-annotated brain tumour dataset but contains solely preoperative examinations. The aim of our study was to facilitate the use of the BraTS dataset for training DL brain tumour segmentation algorithms for a postoperative setting. To this end, we introduced an automatic conversion of the three-label BraTS annotation protocol to a two-label annotation protocol suitable for postoperative brain tumour segmentation. To assess the viability of the label conversion, we trained a DL algorithm using both the three-label and the two-label annotation protocols. We assessed the models preand postoperatively and compared the performance with a state-of-the-art DL method. The DL algorithm trained using the BraTS three-label annotation misclassified parts of 10 out of 41 fluid-filled resection cavities in 72 postoperative glioblastoma MRIs, whereas the two-label model showed no such inaccuracies. The tumour segmentation performance of the two-label model both pre-and postoperatively was comparable to that of a state-of-the-art algorithm for tumour volumes larger than 1 cm 3 . Our study enables using the BraTS dataset as a basis for the training of DL algorithms for postoperative tumour segmentation.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The measurement of the volume of brain tumours has the potential to be an important biomarker for both the routine response assessment of cancer patients as well as for clinical trials. In recent years, there have been substantial efforts towards automating the segmentation of brain tumours on magnetic resonance imaging (MRI), especially by deep learning (DL) algorithms <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. Among these, the nnU-Net framework <ref type="bibr" target="#b2">[3]</ref> has distinguished itself as a self-configuring method that adapts to varying segmentation tasks, demonstrating leading performance in multiple benchmark challenges, including the Brain Tumor Segmentation (BraTS) Challenge <ref type="bibr">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref>. Today, DL brain tumour segmentation algorithms are achieving over 90% agreement with imaging experts <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b6">7]</ref>. The BraTS Challenge has been the main driver in the development of the field, providing by far the largest publicly available training dataset comprising 1251 MRI examinations of glioma patients with expert reference annotations <ref type="bibr" target="#b7">[8]</ref>. However, the BraTS dataset derives exclusively from preoperative MRI examinations.</p><p>The majority of brain tumour patients undergo surgery as part of the initial treatment and are subsequently monitored by MRI <ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref>. Surgical procedures can result in cavities, tissue scarring and haematomas, all of which introduce image features typically absent preoperatively. The current BraTS annotation protocol is tailored for preoperative MRI and does not accommodate these postoperative features. Therefore, DL algorithms trained only by use of the BraTS dataset may be suboptimal for response assessment. The ideal source for training a DL algorithm for treatment response monitoring would be a comprehensive, expert-annotated dataset including postoperative MRIs. To the best of our knowledge, no suitable expert-annotated postoperative datasets are publicly available, hampering the development of DL algorithms for treatment response monitoring. HD-GLIO, an nnU-Net model trained on postoperative but non-public data, indicates the feasibility and potential of such endeavours <ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref>, although its application in routine response-monitoring settings may be challenged when small contrast-enhancing tumours are prevalent <ref type="bibr" target="#b14">[15]</ref>.</p><p>The aim of this study is to aid the development of DL algorithms for postoperative brain tumour treatment response monitoring by facilitating the use of the preoperative BraTS dataset. We hypothesise that a state-of-the-art DL algorithm, when trained on the BraTS dataset with its current annotations, is unsuitable for postoperative segmentation due to the potential for misclassifying resection cavities as tumour regions. To remedy this shortcoming, we introduce a revised annotation protocol that aligns with postoperative tumour segmentation. Accordingly, we further hypothesise that when the DL algorithm is retrained using our proposed annotation protocol on the same MRI data, it will accurately exclude resection cavities from tumour volumes in postoperative cases, and thus significantly improve its usability in the postoperative setting. By validating these hypotheses, we seek to equip a broad community of researchers and clinicians with a large body of training data to develop algorithms tailored for postoperative brain tumour response assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head><p>We trained a deep learning brain tumour segmentation algorithm using the BraTS dataset and annotation protocol as well as our proposed protocol. The datasets, annotation protocols and evaluations are described below.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Preoperative Public Dataset</head><p>We utilised the most recent BraTS adult glioma training dataset curated for the RSNA-ASNR-MICCAI BraTS 2021 Challenge [4, <ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b7">8,</ref><ref type="bibr" target="#b15">16]</ref> for training. The BraTS 2021 training dataset has been sourced from multiple institutions and comprises 1251 independent preoperative patient scans, each confirmed with a subsequent pathological diagnosis of glioma. Each scan encompasses four MRI sequences: T1-weighted before contrast infusion (T1), T1-weighted after contrast infusion (T1Gd), T2-weighted and fluid-attenuated inversion-recovery (FLAIR). These sequences have been preprocessed as described in <ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref>, which includes co-registration, resampling to voxel size of 1 mm 3 and skull-stripping. For our study, we selected a subset consisting of the last 1000 out of the 1251 scans to train the DL algorithms. We used the remaining first 251 scans as a test set to evaluate preoperative tumour segmentation performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Postoperative Public Test Dataset</head><p>For testing the performance of the algorithms in a postoperative setting, we employed the publicly available Lumiere dataset <ref type="bibr" target="#b19">[20]</ref>. The dataset encompasses scans of 91 patients with a confirmed diagnosis of glioblastoma. These patients underwent preoperative MRI between 2008 and 2013, received surgical resection treatment, underwent chemotherapy and had routine follow-up MRIs. The scans include T1, T1Gd, T2 and FLAIR sequences. In the Lumiere dataset, a version of these images has been preprocessed with HD-GLIO AUTO <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b21">22]</ref>, complete with co-registration, resampling and skull-stripping. For our study, from the preprocessed dataset, we chose the earliest follow-up MRI after week 11 for each of the 72 patients where that particular scan was complete with all four sequences.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">BraTS Three-Label Annotations</head><p>Historically, the BraTS Challenges have implemented an annotation protocol that subsegmented tumours into four distinct regions based on specific radiological observations. They include the active Gadolinium-enhancing tumour (AT), necrosis (NCR), non-enhancing tumour core (NET) and surrounding oedematous or infiltrated tissue (ED). In 2017, the protocol was simplified by merging NCR and NET into a single label (NCR+NET) <ref type="bibr" target="#b4">[5]</ref>. Hence, NCR+NET encompasses both necrosis and non-enhancing tumour core. Recently, AT has been renamed to ET (enhancing tumour), and NCR+NET to just NCR <ref type="bibr" target="#b7">[8]</ref>. For clarity, in this study, we will, however, refer to BraTS annotations by their original names, AT and NCR+NET as well as ED.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Proposed Two-Label Annotation Protocol</head><p>Our proposed annotation protocol adapts and expands the BraTS annotation protocol <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b7">8]</ref> to make it suitable for both pre-and postoperative settings. We employ two labels: the contrast-enhancing tumour (CE) and the non-enhancing hyperintense T2-FLAIR signal abnormalities (NEs) inspired by <ref type="bibr" target="#b11">[12]</ref>, with more detailed directions given below. The annotation protocol is in accordance with the relevant VASARI MR feature definitions [23] and with adaptations for postoperative compatibility. Specifically, necrotic and cystic regions are not incorporated in either label. They do not represent viable tumour tissue and may share image features with resection cavities.</p><p>The CE label is defined similarly to the BraTS AT label but with the morphological changes from surgery taken into consideration. If a region is hyperintense on T1, it should not be categorised under the CE label unless it distinctly enhances on T1Gd and exhibits a pattern different from that observed on T1. Enhancements on T1Gd with a simple, thin geometric configuration along the resection walls are interpreted as benign changes resulting from surgery and are thus excluded from the CE label. On the other hand, locally thickened or nodular enhancements seen along the resection walls should be included in the CE label. Dural thickening and leptomeningeal enhancement on T1Gd, much more often a result of surgery than glioma infiltration, should not fall under the CE label. We recognise that distinguishing between the two can occasionally pose challenges. Closely configured, sporadic enhancements in areas with high T2/FLAIR-signal are viewed as indicators of angiogenesis due to tumour growth and should thus be included in the CE label.</p><p>The NE label closely resembles a combination of the original BraTS NET and ED labels but comes with additional clarifications. T2/FLAIR hyperintensity, when adjacent to a resection cavity, indicating the presence of a previous tumour, should be equated with peritumoural oedema. As such, T2/FLAIR hyperintensity connected with a resection cavity should be allocated to the NE label. However, regions showing hyperintensity on T2/FLAIR, even if adjacent to an enhancing tumour, non-enhancing tumour core or a resection cavity, should be excluded from the NE label if they manifest a configuration mirrored contralaterally or if they evidently resemble typical periventricular oedema, a common treatment-induced feature, or white matter hyperintensities of probable vascular origin. We acknowledge the occasional difficulty in precisely determining the boundary between peritumoural oedema and unrelated periventricular oedema. Necrosis and cysts should not be allocated to the NE label.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">HD-GLIO</head><p>HD-GLIO is a freely accessible DL brain tumour segmentation algorithm designed for postoperative treatment response assessment <ref type="bibr" target="#b11">[12]</ref>. HD-GLIO differentiates between contrast-enhancing (CE HD-GLIO ) tumours and non-enhancing hyperintense T2/FLAIR signal abnormalities (NE HD-GLIO ), while excluding necrosis, obvious leucoaraiosis (white matter hyperintensities of probable vascular origin) and resection cavities. The algorithm employs the nnU-Net framework <ref type="bibr" target="#b20">[21]</ref> and was trained on a non-public dataset comprising 455 independent pre-or postoperative adult glioma MRIs. It has been validated on two longitudinal datasets: a local set of 239 MRIs from 40 glioma patients and a large multicentre set of 2034 MRIs from 532 glioblastoma patients in the EORTC-26101 cohort. In our study, HD-GLIO served two purposes: (1) it provided a reliable whole-tumour segmentation, excluding necrosis; and (2) it acted as a comparative benchmark for evaluating the performance of our algorithm. We used HD-GLIO version 1.5 <ref type="bibr" target="#b22">[24]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Conversion of BraTS Annotations</head><p>To harmonise the BraTS training data annotations with our newly proposed annotation protocol, we devised an algorithm for the systematic conversion of the BraTS segmentation masks. This conversion process is outlined below:</p><p>1.</p><p>With HD-GLIO, obtain a whole tumour segmentation that excludes necrosis, WT HD-GLIO = CE HD-GLIO + NE HD-GLIO .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2.</head><p>Assign the NCR+NET segmentations within WT HD-GLIO to the NE label. This is the only step where the HD-GLIO segmentation is used.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>3.</head><p>Add the ED segmentations to the NE label. 4.</p><p>Remove voxels in the NE label that are entirely encapsulated by AT segmentations, as these typify necrosis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5.</head><p>Remove voxel clusters in the NE label that are less than 50 mm 3 to eliminate potentially isolated traces of what was previously NCR segmentations. 6.</p><p>Add again the ED segmentations to the NE label to ensure complete incorporation of the ED segmentations. 7.</p><p>Assign the AT segmentation to the CE label.</p><p>The result of the conversion is that the CE label is identical to the original AT label, and the NE label includes the full original ED label as well as the estimated NET regions of the original NCR+NET label. Thus, the conversion process exclusively removes voxels inside the NCR+NET regions of the BraTS segmentations. Assuming that the original masks adhere to the BraTS Challenge's annotation protocol, our process is designed to remove necrosis and cysts. Figure <ref type="figure" target="#fig_0">1</ref> illustrates the conversion process in one example, and Appendix A provides a schematic illustration of the process. The label conversion script is freely available on GitHub <ref type="bibr" target="#b23">[25]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.">Training of Deep Learning Algorithm</head><p>We utilised the nnU-Net architecture with standard settings in the '3d_fullres' configuration to train our deep learning model on two distinct annotation sets. The first set was the expert-annotations from the BraTS 2021 dataset, adhering to the BraTS three-label annotation protocol. The second set, based on our newly proposed two-label protocol, was derived by conversion from the initial set as detailed in the previous section. Both training processes employed the same 1000 scans from the BraTS 2021 training dataset. See Appendix B for technical details.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8.">Evaluation</head><p>To assess the conversion of the original three-label annotations in the BraTS dataset to our recommended two-label annotations, we conducted a subjective evaluation of every 10th case, 125 cases in total, and calculated the conversion success rate with 95% confidence interval (95% CI) using the conservative Clopper-Pearson (exact) method that does not assume a normal distribution. We wished to examine how frequently the three-label and two-label deep learning models included parts of resection cavities in the postoperative test dataset. To this end, we employed a custom script that demarcated fluid-filled cavities in the brain, which on z-normalised (zero mean and unit variance) signal values were characterised by T1Gd &lt; -1, FLAIR &lt; 0 and T2 &gt; 0 in a continuous volume of at least 2 cm 3 , and subsequently validated these delineations by manual inspection before the analysis of all relevant volumes. We report how frequently the three-label and two-label models included parts of the identified cavities, and the volume included.</p><p>To verify that training of the deep learning model using converted labels did not compromise the tumour segmentation, we evaluated the segmentation both pre-and postoperatively. For evaluation of the preoperative tumour segmentation performance of the two-label model, we used as reference the converted annotations from the scans in the BraTS dataset that were kept out of the training dataset and determined Dice similarity scores (DSCs). As a benchmark, we also applied HD-GLIO and tested if its postoperative performance was significantly different from that of our model using the Wilcoxon rank sum exact test. Bootstrapping in R version 4.4.1 was used to calculate 95% CIs <ref type="bibr" target="#b24">[26]</ref>.</p><p>For evaluation of the postoperative tumour segmentation performance of the two-label model, we manually segmented the postoperative test dataset tumours using ITK-SNAP version 4.0.0 <ref type="bibr" target="#b25">[27,</ref><ref type="bibr" target="#b26">28]</ref> in line with the two-label annotation protocol. Utilising these manual expert-provided segmentations as our reference, we determined DSCs for the segmentations generated by the two-label model. Likewise, for benchmarking, we evaluated the segmentations by HD-GLIO AUTO that was provided as part of the Lumiere dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head><p>We automatically converted all 1251 segmentations from the BraTS 2021 training dataset from the original three-label annotations to our proposed two-label annotations. A subjective evaluation of 125 cases (every 10th case) showed, with three exceptions, consistent success in the conversion process, yielding a conversion success rate of 122/125 = 97.6% (95% CI [93.2-99.5%]). Inspection showed that the removed internal areas from the original NCR+NET labels corresponded to probable necrotic and cystic regions, provided the original annotations adhered to the BraTS annotation protocol. The cases with discrepancies were two cases with substantial NET tumours in which the WT HD-GLIO left out parts of the less intense FLAIR hyperintensities, and one case where central necrosis was included in the WT HD-GLIO while not completely encapsulated in AT. Thus, in two cases, NET was erroneously excluded from the resulting NE label, and in one case, NCR was erroneously included in it. Typically, in cases with large NET volumes (lower grade gliomas), there were slight variations in the external boundary between the original three-label segmentation and the converted two-label segmentation. Generally, the dissimilarities between WT HD-GLIO -used in step 2 of the conversion-and the original BraTS three-label segmentations were as desired within the internal probable necrotic and cystic regions and otherwise within the assessment of the lesion border.</p><p>We identified and segmented 41 fluid-filled resection cavities within the postoperative test set comprising MRI examinations from 72 patients. The deep learning model trained with expert annotations adhering to the BraTS three-label annotation protocol labelled a minimum of 1 cm 3 in 10 of the 41 cavities. On average, the labelled volume in a cavity was 10.7 cm 3 . Conversely, the model trained with annotations adapted to our two-label protocol did not include a volume exceeding 0.1 cm 3 in any of the cavities (and neither did HD-GLIO AUTO). Figure <ref type="figure">2</ref> shows a case where the three-label model included parts of the resection cavity.</p><p>For the preoperative test set, the median DSC values between the two-label model and converted reference expert segmentations were 0.94 (95% CI [0.93; 0.95]) for CE tumours and 0.94 (95% CI [0.92; 0.94]) for NEs. HD-GLIO achieved median DSC values of 0.89 (95% CI [0.88; 0.90]) for CE tumours and 0.88 (95% CI [0.87; 0.90]) for NEs. The DSC distributions are illustrated by box plots in Figure <ref type="figure">3</ref>.</p><p>For the postoperative test set, the median DSC values between the two-label model and reference expert segmentations were 0.48 (95% CI [0.30; 0.70]) for CE tumours and 0.68 (95% CI [0.63; 0.74]) for NEs. When focusing on CE tumours larger than 1 cm 3 , the median DSC was 0.75 (95% CI [0.66; 0.83]). In contrast, the comparison of HD-GLIO's segmentations with reference expert segmentations produced median DSC values of 0.73 (95% CI [0.63; 0.79]) for CE tumours, 0.71 (95% CI [0.68; 0.74]) for NEs and 0.79 (95% CI [0.73; 0.83] for CE tumours larger than 1 cm 3 . For CE tumours with volumes greater than 1 cm 3 and for NEs, the two models' performances were not significantly different (p = 0.40 and p = 0.29, respectively). The DSC distributions are illustrated by box plots in Figure <ref type="figure">4</ref>. In 15 cases, the two-label model achieved CE DSC = 0 due to false positives. In all cases but one, the two-label model included either contrast enhancing dura above a superficial cavity or parts of an enhancing cavity wall. In one case, it included parts of plexus choroideus. In three cases, the two-label model achieved CE DSC = 0 due to false negatives. All three cases involved weakly contrast-enhancing lesions. ffi 0.00 0.25 0.50 0.75 1.00 Dice Similarity Coefficient Two-label model HD-GLIO CE NE Preoperative tumour segmentation performance </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>In this study, we demonstrated that using the BraTS dataset, with its original threelabel annotations, to train a DL algorithm for segmentation of brain tumours after surgery will result in substantial and frequent mislabelling of resection cavities. We automatically converted the three-label BraTS annotations to two-label annotations suitable for the postoperative setting and used them to train a model that excluded all cavities and showed a tumour segmentation performance comparable to that of a state-of-the-art algorithm for volumes exceeding 1 cm 3 . Hence, our study enables the use of the largest publicly available expert annotated brain tumour (BraTS) dataset for training DL algorithms aimed at treatment response monitoring.</p><p>Prior research suggesting the harmonisation of pre-and postoperative brain tumour segmentation has typically incorporated the resection cavities into the NCR+NET label <ref type="bibr" target="#b27">[29]</ref><ref type="bibr" target="#b28">[30]</ref><ref type="bibr" target="#b29">[31]</ref>. This approach is useful to radiotherapy-planning for glioblastoma, where, according to clinical guidelines <ref type="bibr" target="#b30">[32]</ref>, resection cavities are incorporated into the gross tumour volume (GTV). Conversely, Kickingereder et al. <ref type="bibr" target="#b11">[12]</ref> and Chang et al. <ref type="bibr" target="#b31">[33]</ref> opted to label the contrastenhancing tumour and volumes of FLAIR hyperintense signal abnormalities but not the resection cavities, thereby emphasising the active tumour growth crucial for treatment response monitoring <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref>. This perspective is underlined by Kickingereder et al., who illustrated that the time-to-progression based on these labels served as a superior surrogate endpoint for overall survival compared to RANO assessment with two-dimensional measurements.</p><p>The studies focusing on postoperative treatment response monitoring by Chang et al. <ref type="bibr" target="#b31">[33]</ref> and Kickingereder et al. <ref type="bibr" target="#b11">[12]</ref> relied on newly annotated pre-and postoperative data for training DL algorithms, which are not publicly available. Our study adds to the current literature by introducing a two-label annotation protocol that adapts and expands the BraTS annotation protocol with a focus on postoperative image features. Further, the study provides a fully automatic conversion of the existing, publicly available BraTS annotations to align with our proposed two-label annotation protocol. This latter contribution positions the large BraTS training dataset as a foundational resource in the public domain for the development of deep learning algorithms designed for brain tumour treatment response monitoring.</p><p>Central to this study is the novel conversion of the expert-validated BraTS threelabel segmentations to our proposed two-label format. In one of its steps, the conversion process relies on an automatic whole-tumour segmentation by HD-GLIO (WT HD-GLIO ). Typically, the dissimilarities between WT HD-GLIO and the original BraTS three-label segmentations occur as intended within the probable cystic and necrotic regions and otherwise within the assessment of the lesion border. Since only the NCR+NET label areas of the original annotations are altered in the conversion process, the cases most prone to potential conversion errors are tumours with large NET volumes (lower-grade gliomas) extending to the outer contour. In the majority of such cases, this results in only minor variations in the external NE contour. This is supported by the conversion success rate of 122/125 = 97.6% (95% CI [93.2-99.5%]). Based on our inspection, it is therefore unlikely that there are frequent issues in the conversion of the complete BraTS 2021 training dataset segmentations, and it demonstrates that the conversion remains robust against inconsistencies between WT HD-GLIO and the original BraTS segmentations.</p><p>A limitation of our study is that we employed a particular U-Net model and only a single postoperative dataset. Yet, evidence suggests the issue of misclassification of resection cavities is not isolated. DeepBratumIA <ref type="bibr">[34]</ref> segmentations are provided along with the Lumiere dataset <ref type="bibr" target="#b19">[20]</ref> using a different preprocessing method involving atlas registration. Our inspections of the segmentations revealed erroneously included cavity parts <ref type="bibr" target="#b19">[20]</ref>. Additionally, Ramesh et al. shows an example segmentation of a Swin-UNETR model <ref type="bibr" target="#b32">[35]</ref> trained on the same BraTS data, exhibiting cavity inclusion in their published figure <ref type="bibr" target="#b29">[31]</ref>. Our own preliminary observations with nnU-Net on a local dataset reinforce this pattern. Thus, various U-Net architectures trained on the three-label BraTS 2021 training dataset demonstrate a consistent tendency to misclassify parts of resection cavities as tumour tissue across diverse postoperative datasets and preprocessing techniques, an error which is mitigated by our two-label annotation approach.</p><p>Our two-label model shows a high rate of false positives in the postoperative setting, particularly apparent by DSC = 0 achieved in some cases with CE tumour smaller than 1 cm³. This is anticipated, given that the model was trained exclusively on preoperative MRI and thus was not exposed to the commonly occurring postoperative contrast enhancement patterns from non-tumorous tissue <ref type="bibr" target="#b33">[36]</ref>, like HD-GLIO was. Hence, some postoperative cases are necessary for training a model in this setting. However, our proposed conversion of the BraTS annotations enables the use of the large BraTS dataset for training, which may considerably reduce the need for expert-annotated postoperative data, which have limited availability <ref type="bibr" target="#b17">[18]</ref>. The accuracy of our two-label model for larger CE tumours indicates the viability of this approach.</p><p>In assessing the automated conversion, we noted discrepancies in three out of 125 evaluated cases when compared to our expectations. Nevertheless, such discrepancies did not significantly impact the training efficacy of our two-label model, which sustained a high Dice coefficient of 0.94 for segmenting both CE tumour and NEs in the preoperative test set.</p><p>Although our two-label annotation protocol might differ slightly from the training approach used by HD-GLIO, the core criteria remain consistent: The CE label identifies contrast-enhancing tumours, while the NE label represents non-enhancing T2/FLAIR hyperintense signal abnormalities. Therefore, HD-GLIO's segmentations are a valid benchmark for direct comparisons with our model. The relevance of our protocol lies in its derivation from and full compatibility with the BraTS preoperative protocol, which allowed for the conversion to a two-label annotation but also ensures consistent segmentation of postoperative MRIs in future research and in the development and evaluation of DL segmentation models.</p><p>In perspective, our study underscores the capability of BraTS to serve as a foundational dataset for the training of DL algorithms for postoperative tumour segmentation, pivotal for treatment response monitoring. We demonstrate that by using the converted twolabel annotations, DL algorithms can accurately exclude resection cavities postoperatively while maintaining robust tumour segmentation. However, we acknowledge that training solely on the preoperative BraTS dataset may not fully address all surgically induced lesions; incorporating some postoperative data remains necessary. The key contribution is enabling the research community to effectively utilise the extensive and high-quality BraTS dataset in training DL algorithms for postoperative applications, potentially reducing the reliance on scarce postoperative training data. This contribution is particularly significant given the notable scarcity of publicly available, high-quality postoperative datasets with expert annotations. Among the few available postoperative datasets, the UPenn-GBM dataset <ref type="bibr" target="#b34">[37]</ref> includes 60 postoperative MRIs, and the Lumiere dataset <ref type="bibr" target="#b19">[20]</ref>, which we utilised for postoperative testing, encompasses longitudinally collected MRIs from 91 patients. Unfortunately, neither dataset offers expert annotations. To our knowledge, no other public datasets currently meet the requisite standards of quality and expert annotation.</p><p>With our work, the accessibility of adapted annotations for public use paves the way for significant advancements in research. Future studies could validate the potential of combining the BraTS dataset with a carefully selected or limited set of annotated postoperative MRI cases. This combination would ideally leverage datasets from the public domain, such as the Lumiere dataset <ref type="bibr" target="#b17">[18]</ref>, to efficiently train deep learning algorithms for postoperative treatment response monitoring.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>In this study, we showed that a state-of-the-art DL algorithm, when trained on the BraTS 2021 training dataset with its current three-label brain tumour annotations, is unsuitable for postoperative segmentation due to the frequent misclassification of resection cavities as tumour regions. To remedy this shortcoming, we automatically converted the annotations of the BraTS 2021 training dataset to a revised two-label annotation protocol adapted for postoperative tumour segmentation. The DL algorithm trained using the two-label annotations accurately excluded resection cavities from tumour volumes while showing a good tumour segmentation performance for larger CE tumours. Our work enables the use of the BraTS 2021 training dataset for training DL algorithms aimed at a postoperative setting and thus equips a broad community of researchers and clinicians with a large body of essential training data to develop algorithms tailored for postoperative brain tumour response assessment, effectively reducing the need for the publicly scarce postoperative training data.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Conversion of the BraTS 2021 three-label segmentation masks for harmonisation with the proposed two-label annotation protocol. Panel A: Anatomical sequences without annotations. T1-weighted (T1) (top left), T1-weighted after contrast infusion (T1Gd) (top right), T2-weighted (bottom left) and fluid-attenuated-inversion-recovery (FLAIR) (bottom right). Panels B-D: annotations overlaid on T1Gd (top) and FLAIR (bottom). NCR+NET = necrosis, cysts and nonenhancing tumour core; AT = active contrast-enhancing tumour; ED = oedema and infiltrated tissue; WT HD-GLIO = automatic whole-tumour segmentation by HD-GLIO; CE = contrast-enhancing tumour; NE = non-enhancing hyperintense T2/FLAIR signal abnormalities. In essence, the conversion process labels the combination of the NCR+NET mask inside the WT HD-GLIO region and the ED mask as NE, thereby removing necrosis and cysts while retaining non-enhancing tumour core. AT is relabelled as CE without change. Only the regions inside the NCR+NET segmentations (red) are affected by the conversion.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .Figure 3 .Figure 4 .</head><label>234</label><figDesc>Figure 2. Representative case from the postoperative test set of segmentations performed by deep learning models trained utilising the BraTS three-label annotation protocol and our proposed twolabel protocol and by radiologist as reference. Panel A: Anatomical sequences without annotations. T1 (top left), T1Gd (top right), T2 (bottom left) and FLAIR (bottom right). Panels B-D: Annotations overlaid on T1Gd (top) and FLAIR (bottom). NCR+NET = necrosis, cysts and nonenhancing tumour core; AT = active contrast-enhancing tumour; ED = oedema and infiltrated tissue; CE = contrast-enhancing tumour; NE = non-enhancing hyperintense T2/FLAIR signal abnormalities. The three-label model includes parts of the resection cavity (panel B) while the two-label model (panel C) and radiologist reference (panel D) do not.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><head>Funding:</head><p>The project is part of the <rs type="funder">DCCC Brain Tumor Center</rs> funded by the <rs type="funder">Danish Cancer Society</rs>, Grant No. <rs type="grantNumber">R295-A16770</rs>.</p><p>Institutional Review Board Statement: Not applicable. The studied data is in the public domain.</p><p>Informed Consent Statement: Not applicable. The studied data are in the public domain.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_JRswFEx">
+					<idno type="grant-number">R295-A16770</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The script for converting the BraTS three-label annotations to our proposed two-label annotation protocol and the original data generated in the study, i.e., the expert segmentations of the postoperative test dataset, are openly available at GitHub: <ref type="url" target="https://github.com/DEPICT-RH/postoperative_brain_tumor_segmentation_with_brats">https://github.com/  DEPICT-RH/postoperative_brain_tumor_segmentation_with_brats</ref> (accessed on 7 August 2024). The preoperative image data and original three-label annotations used in this study are from the RSNA-ASNR-MICCAI Brain Tumor Segmentation (BraTS) Challenge 2021 and can be requested through: <ref type="url" target="http://braintumorsegmentation.org/">http://braintumorsegmentation.org/</ref> (accessed on 7 August 2024). The postoperative image data and the HD-GLIO segmentation of these are from the public Lumiere dataset, and are available at FigShare: <ref type="url" target="https://springernature.figshare.com/collections/The_LUMIERE_Dataset_Longitudinal_Glioblastoma_MRI_with_Expert_RANO_Evaluation/5904905">https://springernature.figshare.com/collections/The_LUMIERE_Dataset_Longitudinal_  Glioblastoma_MRI_with_Expert_RANO_Evaluation/5904905</ref> (accessed on 7 August 2024).</p><p>Acknowledgments: For the writing of this manuscript, we acknowledge the use of OpenAI's ChatGPT 4 for assistance with grammar and sentence structure.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Author Contributions: Conceptualization, P.J.S., V.A.L., F.L.A., M.B.N., H.S.P., J.F.C., C.N.L. and A.E.H.; methodology, P.J.S., J.F.C., C.N.L. and A.E.H.; software, P.J.S.; validation, P.J.S.; formal analysis, P.J.S.; investigation, P.J.S., J.F.C. and C.N.L.; data curation, P.J.S.; writing-original draft preparation, P.J.S.; writing-review and editing, P.J.S., J.F.C., V.A.L., C.N.L., F.L.A., M.B.N., H.S.P. and A.E.H.; visualization, P.J.S.; supervision, J.F.C., C.N.L., M.B.N., H.S.P. and A.E.H.; project administration, P.J.S.; funding acquisition, A.E.H. All authors have read and agreed to the published version of the manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflicts of interest. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix B</head><p>The model was trained using nnU-Net <ref type="bibr" target="#b2">[3]</ref>. nnU-Net is designed to require minimal optimisation for a new segmentation task, as it automatically extracts hyperparameters during network preprocessing. This is done by automatically defining a set of dataset fingerprints, including image sizes, voxel spacing and class ratios. From this fingerprint, hyperparameters such as the appropriate patch-size, batch-size, number of feature maps and the convolutional kernel size are set.</p><p>We utilised the default parameters set after extracting the dataset fingerprints. With the BraTS dataset, this resulted in 1 mm 3 spacing, a median matrix size of <ref type="bibr">[140,</ref><ref type="bibr">171,</ref><ref type="bibr">136]</ref>, a patch size of <ref type="bibr">[128,</ref><ref type="bibr">160,</ref><ref type="bibr">112</ref>] and a batch size of 2. Image normalisation was performed with z-score normalisation. nnU-Net is publicly available at <ref type="url" target="http://www.github.com/MIC-DKFZ/nnUNet">www.github.com/MIC-DKFZ/nnUNet</ref>, (accessed on 7 August 2024). A full description and further details about nnU-Net can be found in <ref type="bibr" target="#b2">[3]</ref>.</p><p>We used the default training setup, which involves training using five-fold cross validation for 1000 epochs, each lasting 250 batches. The training dataset (n = 1000) was randomly split into a training and a test set in each fold prior to training. In our study, we used the '3d_fullres' configuration of nnU-Net.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Deep learning based brain tumor segmentation: a survey</title>
+		<author>
+			<persName><forename type="first">Zhihua</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheheng</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feixiang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianni</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangrong</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaochu</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiyu</forename><surname>Zhou</surname></persName>
+			<idno type="ORCID">0000-0003-1634-9840</idno>
+		</author>
+		<idno type="DOI">10.1007/s40747-022-00815-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Complex &amp; Intelligent Systems</title>
+		<title level="j" type="abbrev">Complex Intell. Syst.</title>
+		<idno type="ISSN">2199-4536</idno>
+		<idno type="ISSNe">2198-6053</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1001" to="1026" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, Z.; Tong, L.; Chen, L.; Jiang, Z.; Zhou, F.; Zhang, Q.; Zhang, X.; Jin, Y.; Zhou, H. Deep learning based brain tumor segmentation: A survey. Complex Intell. Syst. 2023, 9, 1001-1026. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Brain Tumor Segmentation: A Survey of State-of-the-Art</title>
+		<author>
+			<persName><forename type="first">Tirivangani</forename><surname>Magadza</surname></persName>
+			<idno type="ORCID">0000-0002-5652-7288</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Serestina</forename><surname>Viriri</surname></persName>
+			<idno type="ORCID">0000-0002-2850-8645</idno>
+		</author>
+		<idno type="DOI">10.3390/jimaging7020019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging</title>
+		<title level="j" type="abbrev">J. Imaging</title>
+		<idno type="ISSNe">2313-433X</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">19</biblScope>
+			<date type="published" when="2021-01-29">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Magadza, T.; Viriri, S. Deep Learning for Brain Tumor Segmentation: A Survey of State-of-the-Art. J. Imaging 2021, 7, 19. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation</title>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">F</forename><surname>Jaeger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">A A</forename><surname>Kohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+			<idno type="ORCID">0000-0002-6626-2463</idno>
+		</author>
+		<idno type="DOI">10.1038/s41592-020-01008-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="211" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Isensee, F.; Jaeger, P.F.; Kohl, S.A.A.; Petersen, J.; Maier-Hein, K.H. nnU-Net: A self-configuring method for deep learning-based biomedical image segmentation. Nat. Methods 2021, 18, 203-211. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Figure 3: Qualitative comparisons for brain tumor segmentation on BraTS 2023 between GT, SwinUNETR, MetaSwin and MetaSwin+SE.</title>
+		<idno type="DOI">10.7717/peerjcs.1762/fig-3</idno>
+		<ptr target="https://www.med.upenn.edu/cbica/brats/" />
+	</analytic>
+	<monogr>
+		<title level="m">Brain Tumor Segmentation (BraTS) Challenge</title>
+		<imprint>
+			<publisher>PeerJ</publisher>
+			<date type="published" when="2023-12-30">30 December 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brain Tumor Segmentation (BraTS) Challenge. Available online: https://www.med.upenn.edu/cbica/brats/ (accessed on 30 December 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation, Progression Assessment, and Overall Survival Prediction in the BRATS Challenge</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rempfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Crimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Takeshi Shinohara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Ha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rozycki</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1811.02629</idno>
+		<idno type="arXiv">arXiv:1811.02629</idno>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Reyes, M.; Jakab, A.; Bauer, S.; Rempfler, M.; Crimi, A.; Takeshi Shinohara, R.; Berger, C.; Ha, S.M.; Rozycki, M.; et al. Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation, Progression Assessment, and Overall Survival Prediction in the BRATS Challenge. arXiv 2018, arXiv:1811.02629. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)</title>
+		<author>
+			<persName><forename type="first">Bjoern</forename><forename type="middle">H</forename><surname>Menze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andras</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliya</forename><surname>Burren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><surname>Porz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Slotboom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Levente</forename><surname>Lanczi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-Andre</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Arbel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">B</forename><surname>Avants</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Ayache</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Buendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Louis</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Cordier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">J</forename><surname>Corso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Criminisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tilak</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Delingette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cagatay</forename><surname>Demiralp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Durst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Dojat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Senan</forename><surname>Doyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joana</forename><surname>Festa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ezequiel</forename><surname>Geremia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Glocker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Polina</forename><surname>Golland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotao</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andac</forename><surname>Hamamci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">M</forename><surname>Iftekharuddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raj</forename><surname>Jena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">M</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ender</forename><surname>Konukoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danial</forename><surname>Lashkari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">Antonio</forename><surname>Mariz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doina</forename><surname>Precup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tammy</forename><forename type="middle">Riklin</forename><surname>Raviv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">M S</forename><surname>Reza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Duygu</forename><surname>Sarikaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hoo-Chang</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Shotton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">A</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Sousa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nagesh</forename><forename type="middle">K</forename><surname>Subbanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabor</forename><surname>Szekely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Owen</forename><forename type="middle">M</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Tustison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gozde</forename><surname>Unal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flor</forename><surname>Vasseur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Wintermark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><forename type="middle">Hye</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Binsheng</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darko</forename><surname>Zikic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Prastawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><surname>Van Leemput</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2014.2377694</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1993" to="2024" />
+			<date type="published" when="2015-10">2015</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Menze, B.H.; Jakab, A.; Bauer, S.; Kalpathy-Cramer, J.; Farahani, K.; Kirby, J.; Burren, Y.; Porz, N.; Slotboom, J.; Wiest, R.; et al. The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). IEEE Trans. Med. Imaging 2015, 34, 1993-2024. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">QU-BraTS: MICCAI BraTS 2020 Challenge on Quantifying Uncertainty in Brain Tumor Segmentation – Analysis of Ranking Scores and Benchmarking Results</title>
+		<author>
+			<persName><forename type="first">Raghav</forename><surname>Mehta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angelos</forename><surname>Filos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ujjwal</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiharu</forename><surname>Sako</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Mckinley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Rebsamen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katrin</forename><surname>Dätwyler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Radojewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gowtham</forename><forename type="middle">Krishnan</forename><surname>Murugesan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sahil</forename><surname>Nalawade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandan</forename><surname>Ganesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><forename type="middle">F</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baowei</forename><surname>Fei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananth</forename><forename type="middle">J</forename><surname>Madhuranthakam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">A</forename><surname>Maldjian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Daza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catalina</forename><surname>Gómez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Arbeláez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengliang</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hadrien</forename><surname>Reynaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanhan</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elsa</forename><surname>Angelini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yike</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjia</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Subhashis</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linmin</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murat</forename><surname>Ak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarahi</forename><surname>Rosas-González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilyess</forename><surname>Zemmoura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clovis</forename><surname>Tauber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minh</forename><forename type="middle">H</forename><surname>Vu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tufve</forename><surname>Nyholm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommy</forename><surname>Löfstedt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">Mora</forename><surname>Ballestar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Veronica</forename><surname>Vilaplana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><surname>Mchugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gonzalo</forename><surname>Maso Talou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharina</forename><surname>Hoebel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mishka</forename><surname>Gidwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nishanth</forename><surname>Arun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharut</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehak</forename><surname>Aggarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Praveer</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">R</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Boutry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexis</forename><surname>Huard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lasitha</forename><surname>Vidyaratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Monibor</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">M</forename><surname>Iftekharuddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Chazalon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elodie</forename><surname>Puybareau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Tochon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariano</forename><surname>Cabezas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Llado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnau</forename><surname>Oliver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liliana</forename><surname>Valencia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergi</forename><surname>Valverde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Amian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammadreza</forename><surname>Soltaninejad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andriy</forename><surname>Myronenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Hatamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xue</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Tustison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nisarg</forename><forename type="middle">A</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjay</forename><surname>Talbar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-André</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Mahajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andras</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hassan</forename><forename type="middle">M</forename><surname>Fathallah-Shaykh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arash</forename><surname>Nazeri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mikhail</forename><surname>Milchenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Marcus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aikaterini</forename><surname>Kotrotsou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rivka</forename><surname>Colen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjoern</forename><surname>Menze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yarin</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Arbel</surname></persName>
+		</author>
+		<idno type="DOI">10.59275/j.melba.2022-354b</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning for Biomedical Imaging</title>
+		<title level="j" type="abbrev">Melba</title>
+		<idno type="ISSNe">2766-905X</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">August 2022</biblScope>
+			<biblScope unit="page" from="1" to="54" />
+			<date type="published" when="2022-08-26">2022</date>
+			<publisher>Machine Learning for Biomedical Imaging</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mehta, R.; Filos, A.; Baid, U.; Sako, C.; McKinley, R.; Rebsamen, M.; Datwyler, K.; Meier, R.; Radojewski, P.; Murugesan, G.K.; et al. QU-BraTS: MICCAI BraTS 2020 Challenge on Quantifying Uncertainty in Brain Tumor Segmentation-Analysis of Ranking Scores and Benchmarking Results. J. Mach. Learn. Biomed. Imaging 2022, 1, 1-54. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghodasara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Calabrese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Colak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Kitamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pati</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2107.02314</idno>
+		<idno type="arXiv">arXiv:2107.02314</idno>
+		<title level="m">The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Baid, U.; Ghodasara, S.; Mohan, S.; Bilello, M.; Calabrese, E.; Colak, E.; Farahani, K.; Kalpathy-Cramer, J.; Kitamura, F.C.; Pati, S.; et al. The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification. arXiv 2021, arXiv:2107.02314. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Application of Novel Response/Progression Measures for Surgically Delivered Therapies for Gliomas</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Vogelbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Jost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manish</forename><forename type="middle">K</forename><surname>Aghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><forename type="middle">B</forename><surname>Heimberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">H</forename><surname>Sampson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="DOI">10.1227/neu.0b013e318223f5a7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgery</title>
+		<idno type="ISSN">0148-396X</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="234" to="244" />
+			<date type="published" when="2012-01">2012</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vogelbaum, M.A.; Jost, S.; Aghi, M.K.; Heimberger, A.B.; Sampson, J.H.; Wen, P.Y.; Macdonald, D.R.; Van den Bent, M.J.; Chang, S.M. Application of novel response/progression measures for surgically delivered therapies for gliomas: Response Assessment in Neuro-Oncology (RANO) Working Group. Neurosurgery 2012, 70, 234-243. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+			<idno type="ORCID">0000-0001-5710-5127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Preusser</surname></persName>
+			<idno type="ORCID">0000-0003-3541-2315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emilie</forename><surname>Le Rhun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jörg</forename><forename type="middle">C</forename><surname>Tonn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+			<idno type="ORCID">0000-0003-1239-1603</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmen</forename><surname>Balana</surname></persName>
+			<idno type="ORCID">0000-0003-0771-0390</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Chinot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Dirven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pim</forename><surname>French</surname></persName>
+			<idno type="ORCID">0000-0002-0668-9529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><forename type="middle">E</forename><surname>Hegi</surname></persName>
+			<idno type="ORCID">0000-0003-0855-6495</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Asgeir</forename><forename type="middle">S</forename><surname>Jakola</surname></persName>
+			<idno type="ORCID">0000-0002-2860-9331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Rudà</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Short</surname></persName>
+			<idno type="ORCID">0000-0003-4423-7256</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Smits</surname></persName>
+			<idno type="ORCID">0000-0001-5563-2871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J B</forename><surname>Taphoorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Westphal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+			<idno type="ORCID">0000-0002-9204-7038</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41571-020-00447-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Clinical Oncology</title>
+		<title level="j" type="abbrev">Nat Rev Clin Oncol</title>
+		<idno type="ISSN">1759-4774</idno>
+		<idno type="ISSNe">1759-4782</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="170" to="186" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weller, M.; van den Bent, M.; Preusser, M.; Le Rhun, E.; Tonn, J.C.; Minniti, G.; Bendszus, M.; Balana, C.; Chinot, O.; Dirven, L.; et al. EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood. Nat. Rev. Clin. Oncol. 2021, 18, 170-186. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">RANO 2.0: Update to the Response Assessment in Neuro-Oncology Criteria for High- and Low-Grade Gliomas in Adults</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+			<idno type="ORCID">0000-0002-0774-7700</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+			<idno type="ORCID">0000-0001-5710-5127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gilbert</forename><surname>Youssef</surname></persName>
+			<idno type="ORCID">0000-0001-6109-7692</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Cloughesy</surname></persName>
+			<idno type="ORCID">0000-0002-8656-7483</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">M</forename><surname>Ellingson</surname></persName>
+			<idno type="ORCID">0000-0002-2764-6640</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Evanthia</forename><surname>Galanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Barboriak</surname></persName>
+			<idno type="ORCID">0000-0002-2536-6266</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>De Groot</surname></persName>
+			<idno type="ORCID">0000-0003-1454-6461</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">R</forename><surname>Gilbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0001-7661-797X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">B</forename><surname>Lassman</surname></persName>
+			<idno type="ORCID">0000-0001-7386-9928</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Minesh</forename><surname>Mehta</surname></persName>
+			<idno type="ORCID">0000-0002-4812-5713</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><forename type="middle">M</forename><surname>Molinaro</surname></persName>
+			<idno type="ORCID">0000-0002-9854-7404</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Preusser</surname></persName>
+			<idno type="ORCID">0000-0003-3541-2315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rifaquat</forename><surname>Rahman</surname></persName>
+			<idno type="ORCID">0000-0002-9443-1797</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lalitha</forename><forename type="middle">K</forename><surname>Shankar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+			<idno type="ORCID">0000-0002-5483-3118</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><forename type="middle">E</forename><surname>Villanueva-Meyer</surname></persName>
+			<idno type="ORCID">0000-0002-5910-0757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Reardon</surname></persName>
+			<idno type="ORCID">0000-0001-6674-0157</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Vogelbaum</surname></persName>
+			<idno type="ORCID">0000-0002-9833-2374</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/jco.23.01059</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Oncology</title>
+		<title level="j" type="abbrev">JCO</title>
+		<idno type="ISSN">0732-183X</idno>
+		<idno type="ISSNe">1527-7755</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">33</biblScope>
+			<biblScope unit="page" from="5187" to="5199" />
+			<date type="published" when="2023-11-20">2023</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wen, P.Y.; van den Bent, M.; Youssef, G.; Cloughesy, T.F.; Ellingson, B.M.; Weller, M.; Galanis, E.; Barboriak, D.P.; de Groot, J.; Gilbert, M.R.; et al. RANO 2.0: Update to the Response Assessment in Neuro-Oncology Criteria for High-and Low-Grade Gliomas in Adults. J. Clin. Oncol. 2023, 41, 5187-5199. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Automated quantitative tumour response assessment of MRI in neuro-oncology with artificial neural networks: a multicentre, retrospective study</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Kickingereder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irada</forename><surname>Tursunova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulf</forename><surname>Neuberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bonekamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Brugnara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Schell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martha</forename><surname>Foltyn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Inga</forename><surname>Harting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><surname>Sahm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Prager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martha</forename><surname>Nowosielski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antje</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Nolden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Radbruch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Debus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz-Peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Gorlia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1470-2045(19)30098-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Oncology</title>
+		<title level="j" type="abbrev">The Lancet Oncology</title>
+		<idno type="ISSN">1470-2045</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="728" to="740" />
+			<date type="published" when="2019-05">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kickingereder, P.; Isensee, F.; Tursunova, I.; Petersen, J.; Neuberger, U.; Bonekamp, D.; Brugnara, G.; Schell, M.; Kessler, T.; Foltyn, M.; et al. Automated quantitative tumour response assessment of MRI in neuro-oncology with artificial neural networks: A multicentre, retrospective study. Lancet Oncol. 2019, 20, 728-740. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Artificial intelligence (AI)-based decision support improves reproducibility of tumor response assessment in neuro-oncology: An international multi-reader study</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Vollmuth</surname></persName>
+			<idno type="ORCID">0000-0002-6224-0064</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martha</forename><surname>Foltyn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><forename type="middle">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norbert</forename><surname>Galldiks</surname></persName>
+			<idno type="ORCID">0000-0002-2485-1796</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederik</forename><surname>Barkhof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Eun</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-4419-4682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yae</forename><forename type="middle">Won</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0001-8907-5401</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Soo</forename><surname>Ahn</surname></persName>
+			<idno type="ORCID">0000-0002-0503-5558</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Brugnara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hagen</forename><surname>Meredig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajan</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Smits</surname></persName>
+			<idno type="ORCID">0000-0001-5563-2871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Whitney</forename><forename type="middle">B</forename><surname>Pope</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+			<idno type="ORCID">0000-0002-9094-6769</idno>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac189</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="533" to="543" />
+			<date type="published" when="2022-08-02">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vollmuth, P.; Foltyn, M.; Huang, R.Y.; Galldiks, N.; Petersen, J.; Isensee, F.; van den Bent, M.J.; Barkhof, F.; Park, J.E.; Park, Y.W.; et al. AI-based decision support improves reproducibility of tumor response assessment in neuro-oncology: An international multi-reader study. Neuro-Oncol. 2022, 25, 533-543. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Feasibility of deep learning-based tumor segmentation for target delineation and response assessment in grade-4 glioma using multi-parametric MRI</title>
+		<author>
+			<persName><forename type="first">Marianne</forename><forename type="middle">H</forename><surname>Hannisdal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dorota</forename><surname>Goplen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saruar</forename><surname>Alam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Judit</forename><surname>Haasz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leif</forename><surname>Oltedal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohummad</forename><forename type="middle">A</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cecilie</forename><forename type="middle">Brekke</forename><surname>Rygh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stein</forename><forename type="middle">Atle</forename><surname>Lie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arvid</forename><surname>Lundervold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martha</forename><surname>Chekenya</surname></persName>
+			<idno type="ORCID">0000-0001-7241-3451</idno>
+		</author>
+		<idno type="DOI">10.1093/noajnl/vdad037</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology Advances</title>
+		<idno type="ISSNe">2632-2498</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">37</biblScope>
+			<date type="published" when="2023-01-01">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hannisdal, M.H.; Goplen, D.; Alam, S.; Haasz, J.; Oltedal, L.; Rahman, M.A.; Rygh, C.B.; Lie, S.A.; Lundervold, A.; Chekenya, M. Feasibility of deep learning-based tumor segmentation for target delineation and response assessment in grade-4 glioma using multi-parametric MRI. Neurooncol. Adv. 2023, 5, vdad037. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Evaluation of the HD-GLIO Deep Learning Algorithm for Brain Tumour Segmentation on Postoperative MRI</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Sørensen</surname></persName>
+			<idno type="ORCID">0000-0003-4998-8032</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Carlsen</surname></persName>
+			<idno type="ORCID">0000-0002-6724-7281</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vibeke</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flemming</forename><surname>Andersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claes</forename><surname>Ladefoged</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Nielsen</surname></persName>
+			<idno type="ORCID">0000-0002-9380-1688</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><surname>Poulsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Hansen</surname></persName>
+			<idno type="ORCID">0000-0002-6457-1537</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13030363</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">363</biblScope>
+			<date type="published" when="2023-01-18">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sorensen, P.J.; Carlsen, J.F.; Larsen, V.A.; Andersen, F.L.; Ladefoged, C.N.; Nielsen, M.B.; Poulsen, H.S.; Hansen, A.E. Evaluation of the HD-GLIO Deep Learning Algorithm for Brain Tumour Segmentation on Postoperative MRI. Diagnostics 2023, 13, 363. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features</title>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><forename type="middle">S</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">B</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/sdata.2017.117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">170117</biblScope>
+			<date type="published" when="2017-09-05">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Akbari, H.; Sotiras, A.; Bilello, M.; Rozycki, M.; Kirby, J.S.; Freymann, J.B.; Farahani, K.; Davatzikos, C. Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features. Sci. Data 2017, 4, 170117. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Cancer imaging phenomics toolkit: quantitative imaging analytics for precision diagnostics and predictive modeling of clinical outcome</title>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bergman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratheesh</forename><surname>Kalarot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patmaa</forename><surname>Sridharan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aimilia</forename><surname>Gastounioti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nariman</forename><surname>Jahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birkan</forename><surname>Tunc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimit</forename><surname>Doshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Hsieh</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/1.jmi.5.1.011018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Medical Imaging</title>
+		<title level="j" type="abbrev">J. Med. Imag.</title>
+		<idno type="ISSN">2329-4302</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">01</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2018-01-11">2018</date>
+			<publisher>SPIE-Intl Soc Optical Eng</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Davatzikos, C.; Rathore, S.; Bakas, S.; Pati, S.; Bergman, M.; Kalarot, R.; Sridharan, P.; Gastounioti, A.; Jahani, N.; Cohen, E.; et al. Cancer imaging phenomics toolkit: Quantitative imaging analytics for precision diagnostics and predictive modeling of clinical outcome. J. Med. Imaging 2018, 5, 011018. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Cancer Imaging Phenomics Toolkit (CaPTk): Technical Overview</title>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+			<idno type="ORCID">0000-0003-2243-8487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aimilia</forename><surname>Gastounioti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bergman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phuc</forename><surname>Ngo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Min</forename><surname>Ha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Bounias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Minock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grayson</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Bhattarai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patmaa</forename><surname>Sridaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratheesh</forename><surname>Kalarot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddhesh</forename><forename type="middle">P</forename><surname>Thakur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Russell</forename><forename type="middle">T</forename><surname>Shinohara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Yushkevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Despina</forename><surname>Kontos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-46643-5_38</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">11993</biblScope>
+			<biblScope unit="page" from="380" to="394" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pati, S.; Singh, A.; Rathore, S.; Gastounioti, A.; Bergman, M.; Ngo, P.; Ha, S.M.; Bounias, D.; Minock, J.; Murphy, G.; et al. The Cancer Imaging Phenomics Toolkit (CaPTk): Technical Overview. Brainlesion 2020, 11993, 380-394. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Brain Cancer Imaging Phenomics Toolkit (brain-CaPTk): An Interactive Platform for Quantitative Analysis of Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratheesh</forename><surname>Kalarot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patmaa</forename><surname>Sridharan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bergman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birkan</forename><surname>Tunc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-75238-9_12</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">10670</biblScope>
+			<biblScope unit="page" from="133" to="145" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rathore, S.; Bakas, S.; Pati, S.; Akbari, H.; Kalarot, R.; Sridharan, P.; Rozycki, M.; Bergman, M.; Tunc, B.; Verma, R.; et al. Brain Cancer Imaging Phenomics Toolkit (brain-CaPTk): An Interactive Platform for Quantitative Analysis of Glioblastoma. Brainlesion 2018, 10670, 133-145. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The LUMIERE dataset: Longitudinal Glioblastoma MRI with expert RANO evaluation</title>
+		<author>
+			<persName><forename type="first">Yannick</forename><surname>Suter</surname></persName>
+			<idno type="ORCID">0000-0003-1822-948X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Urspeter</forename><surname>Knecht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Waldo</forename><surname>Valenzuela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Notter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ekkehard</forename><surname>Hewer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Schucht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+			<idno type="ORCID">0000-0001-7030-2045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Reyes</surname></persName>
+			<idno type="ORCID">0000-0002-2434-9990</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-022-01881-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">768</biblScope>
+			<date type="published" when="2022-12-15">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Suter, Y.; Knecht, U.; Valenzuela, W.; Notter, M.; Hewer, E.; Schucht, P.; Wiest, R.; Reyes, M. The LUMIERE dataset: Longitudinal Glioblastoma MRI with expert RANO evaluation. Sci. Data 2022, 9, 768. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Automated Design of Deep Learning Methods for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">F</forename><surname>Jäger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A A</forename><surname>Kohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1904.08128</idno>
+		<idno type="arXiv">arXiv:1904.08128</idno>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Isensee, F.; Jäger, P.F.; Kohl, S.A.A.; Petersen, J.; Maier-Hein, K.H. Automated Design of Deep Learning Methods for Biomedical Image Segmentation. arXiv 2019, arXiv:1904.08128. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Automated brain extraction of multisequence MRI using artificial neural networks</title>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Schell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irada</forename><surname>Pflueger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Brugnara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bonekamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulf</forename><surname>Neuberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antje</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz‐peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier‐hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Kickingereder</surname></persName>
+			<idno type="ORCID">0000-0002-6224-0064</idno>
+		</author>
+		<idno type="DOI">10.1002/hbm.24750</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Human Brain Mapping</title>
+		<title level="j" type="abbrev">Human Brain Mapping</title>
+		<idno type="ISSN">1065-9471</idno>
+		<idno type="ISSNe">1097-0193</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="4952" to="4964" />
+			<date type="published" when="2019-08-12">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Isensee, F.; Schell, M.; Pflueger, I.; Brugnara, G.; Bonekamp, D.; Neuberger, U.; Wick, A.; Schlemmer, H.P.; Heiland, S.; Wick, W.; et al. Automated brain extraction of multisequence MRI using artificial neural networks. Hum. Brain Mapp. 2019, 40, 4952-4964. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">:</forename><surname>Github</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hd-Glio</surname></persName>
+		</author>
+		<ptr target="https://github.com/NeuroAI-HD/HD-GLIO" />
+		<imprint>
+			<date type="published" when="2023-12-30">30 December 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">GitHub: HD-GLIO. Available online: https://github.com/NeuroAI-HD/HD-GLIO (accessed on 30 December 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A Modified U-Net Based Architecture for Brain Tumour Segmentation on BRATS 2020</title>
+		<author>
+			<persName><forename type="first">Mansi</forename><surname>Kajal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Mittal</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-2109641/v1</idno>
+		<ptr target="https://github.com/DEPICT-RH/postoperative_brain_tumor_segmentation_with_brats" />
+	</analytic>
+	<monogr>
+		<title level="m">Postoperative Brain Tumour Segmentation with BraTS</title>
+		<imprint>
+			<publisher>Research Square Platform LLC</publisher>
+			<date type="published" when="2024-08-07">7 August 2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Postoperative Brain Tumour Segmentation with BraTS. Available online: https://github.com/DEPICT-RH/postoperative_brain_ tumor_segmentation_with_brats (accessed on 7 August 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">R: A Language and Environment for Statistical Computing</title>
+		<author>
+			<persName><forename type="first">Team</forename><surname>Core</surname></persName>
+		</author>
+		<idno type="DOI">10.32614/r.manuals</idno>
+		<ptr target="https://www.R-project.org/" />
+	</analytic>
+	<monogr>
+		<title level="m">R Foundation for Statistical Computing</title>
+		<meeting><address><addrLine>Vienna, Austria</addrLine></address></meeting>
+		<imprint>
+			<publisher>R Foundation for Statistical Computing</publisher>
+			<date type="published" when="2022-08-22">2022. 22 August 2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R Core Team. R: A Language and Environment for Statistical Computing; R Foundation for Statistical Computing: Vienna, Austria, 2022. Available online: https://www.R-project.org/ (accessed on 22 August 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">User-guided 3D active contour segmentation of anatomical structures: Significantly improved efficiency and reliability</title>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Yushkevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Piven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><forename type="middle">Cody</forename><surname>Hazlett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">Gimpel</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">C</forename><surname>Gee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Gerig</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2006.01.015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1116" to="1128" />
+			<date type="published" when="2006-07">2006</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yushkevich, P.A.; Piven, J.; Hazlett, H.C.; Smith, R.G.; Ho, S.; Gee, J.C.; Gerig, G. User-guided 3D active contour segmentation of anatomical structures: Significantly improved efficiency and reliability. Neuroimage 2006, 31, 1116-1128. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">User-Guided Segmentation of Multi-modality Medical Imaging Datasets with ITK-SNAP</title>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Yushkevich</surname></persName>
+			<idno type="ORCID">0000-0001-8543-4016</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Artem</forename><surname>Pashchinskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ipek</forename><surname>Oguz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Eric</forename><surname>Schmitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dženan</forename><surname>Zukić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jared</forename><surname>Vicory</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Mccormick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalie</forename><surname>Yushkevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadav</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Gerig</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12021-018-9385-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroinformatics</title>
+		<title level="j" type="abbrev">Neuroinform</title>
+		<idno type="ISSN">1539-2791</idno>
+		<idno type="ISSNe">1559-0089</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="102" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yushkevich, P.A.; Pashchinskiy, A.; Oguz, I.; Mohan, S.; Schmitt, J.E.; Stein, J.M.; Zukic, D.; Vicory, J.; McCormick, M.; Yushkevich, N.; et al. User-Guided Segmentation of Multi-modality Medical Imaging Datasets with ITK-SNAP. Neuroinformatics 2019, 17, 83-102. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Deep learning-based algorithm for postoperative glioblastoma MRI segmentation: a promising new tool for tumor burden assessment</title>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Bianconi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><forename type="middle">Francesco</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marta</forename><surname>Bonada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Zeppa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elsa</forename><surname>Nico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raffaele</forename><surname>De Marco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><surname>Lacroce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Cofano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Bruno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Morana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Melcarne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Ruda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Mainardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Fiaschi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><surname>Garbossa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lia</forename><surname>Morra</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40708-023-00207-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Informatics</title>
+		<title level="j" type="abbrev">Brain Inf.</title>
+		<idno type="ISSN">2198-4018</idno>
+		<idno type="ISSNe">2198-4026</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">26</biblScope>
+			<date type="published" when="2023-10-06">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bianconi, A.; Rossi, L.F.; Bonada, M.; Zeppa, P.; Nico, E.; De Marco, R.; Lacroce, P.; Cofano, F.; Bruno, F.; Morana, G.; et al. Deep learning-based algorithm for postoperative glioblastoma MRI segmentation: A promising new tool for tumor burden assessment. Brain Inform. 2023, 10, 26. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Development and Practical Implementation of a Deep Learning–Based Pipeline for Automated Pre- and Postoperative Glioma Segmentation</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lotan</surname></persName>
+			<idno type="ORCID">0000-0002-9526-3430</idno>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-1733-7959</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dogra</surname></persName>
+			<idno type="ORCID">0000-0003-2386-7849</idno>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3244-7777</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Carbone</surname></persName>
+			<idno type="ORCID">0000-0003-0208-2188</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fatterpekar</surname></persName>
+			<idno type="ORCID">0000-0002-4705-2030</idno>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Oermann</surname></persName>
+			<idno type="ORCID">0000-0002-1876-5963</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">W</forename><surname>Lui</surname></persName>
+			<idno type="ORCID">0000-0002-9984-9164</idno>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a7363</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="24" to="32" />
+			<date type="published" when="2022">2022</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lotan, E.; Zhang, B.; Dogra, S.; Wang, W.D.; Carbone, D.; Fatterpekar, G.; Oermann, E.K.; Lui, Y.W. Development and Practical Implementation of a Deep Learning-Based Pipeline for Automated Pre-and Postoperative Glioma Segmentation. AJNR Am. J. Neuroradiol. 2022, 43, 24-32. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A Fully Automated Post-Surgical Brain Tumor Segmentation Model for Radiation Treatment Planning and Longitudinal Tracking</title>
+		<author>
+			<persName><forename type="first">Karthik</forename><forename type="middle">K</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><forename type="middle">M</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anuradha</forename><forename type="middle">G</forename><surname>Trivedi</surname></persName>
+			<idno type="ORCID">0000-0002-3348-4529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vicki</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-3029-4700</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vahid</forename><forename type="middle">Khalilzad</forename><surname>Sharghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">R</forename><surname>Kleinberg</surname></persName>
+			<idno type="ORCID">0000-0003-2473-2305</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">A</forename><surname>Mellon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui-Kuo G.</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunsuk</forename><surname>Shim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brent</forename><forename type="middle">D</forename><surname>Weinberg</surname></persName>
+			<idno type="ORCID">0000-0002-7992-1747</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers15153956</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">3956</biblScope>
+			<date type="published" when="2023-08-03">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ramesh, K.K.; Xu, K.M.; Trivedi, A.G.; Huang, V.; Sharghi, V.K.; Kleinberg, L.R.; Mellon, E.A.; Shu, H.G.; Shim, H.; Weinberg, B.D. A Fully Automated Post-Surgical Brain Tumor Segmentation Model for Radiation Treatment Planning and Longitudinal Tracking. Cancers 2023, 15, 3956. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">ESTRO-EANO guideline on target delineation and radiotherapy details for glioblastoma</title>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Niyazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolaus</forename><surname>Andratschke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">J</forename><surname>Chalmers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><forename type="middle">C</forename><surname>Erridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norbert</forename><surname>Galldiks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><forename type="middle">J</forename><surname>Lagerwaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierina</forename><surname>Navarria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Per</forename><surname>Munck Af Rosenschöld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Umberto</forename><surname>Ricardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claus</forename><surname>Belka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.radonc.2023.109663</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiotherapy and Oncology</title>
+		<title level="j" type="abbrev">Radiotherapy and Oncology</title>
+		<idno type="ISSN">0167-8140</idno>
+		<imprint>
+			<biblScope unit="volume">184</biblScope>
+			<biblScope unit="page">109663</biblScope>
+			<date type="published" when="2023-07">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Niyazi, M.; Andratschke, N.; Bendszus, M.; Chalmers, A.J.; Erridge, S.C.; Galldiks, N.; Lagerwaard, F.J.; Navarria, P.; Munck Af Rosenschold, P.; Ricardi, U.; et al. ESTRO-EANO guideline on target delineation and radiotherapy details for glioblastoma. Radiother. Oncol. 2023, 184, 109663. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Automatic assessment of glioma burden: a deep learning algorithm for fully automated volumetric and bidimensional measurement</title>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">L</forename><surname>Beers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harrison</forename><forename type="middle">X</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">M</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Ina</forename><surname>Ly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejun</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joeky</forename><forename type="middle">T</forename><surname>Senders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vasileios</forename><forename type="middle">K</forename><surname>Kavouridis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Boaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Su</surname></persName>
+			<idno type="ORCID">0000-0002-8478-525X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenya</forename><forename type="middle">Linda</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otto</forename><surname>Rapalino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihua</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qin</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yinyan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><forename type="middle">C</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tracy</forename><forename type="middle">T</forename><surname>Batchelor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerrold</forename><forename type="middle">L</forename><surname>Boxerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Arnaout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><forename type="middle">R</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">R</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><forename type="middle">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noz106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1412" to="1422" />
+			<date type="published" when="2019-06-13">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chang, K.; Beers, A.L.; Bai, H.X.; Brown, J.M.; Ly, K.I.; Li, X.; Senders, J.T.; Kavouridis, V.K.; Boaro, A.; Su, C.; et al. Automatic assessment of glioma burden: A deep learning algorithm for fully automated volumetric and bidimensional measurement. Neuro Oncol. 2019, 21, 1412-1422. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hatamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Nath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Unetr</forename><surname>Swin</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2201.01266</idno>
+		<idno type="arXiv">arXiv:2201.01266</idno>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Hatamizadeh, A.; Nath, V.; Tang, Y.; Yang, D.; Roth, H.; Xu, D. Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images. arXiv 2022, arXiv:2201.01266. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Patterns and Time Dependence of Unspecific Enhancement in Postoperative Magnetic Resonance Imaging After Glioblastoma Resection</title>
+		<author>
+			<persName><forename type="first">Stefanie</forename><surname>Bette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Gempt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Huber</surname></persName>
+			<idno type="ORCID">0000-0002-8167-8651</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Boeckh-Behrens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Ringel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claus</forename><surname>Zimmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">S</forename><surname>Kirschke</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2016.03.031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="440" to="447" />
+			<date type="published" when="2016-06">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bette, S.; Gempt, J.; Huber, T.; Boeckh-Behrens, T.; Ringel, F.; Meyer, B.; Zimmer, C.; Kirschke, J.S. Patterns and Time Dependence of Unspecific Enhancement in Postoperative Magnetic Resonance Imaging After Glioblastoma Resection. World Neurosurg. 2016, 90, 440-447. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, &amp; radiomics</title>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chiharu</forename><surname>Sako</surname></persName>
+			<idno type="ORCID">0000-0003-3243-3954</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+			<idno type="ORCID">0000-0001-6313-5437</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+			<idno type="ORCID">0000-0003-0795-8820</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Shukla</surname></persName>
+			<idno type="ORCID">0000-0001-7605-9365</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Rudie</surname></persName>
+			<idno type="ORCID">0000-0001-8609-8421</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Natali</forename><forename type="middle">Flores</forename><surname>Santamaría</surname></persName>
+			<idno type="ORCID">0000-0003-1024-2428</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anahita</forename><forename type="middle">Fathi</forename><surname>Kazerooni</surname></persName>
+			<idno type="ORCID">0000-0001-7131-2261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+			<idno type="ORCID">0000-0003-2243-8487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+			<idno type="ORCID">0000-0002-9818-2978</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Mamourian</surname></persName>
+			<idno type="ORCID">0000-0001-8581-4887</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Min</forename><surname>Ha</surname></persName>
+			<idno type="ORCID">0000-0002-3526-9101</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Parker</surname></persName>
+			<idno type="ORCID">0000-0001-8017-0525</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jimit</forename><surname>Doshi</surname></persName>
+			<idno type="ORCID">0000-0002-2875-5814</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ujjwal</forename><surname>Baid</surname></persName>
+			<idno type="ORCID">0000-0001-5246-2088</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bergman</surname></persName>
+			<idno type="ORCID">0000-0003-1220-6906</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zev</forename><forename type="middle">A</forename><surname>Binder</surname></persName>
+			<idno type="ORCID">0000-0003-1158-231X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+			<idno type="ORCID">0000-0002-7479-1007</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">A</forename><surname>Lustig</surname></persName>
+			<idno type="ORCID">0000-0003-0633-3802</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arati</forename><forename type="middle">S</forename><surname>Desai</surname></persName>
+			<idno type="ORCID">0000-0002-4849-4703</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Bagley</surname></persName>
+			<idno type="ORCID">0000-0002-7117-0539</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zissimos</forename><surname>Mourelatos</surname></persName>
+			<idno type="ORCID">0000-0002-9852-1845</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Morrissette</surname></persName>
+			<idno type="ORCID">0000-0001-9460-7177</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Watt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Brem</surname></persName>
+			<idno type="ORCID">0000-0002-5803-8920</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">L</forename><surname>Wolf</surname></persName>
+			<idno type="ORCID">0000-0003-1887-3697</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elias</forename><forename type="middle">R</forename><surname>Melhem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+			<idno type="ORCID">0000-0003-4861-0898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+			<idno type="ORCID">0000-0002-4025-115X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">M</forename><surname>O’rourke</surname></persName>
+			<idno type="ORCID">0000-0002-8479-7314</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+			<idno type="ORCID">0000-0002-1025-8561</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-022-01560-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">453</biblScope>
+			<date type="published" when="2022-07-29">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>PubMedDisclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content</note>
+	<note type="raw_reference">Bakas, S.; Sako, C.; Akbari, H.; Bilello, M.; Sotiras, A.; Shukla, G.; Rudie, J.D.; Santamaria, N.F.; Kazerooni, A.F.; Pati, S.; et al. The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: Advanced MRI, clinical, genomics, &amp; radiomics. Sci. Data 2022, 9, 453. [CrossRef] PubMedDisclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">ESA-YOLOv m: a lightweight spatial and improved attention-driven detection for brain tumor MRI analysis</title>
+				<funder ref="#_rHCPEPQ">
+					<orgName type="full">Deanship of Graduate Studies and Scientific Research at Jouf University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Nebojsa</forename><surname>Bacanin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Miodrag</forename><surname>Zivkovic</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Farheen</forename><surname>Siddiqui</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Aditya</forename><surname>Gupta</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mamoona</forename><surname>Humayun</surname></persName>
+							<email>mamoona.humayun@roehampton.ac.uk</email>
+						</author>
+						<author>
+							<persName><forename type="first">Maram</forename><surname>Fahaad Almufareh</surname></persName>
+							<email>maramfahaadalmufarehmfalmufareh@ju.edu.sa</email>
+						</author>
+						<author>
+							<persName><forename type="first">Noshina</forename><surname>Tariq</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Haya</forename><surname>Aldossary</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Meshal</forename><surname>Alharbi</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Singidunum University , Serbia</note>
+								<orgName type="institution">Singidunum University</orgName>
+								<address>
+									<country key="RS">Serbia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<note type="raw_affiliation">Singidunum University , Serbia</note>
+								<orgName type="institution">Singidunum University</orgName>
+								<address>
+									<country key="RS">Serbia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation">Jamia Hamdard University , India</note>
+								<orgName type="institution">Jamia Hamdard University</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation">Thapar Institute of Engineering and Technology (Deemed to be University) , India Department of Information Systems ,</note>
+								<orgName type="department">Department of Information Systems</orgName>
+								<orgName type="institution">Thapar Institute of Engineering and Technology (Deemed to be University)</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">College of Computer and Information Sciences , Jouf University , Sakaka , Saudi Arabia ,</note>
+								<orgName type="department">College of Computer and Information Sciences</orgName>
+								<orgName type="institution">Jouf University</orgName>
+								<address>
+									<settlement>Sakaka</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<note type="raw_affiliation">Department of Artificial Intelligence and Data Science , National University of Computer and Emerging Sciences , Islamabad , Pakistan ,</note>
+								<orgName type="department">Department of Artificial Intelligence and Data Science</orgName>
+								<orgName type="institution">National University of Computer and Emerging Sciences</orgName>
+								<address>
+									<settlement>Islamabad</settlement>
+									<country key="PK">Pakistan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<note type="raw_affiliation">School of Computing, Engineering and the Built Environment , University of Roehampton , London , United Kingdom ,</note>
+								<orgName type="department">School of Computing, Engineering and the Built Environment</orgName>
+								<orgName type="institution">University of Roehampton</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff7">
+								<note type="raw_affiliation">Computer Science Department , College of Science and Humanities , Imam Abdulrahman Bin Faisal University , Al Jubail , Saudi Arabia ,</note>
+								<orgName type="department" key="dep1">Computer Science Department</orgName>
+								<orgName type="department" key="dep2">College of Science and Humanities</orgName>
+								<orgName type="institution">Imam Abdulrahman Bin Faisal University</orgName>
+								<address>
+									<settlement>Al Jubail</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<note type="raw_affiliation">Department of Computer Science , College of Computer Engineering and Sciences , Prince Sattam Bin Abdulaziz University , Al-Kharj , Saudi Arabia</note>
+								<orgName type="department" key="dep1">Department of Computer Science</orgName>
+								<orgName type="department" key="dep2">College of Computer Engineering and Sciences</orgName>
+								<orgName type="institution">Prince Sattam Bin Abdulaziz University</orgName>
+								<address>
+									<settlement>Al-Kharj</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">ESA-YOLOv m: a lightweight spatial and improved attention-driven detection for brain tumor MRI analysis</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">42ABA9B08809D225EA1E3711B74D675F</idno>
+					<note type="submission">RECEIVED October REVISED November ACCEPTED November PUBLISHED December</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T14:37+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>YOLOv m</term>
+					<term>Enhanced Spatial Attention (ESA)</term>
+					<term>brain tumor detection</term>
+					<term>medical imaging</term>
+					<term>deep learning</term>
+					<term>precision and recall</term>
+					<term>mAP</term>
+					<term>Figshare MRI dataset</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction: The early and accurate detection of brain tumors is vital for improving patient outcomes, enabling timely clinical interventions, and reducing diagnostic uncertainty. Despite advances in deep learning, conventional Convolutional Neural Network (CNN)-based models often struggle with small or low-contrast tumors. They also remain computationally demanding for real-time clinical deployment. Methods: This study presents an Enhanced Spatial Attention (ESA)-integrated You Only Look Once v medium (YOLOv m) architecture, a lightweight and efficient framework for brain tumor detection in MRI scans. The ESA module, positioned after the Spatial Pyramid Pooling-Fast (SPPF) layer, enhances feature discrimination by emphasizing diagnostically relevant regions while suppressing background noise, thereby improving localization accuracy without increasing computational complexity. Experiments were conducted on the Figshare brain tumor MRI dataset containing three tumor classes: glioma, meningioma, and pituitary.</p><p>Results: ESA-YOLOv m achieved a Precision of %, Recall of %, and mean Average Precision (mAP)@ . of %, surpassing the baseline YOLOv m by approximately %-%. An ablation study further confirmed that placing the ESA module after the SPPF layer yields the highest performance (mAP@ . = . ), while earlier integration produced marginally lower results. Classwise analyses demonstrated consistent gains (mAP range . -. ), and fivefold cross-validation showed stable performance (mAP@ . = .</p><p>± .</p><p>). Efficiency tests revealed negligible overhead, with less than a . % increase in parameters and an average latency below ms per image. Discussion: Overall, the results validate that integrating a lightweight spatial attention mechanism significantly enhances tumor localization and model generalization while preserving real-time inference. The proposed ESA-YOLOv m framework provides a reliable and scalable solution for automated brain tumor detection, suitable for clinical decision-support systems and edge healthcare applications.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.26" lry="842.116"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The integration of artificial intelligence (AI) and Deep Learning (DL) into medical imaging has transformed disease diagnosis, enabling rapid and accurate clinical assessment <ref type="bibr" target="#b0">(1)</ref>. Among the various applications, brain tumor detection has gained particular importance, as early and reliable diagnosis directly influences patient survival and treatment outcomes. Brain tumors, whether benign or malignant, remain one of the most critical neurological conditions, often requiring timely surgical or therapeutic intervention <ref type="bibr" target="#b1">(2)</ref>. Magnetic Resonance Imaging (MRI) continues to be the preferred non-invasive modality for brain tumor analysis. It provides high soft-tissue contrast and detailed anatomical representation <ref type="bibr" target="#b2">(3)</ref>. However, manual interpretation of MRI scans is labor-intensive and subjective. It is also prone to interobserver variability, especially in cases involving small, irregular, or low-contrast lesions <ref type="bibr" target="#b3">(4)</ref>. These limitations have motivated the development of automated and intelligent diagnostic system. Such systems are capable of assisting radiologists in precise tumor localization and classification.</p><p>Brain tumors are a serious health risk to the human body, and when they are not identified in time, they cause irreparable neurological conditions or even death. Early and accurate diagnosis is thus not only preferable but also required to enhance patients' survival rates and to provide them with timely intervention, which is less invasive. This clinical urgency supports the fact that powerful Computer-Aided Diagnosis (CAD) systems are necessary to help radiologists quickly and effectively detect tumors. Early CAD frameworks relied on handcrafted features and classical machine learning algorithms, which were insufficient to capture the heterogeneous appearance of brain tumors across different patients and imaging conditions <ref type="bibr" target="#b4">(5,</ref><ref type="bibr" target="#b5">6)</ref>. DL, particularly CNNs, has since become the dominant approach in medical image analysis due to its ability to learn hierarchical feature representations directly from raw data <ref type="bibr" target="#b6">(7)</ref>. In this paradigm, object detection architectures such as You Only Look Once (YOLO) have shown exceptional efficiency for real-time medical image interpretation because of their end-to-end design and low inference latency <ref type="bibr" target="#b7">(8,</ref><ref type="bibr" target="#b8">9)</ref>.</p><p>Nevertheless, standard CNN-based detectors encounter persistent challenges when applied to medical imaging <ref type="bibr" target="#b9">(10)</ref>. Tumors vary significantly in size, texture, and intensity, and are often embedded within complex anatomical structures <ref type="bibr" target="#b10">(11)</ref>. These characteristics make small tumor regions difficult to detect, frequently leading to false negatives <ref type="bibr" target="#b11">(12,</ref><ref type="bibr" target="#b12">13)</ref>. Additionally, existing high-performance CNNs are computationally demanding, limiting their adoption in clinical environments or on edge devices where real-time processing is essential. To overcome these limitations, recent studies have explored hybrid and attention-enhanced frameworks <ref type="bibr" target="#b13">(14)</ref>, yet many of these remain computationally heavy and lack consistent generalization across tumor types.</p><p>To address these challenges, this study proposes an Enhanced Spatial Attention (ESA)-integrated YOLOv5m model that enhances spatial focus during tumor localization. The ESA module is inserted after the Spatial Pyramid Pooling-Fast (SPPF) layer, enabling the network to prioritize diagnostically important regions while suppressing irrelevant background. This design strengthens the model's sensitivity to small and low-contrast tumors without introducing significant computational overhead. The lightweight structure of ESA-YOLOv5m ensures that it remains deployable in real-time and resource-constrained healthcare settings. In Clinical practice, supplementary spatial attention aids physicians by automatically highlighting critical tumor margins and suppressing distracting structures in phantoms. This not only lessens time spent on delineating lesions, but also alleviates inter-observer variability in contouring difficult or low contrast lesions. This enables radiologists to concentrate on the areas the algorithms identify and subsequently verify, thus reducing the time taken to report while also reducing uncertainty in diagnosis during the screening or follow-up examinations. A comprehensive series of experiments was performed on the Figshare brain tumor MRI dataset, comprising three tumor types: glioma, meningioma, and pituitary. Comparative evaluations with the baseline YOLOv5m demonstrated clear improvements in Precision, Recall, and mean Average Precision at an IoU threshold of 0.5 [mean Average Precision (mAP)@0.5]. Furthermore, an ablation study confirmed that the optimal performance was achieved when ESA was positioned after the SPPF layer, leading to the highest detection accuracy (mAP@0.5 = 0.91) while maintaining low latency. Classwise analysis indicated consistent gains across all tumor categories, and five-fold cross-validation established the model's stability and reproducibility. The main contributions of this study are summarized as follows:</p><p>1. The backbone of YOLOv5m is modified via the Enhanced Spatial Attention (ESA) module to increase localization precision and detection of small or low-contrast tumors in MRI images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Extensive ablation experiments show that the best generalization</head><p>and accuracy at the lowest extra cost of computation occurs with ESA placement after the SPPF layer. 3. ESA-YOLOv5m maintains the ability to perform real-time inferences and has higher Precision, Recall, and mAP@0.5 values than the baseline YOLOv5m. 4. The robustness and stability of the model across diverse tumor classes are shown through comprehensive evaluations, including class-wise and five-fold cross-validation analyses. 5. ESA-YOLOv5m's ultralightweight design and high efficiency allow it to be used in direct clinical applications and deployed on edge computing medical devices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Paper organization</head><p>The remainder of this paper is structured as follows: Section 2 sheds light on related work, Section 4 presents the methodology, including data preprocessing, model architecture, and training strategy. Section 5 describes the experimental setup and hyperparameters. Section 6 provides the results and detailed discussion of the model's performance. Finally, Section 7 concludes the paper and discusses future research directions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related work</head><p>Automated brain tumor detection on MRI has attracted growing attention in recent years, driven by the rapid progress of deep learning and computational imaging. Early computeraided diagnosis (CAD) approaches primarily relied on handcrafted features and classical machine learning models such as support vector machines (SVMs) and random forests. Although these models offered interpretability, they struggled to generalize across datasets with varying imaging parameters and tumor morphologies. For instance, Hussain et al. <ref type="bibr" target="#b14">(15)</ref> employed featurebased classifiers for tumor recognition but reported limited robustness under different scanner settings. Later, Muhammad et al. (16) conducted a comprehensive survey confirming that convolutional neural networks (CNNs) outperform traditional techniques in most MRI-based tumor classification tasks. Similarly, Yildirim et al. (17) achieved per-class precision between 0.82 and 0.93 using a ResNet-based hybrid CNN model for glioma, meningioma, and pituitary tumor classification, highlighting the advantages of deep hierarchical features over manually engineered descriptors.</p><p>Despite these improvements, CNN-based models often face challenges in accurately identifying small or low-contrast tumors, which frequently leads to false negatives <ref type="bibr" target="#b6">(7)</ref>. Moreover, large network architectures are computationally intensive, restricting their use in real-time or resource-constrained environments such as clinical workstations and edge healthcare systems. To overcome these limitations, attention and transformer-based mechanisms have gained popularity for enhancing spatial awareness and model interpretability <ref type="bibr" target="#b12">(13)</ref>.</p><p>Recent studies have explored lightweight attentiondriven architectures to refine feature representation without incurring excessive computational costs. Hekmat et al. <ref type="bibr" target="#b17">(18)</ref> introduced an Attention-Fused MobileNet-LSTM framework that combines convolutional and recurrent layers to capture both spatial and temporal dependencies in MRI sequences, achieving 98.66% accuracy. Although their model demonstrated strong interpretability through Grad-CAM visualization, the LSTM component increased training complexity and reduced transparency in feature extraction. Similarly, Dutta et al. <ref type="bibr" target="#b18">(19)</ref> proposed ARM-Net, an attention-guided residual multiscale CNN that emphasized class-specific tumor features, improving multi-class accuracy on the Figshare dataset but at the expense of greater computational demand.</p><p>Vision transformer (ViT) models have also emerged as powerful alternatives by modeling long-range spatial dependencies. <ref type="bibr">Poornam and Angelina (20)</ref> proposed the VITALT model, which combines self-attention with linear transformations to capture both local and global MRI features. Although effective, transformerbased methods are computationally expensive and may not be suitable for real-time deployment. Complementary approaches have incorporated hybrid attention mechanisms; for instance, Saeed et al. (21) developed GGLA-NeXtE2NET, a dual-branch ensemble integrating gated global-local attention with EfficientNet and ConvNeXt backbones, achieving over 99% accuracy in multi-class classification. While such models capture multiscale contextual information, their heavy architecture and reliance on GAN-based augmentation (ESRGAN) limit deployment feasibility.</p><p>In parallel, studies employing object detection frameworks such as the YOLO family have demonstrated promising results in localizing tumors directly on MRI images. YOLO-based architectures have been adapted for real-time detection of glioma, meningioma, and pituitary lesions, offering an optimal trade-off between accuracy and inference speed <ref type="bibr" target="#b8">(9)</ref>. As illustrated in Rastogi et al. <ref type="bibr" target="#b1">(2)</ref>, the combination of transfer learning and fine-tuning techniques improved precision in detection even in the absence of large datasets. This is very pertinent as new hybrid architectures with certain secure and privacy-protected modules <ref type="bibr" target="#b13">(14)</ref> emphasize the increasing demand for clinically relevant and low-computation systems in distributed medical settings.</p><p>Table <ref type="table">1</ref> summarizes representative studies on brain tumor detection and classification, outlining their core methodologies, attention mechanisms, performance metrics, and limitations. Although recent models have achieved high accuracy, most remain computationally demanding or lack robustness when detecting small and irregular tumor regions. Existing research demonstrates the rapid evolution from classical handcraftedfeature methods to deep attention-based and transformer-driven architectures for brain tumor analysis. While transformer and ensemble approaches <ref type="bibr" target="#b19">(20,</ref><ref type="bibr" target="#b20">21)</ref> achieve excellent accuracy, they typically require high computational power and large annotated datasets. Hybrid CNN-LSTM and multiscale networks <ref type="bibr" target="#b17">(18,</ref><ref type="bibr" target="#b18">19)</ref> improve interpretability but remain unsuitable for realtime inference due to their complexity. Similarly, YOLO-based detectors (9) achieve good speed-accuracy trade-offs but still struggle with small or low-contrast tumors. The proposed ESA-YOLOv5m model integrates Enhanced Spatial Attention (ESA) mechanisms into the architecture of YOLOv5m. This design maintains model efficiency while also increasing the model's sensitivity to small and diffuse regions of the tumor. Strong ablation studies have shown that the ideal position for the ESA block is after the SPPF layer. This achieves the best balance of the model accuracy, interpretability, and real-time applicability. As a result, ESA-YOLOv5m is a robust, scalable model that applies to practical conditions, effectively addressing the performance-efficiency gap identified in the current state-of-theart approaches.</p><p>More recent developments in the YOLO family, including v3, v4, v5, v6, v7, and v8, have brought about the use of anchor-free detection heads and decoupled classification-regression branches as well as enhanced feature-pyramid aggregation. A number of medical-imaging works have used these variations on domainspecific tasks, including the tumor grading task <ref type="bibr" target="#b21">(22)</ref><ref type="bibr" target="#b22">(23)</ref><ref type="bibr" target="#b23">(24)</ref>, the task of occupational safety <ref type="bibr" target="#b21">(22,</ref><ref type="bibr" target="#b24">25)</ref>, and the task of human-falls detection <ref type="bibr" target="#b25">(26,</ref><ref type="bibr" target="#b26">27)</ref>. Nonetheless, the methods place significant emphasis on accuracy and minimal focus on interpretability and computation efficiency, which are important in clinical translation. Our ESA-YOLOv5m helps overcome these flaws with a lightweight attentionbased on the improvement of the spatial focus without raising the inference latency. As discussed earlier, previous research illustrates architectural evolution. However, there is a gap in primary research that relates to lightweight spatial-attention mechanisms designed for medical YOLO models. Most existing transformer and hybrid models focus on accuracy at the expense of practical deployment, and earlier YOLO versions forgo detailed spatial refinement. The ESA-YOLOv5m aims at closing these gaps by introducing an attention block that is interpretable and resource-efficient, and that improves tumor localization in real-time.</p><p>TABLE Comparison of recent brain tumor detection and classification studies ( -). References Architecture Attention/mechanism Dataset Accuracy/mAP Key limitations Hussain et al. (15) Feature-based ML (SVM, RF) None Private MRI 89.4% (accuracy) Limited generalization and noise sensitivity Yildirim et al. (17) ResNet-based hybrid CNN None Figshare MRI 82%-93% (precision) Weak detection of small tumors Hekmat et al. (18) MobileNet-LSTM hybrid Attention fusion + Grad-CAM Public MRI 98.66% (accuracy) High complexity, limited generalization Dutta et al. (19) ARM-Net (residual multiscale CNN) Channel-spatial attention Figshare MRI 91.5% (accuracy) Heavy model, lacks real-time feasibility Poornam and Angelina (20) Vision transformer (VITALT) Self-attention (transformer blocks) 4-class MRI 96.2% (accuracy) Computationally intensive, not real-time Saeed et al. (21) GGLA-NeXtE2NET (ensemble) Gated global-local attention 4-class MRI 99.0% (accuracy) High memory demand, complex training Rastogi et al. (2) Fine-tuned CNN (transfer learning) None Kaggle MRI 97.3% (accuracy) Limited to image-level classification Saranya and Praveena (9) YOLOv5/YOLOv7 detectors None MRI (3-class) mAP@0.5 ≈ 0.90 Recall drops for diffuse tumors This study YOLOv5m + ESA module Enhanced Spatial Attention (ESA) Lightweight, real-time, effective on small lesions FIGURE ESA-YOLOv m architecture with the ESA block integrated to enhance spatial feature refinement for brain tumor localization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proposed model architecture</head><p>The proposed model aims to detect brain tumors from MRI slices with greater accuracy and efficiency than existing methods, with the integration of Enhanced Spatial Attention to the current YOLOv5m configuration, as shown in Figure <ref type="figure">1</ref>. This architecture aims to fast extract "meta" features while performing "spatial" attention refinement to maximize attention "focus" (localization) and minimize "time" (latency) to soothingly generalize (low) MRI dataset variability (across). While the latest detectors YOLOv8 and YOLOv9 boast near parity improvements in accuracy, for the purpose of this study, YOLOv5m is chosen as the backbone due to its established reliability, clinical ubiquity, and seamless ONNX/TensorRT deployment pipeline integration. The relative configurability and optimization treatable by public APIs are essential for reproducibility and straightforward integration to HIT systems in a hospital. The added benefit of dependable streamlining and long-term maintenance, which in this case are in lieu of accuracy, is an important part of the overall system.</p><p>. /fmed. .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Overview of the architecture</head><p>The overall structure of the ESA-YOLOv5m model is shown in Figure <ref type="figure">2</ref>. It builds upon the YOLOv5m backbone, with the ESA module placed immediately after the Spatial Pyramid Pooling-Fast (SPPF) layer. This placement enhances the spatial discrimination capability of the network by amplifying tumor-relevant regions and suppressing non-informative background details. The model pipeline consists of four functional stages: feature extraction, spatial refinement, multi-scale feature fusion, and prediction. This configuration enables the model to efficiently detect tumors of varying sizes and contrast levels while maintaining realtime performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Input and preprocessing</head><p>The model receives T1-weighted contrast-enhanced MRI slices as input. Preprocessing involves intensity normalization, resizing to a fixed input resolution, and data augmentation operations such as flipping, rotation, HSV shifting, mosaic, and mixup. These augmentations improve generalization and robustness without distorting anatomical structures. Each image is resized to 832 × 832 pixels to balance fine-detail preservation and memory efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Backbone and ESA integration</head><p>The structure's backbones are built off of the hierarchical, low-and high-level feature maps of the CSP-Darknet53 used in YOLOv5m. The Enhanced Spatial Attention module is added directly after the SPPF, which is where the features are pooled and where this integration refinement takes place. The refinement focuses on the activation maps of the highly background-attenuated regions by boosting the tumor-specific activations. The attention mechanism improves the feature representation and, at the same time, improves the network's sensitivity to smaller and low-contrast tumor features with marginal added computation. The traditional attention designs, for example, Squeeze-and-Excitation (SE) <ref type="bibr" target="#b27">(28)</ref> block and the Convolutional Block Attention Module (CBAM) <ref type="bibr" target="#b28">(29)</ref> improve the feature representation with channel or sequential channel-spatial processing. Nevertheless, SE considers only the channel recalibration and disregards spatial relevance, whereas CBAM uses attention in order to result in more computations. Conversely, the suggested ESA introduces adaptive spatial weighting in a non-iterative manner by multi-scale convolutions, which enables the network to maintain local and global dependencies without many extra parameters. The design results in the localization of tumor boundaries more sharply, and the interpretation is better within the restrictions of real-time. In Table <ref type="table">2</ref>, the proposed ESA is distinguished by conventional attention modules at multiple scales by considering only spatial relationships with multi-scale convolutional fusion, which can localize successfully with limited computational cost.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Multi-scale feature fusion and detection head</head><p>Following the ESA-enhanced backbone, the neck uses a Cross Stage Partial Path Aggregation Network (CSP-PAN) to merge features from multiple scales. This ensures that both global context and localized features are retained, allowing accurate detection of tumors regardless of their size or location. The detection head, identical to YOLOv5m's standard head, outputs bounding boxes, class probabilities, and confidence scores for the three tumor categories: glioma, meningioma, and pituitary. The ESArefined features contribute to tighter bounding boxes and improved confidence in tumor localization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Loss function and optimization</head><p>The model is trained end-to-end using a composite loss function that combines classification, objectness,</p><p>TABLE Comparison of ESA with common attention modules. Module Attention type Computation Focus SE Block Channel-only Low Global intensity CBAM Channel + Spatial (sequential) Moderate Combined saliency ESA (Proposed) Spatial (parallel multi-scale) Low Localized structure Frontiers in Medicine frontiersin.org</p><p>and localization terms. The total loss is defined in Equation <ref type="formula">1</ref>:</p><formula xml:id="formula_0">L total = λ cls L cls + λ obj L obj + λ loc L CIoU (1)</formula><p>In Equation <ref type="formula">1</ref>, L cls represents the classification loss, L obj is the objectness loss, and L CIoU denotes the Complete IoU loss. The weighting coefficients λ cls , λ obj , and λ loc balance the contributions of these components. The inclusion of the Complete IoU term improves the geometric alignment between predicted and ground truth bounding boxes, leading to more accurate tumor localization.</p><p>The entire network is optimized using the loss function described in Equation <ref type="formula">1</ref>. Training employs an AdamW optimizer with cosine learning rate scheduling and standard YOLOv5 augmentation strategies. This configuration ensures efficient convergence and balanced optimization across all detection components. By integrating the ESA module into the YOLOv5m backbone, the proposed model achieves refined spatial attention with negligible computational overhead. The attention mechanism enhances the focus on diagnostically significant tumor areas, thereby improving detection precision and recall. The improved feature representation also reduces false positives and accelerates training convergence. Overall, the ESA-YOLOv5m framework maintains the lightweight and real-time characteristics of YOLOv5m while delivering substantial gains in spatial accuracy and interpretability, making it suitable for deployment in clinical diagnostic systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>The proposed YOLOv5m + ESA framework introduces a lightweight and attention-optimized deep learning pipeline for automated brain tumor detection from MRI scans. The methodology integrates data preprocessing, architecture enhancement, model training, and evaluation into a single end-to-end pipeline. Unlike conventional CNN-based detectors that rely solely on convolutional features, the proposed model incorporates an Enhanced Spatial Attention (ESA) module to improve tumor localization accuracy, particularly for small and low-contrast regions. The overall workflow is formulated mathematically and supported by visual examples of dataset preparation and annotation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. The workflow of the proposed methodology</head><p>Let the MRI dataset be defined as D = {I 1 , I 2 , . . . , I n }, where each image I i contains annotated tumor regions. Preprocessing transforms each raw image through normalization, resizing, and augmentation operations, collectively represented by T (•) in Equation <ref type="formula" target="#formula_1">2</ref>.</p><formula xml:id="formula_1">I i = T (I i ) = A(R(N (I i )))<label>(2)</label></formula><p>Here, N denotes intensity normalization, R represents resizing to 640 × 640 pixels, and A applies augmentations such as flipping, rotation, HSV jittering, mosaic, and mixup. This transformation standardizes pixel intensity and improves generalization across subjects and MRI scanners. The YOLOv5m backbone extracts features F t for each batch at epoch t. The ESA module refines these features according to Equation 3:</p><formula xml:id="formula_2">F t = E(F t ) = F t + σ (f 3 (δ(f 2 (δ(f 1 (F t ))))))<label>(3)</label></formula><p>In Equation <ref type="formula" target="#formula_2">3</ref>, f 1 , f 2 , and f 3 denote convolutional layers, δ(•) is the SiLU activation, and σ (•) the sigmoid function generating the spatial weighting map. The enhanced map F t strengthens tumor-relevant activations and suppresses background noise before detection. Predictions consist of bounding boxes B, class probabilities Ĉ, and confidence scores Ŝ, obtained as Equation <ref type="formula" target="#formula_3">4</ref>.</p><formula xml:id="formula_3">{ B, Ĉ, Ŝ} = Y(F t )<label>(4)</label></formula><p>The model minimizes a composite loss given by Equation <ref type="formula" target="#formula_4">5</ref>:</p><formula xml:id="formula_4">L total = λ cls L cls + λ obj L obj + λ ciou L ciou<label>(5)</label></formula><p>Parameters are updated iteratively using the AdamW optimizer using Equation <ref type="formula" target="#formula_5">6</ref>.</p><formula xml:id="formula_5">θ t+1 = θ t -η∇ θ t L total<label>(6)</label></formula><p>The training procedure is expressed compactly in Equation <ref type="formula" target="#formula_6">7</ref>:</p><formula xml:id="formula_6">∀t ∈ [1, E], ∀B ⊂ D : ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ F t = B(B; θ t ) F t = E(F t ) { B, Ĉ, Ŝ} = Y(F t ) L total = ( B, Ĉ, Ŝ; B) θ t+1 = θ t -η∇ θ t L total<label>(7)</label></formula><p>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data loading and preprocessing</head><p>The proposed framework uses the Figshare Brain Tumor MRI dataset, containing 3,064 T1-weighted contrast-enhanced MRI images from 233 subjects. The dataset includes three tumor typesglioma, meningioma, and pituitary-with resolutions of 512 × 512 pixels. Each image is resized to 640 × 640 during training and augmented using transformations defined in Equation <ref type="formula" target="#formula_1">2</ref>. Dataset statistics are summarized in Table <ref type="table">3</ref>.</p><p>TABLE Statistics of the Figshare T -weighted contrast-enhanced brain tumor MRI dataset ( , images from subjects). Tumor type No. of images No. of patients MRI modality Glioma 1,426 89 T1-weighted (CE) Meningioma 708 82 T1-weighted (CE) Pituitary 930 62 T1-weighted (CE) Total 3,064 233 - FIGURE Annotated MRI images used for YOLOv training, with red bounding boxes marking tumor regions and class labels ( : glioma, : meningioma, : pituitary).</p><p>As part of the preprocessing stage, binary tumor masks assist in confirming the spatial correspondence between the tumor and the respective annotated bounding box. These are the examples presented in Figure <ref type="figure">3</ref>. The top row contains raw MRI slices, whereas the bottom row contains the respective masks. These masks serve the purpose of assuring the proper placement of bounding boxes around tumor margins before the training stage.</p><p>Upon completion of the verification process, the labeled MRI images are prepared for YOLOv5 training, as presented in Figure <ref type="figure">4</ref>. Each of the red bounding boxes represents boxes of detected tumorous areas, and the numbers 1-3 refer to the classes of glioma, meningioma, and pituitary. This visual representation proves the persistent annotation agreement in the entire dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Backbone and ESA integration</head><p>The YOLOv5m backbone employs a CSP-Darknet53 structure for multi-scale feature extraction. The ESA module is integrated immediately after the SPPF layer, enhancing spatial feature discrimination. The ESA operation can be mathematically expressed as: In Equation <ref type="formula" target="#formula_7">8</ref>, denotes element-wise multiplication, C represents a convolutional mapping, σ is a sigmoid activation producing spatial attention weights, and α is a learnable scaling coefficient. This mechanism emphasizes high-importance tumor regions and suppresses irrelevant background activations. Because ESA is applied only once per forward pass, its computational overhead remains minimal. Algorithm 1 describes the stage of refining the feature of the ESA block prior to inserting it into the YOLOv5m backbone.</p><formula xml:id="formula_7">E(F) = F + α(F σ (C(F)))<label>(8)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Training strategy and optimization</head><p>Transfer learning is applied using YOLOv5m weights pretrained on the COCO dataset. The model is fine-tuned for 150 epochs using the AdamW optimizer with cosine learning rate scheduling. The dynamic learning rate η t varies as per Equation <ref type="formula" target="#formula_8">9</ref>:</p><formula xml:id="formula_8">η t = η 0 × 1 2 1 + cos tπ E<label>(9)</label></formula><p>Here, η 0 is the initial learning rate, t is the current epoch, and E is the total number of epochs. The functionality of reducing learning rates is to eliminate uncertainty and stabilize training. The batch size is configured to be between 8 and 16. All experiments are repeated with multiple random seeds to ensure reproducibility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Evaluation metrics</head><p>Model performance is quantified using Precision (P), Recall (R), and mean Average Precision at IoU thresholds 0.5 and 0.5:0.95. For each tumor class c, the average precision AP c is computed over the precision-recall curve, and mean mAP is given by Equation <ref type="formula" target="#formula_9">10</ref>:</p><formula xml:id="formula_9">mAP = 1 C C c=1 1 0 P c (R c ) dR c (<label>10</label></formula><formula xml:id="formula_10">)</formula><p>Where C is the total number of classes, inference latency (milliseconds per image) is also measured to assess realtime feasibility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Computational efficiency</head><p>The incorporation of ESA into the backbone model of YOLOv5m increases the total parameters to just under 4%. ESA retains latency under ten milliseconds per image, signifying real-time performance, and maintains exemplary results with little additional computation. The added ESA has been shown to effectively enhance spatial attention, yielding better Precision, Recall, and mAP values. These traits, along with the framework's features, make the model especially advantageous for use in clinical decision-support systems and for deployment on edge devices. The proposed approach has developed an explainable and sophisticated detection pipeline encompassing efficient data preprocessing, lightweight attention modules, and robust evaluation metrics. In Figures <ref type="figure">3</ref>, <ref type="figure">4</ref>, the qualitative examples demonstrate the accurate and efficient tumor detection with few false positives, achieved via the model, due to the extensive dataset and annotation pipeline.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental setup</head><p>All experiments were conducted using Python 3.10 in a Google Colab Pro environment equipped with an NVIDIA A100 GPU (40 GB VRAM), 24 GB of system memory, and approximately 200 GB of allocated disk storage. The entire training pipeline-including dataset preprocessing, data loading, model compilation, hyperparameter tuning, and evaluationwas executed within this virtualized environment to ensure reproducibility and resource consistency. The code implementation was based on the official YOLOv5 repository, with custom modifications to integrate the Enhanced Spatial Attention (ESA) module immediately after the Spatial Pyramid Pooling-Fast (SPPF) layer in the model backbone. The implementation utilized the PyTorch deep learning framework (v2.2.0) and YOLOv5 (v7.0) for model definition and training, while auxiliary libraries such as NumPy, Pandas, Matplotlib, and OpenCV were used for data handling, visualization, and image processing. Random seeds were fixed across NumPy and PyTorch to maintain deterministic results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Training configuration</head><p>The experimental corpus was derived from the Figshare Brain Tumor MRI dataset, which comprises three classes: glioma, meningioma, and pituitary. Using stratified sampling to maintain the distribution of the classes, the dataset was split into training (80%) and validation (20%) subsets. Every image was resized to 640 × 640 pixels before being sent to the data loader. Training and validation data were processed with the same normalization pipeline, while data augmentation was applied only to the training set. The training was performed for 150 epochs with an initial learning rate η 0 = 0.001 following a cosine annealing schedule defined in Equation <ref type="formula" target="#formula_11">11</ref>. The AdamW optimizer was used with β 1 = 0.9, β 2 = 0.999, and a weight decay of 1 × 10 -4 . A batch size of 8 was used for T4 GPUs and 16 for the A100 configuration. Gradient accumulation was enabled to stabilize optimization during small-batch training, and mixed-precision computation (FP16) was used to accelerate convergence while minimizing GPU memory consumption. Each epoch computed detection losses (classification, objectness, and CIoU) as per Equation <ref type="formula">1</ref>. The best-performing model was selected based on the highest mean Average Precision at 0.5 IoU (mAP@0.5) on the validation set.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Data augmentation and preprocessing</head><p>Preprocessing involved intensity normalization and resizing to maintain a uniform image scale. Augmentation techniques were applied to increase the diversity of training samples and improve generalization to unseen MRI scans. These transformations included random horizontal flips with probability p = 0.5, HSV hue-saturation-value jitter (±0.015), random rotation (±10 • ), Mosaic augmentation (probability p = 0.5), and Mixup blending (α = 0.2). Each augmented sample was normalized to the [0,1] range and standardized using mean subtraction and variance scaling. The final preprocessed tensors were formatted into batches of shape (B, 3, 640, 640), where B is the batch size. Each label file was encoded in YOLO format {x c , y c , w, h, c}, corresponding to the bounding box center coordinates, width, height, and class ID.</p><p>. /fmed. .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Hyperparameters and optimization strategy</head><p>Hyperparameter tuning was performed empirically across multiple runs. The learning rate η followed the cosine annealing schedule, using Equation <ref type="formula" target="#formula_11">11</ref>.</p><formula xml:id="formula_11">η t = η 0 × 1 2 1 + cos tπ E (<label>11</label></formula><formula xml:id="formula_12">)</formula><p>Where E is the total number of epochs and t denotes the current epoch index. Momentum was set to 0.937, and the weight decay coefficient was 1 × 10 -4 . The object confidence threshold for detection was fixed at 0.25, and the Non-Maximum Suppression (NMS) IoU threshold was set to 0.45. During training, a label smoothing factor of 0.1 was used to prevent overfitting and enhance model calibration. The overall loss function L total in Equation 1 was optimized using backpropagation with automatic mixed precision (AMP) to accelerate computation. Early stopping was employed with a patience of 30 epochs, halting training when no improvement in mAP@0.5 was observed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Evaluation protocol</head><p>Evaluation metrics included Precision (P), Recall (R), mean Average Precision at IoU thresholds 0.5 (mAP@0.5), and averaged between 0.5:0.95 (mAP@0.5 0.95). Inference speed (milliseconds per image) and GPU utilization were recorded to assess computational efficiency. For each trained model, performance was evaluated using five random seeds to confirm reproducibility. Statistical mean and standard deviation values were reported across these runs. Visualization of predictions was performed using Matplotlib, where each detected bounding box was annotated with tumor class, confidence score, and bounding box coordinates. Confusion matrices and Precision-Recall curves were generated to analyze inter-class performance.</p><p>Reproducibility, consistency, and equity in assessment are maintained by the thorough setup described in Table <ref type="table">4</ref>. The variability in tumor forms and levels of brightness in the Figshare dataset has become a standard for the assessment of medical detection models. The mixed-precision training, AdamW optimizer, and cosine annealing postpone convergence and eliminate the risks of gradient vanishing. The ESA module improves detection performance at practically no extra processing expense, which supports real-time inferences on cloud and edge devices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and discussion</head><p>This section exhibits a detailed evaluation of the proposed ESA-YOLOv5m framework and its performance relative to the baseline YOLOv5m model. The evaluation centers on the framework's detection accuracy, training convergence, and overall model robustness. The primary metrics to be used include mAP@0.5, precision, and recall. These values capture the essence of the models' classification and localization functionalities. For reliable</p><p>TABLE Experimental setup and training configuration for YOLOv m + ESA model. Category Specification Hardware platform Google Colab Pro, NVIDIA A100 GPU (40 GB), 24 GB RAM, 200 GB Disk Programming language Python 3.10 (PyTorch 2.2.0, YOLOv5 7.0) Dataset Figshare brain tumor MRI (glioma, meningioma, pituitary) Image input size 640 × 640 pixels (RGB normalized) Train/validation split 80/20 stratified Batch size 8 (T4) -16 (A100) Epochs 150 (early stopping at 30) Optimizer AdamW (β 1 = 0.9, β 2 = 0.999, weight decay = 1 × 10 -4 ) Learning rate η 0 = 0.001, cosine annealing schedule (Equation 11) Momentum 0.937 Augmentation Flip (0.5), rotation (±10 • ), HSV (±0.015), Mosaic (0.5), Mixup (α = 0.2) Loss function Classification + Objectness + CIoU (Equation 1) Detection thresholds Confidence = 0.25, NMS IoU = 0.45 Label smoothing 0.1 Precision type FP16 mixed precision Metrics evaluated Precision, recall, mAP@0.5, mAP@0.5-0.95, inference time Evaluation runs 5 independent seeds (mean ± SD reported) Visualization tools Matplotlib, pandas, OpenCV and reproducible comparisons, all experiments were designed under the same dataset, training strategy, and hardware constraints.</p><p>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Overall performance comparison</head><p>Figure <ref type="figure">5</ref> presents a comparison of the performance metrics of the baseline and ESA-enhanced YOLOv5m models. The baseline model achieved an mAP@0.5 of approximately 0.80 for the mAP, Precision, and Recall metrics, while the ESAenhanced model exceeded 0.90 for each metric, indicating a large increase in detection capacity. This feature of the model is likely due to the Enhanced Spatial Attention (ESA) module, which concentrates on accentuated tumor areas and background suppression, which improves the accuracy and sensitivity of the detection. Furthermore, the increase in mAP@0.5 indicates an improvement in the model's ability to detect and accurately assess the number of tumors present, while Precision and Recall also demonstrate an increase in the number of falsely detected and missed tumors. The detected improvement of 11%-12% mAP on the clinical side translates to about 1-2 missed tumors per 100 cases compared to the baseline detector per each clinical mAP improvement. More confident and rapid triage decisions, particularly on smaller or early lesions that are often missed during manual assessments, translate to improved diagnostic accuracy. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Training convergence and mAP progression</head><p>Figure <ref type="figure">6</ref> shows both models' mAP@0.5 on training epochs. The baseline model takes a while to converge. After 50 epochs, it hovers around 0.80 mAP, while the ESA model is on a much steeper learning curve, surpassing 0.85 mAP by epoch 15 and stabilizing at 0.90 mAP by epoch 50. The ESA model performed both faster and better, indicating that ESA does improve feature representation, especially for small, complex tumor boundaries. The ESA block incurs minimal computational cost and is therefore advantageous in medical imaging, as it focuses on the more relevant tumor structures and delivers significant performance improvements. Fine-grained structure localization accuracy is of utmost importance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Precision and recall analysis</head><p>The classification behavior of models is further explained by the Precision and Recall indicators. We observe the training progresses for Precision and Recall of the baseline and ESA models in Figure <ref type="figure">7</ref>. The baseline models show close to 0.80 for both metrics, while the ESA models are above 0.90 and consistently outperform the baseline models. The ESA models exhibit fewer false positives and, hence, higher precision, meaning they are more confident in identifying and accurately delineating regions containing tumors. The attention mechanism effectively suppresses background noise and emphasizes the reconciling boundaries of tumors. The ESA models also show higher recall, meaning they are more capable of identifying and retrieving a majority of the actual tumors with the least possible misses. This is critical in most medical cases where a failure to recognize a tumor can cause serious problems with the diagnosis.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Quantitative results</head><p>Table <ref type="table">5</ref> captures the results from the last phase of each model's performance metrics. The ESA-enhanced model captures an 11%-12% elevation in overall detection performance. This enhancement is sustained through all the runs and random seeds, which confirms the reliability and acceptability of the approach.</p><p>TABLE Performance comparison between Baseline YOLOv m and YOLOv m + ESA. Metric Baseline YOLOv m YOLOv m + ESA (ours) mAP@0.5 0.80 0.91 Precision 0.79 0.90 Recall 0.80 0.90</p><p>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Qualitative analysis</head><p>Qualitative visualizations further confirm the effectiveness of ESA. The ESA-enhanced model produces more accurate bounding boxes, particularly for small or irregularly shaped tumors. It also exhibits stronger confidence scores and fewer background misclassifications. The baseline model tends to under-detect lowcontrast tumors or merge multiple lesions into a single bounding box, whereas the ESA model resolves these ambiguities effectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Computational efficiency</head><p>ESA's integration adds only a lightweight spatial attention mechanism, with no marked increase in model size nor inference duration. The average latency in image processing is below 10ms, and hence, retains its applicability and speed in real-time clinical usage on an NVIDIA A100 GPU. This clearly shows improvement in performance with no loss in efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Extended evaluation and ablation study</head><p>In order to enhance the verification process of the ESA-YOLOv5m architecture, additional controlled experiments were designed and executed under the same primary training setup parameters. This encompasses ESA placement ablation, class-wise analysis, cross-validation stability, and assessment of the efficiency and stability of ESA placement. The additional results retain the coherence with the primary results as discussed in Section 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. . Ablation on ESA position</head><p>In Table <ref type="table">6</ref> and Figure <ref type="figure">8</ref>, an ablation study analyzes the integration of the ESA module's positioning toward various levels of the backbone of YOLOv5m. Placing ESA right after the SPPF layer of the model achieves the most cost-effective, accurate approach. Inserting ESA at lower levels results in lower model performance with respect to localization because there is not enough high-level spatial context.</p><p>The results verify that applying spatial attention to deep aggregated features enhances tumor localization and detection precision while maintaining a lightweight architecture.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. . Class-wise evaluation</head><p>In Table <ref type="table">7</ref> and Figure <ref type="figure">9</ref>, precision, recall, and mAP values per class for glioma, meningioma, and pituitary tumors are presented.</p><p>TABLE Ablation analysis of ESA placement in YOLOv m. Variant ESA placement mAP@ . Precision Recall Baseline YOLOv5m -0.80 0.79 0.80 ESA (before SPPF) Early stage 0.88 0.86 0.87 ESA (after SPPF) (proposed) Late stage 0.91 0.90 0.90 FIGURE Ablation study showing performance of YOLOv m variants with different ESA placements. It shows that placing ESA after the SPPF layer yields the best balance of accuracy and efficiency. Integrating ESA after the SPPF layer provides the most stable and accurate performance without additional complexity.</p><p>TABLE Per-class detection performance of ESA-YOLOv m. Tumor class Precision Recall mAP@ . Glioma 0.874 0.868 0.891 Meningioma 0.863 0.851 0.876 Pituitary 0.976 0.965 0.979</p><p>Improvements in performance are observed for all types of tumors, with pituitary tumors exhibiting the best detection accuracy due to defined structural borders, while gliomas have the most difficulty due to their diffuse and irregular shapes. The consistent progress across tumor types validates that the Esa module enhances general spatial awareness rather than concentrating on any one type.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. . Cross-validation stability</head><p>A five-fold cross-validation experiment was conducted to assess the stability of model training. The mean and standard deviation (SD) of key performance metrics are summarized in Table <ref type="table">8</ref>. Low SD values indicate consistent convergence and robust generalization across folds. A paired t-test was used to verify the improvement of ESA-YOLOv5m over the baseline, which is statistically significant (p &lt; 0.001), proving that the gains are strong and not the outcome of chance fluctuations. In TABLE Baseline vs. ESA-YOLOv m statistical comparison across five folds (mean ± SD). addition, results from the 5-fold cross validation (see Figure <ref type="figure">10</ref>) show low variance across all mAP@0.5, Precision, and Recall, indicating model's consistency, enabling the model's stability and generalization.</p><p>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Computational efficiency</head><p>In order to identify what is truly feasible in real-time, the computational burden of the model was assessed against the baseline YOLOv5m. The ESA integration adds almost negligible overhead under 4.3% relative increase in model parameters and less than 1 ms latency per image, and yields</p><p>TABLE Efficiency comparison between baseline and ESA-enhanced YOLOv m. Model Parameters (M) FPS Latency (ms) mAP@ . Baseline YOLOv5m 21.2 105 9.3 0.80 ESA-YOLOv5m (proposed) 22.1 97 9.9 0.91 FIGURE Accuracy-latency trade-off between baseline YOLOv m and ESA-YOLOv m. The ESA variant achieves higher mAP@ . with negligible increase in inference latency, demonstrating real-time suitability for clinical deployment.</p><p>11% improvement in detection accuracy (see Table <ref type="table">9</ref>). The more detailed analysis confirms the findings that the ESA integration with YOLOv5m leads to a systematic improvement of detection accuracy and sensitivity without compromising the real-time inference capabilities. The improvements in mAP@0.5 of more than 11% and the stable performance during the crossvalidation reinforce the view that selective spatial attention is a novel, powerful, and computationally economical approach to enhance medical object detection in the context of MRI-based tumor analyses.</p><p>The proposed ESA-YOLOv5m is better suited to provide high detection accuracy at the cost of real-time inference speed, as shown in Figure <ref type="figure">11</ref>. This confirms that the addition of the ESA block does not affect the performance in a negative way without affecting the computational efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Model interpretability</head><p>Grad-CAM visualizations were produced on sample MRI slices to estimate the attention to clinically relevant areas of the proposed ESA-YOLOv5m model. The heatmaps in Figure <ref type="figure">12</ref> show that ESA-YOLOv5m exhibits a more localized and concentrated TABLE Comparison of prior works and proposed ESA-YOLOv m model on Figshare dataset. Study/model Architecture Precision Recall mAP@ . Remarks Yildirim et al. ResNet50 hybrid 0.931 0.810 0.910 High cost, good precision Sarala et al. Dense CNN 0.920 0.800 0.902 Strong features, slower Dutta et al. ARM-Net 0.938 0.818 0.915 Multiscale attention Kang et al. BGF-YOLOv8 0.908 0.860 0.912 Heavy model Proposed Model YOLOv5m + ESA 0.91 0.90 0.91 Lightweight, improved accuracy activation in the tumor core and its pathological areas than the baseline YOLOv5m model. This increased transparency gives a visual representation of how the model makes decisions, and thus, enhances trust and helps to integrate the model into diagnostic processes.</p><p>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparison with state-of-the-art</head><p>The inclusion of the ESA layer immediately after the SPPF block of the ESA-enhanced YOLOv5m model increases feature map responsiveness by allowing the model to adaptively focus on critical tumor areas of the feature maps, attenuating the less important background. This contrast between the ESA-enhanced YOLOv5m model and the baseline YOLOv5m snapshot.</p><p>• Finer detection accuracy: our model achieves a mAP@0.5 of 0.924, which is 0.008 higher than the baseline model's 0.916. • Higher precision: our model's precision indicator improved from 0.861 to 0.920, which signifies a reduction of false positive results. • Consistent reap performance: our model's recall performance slightly increased from 0.876 to 0.878.</p><p>• Class-specific gains: for meningioma, precision improved from 0.777 to 0.863, for pituitary from 0.945 to 0.976, and for glioma from 0.867 to 0.874, and mAP for each class improved correspondingly.</p><p>• Compact structure: model features a 4.25% increase in parameter count, which is from 21.2M to 22.1M, and 0.6 ms for inference time.</p><p>These results demonstrate that the proposed model provides measurable performance gains over prior CNN and YOLObased approaches while preserving computational efficiency. As summarized in Table <ref type="table">10</ref>, the ESA-YOLOv5m model surpasses the best-performing prior attention-based models across multiple key metrics with minimal overhead, making it more suitable for real-time clinical applications. In contrast to prior works that often prioritized accuracy at the expense of speed and practicality, the proposed ESA-YOLOv5m achieves both high accuracy and real-time performance. Its lightweight attention mechanism offers a better balance between model complexity and clinical applicability. This makes it a promising candidate for deployment in real-world diagnostic workflows, enabling earlier detection and improved treatment outcomes for patients with brain tumors.</p><p>. /fmed. .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>. Discussion</head><p>The experimental results confirm that incorporating ESA into the YOLOv5m architecture significantly improves brain tumor detection performance. The enhanced mAP, Precision, and Recall highlight the network's improved ability to focus on diagnostically important features while minimizing false alarms. This is especially valuable for healthcare scenarios, where accurate and fast tumor detection can assist radiologists and reduce manual screening time. The ESA model, in addition to demonstrating stable convergence, shows consistent improvements across runs, which is a promising sign for real-time deployment within medical imaging workflows. The ESA model's convergence also enables it to be scaled for edge deployments or fused within hospital ecosystem diagnostic lite systems. These results confirm that lightweight attention modules, when applied in a judiciously designed framework, can considerably enhance object detection in highly specialized tasks, such as brain tumor imaging, with maintained speed and scalability.</p><p>Even though the results are promising, several limitations with the dataset must be addressed. The Figshare dataset presents class imbalance (i.e., glioma &gt; meningioma), scanner-specific acquisition parameters, and poor demographic variety, all of which may affect generalizability across other institutions. Future work should focus on validating ESA-YOLOv5m on multi-center, multi-site, and multi-vendor cohorts to address these biases. Furthermore, the proposed ESA-YOLOv5m framework is currently set up to work on separate 2D MRI slices, although it is capable of high detection results. This method lacks the ability to take volumetric continuity between adjacent slices, which may be of significance to identifying diffuse or infiltrative tumor structures.</p><p>In the future, we will extend ESA-YOLOv5m to 3D volumetric tumor detection and multi-modal fusion (MRI, CT, and PET), such that holistic spatial-temporal tumor characterization can be used to achieve more precise diagnostic results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion and future work</head><p>This study presented a lightweight and effective deep learning framework for brain tumor detection by integrating an Enhanced Spatial Attention (ESA) module into the YOLOv5m architecture. The proposed ESA-YOLOv5m model addresses key limitations of conventional object detection methods in medical imagingparticularly their difficulty in detecting small or low-contrast tumor regions and their computational inefficiency in clinical settings. Qualitative results further confirmed the model's improved capability in detecting small and irregularly shaped tumor regions. Due to the low latency of ESA-YOLOv5m (i.e., &lt; 10 ms per image) and its modest parameter footprint, it can be embedded into Radiology Workstations and Edge Devices for Dispersed On-site Screening. This is especially useful when the cloud is inaccessible, and aid in diagnosing low-resourced rural hospitals can be provided. Furthermore, its ability to integrate into PAC systems for automated lesion detection can be utilized directly on the device, augmenting on-device diagnostic support. In the future, we will incorporate complementary imaging modalities (e.g., CT, PET) alongside MRI, and extend the model to support multi-label segmentation and classification along with 3D MRI volumes (rather than 2D slices). We also aim to incorporate explainable AI (XAI) techniques to highlight regions influencing predictions, improving interpretability, and clinical acceptance.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>Figshare MRI mAP@0.5 = 0.91, Precision = 0.90, Recall = 0.90</figDesc><graphic coords="4,127.70,364.48,340.16,232.74" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE</head><figDesc>FIGUREProposed YOLOv m + ESA architecture with ESA integrated after the SPPF block to enhance spatial attention and refine tumor features.</figDesc><graphic coords="5,56.72,500.70,226.77,219.26" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIGURE</head><figDesc>FIGURE Example MRI slices (top) with corresponding tumor masks (bottom) from the Figshare dataset, used to validate tumor regions before bounding-box annotation.</figDesc><graphic coords="7,56.70,96.38,481.89,160.09" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>1 : 3 and 5 × 5 convolutions 3 :</head><label>1353</label><figDesc>Input feature map F ∈ R C×H×W 2: Compute multi-scale spatial descriptors via 3 × Fuse descriptors: S = σ (Conv([F 3×3 ; F 5×5 ])) 4: Output: F = F S Algorithm . Enhanced Spatial Attention (ESA) integration.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIGURE</head><figDesc>FIGURE Visual comparison between Baseline YOLOv m and YOLOv m + ESA architecture, showing clearer tumor boundary localization with ESA's spatial attention.</figDesc><graphic coords="10,56.72,96.53,226.77,178.94" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE</head><figDesc>FIGURE mAP@ . progression curve for Baseline YOLOv m (blue solid) and YOLOv m + ESA (red dashed), confirming improved learning stability. The ESA-enhanced model achieves faster, higher convergence.</figDesc><graphic coords="10,311.67,96.66,226.77,176.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>FIGURE</head><figDesc>FIGURE Precision and recall comparison between baseline YOLOv m and YOLOv m + ESA. The ESA-enhanced model demonstrates higher precision (solid) and recall (dotted) across all epochs, indicating ESA-YOLOv m achieves fewer false detections and better tumor recovery.</figDesc><graphic coords="10,311.67,382.84,226.77,181.63" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>FIGURE</head><figDesc>FIGUREClass-wise performance comparison of ESA-YOLOv m on glioma, meningioma, and pituitary tumor categories. Consistent improvements in all classes highlight the generalization capability of the proposed attention integration.</figDesc><graphic coords="12,56.72,96.53,226.77,133.93" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><figDesc>FIGURE Cross-validation stability results of ESA-YOLOv m. Error bars represent the standard deviation across five folds, demonstrating consistent and stable model convergence.</figDesc><graphic coords="12,56.72,407.52,226.77,133.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>FIGURE</head><figDesc>FIGURE Grad-CAM visualizations comparing baseline YOLOv m and the proposed ESA-YOLOv m model.</figDesc><graphic coords="13,56.70,96.79,481.92,205.68" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Medicine frontiersin.org</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>This work was funded by the <rs type="funder">Deanship of Graduate Studies and Scientific Research at Jouf University</rs> under grant No. (<rs type="grantNumber">DGSSR-2025-FC-01029</rs>).</p></div>
+			</div>
+			<div type="funding">
+<div><head>Funding</head><p>The author(s) declared that financial support was received for this work and/or its publication. The authors gratefully acknowledge the financial support provided by the <rs type="funder">Deanship of Graduate Studies and Scientific Research at Jouf University</rs> for funding this work.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_rHCPEPQ">
+					<idno type="grant-number">DGSSR-2025-FC-01029</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The original contributions presented in the study are included in the article/supplementary material, further inquiries can be directed to the corresponding author.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generative AI statement</head><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Melanoma identification and classification model based on fine-tuned convolutional neural network</title>
+		<author>
+			<persName><forename type="first">Maram</forename><forename type="middle">F</forename><surname>Almufareh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noshina</forename><surname>Tariq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mamoona</forename><surname>Humayun</surname></persName>
+			<idno type="ORCID">0000-0001-6339-2257</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Farrukh</forename><forename type="middle">Aslam</forename><surname>Khan</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/20552076241253757</idno>
+	</analytic>
+	<monogr>
+		<title level="j">DIGITAL HEALTH</title>
+		<title level="j" type="abbrev">DIGITAL HEALTH</title>
+		<idno type="ISSN">2055-2076</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">20552076241253757</biblScope>
+			<date type="published" when="2024-05-24">2024</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Almufareh MF, Tariq N, Humayun M, Khan FA. Melanoma identification and classification model based on fine-tuned convolutional neural network. Digit Health. (2024) 10:20552076241253757. doi: 10.1177/20552076241253757</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection and Prediction in MRI Images Utilizing a Fine-Tuned Transfer Learning Model Integrated Within Deep Learning Frameworks</title>
+		<author>
+			<persName><forename type="first">Deependra</forename><surname>Rastogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prashant</forename><surname>Johri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massimo</forename><surname>Donelli</surname></persName>
+			<idno type="ORCID">0000-0001-9477-9243</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lalit</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shantanu</forename><surname>Bindewari</surname></persName>
+			<idno type="ORCID">0000-0002-7048-5221</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abhinav</forename><surname>Raghav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunil</forename><forename type="middle">Kumar</forename><surname>Khatri</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/life15030327</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Life</title>
+		<title level="j" type="abbrev">Life</title>
+		<idno type="ISSNe">2075-1729</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">327</biblScope>
+			<date type="published" when="2025-02-20">2025</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rastogi D, Johri P, Donelli M, Kumar L, Bindewari S, Raghav A, et al. Brain tumor detection and prediction in MRI images utilizing a fine-tuned transfer learning model integrated within deep learning frameworks. Life. (2025) 15:327. doi: 10.3390/life15030327</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">GliomaCNN: An Effective Lightweight CNN Model in Assessment of Classifying Brain Tumor from Magnetic Resonance Images Using Explainable AI</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Atiqur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mustavi</forename><forename type="middle">Ibne</forename><surname>Masum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">Md</forename><surname>Hasib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Mridha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sultan</forename><surname>Alfarhood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mejdl</forename><surname>Safran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dunren</forename><surname>Che</surname></persName>
+		</author>
+		<idno type="DOI">10.32604/cmes.2024.050760</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Modeling in Engineering &amp; Sciences</title>
+		<title level="j" type="abbrev">CMES</title>
+		<idno type="ISSNe">1526-1506</idno>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="2425" to="2448" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Tech Science Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rahman MA, Masum MI, Hasib KM, Mridha MF, Alfarhood S, Safran M, et al. GliomaCNN: an effective lightweight CNN model in assessment of classifying brain tumor from magnetic resonance images using explainable AI. CMES-Comput Model Eng Sci. (2024) 140:2425-448. doi: 10.32604/cmes.2024.050760</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Integrating Radiogenomics and Machine Learning in Musculoskeletal Oncology Care</title>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Kumar</surname></persName>
+			<idno type="ORCID">0000-0001-8574-2895</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><surname>Sporn</surname></persName>
+			<idno type="ORCID">0009-0005-5707-9009</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><surname>Khanna</surname></persName>
+			<idno type="ORCID">0009-0008-4384-2693</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Phani</forename><surname>Paladugu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chirag</forename><surname>Gowda</surname></persName>
+			<idno type="ORCID">0009-0002-8177-2784</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Ngo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ram</forename><surname>Jagadeesan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nasif</forename><surname>Zaman</surname></persName>
+			<idno type="ORCID">0000-0003-0120-0939</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alireza</forename><surname>Tavakkoli</surname></persName>
+			<idno type="ORCID">0000-0001-9460-1269</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics15111377</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1377</biblScope>
+			<date type="published" when="2025-05-29">2025</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar R, Sporn K, Khanna A, Paladugu P, Gowda C, Ngo A, et al. Integrating radiogenomics and machine learning in musculoskeletal oncology care. Diagnostics. (2025) 15:1377. doi: 10.3390/diagnostics15111377</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Deep Learning-Based Computer-Aided Diagnosis (CAD): Applications for Medical Image Datasets</title>
+		<author>
+			<persName><forename type="first">Yezi</forename><forename type="middle">Ali</forename><surname>Kadhim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Umer</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-9195-3477</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alok</forename><surname>Mishra</surname></persName>
+			<idno type="ORCID">0000-0003-1275-2050</idno>
+		</author>
+		<idno type="DOI">10.3390/s22228999</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page">8999</biblScope>
+			<date type="published" when="2022-11-21">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kadhim YA, Khan MU, Mishra A. Deep learning-based computer-aided diagnosis (CAD): applications for medical image datasets. Sensors. (2022) 22:8999. doi: 10.3390/s22228999</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Neural Frontier of Future Medical Imaging: A Review of Deep Learning for Brain Tumor Detection</title>
+		<author>
+			<persName><forename type="first">Tarek</forename><surname>Berghout</surname></persName>
+			<idno type="ORCID">0000-0003-4877-4200</idno>
+		</author>
+		<idno type="DOI">10.3390/jimaging11010002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging</title>
+		<title level="j" type="abbrev">J. Imaging</title>
+		<idno type="ISSNe">2313-433X</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2024-12-24">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Berghout T. The neural frontier of future medical imaging: a review of deep learning for brain tumor detection. J Imaging. (2024) 11:2. doi: 10.3390/jimaging11010002</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Deep Learning Approaches for Brain Tumor Detection and Classification Using MRI Images (2020 to 2024): A Systematic Review</title>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Bouhafra</surname></persName>
+			<idno type="ORCID">0009-0002-7949-9213</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hassan</forename><surname>El Bahi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10278-024-01283-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging Informatics in Medicine</title>
+		<title level="j" type="abbrev">J Digit Imaging. Inform. med.</title>
+		<idno type="ISSNe">2948-2933</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1403" to="1433" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bouhafra S, El Bahi H. Deep learning approaches for brain tumor detection and classification using MRI images (2020 to 2024): a systematic review. J Imaging Inform Med. (2025) 38:1403-33. doi: 10.1007/s10278-024-01283-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Object Detection YOLO Algorithms and Their Industrial Applications: Overview and Comparative Analysis</title>
+		<author>
+			<persName><forename type="first">Shizhao</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyu</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0001-6982-3265</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lianjun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kexin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyu</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/electronics14061104</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Electronics</title>
+		<title level="j" type="abbrev">Electronics</title>
+		<idno type="ISSNe">2079-9292</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">1104</biblScope>
+			<date type="published" when="2025-03-11">2025</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kang S, Hu Z, Liu L, Zhang K, Cao Z. Object detection YOLO algorithms and their industrial applications: overview and comparative analysis. Electronics. (2025) 14:1104. doi: 10.3390/electronics14061104</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Accurate and real-time brain tumour detection and classification using optimized YOLOv5 architecture</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Saranya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Praveena</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-025-07773-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">25286</biblScope>
+			<date type="published" when="2025-07-12">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saranya M, Praveena R. Accurate and real-time brain tumour detection and classification using optimized YOLOv5 architecture. Sci Rep. (2025) 15:25286. doi: 10.1038/s41598-025-07773-1</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Emotion Recognition of Human Speech Using Different Optimizer Techniques</title>
+		<author>
+			<persName><forename type="first">Sajid</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bushra</forename><surname>Almas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noshina</forename><surname>Tariq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farman</forename><surname>Ul Haq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amna</forename><surname>Faisal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pranav</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/etncc63262.2024.10767445</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC)</title>
+		<meeting><address><addrLine>Windhoek</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-07-23">2024</date>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khan S, Almas B, Tariq N, Haq FU, Faisal A, Kumar P. Emotion recognition of human speech using different optimizer techniques. In: 2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC). Windhoek: IEEE (2024). p. 1-7. doi: 10.1109/ETNCC63262.2024.10767445</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Analysis Empowered with Deep Learning: A Review, Taxonomy, and Future Challenges</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Waqas</forename><surname>Nadeem</surname></persName>
+			<idno type="ORCID">0000-0002-9195-9529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">A Al</forename><surname>Ghamdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muzammil</forename><surname>Hussain</surname></persName>
+			<idno type="ORCID">0000-0003-1288-7967</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Adnan</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0003-4854-9935</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khalid</forename><forename type="middle">Masood</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-9121-0358</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sultan</forename><forename type="middle">H</forename><surname>Almotiri</surname></persName>
+			<idno type="ORCID">0000-0003-1594-9115</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suhail</forename><forename type="middle">Ashfaq</forename><surname>Butt</surname></persName>
+			<idno type="ORCID">0000-0002-4605-9265</idno>
+		</author>
+		<idno type="DOI">10.3390/brainsci10020118</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Sciences</title>
+		<title level="j" type="abbrev">Brain Sciences</title>
+		<idno type="ISSNe">2076-3425</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">118</biblScope>
+			<date type="published" when="2020-02-22">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nadeem MW, Ghamdi MAA, Hussain M, Khan MA, Khan KM, Almotiri SH, et al. Brain tumor analysis empowered with deep learning: a review, taxonomy, and future challenges. Brain Sci. (2020) 10:118. doi: 10.3390/brainsci10020118</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Optimized attention-based lightweight CNN using particle swarm optimization for brain tumor classification</title>
+		<author>
+			<persName><forename type="first">Okan</forename><surname>Guder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasemin</forename><surname>Cetin-Kaya</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2024.107126</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page">107126</biblScope>
+			<date type="published" when="2025-02">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guder O, Cetin-Kaya Y. Optimized attention-based lightweight CNN using particle swarm optimization for brain tumor classification. Biomed Signal Process Control. (2025) 100:107126. doi: 10.1016/j.bspc.2024.107126</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Advancing Brain Tumor Analysis: Current Trends, Key Challenges, and Perspectives in Deep Learning-Based Brain MRI Tumor Diagnosis</title>
+		<author>
+			<persName><forename type="first">Namya</forename><surname>Musthafa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qurban</forename><forename type="middle">A</forename><surname>Memon</surname></persName>
+			<idno type="ORCID">0000-0003-4129-3025</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">M</forename><surname>Masud</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/eng6050082</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eng</title>
+		<title level="j" type="abbrev">Eng</title>
+		<idno type="ISSNe">2673-4117</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">82</biblScope>
+			<date type="published" when="2025-04-22">2025</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Musthafa N, Memon QA, Masud MM. Advancing brain tumor analysis: current trends, key challenges, and perspectives in deep learning-based brain MRI Tumor diagnosis. Eng. (2025) 6:82. doi: 10.3390/eng6050082</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A secure hybrid deep learning framework for brain tumor detection and classification</title>
+		<author>
+			<persName><forename type="first">Sandeep</forename><forename type="middle">Kumar</forename><surname>Mathivanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saravanan</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manjula</forename><forename type="middle">Sanjay</forename><surname>Koti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Virendra</forename><forename type="middle">Singh</forename><surname>Kushwah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rose</forename><forename type="middle">Bindu</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohd</forename><forename type="middle">Asif</forename><surname>Shah</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40537-025-01117-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Big Data</title>
+		<title level="j" type="abbrev">J Big Data</title>
+		<idno type="ISSNe">2196-1115</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">72</biblScope>
+			<date type="published" when="2025-03-24">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mathivanan SK, Srinivasan S, Koti MS, Kushwah VS, Joseph RB, Shah MA. A secure hybrid deep learning framework for brain tumor detection and classification. J Big Data. (2025) 12:72. doi: 10.1186/s40537-025-01117-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Detecting Brain Tumor using Machines Learning Techniques Based on Different Features Extracting Strategies</title>
+		<author>
+			<persName><forename type="first">Lal</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharjil</forename><surname>Saeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Imtiaz</forename><forename type="middle">Ahmed</forename><surname>Awan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Idris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Malik</forename><forename type="middle">Sajjad Ahmed</forename><surname>Nadeem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qurat-Ul-Ain</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<idno type="DOI">10.2174/1573405614666180718123533</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Medical Imaging Formerly Current Medical Imaging Reviews</title>
+		<title level="j" type="abbrev">CMIR</title>
+		<idno type="ISSN">1573-4056</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="595" to="606" />
+			<date type="published" when="2019-07-05">2019</date>
+			<publisher>Bentham Science Publishers Ltd.</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hussain L, Jafar A, Khan A, Idris A, Nadeem MSA, Chaudhry QU. Detecting brain tumor using machine learning techniques based on different feature extracting strategies. Curr Med Imaging. (2019) 15:595-606. doi: 10.2174/1573405614666180718123533</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Multigrade Brain Tumor Classification in Smart Healthcare Systems: A Prospective Survey</title>
+		<author>
+			<persName><forename type="first">Khan</forename><surname>Muhammad</surname></persName>
+			<idno type="ORCID">0000-0002-5302-1150</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-9706-4005</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><forename type="middle">Del</forename><surname>Ser</surname></persName>
+			<idno type="ORCID">0000-0002-1260-9775</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">Hugo C De</forename><surname>Albuquerque</surname></persName>
+			<idno type="ORCID">0000-0003-3886-4309</idno>
+		</author>
+		<idno type="DOI">10.1109/tnnls.2020.2995800</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Neural Networks and Learning Systems</title>
+		<title level="j" type="abbrev">IEEE Trans. Neural Netw. Learning Syst.</title>
+		<idno type="ISSN">2162-237X</idno>
+		<idno type="ISSNe">2162-2388</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="507" to="522" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Muhammad K, Sharif M, Anjum A, Albuquerque VHC. Deep learning for multigrade brain tumor classification in smart healthcare systems: a prospective survey. IEEE Trans Neural Netw Learn Syst. (2020) 32:507-22. doi: 10.1109/TNNLS.2020.2995800</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Detection and classification of glioma, meningioma, pituitary tumor, and normal in brain magnetic resonance imaging using deep learning-based hybrid model</title>
+		<author>
+			<persName><forename type="first">Muhammed</forename><surname>Yildirim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emine</forename><surname>Cengil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yeşim</forename><surname>Eroglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmet</forename><surname>Cinar</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42044-023-00139-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Iran Journal of Computer Science</title>
+		<title level="j" type="abbrev">Iran J Comput Sci</title>
+		<idno type="ISSN">2520-8438</idno>
+		<idno type="ISSNe">2520-8446</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="455" to="464" />
+			<date type="published" when="2023-03-21">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yildirim M, Cengil E, Eroglu Y, Cinar A. Detection and classification of glioma, meningioma, pituitary tumor, and normal in brain magnetic resonance imaging using deep learning-based hybrid model. Iran J Comput Sci. (2023) 6:455-64. doi: 10.1007/s42044-023-00139-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An attention-fused architecture for brain tumor diagnosis</title>
+		<author>
+			<persName><forename type="first">Arash</forename><surname>Hekmat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zuping</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saif</forename><surname>Ur Rehman Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ifza</forename><surname>Shad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omair</forename><surname>Bilal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2024.107221</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page">107221</biblScope>
+			<date type="published" when="2025-03">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hekmat A, Zhang Z, Khan SUR, Shad I, Bilal O. An attention-fused architecture for brain tumor diagnosis. Biomed Signal Process Control. (2025) 101:107221. doi: 10.1016/j.bspc.2024.107221</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">ARM-Net: Attention-guided residual multiscale CNN for multiclass brain tumor classification using MR images</title>
+		<author>
+			<persName><forename type="first">Tapas</forename><forename type="middle">Kumar</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deepak</forename><forename type="middle">Ranjan</forename><surname>Nayak</surname></persName>
+			<idno type="ORCID">0000-0002-8929-5778</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Dong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-4870-1493</idno>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2023.105421</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page">105421</biblScope>
+			<date type="published" when="2024-01">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dutta TK, Nayak DR, Zhang Y. ARM-Net: Attention-guided residual multiscale CNN for multiclass brain tumor classification using MR images. Biomed Signal Process Control. (2024) 87:105421. doi: 10.1016/j.bspc.2023.105421</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">VITALT: a robust and efficient brain tumor detection system using vision transformer with attention and linear transformation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Poornam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jjr</forename><forename type="middle">Jane Rubel</forename><surname>Angelina</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00521-023-09306-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computing and Applications</title>
+		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
+		<idno type="ISSN">0941-0643</idno>
+		<idno type="ISSNe">1433-3058</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="6403" to="6419" />
+			<date type="published" when="2024-02-22">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Poornam S, Angelina JJR. VITALT: a robust and efficient brain tumor detection system using vision transformer with attention and linear transformation. Neural Comput Appl. (2024) 36:6403-19. doi: 10.1007/s00521-023-09306-1</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">GGLA-NeXtE2NET: A Dual-Branch Ensemble Network With Gated Global-Local Attention for Enhanced Brain Tumor Recognition</title>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Saeed</surname></persName>
+			<idno type="ORCID">0009-0001-7018-7646</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khurram</forename><surname>Shehzad</surname></persName>
+			<idno type="ORCID">0000-0002-7129-5876</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shahzad</forename><forename type="middle">Sarwar</forename><surname>Bhatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saim</forename><surname>Ahmed</surname></persName>
+			<idno type="ORCID">0000-0002-2302-705X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmad</forename><forename type="middle">Taher</forename><surname>Azar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2025.3525518</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="7234" to="7257" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saeed A, Shehzad K, Bhatti SS, Ahmed S, Azar AT. GGLA-NeXtE2NET: a dual- branch ensemble network with gated global-local attention for enhanced brain tumor recognition. IEEE Access. (2025) 13:1. doi: 10.1109/ACCESS.2025.3525518</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Glioma Brain Tumor Grade Classification from MRI Using Convolutional Neural Networks Designed by Modified FA</title>
+		<author>
+			<persName><forename type="first">Timea</forename><surname>Bezdan</surname></persName>
+			<idno type="ORCID">0000-0001-6938-6974</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Miodrag</forename><surname>Zivkovic</surname></persName>
+			<idno type="ORCID">0000-0002-4351-068X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eva</forename><surname>Tuba</surname></persName>
+			<idno type="ORCID">0000-0003-4866-9048</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivana</forename><surname>Strumberger</surname></persName>
+			<idno type="ORCID">0000-0002-1154-6696</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nebojsa</forename><surname>Bacanin</surname></persName>
+			<idno type="ORCID">0000-0002-2062-924X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Tuba</surname></persName>
+			<idno type="ORCID">0000-0003-3794-3056</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-51156-2_111</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Intelligent Systems and Computing</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020-07-11">2020</date>
+			<biblScope unit="page" from="955" to="963" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bezdan T, Zivkovic M, Tuba E, Strumberger I, Bacanin N, Tuba M. Glioma brain tumor grade classification from MRI using convolutional neural networks designed by modified FA. In: International Conference on Intelligent and Fuzzy Systems. Cham: Springer (2020). p. 955-63. doi: 10.1007/978-3-030-51156-2_111</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Optimizing Convolutional Neural Network by Hybridized Elephant Herding Optimization Algorithm for Magnetic Resonance Image Classification of Glioma Brain Tumor Grade</title>
+		<author>
+			<persName><forename type="first">Timea</forename><surname>Bezdan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Milosevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miodrag</forename><surname>Zivkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nebojsa</forename><surname>Bacanin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivana</forename><surname>Strumberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/zinc52049.2021.9499297</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 Zooming Innovation in Consumer Technologies Conference (ZINC)</title>
+		<meeting><address><addrLine>Novi Sad</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-05-26">2021. 2021</date>
+			<biblScope unit="page" from="171" to="176" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bezdan T, Milosevic S, Zivkovic M, Bacanin N, Strumberger I, et al. Optimizing convolutional neural network by hybridized elephant herding optimization algorithm for magnetic resonance image classification of glioma brain tumor grade. In: 2021 Zooming Innovation in Consumer Technologies Conference (ZINC). Novi Sad: IEEE (2021). p. 171-6. doi: 10.1109/ZINC52049.2021.9499297</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">YOLOv8 Utilization in Occupational Health and Safety</title>
+		<author>
+			<persName><forename type="first">Pavle</forename><surname>Jankovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihajlo</forename><surname>Protić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luka</forename><surname>Jovanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nebojsa</forename><surname>Bacanin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miodrag</forename><surname>Zivkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jelena</forename><surname>Kaljevic</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/zinc61849.2024.10579310</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 Zooming Innovation in Consumer Technologies Conference (ZINC)</title>
+		<meeting><address><addrLine>Novi Sad</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-05-22">2024</date>
+			<biblScope unit="page" from="182" to="187" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jankovic P, Protić M, Jovanovic L, Bacanin N, Zivkovic M, Kaljevic J. Yolov8 utilization in occupational health and safety. In: 2024 Zooming Innovation in Consumer Technologies Conference (ZINC). Novi Sad: IEEE (2024). p. 182-7. doi: 10.1109/ZINC61849.2024.10579310</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Class Detection in Flair/T2 Modality MRI Slices Using Elephant-Herd Algorithm Optimized Features</title>
+		<author>
+			<persName><forename type="first">Venkatesan</forename><surname>Rajinikanth</surname></persName>
+			<idno type="ORCID">0000-0003-3897-4460</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pdr</forename><forename type="middle">M Durai Raj</forename><surname>Vincent</surname></persName>
+			<idno type="ORCID">0000-0002-7598-1363</idno>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">N</forename><surname>Gnanaprakasam</surname></persName>
+			<idno type="ORCID">0000-0002-1449-7818</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kathiravan</forename><surname>Srinivasan</surname></persName>
+			<idno type="ORCID">0000-0002-9352-0237</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chuan-Yu</forename><surname>Chang</surname></persName>
+			<idno type="ORCID">0000-0001-9476-8130</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13111832</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1832</biblScope>
+			<date type="published" when="2023-05-23">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rajinikanth V, Vincent PDR, Gnanaprakasam C, Srinivasan K, Chang CY. Brain tumor class detection in flair/T2 modality MRI slices using elephant-herd algorithm optimized features. Diagnostics. (2023) 13:1832. doi: 10.3390/diagnostics13111832</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A hybrid deep CNN model for brain tumor image multi-classification</title>
+		<author>
+			<persName><forename type="first">Saravanan</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Divya</forename><surname>Francis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandeep</forename><forename type="middle">Kumar</forename><surname>Mathivanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hariharan</forename><surname>Rajadurai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Basu</forename><forename type="middle">Dev</forename><surname>Shivahare</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohd</forename><forename type="middle">Asif</forename><surname>Shah</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-024-01195-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2024-01-19">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Srinivasan S, Francis D, Mathivanan SK, Rajadurai H, Shivahare BD, Shah MA. A hybrid deep CNN model for brain tumor image multi-classification. BMC Med Imaging. (2024) 24:21. doi: 10.1186/s12880-024-01195-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">YOLOv8 Model Architecture Selection for Human Fall Detection</title>
+		<author>
+			<persName><forename type="first">Tamara</forename><surname>Zivkovic</surname></persName>
+			<idno type="ORCID">0000-0003-2969-1709</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Miodrag</forename><surname>Zivkovic</surname></persName>
+			<idno type="ORCID">0000-0002-4351-068X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luka</forename><surname>Jovanovic</surname></persName>
+			<idno type="ORCID">0000-0001-9402-7391</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jelena</forename><surname>Kaljevic</surname></persName>
+			<idno type="ORCID">0000-0002-5135-8083</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Milos</forename><surname>Dobrojevic</surname></persName>
+			<idno type="ORCID">0000-0003-3798-312X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nebojsa</forename><surname>Bacanin</surname></persName>
+			<idno type="ORCID">0000-0002-2062-924X</idno>
+		</author>
+		<idno type="DOI">10.1007/978-981-96-3372-2_15</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Networks and Systems</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Singapore</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="219" to="227" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zivkovic T, Zivkovic M, Jovanovic L, Kaljevic J, Dobrojevic M, Bacanin N. YOLOv8 model architecture selection for human fall detection. In: International Conference on Data Analytics and Management. Cham: Springer (2024). p. 219-27. doi: 10.1007/978-981-96-3372-2_15</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Squeeze-and-Excitation Networks</title>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00745</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<meeting><address><addrLine>Salt Lake City, UT</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">2018</date>
+			<biblScope unit="page" from="7132" to="7141" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hu J, Shen L, Sun G. Squeeze-and-excitation networks. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. Salt Lake City, UT: IEEE (2018). p. 7132-41. doi: 10.1109/CVPR.2018.00745</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">CBAM: Convolutional Block Attention Module</title>
+		<author>
+			<persName><forename type="first">Sanghyun</forename><surname>Woo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jongchan</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joon-Young</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">In</forename><forename type="middle">So</forename><surname>Kweon</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-01234-2_1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="3" to="19" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Woo S, Park J, Lee JY, Kweon IS. CBAM: convolutional block attention module. In: Proceedings of the European conference on Computer Vision (ECCV). Cham: Springer (2018). p. 3-19. doi: 10.1007/978-3-030-01234-2_1</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

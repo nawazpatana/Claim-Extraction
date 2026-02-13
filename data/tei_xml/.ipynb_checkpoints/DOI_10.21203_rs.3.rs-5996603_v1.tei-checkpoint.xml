@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">pathoDISCO-HE: Towards light sheet microscopy enabled volumetric histopathology of human gliomas</title>
+				<funder ref="#_RUN6rvX #_TF8mjcB">
+					<orgName type="full">Austrian Science Fund (FWF)</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">German BMBF project 3Dpatho</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-02-19">February 19th, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">James</forename><surname>Oakes-Klein</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Thomas</forename><surname>Roetzer-Pejrimovsky</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Christoph</forename><surname>Fuchssteiner</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Katherina</forename><surname>Grin</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Barbara</forename><surname>Kiesel</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lisa</forename><surname>Körner</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Adelheid</forename><surname>Wöhrer</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hans-Ulrich</forename><surname>Dodt</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Vienna University of Technology Saiedeh Sagha Vienna University of Technology - Pejrimovsky Medical University of Vienna Christoph Fuchssteiner Medical University of Vienna Medical University of Vienna Medical University of Vienna Medical University of Vienna Adelheid Wöhrer Medical University of Vienna Medical University of Vienna Vienna University of Technology</note>
+								<orgName type="institution" key="instit1">Vienna University of Technology Saiedeh Sagha Vienna University of Technology</orgName>
+								<orgName type="institution" key="instit2">Pejrimovsky Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit3">Christoph Fuchssteiner Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit4">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit5">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit6">Medical University of Vienna Adelheid Wöhrer Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit7">Medical University of Vienna</orgName>
+								<orgName type="institution" key="instit8">Vienna University of Technology</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">pathoDISCO-HE: Towards light sheet microscopy enabled volumetric histopathology of human gliomas</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<date type="published" when="2025-02-19">February 19th, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7D2A8052097CD429F5D5712CA17A6306</idno>
+					<idno type="DOI">10.21203/rs.3.rs-5996603/v1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-08T08:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>tissue clearing</term>
+					<term>cancer</term>
+					<term>tumour</term>
+					<term>light sheet</term>
+					<term>microscopy</term>
+					<term>histology</term>
+					<term>glioma</term>
+					<term>glioblastoma</term>
+					<term>histopathology</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Histopathological assessment of human tumours relies heavily upon traditional slide-based techniques such as H&amp;E staining and immunohistochemistry. Whilst providing excellent resolution, traditional histological techniques require destruction of the specimen and do not provide details of threedimensional tissue architecture. Glioblastomas are amongst the most spatially heterogeneous of human tumours, making them a prime target for the growing eld of volumetric histopathology. Tissue clearing and light sheet microscopy are complementary technologies allowing high-resolution volumetric imaging of biological specimens. In this study we aimed to explore the possibility of using these techniques as tools for volumetric histopathology of human gliomas. Starting with the previously published pathoDISCO protocol, we added pigment bleaching and uorescent nuclear labelling stages to develop a protocol capable of clearing glioma specimens up to several millimetres thick within a few days. Using cresyl violet as a nuclear label and auto uorescence as an eosin analogue we were able to produce realistic "virtual H&amp;E" images using a simple image post-processing pipeline. Virtual H&amp;E images accurately represented several key pathological features of gliomas including necrosis, hypercellularity, microvascular proliferations and glomeruloid and garland vascular structures. The virtual H&amp;E images can be viewed three dimensionally with only limited loss of resolution in zprojections. The volumetric imaging data could also be visualised by maximum intensity projection, allowing tracing of vascular structures throughout the tissue and identi cation of discrete zones of differing cellular or vascular density. Finally, we showed that our virtual H&amp;E protocol is reversible and post-hoc traditional histology can be applied if necessary.</p><p>Overall, our study represents a novel contribution to the palette of volumetric histopathology techniques which may eventually allow more accurate and detailed characterisation of human tumours, thus facilitating more accurate diagnosis and prognosis and selection of the most effective personalised therapies, potentially improving patient outcomes.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Malignant primary brain tumours affect 7 in 100000 people per year and 80-85% are gliomas <ref type="bibr" target="#b27">(Schaff and Mellinghoff 2023)</ref>. Gliomas arise from the many types of glial cells, meaning that there is also a diverse range of glioma types including astrocytomas, oligodendrogliomas and others. Glioma classi cation is based on the WHO Classi cation of Tumours of the CNS <ref type="bibr" target="#b15">(Louis et al. 2021)</ref>. Less aggressive tumours are graded 1 or 2 (low grade) whereas more aggressive tumours are graded 3 or 4 (high grade). High-grade gliomas are associated with poor prognosis and include astrocytoma (grade 3 or 4), oligodendroglioma (grade 3 and glioblastoma (grade 4) <ref type="bibr" target="#b33">(Wang et al. 2023</ref>).</p><p>Imaging of gliomas in situ is performed predominately by using magnetic resonance imaging. This imaging provides information relating to the size and location of the lesion and rst estimations if the glioma is low-grade or high-grade. Following neurosurgical biopsy or surgical resection tumours are classi ed using speci c histopathological and molecular techniques (Perry and Wesseling 2016).</p><p>Histopathological analysis of tumours relies on laborious mechanical sectioning of samples and haematoxylin and eosin staining. Whilst this technique provides excellent resolution, there are also several drawbacks, including scoring or destruction of sections. In addition, traditional techniques are limited by a vast under-sampling factor. For example, sectioning of a 1cm thick tumour specimen at 5µm would result in production of 2000 sections; realistically, only a small number of these are examined, meaning that important histological features may be missed. This may present a particular problem for accurate characterisation of glioblastomas which can be spatially heterogenous even within a single lesion <ref type="bibr" target="#b33">(Wang et al. 2023</ref>).</p><p>The eld of tissue clearing is concerned with transforming a tissue specimen from its opaque native state to a state of optical transparency, primarily to allow examination using optical sectioning microscopy techniques such as light sheet microscopy (selective plane illumination microscopy) and confocal microscopy, usually combined with uorescent labelling. This is a promising emerging technique for digital histological characterisation of intact tumour specimens. This approach overcomes the problems associated with traditional histology techniques as specimens can be processed without sectioning; instead, optical sections are collected by light sheet microscopy. This approach has the added bene t that specimens can be prepared rapidly and 100s-1000s of optical sections can be produced and analysed quickly (Sabdyusheva <ref type="bibr" target="#b22">Litschauer et al. 2020)</ref>. Previous studies have presented techniques for clearing and virtual histopathology of several different pathologies, including prostate, bladder, ovarian and breast cancers, lymphoma and lung amyloidosis <ref type="bibr">(Glaser et</ref> al. 2017; Nojima et al. 2017; Reder et al. 2019; Tanaka et al. 2018; Tanaka et al. 2017).</p><p>Hydrophilic CUBIC clearing, uorescent labelling and 3D microscopy techniques allowed imaging of various pathologies, allowing identi cation of nuclear atypia in lymphoma specimens and amyloid deposits in lung amyloidosis. Perhaps most importantly, this study demonstrated that a combination of 3D histopathology and traditional sectioning-based techniques was more sensitive at detecting metastatic colorectal adenocarcinoma nodules in lymph nodes than traditional sectioning-based techniques alone. This nding is very important for the emerging eld of 3D histopathology, as it con rms that the technique can improve diagnosis and in turn is likely to be bene cial in terms of patient outcomes <ref type="bibr" target="#b16">(Nojima et al. 2017</ref>).</p><p>The hydrogel embedding CLARITY protocol was used to clear prostate core needle biopsies; the specimens were stained with the uorescent nuclear label DRAQ5 and eosin and imaged on an open-top light sheet microscopy system. The resulting data was processed to produce images similar to standard haematoxylin and eosin preparations, allowing histopathological evaluation <ref type="bibr" target="#b9">(Glaser et al. 2017)</ref>. A bene t of this "virtual haematoxylin and eosin" approach is that the resulting images can be analysed by any neuropathologist, not necessarily by a specialist in uorescence microscopy data. Some progress has already been made towards characterisation of brain tumours using tissue clearing and 3D microscopy techniques. Combination of iDISCO + and CUBIC tissue clearing with two-photon and confocal microscopy respectively allowed visualisation and morphological characterisation of some brain tumour features. Immunolabelling was utilised to visualise astrocytes (GFAP) in glioblastoma specimens, whereas SOX2, CD31 and CD45 were used to characterise stemness, microvascular proliferation and immune in ltration respectively <ref type="bibr" target="#b34">(Xu et al. 2023;</ref><ref type="bibr" target="#b35">Yang et al. 2020)</ref>.</p><p>Whilst surface imaging by light sheet microscopy without tissue clearing is a possibility <ref type="bibr" target="#b8">(Gao et al. 2023)</ref>, for imaging the entirety of large specimens it is absolutely essential that a robust tissue clearing method is employed. Our group recently published the rst method (pathoDISCO) for rapid, active dehydration of tumour samples (Sabdyusheva <ref type="bibr" target="#b22">Litschauer et al. 2020</ref>). Instead of relying on passive diffusion for dehydration, this technique employs the water scavenging compound 2,2dimethoxypropane (DMP) which actively reacts with water to produce methanol and acetone, resulting in extremely rapid dehydration.</p><p>The original pathoDISCO technique relies on imaging of auto uorescence. This method produced samples adequately clear for high-resolution light sheet microscopy and subsequent visualisation allowed identi cation of a range of characteristic breast tumour features. However, there are several limitations to this technique. For example, due to the non-speci c nature of auto uorescence imaging, visualisation tends to be somewhat monochromatic and lacks the contrast observed with standard histopathological techniques. In addition to this, histopathologists are unlikely to be accustomed to reviewing tumour morphology visualised by auto uorescence imaging alone; a signi cant barrier to introducing the technique to the clinic (Sabdyusheva <ref type="bibr" target="#b22">Litschauer et al. 2020)</ref>.</p><p>In this article, we report the development of an improved method for 3D histopathology utilising rapid tissue dehydration. In this method, called pathoDISCO-HE, we combine rapid tissue clearing of glioma specimens and uorescent labelling of nuclei. Following lightsheet microscopy imaging we applied a colour channel combining algorithm to produce virtual H&amp;E sections with similar colours and hues as traditional haematoxylin and eosin staining. Virtual H&amp;E processed image stacks can be viewed volumetrically from any angle, with only limited loss of resolution in z-projections. Volumetric data can also be rendered by maximum intensity projection, allowing visualisation of spatial heterogeneity of vascular structures and nuclei distribution.</p><p>Overall, this technique builds upon previous studies working towards realising the use of 3D histopathology techniques in clinical settings. pathoDISCO-HE can clear larger tumour specimens more quickly than previous techniques and this is important in 3D histopathology eld.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample collection and ethical approval</head><p>In the present study, tumor samples from resection of newly diagnosed or recurrent suspected diffusely in ltrating gliomas (CNS WHO grades <ref type="bibr">[2]</ref><ref type="bibr">[3]</ref><ref type="bibr" target="#b3">[4]</ref> were collected at the Department for Neurosurgery, Medical University of Vienna. After su cient material for routine neuropathological analyses had been collected, residual tumor samples were formalin xed and immediately transferred for further work-up to the Center for Brain Research, Medical University of Vienna. The histopathological diagnosis of each included tumor was made by the local neuropathology team according to the latest WHO classi cation (5th edition, 2021). A detailed list of included tumor diagnoses is provided in Table 1. The study was approved by the ethics committee of the Medical University of Vienna. Sample preparation, staining and rapid tissue clearing Collected samples were bleached using a strategy similar to the previously published iDISCO protocol (Renier et al. 2014). Following brief washing in PBS, samples were dehydrated in a methanol/PBS gradient (0%, 0%, 50%, 70%, 90%, 100%, 100%, room temperature, 1hr per step) before bleaching in 2-5% H 2 O 2 in methanol at 4°C overnight (methanol: Sigma-Aldrich, 32213; Dulbecco's PBS: 2.68mM KCl, 1.47mM KH 2 PO 4 , 428 136.89mM NaCl, 8.10mM Na 2 HPO 4 , pH7.4; H 2 O 2 : Carl Roth, 0034). Afterwards, samples were rehydrated in methanol-PBS gradient (reverse of above). The necessity of bleaching depends on the pigmentation of the sample, bleaching can be entirely omitted for samples which appear lightly or non-pigmented (as non-pathological brain tissue) whereas 5% H 2 O 2 is required for more heavily pigmented samples. For a standard protocol 5% H 2 O 2 is recommended as this gives the best bleaching </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Light sheet microscopy</head><p>Following refractive index matching, samples were mounted in a vascular clamp in an optical glass cuvette lled with DBE. This study used a previously described custom light sheet microscope. For light sheet generation we utilised an optical system developed as a continuation of our previous work with a modi ed optical design to produce a light sheet with optimised characteristics <ref type="bibr">(Foroughipour et</ref> al. 2024; Sagha et al. 2022; Sagha et al. 2014; Sagha et al. 2010; <ref type="bibr" target="#b26">Sagha et al. 2018</ref>). In the most recent version of this system the mirror system has been replaced with bre optics (Omicron, Germany) and an automated XY stage has been added (Thor Labs, USA). A refractive index corrected XLFluor-340 NA 0.28 4x objective (Zeiss, Germany) and a 16x Fluotar NA 0.6 immersion objective (Leica, Germany) were used for image acquisition. Cresyl violet uorescence was captured using the 532nm illumination laser with a 620/52nm bandpass lter whereas auto uorescence was recorded using the 488nm laser with a 525/50nm bandpass lter. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Image processing and visualisation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Histological staining and immunohistochemistry</head><p>Subsequent to clearing and light sheet imaging, specimens #4-13 were rehydrated in a graded methanol series and washed in PBS. Specimens were processed and embedded in para n using standard techniques followed by microtome sectioning at 5µm. For H&amp;E staining sections were dewaxed in xylene and rehydrated in a graded ethanol series before nuclear staining in Mayer's haematoxylin (Merck #1.09249). Sections were rinsed in tap water, differentiated in HCl-ethanol (70% ethanol + 0.5% v/v concentrated (37%) HCl) and blued in Scott's solution (dH 2 O + 0.2% w/v KHCO 3 + 2% w/v MgSO 4 .7H 2 O).</p><p>After further rinsing in tap water, sections were stained in aqueous eosin, dehydrated in a graded ethanol series, and cleared in n-butyl acetate. Sections were mounted with DPX. H&amp;E stained slides were imaged on a Zeiss Axioplan compound microscope. For Klüver-Barrera staining sections were dewaxed in xylene and rehydrated to 95% ethanol. Sections were incubated in luxol fast blue solution (0.1% w/v in 95% ethanol) at 60°C overnight. After cooling, sections were fully rehydrated and differentiated in 0.05% w/v lithium carbonate. Sections were then stained with cresyl violet (0.1%w/v in dH 2 O + 20 drops of 10% acetic acid) for 5-10mins at 60°C. Sections were differentiated in 95% ethanol, dehydrated twice in 100% ethanol and cleared in xylene. Sections were mounted using Entellan New (Merck #1.07961) and imaged on an Olympus VS ASW S6 slide scanning microscope. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Development of pathoDISCO-HE</head><p>The pathoDISCO-HE protocol combines aspects of the original pathoDISCO protocol and the iDISCO protocol <ref type="bibr" target="#b21">(Renier et al. 2014</ref>; Sabdyusheva Litschauer et al. 2020). Initial experimentation revealed that glioblastoma specimens could not be adequately cleared by the original pathoDISCO protocol, which was optimised for clearing of breast tumour tissues. In our experience, glioblastoma specimens exhibited darker pigmentation than breast tumour specimens and as such we reasoned that addition of a bleaching or decolourisation procedure could be necessary. This led us to the addition of a hydrogen peroxide bleaching stage performed immediately after xation of the tissue. This bleaching stage was performed in a similar way to the iDISCO protocol; this involves dehydrating the tissue in a methanol gradient and bleaching using a solution consisting of hydrogen peroxide diluted in methanol <ref type="bibr" target="#b21">(Renier et al. 2014</ref>). With addition of the bleaching stage we were able to clear specimens up to a thickness of several millimetres (Fig. <ref type="figure" target="#fig_4">1</ref>).</p><p>In order to facilitate virtual H&amp;E labelling by uorescence microscopy it was essential to nd a uorescent nuclear label effective in glioblastoma tissue and compatible with our clearing protocol. We found cresyl violet, well-known to neurobiologists as a uorescent Nissl stain, to be an adequate nuclear label in glioblastoma specimens (Alvarez-Buylla et al. 1990) (Fig. <ref type="figure" target="#fig_4">1</ref>). Although usually performing excellently, occasional problems were encountered; for example, larger specimens sometimes exhibited incomplete dye penetration and highly dense samples were sometimes over-stained, reducing the quality of light sheet imaging. Measurement of the maximum imaging depth at which nuclei could still be visualised across the eld of view in all recordings revealed a median maximum depth of 755µm (range:</p><p>153-2082µm, n = 27). Analysis of light sheet images from specimens which were incompletely labelled allowed us to determine that the median penetration depth of cresyl violet was 522µm (range: 240-802µm, n = 9). The stain penetration and possible imaging depth is dependent on various parameters including specimen size and structure, depigmentation e ciency and cellular density.</p><p>Cleared and stained specimens were imaged by light sheet microscopy and images post-processed using a straightforward pipeline (Fig. <ref type="figure" target="#fig_4">1</ref>). Samples were imaged using two illumination and emission wavelength combinations. Cresyl violet uorescence was imaged using a 532nm excitation laser combined with a 620/52nm bandpass emission lter. Auto uorescence was used as an eosin analogue and was recorded using a 488nm excitation laser combined with a 525/50nm bandpass emission lter.</p><p>The resulting stacks were subsequently post-processed using NeuroDeblur (MBF Biosciences) and Fiji <ref type="bibr" target="#b12">(Hörl et al. 2019;</ref><ref type="bibr" target="#b28">Schindelin et al. 2012)</ref>. Nuclear segmentation was performed using rolling ball background subtraction, achieving adequate results in most cases. Some specimens exhibited a comparatively poor signal-to-noise ratio in the nuclear labelling channel, and nuclear segmentation by rolling ball background subtraction was found to be ineffective. Instead, these poor signal-to-noise ratio specimens were subjected to local contrast normalisation and FFT bandpass ltering, this approach yielded acceptable nuclear segmentation but with a qualitatively reduced resolution. A schematic of the image processing pipeline employed in this study is provided in Fig. <ref type="figure" target="#fig_4">1C</ref>.</p><p>Following image post-processing, the grayscale images were used to produce virtual H&amp;E stained optical sections. NeuroDeblur includes a "colour channel combiner" plugin which can perform additive or subtractive colour mixing, in this study the "virtual-HE staining" preset was utilised. The graphical interface allows the user to load nuclear and cytoplasm stacks, apply intensity thresholds, and adjust RGB colour and colour balance (Fig. <ref type="figure" target="#fig_4">1D</ref>). This approach allowed us to process light sheet uorescence microscopy images to mimic staining produced by standard histological techniques.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>pathoDISCO-HE allows identi cation of characteristic histological features of gliomas</head><p>In order to test our pathoDISCO-HE protocol we processed residual specimens from a number of patients, mainly with glioblastoma diagnoses, but also from two patients with grade 2 and grade 3 astrocytomas (Table <ref type="table" target="#tab_3">1</ref>). Application of the protocol to glioblastoma specimens and subsequent virtual H&amp;E visualisation allowed identi cation of many characteristic features (Fig. <ref type="figure">2</ref>).</p><p>Nuclear labelling with cresyl violet allowed observation of nuclear density which ranged from relatively sparse (Fig. <ref type="figure">2F</ref> + J) to highly dense (Fig. <ref type="figure">2H</ref>,I,S). Varying cell types and nuclear morphology could be observed, with nuclei varying widely in size and shape. Cells with a neuronal morphology could be occasionally observed (Fig. <ref type="figure">2E</ref>,F,N,P). In some samples, especially when a low magni cation objective with a wide eld-of-view was utilised, the in ltrating border could be visualised (Fig. <ref type="figure">2G + M</ref>). When using a high magni cation objective nuclear chromatin structure could be observed (Fig. <ref type="figure">2D</ref>). One specimen exhibited a characteristic spindle cell appearance (Fig. <ref type="figure">2H</ref>).</p><p>Gliomas are frequently accompanied by various characteristic vascular features. Information relating to tumour vasculature was provided by the auto uorescence channel, used as an eosin analogue. The most frequently observed vascular transformation was microvascular proliferation (Fig. <ref type="figure">2A</ref>,<ref type="figure">C</ref>,G,M,Q).</p><p>Glomeruloid and garland-like vascular structures were only observed in one specimen each (Fig. <ref type="figure">2Q</ref>,<ref type="figure">R</ref>,<ref type="figure">W</ref>). Additional pathological features such as necrosis (Fig. <ref type="figure">2A</ref>,<ref type="figure">C</ref>,<ref type="figure">U</ref>) and microcystic spaces (Fig. <ref type="figure">2J</ref> + O) were also observed. Example virtual H&amp;E images from each processed specimen are provided in Additional File 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Volumetric histopathology by 3D visualisation of light sheet microscopy data</head><p>Following image post-processing and virtual H&amp;E rendering, we assessed the suitability of our data sets for 3D visualisation (Fig. <ref type="figure" target="#fig_5">3</ref>). The ability to view data in three dimensions is a major bene t of our approach, as it allows the specimen to be viewed from any angle or at any depth. In addition, some features such as vascular morphology cannot be easily assessed in standard two-dimensional histopathology. Data from each specimen was loaded into Amira 3D (Thermo Fisher Scienti c), both as virtual H&amp;E processed RGB images and as individual grayscale channels. The greyscale channels representing auto uorescence and cresyl violet staining were assigned green and red colourmaps respectively and visualised using maximum intensity projection.</p><p>3D rendering of virtual H&amp;E processed images allowed rapid inspection of the intact specimen by zooming through the XY and Z planes. Specimens often exhibited comparable or only slightly reduced resolution in the Z-planes compared to XY plane (Fig. <ref type="figure" target="#fig_5">3H</ref>,J,L,F,G,Q,R,U), however this was occasionally signi cantly lower (Additional le 1).</p><p>Blood vessels exhibit high levels of auto uorescence, allowing visualisation of the varied vascular structures present in glioblastoma specimens. This approach allowed identi cation of two distinct vascular signatures within a single glioblastoma specimen, namely garland vascular structures and an adjacent network of less densely packed vessels (Fig. <ref type="figure" target="#fig_5">3C</ref>). Elongated endothelial nuclei could be seen bordering the garland structures, which were also surrounded by highly dense tumour cells (Fig. <ref type="figure" target="#fig_5">3D + D'</ref>).</p><p>In another glioblastoma specimen a glomeruloid vessel could be traced over several millimetres (Fig. <ref type="figure" target="#fig_5">3E</ref>). The histological morphology of the glomeruloid vessel could be viewed in all axes with good resolution by virtual H&amp;E rendering (Fig. <ref type="figure" target="#fig_5">3F + G</ref>). Several glioblastoma specimens exhibited large vascular structures exhibiting high auto uorescence (Fig. <ref type="figure" target="#fig_5">3I</ref>,K,M,V).</p><p>Examination of 20µm thick virtual slices through the glioblastoma specimens allowed visualisation of sub-cellular structures such as neurites and chromatin (Fig. <ref type="figure" target="#fig_5">3N</ref>,<ref type="figure">N'</ref>,<ref type="figure">O</ref>,<ref type="figure">O'</ref>). The same approach allowed identi cation of discrete cellular zones comprising small nucleated tumour cells and larger cells of neuronal morphology (Fig. <ref type="figure" target="#fig_5">3P</ref>). In the neuronal-type cells cresyl violet signal overlapped somewhat with the auto uorescent signal, presumably due to accumulation of auto uorescent lipofuscins in the neuronal cell bodies <ref type="bibr" target="#b4">(Chang et al. 2023;</ref><ref type="bibr" target="#b10">Goyal 1982;</ref><ref type="bibr" target="#b19">Pesce et al. 2022)</ref>. A similar observation was made in another sample, however with highly discrete zones of cellular density rather than cell type (Fig. <ref type="figure" target="#fig_5">3T</ref>).</p><p>Further examples of 3D visualisation are provided in Additional le 1 and Supplementary videos 1-6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>pathoDISCO-HE is reversible and compatible with post-hoc standard histology and immunohistochemistry</head><p>Following pathoDISCO-HE processing, specimens were re-processed using standard histology techniques and H&amp;E staining to produce correlative images (Fig. <ref type="figure">4</ref>). Stained sections appeared normal and did not signi cantly differ from specimens not previously subjected to pathoDISCO-HE processing.</p><p>This result demonstrates that post-hoc standard histology can be performed following pathoDISCO-HE processing if required. Re-processing previously cleared and imaged specimens also allowed us to make a direct comparison of image quality in the two techniques. As expected, the resolution achieved in standard histology was slightly better than that observed using light sheet microscopy. In particular the hues of eosin staining were not always exactly recapitulated by light sheet auto uorescence imaging.</p><p>However, the main bene t of light sheet enabled volumetric histology over standard histology is the ability to image an intact specimen and visualise it in three-dimensions. Although this bene t comes at a slight cost in terms of resolution, a plethora of pathological features are accurately recapitulated in virtual-H&amp;E processed images. In particular, glomeruloid vascular structures are easily identi able (Fig. <ref type="figure">4E</ref>), as are microcystic spaces (Fig. <ref type="figure">4A + H</ref>) and hypercellular regions (Fig. <ref type="figure">4B + G</ref>). Some specimens, presumably from the tumour margin, contained both small glioma cells and cells with neuronal morphology; these cell types could easily be distinguished in virtual H&amp;E images</p><formula xml:id="formula_0">(Figure C + F).</formula><p>Immunohistochemistry forms a crucial part of modern histopathological pro ling. We tested the compatibility of our protocol with post hoc immunolabelling with a panel of glioma relevant antibodies comprising the tumour suppressor p53, the oligodendrocyte marker OLIG2, proliferation marker Ki-67, the astrocyte marker GFAP, mutant IDH1 protein (p.R132H), and the endothelial marker CD34 (Fig. <ref type="figure">5A-F</ref>).</p><p>In addition, we performed myelin staining by the Klüver-Barrera method -which may be performed if demyelinating disease is suspected (Fig. <ref type="figure">5G-H</ref>). IHC staining performed mainly as would be expected, however the nuclear staining with Ki-67 and OLIG2 were slightly fainter than usual. These results demonstrate compatibility of pathoDISCO-HE enabled 3D histopathology with subsequent immunolabelling.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this study we explored the possibilities of using tissue clearing and light sheet microscopy as tools for volumetric histopathology of gliomas. We developed a novel protocol capable of clearing and uorescently labelling nuclei in glioma specimens. This was followed by light sheet microscopy to recorded auto uorescence and nuclear uorescence, and eventually production of virtual H&amp;E reconstructions.</p><p>The Within the landscape of optical imaging techniques for histological characterisation of tumour specimens, light sheet microscopy occupies a unique position in terms of high resolution and the ability to image large intact specimens. A disadvantage is the relatively slow clearing process; in our protocol the clearing takes around two and a half days and the imaging and post-processing takes a further day.</p><p>Although this pipeline could be signi cantly automated and streamlined for largescale applications, the pathoDISCO-HE method is best suited for further development as a technique to be performed alongside traditional slide based histopathology, rather than an intraoperative technique.</p><p>In addition to H&amp;E staining the standard histological investigation of glioma specimens often also includes immunohistochemistry with primary antibodies against proteins such as mutant IDH1 (p.R132H), ATRX, p53, EGFR, Ki-67, pHH3 and CD34. We have demonstrated that pathoDISCO-HE is compatible with post hoc immunohistochemical labelling in 5µm sections (Fig. <ref type="figure">5</ref>). The compatibility of whole mount immuno uorescence labelling with the pathoDISCO-HE protocol is yet to be investigated, however this is possible in some other techniques. For example, labelling of human brain tumours with various antibodies was achieved using the iDISCO + clearing protocol, yielding detailed information relating to the spatial heterogeneity of tumour cell differentiation and stemness (GFAP, SOX2), microvascular proliferation (CD31) and immune microenvironment (CD45) <ref type="bibr" target="#b35">(Yang et al. 2020</ref>). We have utilised auto uorescence and cresyl violet uorescence for cytoplasm and nuclear imaging.</p><p>Auto uorescence was recorded in the green range (525/50 bandpass lter) whereas cresyl violet uorescence was recorded in the red range (620/52nm bandpass lter). This leaves a considerable portion of the usable light spectrum which could be used for imaging of immuno uorescently labelled proteins as uorophores are commonly available with emission wavelengths up to at least 800nm.</p><p>Historically, central nervous system tumours were classi ed based solely on their histological appearance. However, since 2016 the WHO classi cation system includes integrated diagnoses combining histology and molecular genetics, providing improved prognostic accuracy and treatment strategy selection <ref type="bibr" target="#b6">(Ferris et al. 2017</ref>). Common molecular pathology investigations for gliomas include DNA sequencing to determine IDH1/2 and TERT genotype, chromosomal alterations such as 1p/19q codeletion and homozygous deletion of CDKN2A/B. MGMT methylation status may be determined using techniques such as bisulphite sequencing. Combination of molecular and histological diagnostic techniques results in a signi cant improvement in prognostic accuracy <ref type="bibr" target="#b6">(Ferris et al. 2017</ref>). The starting point for these molecular investigations is the isolation of DNA. DNA should be well preserved in cleared tissue meaning that it can be extracted after the necessary imaging has been performed, yielding a fully integrated histological and molecular pro le of the specimen. Figure 1 Clearing, labelling, imaging and post-processing strategy for virtual histopathology. A: Procedure and timeline for pathoDISCO-HE sample processing. B: Glioblastoma specimen before after processing, exhibiting transparency after C: Procedure for data acquisition by light sheet microscopy and subsequent post-processing to produce virtual HE images. D: Colour channel combiner interface in NeuroDeblur. E-G: post-processed light sheet images and virtual H&amp;E image from Volumetric histopathology of human gliomas. 3D visualisation of light data allowed viewing of specimens from any angle and at any depth. Data was loaded either as virtual HE processed images or by assigning red and green colourmaps to greyscale images of cresyl violet and auto uorescence channels respectively and visualising by maximum intensity projection (MIP). A-D: Recurrent glioblastoma, specimen #9. A+B:visualisation of 4x magni cation data by MIP and vHE respectively, auto uorescent vasculature structures can be observed throughout the specimen. C: MIP visualisation of 16x magni cation data. Two distinct vascular signatures can be observed: vascular garlands (asterisk) and a considerably less dense vascular zone (arrowhead). D: 20µm slice exhibiting vascular garland and arrangement of local nuclei. D': Close-up of boxed area in D; elongated endothelial nuclei can be seen adjacent to auto uorescent vascular garland structures, further surrounded by dense Files</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>effect and does not seem to negatively affect the integrity of the specimen. Then, samples were stained with cresyl violet (Carl Roth, 7651) diluted 1:50 in 5% CHAPS/PBS (CHAPS: Hopax Fine Chemicals) overnight at room temperature (cresyl violet stock: 1mg/ml in dH 2 O). Following washing in PBS (2x1hr, room temperature) samples were dehydrated for the nal time. This protocol utilises active dehydration by the ketal 2,2-dimethoxypropane (DMP) (Sigma-Aldrich, D136808) which reacts with water to produce methanol and acetone (Sabdyusheva Litschauer et al. 2020; Stern and Dorer 1962). The reaction of ketals with water requires an acid catalyst, samples were acidi ed with HCl pH1 in dH 2 O for 1hr at room temperature. Subsequently, samples were dehydrated using 2,2dimethoxypropane (DMP), a further 25µl of 2N HCl was added per 5ml of DMP used. Samples were incubated in DMP for 2x30mins at 37°C. Finally, refractive index matching was performed by immersing the dehydrated samples in dibenzyl ether (DBE) (Sigma-Aldrich, 108014). All clearing stages were performed with moderate shaking.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>Image post-processing, including deconvolution, stripe artifact removal and unsharp masking, was performed in NeuroDeblur (Becker et al. 2021) (MBF Bioscience, United States). Image manipulations such as rolling ball background subtraction, local contrast normalisation (Integral image lters plugin)and FFT bandpass ltering were performed in Fiji<ref type="bibr" target="#b28">(Schindelin et al. 2012</ref>). Prior to virtual H&amp;E staining, stacks were aligned using BigStitcher in Fiji<ref type="bibr" target="#b12">(Hörl et al. 2019</ref>). Virtual H&amp;E visualisation was performed in NeuroDeblur. A schematic for image post-processing is provided in Fig.1C. 3D visualisation of light sheet data was performed using Amira 3D (v2023.1.1, Thermo Fisher Scienti c).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>For</head><figDesc>IHC staining the following antibodies and dilutions were utilised: IDH1 R132H (1:25 Dianova #DIA-H09), CD34 (1:100 Novocastra #NCL-L-END), p53 (1:50, Dako #M7001), OLIG2 (1:1000 IBL #18953), Ki-67 / MIB-1 (1:200 Dako #M7240), GFAP (1:3000 Dako #Z0334). IHC staining was performed on a Dako Autostainer PlusLink (CD34, p53, OLIG2, Ki-67, GFAP) or Ventana Benchmark Autostainer (IDH1 R132H).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><figDesc>pathoDISCO-HE protocol draws upon elements of several established tissue clearing protocols. An iDISCO-style hydrogen peroxide bleaching stage<ref type="bibr" target="#b21">(Renier et al. 2014</ref>) is followed by nuclear labelling with cresyl violet. To facilitate rapid penetration of cresyl violet deep into glioma specimens we opted to combine to cresyl violet stain with CHAPS detergent. CHAPS is a zwitterionic detergent with superior membrane permeabilising activity in comparison to other commonly used detergents<ref type="bibr" target="#b36">(Zhao et al. 2020)</ref>.Following uorescent nuclear labelling by cresyl violet we dehydrated the specimens chemically by use of the compound 2,2-dimethoxypropane (DMP). DMP is a ketal, and therefore reacts with water in acidic conditions, to produce methanol and acetone. This reaction is highly e cient and allows extremely e cient specimen dehydration<ref type="bibr" target="#b29">(Stern and Dorer 1962)</ref>, especially compared to other hydrophobic clearing protocols which rely on diffusion of solvents for tissue dehydration. Use of DMP allowed us to dehydrate specimens of up to several millimetres in thickness in just one hour. Finally, dehydrated specimens were incubated in dibenzyl ether for refractive index matching. In total, our protocol requires around four days from receiving a formalin xed tissue specimen to production of a 3D reconstruction. This is signi cantly quicker than previous clearing protocols for human brain tumours; for example CUBIC and iDISCO + processing required around 1.5-3 weeks. However, these studies did additionally employ immunolabelling, which requires longer incubation than labelling with small uorescent molecules such as cresyl violet<ref type="bibr" target="#b34">(Xu et al. 2023;</ref><ref type="bibr" target="#b35">Yang et al. 2020</ref>). pathoDISCO-HE allowed visualisation of nuclei across the whole eld of view down to a median depth of 755µm (range: 153-2082µm, n = 27), though nuclear labelling at the periphery of specimens was usually visible at much greater depths. Measurement of stain penetration in incompletely labelled slices revealed a median penetration depth of 522µm (range: 240-802µm, n = 9). It is worth noting that vasculature could often be visualised at much greater depths than nuclear labelling, as auto uorescence is not dependent on penetration of a uorescent label. Stain penetration could be improved by stronger membrane permeabilising treatments and longer incubation in the staining solution. The maximum imaging depth is also in uenced by a number of factors, but is primarily reliant on the quality of the clearing procedure and excitation and emission wavelengths employed. In our experience gliomas are a di cult tissue to work with due to the often extremely high cell density and extensive vasculature. Suboptimally cleared specimens exhibit lower maximum imaging depths due to scattering of both the illumination light sheet and emitted uorescence. Future improvements to the method could include Recently, stimulated Raman histology (SRH) has been introduced to produce two-dimensional virtual H&amp;E images intraoperatively. This technique is extremely fast, giving the neurosurgeon almost immediate feedback. Histological brain tumor diagnoses established by SRH were extremely accurate, matching the nal histopathological diagnosis in 99% of cases<ref type="bibr" target="#b32">(Wadiura et al. 2022</ref>).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figures Figure 1</head><label>1</label><figDesc>Figures</figDesc><graphic coords="19,27.75,185.25,489.75,417.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 3 Volumetric</head><label>3</label><figDesc>Figure 3</figDesc><graphic coords="21,27.75,36.00,327.00,447.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="20,27.75,72.00,327.75,441.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="23,27.75,175.50,375.75,401.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 1</head><label>1</label><figDesc>Summary of glioma specimens utilised in this study.</figDesc><table><row><cell>Sample ID</cell><cell>Diagnosis</cell><cell>CNS WHO grade</cell><cell>IDH status</cell></row><row><cell>#01</cell><cell>Glioblastoma (recurrent)</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#02</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#03</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#04</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#05</cell><cell>Glioblastoma (recurrent)</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#06</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#07</cell><cell>Glioblastoma (recurrent)</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#08</cell><cell>Astrocytoma (recurrent)</cell><cell>3</cell><cell>Mutant</cell></row><row><cell>#09</cell><cell>Astrocytoma</cell><cell>4</cell><cell>Mutant</cell></row><row><cell>#10</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#11</cell><cell>Astrocytoma (recurrent)*</cell><cell>2</cell><cell>Mutant</cell></row><row><cell>#12</cell><cell>Glioblastoma (recurrent)</cell><cell>4</cell><cell>Wild type</cell></row><row><cell>#13</cell><cell>Glioblastoma</cell><cell>4</cell><cell>Wild type</cell></row></table><note><p>*#11 contained mainly gliosis, tumour cells only rarely observed.</p></note></figure>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>Not applicable.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div><head>Funding</head><p>This study was funded by the <rs type="funder">Austrian Science Fund (FWF)</rs> projects <rs type="grantNumber">P31263</rs> and <rs type="grantNumber">P35614</rs> and the <rs type="funder">German BMBF project 3Dpatho</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_RUN6rvX">
+					<idno type="grant-number">P31263</idno>
+				</org>
+				<org type="funding" xml:id="_TF8mjcB">
+					<idno type="grant-number">P35614</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Competing interest reported. HUD has led a patent for a 3D pathology method (WO2020002251A1). HUD and SS have led</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>improved clearing e ciency and use of uorescent labels with excitation and emission wavelengths in the far red or near infrared range, as higher wavelengths are signi cantly less scattered by biological tissues <ref type="bibr" target="#b13">(Jacques 2013)</ref>. pathoDISCO-HE processed specimens yielded images reminiscent of traditional H&amp;E preparations.</p><p>However, some factors need to be considered when interpreting these images. For example, larger specimens occasionally exhibited incomplete penetration of the nuclear label. This could give the impression that nuclei are absent from some regions -it will be important to distinguish if this is due to incomplete stain penetration or a pathological hallmark such as necrosis. Stain penetration could be improved by using a more e cient tissue permeabilisation treatment or by longer incubation in the staining solution.</p><p>Whilst most features of traditional H&amp;E sections were accurately represented by pathoDISCO-HE, it was apparent that the variety of hues imparted onto sections by eosin staining was less extensive in virtually stained images. In the present study we did not employ any speci c stain to mimic eosin staining, instead opting to use auto uorescence imaging. An improved virtual H&amp;E algorithm or application of a robust uorescent cytoplasm label could improve the appearance of cytoplasm in virtual H&amp;E images in future studies. Occasionally, when using the normalisation + bandpass lter method for nuclear segmentation, some background signal was observed in the virtual HE nuclei channel, this could also be corrected by improvements to the post-processing methods.</p><p>Light sheet microscopy is just one of a number of available volumetric optical imaging techniques. In addition to light sheet microscopy, techniques including confocal microscopy and two-photon microscopy also show promise as tools for 3D histopathology.</p><p>Confocal microscopy is a uorescence microscopy technique which achieves optical sectioning by spatial ltering of out-of-focus light. Although confocal microscopy can provide higher lateral resolution than light sheet microscopy, the imaging depth in generally limited to 100's of µm. Confocal microscopy has been applied to cleared tumour tissue in a number of previous studies. CUBIC cleared lymph nodes from malignant lymphoma were imaged by confocal microscopy, allowing characterisation of nuclear characteristics such as atypia and pleomorphism <ref type="bibr" target="#b16">(Nojima et al. 2017)</ref>. Two-photon microscopy allows greater penetration of excitation lasers into tissue due to the use of higher wavelengths, typically in the near-infrared range. These systems take advantage of the two photon effect, whereby uorophores are excited by two-photons simultaneously. Two-photon microscopy was used to image immunolabelled brain tumour specimens, revealing signi cant spatial heterogeneity <ref type="bibr" target="#b35">(Yang et al. 2020)</ref>. Two-photon lasers are typically used in upright microscopes with episcopic illumination, however a two-photon light sheet microscope has been developed for imaging of human tumours. This system was used to perform rapid imaging of uncleared nuclear labelled human skin, pancreatic and prostatic cancers. Nuclear labelling allowed production of virtual H&amp;E images however the imaging depth was limited to &lt; 100µm, probably due to scattering of emitted uorescence <ref type="bibr">(</ref> Future implementation of volumetric histopathology techniques in clinical practice may result in enormous bene ts for patients. Volumetric histopathology, in combination with molecular diagnostics and potentially AI-based analytical methods, would allow detailed and accurate characterisation of the entire specimen. This may allow clinicians to utilise a personalised medicine approach to accurately select the most appropriate treatments, thereby improving patient prognoses.</p><p>In summary, we have established a novel clearing and uorescent nuclear labelling method allowing high resolution volumetric histopathological examination of human glioma specimens. Future work may achieve additional labelling with multiple antibodies, allowing enhanced analysis of tumour spatial heterogeneity. Implementation of automated image analysis algorithms quantifying cell density and vasculature parameters should be feasible, providing information which simply cannot be determined using traditional two-dimensional techniques. Overall, our work represents a contribution to the eld of volumetric histopathology, a research eld which may eventually allow more accurate diagnoses and prognoses, resulting in more e cient and personalised treatments for glioma patients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Ethics and participate was approved by the ethics of the Medical University Vienna.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consent for publication</head><p>All authors have approved manuscript and consent to its publication.</p><p>Competing interests HUD has led a patent for a 3D pathology method (WO2020002251A1). HUD and SS have led a patent relating to the optical system used in this study (DE112014003369A5).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>Project was initiated by and GW conceptualised by JO and HUD. JO developed the clearing and staining method with the help of HUD. JO prepared and imaged specimens, performed post-processing and data analysis and the manuscript with guidance from HUD. SS designed the light sheet microscope and provided instruction on optimal usage. AW and TRP provided histopathology expertise.  </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Cresyl violet: A red fluorescent Nissl stain</title>
+		<author>
+			<persName><forename type="first">Arturo</forename><surname>Alvarez-Buylla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang-Ying</forename><surname>Ling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">R</forename><surname>Kirn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0165-0270(90)90016-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience Methods</title>
+		<title level="j" type="abbrev">Journal of Neuroscience Methods</title>
+		<idno type="ISSN">0165-0270</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="129" to="133" />
+			<date type="published" when="1990-08">1990</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alvarez-Buylla A, Ling CY, Kirn JR. 1990. Cresyl violet: A red uorescent nissl stain. J Neurosci Methods. 33(2-3):129-133.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Mechanisms of Glioma Formation: Iterative Perivascular Glioma Growth and Invasion Leads to Tumor Progression, VEGF-Independent Vascularization, and Resistance to Antiangiogenic Therapy</title>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">J</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viveka</forename><forename type="middle">Nand</forename><surname>Yadav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastien</forename><surname>Motsch</surname></persName>
+			<idno type="ORCID">0000-0002-9135-5530</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Koschmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anda-Alexandra</forename><surname>Calinescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yohei</forename><surname>Mineharu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><forename type="middle">Ines</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serguei</forename><surname>Bannykh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wesley</forename><forename type="middle">S</forename><surname>Nichols</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">C</forename><surname>Decarvalho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Mikkelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">G</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><forename type="middle">R</forename><surname>Lowenstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neo.2014.06.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neoplasia</title>
+		<title level="j" type="abbrev">Neoplasia</title>
+		<idno type="ISSN">1476-5586</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="543" to="561" />
+			<date type="published" when="2014-07">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Baker GJ, Yadav VN, Motsch S, Koschmann C, Calinescu A-A, Mineharu Y, Camelo-Piragua SI, Orringer D, Bannykh S, Nichols WS et al. 2014. Mechanisms of glioma formation: Iterative perivascular glioma growth and invasion leads to tumor progression, vegf-independent vascularization, and resistance to antiangiogenic therapy. Neoplasia. 16(7):543-561.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Visualizing minute details in light‐sheet and confocal microscopy data by combining &lt;scp&gt;3D&lt;/scp&gt; rolling ball filtering and deconvolution</title>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+			<idno type="ORCID">0000-0002-2406-0476</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marko</forename><surname>Pende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Hahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><forename type="middle">Ulrich</forename><surname>Dodt</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jbio.202100290</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2021-11-17">2021. 202100290</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Becker K, Sagha S, Pende M, Hahn C, Dodt HU. 2021. Visualizing minute details in light-sheet and confocal microscopy data by combining 3d rolling ball ltering and deconvolution. J Biophotonics.e202100290.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Correlated magnetic resonance imaging and ultramicroscopy (MR-UM) is a tool kit to assess the dynamics of glioma angiogenesis</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">O</forename><surname>Breckwoldt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Bode</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><forename type="middle">T</forename><surname>Kurz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angelika</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharina</forename><surname>Ochs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Ott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katrin</forename><surname>Deumelandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Krüwel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Helluy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Milford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klara</forename><surname>Kirschbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gergely</forename><surname>Solecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Chiblak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>Abdollahi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Winkler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Björn</forename><surname>Tews</surname></persName>
+		</author>
+		<idno type="DOI">10.7554/elife.11712</idno>
+	</analytic>
+	<monogr>
+		<title level="j">eLife</title>
+		<idno type="ISSNe">2050-084X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">11712</biblScope>
+			<date type="published" when="2016-02-02">2016</date>
+			<publisher>eLife Sciences Publications, Ltd</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Breckwoldt MO, Bode J, Kurz FT, Hoffmann A, Ochs K, Ott M, Deumelandt K, Krüwel T, Schwarz D, Fischer M et al. 2016. Correlated magnetic resonance imaging and ultramicroscopy (mr-um) is a tool kit to assess the dynamics of glioma angiogenesis. Elife. 5:e11712.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Multi‐Scale Label‐Free Human Brain Imaging with Integrated Serial Sectioning Polarization Sensitive Optical Coherence Tomography and Two‐Photon Microscopy</title>
+		<author>
+			<persName><forename type="first">Shuaibin</forename><surname>Chang</surname></persName>
+			<idno type="ORCID">0000-0003-3416-7290</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jiarui</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Novoseltseva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayman</forename><surname>Abdelhakeem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mackenzie</forename><surname>Hyman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinlei</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenglin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shih‐chi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">C</forename><surname>Augustinack</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Magnain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><surname>Fischl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ann</forename><forename type="middle">C</forename><surname>Mckee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Boas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ichun</forename><forename type="middle">Anderson</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/advs.202303381</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Science</title>
+		<title level="j" type="abbrev">Advanced Science</title>
+		<idno type="ISSN">2198-3844</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">35</biblScope>
+			<biblScope unit="page">2303381</biblScope>
+			<date type="published" when="2023-10-26">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chang S, Yang J, Novoseltseva A, Abdelhakeem A, Hyman M, Fu X, Li C, Chen SC, Augustinack JC, Magnain C et al. 2023. Multi-scale label-free human brain imaging with integrated serial sectioning polarization sensitive optical coherence tomography and two-photon microscopy. Adv Sci (Weinh). 10(35):e2303381. .</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Three-dimensional vascular microenvironment landscape in human glioblastoma</title>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">P</forename><surname>Cribaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Saavedra-López</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leire</forename><surname>Romarate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Izaskun</forename><surname>Mitxitorena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">R</forename><surname>Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><forename type="middle">V</forename><surname>Casanova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meritxell</forename><surname>Roig-Martínez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">M</forename><surname>Gallego</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><surname>Perez-Vallés</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Barcia</surname></persName>
+			<idno type="ORCID">0000-0003-0976-4245</idno>
+		</author>
+		<idno type="DOI">10.1186/s40478-020-01115-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica Communications</title>
+		<title level="j" type="abbrev">acta neuropathol commun</title>
+		<idno type="ISSNe">2051-5960</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">24</biblScope>
+			<date type="published" when="2021-02-12">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cribaro GP, Saavedra-López E, Romarate L, I, Díaz LR, Casanova PV, Roig-Martínez M, Gallego JM, Perez-Vallés A, Barcia C. 2021. Three-dimensional vascular microenvironment landscape in human glioblastoma. Acta Neuropathologica Communications. 9(1):24.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Characterization of gliomas: from morphology to molecules</title>
+		<author>
+			<persName><forename type="first">Sean</forename><forename type="middle">P</forename><surname>Ferris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">W</forename><surname>Hofmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Solomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00428-017-2181-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Virchows Archiv</title>
+		<title level="j" type="abbrev">Virchows Arch</title>
+		<idno type="ISSN">0945-6317</idno>
+		<idno type="ISSNe">1432-2307</idno>
+		<imprint>
+			<biblScope unit="volume">471</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="257" to="269" />
+			<date type="published" when="2017-07-04">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ferris SP, Hofmann JW, Solomon DA, Perry A. 2017. Characterization of gliomas: From morphology to molecules. Virchows Arch. 471(2):257-269.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Converting a symmetrical Gaussian beam into a thin tunable light sheet</title>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Meraaj</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massih</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nassim</forename><surname>Ghaffari Tabrizi-Wizsy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nika</forename><surname>Sarem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Fuchssteiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/mim-2024-0006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Methods in Microscopy</title>
+		<idno type="ISSNe">2942-3899</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="65" to="75" />
+			<date type="published" when="2024-04-01">2024</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Foroughipour SM, Becker K, Foroughipour M, Ghaffari Tabrizi-Wizsy N, Sarem N, C, Sagha S. 2024. Converting a symmetrical gaussian beam into a thin tunable light sheet. 1(1):65-75.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Comprehensive Surface Histology of Fresh Resection Margins With Rapid Open-Top Light-Sheet (OTLS) Microscopy</title>
+		<author>
+			<persName><forename type="first">Gan</forename><surname>Gao</surname></persName>
+			<idno type="ORCID">0000-0002-8100-7735</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dominie</forename><surname>Miyasato</surname></persName>
+			<idno type="ORCID">0000-0001-8977-7411</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lindsey</forename><forename type="middle">A</forename><surname>Barner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Serafin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">W</forename><surname>Bishop</surname></persName>
+			<idno type="ORCID">0000-0001-8722-6464</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weisi</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">K</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eben</forename><forename type="middle">L</forename><surname>Rosenthal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">D</forename><surname>True</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">T C</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0001-5650-3086</idno>
+		</author>
+		<idno type="DOI">10.1109/tbme.2023.3237267</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Biomedical Engineering</title>
+		<title level="j" type="abbrev">IEEE Trans. Biomed. Eng.</title>
+		<idno type="ISSN">0018-9294</idno>
+		<idno type="ISSNe">1558-2531</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2160" to="2171" />
+			<date type="published" when="2023-07">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gao G, Miyasato D, Barner LA, Sera n R, Bishop KW, Xie W, Glaser AK, Rosenthal EL, True LD, Liu JTC. 2023. Comprehensive surface histology of fresh resection margins with rapid open-top light- sheet (otls) microscopy. IEEE Trans Biomed Eng. 70(7):2160-2171.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Light-sheet microscopy for slide-free non-destructive pathology of large clinical specimens</title>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">K</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">P</forename><surname>Reder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erin</forename><forename type="middle">F</forename><surname>Mccarty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengbo</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linpeng</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">D</forename><surname>True</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">T C</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0001-5650-3086</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-017-0084</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">84</biblScope>
+			<date type="published" when="2017-06-26">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Glaser AK, Reder NP, Chen Y, McCarty EF, Yin C, Wei L, Wang Y, True LD, Liu JTC. 2017. Light-sheet microscopy for slide-free non-destructive pathology of large clinical specimens. Nature Biomedical Engineering. 1(7):0084.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Lipofuscin pigment accumulation in human brain during aging</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">K</forename><surname>Goyal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0531-5565(82)80010-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Gerontology</title>
+		<title level="j" type="abbrev">Experimental Gerontology</title>
+		<idno type="ISSN">0531-5565</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="481" to="487" />
+			<date type="published" when="1982">1982</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goyal VK. 1982. Lipofuscin pigment accumulation in human brain during aging. Exp Gerontol. 17(6):481-487.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Artificial-intelligence-based molecular classification of diffuse gliomas using rapid, label-free optical imaging</title>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Hollon</surname></persName>
+			<idno type="ORCID">0000-0001-5987-6531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0003-1759-4960</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Asadur</forename><surname>Chowdury</surname></persName>
+			<idno type="ORCID">0000-0002-5653-9721</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mustafa</forename><surname>Nasir-Moin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Kondepudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Aabedi</surname></persName>
+			<idno type="ORCID">0000-0002-7935-5458</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><surname>Adapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oren</forename><surname>Sagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>Lowenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">Irina</forename><surname>Wadiura</surname></persName>
+			<idno type="ORCID">0000-0002-0749-7684</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+			<idno type="ORCID">0000-0001-6014-0273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+			<idno type="ORCID">0000-0001-7527-6990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+			<idno type="ORCID">0000-0002-3298-9517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+			<idno type="ORCID">0000-0002-9873-1711</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Golfinos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-023-02252-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="828" to="832" />
+			<date type="published" when="2023-03-23">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon T, Jiang C, Chowdury A, Nasir-Moin M, Kondepudi A, Aabedi A, Adapa A, Al-Holou W, Heth J, Sagher O et al. 2023. Arti cial-intelligence-based molecular classi cation of diffuse gliomas using rapid, label-free optical imaging. Nature Medicine. 29(4):828-832.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">BigStitcher: reconstructing high-resolution image datasets of cleared and expanded samples</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Hörl</surname></persName>
+			<idno type="ORCID">0000-0003-1710-1708</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Rojas Rusak</surname></persName>
+			<idno type="ORCID">0000-0002-0637-9467</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><surname>Preusser</surname></persName>
+			<idno type="ORCID">0000-0001-8231-2195</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Tillberg</surname></persName>
+			<idno type="ORCID">0000-0002-2568-2365</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nadine</forename><surname>Randel</surname></persName>
+			<idno type="ORCID">0000-0002-7817-4137</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raghav</forename><forename type="middle">K</forename><surname>Chhetri</surname></persName>
+			<idno type="ORCID">0000-0001-6039-4505</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Cardona</surname></persName>
+			<idno type="ORCID">0000-0003-4941-6536</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><forename type="middle">J</forename><surname>Keller</surname></persName>
+			<idno type="ORCID">0000-0003-2896-4920</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hartmann</forename><surname>Harz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinrich</forename><surname>Leonhardt</surname></persName>
+			<idno type="ORCID">0000-0002-5086-6449</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Treier</surname></persName>
+			<idno type="ORCID">0000-0002-8751-1246</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Preibisch</surname></persName>
+			<idno type="ORCID">0000-0002-0276-494X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41592-019-0501-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="870" to="874" />
+			<date type="published" when="2019-08-05">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hörl D, Rojas Rusak F, Preusser F, Tillberg P, Randel N, Chhetri RK, Cardona A, Keller PJ, Harz H, Leonhardt H et al. 2019. Bigstitcher: Reconstructing high-resolution image datasets of cleared and expanded samples. Nature Methods. 16(9):870-874.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Optical properties of biological tissues: a review</title>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">L</forename><surname>Jacques</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0031-9155/58/11/r37</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine and Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="R37" to="R61" />
+			<date type="published" when="2013-05-10">2013</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jacques SL. 2013. Optical properties of biological tissues: A review. Phys Med Biol. 58(11):R37-61.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Optical clearing and fluorescence deep-tissue imaging for 3D quantitative analysis of the brain tumor microenvironment</title>
+		<author>
+			<persName><forename type="first">Tonny</forename><surname>Lagerweij</surname></persName>
+			<idno type="ORCID">0000-0003-1043-7452</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sophie</forename><forename type="middle">A</forename><surname>Dusoswa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Negrean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><forename type="middle">M L</forename><surname>Hendrikx</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helga</forename><forename type="middle">E</forename><surname>De Vries</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Kole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">J</forename><surname>Garcia-Vallejo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huibert</forename><forename type="middle">D</forename><surname>Mansvelder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Peter</forename><surname>Vandertop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">P</forename><surname>Noske</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bakhos</forename><forename type="middle">A</forename><surname>Tannous</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">René</forename><forename type="middle">J P</forename><surname>Musters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvette</forename><surname>Van Kooyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Wesseling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><forename type="middle">Wen</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wurdinger</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10456-017-9565-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Angiogenesis</title>
+		<title level="j" type="abbrev">Angiogenesis</title>
+		<idno type="ISSN">0969-6970</idno>
+		<idno type="ISSNe">1573-7209</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="533" to="546" />
+			<date type="published" when="2017-07-11">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lagerweij T, Dusoswa SA, Negrean A, Hendrikx EML, de Vries HE, Kole J, Garcia-Vallejo JJ, Mansvelder HD, Vandertop WP, Noske DP et al. 2017. Optical clearing and uorescence deep-tissue imaging for 3d quantitative analysis of the brain tumor microenvironment. Angiogenesis. 20(4):533- 546.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The 2021 WHO Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Wesseling</surname></persName>
+			<idno type="ORCID">0000-0001-5453-5201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+			<idno type="ORCID">0000-0002-0633-6563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">A</forename><surname>Cree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><forename type="middle">M</forename><surname>Pfister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021-06-29">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis DN, Perry A, Wesseling P, Brat DJ, Cree IA, Figarella-Branger D, Hawkins C, Ng HK, P ster SM, Reifenberger G et al. 2021. The 2021 who classi cation of tumors of the central nervous system: A summary. Neuro Oncol. 23(8):1231-1251.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">CUBIC pathology: three-dimensional imaging for pathological diagnosis</title>
+		<author>
+			<persName><forename type="first">Satoshi</forename><surname>Nojima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Etsuo</forename><forename type="middle">A</forename><surname>Susaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyotaro</forename><surname>Yoshida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyoshi</forename><surname>Takemoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoto</forename><surname>Tsujimura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shohei</forename><surname>Iijima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ko</forename><surname>Takachi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yujiro</forename><surname>Nakahara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shinichiro</forename><surname>Tahara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenji</forename><surname>Ohshima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masako</forename><surname>Kurashige</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yumiko</forename><surname>Hori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoki</forename><surname>Wada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun-Ichiro</forename><surname>Ikeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atsushi</forename><surname>Kumanogoh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eiichi</forename><surname>Morii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroki</forename><forename type="middle">R</forename><surname>Ueda</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-017-09117-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">9269</biblScope>
+			<date type="published" when="2017-08-24">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nojima S, Susaki EA, Yoshida K, Takemoto H, Tsujimura N, Iijima S, Takachi K, Nakahara Y, Tahara S, Ohshima K et al. 2017. Cubic pathology: Three-dimensional imaging for pathological diagnosis. Sci Rep. 7(1):9269.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Open-top Bessel beam two-photon light sheet microscopy for three-dimensional pathology</title>
+		<author>
+			<persName><forename type="first">Won</forename><forename type="middle">Yeong</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jieun</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinho</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Byung</forename><forename type="middle">Ho</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gilsuk</forename><surname>Yoon</surname></persName>
+			<idno type="ORCID">0000-0002-9941-024X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seung-Mo</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ki</forename><forename type="middle">Hean</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0003-3410-7706</idno>
+		</author>
+		<idno type="DOI">10.7554/elife.92614.3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">eLife</title>
+		<idno type="ISSNe">2050-084X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2024-03-15">2024</date>
+			<publisher>eLife Sciences Publications, Ltd</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Park WY, Yun J, Shin J, Oh BH, Yoon G, Hong SM, Kim KH. 2024. Open-top bessel beam two-photon light sheet microscopy for three-dimensional pathology. Elife. 12.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Histologic classification of gliomas</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wesseling</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-802997-8.00005-0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Clinical Neurology</title>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Weller</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="71" to="95" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Perry A, Wesseling P. 2016. Chapter 5 -histologic classi cation of gliomas. In: Berger MS, Weller M, editors. Handbook of clinical neurology. Elsevier. p. 71-95.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Exploring the human cerebral cortex using confocal microscopy</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Pesce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annunziatina</forename><surname>Laurino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marina</forename><surname>Scardigli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiarui</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Boas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">R</forename><surname>Hof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Destrieux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Costantini</surname></persName>
+			<idno type="ORCID">0000-0002-8464-7324</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><forename type="middle">Saverio</forename><surname>Pavone</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2021.07.16.452651</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Prog Biophys Mol Biol</title>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="page" from="3" to="9" />
+			<date type="published" when="2022">2022</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pesce L, Laurino A, Scardigli M, Yang J, Boas DA, Hof PR, Destrieux C, Costantini I, Pavone FS. 2022. Exploring the human cerebral cortex using confocal microscopy. Prog Biophys Mol Biol. 168:3-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Open-Top Light-Sheet Microscopy Image Atlas of Prostate Core Needle Biopsies</title>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">P</forename><surname>Reder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">K</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erin</forename><forename type="middle">F</forename><surname>Mccarty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">D</forename><surname>True</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">T C</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.5858/arpa.2018-0466-oa</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of Pathology &amp; Laboratory Medicine</title>
+		<idno type="ISSN">0003-9985</idno>
+		<idno type="ISSNe">1543-2165</idno>
+		<imprint>
+			<biblScope unit="volume">143</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1069" to="1075" />
+			<date type="published" when="2019-03-20">2019</date>
+			<publisher>Archives of Pathology and Laboratory Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reder NP, Glaser AK, McCarty EF, Chen Y, True LD, JTC. 2019. Open-top light-sheet microscopy image atlas of prostate core needle biopsies. Arch Pathol Lab Med. 143(9):1069-1075.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">iDISCO: A Simple, Rapid Method to Immunolabel Large Tissue Samples for Volume Imaging</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Renier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuhao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Ariel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Tessier-Lavigne</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2014.10.010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">159</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="896" to="910" />
+			<date type="published" when="2014-11">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Renier N, Wu Z, Simon David J, Yang J, Ariel P, Tessier-Lavigne M. 2014. Idisco: A simple, rapid method to immunolabel large tissue samples for volume imaging. Cell. 159(4):896-910.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">3d histopathology of human tumours by fast clearing and ultramicroscopy</title>
+		<author>
+			<persName><forename type="first">Sabdyusheva</forename><surname>Litschauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sagha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ballke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bollwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gaugeler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schavelová</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>László</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scienti c Reports</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">17619</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sabdyusheva Litschauer I, Becker K, Sagha S, Ballke S, Bollwein C, Foroughipour M, Gaugeler J, Foroughipour M, Schavelová V, László V et al. 2020. 3d histopathology of human tumours by fast clearing and ultramicroscopy. Scienti c Reports. 10(1):17619.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Engineering a better light sheet in an axicon‐based system using a flattened Gaussian beam of low order</title>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+			<idno type="ORCID">0000-0002-7598-541X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+			<idno type="ORCID">0000-0002-2406-0476</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Franco</forename><surname>Gori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massih</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Bollwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meraaj</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katja</forename><surname>Steiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wilko</forename><surname>Weichert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans‐ulrich</forename><surname>Dodt</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jbio.202100342</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e202100342</biblScope>
+			<date type="published" when="2022-02-25">2022</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sagha S, Becker K, Gori F, Foroughipour M, Bollwein C, Foroughipour M, Steiger K, Weichert W, Dodt H-U. 2022. Engineering a better light sheet in an axicon-based system using a attened gaussian beam of low order. Journal of Biophotonics. 15(6):e202100342.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">3D‐ultramicroscopy utilizing aspheric optics</title>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Hahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans‐ulrich</forename><surname>Dodt</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jbio.201300048</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="117" to="125" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sagha S, Becker K, Hahn C, Dodt HU. 2014. 3d-ultramicroscopy utilizing aspheric optics. J Biophotonics. 7(1-2):117-125.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Image enhancement in ultramicroscopy by improved laser light sheets</title>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nina</forename><surname>Jährling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><surname>Richter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edgar</forename><forename type="middle">R</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans‐ulrich</forename><surname>Dodt</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jbio.201000047</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">10-11</biblScope>
+			<biblScope unit="page" from="686" to="695" />
+			<date type="published" when="2010-06-23">2010</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sagha S, Becker K, Jährling N, Richter M, Kramer ER, Dodt H-U. 2010. Image enhancement in ultramicroscopy by improved laser light sheets. Journal of Biophotonics. 3(10-11):686-695.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Reshaping a multimode laser beam into a constructed Gaussian beam for generating a thin light sheet</title>
+		<author>
+			<persName><forename type="first">Saiedeh</forename><surname>Saghafi</surname></persName>
+			<idno type="ORCID">0000-0002-7598-541X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nikoo</forename><surname>Haghi‐danaloo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Becker</surname></persName>
+			<idno type="ORCID">0000-0002-2406-0476</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Inna</forename><surname>Sabdyusheva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massih</forename><surname>Foroughipour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Hahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marko</forename><surname>Pende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Wanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Bergmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Judith</forename><surname>Stift</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balazs</forename><surname>Hegedus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balazs</forename><surname>Dome</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans‐ulrich</forename><surname>Dodt</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jbio.201700213</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e201700213</biblScope>
+			<date type="published" when="2018-03-24">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sagha S, Haghi-Danaloo N, Becker K, Sabdyusheva I, Foroughipour M, Hahn C, Pende M, Wanis M, Bergmann M, Stift J et al. 2018. Reshaping a multimode laser beam into a constructed gaussian beam for generating a thin light sheet. J Biophotonics. 11(6):e201700213.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Glioblastoma and Other Primary Brain Malignancies in Adults</title>
+		<author>
+			<persName><forename type="first">Lauren</forename><forename type="middle">R</forename><surname>Schaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jama.2023.0023</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<title level="j" type="abbrev">JAMA</title>
+		<idno type="ISSN">0098-7484</idno>
+		<imprint>
+			<biblScope unit="volume">329</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">574</biblScope>
+			<date type="published" when="2023-02-21">2023</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schaff LR, Mellinghoff IK. 2023. Glioblastoma and other primary brain malignancies in adults: A review. Jama. 329(7):574-587.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Fiji: an open-source platform for biological-image analysis</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Schindelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ignacio</forename><surname>Arganda-Carreras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erwin</forename><surname>Frise</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verena</forename><surname>Kaynig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Longair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Pietzsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Preibisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Curtis</forename><surname>Rueden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Saalfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Schmid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Yves</forename><surname>Tinevez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">James</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Hartenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Eliceiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pavel</forename><surname>Tomancak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Cardona</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nmeth.2019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="676" to="682" />
+			<date type="published" when="2012-06-28">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B et al. 2012. Fiji: An open-source platform for biological-image analysis. Nature Methods. 9(7):676-682.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">STANDARD HEATS OF FORMATION OF 2,2-DIMETHOXYPROPANE (l), AND 2,2-DIETHOXYPROPANE (l). GROUP ADDITIVITY THEORY AND CALCULATED HEATS OF FORMATION OF FIVE KETALS</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">H</forename><surname>Dorer</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/j100807a019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Physical Chemistry</title>
+		<title level="j" type="abbrev">J. Phys. Chem.</title>
+		<idno type="ISSN">0022-3654</idno>
+		<idno type="ISSNe">1541-5740</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="97" to="99" />
+			<date type="published" when="1962-01">1962</date>
+			<publisher>American Chemical Society (ACS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stern JH, Dorer FH. 1962. Standard heats of formation of 2,2-dimethoxypropane (l), and 2,2- diethoxypropane (l). Group additivity theory and calculated heats of formation of ve ketals. The Journal of Physical Chemistry. 66(1):97-99.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Mapping of the three-dimensional lymphatic microvasculature in bladder tumours using light-sheet microscopy</title>
+		<author>
+			<persName><forename type="first">Nobuyuki</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dagmara</forename><surname>Kaczynska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shigeaki</forename><surname>Kanatani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cecilia</forename><surname>Sahlgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Przemysław</forename><surname>Mitura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrzej</forename><surname>Stepulak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayako</forename><surname>Miyakawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Wiklund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Per</forename><surname>Uhlén</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41416-018-0016-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">British Journal of Cancer</title>
+		<title level="j" type="abbrev">Br J Cancer</title>
+		<idno type="ISSN">0007-0920</idno>
+		<idno type="ISSNe">1532-1827</idno>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="995" to="999" />
+			<date type="published" when="2018-03-08">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tanaka N, Kaczynska D, Kanatani S, Sahlgren C, Mitura P, Stepulak A, Miyakawa A, Wiklund P, Uhlen P. 2018. Mapping of the three-dimensional lymphatic microvasculature in bladder tumours using light-sheet microscopy. Br J Cancer. 118(7):995-999.</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Whole-tissue biopsy phenotyping of three-dimensional tumours reveals patterns of cancer heterogeneity</title>
+		<author>
+			<persName><forename type="first">Nobuyuki</forename><surname>Tanaka</surname></persName>
+			<idno type="ORCID">0000-0003-0841-9167</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shigeaki</forename><surname>Kanatani</surname></persName>
+			<idno type="ORCID">0000-0003-2226-4288</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raju</forename><surname>Tomer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cecilia</forename><surname>Sahlgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pauliina</forename><surname>Kronqvist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dagmara</forename><surname>Kaczynska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lauri</forename><surname>Louhivuori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorand</forename><surname>Kis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claes</forename><surname>Lindh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Przemysław</forename><surname>Mitura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrzej</forename><surname>Stepulak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Corvigno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><surname>Hartman</surname></persName>
+			<idno type="ORCID">0000-0002-6500-8527</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Micke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Artur</forename><surname>Mezheyeuski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carina</forename><surname>Strell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">W</forename><surname>Carlson</surname></persName>
+			<idno type="ORCID">0000-0002-3006-4107</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Fernández Moro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanna</forename><surname>Dahlstrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arne</forename><surname>Östman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazuhiro</forename><surname>Matsumoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Wiklund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mototsugu</forename><surname>Oya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayako</forename><surname>Miyakawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Deisseroth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Per</forename><surname>Uhlén</surname></persName>
+			<idno type="ORCID">0000-0003-1446-1062</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-017-0139-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="796" to="806" />
+			<date type="published" when="2017-10-02">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tanaka N, Kanatani S, Tomer R, Sahlgren C, Kronqvist P, Kaczynska D, Louhivuori L, Kis L, Lindh C, Mitura P et al. 2017. Whole-tissue biopsy phenotyping of three-dimensional tumours reveals patterns of cancer heterogeneity. Nat Biomed Eng. 1(10):796-806.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Toward digital histopathological assessment in surgery for central nervous system tumors using stimulated Raman histology</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">I</forename><surname>Wadiura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Kiesel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Roetzer-Pejrimovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Mischkulnig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clemens</forename><forename type="middle">C</forename><surname>Vogel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">A</forename><surname>Hainfellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Matula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adelheid</forename><surname>Wöhrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Roessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+		</author>
+		<idno type="DOI">10.3171/2022.9.focus22429</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Focus</title>
+		<idno type="ISSNe">1092-0684</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">E12</biblScope>
+			<date type="published" when="2022-12">2022</date>
+			<publisher>Journal of Neurosurgery Publishing Group (JNSPG)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wadiura LI, Kiesel B, Roetzer-Pejrimovsky T, Mischkulnig M, Vogel CC, Hainfellner JA, Matula C, Freudiger CW, Orringer DA, Wöhrer A et al. 2022. Toward digital histopathological assessment in surgery for central nervous system tumors using stimulated raman histology. Neurosurg Focus. 53(6):E12.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Malignant Glioma</title>
+		<author>
+			<persName><forename type="first">Linda</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zachary</forename><forename type="middle">K</forename><surname>Englander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">N</forename><surname>Bruce</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-23705-8_1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Experimental Medicine and Biology</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">1405</biblScope>
+			<biblScope unit="page" from="1" to="30" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang LM, Englander ZK, Miller ML, Bruce JN. 2023. Malignant glioma. Adv Exp Med Biol. 1405:1-30.</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Three-dimensional visualization of human brain tumors using the CUBIC technique</title>
+		<author>
+			<persName><forename type="first">Yangyang</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengqi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifeng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10014-022-00445-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Tumor Pathology</title>
+		<title level="j" type="abbrev">Brain Tumor Pathol</title>
+		<idno type="ISSN">1433-7398</idno>
+		<idno type="ISSNe">1861-387X</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="14" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu Y, He Q, Wang M, Wu Y, Shi Y, Wang W, Zhang J. 2023. Three-dimensional visualization of human brain tumors using the cubic technique. Brain Tumor Pathol. 40(1):4-14.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The combination of two‐dimensional and three‐dimensional analysis methods contributes to the understanding of glioblastoma spatial heterogeneity</title>
+		<author>
+			<persName><forename type="first">Runwei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinglin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiying</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haimin</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanpeng</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yichao</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingfeng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaomin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guozhong</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaishu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manlan</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiran</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanglong</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhifeng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Songtao</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yawei</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4535-5019</idno>
+		</author>
+		<idno type="DOI">10.1002/jbio.201900196</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biophotonics</title>
+		<title level="j" type="abbrev">Journal of Biophotonics</title>
+		<idno type="ISSN">1864-063X</idno>
+		<idno type="ISSNe">1864-0648</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">e201900196</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang R, Guo J, Lin Song H, Feng Z, Ou Y, Zhou M, Li Y, Yi G, Li K et al. 2020. The combination of two-dimensional and three-dimensional analysis methods contributes to the understanding of glioblastoma spatial heterogeneity. J Biophotonics. 13(2):e201900196.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Figure 2—figure supplement 1. The amnion and serosa form a persistent bilayer comprised of two morphologically distinct epithelia, including in the anterior-ventral rupture competence zone.</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">I</forename><surname>Todorov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rai</forename><surname>Maskari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Steinke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kemter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Rong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Warmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Stanic</surname></persName>
+		</author>
+		<idno type="DOI">10.7554/elife.13834.007</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Close-up of boxed regions in N+O. Various sub-cellular morphological elements can be observed including neurites (*) and chromatin (arrowheads). P-R: Glioblastoma, specimen #3 (16x magni cation). P: 20µm MIP slice (XY) exhibiting discrete zones containing</title>
+		<imprint>
+			<publisher>eLife Sciences Publications, Ltd</publisher>
+			<date type="published" when="2020">2020. 2200</date>
+			<biblScope unit="volume">180</biblScope>
+			<biblScope unit="page" from="796" to="812" />
+		</imprint>
+	</monogr>
+	<note>containing tissue, visualised by vHE (16x magni cation Recurrent glioblastoma, specimen #9, 16x magni cation Large vessels can be observed in the auto uorescence channel (* Cellular and molecular probing of intact human organs N+O: Zoomed in view of nuclear channel signal only. N&apos;+O Comparison of visualisation by vHE and MIP (20µm slice) in XY (J+K) and Z-projection (L+M) ). H+I: 3D visualisation of vHE processed data and by MIP, identical perspective S+T: Recurrent glioblastoma, specimen #1. S: 3D visualisation of vHE processed stack (4x magni cation). T: 20µm slice (MIP) exhibiting starkly contrasting zones with high (*) and low (arrowhead) cell density U: Glioblastoma, specimen #6. Zprojection of 16x magni cation data exhibiting extremely high cell density and imaging to a depth of around µm without loss of resolution. V-X Recurrent glioblastoma, specimen #7. 16x magni cation. V: 3D MIP exhibiting highly auto uorescent areas of bleeding W:20µm MIP slice exhibiting small nucleated tumour cells X: Close-up of boxed region in W, nuclear channel only</note>
+	<note type="raw_reference">Zhao S, Todorov MI, Cai R, Maskari RAI, Steinke H, Kemter E, Mai H, Rong Z, Warmer M, Stanic K et al. 2020. Cellular and molecular probing of intact human organs. Cell. 180(4):796-812.e719. containing tissue, visualised by vHE (16x magni cation). H-O: Recurrent glioblastoma, specimen #9, 16x magni cation. Large vessels can be observed in the auto uorescence channel (*). H+I: 3D visualisation of vHE processed data and by MIP, identical perspective. Comparison of visualisation by vHE and MIP (20µm slice) in XY (J+K) and Z-projection (L+M). N+O: Zoomed in view of nuclear channel signal only. N&apos;+O&apos;: Close-up of boxed regions in N+O. Various sub-cellular morphological elements can be observed including neurites (*) and chromatin (arrowheads). P-R: Glioblastoma, specimen #3 (16x magni cation). P: 20µm MIP slice (XY) exhibiting discrete zones containing either cells of neuronal morphology (arrowhead) or small tumour cells (*). Q+R: 3D and 2D Z-projections of vHE processed stacks exhibiting primarily cells with neuronal morphology. S+T: Recurrent glioblastoma, specimen #1. S: 3D visualisation of vHE processed stack (4x magni cation). T: 20µm slice (MIP) exhibiting starkly contrasting zones with high (*) and low (arrowhead) cell density. U: Glioblastoma, specimen #6. Z- projection of 16x magni cation data exhibiting extremely high cell density and imaging to a depth of around 2200µm without loss of resolution. V-X: Recurrent glioblastoma, specimen #7. 16x magni cation. V: 3D MIP exhibiting highly auto uorescent areas of bleeding. W:20µm MIP slice exhibiting small nucleated tumour cells. X: Close-up of boxed region in W, nuclear channel only.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

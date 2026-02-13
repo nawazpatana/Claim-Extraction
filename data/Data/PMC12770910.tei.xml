@@ -1,0 +1,2408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">TissUnet: Improved extracranial tissue and cranium segmentation for children through adulthood</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>MIT Press</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-04">4 December 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Markiian</forename><surname>Mandzak</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>c</label> Ukrainian Catholic University , Lviv , Ukraine</note>
+								<orgName type="institution">Ukrainian Catholic University</orgName>
+								<address>
+									<settlement>Lviv</settlement>
+									<country key="UA">Ukraine</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Elvira</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>d</label> Ludwig Maximilian University of Munich , Munich , Germany</note>
+								<orgName type="institution">Ludwig Maximilian University of Munich</orgName>
+								<address>
+									<settlement>Munich</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Anna</forename><surname>Zapaishchykova</surname></persName>
+							<email>azapaishchykova@bwh.harvard.edu</email>
+							<idno type="ORCID">0000-0001-6860-9160</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yu-Hui</forename><surname>Chen</surname></persName>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>f</label> Department of Data Science , Dana-Farber Cancer Institute , Boston , MA , United States</note>
+								<orgName type="department">Department of Data Science</orgName>
+								<orgName type="institution">Dana-Farber Cancer Institute</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lucas</forename><surname>Heilbroner</surname></persName>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>g</label> George Washington School of Medicine and Health Sciences , Washington , DC , United States</note>
+								<orgName type="institution">George Washington School of Medicine and Health Sciences</orgName>
+								<address>
+									<settlement>Washington</settlement>
+									<region>DC</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">John</forename><surname>Zielke</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Divyanshu</forename><surname>Tak</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Reza</forename><surname>Mojahed-Yazdi</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Francesca</forename><forename type="middle">Romana</forename><surname>Mussa</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zezhong</forename><surname>Ye</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sridhar</forename><surname>Vajapeyam</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<note type="raw_affiliation"><label>h</label> Boston Children&apos;s Hospital , Boston , MA , United States</note>
+								<orgName type="institution">Boston Children&apos;s Hospital</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Viviana</forename><surname>Benitez</surname></persName>
+							<affiliation key="aff7">
+								<note type="raw_affiliation"><label>h</label> Boston Children&apos;s Hospital , Boston , MA , United States</note>
+								<orgName type="institution">Boston Children&apos;s Hospital</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ralph</forename><surname>Salloum</surname></persName>
+							<affiliation key="aff8">
+								<note type="raw_affiliation"><label>i</label> Department of Pediatric Oncology at Dana-Farber Cancer Institute , Boston , MA , United States</note>
+								<orgName type="department">Department of Pediatric Oncology at Dana-Farber Cancer Institute</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Susan</forename><forename type="middle">N</forename><surname>Chi</surname></persName>
+							<affiliation key="aff7">
+								<note type="raw_affiliation"><label>h</label> Boston Children&apos;s Hospital , Boston , MA , United States</note>
+								<orgName type="institution">Boston Children&apos;s Hospital</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<note type="raw_affiliation"><label>i</label> Department of Pediatric Oncology at Dana-Farber Cancer Institute , Boston , MA , United States</note>
+								<orgName type="department">Department of Pediatric Oncology at Dana-Farber Cancer Institute</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Houman</forename><surname>Sotoudeh</surname></persName>
+							<affiliation key="aff9">
+								<note type="raw_affiliation"><label>j</label> UT Southwestern Medical Center , Dallas , TX , United States</note>
+								<orgName type="institution">UT Southwestern Medical Center</orgName>
+								<address>
+									<settlement>Dallas</settlement>
+									<region>TX</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jakob</forename><surname>Seidlitz</surname></persName>
+							<affiliation key="aff10">
+								<note type="raw_affiliation"><label>k</label> Lifespan Brain Institute , The Children&apos;s Hospital of Philadelphia and Penn Medicine , Philadelphia , PA , United States</note>
+								<orgName type="department">The Children&apos;s Hospital of Philadelphia and Penn Medicine</orgName>
+								<orgName type="institution">Lifespan Brain Institute</orgName>
+								<address>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff11">
+								<note type="raw_affiliation"><label>l</label> Department of Psychiatry , University of Pennsylvania , Philadelphia , PA , United States</note>
+								<orgName type="department">Department of Psychiatry</orgName>
+								<orgName type="institution">University of Pennsylvania</orgName>
+								<address>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff12">
+								<note type="raw_affiliation"><label>m</label> Department of Child and Adolescent Psychiatry and Behavioral Science , The Children&apos;s Hospital of Philadelphia , Philadelphia , PA , United States</note>
+								<orgName type="department">Department of Child and Adolescent Psychiatry and Behavioral Science</orgName>
+								<orgName type="institution">The Children&apos;s Hospital of Philadelphia</orgName>
+								<address>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff13">
+								<note type="raw_affiliation"><label>n</label> Institute for Translational Medicine and Therapeutics , University of Pennsylvania , Philadelphia , PA , United States</note>
+								<orgName type="department">Institute for Translational Medicine and Therapeutics</orgName>
+								<orgName type="institution">University of Pennsylvania</orgName>
+								<address>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sabine</forename><surname>Mueller</surname></persName>
+							<affiliation key="aff14">
+								<note type="raw_affiliation"><label>o</label> Department of Neurology, Neurosurgery and Pediatrics , University of California , San Francisco , CA , United States</note>
+								<orgName type="department">Department of Neurology, Neurosurgery and Pediatrics</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<settlement>San Francisco</settlement>
+									<region>CA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hugo</forename><forename type="middle">J W L</forename><surname>Aerts</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>e</label> Radiology and Nuclear Medicine , CARIM &amp; GROW , Maastricht University , Maastricht , the Netherlands</note>
+								<orgName type="department" key="dep1">Radiology and Nuclear Medicine</orgName>
+								<orgName type="department" key="dep2">CARIM &amp; GROW</orgName>
+								<orgName type="institution">Maastricht University</orgName>
+								<address>
+									<settlement>Maastricht</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tina</forename><forename type="middle">Y</forename><surname>Poussaint</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<note type="raw_affiliation"><label>h</label> Boston Children&apos;s Hospital , Boston , MA , United States</note>
+								<orgName type="institution">Boston Children&apos;s Hospital</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Benjamin</forename><forename type="middle">H</forename><surname>Kann</surname></persName>
+							<email>benjamin_kann@dfci.harvard.edu</email>
+							<idno type="ORCID">0000-0002-4313-2754</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>a</label> Artificial Intelligence in Medicine (AIM ) Program , Mass General Brigham , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">) Program</orgName>
+								<orgName type="department" key="dep2">Mass General Brigham</orgName>
+								<orgName type="laboratory">Artificial Intelligence in Medicine (AIM</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>b</label> Department of Radiation Oncology , Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital , Harvard Medical School , Boston , MA , United States</note>
+								<orgName type="department" key="dep1">Department of Radiation Oncology</orgName>
+								<orgName type="department" key="dep2">Dana-Farber Cancer Institute and Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">TissUnet: Improved extracranial tissue and cranium segmentation for children through adulthood</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Imaging Neuroscience</title>
+						<idno type="eISSN">2837-6056</idno>
+						<imprint>
+							<publisher>MIT Press</publisher>
+							<biblScope unit="volume">4</biblScope>
+							<date type="published" when="2025-12-04">4 December 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F0FDFD863A1530F5F9FEB48E5F8B9BE8</idno>
+					<idno type="DOI">10.1162/imag.a.1067</idno>
+					<note type="submission">Received: 27 July 2025 Revision: 21 October 2025 Accepted: 19 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-02T07:00+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>whole-head segmentation</term>
+					<term>MRI</term>
+					<term>deep learning</term>
+					<term>artificial intelligence</term>
+					<term>pediatric brain tumor</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Extracranial tissues visible on brain magnetic resonance imaging (MRI) may hold significant value for characterizing health conditions and clinical decision-making, yet they are rarely quantified. Current tools have not been widely validated, particularly in settings of developing brains or underlying pathology. We present TissUnet, a deep learning model that segments skull bone, subcutaneous fat, and muscle from routine three-dimensional T1-weighted MRI, with or without contrast enhancement. The model was trained on 155 paired MRI-computed tomography (CT) scans and validated across nine datasets covering a wide age range and including individuals with brain tumors. In comparison to AI-CT-derived labels from 37 MRI-CT pairs, TissUnet achieved a median Dice coefficient of 0.79 [IQR: 0.77-0.81] in a healthy adult cohort. In a second validation using expert manual annotations, median Dice was 0.83 [IQR: 0.83-0.84] in healthy individuals and 0.81 [IQR: 0.78-0.83] in tumor cases, outperforming a previous state-of-the-art method. Acceptability testing resulted in an 89% acceptance rate after adjudication by a tie-breaker (N = 108 MRIs), and TissUnet demonstrated excellent performance in the blinded comparative review (N = 45 MRIs), including both healthy and tumor cases in pediatric populations. TissUnet enables fast, accurate, and reproducible segmentation of extracranial tissues, supporting large-scale studies on craniofacial morphology, treatment effects, and cardiometabolic risk using standard brain T1w MRI.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>Magnetic Resonance Imaging (MRI) is a widely used and standard imaging modality for visualizing brain anatomy, playing a central role in clinical care and neuroscience research. In particular, children and adults with neurologic conditions, such as brain tumors, multiple sclerosis, or dementia, undergo frequent MRI scans throughout diagnosis, treatment, and survivorship. In these instances, much focus is given to intracranial pathology, both qualitatively and quantitatively, motivating the development of many deep learning-based tools for intracranial brain and pathology segmentation <ref type="bibr" target="#b26">( Stolte et al., 2024;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>.</p><p>Emerging evidence suggests that extracranial features may carry clinically meaningful, opportunistic information, including markers of treatment toxicity, physiologic reserve, and long-term outcomes <ref type="bibr" target="#b2">( Cho et al., 2022;</ref><ref type="bibr" target="#b10">Hsieh et al., 2019;</ref><ref type="bibr" target="#b32">Zapaishchykova, Liu, et al., 2023;</ref><ref type="bibr" target="#b34">Zhang et al., 2023)</ref>. Quantification and longitudinal tracking of these tissues would be clinically valuable, yet are impractical and challenging to do manually. Deep learning-based segmentation is a promising strategy for practical, accurate extracranial tissue segmentation, but there are no publicly available tools that enable comprehensive, threedimensional segmentation of extracranial structures in standard brain MRIs, particularly for pediatric populations or those with brain pathology. This gap is especially relevant given the particular importance of sarcopenia in pediatric brain tumor (PBT) survivors, which leads to devastating physiologic frailty in up to 30% of survivors <ref type="bibr" target="#b12">( Joffe et al., 2019)</ref> and is associated with reduced neurocognitive function, quality of life, and survival <ref type="bibr" target="#b17">( Mager et al., 2023;</ref><ref type="bibr" target="#b23">Schulte et al., 2010)</ref>. While physiologic frailty is wellcharacterized in adults, it remains poorly defined in children due to age-and puberty-related variability. Current clinical assessment relies on indirect metrics such as body mass index (BMI), which lacks specificity and correlates poorly with outcomes across pediatric populations <ref type="bibr" target="#b18">( Marković-Jovanović et al., 2015)</ref>.</p><p>Despite the growing interest in MRI-based body composition as a prognostic marker in these patients, few efforts have addressed the practical barriers to extracranial segmentation at scale. A major challenge is the ground-truth labels as manual annotation of extracranial structures is time-intensive and technically demanding <ref type="bibr" target="#b8">( Galbusera &amp; Cina, 2024)</ref>. Although recent tools such as GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref> have demonstrated the potential of automated segmentation, no existing automated segmentation tools have been validated across the entire human lifespan, in particular pediatric populations and in the presence of pathology. This represents a significant gap, as accurate segmentation must account for the anatomical variability that occurs across different life stages. Further compounding these issues is the inconsistent application of defacing algorithms, which are commonly used in publicly shared MRI datasets to protect patient identity <ref type="bibr" target="#b4">( Familiar et al., 2024)</ref>. These methods vary widely in how much facial and extracranial tissue is removed, undermining model generalizability and limiting downstream biomarker discovery.</p><p>To address these challenges, we present a contrastinvariant T1w MRI deep learning (DL) framework, TissUnet, for automated segmentation of major extracranial tissues: bone (skull), subcutaneous fat, and muscle. In addition to volumetric analysis, our pipeline supports downstream anthropometric measurements of skull thickness derived from anatomical landmarks. We compare TissUnet against current state-of-the-art (SoTa) methods and multiple skull thickness estimation methods. To enable consistent analysis across heterogeneous, publicly available MRIs, we introduce a brain mask-guided region-of-interest (ROI) cropping strategy that isolates relevant extracranial structures while mitigating the effects of defacing and scanner variation. We further demonstrate its potential clinical application by modeling associations between tissue volume, body composition, and lipid profiles in adolescents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">MATERIALS AND METHODS</head><p>The research was deemed not to require IRB oversight as it consists of secondary analysis of de-identified primary datasets.</p><p>TissUnet is a multitask, neural network trained to segment three extracranial tissues-skull, fat, and muscle via 3-dimensional, T1-weighted (T1w) brain MRI (Fig. <ref type="figure" target="#fig_0">1A</ref>). Additionally, the model outputs 3D volumetrics of each tissue as well as an estimate of skull thickness. The model was developed to perform accurately across the human lifespan and in the presence of intracranial pathology. To address variability introduced by defacing algorithms and scanner differences, the pipeline employs a novel brain mask-based region-of-interest (ROI) cropping pipeline. To test the proposed method's robustness toward the registration deviations from the template, we rotate MRI T1w 5 degrees anterior and 5 degrees posterior and compare fat, muscle, and bone volumetric differences. Ten publicly available datasets were used for this study (Fig. <ref type="figure" target="#fig_1">2</ref>; Supplementary Methods 1) under data use agreements where necessary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Training dataset and label generation</head><p>TissUnet, based on the nnU-Net v2 framework <ref type="bibr" target="#b30">( Wasserthal et al., 2023)</ref>, was trained using a multi-center dataset Syn-thRAD2023, comprising 180 patients with brain tumors with co-registered CT-MRI T1w pre-and post-contrast imaging pairs (64% (N = 115) male, mean age 65, range 3-93 years <ref type="bibr" target="#b27">( Thummerer et al., 2023)</ref> (Fig. <ref type="figure" target="#fig_1">2A</ref>). Since muscle, fat, and bone are readily visible on CT, and due to the time and cost associated with generating de novo ground truth segmentations on MRI, we used segmentations generated by a previously validated CT-based AI algorithm, TotalSegmentator <ref type="bibr" target="#b30">( Wasserthal et al., 2023)</ref>, as initial ground truth labels that were then propagated to the coregistered T1w MRI.</p><p>To generate training pseudolabels for extracranial tissues, we applied the "head muscles," "oculomotor muscles," and "tissue types" models from TotalSegmentator <ref type="bibr" target="#b30">( Wasserthal et al., 2023)</ref> to CT scans from paired MRI-CT datasets. The raw labels were then merged into three target classes for training: (1) muscle: temporalis left, temporalis right; (2) bone: skull; and (3) subcutaneous fat: subcutaneous fat.</p><p>We initially included in training an additional class, "other muscle", which comprised smaller head and neck muscle groups <ref type="bibr" target="#b29">( Walter et al., 2024)</ref>. However, after applying a brain mask-guided region-of-interest (ROI) cropping strategy (see section 2.7), this class frequently had zero visible volume. Due to its consistent exclusion from the cropped field-of-view, we opted not to evaluate or include this class in the final training or inference outputs. (B) Boxplot of Dice of two DL methods performance compared to AI segmentations generated over CT images on a three-class tissue segmentation task. TissUnet (yellow), GRACE (blue) for fat, bone, and muscle, and overall, between three classes on MRI T1w (N = 37, healthy CERMEP dataset). See Table <ref type="table">1</ref> for Dice and HD95 medians and IQR. Pairwise significance was tested with the Mann-Whitney U test with FDR correction for multiple testing. IQR = interquartile range. (C) Boxplot of Dice of two DL methods performance compared to human expert segmentations on a three-class tissue segmentation task. TissUnet (yellow), GRACE (blue) for fat, bone, muscle, and overall between three classes on MRI T1w (N = 10, 5 healthy and 5 brain tumor cases). The Dice score ranges from a minimum of 0 (worst score) to a maximum of 1 (best score). Box plots representing the interquartile range for each method per tissue. See Table <ref type="table" target="#tab_1">2</ref> for Dice and HD95 by health status. Pairwise significance was tested with the Mann-Whitney U test with FDR correction for multiple testing. Bar plots for acceptability testing (N = 108 cases, 54 healthy and 54 brain tumor cases). See Table <ref type="table">3</ref> for intra-rater agreement scores by diagnosis and tissue class (skull, fat, muscle). (E) Bar plot for blinded review (N = 54 MRI, 34 healthy and 12 with brain tumor). All cases (N = 45, 100%) were rated acceptable using TissUnet, with none deemed unacceptable. In GRACE, 7 cases (16%) were rated acceptable and 38 cases (84%) were rated unacceptable. p-values measured using Chi-Squared.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Network training and computational requirements</head><p>TotalSegmentator is a model from the nnU-Net framework <ref type="bibr" target="#b30">( Wasserthal et al., 2023)</ref>, which is a UNet-based implementation that automatically configures all hyperparameters based on the dataset characteristics in a single-model setting. Based on the nnUNetV2 framework, the model was trained from scratch using Xavier initialization, Z-score normalization, a batch size of 2, and 128 × 128 × 128 patches. We used stochastic gradient descent with a learning rate of 1e-5 and a polynomial learning rate scheduler (exponent 0.9). The objective combined Dice and cross-entropy loss; performance was measured with pseudo-Dice. Augmentation followed nnU-Net's automated defaults. All MRI images and their corresponding segmentations underwent quality assurance (QA), and MRIs with artifacts were excluded from the training dataset. We trained nnUNetV2 following the standard protocol, optimizing the pseudo-dice and cross-entropy for 1000 epochs without early stopping, selecting the model based on the best validation pseudo-Dice achieved. The training was conducted on an NVIDIA GeForce RTX 4090 with 24 GB VRAM, using a batch size of 2, and completed in ~8.5 hours. Inference on the same instance took 8-12 seconds per complete volume segmentation. For CPU-based inference, the minimum RAM requirement is 16 GB to accommodate the model and intermediate activations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Evaluation datasets</head><p>Nine publicly available datasets were used for the evaluation (Fig. <ref type="figure" target="#fig_1">2</ref>; Supplementary Methods 1). The CER-MEP dataset <ref type="bibr" target="#b19">( Mérida et al., 2021)</ref>, which consists of 37 adults of co-registered CT-MRI pairs (45.9% (N = 17) male, mean age ± SD, 38.11 ± 11.36 years; range: 23-65 years) was used for evaluation of segmentation in healthy subjects, and the multi-center ACRIN dataset (64%(N = 29) male, mean age ± SD: 57.2 ± 9 years, range: 29-77 years), which consists of subjects with newly diagnosed glioblastoma multiforme, was used to evaluate segmentation in the setting of brain pathology (tumors). Seven additional MRI datasets (Calgary <ref type="bibr" target="#b21">( Reynolds et al., 2020)</ref>, ICBM <ref type="bibr" target="#b15">( Kötter et al., 2001)</ref>, IXI ( IXI Dataset -Brain Development, n.d.), ABCD <ref type="bibr" target="#b1">( Casey et al., 2018)</ref>, PING <ref type="bibr" target="#b22">( Rivkin et al., 2010)</ref> BabyConnectome <ref type="bibr" target="#b9">( Howell et al., 2019)</ref>, and Brats-PEDS <ref type="bibr">( Kazerooni et al., 2024)</ref>) were used to evaluate TissUnet in pediatric healthy and brain tumor settings (Supplementary Methods 1). Scans were co-registered to MRI agedependent T1-weighted asymmetric brain atlases, generated from the NIH-funded MRI Study of Normal Brain Development <ref type="bibr">(NIHPD, Fonov et al., 2011)</ref>, using rigid registration and rescaled to 1-mm isotropic voxel size to preserve anatomical size differences <ref type="bibr" target="#b16">( Lasso, 2017</ref><ref type="bibr" target="#b16">( Lasso, /2023))</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Evaluation and statistical analysis</head><p>All statistical analyses were done in R (v4.3.3). Betweengroup comparisons were conducted using the Mann-Whitney U test, with false discovery rate (FDR) correction for multiple comparisons. Categorical variables were compared using the Chi-Squared test. Two-sided p-values &lt; 0.05 were considered statistically significant. We evaluated TissUnet performance using four distinct experimental setups across nine external datasets (Fig. <ref type="figure" target="#fig_1">2</ref>). First, we compared TissUnet-predicted segmentations of the skull, fat, and muscle to reference segmentations generated from CT using TotalSegmentator and to the GRACE method <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref> on CERMEP dataset (N = 37, Fig. <ref type="figure" target="#fig_1">2B</ref>). All CERMEP AI-generated segmentations passed manual image QA. The performance was assessed using the Dice similarity coefficient and 95th percentile Hausdorff distance (HD95).</p><p>Second, we compared model outputs of TissUnet and GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref> to manual segmentations from an expert neuroradiologist (H.S., board-certified, 17 years of experience). We randomly selected 10 cases with paired MRI-CT imaging available, 5(50%) MRI T1w with a brain tumor (glioblastoma) from the ACRIN TCIA dataset ( "ACRIN-FMISO-BRAIN," n.d.), and 5(50%) T1w MRIs from the CERMEP dataset with no diagnosis <ref type="bibr" target="#b19">( Mérida et al., 2021)</ref> (Fig. <ref type="figure" target="#fig_1">2C</ref>).</p><p>Third, we conducted an acceptability assessment in which two trained annotators (A.Z., L.H.) rated segmentation quality in blinded 3D review using a 5-point Likert scale, which was categorized into "Acceptable", "Unacceptable", and "Bad MRI" categories (N = 108). Interrater agreement was quantified using Gwet AC1 <ref type="bibr" target="#b31">( Wongpakaran et al., 2013)</ref>. Disagreements were resolved by a third reviewer (B.H.K., a board-certified radiation oncologist with 9 years of experience). Subjects were randomly selected and stratified by age, sex, and dataset origin: Calgary <ref type="bibr" target="#b21">( Reynolds et al., 2020)</ref>, ICBM <ref type="bibr">( Kötter et al., 2001), and IXI (IXI Dataset -Brain Development, n.d.)</ref>, to ensure the diversity in imaging protocols, scanner types, and developmental stages (N = 54, 50% female, median age = 23, IQR ). To assess model performance in a pediatric brain tumor scenario, we randomly selected N = 54 patients from the BRATS-Peds 2023, which contains multi-institutional MRI scans of children diagnosed with high-grade gliomas (Fig. <ref type="figure" target="#fig_1">2D</ref>).</p><p>Lastly, a reviewer (B.H.K.) compared TissUnet and GRACE segmentations in a blind review using Slicer 3D extension (SegmentationReview <ref type="bibr" target="#b33">( Zapaishchykova, Tak, et al., 2023)</ref>. The reviewer was blinded both to the segmentation method and diagnostic status (N = 45, Calgary <ref type="bibr" target="#b21">( Reynolds et al., 2020)</ref>, ICBM <ref type="bibr" target="#b15">( Kötter et al., 2001)</ref>, IXI <ref type="bibr">(IXI Dataset -Brain Development, n.d.)</ref>, ABCD <ref type="bibr" target="#b1">( Casey et al., 2018)</ref>, PING <ref type="bibr" target="#b22">( Rivkin et al., 2010)</ref>, BabyConnectome <ref type="bibr" target="#b9">( Howell et al., 2019)</ref> Brats-PEDS <ref type="bibr">( Kazerooni et al., 2024)</ref>), Fig. <ref type="figure" target="#fig_1">2E</ref>).</p><p>We conducted two ablation studies. In the first one, to test brain ROI robustness we simulated the imperfect registration by applying a ±5degree tilt, using the same dataset described above used for the blinded 3D review (Fig. <ref type="figure" target="#fig_1">2D</ref>, N = 108, where N = 54 patients from the BRATS-Peds 2023 and N = 54 healthy subjects randomly selected and stratified by age, sex, and dataset origin from three datasets: Calgary, ICBM and IXI). In the second ablation study, we evaluated the model's robustness to intensity variations by applying contrast and brightness augmentations (gamma adjustments of 0.7 and 1.5, brightness shifts of ±0.2, and intensity scaling to 0.0-1.2 range) to the same dataset and comparing the resulting volumetric segmentations.</p><p>To assess associations between blood cholesterol levels and predictors-including BMI, extracranial tissue volumes, sex, and age-we used uni-and multivariable linear regression models. The Box-Cox transformation was applied to normalize the cholesterol distribution. Model assumptions, including linearity, normality of residuals, homoscedasticity, and absence of multicollinearity, were evaluated using diagnostic plots, the Shapiro-Wilk test, and variance inflation factors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Application of TissUnet-derived volumetrics as predictors of cholesterol</head><p>To demonstrate potential clinical application, we used the Adolescent Brain Cognitive Development (ABCD) Study <ref type="bibr" target="#b1">( Casey et al., 2018)</ref>, a large-scale, multi-institutional cohort designed to investigate brain and health development across adolescents. We applied TissUnet-derived tissue volumes to model relationships between muscle, fat, BMI, and blood cholesterol levels in youth. We compared univariable and multivariable linear regression models. The outcome variable, total blood serum cholesterol, was Box-Cox transformed (λ = 0.2) to approximate normality and stabilize the variance. Predictors included Body Mass Index (BMI), volumetric measures of the muscle and subcutaneous fat (derived from TissUnet), sex, and age. Assumptions of linearity, normality of residuals, homoscedasticity, and multicollinearity were assessed through diagnostic plots and variance inflation factors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Skull thickness estimation</head><p>Skull thickness is typically calculated via CT, but is comparatively difficult to assess via MRI, given poorer bonetissue contrast. For TissUnet-based skull thickness estimation, we extracted the contour from the TissUnet predicted bone mask using OpenCV Python (Fig. <ref type="figure" target="#fig_0">1A</ref>). We calculated median skull thickness by aggregating the central 95% of values (i.e., between the 2.5-97.5 percentiles) from over 100 tangents in each of 16 consecutive 1 mm 2D axial slices, beginning 10 mm superior to the top orbital roof detected by the DL method <ref type="bibr" target="#b32">( Zapaishchykova, Liu, et al., 2023)</ref> to offset frontal sinus cavities and orbital cavities. We compared the TissUnet median MRI skull thickness to CT-based thickness as a reference standard (default threshold set at 471 HU <ref type="bibr" target="#b3">( Delso et al., 2015)</ref>. We also compared performance across four other MRI-based methods for skull detection (GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, CHARM <ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite <ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, and SPM25 <ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.">Brain ROI</head><p>To account for the variability in defacing and the different ROI between MRI scanners across various open-source datasets, we introduce the brain mask-based ROI area cropping pipeline. It allows us to standardize the measurement area of anatomical regions for comparison between subjects. Briefly, we first identify where the brain mask begins in each slice, then cut away everything "in front" of that point. This creates a consistent, standardized brain region across different datasets and scanners, regardless of how the data were defaced originally.</p><p>Brain masks were generated using HD-BET <ref type="bibr" target="#b11">(Isensee et al., 2019)</ref>. For each axial slice, we identified the most anterior point of the brain mask and used it as a dynamic cut-off line. All voxels anterior to this point were removed, retaining only the region posterior to the boundary as the ROI. Formally, consider a 3D MRI volume V ∈R H × W × D , where H, W, and D correspond to the height (posterioranterior axis), width (left-right axis), and depth (inferiorsuperior axis), respectively. The associated binary brain mask S ∈{0,1} H × W × D indicates whether each voxel belongs to brain tissue: S( x, y, z) = 1, if the voxel at coordinate (x, y,z) is classified as brain tissue, 0, otherwise</p><formula xml:id="formula_0">⎧ ⎨ ⎪ ⎩ ⎪ (1)</formula><p>Processing proceeds slice by slice in the transverse (XY) plane, from inferior (z = 0) to superior (z = D-1). For each slice z, the top point T(z) represents the most anterior voxel where brain tissue is present:</p><formula xml:id="formula_1">T ( z) = max {x ∈[0, H -1] | ∃ y ∈[0,W -1] such that S( x, y, z) = 1} ,<label>(2)</label></formula><p>If a slice contains no brain tissue, T(z)=0.</p><p>To maintain a consistent defacing boundary across slices, we define an adjusted top point T*(z) that propagates the most anterior boundary observed so far:</p><formula xml:id="formula_2">T * z ( ) = max{T ( z),T * ( z -1)}, with T * (-1) = 0 (3)</formula><p>This prevents the cutting plane from moving posteriorly in subsequent slices. Using T*(z), we update the brain mask to remove voxels anterior to the adjusted boundary:</p><formula xml:id="formula_3">Ŝ( x, y, z) = 0, if x &gt; T * ( x), S( x, y, z), otherwise ⎧ ⎨ ⎪ ⎩ ⎪ (4)</formula><p>The same rule is applied to the original MRI volume to obtain the defaced image:</p><formula xml:id="formula_4">V ! ( x, y, z) = 0, if x &gt; T * ( x), V ( x, y, z), otherwise ⎧ ⎨ ⎪ ⎩ ⎪<label>(5)</label></formula><p>By zeroing out voxels anterior to T*(z), facial features are effectively removed while the brain regions necessary for downstream analysis are preserved (Fig. <ref type="figure" target="#fig_2">3</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Segmentation evaluation</head><p>We manually reviewed each sample in the SynthRad training dataset and removed 13.8% of T1-weighted MRIs (N = 25) due to imaging artifacts, including motion and blurring. In the AI-CT as ground-truth validation study, TissUnet median Dice in the external cohort of healthy adult subjects was 0.79 [IQR 0.77-0.81], compared to 0.5[0.48-0.54] for GRACE (p &lt; 0.001) with significant improvements in skull, fat, and muscle segmentation (Fig. <ref type="figure" target="#fig_0">1B</ref>, <ref type="figure" target="#fig_0">Table 1</ref>). In the second validation study using manual human expert annotations as ground truth, TissUnet's median Dice in the external cohort of healthy subjects was 0.83 [IQR: 0.83-0.84] and in the cohort with brain tumors was 0.81 [IQR: 0.78-0.83] (Fig. 1C, Table <ref type="table" target="#tab_1">2</ref>), compared to 0.73[0.7-0.74] and 0.6[0.57-0.62] for GRACE, respectively. TissUnet showed consistently higher segmentation accuracy across different groups (see Fig. <ref type="figure">4</ref>, Fig. <ref type="figure" target="#fig_3">5</ref> for example segmentations).</p><p>In the acceptability testing, following adjudication by a tiebreaker for cases with disagreement, the final acceptability rates were 89% (N = 289) "Acceptable," 10% (N = 34) "Unacceptable," and 0.1% (N = 1) "Bad Images" (Fig. <ref type="figure" target="#fig_0">1D</ref>). Agreement between the Tie Breaker with Reviewer 1 was Gwet AC1 of 0.89 (95% CI: 0.86-0.93) and with Reviewer 2 Gwet AC1 of 0.72 (95% CI: 0.65-0.78). Intrarater agreement was higher in the healthy cohort compared to the brain tumor cohort across all tissue types (Table <ref type="table">3</ref>).</p><p>In the blinded review, TissUnet had 100% (N = 45) of cases rated as acceptable, whereas GRACE had 16% rated as acceptable, with 84% (N = 38) labeled as requiring revision or edits (Fig. <ref type="figure" target="#fig_0">1E</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Skull thickness methods comparison</head><p>TissUNet yielded skull thickness measurements that more closely aligned with CT-based thickness than other MRI-based approaches both in the healthy and brain tumor patient cohorts at the default HU threshold (Table <ref type="table">4</ref> and Fig. <ref type="figure">6</ref>) and across various CT HU window settings.</p><p>Skull thickness was estimated from computed tomography (CT) using HU-based thresholding to segment cranial bone. To evaluate the sensitivity of skull thickness measurements to different segmentation thresholds, we compared multiple HU window settings: 300, 400, 500, and 800 HU on the CERMEP dataset (N = 37 healthy adult subjects, see Fig. <ref type="figure" target="#fig_4">7</ref>). These thresholds reflect the range of expected attenuation values for cancellous and cortical bone, which vary with age and bone mineral density <ref type="bibr" target="#b3">( Delso et al., 2015;</ref><ref type="bibr" target="#b24">Schulte-Geers et al., 2011)</ref>. Lower thresholds (e.g., 300 HU) are more inclusive of less mineralized or spongy bone typically seen in pediatric populations, whereas higher thresholds (e.g., 800 HU) emphasize dense cortical bone but may exclude thinner or under-ossified regions. Pediatric studies report skull attenuation values increasing from approximately 450-550 HU at birth to ~1100 HU by age 10, while adult cortical bone typically exhibits values of ≥900-1000 HU <ref type="bibr" target="#b3">( Delso et al., 2015;</ref><ref type="bibr" target="#b24">Schulte-Geers et al., 2011)</ref>. In brain tumor patients, especially those with peritumoral brain edema, skull HU tends to be lower than in matched healthy or non-edematous controls, particularly in older age groups <ref type="bibr" target="#b13">( Kang et al., 2021)</ref>. We excluded one subject from the study with 800 HU due to anomalously high skull density Table <ref type="table">1</ref>. Median dice and HD95 [IQR] on 3 tissue classes and overall, comparing GRACE and TissUnet models vs. AI-CT annotations on N = 37 cases from the CERMEP dataset <ref type="bibr" target="#b19">( Mérida et al., 2021)</ref>. Dice, median [IQR] ↑ HD95, median [IQR] ↓ Model Skull Fat Muscle Overall Skull Fat Muscle Overall TissUnet (ours) 0.87 [0.85, 0.88] 0.65 [0.58, 0.68] 0.86 [0.84, 0.88] 0.79 [0.77, 0.81] 3.79 [3.53, 4.35] 2.53 [2.22, 2.91] 3.53 [3.08, 3.93] 3.35 [3.16, 3.61] GRACE 0.78 [0.77, 0.79] 0.49 [0.44, 0.52] 0.25 [0.21, 0.29] 0.50 [0.48, 0.54] 3.61 [3.3, 3.95] 2.24 [2.12, 2.34] 3.06 [2.67, 3.41] 3.02 [2.78, 3.25] IQR = interquartile range, HD95 = The 95th percentile Hausdorff Distance. and the absence of a valid segmentation contour at that threshold. TissUnet demonstrated excellent agreement across a range of skull thickness magnitudes, with a mean difference of 0.31 mm in the healthy and 0.57 mm in the brain tumor cohort (Fig. <ref type="figure" target="#fig_5">8</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Ablation studies</head><p>When simulating minor registration errors by applying a ±5degree tilt, estimated tissue volumes remained stable, with absolute average percentile changes of less than 3% across all classes and health groups (Table <ref type="table" target="#tab_5">5</ref>). Based on a sample size of 54 participants per group, the study had 94.6% power to detect a moderate effect size (Cohen's d ≈ 0.5) between groups using a two-sided Wilcoxon signed-rank test (two-sided 0.05 type I error). We evaluated model robustness to intensity variations by applying five augmentations using MONAI transforms: high contrast (gamma = 1.5), low contrast (gamma = 0.7), brightness increase (+0.2 offset), brightness decrease (-0.2 offset), and intensity scaling (0.0-1.2 range). We compared differences in estimated volumetrics intrasubject, with average percentile changes of less than 1% across all classes and health groups, and a maximum change of 2.4% observed for fat tissue under low contrast conditions (Table <ref type="table" target="#tab_4">6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Application of TissUnet-derived volumetrics as predictors of cholesterol</head><p>In the ABCD study, 888 subjects had blood cholesterol and corresponding T1w MRI available. Median age was 11.9 years ], 44% (N = 389) female, median , median blood cholesterol was 155 (mg/dL) . 71% (N = 631) of subjects had normal cholesterol (less than 170 mg/dL (Hyperlipid-Fig. <ref type="figure">4</ref>. Example inference from the T1-MRI. The results are shown in axial view. We compared GRACE (MRI T1w) <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref> to TissUnet (our) model in different age groups (overlaid in white text) and different health statuses: healthy (cases #1 and #2), and subjects with brain tumors (cases #3 and #4). Skull mask in purple, muscle in orange, and subcutaneous fat in green.</p><p>Table <ref type="table">3</ref>. Inter-rater agreement in acceptability testing on 3 tissue classes (skull, subcutaneous fat, and muscle) was measured using Gwet AC1(with 95 %CI in parentheses) within N = 108 subjects (N = 54 patients with brain tumor and N = 54 healthy subjects).</p><p>Health status Rater Skull Fat Muscle Overall Brain tumor R1-R2 R1-TB R2-TB 0.200 [-0.005, 0.405] 0.649 [0.443, 0.855] 0.457 [0.259, 0.654] 0.699 [0.542, 0.856] 0.920 [0.838, 1.000] 0.791 [0.660, 0.921] 0.751 [0.588, 0.913] 0.981 [0.943, 1.000] 0.777 [0.625, 0.929] 0.573 [0.470, 0.676] 0.878 [0.822, 0.935] 0.687 [0.596, 0.778] Healthy R1-R2 R1-TB R2-TB 0.371 [0.166, 0.576] 0.774 [0.635, 0.912] 0.462 [0.264, 0.660] 0.798 [0.671, 0.925] 0.943 [0.876, 1.000] 0.852 [0.734, 0.971] 0.852 [0.734, 0.971] 1.000 [1.000, 1.000] 0.852 [0.734, 0.971] 0.693 [0.604, 0.783] 0.913 [0.865, 0.961] 0.742 [0.658, 0.826] R1 = Rater 1, R2 = Rater 2, TB = Tie Breaker. emia in Children | Symptoms, Diagnosis &amp; Treatment, n.d.)). Median extracranial muscle volume was 39 cm 3 [IQR 33-47], and median extracranial subcutaneous fat volume was 110 cm 3 [IQR 79-172]. Temporalis muscle volume was significantly associated with blood cholesterol in the multivariable regression model, adjusted for age, sex, and subcutaneous fat (β = -4.23 × 10 -3 , p = 0.014, Fig. 9, Tables <ref type="table" target="#tab_6">7</ref><ref type="table" target="#tab_7">8</ref><ref type="table">9</ref>for uni-and multivariable models).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">DISCUSSION</head><p>In this study, we present TissUnet, a deep learningbased model for automated segmentation of extracra-Table <ref type="table">4</ref>. Skull thickness mean thickness and absolute difference (in mm) in healthy cohort CERMEP (N = 37), add brain tumor cohort ACRIN (N = 5) for CT (reference, HU&gt;471 <ref type="bibr" target="#b3">( Delso et al., 2015)</ref>), TissUnet (our method), GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, CHARM <ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite <ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, and SPM25 <ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>. Tool Healthy With brain tumor Mean thickness (SD) Absolute difference (Tool -CT) Mean thickness (SD) Absolute difference (Tool -CT) CT (Reference) 5.60 (0.81) -6.81 (1.17) -TissUNet (ours) 5.46 (0.90) 0.31 7.38 (1.22) 0.57 GRACE 5.05 (0.71) 0.60 5.61 (1.07) 1.21 CHARM 4.48 (0.69) 1.11 3.88 (0.84) 2.93 BrainSuite 3.09 (0.79) 2.51 5.74 (2.61) 1.48 SPM25 8.01 (1.48) 2.52 9.93 (1.98) 3.11 SD = standard deviation, HU = Hounsfield Units, CT = computer tomography.</p><p>Fig. <ref type="figure">6</ref>. Skull segmentations of three randomly selected healthy participants (columns #1-#3) from the CERMEP dataset and three randomly sampled patients with brain tumors (columns #4-#6) from ACRIN-TCIA (axial view) for CT (HU&gt;471 <ref type="bibr" target="#b3">( Delso et al., 2015)</ref>) and T1w MRI-based segmentation models (TissUnet, GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, CHARM <ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite <ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, SPM25 <ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>).   <ref type="bibr" target="#b3">( Delso et al., 2015)</ref>), TissUnet, GRACE <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, CHARM <ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite <ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, and SPM25 <ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>. The CERMEP dataset includes 37 healthy subjects with paired MRI T1-weighted (T1w) and CT images. The violin plots illustrate the overall distribution shape, with overlaid boxplots indicating the median (also labeled in text) and quartiles (see Table <ref type="table">4</ref>). (B) Bland-Altman plots compare each MRI-based segmentation tool (TissUnet, GRACE, CHARM, BrainSuite, SPM25) to the CT reference on the CERMEP dataset <ref type="bibr" target="#b19">( Mérida et al., 2021)</ref>. The solid red line represents the mean difference (bias), and the dashed blue lines indicate the 95% limits of agreement. CT = Computed Tomography, HU = Hounsfield units.</p><p>nial tissues-skull, subcutaneous fat, and muscle-from T1-weighted brain MRI. Compared to previously proposed methods <ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, which focused on broad tissue segmentation in adults, TissUnet was validated across the entire lifespan, from pediatric through elderly cohorts, as well as in patients with brain tumors. By leveraging pseudo-labels derived from the AI-CTbased segmentation method <ref type="bibr" target="#b30">( Wasserthal et al., 2023)</ref>, we mitigated the need for time-consuming, large-scale manual MRI annotations. TissUnet achieved high agreement with both AI-CT-based labels and human experts on five external datasets, demonstrating generalizability across different age groups and pathologies. The model achieved median Dice scores of 0.81 and 0.83 in healthy and brain tumor cohorts, respectively. We extend the TissUnet beyond segmentation and volumetric calcula- Volumetric measurements (cm³, mean ± SD) for skull, subcutaneous fat, and temporalis muscle across different image augmentations (N = 54 patients with brain tumor and N = 54 healthy subjects). Augmentations were applied using MONAI transforms and included: high contrast (gamma = 1.5), low contrast (gamma = 0.7), brightness increase (offset = +0.2), brightness decrease (offset = -0.2), and intensity scaling (range 0.0-1.2). Augmented results show mean volume with absolute (Δ cm³) and relative (%) differences compared to nonaugmented baseline. tion of extracranial tissues, and propose an automated skull thickness estimation pipeline, broadening the utility for applications in cranial growth tracking and surgical planning.</p><p>While CT remains the clinical reference for skull thickness estimation due to its calibrated HU values, median skull HU decreases with age, from 800-850 HU in younger adults to 500-600 HU in older individuals <ref type="bibr" target="#b3">( Delso et al., 2015;</ref><ref type="bibr" target="#b24">Schulte-Geers et al., 2011)</ref>, our automated TissUnet-based skull thickness pipeline does not rely on specific HU thresholds and produces measurements comparable to those derived from CT across the lifespan.  This approach enables accurate and efficient estimation on MRI, which is heavily utilized for tracking health conditions, such as cancer and neurologic diseases, due to its superior soft tissue contrast and absence of radiation exposure when compared to CT. We found that TissUnet performed better across tissue segmentation tasks, particularly in pediatric and tumor cases, when directly compared to previous methods in both quantitative metrics and blinded clinical acceptability evaluation. In blinded review, all TissUnet outputs were rated acceptable, while 84% of segmentations from the previous state-of-the-art method required revision. We believe its superior performance stems from two key factors. First, the training data: compared to the previous method, which was trained exclusively on older adults from a single site, our model was trained on the multi-center SynthRAD2023 dataset, spanning a wider age range and greater anatomical variability. Second, the use of nnUNetV2, which incorporates advanced automated augmentation and is more robust to variations in MRI protocols, reducing the need for extensive image normalization. Notably, training on cases with pathologies did not impair performance on healthy brains. We hypothesize that many subtle pathologies resemble normal anatomy. In skull thickness estimation, traditional methods such as CHARM <ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite <ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, and SPM25 <ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref> rely on geometric or probabilistic assumptions and skull surface meshes that often fail in the presence of abnormal anatomy. For instance, SPM125 uses voxel-wise statistical models, BrainSuite applies morphology-based techniques, and CHARM employs a mesh-based probabilistic atlas. FreeSurfer ( FreeSurfer Developers, 2018), though widely used, does not explicitly segment the skull but instead creates a mask by extending the brain surface outward by 3 mm. In contrast, our model learns directly from imaging data, enabling it to adapt to anatomical variation and perform more accurately in real-world clinical settings.</p><p>To mitigate variability in measured volumes of extracranial tissues caused by defacing artifacts, we introduced a brain mask-based cropping strategy to define a consistent region of interest across subjects. MRI scan anonymization procedures <ref type="bibr" target="#b4">( Familiar et al., 2024)</ref>, which are commonly used to protect patient privacy, can inadvertently remove or alter extracranial tissues, making it difficult to measure consistently. The standardized ROI maintained spatial consistency across datasets and proved reliable for skull and muscle estimation. It is notable that given the relatively small volume of the subcutaneous fat in the extracranial region, small variations in registration alignment can translate into large changes in absolute percentage.</p><p>We demonstrated how TissUnet-derived extracranial tissue volume offers a biologically meaningful context in modeling lipid profiles during youth. Monitoring cholesterol during adolescence provides valuable insight for identifying early cardiometabolic risk ( Hyperlipidemia in <ref type="bibr">Children | Symptoms, Diagnosis &amp; Treatment, n.d.)</ref>, yet integrating imaging with biochemical markers at scale has been limited by manual segmentation constraints. In the ABCD study, 888 participants had both T1-weighted MRI and blood lipid data available, enabling populationlevel analysis of extracranial fat volumes-an approach previously infeasible without labor-intensive expert annotation. While the temporalis muscle has emerged as a validated T1w-based surrogate marker for sarcopenia, existing methods are largely restricted to 2D crosssectional area (CSA) or manual estimation <ref type="bibr">( Hsieh et al.,</ref><ref type="bibr">Table 9</ref>. Median and IQR by sex and cholesterol group (below 170 mg/dl is "Normal" and above is "High"), N = 888 subjects (Fig. <ref type="figure" target="#fig_6">9</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sex</head><p>Cholesterol level n Median IQR F Normal BMI 387 19.1900 4.88000 F High BMI 68 22.4000 9.35750 M Normal BMI 462 18.6850 4.82750 M High BMI 103 21.6100 7.39500 F Normal Weight, lbs 387 100.0000 30.47500 F High Weight, lbs 68 120.0500 46.00000 M Normal Weight, lbs 462 95.0000 28.77500 M High Weight, lbs 103 115.0000 45.65000 F Normal Subcutaneous fat (cm³) 329 112.7250 90.02500 F High Subcutaneous fat (cm³) 60 134.5030 94.83625 M Normal Subcutaneous fat (cm³) 405 102.4660 81.94600 M High Subcutaneous fat (cm³) 94 135.5530 156.07050 F Normal Muscle (cm 3 ) 329 39.1980 13.77100 F High Muscle (cm 3 ) 60 44.3705 14.55250 M Normal Muscle (cm 3 ) 405 37.4760 13.97900 M High Muscle (cm 3 ) 94 41.9515 12.40125 2019; <ref type="bibr" target="#b32">Zapaishchykova, Liu, et al., 2023)</ref>. However, beyond 2D temporalis muscle segmentation, no established pipelines currently exist for systematic volumetric analysis of extracranial tissues-including skull, muscle, and fat-despite their potential to yield additional prognostic insights. Such automated MRI-derived measures may be particularly valuable in pediatric populations who routinely undergo neuroimaging, including childhood cancer survivors and those with chronic neurologic conditions. Future studies should evaluate whether volumetric temporalis muscle measurements outperform CSA in clinical risk prediction and functional outcomes. This study has several limitations. First, T1-weighted fat-saturated sequences, although beneficial for suppressing fat signals that may obscure intracranial structures, render extracranial fat largely invisible, making it challenging to validate fat segmentation on such scans. Consequently, the generalizability of our model to fat-saturated images remains uncertain. Second, while the model was designed to tolerate defacing, segmentation performance can degrade under extreme conditions. For instance, in the UK Biobank dataset, extensive cropping of the temporalis muscle restricts accurate volume estimation. Future work should explore domain adaptation strategies to extend model applicability to neurodegenerative conditions, such as Alzheimer's disease. Moreover, prospective clinical studies are needed to assess the downstream clinical relevance of automated extracranial tissue measurements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">CONCLUSION</head><p>We present TissUnet, a robust deep learning-based pipeline for segmenting extracranial structures-skull, muscle, and fat-in T1-weighted brain MRIs. Trained on pseudolabels from CT data and validated across diverse pediatric and adult settings, including brain tumor datasets, TissUnet enables accurate tissue quantification and introduces automated skull thickness measurement. By addressing common challenges in extracranial segmentation, including defacing and limited annotation availability, our method supports comprehensive neuroimaging and anthropometric analyses for future applications in clinical research, growth assessment, and treatment planning.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. (A) TissUnet pipeline overview. Step 1: The MRI T1w images are registered to the corresponding age-based NIHPD template. Step 2: TissUnet predicts 4 classes: brain, skull, subcutaneous fat, and muscle. Step 3: Using a brain mask, a universal ROI for calculating tissue volumes is created. Step 4: Skull, subcutaneous fat, and muscle anthropometric measurements are calculated on the cropped ROI. Optional: To estimate skull thickness, we used the DenseNet model to pick the top orbital roof slices and aggregate skull thickness measurements estimated from 95% measured tangents from 100 points at each 16 × 1 mm 2D axial slice. For validation studies, we created four different experiments: AI-CT ground truth (B), Human Expert annotations (C), Acceptability testing (D), and Blinded Review (E). (B) Boxplot of Dice of two DL methods performance compared to AI segmentations generated over CT images on a three-class tissue segmentation task. TissUnet (yellow), GRACE (blue) for fat, bone, and muscle, and overall, between three classes on MRI T1w (N = 37, healthy CERMEP dataset). See Table 1 for Dice and HD95 medians and IQR. Pairwise significance was tested with the Mann-Whitney U test with FDR correction for multiple testing. IQR = interquartile range. (C) Boxplot of Dice of two DL methods performance compared to human expert segmentations on a three-class tissue segmentation task. TissUnet (yellow), GRACE (blue) for fat, bone, muscle, and overall between three classes on MRI T1w (N = 10, 5 healthy and 5 brain tumor cases). The Dice score ranges from a minimum of 0 (worst score) to a maximum of 1 (best score). Box plots representing the interquartile range for each method per tissue. See Table2for Dice and HD95 by health status. Pairwise significance was tested with the Mann-Whitney U test with FDR correction for multiple testing. Bar plots for acceptability testing (N = 108 cases, 54 healthy and 54 brain tumor cases). See Table3for intra-rater agreement scores by diagnosis and tissue class (skull, fat, muscle). (E) Bar plot for blinded review (N = 54 MRI, 34 healthy and 12 with brain tumor). All cases (N = 45, 100%) were rated acceptable using TissUnet, with none deemed unacceptable. In GRACE, 7 cases (16%) were rated acceptable and 38 cases (84%) were rated unacceptable. p-values measured using Chi-Squared.</figDesc><graphic coords="3,62.39,55.90,487.21,248.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Cohort selection by dataset origin and health status for TissUnet training and testing settings. In yellow labeled datasets with subjects with brain tumors, in white datasets with healthy subjects.</figDesc><graphic coords="4,62.40,55.90,487.19,217.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. Example of brain ROI cropping. The left panel shows a sagittal view of an original MRI scan and predictions, while the right panel displays the defaced counterparts.</figDesc><graphic coords="6,126.68,578.91,358.65,131.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Sample of five cases segmentations for three classes (skull in blue, muscle in yellow, and subcutaneous fat in red) from the T1-MRI. The results are shown in axial view, slice z = 100. We compared GRACE (MRI T1w) to TissUnet (our), Human Expert annotations, and TotalSegmentator (predicted over CT image).</figDesc><graphic coords="9,62.40,55.90,487.20,444.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. Boxplot (a) and density plot (b) showing the distribution of median skull thickness measured from CT across different Hounsfield Unit (HU) threshold windows (300-800 HU) in the CERMEP dataset (N = 37 healthy subjects). One subject was excluded from the HU = 800 threshold due to a higher density skull and absence of a valid contour.</figDesc><graphic coords="11,125.40,55.90,361.20,229.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. (A) Comparison of median skull thickness between CT (reference, HU &gt; 471<ref type="bibr" target="#b3">( Delso et al., 2015)</ref>), TissUnet, GRACE<ref type="bibr" target="#b26">( Stolte et al., 2024)</ref>, CHARM<ref type="bibr" target="#b20">( Puonti et al., 2020)</ref>, BrainSuite<ref type="bibr" target="#b25">( Shattuck &amp; Leahy, 2002)</ref>, and SPM25<ref type="bibr" target="#b7">( Friston et al., 2006;</ref><ref type="bibr" target="#b28">Tierney et al., 2025)</ref>. The CERMEP dataset includes 37 healthy subjects with paired MRI T1-weighted (T1w) and CT images. The violin plots illustrate the overall distribution shape, with overlaid boxplots indicating the median (also labeled in text) and quartiles (see Table4). (B) Bland-Altman plots compare each MRI-based segmentation tool (TissUnet, GRACE, CHARM, BrainSuite, SPM25) to the CT reference on the CERMEP dataset<ref type="bibr" target="#b19">( Mérida et al., 2021)</ref>. The solid red line represents the mean difference (bias), and the dashed blue lines indicate the 95% limits of agreement. CT = Computed Tomography, HU = Hounsfield units.</figDesc><graphic coords="11,62.38,339.10,487.24,305.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 9 .</head><label>9</label><figDesc>Fig. 9. Associations between blood cholesterol levels and body composition metrics (BMI and weight) and extracranial volumetrics (muscle and subcutaneous fat), stratified by sex (N = 888 subjects). Boxplots show distributions of weight (A), BMI (B), subcutaneous fat volume in cm 3 (C), and temporalis muscle volume in cm 3 (D) across binary cholesterol categories (below 170 mg/dl is "Normal" and above is "High"). Boxes represent the interquartile range (IQR), with the median shown as a horizontal line; whiskers extend to 1.5× IQR. Statistical comparisons between cholesterol groups were done using a two-sided Mann-Whitney U test with FDR adjustment for multiple comparisons. Asterisks indicate significance levels: p &lt; 0.0001 (****); ns = not significant. IQR = interquartile range, BMI = body mass index.</figDesc><graphic coords="13,62.43,55.90,487.15,343.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="8,62.39,55.90,487.22,377.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="10,125.39,243.00,361.23,335.51" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Median, IQR dice, and HD95 on 3 tissue classes, comparing GRACE and TissUnet models vs. human expert annotations on N = 10 cases (N = 5 brain tumor and N = 5 healthy subjects).</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell cols="2">Dice, median [IQR] ↑</cell><cell></cell><cell></cell><cell cols="2">HD95, median [IQR] ↓</cell><cell></cell></row><row><cell>Health</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Status</cell><cell>Model</cell><cell>Skull</cell><cell>Fat</cell><cell>Muscle</cell><cell>Overall</cell><cell>Skull</cell><cell>Fat</cell><cell>Muscle</cell><cell>Overall</cell></row><row><cell cols="2">Healthy TissUNet</cell><cell>0.83</cell><cell>0.59</cell><cell>0.84</cell><cell>0.83</cell><cell>1.41</cell><cell>3.46</cell><cell>1</cell><cell>1.73</cell></row><row><cell></cell><cell>(ours)</cell><cell>[0.83, 0.86]</cell><cell>[0.58, 0.6]</cell><cell>[0.84, 0.87]</cell><cell>[0.83, 0.84]</cell><cell>[1, 1.73]</cell><cell>[3, 3.74]</cell><cell>[1,1.41]</cell><cell>[1.41, 1.73]</cell></row><row><cell></cell><cell cols="2">GRACE 0.76</cell><cell>0.73</cell><cell>0.18</cell><cell>0.73</cell><cell>5.1</cell><cell>6.71</cell><cell>87.07</cell><cell>6.71</cell></row><row><cell></cell><cell></cell><cell>[0.75, 0.76]</cell><cell>[0.7, 0.74]</cell><cell>[0.16, 0.27]</cell><cell>[0.7, 0.74]</cell><cell>[3, 5.48]</cell><cell>[6.48, 7.14]</cell><cell>[75.05, 89.99]</cell><cell>[6.48, 7.14]</cell></row><row><cell>Brain</cell><cell>TissUNet</cell><cell>0.9</cell><cell>0.72</cell><cell>0.81</cell><cell>0.81</cell><cell>1</cell><cell>5</cell><cell>1.73</cell><cell>1.73</cell></row><row><cell>tumor</cell><cell>(ours)</cell><cell>[0.89, 0.91]</cell><cell>[0.7, 0.73]</cell><cell>[0.78, 0.83]</cell><cell>[0.78, 0.83]</cell><cell>[1,1]</cell><cell>[3, 19.52]</cell><cell>[1.73, 2.24]</cell><cell>[1.73, 2.24]</cell></row><row><cell></cell><cell cols="2">GRACE 0.74</cell><cell>0.6</cell><cell>0.2</cell><cell>0.6</cell><cell>3.74</cell><cell>20.4</cell><cell>85.15</cell><cell>20.4</cell></row><row><cell></cell><cell></cell><cell>[0.71, 0.76]</cell><cell>[0.57, 0.62]</cell><cell>[0.18, 0.2]</cell><cell>[0.57, 0.62]</cell><cell>[3, 5.38]</cell><cell>[13.42, 28.05]</cell><cell>[81.8, 88.92]</cell><cell>[13.42, 28.05]</cell></row></table><note><p>IQR = interquartile range, HD95 = The 95th percentile Hausdorff Distance.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 6 .</head><label>6</label><figDesc>Ablation study of contrast augmentation effects on extracranial tissue segmentation.</figDesc><table><row><cell>Health status</cell><cell>Augmentation</cell><cell>Skull</cell><cell>Fat</cell><cell>Muscle</cell></row><row><cell>Healthy</cell><cell>No augmentation</cell><cell>369.205 ± 102.796</cell><cell>142.904 ± 85.674</cell><cell>42.789 ± 22.802</cell></row><row><cell></cell><cell>High contrast</cell><cell>367.970</cell><cell>141.613</cell><cell>42.643</cell></row><row><cell></cell><cell></cell><cell>Δ=-1.2345 cm³ (-0.33%)</cell><cell>Δ=-1.2909 cm³ (-0.90%)</cell><cell>Δ=-0.1456 cm³ (-0.34%)</cell></row><row><cell></cell><cell>Low contrast</cell><cell>369.598</cell><cell>144.792</cell><cell>43.638</cell></row><row><cell></cell><cell></cell><cell>Δ=+0.3939 cm³ (+0.11%)</cell><cell>Δ=+1.8872 cm³ (+1.32%)</cell><cell>Δ=+0.8498 cm³ (+1.99%)</cell></row><row><cell></cell><cell>Brightness increase</cell><cell>369.132</cell><cell>142.823</cell><cell>43.002</cell></row><row><cell></cell><cell></cell><cell>Δ=-0.0725 cm³ (-0.02%)</cell><cell>Δ=-0.0814 cm³ (-0.06%)</cell><cell>Δ=+0.2135 cm³ (+0.50%)</cell></row><row><cell></cell><cell cols="2">Brightness decrease 369.132</cell><cell>142.823</cell><cell>43.002</cell></row><row><cell></cell><cell></cell><cell>Δ=-0.0722 cm³ (-0.02%)</cell><cell>Δ=-0.0812 cm³ (-0.06%)</cell><cell>Δ=+0.2137 cm³ (+0.50%)</cell></row><row><cell></cell><cell>Intensity scaled</cell><cell>369.133</cell><cell>142.823</cell><cell>43.002</cell></row><row><cell>Cancer</cell><cell>No augmentation</cell><cell>Δ=-0.0719 cm³ (-0.02%) 293.399 ± 84.793</cell><cell>Δ=-0.0810 cm³ (-0.06%) 129.616 ± 68.420</cell><cell>Δ=+0.2132 cm³ (+0.50%) 32.357 ± 20.111</cell></row><row><cell></cell><cell>High contrast</cell><cell>292.580</cell><cell>128.500</cell><cell>32.496</cell></row><row><cell></cell><cell></cell><cell>Δ=-0.8186 cm³ (-0.28%)</cell><cell>Δ=-1.1164 cm³ (-0.86%)</cell><cell>Δ=+0.1394 cm³ (+0.43%)</cell></row><row><cell></cell><cell>Low contrast</cell><cell>291.091</cell><cell>134.291</cell><cell>32.867</cell></row><row><cell></cell><cell></cell><cell>Δ=-2.3085 cm³ (-0.79%)</cell><cell>Δ=+4.6746 cm³ (+3.61%)</cell><cell>Δ=+0.5098 cm³ (+1.58%)</cell></row><row><cell></cell><cell>Brightness increase</cell><cell>291.982</cell><cell>131.809</cell><cell>32.660</cell></row><row><cell></cell><cell></cell><cell>Δ=-1.4170 cm³ (-0.48%)</cell><cell>Δ=+2.1924 cm³ (+1.69%)</cell><cell>Δ=+0.3030 cm³ (+0.94%)</cell></row><row><cell></cell><cell cols="2">Brightness decrease 291.994</cell><cell>131.810</cell><cell>32.660</cell></row><row><cell></cell><cell></cell><cell>Δ=-1.4048 cm³ (-0.48%)</cell><cell>Δ=+2.1934 cm³ (+1.69%)</cell><cell>Δ=+0.3031 cm³ (+0.94%)</cell></row><row><cell></cell><cell>Intensity scaled</cell><cell>291.982</cell><cell>131.807</cell><cell>32.660</cell></row><row><cell></cell><cell></cell><cell>Δ=-1.4169 cm³ (-0.48%)</cell><cell>Δ=+2.1908 cm³ (+1.69%)</cell><cell>Δ=+0.3032 cm³ (+0.94%)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>Average volumetric differences (in cm² and as percentiles relative to the unmodified volume ("zero" tilt) mean ± SD) following simulated ±5° head rotations (forward and backward) across 108 MRI (Healthy: n = 54; Brain tumor: n = 54).</figDesc><table><row><cell>Health status</cell><cell>Tilt angle</cell><cell>Skull</cell><cell>Fat</cell><cell>Muscle</cell></row><row><cell>Brain tumor</cell><cell>+5</cell><cell>684.81 ± 563.88 0.23% ± 0.17%</cell><cell>853.24 ± 736.78 0.78% ± 0.70%</cell><cell>37.54 ± 50.70 0.13% ± 0.16%</cell></row><row><cell></cell><cell></cell><cell>(p = 0.95)</cell><cell>(p = 0.94)</cell><cell>(p = 0.99)</cell></row><row><cell></cell><cell>-5</cell><cell>1493.69 ± 1258.68 0.50% ± 0.38%</cell><cell>1128.59 ± 1352.88 1.04% ± 1.00%</cell><cell>193.41 ± 178.75 0.70% ± 0.76%</cell></row><row><cell></cell><cell></cell><cell>(p = 0.85)</cell><cell>(p = 0.86)</cell><cell>(p = 0.81)</cell></row><row><cell>Healthy</cell><cell>+5</cell><cell>1054.83 ± 933.30 0.28% ± 0.21%</cell><cell>2453.22 ± 1454.75 2.10% ± 1.32%</cell><cell>35.74 ± 48.98 0.09% ± 0.10%</cell></row><row><cell></cell><cell></cell><cell>(p = 0.99)</cell><cell>(p = 0.79)</cell><cell>(p = 0.97)</cell></row><row><cell></cell><cell>-5</cell><cell>2260.83 ± 1672.91 0.64% ± 0.44%</cell><cell>3580.98 ± 2119.41 3.19% ± 2.06%</cell><cell>311.24 ± 296.54 0.79% ± 0.64%</cell></row><row><cell></cell><cell></cell><cell>(p = 0.78)</cell><cell>(p = 0.74)</cell><cell>(p = 0.79)</cell></row><row><cell cols="4">Pairwise group differences were assessed using a two-sided Wilcoxon-Mann-Whitney U-test.</cell><cell></cell></row><row><cell>SD = standard deviation.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7 .</head><label>7</label><figDesc>Univariable linear models for Box-Cox transformed cholesterol.</figDesc><table><row><cell>Predictor</cell><cell>Estimate</cell><cell>95% CI</cell><cell>p-value</cell></row><row><cell>BMI</cell><cell>0.0026</cell><cell>(-0.004, 0.0092)</cell><cell>0.44</cell></row><row><cell>Muscle (cm 3 )</cell><cell>-0.0039</cell><cell>(-0.0067, -0.0012)</cell><cell>0.0054</cell></row><row><cell>Subcutaneous</cell><cell>-0.0001</cell><cell>(-5e-04, 3e-04)</cell><cell>0.54</cell></row><row><cell>fat (cm³)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Sex, male</cell><cell>-0.0496</cell><cell>(-0.1123, 0.0131)</cell><cell>0.12</cell></row><row><cell>Age</cell><cell>-0.0053</cell><cell>(-0.0093, -0.0013)</cell><cell>0.0089</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 .</head><label>8</label><figDesc>Multivariable linear model for Box-Cox transformed cholesterol.</figDesc><table><row><cell>Predictor</cell><cell>Estimate</cell><cell>95% CI</cell><cell>p-value</cell></row><row><cell>BMI</cell><cell>0.0086</cell><cell>(-0.0017, 0.0189)</cell><cell>0.1</cell></row><row><cell>Muscle (cm 3 )</cell><cell>-0.0042</cell><cell>(-0.0076, -9e-04)</cell><cell>0.014</cell></row><row><cell>Subcutaneous</cell><cell>-0.0003</cell><cell>(-8e-04, 2e-04)</cell><cell>0.27</cell></row><row><cell>fat (cm³)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Sex, male</cell><cell>-0.0331</cell><cell>(-0.0995, 0.0334)</cell><cell>0.33</cell></row><row><cell>Age</cell><cell>-0.0059</cell><cell>(-0.0103, -0.0015)</cell><cell>0.0081</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DATA AND CODE AVAILABILITY</head><p>The complete dataset (Supplementary Methods 1) aggregated for this study contains primary datasets that differ widely in terms of their "openness," that is, their availability for secondary use without restrictions or special efforts by the team. Preliminary studies ranged from fully open and downloadable datasets in the public domain to more restricted datasets that could only be used for specific purposes, under separate agreements, or after special efforts had been made to provide data in shareable form. The model weights, training, and test code are available at <ref type="url" target="https://github.com/AIM-KannLab/TissUNet">https://github . com / AIM -KannLab / TissUNet</ref>.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Assessment of the Prognostic Value of Radiomic Features in 18F-FMISO PET Imaging of Hypoxia in Postsurgery Brain Cancer Patients: Secondary Analysis of Imaging Data from a Single-Center Study and the Multicenter ACRIN 6684 Trial</title>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Muzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Wolsztynski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janet</forename><forename type="middle">N</forename><surname>O’sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Finbarr</forename><surname>O’sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">A</forename><surname>Krohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Mankoff</surname></persName>
+		</author>
+		<idno type="DOI">10.18383/j.tom.2019.00023</idno>
+		<ptr target="https://www.cancerimagingarchive.net/collection/acrin-fmiso-brain/" />
+	</analytic>
+	<monogr>
+		<title level="j">Tomography</title>
+		<title level="j" type="abbrev">Tomography</title>
+		<editor>
+			<persName><forename type="first">Acrin-Fmiso-Brain</forename></persName>
+		</editor>
+		<idno type="ISSNe">2379-139X</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="14" to="22" />
+			<date type="published" when="2020-03-01" />
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">ACRIN-FMISO-BRAIN. (n.d.). The cancer imaging archive (TCIA). https://www . cancerimagingarchive . net / collection / acrin -fmiso -brain/</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The Adolescent Brain Cognitive Development (ABCD) study: Imaging acquisition across 21 sites</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Casey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tariq</forename><surname>Cannonier</surname></persName>
+			<idno type="ORCID">0000-0002-1400-2387</idno>
+		</author>
+		<author>
+			<persName><forename type="first">May</forename><forename type="middle">I</forename><surname>Conley</surname></persName>
+			<idno type="ORCID">0000-0002-0961-387X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandra</forename><forename type="middle">O</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deanna</forename><forename type="middle">M</forename><surname>Barch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">M</forename><surname>Heitzeg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">E</forename><surname>Soules</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Theresa</forename><surname>Teslovich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danielle</forename><forename type="middle">V</forename><surname>Dellarco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><surname>Garavan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">A</forename><surname>Orr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tor</forename><forename type="middle">D</forename><surname>Wager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie</forename><forename type="middle">T</forename><surname>Banich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><forename type="middle">K</forename><surname>Speer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">T</forename><surname>Sutherland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">C</forename><surname>Riedel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">S</forename><surname>Dick</surname></persName>
+			<idno type="ORCID">0000-0001-9907-8155</idno>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">M</forename><surname>Bjork</surname></persName>
+			<idno type="ORCID">0000-0003-0593-3291</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kathleen</forename><forename type="middle">M</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bader</forename><surname>Chaarani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margie</forename><forename type="middle">H</forename><surname>Mejia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">J</forename><surname>Hagler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Daniela Cornejo</surname></persName>
+			<idno type="ORCID">0000-0002-8571-7937</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chelsea</forename><forename type="middle">S</forename><surname>Sicat</surname></persName>
+			<idno type="ORCID">0000-0002-7904-8378</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">P</forename><surname>Harms</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nico</forename><forename type="middle">U F</forename><surname>Dosenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monica</forename><surname>Rosenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Earl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hauke</forename><surname>Bartsch</surname></persName>
+			<idno type="ORCID">0000-0003-1486-4128</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Watts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">R</forename><surname>Polimeni</surname></persName>
+			<idno type="ORCID">0000-0002-1348-1179</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">M</forename><surname>Kuperman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Damien</forename><forename type="middle">A</forename><surname>Fair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anders</forename><forename type="middle">M</forename><surname>Dale</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dcn.2018.03.001</idno>
+		<ptr target="https://doi.org/10.1016/j.dcn.2018.03.001" />
+	</analytic>
+	<monogr>
+		<title level="j">Developmental Cognitive Neuroscience</title>
+		<title level="j" type="abbrev">Developmental Cognitive Neuroscience</title>
+		<idno type="ISSN">1878-9293</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="43" to="54" />
+			<date type="published" when="2018-08">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>ABCD Imaging Acquisition Workgroup</note>
+	<note type="raw_reference">Casey, B. J., Cannonier, T., Conley, M. I., Cohen, A. O., Barch, D. M., Heitzeg, M. M., Soules, M. E., Teslovich, T., Dellarco, D. V., Garavan, H., Orr, C. A., Wager, T. D., Banich, M. T., Speer, N. K., Sutherland, M. T., Riedel, M. C., Dick, A. S., Bjork, J. M., Thomas, K. M., … ABCD Imaging Acquisition Workgroup. (2018). The Adolescent Brain Cognitive Development (ABCD) study: Imaging acquisition across 21 sites. Developmental Cognitive Neuroscience, 32, 43-54. https://doi . org / 10 . 1016 / j . dcn . 2018 . 03 . 001</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Sarcopenia in patients with dementia: correlation of temporalis muscle thickness with appendicular muscle mass</title>
+		<author>
+			<persName><forename type="first">Jangho</forename><surname>Cho</surname></persName>
+			<idno type="ORCID">0000-0002-7911-4419</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mina</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-2005-7560</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Won-Jin</forename><surname>Moon</surname></persName>
+			<idno type="ORCID">0000-0002-8925-7376</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seol-Heui</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0003-3608-2514</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yeonsil</forename><surname>Moon</surname></persName>
+			<idno type="ORCID">0000-0001-7770-4127</idno>
+		</author>
+		<idno type="DOI">10.1007/s10072-021-05728-8</idno>
+		<ptr target="https://doi.org/10.1007/s10072-021-05728-8" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurological Sciences</title>
+		<title level="j" type="abbrev">Neurol Sci</title>
+		<idno type="ISSN">1590-1874</idno>
+		<idno type="ISSNe">1590-3478</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3089" to="3095" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cho, J., Park, M., Moon, W.-J., Han, S.-H., &amp; Moon, Y. (2022). Sarcopenia in patients with dementia: Correlation of temporalis muscle thickness with appendicular muscle mass. Neurological Sciences, 43(5), 3089-3095. https:// doi . org / 10 . 1007 / s10072 -021 -05728 -8</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Clinical Evaluation of Zero-Echo-Time MR Imaging for the Segmentation of the Skull</title>
+		<author>
+			<persName><forename type="first">Gaspar</forename><surname>Delso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Wiesinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">I</forename><surname>Sacolick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandeep</forename><forename type="middle">S</forename><surname>Kaushik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dattesh</forename><forename type="middle">D</forename><surname>Shanbhag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Hüllner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Veit-Haibach</surname></persName>
+		</author>
+		<idno type="DOI">10.2967/jnumed.114.149997</idno>
+		<ptr target="https://doi.org/10.2967/jnumed.114.149997" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Nuclear Medicine</title>
+		<title level="j" type="abbrev">J Nucl Med</title>
+		<idno type="ISSN">0161-5505</idno>
+		<idno type="ISSNe">2159-662X</idno>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="417" to="422" />
+			<date type="published" when="2015-02-12">2015</date>
+			<publisher>Society of Nuclear Medicine</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Delso, G., Wiesinger, F., Sacolick, L. I., Kaushik, S. S., Shanbhag, D. D., Hüllner, M., &amp; Veit-Haibach, P. (2015). Clinical evaluation of zero-echo-time MR imaging for the segmentation of the skull. Journal of Nuclear Medicine, 56(3), 417-422. https://doi . org / 10 . 2967 / jnumed . 114 . 149997</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Empowering Data Sharing in Neuroscience: A Deep Learning Deidentification Method for Pediatric Brain MRIs</title>
+		<author>
+			<persName><forename type="first">Ariana</forename><forename type="middle">M</forename><surname>Familiar</surname></persName>
+			<idno type="ORCID">0000-0002-9315-8653</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neda</forename><surname>Khalili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nastaran</forename><surname>Khalili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cassidy</forename><surname>Schuman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Grove</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karthik</forename><surname>Viswanathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Seidlitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Alexander-Bloch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Zapaishchykova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">H</forename><surname>Kann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arastoo</forename><surname>Vossough</surname></persName>
+			<idno type="ORCID">0000-0003-1346-427X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Phillip</forename><forename type="middle">B</forename><surname>Storm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">C</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anahita</forename><forename type="middle">Fathi</forename><surname>Kazerooni</surname></persName>
+			<idno type="ORCID">0000-0001-7131-2261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Nabavizadeh</surname></persName>
+			<idno type="ORCID">0000-0002-0380-4552</idno>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a8581</idno>
+		<ptr target="https://doi.org/10.3174/ajnr.A8581" />
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="964" to="972" />
+			<date type="published" when="2024-11-12">2024</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Familiar, A. M., Khalili, N., Khalili, N., Schuman, C., Grove, E., Viswanathan, K., Seidlitz, J., Alexander-Bloch, A., Zapaishchykova, A., Kann, B. H., Vossough, A., Storm, P. B., Resnick, A. C., Kazerooni, A. F., &amp; Nabavizadeh, A. (2024). Empowering data sharing in neuroscience: A deep learning de-identification method for pediatric brain MRIs. American Journal of Neuroradiology, 46(5), 964-972. https://doi . org / 10 . 3174 / ajnr . A8581</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Unbiased average age-appropriate atlases for pediatric studies</title>
+		<author>
+			<persName><forename type="first">Vladimir</forename><surname>Fonov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">C</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelly</forename><surname>Botteron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Robert</forename><surname>Almli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Mckinstry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Louis</forename><surname>Collins</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2010.07.033</idno>
+		<ptr target="https://doi.org/10.1016/j.neuroimage.2010.07.033" />
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="313" to="327" />
+			<date type="published" when="2011-01">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fonov, V., Evans, A. C., Botteron, K., Almli, C. R., McKinstry, R. C., &amp; Collins, D. L. (2011). Unbiased average age-appropriate atlases for pediatric studies. NeuroImage, 54(1), 313-327. https://doi . org / 10 . 1016 / j . neuroimage . 2010 . 07 . 033</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">K-Surfer: A KNIME-based tool for the management and analysis of human brain MRI FreeSurfer/FSL Data</title>
+		<author>
+			<persName><forename type="first">Sarica</forename><surname>Alessia</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">FreeSurfer Developers</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><forename type="middle">Fatta</forename><surname>Giuseppe</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">FreeSurfer Developers</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Cannataro</forename><surname>Mario</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">FreeSurfer Developers</orgName>
+			</affiliation>
+		</author>
+		<idno type="DOI">10.3389/conf.fninf.2014.18.00003</idno>
+		<ptr target="https://surfer.nmr.mgh.harvard.edu/fswiki/mri_watershed" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neuroinformatics</title>
+		<title level="j" type="abbrev">Front. Neuroinform.</title>
+		<idno type="ISSNe">1662-5196</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<date type="published" when="2018">2018</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">FreeSurfer Developers. (2018). FreeSurfer wiki-Mri_ watershed. https://surfer . nmr . mgh . harvard . edu / fswiki / mri _ watershed</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Friston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Ashburner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Kiebel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Nichols</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">D</forename><surname>William</surname></persName>
+		</author>
+		<ptr target="https://shop.elsevier.com/books/statistical-parametric-mapping-the-analysis-of-functional-brain-images/penny/978-0-12-372560-8" />
+		<title level="m">Statistical parametric mapping: The analysis of functional brain images</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Friston, K. J., Ashburner, J. T., Kiebel, S. J., Nichols, T. E., &amp; William, P. D. (2006). Statistical parametric mapping: The analysis of functional brain images. Elsevier. https:// shop . elsevier . com / books / statistical -parametric -mapping -the -analysis -of -functional -brain -images / penny / 978 -0 -12 -372560 -8</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Image annotation and curation in radiology: an overview for machine learning practitioners</title>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Galbusera</surname></persName>
+			<idno type="ORCID">0000-0003-1826-9190</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Cina</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s41747-023-00408-y</idno>
+		<ptr target="https://doi.org/10.1186/s41747-023-00408-y" />
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology Experimental</title>
+		<title level="j" type="abbrev">Eur Radiol Exp</title>
+		<idno type="ISSNe">2509-9280</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2024-02-06">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Galbusera, F., &amp; Cina, A. (2024). Image annotation and curation in radiology: An overview for machine learning practitioners. European Radiology Experimental, 8(1), 11. https://doi . org / 10 . 1186 / s41747 -023 -00408 -y</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The UNC/UMN Baby Connectome Project (BCP): An overview of the study design and protocol development</title>
+		<author>
+			<persName><forename type="first">Brittany</forename><forename type="middle">R</forename><surname>Howell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">A</forename><surname>Styner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pew-Thian</forename><surname>Yap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristine</forename><surname>Baluyot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Essa</forename><surname>Yacoub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taylor</forename><surname>Potts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Salzwedel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">H</forename><surname>Gilmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Piven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Keith</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinggang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamil</forename><surname>Ugurbil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongtu</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weili</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jed</forename><forename type="middle">T</forename><surname>Elison</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2018.03.049</idno>
+		<ptr target="https://doi.org/10.1016/j.neuroimage.2018.03.049" />
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="page" from="891" to="905" />
+			<date type="published" when="2019-01">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Howell, B. R., Styner, M. A., Gao, W., Yap, P.-T., Wang, L., Baluyot, K., Yacoub, E., Chen, G., Potts, T., Salzwedel, A., Li, G., Gilmore, J. H., Piven, J., Smith, J. K., Shen, D., Ugurbil, K., Zhu, H., Lin, W., &amp; Elison, J. T. (2019). The UNC/UMN Baby Connectome Project (BCP): An overview of the study design and protocol development. NeuroImage, 185, 891-905. https://doi . org / 10 . 1016 / j . neuroimage . 2018 . 03 . 049</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Temporalis muscle width as a measure of sarcopenia correlates with overall survival in patients with newly diagnosed glioblastoma</title>
+		<author>
+			<persName><forename type="first">Kristin</forename><surname>Hsieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabrielle</forename><surname>Estevez-Inoa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><forename type="middle">V</forename><surname>Save</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anurag</forename><surname>Saraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">S</forename><surname>Spina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">K</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tony</forename><forename type="middle">J C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Chia</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-5908-0143</idno>
+		</author>
+		<idno type="DOI">10.1007/s13566-019-00408-9</idno>
+		<ptr target="https://www.cincinnatichildrens.org/patients/child/encyclopedia/diseases/hyperlipidemia" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Radiation Oncology</title>
+		<title level="j" type="abbrev">J Radiat Oncol</title>
+		<idno type="ISSN">1948-7894</idno>
+		<idno type="ISSNe">1948-7908</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="379" to="387" />
+			<date type="published" when="2019-12">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hsieh, K., Hwang, M. E., Estevez-Inoa, G., Save, A. V., Saraf, A., Spina, C. S., Cheng, S. K., Wang, T. J. C., &amp; Wu, C.-C. (2019). Temporalis muscle width as a measure of sarcopenia correlates with overall survival in patients with newly diagnosed glioblastoma. Journal of Radiation Oncology, 8(4), 379-387. https://doi . org / 10 . 1007 / s13566 -019 -00408 -9 Hyperlipidemia in Children | Symptoms, Diagnosis &amp; Treatment. (n.d.). https://www . cincinnatichildrens . org / patients / child / encyclopedia / diseases / hyperlipidemia</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Automated brain extraction of multisequence MRI using artificial neural networks</title>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Schell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irada</forename><surname>Pflueger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Brugnara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bonekamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulf</forename><surname>Neuberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antje</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz‐peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier‐hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Kickingereder</surname></persName>
+			<idno type="ORCID">0000-0002-6224-0064</idno>
+		</author>
+		<idno type="DOI">10.1002/hbm.24750</idno>
+		<ptr target="https://brain-development.org/ixi-dataset/" />
+	</analytic>
+	<monogr>
+		<title level="j">Human Brain Mapping</title>
+		<title level="j" type="abbrev">Human Brain Mapping</title>
+		<idno type="ISSN">1065-9471</idno>
+		<idno type="ISSNe">1097-0193</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="4952" to="4964" />
+			<date type="published" when="2019-08-12">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Isensee, F., Schell, M., Tursunova, I., Brugnara, G., Bonekamp, D., Neuberger, U., Wick, A., Schlemmer, H. P., Heiland, S., Wick, W., Bendszus, M., Maier-Hein, K. H., &amp; Kickingereder, P. (2019). Automated brain extraction of multi-sequence MRI using artificial neural networks. Human Brain Mapping, 40(17), 4952-4964. https://doi .org/10.1002/hbm.24750 IXI Dataset -Brain Development. (n.d.). https://brain -development . org / ixi -dataset/</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Body Composition in Pediatric Solid Tumors: State of the Science and Future Directions</title>
+		<author>
+			<persName><forename type="first">Lenat</forename><surname>Joffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keri</forename><forename type="middle">L</forename><surname>Schadler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><forename type="middle">J</forename><surname>Ladas</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/jncimonographs/lgz018</idno>
+		<ptr target="https://doi.org/10.1093/jncimonographs/lgz018" />
+	</analytic>
+	<monogr>
+		<title level="j">JNCI Monographs</title>
+		<idno type="ISSN">1052-6773</idno>
+		<idno type="ISSNe">1745-6614</idno>
+		<imprint>
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="issue">54</biblScope>
+			<biblScope unit="page" from="144" to="148" />
+			<date type="published" when="2019-09-01">2019. 2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Joffe, L., Schadler, K. L., Shen, W., &amp; Ladas, E. J. (2019). Body composition in pediatric solid tumors: State of the science and future directions. JNCI Monographs, 2019(54), 144-148. https://doi . org / 10 . 1093 / jncimonographs / lgz018</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Effect of osteoporotic conditions on the development of peritumoral brain edema after LINAC-based radiation treatment in patients with intracranial meningioma</title>
+		<author>
+			<persName><forename type="first">Sang</forename><forename type="middle">Mook</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jae</forename><forename type="middle">Min</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Hwan</forename><surname>Cheong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Je</forename><forename type="middle">Il</forename><surname>Ryu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><forename type="middle">Deok</forename><surname>Won</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Young</forename><forename type="middle">Soo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Myung-Hoon</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0003-1728-5017</idno>
+		</author>
+		<idno type="DOI">10.1186/s13014-021-01890-7</idno>
+		<ptr target="https://doi.org/10.1186/s13014-021-01890-7" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiation Oncology</title>
+		<title level="j" type="abbrev">Radiat Oncol</title>
+		<idno type="ISSNe">1748-717X</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">160</biblScope>
+			<date type="published" when="2021-08-23">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kang, S. M., Kim, J. M., Cheong, J. H., Ryu, J. I., Won, Y. D., Kim, Y. S., &amp; Han, M.-H. (2021). Effect of osteoporotic conditions on the development of peritumoral brain edema after LINAC-based radiation treatment in patients with intracranial meningioma. Radiation Oncology, 16(1), 160. https://doi . org / 10 . 1186 / s13014 -021 -01890 -7</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The Brain Tumor Segmentation in Pediatrics (BraTS-PEDs) Challenge: Focus on Pediatrics</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Kazerooni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Khalili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Anwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Albrecht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Adewole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Anazodo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bergquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Borja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Calabrese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-M</forename><surname>Conte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Dako</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Eddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ezhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Linguraru</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2404.15009</idno>
+		<idno type="arXiv">arXiv:2404.15009</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2404.15009" />
+	</analytic>
+	<monogr>
+		<title level="m">CBTN-CONNECT-DIPGR-ASNR-MICCAI BraTS-PEDs)</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kazerooni, A. F., Khalili, N., Liu, X., Gandhi, D., Jiang, Z., Anwar, S. M., Albrecht, J., Adewole, M., Anazodo, U., Anderson, H., Baid, U., Bergquist, T., Borja, A. J., Calabrese, E., Chung, V., Conte, G.-M., Dako, F., Eddy, J., Ezhov, I., … Linguraru, M. G. (2024). The Brain Tumor Segmentation in Pediatrics (BraTS- PEDs) Challenge: Focus on Pediatrics (CBTN- CONNECT-DIPGR-ASNR-MICCAI BraTS-PEDs) (No. arXiv:2404.15009). arXiv. https://doi . org / 10 . 48550 / arXiv . 2404 . 15009</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM)</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kötter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mazziotta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Toga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lancaster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zilles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Woods</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Paus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Pike</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iacoboni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schormann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Amunts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Palomero-Gallagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mazoyer</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rstb.2001.0915</idno>
+		<ptr target="https://doi.org/10.1098/rstb.2001.0915" />
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences</title>
+		<imprint>
+			<biblScope unit="volume">356</biblScope>
+			<biblScope unit="page" from="1293" to="1322" />
+			<date type="published" when="1412">2001. 1412</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kötter, R., Mazziotta, J., Toga, A., Evans, A., Fox, P., Lancaster, J., Zilles, K., Woods, R., Paus, T., Simpson, G., Pike, B., Holmes, C., Collins, L., Thompson, P., MacDonald, D., Iacoboni, M., Schormann, T., Amunts, K., Palomero-Gallagher, N., … Mazoyer, B. (2001). A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences, 356(1412), 1293-1322. https://doi . org / 10 . 1098 / rstb . 2001 . 0915</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Review of Python code and GitHub repository</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lasso</surname></persName>
+		</author>
+		<idno type="DOI">10.5194/gmd-2018-180-rc1</idno>
+		<ptr target="https://github.com/lassoan/SlicerElastix" />
+		<imprint>
+			<date type="published" when="2017">2023. 2017</date>
+			<publisher>Copernicus GmbH</publisher>
+		</imprint>
+	</monogr>
+	<note>Original work</note>
+	<note type="raw_reference">Lasso, A. (2023). SlicerElastix [Python]. (Original work published 2017). https://github . com / lassoan / SlicerElastix</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Challenges and physiological implications of sarcopenia in children and youth in health and disease</title>
+		<author>
+			<persName><forename type="first">Diana</forename><forename type="middle">R</forename><surname>Mager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amber</forename><surname>Hager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Gilmour</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/mco.0000000000000969</idno>
+		<ptr target="https://doi.org/10.1097/MCO.0000000000000969" />
+	</analytic>
+	<monogr>
+		<title level="j">Current Opinion in Clinical Nutrition &amp; Metabolic Care</title>
+		<idno type="ISSN">1363-1950</idno>
+		<idno type="ISSNe">1473-6519</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="528" to="533" />
+			<date type="published" when="2023-08-02">2023</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mager, D. R., Hager, A., &amp; Gilmour, S. (2023). Challenges and physiological implications of sarcopenia in children and youth in health and disease. Current Opinion in Clinical Nutrition &amp; Metabolic Care, 26(6), 528. https://doi . org / 10 . 1097 / MCO . 0000000000000969</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The reliability of body mass index in the diagnosis of obesity and metabolic risk in children</title>
+		<author>
+			<persName><forename type="first">Snežana</forename><forename type="middle">R</forename><surname>Marković-Jovanović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Radojica</forename><forename type="middle">V</forename><surname>Stolić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandar</forename><forename type="middle">N</forename><surname>Jovanović</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/jpem-2014-0389</idno>
+		<ptr target="https://doi.org/10.1515/jpem-2014-0389" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Pediatric Endocrinology and Metabolism</title>
+		<idno type="ISSN">0334-018X</idno>
+		<idno type="ISSNe">2191-0251</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5-6</biblScope>
+			<biblScope unit="page" from="515" to="523" />
+			<date type="published" when="2015-01-01">2015</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Marković-Jovanović, S. R., Stolić, R. V., &amp; Jovanović, A. N. (2015). The reliability of body mass index in the diagnosis of obesity and metabolic risk in children. Journal of Pediatric Endocrinology and Metabolism, 28(5-6), 515-523. https://doi . org / 10 . 1515 / jpem -2014 -0389</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">CERMEP-IDB-MRXFDG: a database of 37 normal adult human brain [18F]FDG PET, T1 and FLAIR MRI, and CT images available for research</title>
+		<author>
+			<persName><forename type="first">Inés</forename><surname>Mérida</surname></persName>
+			<idno type="ORCID">0000-0003-1436-4684</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandrine</forename><surname>Bouvard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Didier</forename><surname>Le Bars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophie</forename><surname>Lancelot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franck</forename><surname>Lavenne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Bouillot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Redouté</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Hammers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Costes</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13550-021-00830-6</idno>
+		<ptr target="https://doi.org/10.1186/s13550-021-00830-6" />
+	</analytic>
+	<monogr>
+		<title level="j">EJNMMI Research</title>
+		<title level="j" type="abbrev">EJNMMI Res</title>
+		<idno type="ISSNe">2191-219X</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">91</biblScope>
+			<date type="published" when="2021-09-16">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mérida, I., Jung, J., Bouvard, S., Le Bars, D., Lancelot, S., Lavenne, F., Bouillot, C., Redouté, J., Hammers, A., &amp; Costes, N. (2021). CERMEP-IDB-MRXFDG: A database of 37 normal adult human brain [18F]FDG PET, T1 and FLAIR MRI, and CT images available for research. EJNMMI Research, 11(1), 91. https://doi . org / 10 . 1186 / s13550 -021 -00830 -6</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Accurate and robust whole-head segmentation from magnetic resonance images for individualized head modeling</title>
+		<author>
+			<persName><forename type="first">Oula</forename><surname>Puonti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><surname>Van Leemput</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guilherme</forename><forename type="middle">B</forename><surname>Saturnino</surname></persName>
+			<idno type="ORCID">0000-0002-3466-8725</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hartwig</forename><forename type="middle">R</forename><surname>Siebner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristoffer</forename><forename type="middle">H</forename><surname>Madsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Axel</forename><surname>Thielscher</surname></persName>
+			<idno type="ORCID">0000-0002-4752-5854</idno>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2020.117044</idno>
+		<ptr target="https://doi.org/10.1016/j.neuroimage.2020.117044" />
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">219</biblScope>
+			<biblScope unit="page">117044</biblScope>
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Puonti, O., Van Leemput, K., Saturnino, G. B., Siebner, H. R., Madsen, K. H., &amp; Thielscher, A. (2020). Accurate and robust whole-head segmentation from magnetic resonance images for individualized head modeling. NeuroImage, 219, 117044. https://doi . org / 10 . 1016 / j . neuroimage . 2020 . 117044</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Calgary Preschool magnetic resonance imaging (MRI) dataset</title>
+		<author>
+			<persName><forename type="first">Jess</forename><forename type="middle">E</forename><surname>Reynolds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitrii</forename><surname>Paniukov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mercedes</forename><surname>Bagshawe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><surname>Lebel</surname></persName>
+			<idno type="ORCID">0000-0002-0344-4032</idno>
+		</author>
+		<idno type="DOI">10.1016/j.dib.2020.105224</idno>
+		<ptr target="https://doi.org/10.1016/j.dib.2020.105224" />
+	</analytic>
+	<monogr>
+		<title level="j">Data in Brief</title>
+		<title level="j" type="abbrev">Data in Brief</title>
+		<idno type="ISSN">2352-3409</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page">105224</biblScope>
+			<date type="published" when="2020-04">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reynolds, J. E., Long, X., Paniukov, D., Bagshawe, M., &amp; Lebel, C. (2020). Calgary preschool magnetic resonance imaging (MRI) dataset. Data in Brief, 29, 105224. https:// doi . org / 10 . 1016 / j . dib . 2020 . 105224</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Pediatric MRI [Dataset</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Rivkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Ball</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Mccracken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fletcher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mckinstry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Botteron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Pierpalo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Neill</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2015.05.083</idno>
+		<ptr target="https://doi.org/10.1016/j.neuroimage.2015.05.083" />
+	</analytic>
+	<monogr>
+		<title level="j">NIMH Data Archive</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rivkin, M. J., Ball, W. S., Wang, D.-J., McCracken, J. T., Brandt, M., Fletcher, J., McKinstry, R., Evans, A., Botteron, K., Pierpalo, C., &amp; O&apos;Neill, J. (2010). Pediatric MRI [Dataset]. NIMH Data Archive. https://doi . org / 10 . 1016 / j . neuroimage . 2015 . 05 . 083</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Body weight, social competence, and cognitive functioning in survivors of childhood brain tumors</title>
+		<author>
+			<persName><forename type="first">Fiona</forename><surname>Schulte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ute</forename><surname>Bartels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Bouffet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Janzen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maru</forename><surname>Barrera</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/pbc.22543</idno>
+		<ptr target="https://doi.org/10.1002/pbc.22543" />
+	</analytic>
+	<monogr>
+		<title level="j">Pediatric Blood &amp; Cancer</title>
+		<title level="j" type="abbrev">Pediatric Blood &amp; Cancer</title>
+		<idno type="ISSN">1545-5009</idno>
+		<idno type="ISSNe">1545-5017</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="532" to="539" />
+			<date type="published" when="2010-07-19">2010</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schulte, F., Bartels, U., Bouffet, E., Janzen, L., Hamilton, J., &amp; Barrera, M. (2010). Body weight, social competence, and cognitive functioning in survivors of childhood brain tumors. Pediatric Blood &amp; Cancer, 55(3), 532-539. https://doi . org / 10 . 1002 / pbc . 22543</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Age and gender-dependent bone density changes of the human skull disclosed by high-resolution flat-panel computed tomography</title>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Schulte-Geers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Obert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">René</forename><forename type="middle">L</forename><surname>Schilling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Harth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Horst</forename><surname>Traupe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elke</forename><forename type="middle">R</forename><surname>Gizewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><forename type="middle">A</forename><surname>Verhoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00414-010-0544-3</idno>
+		<ptr target="https://doi.org/10.1007/s00414-010-0544-3" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Legal Medicine</title>
+		<title level="j" type="abbrev">Int J Legal Med</title>
+		<idno type="ISSN">0937-9827</idno>
+		<idno type="ISSNe">1437-1596</idno>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="417" to="425" />
+			<date type="published" when="2011-01-15">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schulte-Geers, C., Obert, M., Schilling, R. L., Harth, S., Traupe, H., Gizewski, E. R., &amp; Verhoff, M. A. (2011). Age and gender-dependent bone density changes of the human skull disclosed by high-resolution flat-panel computed tomography. International Journal of Legal Medicine, 125(3), 417-425. https://doi . org / 10 . 1007 / s00414 -010 -0544 -3</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">BrainSuite: An automated cortical surface identification tool</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Shattuck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">M</forename><surname>Leahy</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1361-8415(02)00054-3</idno>
+		<ptr target="https://doi.org/10.1016/S1361-8415(02)00054-3" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="129" to="142" />
+			<date type="published" when="2002-06">2002</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shattuck, D. W., &amp; Leahy, R. M. (2002). BrainSuite: An automated cortical surface identification tool. Medical Image Analysis, 6(2), 129-142. https://doi . org / 10 . 1016 / S1361 -8415(02)00054 -3</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Precise and rapid whole-head segmentation from magnetic resonance images of older adults using deep learning</title>
+		<author>
+			<persName><forename type="first">Skylar</forename><forename type="middle">E</forename><surname>Stolte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aprinda</forename><surname>Indahlastari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandro</forename><surname>Albizu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayden</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samantha</forename><surname>Pedersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><forename type="middle">B</forename><surname>See</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">J</forename><surname>Woods</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruogu</forename><surname>Fang</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/imag_a_00090</idno>
+		<ptr target="https://brain-development.org/ixi-dataset/" />
+	</analytic>
+	<monogr>
+		<title level="j">Imaging Neuroscience</title>
+		<idno type="ISSNe">2837-6056</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2024-02">2024</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stolte, S. E., Indahlastari, A., Chen, J., Albizu, A., Dunn, A., Pedersen, S., See, K. B., Woods, A. J., &amp; Fang, R. (2024). Precise and rapid whole-head segmentation from magnetic resonance images of older adults using deep learning. Imaging Neuroscience, 2, 1-21. https://doi . org / 10 . 1162 / imag _ a _ 00090 The IXI Dataset. (n.d.). [Dataset]. https://brain -development . org / ixi -dataset/</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">SynthRAD2023 Grand Challenge dataset: Generating synthetic CT for radiotherapy</title>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Thummerer</surname></persName>
+			<idno type="ORCID">0000-0002-1874-5030</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Van Der Bijl</surname></persName>
+			<idno type="ORCID">0000-0001-7663-4390</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Galapon</surname></persName>
+			<idno type="ORCID">0000-0001-9264-3836</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joost</forename><forename type="middle">J C</forename><surname>Verhoeff</surname></persName>
+			<idno type="ORCID">0000-0001-9673-0793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">A</forename><surname>Langendijk</surname></persName>
+			<idno type="ORCID">0000-0003-1083-372X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Both</surname></persName>
+			<idno type="ORCID">0000-0001-6652-6054</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cornelis</forename><forename type="middle">(nico) A T</forename><surname>Van Den Berg</surname></persName>
+			<idno type="ORCID">0000-0002-5565-6889</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matteo</forename><surname>Maspero</surname></persName>
+			<idno type="ORCID">0000-0003-0347-3375</idno>
+		</author>
+		<idno type="DOI">10.1002/mp.16529</idno>
+		<ptr target="https://doi.org/10.1002/mp.16529" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Physics</title>
+		<title level="j" type="abbrev">Medical Physics</title>
+		<idno type="ISSN">0094-2405</idno>
+		<idno type="ISSNe">2473-4209</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="4664" to="4674" />
+			<date type="published" when="2023-06-07">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Thummerer, A., van der Bijl, E., Galapon Jr, A., Verhoeff, J. J. C., Langendijk, J. A., Both, S., van den Berg, C. (Nico) A. T., &amp; Maspero, M. (2023). SynthRAD2023 grand challenge dataset: Generating synthetic CT for radiotherapy. Medical Physics, 50(7), 4664-4674. https:// doi . org / 10 . 1002 / mp . 16529</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Tierney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">L</forename><surname>Avila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Balbastre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bezsudnova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brudfors</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Eckstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Flandin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Friston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jafarian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">S</forename><surname>Kowalczyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Litvak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Medrano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mellor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>O'neill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Parr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Razi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Timms</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zeidman</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2501.12081</idno>
+		<idno type="arXiv">arXiv:2501.12081</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2501.12081" />
+		<title level="m">SPM 25: Open source neuroimaging analysis software</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tierney, T. M., Alexander, N. A., Avila, N. L., Balbastre, Y., Barnes, G., Bezsudnova, Y., Brudfors, M., Eckstein, K., Flandin, G., Friston, K., Jafarian, A., Kowalczyk, O. S., Litvak, V., Medrano, J., Mellor, S., O&apos;Neill, G., Parr, T., Razi, A., Timms, R., &amp; Zeidman, P. (2025). SPM 25: Open source neuroimaging analysis software (No. arXiv:2501.12081). arXiv. https://doi . org / 10 . 48550 / arXiv . 2501 . 12081</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Segmentation of 71 Anatomical Structures Necessary for the Evaluation of Guideline-Conforming Clinical Target Volumes in Head and Neck Cancers</title>
+		<author>
+			<persName><forename type="first">Alexandra</forename><surname>Walter</surname></persName>
+			<idno type="ORCID">0000-0001-5044-0133</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Hoegen-Saßmannshausen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Goran</forename><surname>Stanic</surname></persName>
+			<idno type="ORCID">0000-0002-3805-9142</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joao</forename><forename type="middle">Pedro</forename><surname>Rodrigues</surname></persName>
+			<idno type="ORCID">0000-0002-0272-8500</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Adeberg</surname></persName>
+			<idno type="ORCID">0000-0001-8463-514X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Jäkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristina</forename><surname>Giske</surname></persName>
+			<idno type="ORCID">0000-0001-7287-3271</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers16020415</idno>
+		<ptr target="https://doi.org/10.3390/cancers16020415" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">415</biblScope>
+			<date type="published" when="2024-01-18">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Walter, A., Hoegen-Saßmannshausen, P., Stanic, G., Rodrigues, J. P., Adeberg, S., Jäkel, O., Frank, M., &amp; Giske, K. (2024). Segmentation of 71 anatomical structures necessary for the evaluation of guideline-conforming clinical target volumes in head and neck cancers. Cancers, 16(2), Article 2. https://doi . org / 10 . 3390 / cancers16020415</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">TotalSegmentator: Robust Segmentation of 104 Anatomic Structures in CT Images</title>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Wasserthal</surname></persName>
+			<idno type="ORCID">0000-0002-9921-5698</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hanns-Christian</forename><surname>Breit</surname></persName>
+			<idno type="ORCID">0000-0003-3612-1341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><forename type="middle">T</forename><surname>Meyer</surname></persName>
+			<idno type="ORCID">0009-0007-1858-0030</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maurice</forename><surname>Pradella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Hinck</surname></persName>
+			<idno type="ORCID">0009-0003-1547-8103</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">W</forename><surname>Sauter</surname></persName>
+			<idno type="ORCID">0000-0002-6707-2258</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Heye</surname></persName>
+			<idno type="ORCID">0000-0001-9949-0545</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">T</forename><surname>Boll</surname></persName>
+			<idno type="ORCID">0000-0001-8806-5826</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joshy</forename><surname>Cyriac</surname></persName>
+			<idno type="ORCID">0000-0002-4584-0623</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Segeroth</surname></persName>
+			<idno type="ORCID">0000-0001-7820-2778</idno>
+		</author>
+		<idno type="DOI">10.1148/ryai.230024</idno>
+		<ptr target="https://doi.org/10.1148/ryai.230024" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiology: Artificial Intelligence</title>
+		<title level="j" type="abbrev">Radiology: Artificial Intelligence</title>
+		<idno type="ISSNe">2638-6100</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">230024</biblScope>
+			<date type="published" when="2023-09-01">2023</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wasserthal, J., Breit, H.-C., Meyer, M. T., Pradella, M., Hinck, D., Sauter, A. W., Heye, T., Boll, D. T., Cyriac, J., Yang, S., Bach, M., &amp; Segeroth, M. (2023). TotalSegmentator: Robust segmentation of 104 anatomic structures in CT images. Radiology: Artificial Intelligence, 5(5), e230024. https://doi . org / 10 . 1148 / ryai . 230024</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A comparison of Cohen’s Kappa and Gwet’s AC1 when calculating inter-rater reliability coefficients: a study conducted with personality disorder samples</title>
+		<author>
+			<persName><forename type="first">Nahathai</forename><surname>Wongpakaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tinakon</forename><surname>Wongpakaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danny</forename><surname>Wedding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kilem</forename><forename type="middle">L</forename><surname>Gwet</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1471-2288-13-61</idno>
+		<ptr target="https://doi.org/10.1186/1471-2288-13-61" />
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Research Methodology</title>
+		<title level="j" type="abbrev">BMC Med Res Methodol</title>
+		<idno type="ISSNe">1471-2288</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">61</biblScope>
+			<date type="published" when="2013-04-29">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wongpakaran, N., Wongpakaran, T., Wedding, D., &amp; Gwet, K. L. (2013). A comparison of Cohen&apos;s Kappa and Gwet&apos;s AC1 when calculating inter-rater reliability coefficients: A study conducted with personality disorder samples. BMC Medical Research Methodology, 13(1), 61. https:// doi . org / 10 . 1186 / 1471 -2288 -13 -61</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Automated temporalis muscle quantification and growth charts for children through adulthood</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Zapaishchykova</surname></persName>
+			<idno type="ORCID">0000-0001-6860-9160</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anurag</forename><surname>Saraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zezhong</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">J</forename><surname>Catalano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viviana</forename><surname>Benitez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yashwanth</forename><surname>Ravipati</surname></persName>
+			<idno type="ORCID">0009-0007-7563-6045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arnav</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hasaan</forename><surname>Hayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jirapat</forename><surname>Likitlersuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sridhar</forename><surname>Vajapeyam</surname></persName>
+			<idno type="ORCID">0000-0002-1782-1919</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rishi</forename><forename type="middle">B</forename><surname>Chopra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ariana</forename><forename type="middle">M</forename><surname>Familiar</surname></persName>
+			<idno type="ORCID">0000-0002-9315-8653</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Nabavidazeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><forename type="middle">H</forename><surname>Mak</surname></persName>
+			<idno type="ORCID">0000-0002-8754-0565</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">C</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Mueller</surname></persName>
+			<idno type="ORCID">0000-0002-8216-9357</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tabitha</forename><forename type="middle">M</forename><surname>Cooney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daphne</forename><forename type="middle">A</forename><surname>Haas-Kogan</surname></persName>
+			<idno type="ORCID">0000-0002-2378-4800</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tina</forename><forename type="middle">Y</forename><surname>Poussaint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">J W L</forename><surname>Aerts</surname></persName>
+			<idno type="ORCID">0000-0002-2122-2003</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">H</forename><surname>Kann</surname></persName>
+			<idno type="ORCID">0000-0002-4313-2754</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-023-42501-1</idno>
+		<ptr target="https://doi.org/10.1038/s41467-023-42501-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">6863</biblScope>
+			<date type="published" when="2023-11-09">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zapaishchykova, A., Liu, K. X., Saraf, A., Ye, Z., Catalano, P. J., Benitez, V., Ravipati, Y., Jain, A., Huang, J., Hayat, H., Likitlersuang, J., Vajapeyam, S., Chopra, R. B., Familiar, A. M., Nabavidazeh, A., Mak, R. H., Resnick, A. C., Mueller, S., Cooney, T. M., … Kann, B. H. (2023). Automated temporalis muscle quantification and growth charts for children through adulthood. Nature Communications, 14(1), 6863. https://doi . org / 10 . 1038 / s41467 -023 -42501 -1</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">SegmentationReview: A Slicer3D extension for fast review of AI-generated segmentations</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Zapaishchykova</surname></persName>
+			<idno type="ORCID">0000-0001-6860-9160</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Divyanshu</forename><surname>Tak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zezhong</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">J W L</forename><surname>Aerts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">H</forename><surname>Kann</surname></persName>
+			<idno type="ORCID">0000-0002-4313-2754</idno>
+		</author>
+		<idno type="DOI">10.1016/j.simpa.2023.100536</idno>
+		<ptr target="https://doi.org/10.1016/j.simpa.2023.100536" />
+	</analytic>
+	<monogr>
+		<title level="j">Software Impacts</title>
+		<title level="j" type="abbrev">Software Impacts</title>
+		<idno type="ISSN">2665-9638</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page">100536</biblScope>
+			<date type="published" when="2023-09">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zapaishchykova, A., Tak, D., Boyd, A., Ye, Z., Aerts, H. J. W. L., &amp; Kann, B. H. (2023). SegmentationReview: A Slicer3D extension for fast review of AI-generated segmentations. Software Impacts, 17, 100536. https:// doi . org / 10 . 1016 / j . simpa . 2023 . 100536</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Automatic analysis of skull thickness, scalp-to-cortex distance and association with age and sex in cognitively normal elderly</title>
+		<author>
+			<persName><forename type="first">Junhao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valerie</forename><surname>Treyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junfeng</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chencheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anton</forename><surname>Gietl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Hock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Razansky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">M</forename><surname>Nitsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruiqing</forename><surname>Ni</surname></persName>
+			<idno type="ORCID">0000-0002-0793-2113</idno>
+		</author>
+		<idno type="DOI">10.1101/2023.01.19.524484</idno>
+		<ptr target="https://doi.org/10.1101/2023.01.19.524484" />
+	</analytic>
+	<monogr>
+		<title level="j">bioRxiv</title>
+		<imprint>
+			<biblScope unit="volume">01</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">524484</biblScope>
+			<date type="published" when="2023-01-20">2023. 2023</date>
+			<publisher>openRxiv</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, J., Treyer, V., Sun, J., Zhang, C., Gietl, A., Hock, C., Razansky, D., Nitsch, R. M., &amp; Ni, R. (2023). Automatic analysis of skull thickness, scalp-to-cortex distance and association with age and sex in cognitively normal elderly. bioRxiv, 2023.01.19.524484. https://doi . org / 10 . 1101 / 2023 . 01 . 19 . 524484</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

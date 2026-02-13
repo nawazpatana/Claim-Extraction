@@ -1,0 +1,2899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">CNAttention: an attention-based deep multiple-instance method for uncovering copy number aberration signatures across cancers</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Oxford University Press (OUP)</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-01">2026-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ziying</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Molecular Life Sciences , University of Zurich , Winterthurerstr. 190 , Zurich , CH-8057 Zurich , Switzerland</note>
+								<orgName type="department">Department of Molecular Life Sciences</orgName>
+								<orgName type="institution">University of Zurich</orgName>
+								<address>
+									<addrLine>Winterthurerstr. 190</addrLine>
+									<postCode>CH-8057</postCode>
+									<settlement>Zurich Zurich</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Swiss Institute of Bioinformatics , Winterthurerstr. 190 , CH-8057 Zurich , Switzerland Department of Molecular Life Sciences ,</note>
+								<orgName type="department">Department of Molecular Life Sciences</orgName>
+								<orgName type="institution">Swiss Institute of Bioinformatics</orgName>
+								<address>
+									<addrLine>Winterthurerstr. 190</addrLine>
+									<postCode>CH-8057</postCode>
+									<settlement>Zurich</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Michael</forename><surname>Baudis</surname></persName>
+							<email>michael.baudis@mls.uzh.ch</email>
+							<idno type="ORCID">0000-0002-9903-4248</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Molecular Life Sciences , University of Zurich , Winterthurerstr. 190 , Zurich , CH-8057 Zurich , Switzerland</note>
+								<orgName type="department">Department of Molecular Life Sciences</orgName>
+								<orgName type="institution">University of Zurich</orgName>
+								<address>
+									<addrLine>Winterthurerstr. 190</addrLine>
+									<postCode>CH-8057</postCode>
+									<settlement>Zurich Zurich</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Swiss Institute of Bioinformatics , Winterthurerstr. 190 , CH-8057 Zurich , Switzerland Department of Molecular Life Sciences ,</note>
+								<orgName type="department">Department of Molecular Life Sciences</orgName>
+								<orgName type="institution">Swiss Institute of Bioinformatics</orgName>
+								<address>
+									<addrLine>Winterthurerstr. 190</addrLine>
+									<postCode>CH-8057</postCode>
+									<settlement>Zurich</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation">University of Zurich , Winterthurerstrasse 190 , CH-8057 Zurich , Switzerland.</note>
+								<orgName type="institution">University of Zurich</orgName>
+								<address>
+									<addrLine>Winterthurerstrasse 190</addrLine>
+									<postCode>CH-8057</postCode>
+									<settlement>Zurich</settlement>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">CNAttention: an attention-based deep multiple-instance method for uncovering copy number aberration signatures across cancers</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Briefings in Bioinformatics</title>
+						<idno type="ISSN">1467-5463</idno>
+						<idno type="eISSN">1477-4054</idno>
+						<imprint>
+							<publisher>Oxford University Press (OUP)</publisher>
+							<biblScope unit="volume">27</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2026-01" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">49091D74A332DBF4B48B729A34C8D35A</idno>
+					<idno type="DOI">10.1093/bib/bbaf696</idno>
+					<note type="submission">Received: July 29, 2025. Revised: November 18, 2025. Accepted: December 1, 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T18:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>copy number aberrations</term>
+					<term>cancer classification</term>
+					<term>cancer heterogeneity</term>
+					<term>attention-based multiple instance deep learning</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Somatic copy number aberrations (CNAs) represent a distinct class of genomic mutations associated with oncogenetic effects. Over the past three decades, significant volumes of CNA data have been generated through molecular-cytogenetic and genome sequencingbased techniques. These data have been pivotal in identifying cancer-related genes and advancing research on the relationship between CNAs and histopathologically defined cancer types. However, comprehensive studies of CNA landscapes and disease parameters are challenging due to the vast diagnostic and genomic heterogeneity encountered in "pan-cancer" approaches. In this study, we introduce CNAttention, an attention-based deep multiple instance learning method designed to comprehensively analyze CNAs across different cancers and uncover specific CNA patterns within integrated gene-level CNA profiles of 30 cancer types. CNAttention effectively learns CNA features unique to each cancer type and generates CNA signatures for 30 cancer types using attention mechanisms, highlighting the distinctiveness of their CNA landscapes. CNAttention demonstrates high accuracy and exhibits stable performance even with the incorporation of external datasets or parameter adjustments, underscoring its effectiveness in tumor identification. Expanding these signatures to cancer classification trees reveals common patterns not only among physiologically related cancer types but also among clinico-pathologically distant types, such as different cancers originating from neural crest derived cells. Additionally, detected signatures also uncover genomic heterogeneity in individual cancer types, for instance in brain lower grade glioma. Additional experiments with classification models underscore the efficacy of these signatures in representing various cancer types and their potential utility in clinical diagnosis.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.26" lry="782.337"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Copy number variations (CNVs) refer to changes in the number of copies of specific DNA segments in the genome, usually including deletions or duplications with sizes ranging from 1kp to multiple megabases <ref type="bibr" target="#b0">[1]</ref>. Several somatic variant discovery tools have been developed to detect CNVs or structural variations from genomic sequencing data, such as GISTIC2.0 <ref type="bibr" target="#b1">[2]</ref>, FACETS <ref type="bibr" target="#b2">[3]</ref>, and PRESM <ref type="bibr" target="#b3">[4]</ref>, which form the foundation for downstream CNV-based analyses. Copy number aberrations (CNAs) refer to acquired CNVs in the disease genome in comparison with the healthy genome, potentially altering the diploid status of specific genomic loci. For instance, neurodevelopmental disorders like intellectual disability, autism, and schizophrenia have been found to be associated with CNAs, accounting for at least 15% of these conditions <ref type="bibr" target="#b4">[5]</ref>. The relevance between CNAs and neurodevelopmental diseases may stem from the disruption of gene pathways involved in neuron development. Additionally, several genes implicated in neurodevelopment, such as A2BP1, IMMP2L, and AUTS2, have been reported to harbor mutational CNAs <ref type="bibr" target="#b5">[6]</ref>.</p><p>Cancer initiation and progression are closely linked to changes in copy number <ref type="bibr">[7]</ref>. In breast cancer, for instance, Li et al. <ref type="bibr" target="#b7">[8]</ref> conducted an oncogenetic tree analysis of CNAs and found that the genetic alteration of ErbB2 occurs early, while CNAs of AKT2, PTEN, CCND1, RAS, and PIK3CA are late events. This association can be partially attributed to cellular stress, as copy number changes often occur in response to stressors like hypoxia, which may switch DNA repair mechanisms from homologous recombination to nonhomologous repair <ref type="bibr" target="#b8">[9]</ref>. There is ample evidence suggesting that individuals with certain CNAs may be predisposed to cancer <ref type="bibr" target="#b9">[10]</ref>. Despite this, the majority of studies have focused on identifying associations with cancer-driver genes or the impact of focal regions in specific tumor types. Consequently, CNA patterns have often been characterized by the coverage of driver genes, rather than through comparative analyses of the entire genome. However, this approach has two drawbacks. Firstly, the distribution of cancer driver genes is highly skewed, with only a few hallmark drivers accounting for a large percentage of tumorigenesis, leaving a long-tail of rare or putative drivers to account for the rest <ref type="bibr" target="#b10">[11]</ref>. Secondly, research has revealed various facets of CNAs in relation to cellular regulations and genome dynamics <ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr">[15]</ref>. Therefore, CNA patterns that solely rely on driver genes often fail to capture the full spectrum of aberrations. To address this limitation, it would be more comprehensive to abstract CNA patterns based on their characteristic aberrations, rather than focusing solely on focal regions overlapping with driver genes.</p><p>While on a global scale, the associations between CNAs and different types of cancer still remain elusive. Some CNAs overlapped between tumor types, others were tumor type-specific; losses of CDH20 and PTEN were observed in both tumor types, whereas amplifications seemed more tumor type-specific, such as EGFR and MAP2K4 in colon cancer and ERBB2 in breast cancer <ref type="bibr" target="#b15">[16]</ref>. Some previous studies have been able to delineate diverging patterns in clinically related entities. For example, it could be shown that the CNA patterns between lung adenocarcinoma and squamous cell carcinoma are very different <ref type="bibr" target="#b16">[17]</ref> and that there are specific landscapes of mutations and copy number changes in various cancers <ref type="bibr" target="#b17">[18]</ref>. Interestingly, cancer type-specific CNAs derived from cell-free DNA (cfDNA) have demonstrated their potential in identifying cancer types and tissues of origin <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref>. As an emerging field, the accurate identification of genomic abnormalities and classifications of the cfDNA remains challenging, and therefore, the characterization of specific CNA patterns related to cancer types could provide valuable information for such applications.</p><p>In this study, we assembled a collection of 10 628 CNA profiles and introduced a novel attention-based method CNAttention, which by capturing specific weighted features of each cancer type in our analysis achieved a classification accuracy of 0.89. When testing our method on additional datasets the accuracy did not deteriorate, showcasing the effectiveness of CNAttention in extracting relevant CNA characteristics of different cancers and in identifying tumors types. Additionally, we used the weights assigned by the attention mechanism to generate specific CNA signatures for 30 cancer types and compared these signatures with the original data and indicators for their biological significance. The result illustrates the genetic uniqueness and relationships of extracted CNA patterns in different cancer types but also uncovers heterogeneity within cancer classifications, therefore demonstrating the potential of CNA signatures in improving diagnostic assessments in oncology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>As shown in Fig. <ref type="figure" target="#fig_0">1</ref>, CNAttention is a three-stage method designed to tackle major challenges in cancer CNA analysis, including data dimensionality, cancer heterogeneity, and model interpretability. The method integrates feature selection with multiple-instance learning (MIL) and attention mechanisms to uncover cancerspecific CNA patterns and generate robust, interpretable CNA signatures. First, Recursive Feature Elimination with Cross-Validation (RFECV) selects the most informative features, helping reduce overfitting and computation time given the high dimensionality of gene-level CNA profiles. Next, by framing classification as a MIL problem and incorporating attention, we address intratype variability in cancer samples-focusing the model on representative instances within each bag. Finally, attentionderived instance weights are projected to features to produce CNA signatures per cancer type, ref lecting biologically relevant and discriminative patterns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature selection by Recursive Feature Elimination with Cross-Validation</head><p>RFECV iteratively removes the least relevant features based on cross-validation scores, identifying an optimal subset for classification. This reduces noise and the risk of overfitting, especially important in CNA data where features (genes) greatly outnumber samples. argmax features mean(cross_val_score(est, X features , y, scoring)) , <ref type="bibr" target="#b0">(1)</ref> where X is the feature matrix, y the target, and est and scoring define the model and metric. This step preserves only biologically relevant CNA signals across cancers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cancer classification by CNAttention</head><p>Due to cancer heterogeneity, CNA profiles from the same cancer type may vary significantly. To handle cancer heterogeneity, we formulate the classification task as an MIL problem <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b22">23]</ref>. In our formulation, each instance corresponds to a single patient's genelevel CNA profile, while each bag represents a collection of patient instances, carrying one shared label for that cancer type. This setup enables the model to learn generalized CNA patterns that characterize a cancer type rather than fitting individual samples. Each instance (sample) is treated as unlabeled within a bag, and the bag label ref lects the dominant cancer type. Identifying which instances drive the bag label is key; these "key instances" represent the most typical CNA patterns of a cancer class <ref type="bibr" target="#b23">[24]</ref>. We extend the attention-based MIL model of <ref type="bibr" target="#b24">[25]</ref> to multi-class classification, using neural networks to learn both instance embeddings and class probabilities.</p><p>We model the bag label distribution using a multinomial loglikelihood function. This avoids the limitations of max-based MIL (e.g. vanishing gradients) and enables end-to-end training. Three steps are involved: (i) transform instances to embeddings, (ii) aggregate via a symmetric function, and (iii) map to bag probabilities. Each transformation is learned via neural networks, increasing f lexibility and expressiveness.</p><formula xml:id="formula_0">Y = max k y k (assumption for MIL)<label>(2)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multiple-instance learning with neural networks</head><p>Let f ψ be a neural network mapping input x k to an embedding h k = f ψ (x k ). These embeddings are input to a bag-level function g φ that estimates class probabilities. Parameterizing both f and g with neural networks enables modeling complex, nonlinear dependencies and ensures differentiability for training. MIL pooling must be permutation-invariant and adaptable. Compared with fixed pooling (e.g. max, mean), attention-based pooling dynamically focuses on informative instances, crucial for capturing diverse CNA manifestations across patients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Attention-based multiple-instance learning pooling</head><p>We adopt an attention-based pooling mechanism, where each instance contributes to the bag embedding z based on its learned relevance:</p><formula xml:id="formula_1">z = K k=1 a k h k (3)</formula><p>Attention weights a k are computed using a trainable gating mechanism:</p><formula xml:id="formula_2">a k = exp w tanh(Vh k ) σ (Uh k ) K j=1 exp w tanh(Vh j ) σ (Uh j )<label>(4)</label></formula><p>This gated attention mechanism increases model expressiveness and interpretability. It not only improves classification but also identifies which instances most inf luence the prediction-an essential feature for understanding cancer-specific CNA patterns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Signature generation</head><p>After training, each instance within a bag (cancer type) has an attention weight w i and an instance-level class probability vector p i . We compute the weighted class score for each gene feature by linearly combining the instance-level predictions using their attention weights:</p><formula xml:id="formula_3">pi,k = w i,j • p i,k j w i,j</formula><p>, where pg,k represents the aggregated contribution of gene g to class k (cancer type). These normalized per-gene scores are then averaged across all instances of the same cancer type to form the final CNA signature vector for that cancer. Once we have the normalized predictions for each instance, we can determine the predicted class for each instance by selecting the class with the highest normalized prediction. Let ĉi represent the predicted class for instance i, which is obtained by</p><formula xml:id="formula_4">ĉi = arg max k pi,k</formula><p>We then evaluate instance accuracy as the fraction of correctly predicted samples. Finally, attention-weighted instance predictions are projected to feature weights, generating CNA signatures for each cancer type. These signatures are compact, class-specific, and biologically interpretable, highlighting the most informative CNA regions across the cancer landscape.</p><p>CNAttention not only classifies cancer types but also produces compact, interpretable CNA signatures. These signatures ref lect the learned patterns underlying classification and can be validated biologically (e.g. via pathway analysis) or against external resources such as Progenetix. The attention mechanism enables clear attribution of predictive weight to key instances and features. Further formulation and derivations are available in Supplementary Methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Datasets</head><p>Gene-level CNA profiles across various cancers were obtained from cBioPortal. CNV values were discretized into five categories: "-2" (deep loss, likely homozygous deletion), "-1" (shallow loss, likely heterozygous deletion), "0" (diploid), "1" (low-level gain), and "2" (high-level amplification).</p><p>Gene-level CNA profiles of the 30 cancer types (with samples over 50) were provided in the cBioPortal database. The 30 cancer types and the sample numbers are listed in Supplementary Table <ref type="table" target="#tab_1">S1</ref>. After gene feature alignments, there are 10 628 CNA profiles on 24 919 genes. The dataset was randomly divided into 80% training and 20% testing subsets. RFECV-based feature selection was performed on the training subset, reducing the number of gene features to 2917. These features were then used in the subsequent attention-based multiple instance learning framework for cancer classification and signature generation. To validate the signatures externally, we projected them onto Progenetix <ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr">[28]</ref>, a comprehensive reference database for CNV profiles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification performance analysis</head><p>As shown in Fig. <ref type="figure" target="#fig_1">2</ref>, the accuracy for cancer type assignment of samples is high, with an average of 0.89. Exceptions are the misclassification of Uterine Carcinosarcoma and Uterine Corpus Endometrial Carcinoma, and Thymoma and Thyroid Carcinoma. A potential reason can be found in Fig. <ref type="figure" target="#fig_2">3</ref> where the entities with the lowest scores all fall into the area with the lowest sample numbers (below 200). However, for a larger number of entities with &lt;200 samples, classification accuracy remains sufficient, and additional factors such as incorrect diagnostic classification or genomic heterogeneity in those entities might play a role here. For benchmarking of the methodology we compared CNAttention with other methods with and without our feature selection, as shown in Table <ref type="table" target="#tab_1">1</ref>, our method outperforms others. We need to note that comparing with the CNAttention without attention mechanism indicates the effectiveness of the attention mechanism in capturing the CNA patterns of different cancer types. Also, the increase in accuracy of random forest indicates not only the decrease in time costs but also the performance improvement. In addition, we added two external datasets of glioblastoma <ref type="bibr" target="#b28">[29]</ref>    <ref type="bibr" target="#b30">[31]</ref> 0.72 Qiu et al. <ref type="bibr" target="#b31">[32]</ref> 0.67 CNAttention without attention 0.65 and colorectal adenocarcinoma <ref type="bibr" target="#b29">[30]</ref> for testing; results show that the accuracy remains stable, which proves the robustness of CNAttention.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Copy number aberration signatures</head><p>Using the procedures described above, we generated a set of feature genes for each cancer type from the CNA data. These features were used to construct abstracted CNA profiles that preserve only the most discriminative alterations per sample. These signatures simplify complex CNA patterns into 1008 informative genes. A Random Forest model trained on these features achieved comparable accuracy with the full dataset, confirming that the selected genes retain the essential classification signal. illustrates a clustering heatmap of signatures, showing that cancers with shared tissue origins often group together. Figure <ref type="figure" target="#fig_4">5</ref> shows the most frequently selected genes; notably, duplications were more common than deletions, consistent with oncogene activation. CDKN2B deletion was the most recurrent CNA across all cancer types. To assess biological relevance, we performed GO enrichment analysis on the signature genes. The results showed significant associations with cancer-related processes, including tumor suppressor activity and pathways annotated as "HTLV-1 infection," which likely ref lect shared immune and signaling components rather than direct viral mechanisms.</p><note type="other">Figure 4</note><p>In the majority of copy number studies, analyses of tumor samples are focused on identifying the driver genes or the focal regions. The genes in the signatures rather ref lect the uniqueness of each sample or each cancer type. It is important to note that the feature genes are not intended as the only nor the optimal representation. The fundamental objective of the study is to explore the potential driver mutations that are infrequent but relevant to specific cancer types. Although the signatures do not imply pathogenic causation, we can instead reveal their potential implications and correlations by investigating the signatures and the feature genes. In general, spatial and annotation analysis suggest that some feature genes ref lect structural and functional alternations in samples; the signatures of different cancer types show high preference in several genomic regions that suffer frequent CNAs in many cancer types.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Signature comparison</head><p>We further compared the identified signatures with two related studies: Steele et al. <ref type="bibr" target="#b32">[33]</ref> and Nguyen et al. <ref type="bibr" target="#b33">[34]</ref> (Table <ref type="table" target="#tab_1">1</ref>). CNAttention achieved strong consistency with both arm-level and gene-level CNA frameworks. Arm-level comparison with CNAs dependent on the size of TCGA <ref type="bibr">(Nguyen et al.)</ref> showed a mean Spearman ρ of 0.28 (up to 0.48 in PAAD, GBM, and OV), recapitulating canonical gains of 8q and losses of 9p/10q. Gene-level overlap with Steele et al. yielded a median Jaccard of 0.008, with the highest concordance for CN4 and CN10-14 components, which This study) Steele et al. [33] Nguyen et al. [34] Interpretation Arm-level concordance Median ρ=0.28 (max 0.48 in PAAD) -Median arm CNA freq ≈ 0.30 across cancers Consistent arm-level CNA patterns (8q gain, 9p/10q loss). Gene-level overlap Median J=0.008 (0.004-0.013) 21 CN signatures (explaining ∼85% variance) -Similar gene regions (7p/8q, 17p/18q alterations). Shared genes (3-way) ∼200 (20%) ∼1800 genes in CN signatures ∼3000 genes on recurrent arms Core CNA drivers: MYC, TP53, CDKN2A, PTEN. Unique genes ∼600 (60%) --Novel immune-and metabolism-related CNAs. correspond to 7p/8q gains and 17p/18q losses. Across all studies, ∼200 genes were shared among CNAttention, Steele, and TCGA, including key drivers (MYC, TP53, CDKN2A, PTEN). Notably, 60% of CNAttention genes were unique and enriched in immune and metabolic pathways, suggesting that the attention-based model captures finer, cancer-specific CNA patterns beyond existing pancancer signatures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Validating copy number aberration signatures with a large-scale copy number variation reference database</head><p>We further extend our signatures to external datasets from Progenetix, which includes more heterogeneous CNV profiles from multiple data sources, to evaluate whether our signatures can extract the CNV pattern of certain cancer types. Here are the examples of lung adenocarcinoma and lung squamous cell carcinoma (Figs <ref type="figure" target="#fig_5">6</ref> and <ref type="figure" target="#fig_6">7</ref>).</p><p>Lung adenocarcinoma (LUAD) and Lung squamous cell carcinoma (LUSC) represent two major histological subtypes of lung cancer, each characterized by distinct molecular profiles, including unique patterns of CNAs. In LUAD it has been shown previously that clonal loss of functional TP53 is significantly associated with subclonal gains of MCL-1 (1q21.2) <ref type="bibr" target="#b34">[35]</ref>. Distinct CNA patterns characterize LUSC, with frequent amplifications of genes such as SOX2 (SRY-Box Transcription Factor 2) on chromosome 3q26 and FGFR1 (Fibroblast Growth Factor Receptor 1) on chromosome 8p11.23 driving oncogenic signaling pathways essential for cell proliferation and survival. Deletions affecting genes like NOTCH1 (Neurogenic Locus Notch Homolog Protein 1) on chromosome 9q34.3 are commonly observed, leading to dysregulated signaling cascades and accelerated tumor progression. In addition, loss of tumor suppressor genes CDKN2A/2B and CSMD1 are shared between LUAD and LUSC signatures. In conclusion, signatures can extract the features with relevance to the specific cancer, and also keep the common CNA pattern between LUAD and LUSC, help uncovering the relationships between different cancers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Similarities of neural crest originated subtypes</head><p>We further extend the signatures to more external datasets, by importing the cancer classification tree in Progenetix, and we find the similarities of neural crest-originated subtypes, including glioblastoma, glioma, medulloblastoma, and melanoma. The four distant cancer types exhibit highly similar signatures in both feature selection and alteration frequencies. Figure <ref type="figure" target="#fig_7">8</ref> illustrates the comparison of original CNA data, features, and known drivers of these cancers on chromosomes with similar signatures. Notably, their signatures show high similarities in the duplication of chromosome 7 and the deletion of chromosomes 9 and 10. Additionally, they share pairwise similarities in the duplication of chromosome 1 and 20, as well as the deletion of chromosome 14.</p><p>Chromosome 7, with frequent copy number gains in all four cancers, harbors several key oncogenes such as EGFR, CDK6, and MET in glioma; KMT2C and PMS2 in medulloblastoma; BRAF, RAC1, and TRRAP in melanoma. Similarly, chromosome 9 and 10, commonly deleted in these cancers, contain several important suppressor genes such as CDKN2A and PTEN in glioma; XPA, PPP6C, and CDKNA in melanoma; PTCH1 and SUFU in medulloblastoma. Notably, the CDKN2A/B deletion is the most frequent CNA across all cancer types.</p><p>In the 1990s, epidemiological studies <ref type="bibr" target="#b35">[36]</ref> initially uncovered a link between melanoma and nervous system tumors. This association was not only observed in familial cases, confirmed by germline mutations, but also indicated a significantly elevated risk of one disease in individuals with a history of the other. Despite evidence suggesting shared pathophysiological pathways and responsiveness to similar drugs, the genetic connection between these two disease groups remained largely elusive <ref type="bibr" target="#b36">[37]</ref>.</p><p>Despite their clinical and histological disparities, medulloblastomas, melanomas, and gliomas all originate from neural crest cell lineages. Recent research on neural crest cells and cancers derived from these lineages suggests that malignant cells mimic various aspects of neural crest development at a behavioral, molecular, and morphological level <ref type="bibr" target="#b37">[38]</ref>. Aberrations in tumor cells may reactivate embryonic developmental programs, thereby promoting tumorigenesis and metastasis. In melanoma, WNT family members, crucial during the epithelial-to-mesenchymal transition of neural crest cells, are reactivated during invasive    transformation <ref type="bibr" target="#b38">[39]</ref>. In glioblastoma, experimental data suggest dysregulated WNT signaling supports the onset of cancer stem cells, facilitating tumor enlargement and metastasis <ref type="bibr" target="#b38">[39]</ref>. In medulloblastoma, the WNT subgroup represents one of the four molecular subtypes of the disease <ref type="bibr" target="#b39">[40]</ref>. Regions with similar signatures show abnormal amplification frequencies in several WNT genes, potentially ref lecting overexpression of WNT signaling. Specifically, WNT2B and WNT4 exhibit moderate amplification frequencies, while WNT2, WNT3A, WNT9A, and WNT16 demonstrate high amplification frequencies. WNT2 and WNT16 are signature genes in all three subtypes, indicating their prevalence among individual samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Copy number variation heterogeneity reflects cancer subtypes</head><p>To find out whether these signatures ref lect the heterogeneity within cancers, we collected all available clinical information and adopted a random forest to see whether the signatures could help classify the subtypes. The results show that for all cancers, compared with using all CNV profiles, using signatures can help increase the accuracy, indicating that signatures can ref lect the heterogeneity of subtypes within cancer. Here we showcase how signature ref lects subtypes of brain lower grade glioma (LGG) in Fig. <ref type="figure" target="#fig_8">9</ref> by the 1p/19q co-deletion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this study, we compiled an extensive collection of cancer CNA profiles to pinpoint genomic aberration signatures specific to each cancer type. Our novel attention-based MIL method, CNAttention, showcased the potential of CNA patterns in tumor identification. Focusing on isolating unique components in diagnostic CNA profiles, we extracted signatures for 30 cancer types, each characterized by a minimal gene representation with high discrimination capacity.</p><p>Comparative analyses of signature genes and their respective regions revealed frequent duplications on chromosomes 7 and 8, and deletions on chromosome 22 across various cancer types. Despite their prevalence, these regions also exhibited features with high differentiating power, possibly indicating the functional significance of cancer-related genes specific to pathway involvement.</p><p>Our analyses unveiled shared CNA signatures among four clinically and pathologically distinct cancer types-glioblastoma, medulloblastoma, melanoma, and glioma. These tumor types can be traced back developmentally to common lineages of neural crest cells. Although research has sporadically linked neural crest cells with glioma and melanoma development, the genetic underpinnings of their association in oncogenetic processes remain elusive. Through comparative analysis of shared mutations and improvements in developmental processes in normal tissues, insights into shared pathologies and potential therapeutic targets may emerge. In addition, the signatures reveal the heterogeneity of cancer types, and shed light on uncovering more potential cancer subtypes.</p><p>In summary, this study presents a systematic pipeline for integrative and comparative analyses of a large amount of copy number data. The resulting CNA signatures offer new perspectives on the understanding of common foundations in cancers and show promising potential in applications of tumor classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Key Points</head><p>• We present CNAttention, an attention-based multipleinstance learning framework for pan-cancer classification using somatic copy number aberrations (CNAs). • CNAttention achieves robust performance across diverse tumour types in TCGA PanCancer Atlas data, outperforming classical machine-learning baselines and recent deep-learning models. • The attention mechanism identifies representative samples and highlights informative genomic regions, enabling interpretable cancer-typespecific CNA signatures at both chromosome-arm and gene levels. • Comparative analyses with recent pan-cancer CNA studies show that CNAttention recovers known driver alterations while revealing additional immune-and metabolism-related signatures.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. The diagram visualizes the workf low for analyzing cancer CNAs, including data preparation and quality control, feature selection using RFECV to handle high-dimensional data and the CNAttention classification stage which generates interpretable, cancer-type-specific CNA signatures by projecting the model's attention weights onto genomic features.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The cancer classification performance of CNAttention. The values in the cells indicate the percentage of biosamples of the corresponding row cancer type classified to the corresponding column cancer type.</figDesc><graphic coords="4,102.24,51.97,384.00,340.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Correlation between classification accuracy and the number of samples.</figDesc><graphic coords="4,310.88,437.61,228.00,227.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Clustering heatmap of CNA signatures across 30 cancer types. The columns represent normalized average CNV intensities for selected genes. Blue and red indicate duplications and deletions, respectively.</figDesc><graphic coords="5,72.47,52.40,456.00,459.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Top 30 most frequent signature genes across cancer types.</figDesc><graphic coords="6,46.59,201.89,234.00,195.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Comparison between external LUAD CNA frequency (Progenetix) and CNAttention-derived gene signatures. The highlighted regions on chr1, chr5, chr8, and chr9 correspond to recurrent CNAs (e.g. MYC amplification and CDKN2A deletion) that are consistent with external LUAD frequency data, demonstrating that CNAttention captures known recurrent CNAs. (a) Genome-wide CNA frequency profile of LUAD from the Progenetix database. The orange (above center line; up) and blue (below center line; down) bars represent copy-number gains and losses, respectively, with the y-axis showing alteration frequency across 7422 samples. (b) CNAttention-derived LUAD gene signatures projected onto chromosomes. The red and blue bars denote genes associated with duplication and deletion signatures, respectively, and the y-axis indicates their importance scores.</figDesc><graphic coords="7,72.90,247.45,444.23,74.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Comparison between the CNA frequency profile and CNV signature genes of LUSC. (a) CNA frequency plot of LUSC from the Progenetix database (see legend of Fig. 6 for format). The red dashed boxes highlight recurrently altered regions containing key oncogenes or tumor suppressors. (b) CNV signature gene plot of LUSC derived from the TCGA Pan-Cancer dataset. The red and blue bars indicate amplification-and deletion-associated signature genes, respectively. Chromosome ideograms are shown along the horizontal axis. The relative genomic positions of each gene are labeled, illustrating that the identified CNV signature genes largely correspond to regions of frequent CNAs observed in the Progenetix cohort.</figDesc><graphic coords="7,67.17,596.68,456.47,76.54" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Comparison between the glioblastoma CNV gene signature and CNV frequency profiles of neural crest-derived tumor subtypes. Panel (a) presents the glioblastoma CNV gene signature from TCGA PanCancer Atlas. Panel (b) shows vertically aligned genome-wide CNV frequency plots for glioblastoma, glioma, medulloblastoma, and melanoma from the Progenetix database, highlighting shared amplification and deletion landscapes across these related tumors. (a) CNV gene signature of glioblastoma showing recurrent amplification (above chromosome, red) and deletion (below, blue) genes along chromosomal locations. (b) Genome-wide CNV frequency plots of glioblastoma, glioma, medulloblastoma, and melanoma from the Progenetix database.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. Subtypes of brain LGG on signature CNV data. The different subtypes (separated by different colors on the left) show three different CNA patterns.</figDesc><graphic coords="9,60.47,52.76,480.00,441.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 .</head><label>1</label><figDesc>Classification comparison with other methods</figDesc><table><row><cell>Method</cell><cell>Average accuracy</cell></row><row><cell>CNAttention</cell><cell>0.89</cell></row><row><cell>Random Forest</cell><cell>0.64</cell></row><row><cell>Random Forest (with</cell><cell>0.65</cell></row><row><cell>feature selection)</cell><cell></cell></row><row><cell>Zhang et al.</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Quantitative comparison of CNAttention with Steele et al.<ref type="bibr" target="#b32">[33]</ref> and Nguyen et al.<ref type="bibr" target="#b33">[34]</ref> </figDesc><table><row><cell>Metric</cell><cell>CNAttention (</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>© The Author(s) 2026. Published by Oxford University Press. This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. Briefings in Bioinformatics, 2026, 27(1), bbaf696 https://doi.org/10.1093/bib/bbaf696 Problem Solving Protocol</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>We thank <rs type="institution">Baudis group</rs> members and the <rs type="institution">Molecular Life Sciences (MLS) institute colleagues</rs> for helpful discussions and feedback.</p></div>
+			</div>
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>None declared.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The gene-level somatic copy number aberrations analysed in this study were obtained from publicly available TCGA PanCancer Atlas cohorts via the cBioPortal for Cancer Genomics (<ref type="url" target="https://www.cbioportal.org">https://  www.cbioportal.org</ref>). External datasets for CNA signatures validation are from (<ref type="url" target="https://www.progenetix.org">https://www.progenetix.org</ref>) under the corresponding studies. Processed CNA matrices and the CNAttention code used to generate the results in this manuscript are available at <ref type="url" target="https://github.com/baudisgroup/CNAttention">https://github.com/baudisgroup/CNAttention</ref>.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>Ziying Yang (Conceptualization, Methodology, Software, Data curation, Formal analysis, Visualization, Writingoriginal draft) and Michael Baudis (Supervision, Funding acquisition, Writingreview &amp; editing)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary data</head><p>Supplementary data is available at Briefings in Bioinformatics online.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of interests</head><p>The authors declare that they have no competing interests.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Copy number variation: New insights in genome diversity</title>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">L</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">H</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Feuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Redon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Mccarroll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Altshuler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Aburatani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">W</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Tyler-Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">E</forename><surname>Hurles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">P</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">W</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/gr.3677206</idno>
+		<ptr target="https://doi.org/10.1101/gr.3677206" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Research</title>
+		<title level="j" type="abbrev">Genome Res.</title>
+		<idno type="ISSN">1088-9051</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="949" to="961" />
+			<date type="published" when="2006-06-29">2006</date>
+			<publisher>Cold Spring Harbor Laboratory</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Freeman JL, Perry GH, Feuk L. et al. Copy number variation: new insights in genome diversity. Genome Res 2006;16:949-61. https:// doi.org/10.1101/gr.3677206</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">GISTIC2.0 facilitates sensitive and confident localization of the targets of focal somatic copy-number alteration in human cancers</title>
+		<author>
+			<persName><forename type="first">Craig</forename><forename type="middle">H</forename><surname>Mermel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">E</forename><surname>Schumacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">L</forename><surname>Meyerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rameen</forename><surname>Beroukhim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gad</forename><surname>Getz</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/gb-2011-12-4-r41</idno>
+		<ptr target="https://doi.org/10.1186/gb-2011-12-4-r41" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Biology</title>
+		<title level="j" type="abbrev">Genome Biol</title>
+		<idno type="ISSNe">1474-760X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">41</biblScope>
+			<date type="published" when="2011-04">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mermel CH, Schumacher SE, Hill B. et al. GISTIC2. 0 facili- tates sensitive and confident localization of the targets of focal somatic copy-number alteration in human cancers. Genome Biol 2011;12:41. https://doi.org/10.1186/gb-2011-12-4-r41</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">FACETS: allele-specific copy number and clonal heterogeneity analysis tool for high-throughput DNA sequencing</title>
+		<author>
+			<persName><forename type="first">Ronglai</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Venkatraman</forename><forename type="middle">E</forename><surname>Seshan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/nar/gkw520</idno>
+		<ptr target="https://doi.org/10.1093/nar/gkw520" />
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Research</title>
+		<title level="j" type="abbrev">Nucleic Acids Res</title>
+		<idno type="ISSN">0305-1048</idno>
+		<idno type="ISSNe">1362-4962</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="e131" to="e131" />
+			<date type="published" when="2016-06-07">2016</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shen R, Seshan VE. FACETS: allele-specific copy number and clonal heterogeneity analysis tool for high-throughput DNA sequencing. Nucleic Acids Res 2016;44:e131. https://doi. org/10.1093/nar/gkw520</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">PRESM: personalized reference editor for somatic mutation discovery in cancer genomics</title>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lauren</forename><surname>Mak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangxu</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Long</surname></persName>
+			<idno type="ORCID">0000-0003-3795-1873</idno>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/bty812</idno>
+		<ptr target="https://doi.org/10.1093/bioinformatics/bty812" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1445" to="1452" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cao C, Mak L, Jin G. al. PRESM: personalized reference editor for somatic mutation discovery in cancer genomics. Bioinformatics 2019;35:1445-52. https://doi.org/10.1093/bioinformatics/bty812</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Human Copy Number Variation and Complex Genetic Disease</title>
+		<author>
+			<persName><forename type="first">Santhosh</forename><surname>Girirajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catarina</forename><forename type="middle">D</forename><surname>Campbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">E</forename><surname>Eichler</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-genet-102209-163544</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Genetics</title>
+		<title level="j" type="abbrev">Annu. Rev. Genet.</title>
+		<idno type="ISSN">0066-4197</idno>
+		<idno type="ISSNe">1545-2948</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="203" to="226" />
+			<date type="published" when="2011-12-15">2011</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Girirajan S, Campbell CD, Eichler EE. Human copy number variation and complex genetic disease. Annu Rev Genet 2011;45: 203-26.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Rare structural variants found in attention-deficit hyperactivity disorder are preferentially associated with neurodevelopmental genes</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Elia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Gai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Perin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Glessner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>D'arcy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Deberardinis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Frackelton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Lantieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Muganga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Takeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">F</forename><surname>Rappaport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">F A</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Berrettini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Devoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Shaikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hakonarson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>White</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/mp.2009.57</idno>
+		<ptr target="https://doi.org/10.1038/mp.2009" />
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Psychiatry</title>
+		<title level="j" type="abbrev">Mol Psychiatry</title>
+		<idno type="ISSN">1359-4184</idno>
+		<idno type="ISSNe">1476-5578</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="637" to="646" />
+			<date type="published" when="2010">2010</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elia J, Gai X, Xie H. et al. Rare structural variants found in attention-deficit hyperactivity disorder are preferentially asso- ciated with neurodevelopmental genes. Mol Psychiatry 2010;15: 637-46. https://doi.org/10.1038/mp.2009.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Copy number variant in the candidate tumor suppressor gene MTUS1 and familial breast cancer risk</title>
+		<author>
+			<persName><forename type="first">Bernd</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justo</forename><forename type="middle">Lorenzo</forename><surname>Bermejo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kari</forename><surname>Hemminki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Sutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Wappenschmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfons</forename><surname>Meindl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Kiechle-Bahat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Bugert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rita</forename><forename type="middle">K</forename><surname>Schmutzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claus</forename><forename type="middle">R</forename><surname>Bartram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Burwinkel</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/carcin/bgm033</idno>
+		<ptr target="https://doi.org/10.1093/carcin/bgm033" />
+	</analytic>
+	<monogr>
+		<title level="j">Carcinogenesis</title>
+		<idno type="ISSN">0143-3334</idno>
+		<idno type="ISSNe">1460-2180</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1442" to="1445" />
+			<date type="published" when="2007-02-13">2007</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Frank B, Bermejo JL, Hemminki K. et al. Copy number variant in the candidate tumor suppressor gene MTUS1 and familial breast cancer risk. Carcinogenesis 2007;28:1442-5. https://doi. org/10.1093/carcin/bgm033</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Occurrence of Genetic Alterations during the Progression of Breast Carcinoma</title>
+		<author>
+			<persName><forename type="first">Xiao-Chen</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenglin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhong</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2016/5237827</idno>
+		<ptr target="https://doi.org/10.1155/2016/5237827" />
+	</analytic>
+	<monogr>
+		<title level="j">BioMed Research International</title>
+		<title level="j" type="abbrev">BioMed Research International</title>
+		<idno type="ISSN">2314-6133</idno>
+		<idno type="ISSNe">2314-6141</idno>
+		<imprint>
+			<biblScope unit="volume">2016</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Hindawi Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li X-C, Liu C, Huang T. et al. The occurrence of genetic alter- ations during the progression of breast carcinoma. Biomed Res Int 2016;2016:8518945. https://doi.org/10.1155/2016/5237827</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Friedberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">C</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Siede</surname></persName>
+		</author>
+		<title level="m">DNA Repair and Mutagenesis 2nd</title>
+		<meeting><address><addrLine>Washington, DC, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>American Society for Microbiology Press</publisher>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Friedberg EC, Walker GC, Siede W. et al. DNA Repair and Mutage- nesis 2nd ed. Washington, DC, USA: American Society for Micro- biology Press, 2006.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Cancer genome landscapes</title>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Papadopoulos</forename><forename type="middle">N</forename><surname>Velculescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">E</forename></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1235122</idno>
+		<ptr target="https://doi.org/10.1126/science.1235122" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">339</biblScope>
+			<biblScope unit="page" from="1546" to="1558" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">B, Papadopoulos N, Velculescu VE. et al. Can- cer genome landscapes. Science 2013;339:1546-58. https://doi. org/10.1126/science.1235122</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">DawnRank: discovering personalized driver genes in cancer</title>
+		<author>
+			<persName><forename type="first">Jack</forename><forename type="middle">P</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13073-014-0056-8</idno>
+		<ptr target="https://doi.org/10.1186/" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Medicine</title>
+		<title level="j" type="abbrev">Genome Med</title>
+		<idno type="ISSNe">1756-994X</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2014-07-31">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hou JP, Ma J. DawnRank: discovering personalized driver genes in cancer. Genome Med 2014;6:1-16. https://doi.org/10.1186/</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Origins and functional impact of copy number variation in the human genome</title>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">F</forename><surname>Conrad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dalila</forename><surname>Pinto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Redon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Feuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omer</forename><surname>Gokcumen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yujun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Aerts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">Daniel</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Campbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chun</forename><forename type="middle">Hwa</forename><surname>Ihm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kati</forename><surname>Kristiansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">G</forename><surname>Macarthur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">R</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ifejinelo</forename><surname>Onyiah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andy</forename><forename type="middle">Wing Chun</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sam</forename><surname>Robson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathy</forename><surname>Stirrups</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armand</forename><surname>Valsesia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaudia</forename><surname>Walter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Tyler-Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">P</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">W</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">E</forename><surname>Hurles</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature08516</idno>
+		<ptr target="https://doi.org/10.1038/nature08516" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">464</biblScope>
+			<biblScope unit="issue">7289</biblScope>
+			<biblScope unit="page" from="704" to="712" />
+			<date type="published" when="2010">2010</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Conrad DF, Pinto D, Redon R. et al. Origins and functional impact of copy number variation in the human genome. Nature 2010;464:704-12. https://doi.org/10.1038/nature08516</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Copy number variation, chromosome rearrangement, and their association with recombination during avian evolution</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Völker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niclas</forename><surname>Backström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">M</forename><surname>Skinner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">J</forename><surname>Langley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sydney</forename><forename type="middle">K</forename><surname>Bunzey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><surname>Ellegren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darren</forename><forename type="middle">K</forename><surname>Griffin</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/gr.103663.109</idno>
+		<ptr target="https://doi.org/10.1101/gr.103663.109" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Research</title>
+		<title level="j" type="abbrev">Genome Res.</title>
+		<idno type="ISSN">1088-9051</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="503" to="511" />
+			<date type="published" when="2010-03-31">2010</date>
+			<publisher>Cold Spring Harbor Laboratory</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Völker M, Backström N, Skinner BM. et al. Copy number vari- ation, chromosome rearrangement, and their association with recombination during avian evolution. Genome Res 2010;20: 503-11. https://doi.org/10.1101/gr.103663.109</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">CNV instability associated with DNA replication dynamics: evidence for replicative mechanisms in CNV mutagenesis</title>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weichen</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Lupski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/hmg/ddu572</idno>
+		<ptr target="https://doi.org/10.1093/hmg/ddu572" />
+	</analytic>
+	<monogr>
+		<title level="j">Human Molecular Genetics</title>
+		<idno type="ISSN">0964-6906</idno>
+		<idno type="ISSNe">1460-2083</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1574" to="1583" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen L, Zhou W, Zhang C. et al. CNV instability associated with DNA replication dynamics: evidence for replicative mechanisms in CNV mutagenesis. Hum Mol Genet 2015;24:1574-83. https:// doi.org/10.1093/hmg/ddu572</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Different Facets of Copy Number Changes: Permanent, Transient, and Adaptive</title>
+		<author>
+			<persName><forename type="first">Sweta</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johnathan</forename><forename type="middle">R</forename><surname>Whetstine</surname></persName>
+		</author>
+		<idno type="DOI">10.1128/mcb.00652-15</idno>
+		<ptr target="https://doi.org/10.1128/MCB.00652-15" />
+	</analytic>
+	<monogr>
+		<title level="j">Molecular and Cellular Biology</title>
+		<title level="j" type="abbrev">Molecular and Cellular Biology</title>
+		<idno type="ISSNe">1098-5549</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1050" to="1063" />
+			<date type="published" when="2016-04-01">2016</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mishra S, Whetstine JR. Different facets of copy number changes: permanent, transient, and adaptive. Mol Cell Biol 2016;36:1050-63. https://doi.org/10.1128/MCB.00652-15</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Integrated analysis of homozygous deletions, focal amplifications, and sequence alterations in breast and colorectal cancers</title>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">J</forename><surname>Leary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimmy</forename><forename type="middle">C</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordan</forename><surname>Cummins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simina</forename><surname>Boca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">D</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Williams</forename><surname>Parsons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siân</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Sjöblom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben-Ho</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramon</forename><surname>Parsons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Willis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dawn</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">K V</forename><surname>Willson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tatiana</forename><surname>Nikolskaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuri</forename><surname>Nikolsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Levy</forename><surname>Kopelovich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nick</forename><surname>Papadopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Len</forename><forename type="middle">A</forename><surname>Pennacchio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian-Li</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanford</forename><forename type="middle">D</forename><surname>Markowitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Parmigiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">W</forename><surname>Kinzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bert</forename><surname>Vogelstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">E</forename><surname>Velculescu</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.0808041105</idno>
+		<ptr target="https://doi.org/10.1073/pnas.0808041105" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">42</biblScope>
+			<biblScope unit="page" from="16224" to="16229" />
+			<date type="published" when="2008-10-21">2008</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Leary RJ, Lin JC, Cummins J. et al. Integrated analysis of homozy- gous deletions, focal amplifications, and sequence alterations in breast and colorectal cancers. Proc Natl Acad Sci 2008;105: 16224-9. https://doi.org/10.1073/pnas.0808041105</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Classification of Non-Small Cell Lung Cancer Based on Copy Number Alterations</title>
+		<author>
+			<persName><forename type="first">Bi-Qing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>You</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Dong</forename><surname>Cai</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0088300</idno>
+		<ptr target="https://doi.org/10.1371/journal.pone.0088300" />
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">e88300</biblScope>
+			<date type="published" when="2014-02-05">2014</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li B-Q, You J, Huang T. et al. Classification of non-small cell lung cancer based on copy number alterations. PloS One 2014;9:88300. https://doi.org/10.1371/journal.pone.0088300</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Emerging landscape of oncogenic signatures across human cancers</title>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Ciriello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bülent</forename><forename type="middle">Arman</forename><surname>Aksoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasin</forename><surname>Senbabaoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaus</forename><surname>Schultz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Sander</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ng.2762</idno>
+		<ptr target="https://doi.org/10.1038/ng.2762" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Genetics</title>
+		<title level="j" type="abbrev">Nat Genet</title>
+		<idno type="ISSN">1061-4036</idno>
+		<idno type="ISSNe">1546-1718</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1127" to="1133" />
+			<date type="published" when="2013-09-26">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ciriello G, Miller ML, Aksoy BA. et al. Emerging landscape of oncogenic signatures across human cancers. Nat Genet 2013;45: 1127-33. https://doi.org/10.1038/ng.2762</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Detection of Chromosomal Alterations in the Circulation of Cancer Patients with Whole-Genome Sequencing</title>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">J</forename><surname>Leary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Sausen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isaac</forename><surname>Kinde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nickolas</forename><surname>Papadopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">D</forename><surname>Carpten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Craig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joyce</forename><surname>O’shaughnessy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">W</forename><surname>Kinzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Parmigiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bert</forename><surname>Vogelstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><forename type="middle">A</forename><surname>Diaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">E</forename><surname>Velculescu</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/scitranslmed.3004742</idno>
+		<ptr target="https://doi.org/10.1126/scitranslmed.3004742" />
+	</analytic>
+	<monogr>
+		<title level="j">Science Translational Medicine</title>
+		<title level="j" type="abbrev">Sci. Transl. Med.</title>
+		<idno type="ISSN">1946-6234</idno>
+		<idno type="ISSNe">1946-6242</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">162</biblScope>
+			<biblScope unit="page">154162154</biblScope>
+			<date type="published" when="2012-11-28">2012</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Leary RJ, Sausen M, Kinde I. et al. Detection of chromosomal alterations in the circulation of cancer patients with whole- genome sequencing. Sci Transl Med 2012;4:154162154. https://doi. org/10.1126/scitranslmed.3004742</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Analysis of Circulating Tumor DNA to Monitor Metastatic Breast Cancer</title>
+		<author>
+			<persName><forename type="first">Sarah-Jane</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dana</forename><forename type="middle">W Y</forename><surname>Tsui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammed</forename><surname>Murtaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><surname>Biggs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oscar</forename><forename type="middle">M</forename><surname>Rueda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suet-Feung</forename><surname>Chin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">J</forename><surname>Dunning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davina</forename><surname>Gale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Forshew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Betania</forename><surname>Mahler-Araujo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabrina</forename><surname>Rajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Humphray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Becq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Halsall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Wallis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bentley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Caldas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitzan</forename><surname>Rosenfeld</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa1213261</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">368</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="1199" to="1209" />
+			<date type="published" when="2013-03-28">2013</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dawson S-J, Tsui DW, Murtaza M. et al. Analysis of circulating tumor dna to monitor metastatic breast cancer. N Engl J Med 2013;368:1199-209.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Tumor-associated copy number changes in the circulation of patients with prostate cancer identified through whole-genome sequencing</title>
+		<author>
+			<persName><forename type="first">Ellen</forename><surname>Heitzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Ulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jelena</forename><surname>Belic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Gutschi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franz</forename><surname>Quehenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katja</forename><surname>Fischereder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Theresa</forename><surname>Benezeder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Auer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carina</forename><surname>Pischler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Mannweiler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Pichler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Eisner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Haeusler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Riethdorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Pantel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hellmut</forename><surname>Samonigg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><surname>Hoefler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Augustin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jochen</forename><forename type="middle">B</forename><surname>Geigl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Speicher</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/gm434</idno>
+		<ptr target="https://doi.org/10.1186/gm434" />
+	</analytic>
+	<monogr>
+		<title level="j">Genome Medicine</title>
+		<title level="j" type="abbrev">Genome Med</title>
+		<idno type="ISSNe">1756-994X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2013-04-05">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Heitzer E, Ulz P, Belic J. et al. Tumor-associated copy number changes in the circulation of patients with prostate cancer iden- tified through whole-genome sequencing. Genome Med 2013;5: 1-16. https://doi.org/10.1186/gm434</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Solving the multiple instance problem with axis-parallel rectangles</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">G</forename><surname>Dietterich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">H</forename><surname>Lathrop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomás</forename><surname>Lozano-Pérez</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0004-3702(96)00034-3</idno>
+		<ptr target="https://doi.org/10.1016/S0004-3702(96)00034-3" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence</title>
+		<title level="j" type="abbrev">Artificial Intelligence</title>
+		<idno type="ISSN">0004-3702</idno>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="31" to="71" />
+			<date type="published" when="1997-01">1997</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dietterich TG, Lathrop RH, Lozano-Pérez T. Solving the multi- ple instance problem with axis-parallel rectangles. Artif Intell 1997;89:31-71. https://doi.org/10.1016/S0004-3702(96)00034-3</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A framework for multiple-instance learning</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Maron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lozano-Pérez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Jordan</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Kearns</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Solla</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cambridge, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Maron O, Lozano-Pérez T. A framework for multiple-instance learning. In: Jordan M, Kearns M, Solla S, (eds). Advances in neural information processing systems. Cambridge, MA, USA: MIT Press, 1997;</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Key instance detection in multiinstance learning</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z-H</forename><surname>Zhou</surname></persName>
+		</author>
+		<ptr target="https://proceedings.mlr.press/v25/liu12b.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Asian Conference on Machine Learning</title>
+		<meeting><address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="253" to="268" />
+		</imprint>
+		<respStmt>
+			<orgName>PMLR, Singapore Management University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Liu G, Wu J, Zhou Z-H. Key instance detection in multi- instance learning. In: Asian Conference on Machine Learning, pp. 253-68. PMLR, Singapore Management University, Singapore, 2012. https://proceedings.mlr.press/v25/liu12b.html</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Deep multiple instance learning for digital histopathology</title>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Ilse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><forename type="middle">M</forename><surname>Tomczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-816176-0.00027-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Medical Image Computing and Computer Assisted Intervention</title>
+		<meeting><address><addrLine>Stockholmsmässan, Stockholm, Sweden</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="521" to="546" />
+		</imprint>
+	</monogr>
+	<note>PMLR, ICML 2018</note>
+	<note type="raw_reference">Ilse M, Tomczak J, Welling M. Attention-based deep multiple instance learning. In: International Conference on Machine Learning, pp. 2127-36. PMLR, ICML 2018, Stockholmsmässan, Stockholm, Sweden, 2018.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Progenetix Oncogenomic Online Resource</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Baudis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025-06-30">30 June 2025</date>
+		</imprint>
+	</monogr>
+	<note>, date last accessed</note>
+	<note type="raw_reference">Baudis M. Progenetix Oncogenomic Online Resource; (30 June 2025, date last accessed).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Progenetix.net: an online repository for molecular cytogenetic aberration data</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Baudis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">L</forename><surname>Cleary</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/17.12.1228</idno>
+		<ptr target="https://doi.org/10.1093/bioinformatics/17.12.1228" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1228" to="1229" />
+			<date type="published" when="2001-12-01">2001</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Baudis M, Cleary M. Progenetix.net: An online repository for molecular cytogenetic aberration data. Bioinformatics 2001;17: 1228-9. https://doi.org/10.1093/bioinformatics/17.12.1228</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The Progenetix oncogenomic resource in 2021</title>
+		<author>
+			<persName><forename type="first">Qingyao</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0002-8255-4722</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paula</forename><surname>Carrio-Cordo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahel</forename><surname>Paloots</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Baudis</surname></persName>
+			<idno type="ORCID">0000-0002-9903-4248</idno>
+		</author>
+		<idno type="DOI">10.1093/database/baab043</idno>
+		<ptr target="https://doi.org/10.1093/database/baab043" />
+	</analytic>
+	<monogr>
+		<title level="j">Database</title>
+		<idno type="ISSNe">1758-0463</idno>
+		<imprint>
+			<biblScope unit="volume">2021</biblScope>
+			<biblScope unit="page">43</biblScope>
+			<date type="published" when="2021-01-01">2021. 2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang Q, Carrio-Cordo P, Gao B. et al. The progenetix oncoge- nomic resource in 2021. Database 2021;2021:043. https://doi. org/10.1093/database/baab043</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Proteogenomic and metabolomic characterization of human glioblastoma</title>
+		<author>
+			<persName><forename type="first">Liang-Bo</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alla</forename><surname>Karpova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marina</forename><forename type="middle">A</forename><surname>Gritsenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">E</forename><surname>Kyle</surname></persName>
+			<idno type="ORCID">0000-0002-9282-9005</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Song</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yize</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Rykunov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Colaprico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">H</forename><surname>Rothstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runyu</forename><surname>Hong</surname></persName>
+			<idno type="ORCID">0000-0002-0941-351X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vasileios</forename><surname>Stathias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Macintosh</forename><surname>Cornwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesca</forename><surname>Petralia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yige</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Reva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karsten</forename><surname>Krug</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Pugliese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Kawaler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lindsey</forename><forename type="middle">K</forename><surname>Olsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen-Wei</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongchao</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">C</forename><surname>Wendl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wagma</forename><surname>Caravan</surname></persName>
+			<idno type="ORCID">0000-0003-4082-6723</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenke</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Cui Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chia-Feng</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vladislav</forename><forename type="middle">A</forename><surname>Petyuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Moon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiping</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosalie</forename><forename type="middle">K</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><forename type="middle">K</forename><surname>Weitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">J</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">E</forename><surname>Monroe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolu</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seungyeul</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azra</forename><surname>Krek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexis</forename><surname>Demopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Houxiang</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">A</forename><surname>Wyczalkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">F</forename><surname>Mcmichael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brittany</forename><forename type="middle">L</forename><surname>Henderson</surname></persName>
+			<idno type="ORCID">0000-0002-3449-0058</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caleb</forename><forename type="middle">M</forename><surname>Lindgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Boekweg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuangjia</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jessika</forename><surname>Baral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lijun</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelly</forename><forename type="middle">G</forename><surname>Stratton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">M</forename><surname>Bramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erika</forename><surname>Zink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sneha</forename><forename type="middle">P</forename><surname>Couvillion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kent</forename><forename type="middle">J</forename><surname>Bloodsworth</surname></persName>
+			<idno type="ORCID">0000-0002-7596-1565</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shankha</forename><surname>Satpathy</surname></persName>
+			<idno type="ORCID">0000-0002-6040-4854</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weiva</forename><surname>Sieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simina</forename><forename type="middle">M</forename><surname>Boca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Schürer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Wiznerowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><forename type="middle">A</forename><surname>Ketchum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">S</forename><surname>Boja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Kinsinger</surname></persName>
+			<idno type="ORCID">0000-0001-5015-4428</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">I</forename><surname>Robles</surname></persName>
+			<idno type="ORCID">0000-0001-5019-4374</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tara</forename><surname>Hiltke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathangi</forename><surname>Thiagarajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexey</forename><forename type="middle">I</forename><surname>Nesvizhskii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michele</forename><surname>Ceccarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><forename type="middle">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><forename type="middle">L</forename><surname>Cottingham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><forename type="middle">Kay</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">H</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Fenyö</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelly</forename><forename type="middle">V</forename><surname>Ruggles</surname></persName>
+			<idno type="ORCID">0000-0002-0152-0863</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Mesri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">H</forename><surname>Payne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">C</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">D</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Iavarone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><forename type="middle">G</forename><surname>Chheda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><forename type="middle">D</forename><surname>Rodland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Ding</surname></persName>
+			<idno type="ORCID">0000-0003-1517-2975</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anupriya</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitual</forename><surname>Amin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eunkyung</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chet</forename><surname>Birger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">J</forename><surname>Birrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lili</forename><surname>Blumenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">E</forename><surname>Bocik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uma</forename><surname>Borate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Borucki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meghan</forename><forename type="middle">C</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">P</forename><surname>Calinawan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Carr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Cerda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">W</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alyssa</forename><surname>Charamut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><forename type="middle">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Chesla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arul</forename><forename type="middle">M</forename><surname>Chinnaiyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shrabanti</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcin</forename><forename type="middle">P</forename><surname>Cieślik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Houston</forename><surname>Culpepper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Czernicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fulvio</forename><surname>D'angelo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Day</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>De Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emek</forename><surname>Demir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saravana</forename><forename type="middle">Mohan</forename><surname>Dhanasekaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajiv</forename><surname>Dhir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcin</forename><forename type="middle">J</forename><surname>Domagalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Druker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Duffy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maureen</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><forename type="middle">J</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kimberly</forename><surname>Elburn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">J</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Eschbacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alicia</forename><surname>Francis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stacey</forename><surname>Gabriel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolay</forename><surname>Gabrovski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luciano</forename><surname>Garofano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gad</forename><surname>Getz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Gillette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">K</forename><surname>Godwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denis</forename><surname>Golbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziad</forename><surname>Hanhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><forename type="middle">I</forename><surname>Hannick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pushpa</forename><surname>Hariharan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Hindenach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katherine</forename><forename type="middle">A</forename><surname>Hoadley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Galen</forename><surname>Hostetter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Jaehnig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">D</forename><surname>Jewell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corbin</forename><forename type="middle">D</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alcida</forename><surname>Karz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Kaspera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lyndon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramani</forename><forename type="middle">B</forename><surname>Kothadia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandan</forename><surname>Kumar-Sinha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felipe</forename><forename type="middle">D</forename><surname>Leprevost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxing</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jena</forename><surname>Lilly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Lubínski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rashna</forename><surname>Madan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Maggio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ewa</forename><surname>Malc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Malovannaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sailaja</forename><surname>Mareedu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanford</forename><forename type="middle">P</forename><surname>Markey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><surname>Marrero-Oliveras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nina</forename><surname>Martinez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicollette</forename><surname>Maunganidze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">E</forename><surname>Mcdermott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">B</forename><surname>Mcgarvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Mcgee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Mieczkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simona</forename><surname>Migliozzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesmary</forename><surname>Modugno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebecca</forename><surname>Montgomery</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chelsea</forename><forename type="middle">J</forename><surname>Newton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gilbert</forename><forename type="middle">S</forename><surname>Omenn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Umut</forename><surname>Ozbek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oxana</forename><forename type="middle">V</forename><surname>Paklina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">G</forename><surname>Paulovich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><forename type="middle">M</forename><surname>Perou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">R</forename><surname>Pico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">D</forename><surname>Piehowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><forename type="middle">G</forename><surname>Placantonakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Larisa</forename><surname>Polonskaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Potapova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Pruetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liqun</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shakti</forename><surname>Ramkissoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shannon</forename><surname>Richey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><surname>Riggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karna</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><surname>Roche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">C</forename><surname>Rohrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">R</forename><surname>Rood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Larissa</forename><surname>Rossell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><forename type="middle">R</forename><surname>Savage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">E</forename><surname>Schadt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiao</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvonne</forename><surname>Shutack</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilpi</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tara</forename><surname>Skelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lori</forename><forename type="middle">J</forename><surname>Sokoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><surname>Stawicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">E</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Suh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Szopa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dave</forename><surname>Tabor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donghui</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darlene</forename><surname>Tansil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratna</forename><forename type="middle">R</forename><surname>Thangudu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><surname>Tognon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elie</forename><surname>Traer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shirley</forename><surname>Tsang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><surname>Tyner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ki</forename><forename type="middle">Sung</forename><surname>Um</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dana</forename><forename type="middle">R</forename><surname>Valley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suhas</forename><surname>Vasaikar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Negin</forename><surname>Vatanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uma</forename><surname>Velvulou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Vernon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiqing</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junmei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Webster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">R</forename><surname>Whiteaker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">D</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuriy</forename><surname>Zakhartsev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Zelt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liwei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grace</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ccell.2021.01.006</idno>
+		<ptr target="https://doi.org/10.1016/j.ccell.2021.01.006" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<title level="j" type="abbrev">Cancer Cell</title>
+		<idno type="ISSN">1535-6108</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="509" to="528.e20" />
+			<date type="published" when="2021-04">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang L-B, Karpova A, Gritsenko MA. et al. Proteogenomic and metabolomic characterization of human glioblastoma. Cancer Cell 2021;39:509-528.e20. https://doi.org/10.1016/j. ccell.2021.01.006</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Integrated clinical and genomic analysis identifies driver events and molecular evolution of colitis-associated cancers</title>
+		<author>
+			<persName><forename type="first">Walid</forename><forename type="middle">K</forename><surname>Chatila</surname></persName>
+			<idno type="ORCID">0000-0001-5474-218X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Walch</surname></persName>
+			<idno type="ORCID">0000-0003-1188-350X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaclyn</forename><forename type="middle">F</forename><surname>Hechtman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sydney</forename><forename type="middle">M</forename><surname>Moyer</surname></persName>
+			<idno type="ORCID">0000-0002-2911-4058</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Valeria</forename><surname>Sgambati</surname></persName>
+			<idno type="ORCID">0000-0002-8964-646X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Faleck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amitabh</forename><surname>Srivastava</surname></persName>
+			<idno type="ORCID">0000-0001-5165-8142</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamal</forename><surname>Benhamida</surname></persName>
+			<idno type="ORCID">0000-0001-5542-9857</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dorina</forename><surname>Ismailgeci</surname></persName>
+			<idno type="ORCID">0000-0002-1177-8905</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Campos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-3960-320X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Efsevia</forename><surname>Vakiani</surname></persName>
+			<idno type="ORCID">0000-0003-0227-3523</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>De Stanchina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">R</forename><surname>Weiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Widmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rhonda</forename><forename type="middle">K</forename><surname>Yantiss</surname></persName>
+			<idno type="ORCID">0000-0001-6068-4617</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manish</forename><forename type="middle">A</forename><surname>Shah</surname></persName>
+			<idno type="ORCID">0000-0002-6913-9655</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">J</forename><surname>Bass</surname></persName>
+			<idno type="ORCID">0000-0002-8193-4758</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zsofia</forename><forename type="middle">K</forename><surname>Stadler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lior</forename><forename type="middle">H</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+			<idno type="ORCID">0000-0002-4347-8149</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nilay</forename><forename type="middle">S</forename><surname>Sethi</surname></persName>
+			<idno type="ORCID">0000-0002-3748-7559</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaus</forename><surname>Schultz</surname></persName>
+			<idno type="ORCID">0000-0002-0131-4904</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Karuna</forename><surname>Ganesh</surname></persName>
+			<idno type="ORCID">0000-0002-4948-1082</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Kelsen</surname></persName>
+			<idno type="ORCID">0000-0001-6139-438X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rona</forename><surname>Yaeger</surname></persName>
+			<idno type="ORCID">0000-0002-7233-5454</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-022-35592-9</idno>
+		<ptr target="https://doi.org/10.1038/s41467-022-35592-9" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">110</biblScope>
+			<date type="published" when="2023-01-07">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chatila WK, Walch H, Hechtman JF. et al. Integrated clinical and genomic analysis identifies driver events and molecular evolution of colitis-associated cancers. Nat Commun 2023;14:110. https://doi.org/10.1038/s41467-022-35592-9</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Classification of cancers based on copy number variation landscapes</title>
+		<author>
+			<persName><forename type="first">Ning</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peiwei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-1975-9693</idno>
+		</author>
+		<idno type="DOI">10.1016/j.bbagen.2016.06.003</idno>
+		<ptr target="https://doi.org/10.1016/j.bbagen.2016.06.003" />
+	</analytic>
+	<monogr>
+		<title level="j">Biochimica et Biophysica Acta (BBA) - General Subjects</title>
+		<title level="j" type="abbrev">Biochimica et Biophysica Acta (BBA) - General Subjects</title>
+		<idno type="ISSN">0304-4165</idno>
+		<imprint>
+			<biblScope unit="volume">1860</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2750" to="2755" />
+			<date type="published" when="2016-11">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang N, Wang M, Zhang P. et al. Classification of can- cers based on copy number variation landscapes. Biochim Bio- phys Acta Gen Subj 2016;1860:2750-5. https://doi.org/10.1016/j. bbagen.2016.06.003</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Genome‐wide copy number variation pattern analysis and a classification signature for non‐small cell lung cancer</title>
+		<author>
+			<persName><forename type="first">Zhe‐wei</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jia‐hao</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adi</forename><forename type="middle">F</forename><surname>Gazdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Song</surname></persName>
+			<idno type="ORCID">0000-0001-9195-6160</idno>
+		</author>
+		<idno type="DOI">10.1002/gcc.22460</idno>
+		<ptr target="https://doi.org/10.1002/gcc.22460" />
+	</analytic>
+	<monogr>
+		<title level="j">Genes, Chromosomes and Cancer</title>
+		<title level="j" type="abbrev">Genes Chromosomes &amp; Cancer</title>
+		<idno type="ISSN">1045-2257</idno>
+		<idno type="ISSNe">1098-2264</idno>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="559" to="569" />
+			<date type="published" when="2017-05-04">2017</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qiu Z-W, Bi J-H, Gazdar AF. et al. Genome-wide copy number variation pattern analysis and a classification signature for non- small cell lung cancer. Genes Chromosomes Cancer 2017;56:559-69. https://doi.org/10.1002/gcc.22460</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Signatures of copy number alterations in human cancer</title>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Steele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ammal</forename><surname>Abbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M Ashiqul</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><forename type="middle">L</forename><surname>Bowes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azhar</forename><surname>Khandekar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kerstin</forename><surname>Haase</surname></persName>
+			<idno type="ORCID">0000-0002-0944-5618</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shadi</forename><surname>Hames-Fathi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dolapo</forename><surname>Ajayi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annelien</forename><surname>Verfaillie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pawan</forename><surname>Dhami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Mclatchie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Lechner</surname></persName>
+			<idno type="ORCID">0000-0002-7123-0773</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Light</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Shlien</surname></persName>
+			<idno type="ORCID">0000-0002-0368-5370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Malkin</surname></persName>
+			<idno type="ORCID">0000-0001-5752-9763</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Feber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paula</forename><surname>Proszek</surname></persName>
+			<idno type="ORCID">0000-0002-0780-6790</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Lesluyes</surname></persName>
+			<idno type="ORCID">0000-0003-2251-5884</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fredrik</forename><surname>Mertens</surname></persName>
+			<idno type="ORCID">0000-0002-6278-5232</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adrienne</forename><forename type="middle">M</forename><surname>Flanagan</surname></persName>
+			<idno type="ORCID">0000-0002-2832-1303</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maxime</forename><surname>Tarabichi</surname></persName>
+			<idno type="ORCID">0000-0002-1635-2348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Van Loo</surname></persName>
+			<idno type="ORCID">0000-0003-0292-1949</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ludmil</forename><forename type="middle">B</forename><surname>Alexandrov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nischalan</forename><surname>Pillay</surname></persName>
+			<idno type="ORCID">0000-0003-0579-4105</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-04738-6</idno>
+		<ptr target="https://doi.org/10.1038/s41586-022-04738-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">606</biblScope>
+			<biblScope unit="issue">7916</biblScope>
+			<biblScope unit="page" from="984" to="991" />
+			<date type="published" when="2022-06-15">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Steele CD, Abbasi A, Islam SA. et al. Signatures of copy number alterations in human cancer. Nature 2022;606:984-91. https:// doi.org/10.1038/s41586-022-04738-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Pan-cancer copy number analysis identifies optimized size thresholds and co-occurrence models for individualized risk stratification</title>
+		<author>
+			<persName><forename type="first">Minh</forename><forename type="middle">P</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">C</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-8924-5853</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kanish</forename><surname>Mirchia</surname></persName>
+			<idno type="ORCID">0000-0002-7371-7059</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abrar</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naomi</forename><surname>Zakimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Nitturi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tiemo</forename><forename type="middle">J</forename><surname>Klisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">T</forename><surname>Magill</surname></persName>
+			<idno type="ORCID">0000-0002-5257-7835</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Calixto-Hope G.</forename><surname>Lucas</surname></persName>
+			<idno type="ORCID">0000-0002-8347-9592</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Akash</forename><forename type="middle">J</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Raleigh</surname></persName>
+			<idno type="ORCID">0000-0001-9299-8864</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-025-61063-y</idno>
+		<ptr target="https://doi.org/10.1038/s41467-025-61063-y" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">6024</biblScope>
+			<date type="published" when="2025-07-02">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nguyen MP, Chen WC, Mirchia K. et al. Pan-cancer copy number analysis identifies optimized size thresholds and co-occurrence models for individualized risk stratification. Nat Commun 2025;16:6024. https://doi.org/10.1038/s41467-025-61063-y</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">MCL-1 gains occur with high frequency in lung adenocarcinoma and can be targeted therapeutically</title>
+		<author>
+			<persName><forename type="first">Enkhtsetseg</forename><surname>Munkhbaatar</surname></persName>
+			<idno type="ORCID">0000-0002-2427-5952</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Dietzen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deepti</forename><surname>Agrawal</surname></persName>
+			<idno type="ORCID">0000-0002-9541-1704</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Anton</surname></persName>
+			<idno type="ORCID">0000-0001-5290-5213</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Moritz</forename><surname>Jesinghaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><surname>Boxberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><surname>Pfarr</surname></persName>
+			<idno type="ORCID">0000-0002-5977-5375</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pidassa</forename><surname>Bidola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Uhrig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulrike</forename><surname>Höckendorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna-Lena</forename><surname>Meinhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Wahida</surname></persName>
+			<idno type="ORCID">0000-0002-8856-8834</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Irina</forename><surname>Heid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rickmer</forename><surname>Braren</surname></persName>
+			<idno type="ORCID">0000-0001-6039-6957</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ritu</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arne</forename><surname>Warth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Muley</surname></persName>
+			<idno type="ORCID">0000-0002-8141-0604</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patrina</forename><forename type="middle">S P</forename><surname>Poh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3529-5780</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Fröhling</surname></persName>
+			<idno type="ORCID">0000-0001-7907-4595</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katja</forename><surname>Steiger</surname></persName>
+			<idno type="ORCID">0000-0002-7269-5433</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Slotta-Huspenina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martijn</forename><surname>Van Griensven</surname></persName>
+			<idno type="ORCID">0000-0001-5104-9881</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Franz</forename><surname>Pfeiffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Lange</surname></persName>
+			<idno type="ORCID">0000-0003-0406-1401</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Rad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Magda</forename><surname>Spella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgios</forename><forename type="middle">T</forename><surname>Stathopoulos</surname></persName>
+			<idno type="ORCID">0000-0002-9215-6461</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Ruland</surname></persName>
+			<idno type="ORCID">0000-0002-8381-3597</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Bassermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wilko</forename><surname>Weichert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Strasser</surname></persName>
+			<idno type="ORCID">0000-0002-5020-4891</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Branca</surname></persName>
+			<idno type="ORCID">0000-0001-6231-2040</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Heikenwalder</surname></persName>
+			<idno type="ORCID">0000-0002-3135-2274</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Swanton</surname></persName>
+			<idno type="ORCID">0000-0002-4299-3018</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Mcgranahan</surname></persName>
+			<idno type="ORCID">0000-0001-9537-4045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><forename type="middle">J</forename><surname>Jost</surname></persName>
+			<idno type="ORCID">0000-0003-2454-0362</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-020-18372-1</idno>
+		<ptr target="https://doi.org/10.1038/s41467-020-18372-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4527</biblScope>
+			<date type="published" when="2020-09-10">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Munkhbaatar E, Dietzen M, Agrawal D. et al. MCL-1 gains occur with high frequency in lung adenocarcinoma and can be tar- geted therapeutically. Nat Commun 2020;11:4527. https://doi. org/10.1038/s41467-020-18372-1</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Familial cutaneous malignant melanoma and tumors of the nervous system</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Azizi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Friedman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pavlotsky</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/1097-0142(19951101)76:9&amp;#x2329;1571::AID-CNCR2820760912&amp;#x232A;3.0.CO;2-6</idno>
+		<idno>2-6</idno>
+		<ptr target="https://doi.org/10.1002/1097-0142(19951101)76:91571::AID-CNCR28207609123.0" />
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="1571" to="1578" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Azizi E, Friedman J, Pavlotsky F. et al. Familial cutaneous malignant melanoma and tumors of the nervous system. Can- cer 1995;76:1571-8. https://doi.org/10.1002/1097-0142(19951101) 76:9 1571::AID-CNCR2820760912 3.0.CO;2-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Randomized Phase III Study of Temozolomide Versus Dacarbazine in the Treatment of Patients With Advanced Metastatic Malignant Melanoma</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Middleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Grob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Aaronson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fierlbeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tilgen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aamdal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cebon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Coates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Henz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schadendorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kapp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Fraass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Statkevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Thatcher</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/jco.2000.18.1.158</idno>
+		<ptr target="https://doi.org/10.1200/JCO.2000.18.1.158" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Oncology</title>
+		<title level="j" type="abbrev">JCO</title>
+		<idno type="ISSN">0732-183X</idno>
+		<idno type="ISSNe">1527-7755</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="158" to="158" />
+			<date type="published" when="2000-01-01">2000</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Middleton M, Grob J, Aaronson N. et al. Randomized phase III study of temozolomide versus dacarbazine in the treatment of patients with advanced metastatic malignant melanoma. J Clin Oncol 2000;18:158-8, 166. https://doi.org/10.1200/JCO.2000.18.1. 158</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Tumors of the neural crest: Common themes in development and cancer</title>
+		<author>
+			<persName><forename type="first">Lillias</forename><forename type="middle">H</forename><surname>Maguire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alyssa</forename><forename type="middle">R</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allan</forename><forename type="middle">M</forename><surname>Goldstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/dvdy.24226</idno>
+		<ptr target="https://doi.org/10.1002/dvdy.24226" />
+	</analytic>
+	<monogr>
+		<title level="j">Developmental Dynamics</title>
+		<title level="j" type="abbrev">Developmental Dynamics</title>
+		<idno type="ISSN">1058-8388</idno>
+		<idno type="ISSNe">1097-0177</idno>
+		<imprint>
+			<biblScope unit="volume">244</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="311" to="322" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Maguire LH, Thomas AR, Goldstein AM. Tumors of the neural crest: common themes in development and cancer. Dev Dyn 2015;244:311-22. https://doi.org/10.1002/dvdy.24226</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Wnt-signaling enhances neural crest migration of melanoma cells and induces an invasive phenotype</title>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Sinnberg</surname></persName>
+			<idno type="ORCID">0000-0003-3922-3327</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">P</forename><surname>Levesque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jelena</forename><surname>Krochmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phil</forename><forename type="middle">F</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristian</forename><surname>Ikenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Meraz-Torres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heike</forename><surname>Niessner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claus</forename><surname>Garbe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Busch</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12943-018-0773-5</idno>
+		<ptr target="https://doi.org/10.1186/s12943-018-0773-5" />
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Cancer</title>
+		<title level="j" type="abbrev">Mol Cancer</title>
+		<idno type="ISSNe">1476-4598</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2018-02-17">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sinnberg T, Levesque MP, Krochmann J. et al. Wnt-signaling enhances neural crest migration of melanoma cells and induces an invasive phenotype. Mol Cancer 2018;17:1-19. https://doi. org/10.1186/s12943-018-0773-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Molecular Genetics of Medulloblastoma in Children: Diagnostic, Therapeutic and Prognostic Implications</title>
+		<author>
+			<persName><forename type="first">Maher</forename><forename type="middle">El</forename><surname>Doussouki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amar</forename><surname>Gajjar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Chamdine</surname></persName>
+		</author>
+		<idno type="DOI">10.2217/fnl-2018-0030</idno>
+		<ptr target="https://doi.org/10.2217/fnl-2018-0030" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Neurology</title>
+		<title level="j" type="abbrev">Future Neurol.</title>
+		<idno type="ISSN">1479-6708</idno>
+		<idno type="ISSNe">1748-6971</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">8</biblScope>
+			<date type="published" when="2019-01-25">2019</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Doussouki ME, Gajjar A, Chamdine O. Molecular genetics of medulloblastoma in children: diagnostic, therapeutic and prognostic implications. Future Neurol 2019;14:8. https://doi. org/10.2217/fnl-2018-0030</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

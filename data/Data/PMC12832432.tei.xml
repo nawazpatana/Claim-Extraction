@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Evaluating sequence contributions to MRI radiomics for glioblastoma survival: single vs fusion models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-01-12">12 January 2026</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ruirui</forename><surname>Guo</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Radiology , Shenmu Hospital , Shenmu , Shaanxi , China ,</note>
+								<orgName type="department">Department of Radiology</orgName>
+								<orgName type="institution">Shenmu Hospital</orgName>
+								<address>
+									<settlement>Shenmu Shaanxi</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ya</forename><surname>Gao</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Functional Sciences , Shenmu Hospital , Shenmu , Shaanxi , China</note>
+								<orgName type="department">Department of Functional Sciences</orgName>
+								<orgName type="institution">Shenmu Hospital</orgName>
+								<address>
+									<settlement>Shenmu Shaanxi</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<note type="raw_affiliation">University of Stavanger , Norway</note>
+								<orgName type="institution">University of Stavanger</orgName>
+								<address>
+									<country key="NO">Norway</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation">Yat-sen University , China</note>
+								<orgName type="institution">Yat-sen University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">Tehran University of Medical Sciences , Iran</note>
+								<orgName type="institution">Tehran University of Medical Sciences</orgName>
+								<address>
+									<country key="IR">Iran</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Evaluating sequence contributions to MRI radiomics for glioblastoma survival: single vs fusion models</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Oncology</title>
+						<title level="j" type="abbrev">Front. Oncol.</title>
+						<idno type="eISSN">2234-943X</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<date type="published" when="2026-01-12">12 January 2026</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8A4AFD08EC87FD3F62596FE05256E3D8</idno>
+					<idno type="DOI">10.3389/fonc.2025.1743451</idno>
+					<note type="submission">RECEIVED 11 November 2025 REVISED 15 December 2025 ACCEPTED 18 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T16:09+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>classification comparison</term>
+					<term>quantitative imaging features</term>
+					<term>radiomic</term>
+					<term>structural MRI</term>
+					<term>survival Frontiers in Oncology frontiersin.org 01</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background: Glioblastoma is the most aggressive primary brain tumor with a poor prognosis. Multiparametric MRI-based radiomics shows promise for prognosis, yet most studies fuse all sequences without quantifying their individual contributions. We systematically compared the prognostic value of f e a t u r e s f r o m s i n g l e s e q u e n c e s a n d c o m p r e h e n s i v e f u s i o n s f o r survival classification. Methods: This retrospective study included glioblastoma patients from TCIA. Quantitative features were extracted from T1, T1-GD, T2, and T2-FLAIR images. Univariate ROC analyses with Benjamini-Hochberg false discovery rate correction assessed each feature's prognostic value. For multivariate modeling, combining univariate analysis with the maximum relevance minimum redundancy algorithm, was used to select the top predictors for each model. Logistic regression models were then built using features from single sequences, dual-sequence fusions, and a comprehensive four-sequence fusion. Performance was compared using repeated random subsampling validation with AUC as the metric.</p><p>Results: Univariate analysis identified 249 features with significant prognostic power (T1-GD: 79; T2: 58; T2-FLAIR: 57; T1: 55). In the multivariate analysis, the four-sequence fusion model achieved the highest performance on the training cohort (AUC: 0.8467), but this advantage did not generalize to the validation cohorts. On the validation set, single-sequence models achieved AUCs ranging from 0.6599 to 0.7010, with the T2 model performing best. The dual-sequence model combining features from T1-GD and T2 sequences yielded the highest overall performance, achieving a mean validation AUC of 0.7066. Notably, this targeted two-sequence model outperformed the more complex four-sequence model (AUC: 0.7030). Conclusions: For glioblastoma survival prediction, a strategic selection of complementary imaging sequences might be more effective than an indiscriminate aggregation of all available structural MRI data. However, this finding is currently specific to this particular dataset and clinical task. Future research using large-scale data with multiple tumor types and clinical objectives is necessary to explore the broader generalizability of these results.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Glioblastoma is the most common and aggressive primary brain tumor in adults, with a prognosis that remains exceptionally poor despite multimodal treatment <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b1">2)</ref>. The median survival time has seen little improvement over the past decade, highlighting an urgent need for reliable prognostic biomarkers <ref type="bibr" target="#b2">(3,</ref><ref type="bibr" target="#b3">4)</ref>. Such biomarkers are critical for patient counseling, clinical trial stratification, and guiding personalized therapeutic strategies <ref type="bibr" target="#b4">(5)</ref>. While molecular markers are valuable, they require invasive tissue sampling <ref type="bibr" target="#b5">(6)</ref>. This limitation has fueled interest in non-invasive methods, positioning medical imaging at the forefront of prognostic research.</p><p>Medical imaging, particularly multiparametric Magnetic Resonance Imaging (MRI), has emerged as a cornerstone in the management of glioblastoma, providing critical information on tumor location, size, and relationship with surrounding structures <ref type="bibr" target="#b6">(7)</ref>. The emerging field of radiomics, which extracts highthroughput quantitative features from these images, shows significant promise for developing powerful prediction models <ref type="bibr" target="#b7">(8)</ref><ref type="bibr" target="#b8">(9)</ref><ref type="bibr" target="#b9">(10)</ref><ref type="bibr" target="#b10">(11)</ref><ref type="bibr" target="#b11">(12)</ref><ref type="bibr" target="#b12">(13)</ref>. The standard glioblastoma protocol includes several MRI sequences, each offering unique biological insights. For instance, post-contrast T1-weighted (T1-Gd) images delineate the active tumor core, while T2-weighted (T2) and T2 Fluid-Attenuated Inversion Recovery (T2-FLAIR) sequences excel at visualizing surrounding edema and non-enhancing tumor <ref type="bibr" target="#b13">(14,</ref><ref type="bibr" target="#b14">15)</ref>.</p><p>Given this multiparametric approach, most radiomic studies operate on a prevailing assumption: that fusing features from all available sequences will yield the most powerful and comprehensive model <ref type="bibr" target="#b15">(16,</ref><ref type="bibr" target="#b16">17)</ref>. However, this "more is better" strategy has a critical, often unexamined, drawback. Indiscriminately aggregating data can introduce information redundancy and noise, increasing model complexity without a proportional gain in prognostic value. More importantly, this complexity raises the risk of overfitting, where a model performs exceptionally well on training data but fails to generalize to new, unseen cases. To date, few studies have systematically dismantled this fusion-based approach to quantify the actual prognostic contribution of each individual sequence.</p><p>Despite the rapid growth of GBM radiomics using multiparametric MRI, the optimal scope of sequence inclusion remains uncertain. Many studies report improved performance with multi sequence inputs. However, fewer works have performed a controlled comparison of reduced sequence sets versus full structural protocols for survival related endpoints. Such comparisons are often confounded by differences in classifiers, feature selection strategies, or feature counts. As a result, it remains unclear whether broader fusion truly adds task specific value beyond a targeted subset of sequences.</p><p>Therefore, this study challenges the conventional fusion paradigm. Our primary objective was to systematically evaluate the independent and combined prognostic value of features from four standard MRI sequences for glioblastoma survival classification. We hypothesized that a strategic combination of complementary sequences would produce a more robust and generalizable model than an indiscriminate, all-inclusive fusion. To test this, we constructed and rigorously compared the performance of models built from single sequences, dualsequence fusions, and a comprehensive four-sequence fusion. This work seeks to clarify the contribution of each MRI sequence, providing crucial insights for designing more efficient and effective radiomics models in neuro-oncology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Study design and patient dataset</head><p>Our study workflow consisted of two main stages: univariate and multivariate analysis (Figure <ref type="figure" target="#fig_0">1</ref>). We obtained a retrospective dataset of 227 glioblastoma patients from The Cancer Imaging Archive (TCIA) <ref type="bibr" target="#b17">(18,</ref><ref type="bibr" target="#b18">19)</ref>. For each patient, we used multiparametric MRI data, including T1-weighted (T1), post-contrast T1-weighted (T1-Gd), T2-weighted (T2), and T2 fluid-attenuated inversion recovery (T2-FLAIR) sequences. All images underwent a uniform preprocessing pipeline before feature extraction. After de identification and de facing, scans were maintained in their original resolution and orientation. Brain extraction and tumor sub region segmentation were then applied. The regions of interest included the necrotic tumor core, the enhancing tumor, and the peritumoral edematous or infiltrated tissue. The enhancing tumor and necrotic core were identified based on contrast related intensity differences on T1 Gd relative to T1 and in reference to normal appearing white matter. The necrotic core encompassed non enhancing or faintly enhancing tumor components along with transitional and necrotic regions that are commonly resected together with the enhancing component. The edema region was delineated by the hyperintense signal envelope on T2 FLAIR images.</p><p>We defined the survival endpoint as one-year overall survival and performed binary classification based on whether patients were alive at 12 months after diagnosis. The demographic details of these patients were summarized in Table <ref type="table">1</ref>.</p><p>Tumor segmentations and the corresponding pre computed radiomic feature tables were obtained from the previously published resource associated with the UPenn GBM collection on TCIA. The original resource provided standardized tumor subregion masks for the cohort. We used these segmentations as provided. We did not perform additional manual editing or re segmentation. The radiomic features for each MRI sequence were computed in the original work using a consistent extraction configuration. We adopted the same feature tables for all single sequence and fusion analyses. This design ensures that our comparisons across sequences were based on a shared upstream segmentation and feature extraction framework.</p><p>To enhance reproducibility, we utilized pre-calculated radiomic features from a prior study. These features were originally extracted using the PyRadiomics library in compliance with the Image Biomarker Standardisation Initiative (IBSI) guidelines. A total of 432 quantitative features were available for each MRI sequence. Detailed descriptions of the image preprocessing and feature extraction are available in the previous studies <ref type="bibr" target="#b11">(12,</ref><ref type="bibr" target="#b17">18)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Univariate analysis</head><p>First, we assessed the prognostic value of each individual radiomic feature using univariate receiver operating characteristic (ROC) analysis <ref type="bibr" target="#b19">(20)</ref>. The area under the ROC curve (AUC) served as the primary metric to quantify discriminatory performance, where an AUC of 1.0 represents a perfect classifier and 0.5 indicates performance equivalent to random chance. We determined the statistical significance of each feature by testing its AUC against a null value of 0.5 with the DeLong test <ref type="bibr" target="#b20">(21)</ref>.</p><p>To account for multiple comparisons arising from the large feature set, the raw p-values were adjusted using the Benjamini-Hochberg procedure to control the false discovery rate (FDR) <ref type="bibr" target="#b21">(22)</ref>. A feature was considered to possess statistically significant discriminatory power if its corresponding FDR-adjusted P-value was less than 0.05.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multivariate analysis</head><p>To build robust models, we implemented a repeated random sub-sampling validation strategy. We repeated the entire model development and evaluation process 10 times. In each iteration, we randomly partitioned the patients into a training cohort and a validation cohort at a ratio of 3:1. All feature values were normalized prior to feature selection. The workflow of this study. The workflow begins with data acquisition from the TCIA database. Subsequent stages include a univariate analysis for initial feature screening, and a multivariate analysis involving feature selection and the construction of single-sequence and multi-sequence prognostic models for comparison.</p><p>TABLE 1 Demographics of the dataset for this study. Demographics Value Number Percentage Gender Male 94 41.41% Female 133 58.59% Age (years) ≤30 2 0.88% 30-50 28 12.33% 51-70 132 58.15% &gt;70 65 28.63% Resection Status Gross Total 156 68.72% Partial 63 27.75% Not Available 8 3.52% Survival Status (years) ≤1 102 44.93% &gt;1 125 55.07%</p><p>Our multivariate analysis employed a two-stage feature selection process <ref type="bibr" target="#b22">(23,</ref><ref type="bibr" target="#b23">24)</ref>. First, we screened features based on the univariate analysis, retaining only those with significant prognostic value (FDR-adjusted p &lt; 0.05). This step reduced feature space dimensionality and filtered out potential noise. Second, we applied the maximum relevance minimum redundancy (mRMR) algorithm to this reduced set. The mRMR algorithm selects an optimal feature subset by maximizing relevance to the outcome while minimizing redundancy among features <ref type="bibr" target="#b24">(25)</ref>. The mRMR feature selection approach was implemented in R software using the "mRMRe" package <ref type="bibr" target="#b25">(26)</ref>. Univariate screening and mRMR were performed independently within each repeated split using only the training subset, and the selected features were used to train the classifier before evaluation on the held-out validation subset.</p><p>To ensure a fair and standardized comparison between models, we fixed the feature subset size at 10 for all models. We then used a logistic regression algorithm to construct the classifiers. This consistent framework allowed for an objective evaluation of three model categories:</p><p>(1) single-sequence models, which were constructed using significant features derived exclusively from one of the four sequences (i.e., T1-only, T1-GD-only, T2-only, and T2-FLAIRonly); (2) dual-sequence fusion models, which combined significant features from pairs of complementary sequences; and (3) a comprehensive multi-sequence fusion model, which incorporated significant features from all four sequences simultaneously.</p><p>It was pertinent to clarify that the primary goal of this study was not to build the single best prognostic model, but rather to systematically compare the predictive performance of these different MRI feature sets. Our methodology was therefore designed to support this specific comparative objective.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Univariate analysis and comparison</head><p>From an initial set of 1728 radiomic features, with 432 extracted from each of the four MRI sequences (T1, T1-GD, T2, and T2-FLAIR), the univariate ROC analysis was performed to identify individual predictors with significant prognostic value. After statistical analysis using the DeLong test and subsequent correction for multiple comparisons with the Benjamini-Hochberg procedure, 249 of the 1728 features were identified as having statistically significant discriminatory power (all FDRadjusted P-values &lt; 0.05).</p><p>The prognostic performance and distribution of these 249 significant features across the different sequences are summarized in Table <ref type="table" target="#tab_1">2</ref>. Specifically, the T1-GD sequence yielded the highest number of significant predictors (n=79), followed by T2 (n=58), T2-FLAIR (n=57), and T1 (n=55) (Figure <ref type="figure" target="#fig_0">1a</ref>). The retained features from all sequences demonstrated modest but consistently significant predictive capabilities. The mean AUC values were comparable across the modalities, with features from the T2-FLAIR sequence exhibiting the highest average performance (Mean AUC = 0.6483 ± 0.0266; Median AUC = 0.6530) (Figure <ref type="figure" target="#fig_2">2b</ref>). Notably, the single feature with the highest individual prognostic value originated from the T1-GD sequence, achieving a maximum AUC of 0.7119. Overall, the AUC values for all significant features ranged from a minimum of 0.5978 to a maximum of 0.7119.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Multivariate analysis and comparison</head><p>In line with our initial hypothesis, the multivariate analysis revealed distinct prognostic capabilities among the models derived from different MRI sequences. Following the feature selection protocol, we constructed and evaluated three categories of multivariate models: single-sequence, dual-sequence fusion, and a comprehensive four-sequence model. The performance of the single-sequence models is visually summarized in Figure <ref type="figure" target="#fig_1">3</ref> and detailed in Table <ref type="table" target="#tab_2">3</ref>. For the single-sequence models, the mean AUC values on the validation cohorts ranged from 0.6599 to 0.7010 (Figure <ref type="figure" target="#fig_1">3b</ref>). Among the four individual MRI sequences, the model derived from T2-weighted images demonstrated the highest prognostic performance, achieving a mean validation AUC of 0.7010. The performance of the T1-GD model was highly comparable, with a mean AUC of 0.6939, and there was no significant statistical difference between the T2 and T1-GD based models (P-value = 0.8789). In contrast, the T1 and T2-FLAIR models yielded slightly lower performances, with mean AUCs of 0.6605 and 0.6599, respectively. Although the T2-based model showed a trend towards better performance compared to the T1 and T2-FLAIR models, these differences did not reach statistical significance (P-value = 0.0753 and P-value = 0.0892, respectively).</p><p>Next, we assessed the performance of the fusion models that combined features from multiple sequences. The results are  <ref type="figure" target="#fig_3">4</ref> and summarized in detail in Table <ref type="table" target="#tab_3">4</ref>. On the training cohorts, fusing features consistently provided more effective information and yielded higher predictive performance (Figure <ref type="figure" target="#fig_3">4a</ref>). For example, the comprehensive four-sequence model achieved the highest training AUC of 0.8467, and the best dualsequence model (T1-GD + T2) reached a training AUC of 0.8384, both of which were higher than the best single-sequence model's training performance (T1-GD, AUC = 0.8176). However, this performance enhancement was less consistent on the validation cohorts (Figure <ref type="figure" target="#fig_3">4b</ref>). The dual-sequence model combining T1-GD and T2 features yielded the highest prognostic performance among all constructed models, with a mean validation AUC of 0.7066. The comprehensive model that integrated all four sequences also showed robust performance with a mean AUC of 0.7030. Despite the success of these top-performing fusion models, not all combinations resulted in improved accuracy. Several dualsequence models, such as the one combining T1 and T2 features (mean AUC = 0.6836), resulted in lower validation performance than the best single-sequence models. These findings suggest that while feature fusion can be beneficial, the specific combination of T1-GD and T2 sequences provides the most synergistic and effective prognostic information for the validation set.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature comparison of the multi-sequence models</head><p>To investigate the contribution and stability of individual features in the multivariate models, we analyzed the selection frequency of each feature by the mRMR algorithm across the 10 independent iterations. The most frequently selected features from each of the four MRI sequences are detailed in Tables <ref type="table">5</ref>, <ref type="table">6</ref>. The analysis revealed that certain features served as highly stable and robust predictors. From the T1-GD sequence, the feature ET_Histogram_Bins-16_Bins-16_Bin-13_Probability was exceptionally dominant, being selected in 9 out of the 10 i t e r a t i o n s . S i m i l a r l y , f o r t h e T 2 -F L A I R s e q u e n c e , ET_GLCM_Bins-16_Radius-1_Correlation was a highly stable predictor, selected in 8 of the 10 iterations. For the T1 sequence, the most frequently selected feature was NC_Histogram_Bins-  16_Bins-16_Bin-9_Probability, selected 6 times. In the T2 sequence, two features, ED_Histogram_Bins-16_Bins-16_TenthPercentile and ED_NGTDM_Complexity, shared the highest selection frequency, each chosen 4 times. Regarding the diversity of selected features, the T1-GD and T2 sequences each had 12 unique features that were selected at least once during the modeling process. In contrast, the T2-FLAIR sequence provided the most concentrated set of predictors, with only 6 unique features being selected in total across all iterations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this study, we conducted a systematic comparison of quantitative radiomic features derived from four structural MRI sequences to evaluate their independent and combined prognostic value for survival classification in glioblastoma. Our analysis yielded two principal findings. First, among the models built from individual sequences, the T2-weighted sequence demonstrated the highest prognostic performance. Second, and most importantly, our results revealed a notable divergence in model performance between the training and validation cohorts. While aggregating data from all four sequences achieved the highest performance on the training data, this advantage did not generalize to the validation set. In the validation cohorts, the dual-sequence model that strategically combined features from T1-Gd and T2 sequences yielded the highest prognostic accuracy among all constructed models, even outperforming the more complex four-sequence model.</p><p>The strong performance of the T1-Gd and T2 dual-sequence model may suggest a potential synergistic relationship between the biological information these sequences capture. Glioblastoma has two key pathological hallmarks. One is a highly proliferative core with a compromised blood-brain barrier. The other is an aggressively infiltrative margin extending into the brain parenchyma <ref type="bibr" target="#b0">(1)</ref>. The T1-Gd sequence is effective at delineating the enhancing tumor core, which reflects active neovascularity. In contrast, the T2-weighted sequence is highly sensitive to edema and non-enhancing tumor infiltration <ref type="bibr" target="#b6">(7)</ref>. Therefore, combining T1-Gd and T2 could provide a more complete radiomic signature. This signature may capture both the tumor's aggressive core and its invasive periphery, which are critical factors for patient outcome.</p><p>Our finding that the four-sequence model was not optimal in the validation set highlights a crucial concept in radiomics. Adding more data does not always lead to better results due to the risk of information redundancy. For instance, sequences like T2 and T2-FLAIR both assess edema and may offer overlapping information. This could introduce noise and increase model complexity without adding significant prognostic value. This observation is consistent with other studies. These studies have also reported that models from a limited set of sequences can perform as well as, or even better than, those using a full multiparametric protocol <ref type="bibr" target="#b26">(27)</ref>. This emphasizes that strategic sequence selection may be more critical than simply aggregating all available data.</p><p>Our findings extend the existing GBM radiomics literature by focusing on sequence contribution under a controlled analytic framework. Prior studies have frequently adopted multi sequence protocols. Yet reduced set versus full protocol comparisons for survival stratification have not always been evaluated systematically within the same modeling constraints. In this study, we fixed the classifier and the number of selected features across settings. We also applied repeated splits. This design reduces methodological confounding and allows a clearer assessment of the incremental information provided by each sequence and fusion strategy. The observation that T1 Gd plus T2 can match or exceed four sequence fusion therefore supports task specific and purpose-oriented sequence selection rather than default comprehensive fusion.</p><p>A key strength of this study is its systematic and rigorous comparative framework. Many radiomics studies adopt a fusionbased approach, often assuming that combining all available imaging data will yield the best results. Our work challenges this assumption. Instead of only presenting a final fused model, we meticulously dissected the prognostic contribution of each individual MRI sequence. This head-to-head comparison provides a more granular understanding of which sequences offer the most valuable or potentially redundant information. Methodologically, the robustness of our findings is enhanced by several factors. First, Performance comparison of dual-sequence and multi-sequence fusion models. Boxplots comparing the AUC distributions for models built using features from pairs of sequences and a comprehensive model using features from all four sequences ("ALL"). the use of a publicly available dataset ensures transparency and allows for greater reproducibility of our results. Second, we implemented a repeated random sampling validation strategy, iterating the entire modeling process 10 times to ensure that our performance estimates are stable and not due to a single favorable data split. Finally, by fixing the feature subset size to 10 for all multivariate models, we established an equitable framework that allows for a fair and direct comparison of the predictive power inherent to different MRI feature sets. Together, these strengths ensure that our conclusions are based on a robust and unbiased analytical foundation.</p><p>By the feature comparison of the multi-sequence models, the most stable feature was ET_Histogram_Bins-16_Bins-16_Bin-13_Probability, which was selected in 9 of 10 splits. As a first order histogram descriptor within the enhancing tumor, this feature may capture the distribution of enhancement intensities. This may reflect vascular permeability and necrotic or viable tumor admixture. These processes are closely linked to more aggressive tumor behavior. In addition, the most stable T2 FLAIR feature was ET_GLCM_Bins-16_Radius-1_Correlation, selected in 8 of 10 splits. GLCM correlation is a texture measure that reflects local spatial dependency of signal. In this context, it may serve as a proxy for microstructural heterogeneity within or adjacent to the enhancing component as depicted on FLAIR. Nevertheless, we would like to emphasize that these interpretations remain theoretical and hypothesis driven in the context of the present study. We did not perform direct biological validation or imaging pathology correlation. Although prior studies have begun to explore associations between radiomic signatures and underlying tumor biology, such evidence remains limited in GBM and is still insufficient to establish robust, generalizable mechanistic explanations <ref type="bibr" target="#b27">(28,</ref><ref type="bibr" target="#b28">29)</ref>. We also outline that future work will prioritize biological correlation studies, ideally integrating radiomics with molecular markers and pathology to validate and refine the proposed interpretations.</p><p>Several of the features that were repeatedly selected across splits belonged to first order and histogram-based categories. These Future studies that integrate radiomics with molecular markers and pathology correlations will be important to refine the biological meaning of these imaging signatures.</p><p>Despite the promising findings, this study has several limitations that must be acknowledged. First, the analysis was conducted on a retrospective dataset of limited size from a single public archive. As we noted, the performance gap between our training and validation cohorts suggests a risk of model overfitting, which is a common challenge when working with small and potentially heterogeneous datasets. While we used repeated sub-sampling to mitigate this, the generalizability of our findings must be confirmed through external validation on a larger, prospective, multi-center cohort. A further limitation relates to the use of external segmentations and pre computed features. We did not independently evaluate segmentation accuracy. We also could not quantify inter rater variability within this study. Any systematic bias in the original segmentation strategy may influence the absolute performance of our models. This should be considered when interpreting the reported AUC values. At the same time, our main objective was a controlled comparison of sequence specific and fusion based feature sets. All models in our framework relied on the same upstream segmentations. This consistency helps reduce confounding in the relative comparisons across sequences. Future studies should assess segmentation sensitivity more directly. Further, also acknowledge the use of a binary one-year survival TABLE <ref type="table">5</ref> The selected T1 and TA-GD features for the construction of multi-sequence models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sequence</head><p>Feature name Count T1 NC_Histogram_Bins-16_Bins-16_Bin-9_Probability 6</p><p>NC_Morphologic_Elongation 5</p><p>NC_GLRLM_Bins-16_Radius-1_ShortRunEmphasis 5</p><p>ET_GLSZM_Bins-16_Radius-1_LowGreyLevelEmphasis 4</p><p>ET_Morphologic_EllipseDiameter_Axis-2 3</p><p>ET_GLRLM_Bins-16_Radius-1_ShortRunEmphasis 3</p><p>ED_Intensity_Maximum 2</p><p>ET_Intensity_Energy 1</p><p>ET_Histogram_Bins-16_Bins-16_Bin-13_Frequency 1</p><p>ED_Histogram_Bins-16_Bins-16_NinetyFifthPercentileMean 1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>T1-GD</head><p>ET_Histogram_Bins-16_Bins-16_Bin-13_Probability 9</p><p>ET_Intensity_Range 5</p><p>NC_GLRLM_Bins-16_Radius-1_ShortRunEmphasis 3</p><p>ET_Intensity_Maximum 3</p><p>ET_GLSZM_Bins-16_Radius-1_GreyLevelNonUniformityNormalized 3</p><p>ET_Histogram_Bins-16_Bins-16_Bin-3_Frequency 2</p><p>NC_Morphologic_Elongation 1</p><p>NC_GLRLM_Bins-16_Radius-1_LongRunEmphasis 1</p><p>ET_Histogram_Bins-16_Bins-16_Bin-12_Probability 1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ET_Morphologic_EllipseDiameter_Axis-2 1</head><p>ET_GLCM_Bins-16_Radius-1_Correlation 1</p><p>ET_GLSZM_Bins-16_Radius-1_ZoneSizeMean 1 TABLE <ref type="table">6</ref> The selected T2 and T2-FLAIR features for the construction of multi-sequence models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sequence</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature name Count</head><p>T2 ED_Histogram_Bins-16_Bins-16_TenthPercentile 4 ED_NGTDM_Complexity 4 NC_GLRLM_Bins-16_Radius-1_LongRunHighGreyLevelEmphasis 3 NC_GLRLM_Bins-16_Radius-1_ShortRunEmphasis 3 NC_Intensity_Range 1 NC_Morphologic_Elongation 1 ET_Histogram_Bins-16_Bins-16_Bin-15_Probability 1 ET_GLSZM_Bins-16_Radius-1_LargeZoneLowGreyLevelEmphasis 1 ET_GLSZM_Bins-16_Radius-1_ZonePercentage 1 ED_Histogram_Bins-16_Bins-16_CoefficientOfVariation 1 ED_Morphologic_Roundness 1 ED_GLRLM_Bins-16_Radius-1_LongRunHighGreyLevelEmphasis 1 T2-FLAIR ET_GLCM_Bins-16_Radius-1_Correlation 8 NC_Morphologic_Elongation 3 ET_Intensity_Minimum 2 NC_GLRLM_Bins-16_Radius-1_LongRunEmphasis 1 ET_Intensity_NinetiethPercentile 1 ED_Morphologic_Roundness 1</p><p>endpoint. The main aim of this study was to examine the prognostic contribution of different MRI sequences under a controlled framework. It was not to build the best possible survival model. This simplified endpoint allowed fair comparisons across sequence combinations with fixed feature numbers and the same classifier. Nevertheless, time to event models may provide richer prognostic information and should be evaluated in future work.</p><p>In terms of clinical translation, the proposed dual sequence strategy using T1 Gd and T2 may offer a practical pathway for radiomics based survival stratification in GBM. Both sequences are routinely included in standard preoperative MRI protocols. This reduces barriers to implementation. It also avoids the need for additional scanning. If validated prospectively, this approach could be integrated into preoperative planning. It could serve as a decision support component. The model could provide an interpretable risk category. This may inform multidisciplinary discussions. It may also support patient counseling and trial stratification. Our findings suggest that a targeted two sequence fusion can achieve comparable generalization performance relative to full four sequence fusion in the validation setting. The performance may be slightly improved. This observation supports clinically streamlined and purpose-oriented sequence selection for specific predictive tasks. Future studies should prioritize prospective and ideally multicenter evaluation. These efforts should focus on workflow standardization and real-world feasibility. They should also assess robustness and interpretability in routine preoperative decision making. Nevertheless, we also emphasize that the present study is retrospective. It is based on publicly available multicenter data. Prospective validation will be essential before clinical deployment. This validation should use harmonized acquisition, segmentation, and feature harmonization pipelines. Future work will focus on establishing a standardized prospective workflow. We will also evaluate performance across centers in real world settings.</p><p>The findings from this study have several important implications for future research and potential clinical applications. Our results, which highlight the superior prognostic performance of a T1-Gd and T2 feature set, suggest that it may be possible to streamline MRI acquisition protocols for radiomic analyses in glioblastoma. If validated, a more focused imaging protocol could reduce patient scan times, lower costs, and improve the efficiency of data collection for clinical trials without sacrificing prognostic power. Furthermore, it is crucial to recognize that our conclusions are specific to this particular dataset and clinical objective. The applicability of these findings to other tumor types or different clinical tasks remains uncertain. Therefore, future research should incorporate more diverse datasets to investigate whether the superiority of the T1-Gd and T2 combination holds true across a broader range of oncological applications.</p><p>Our conclusions are based on glioblastoma and conventional structural MRI. The observed ranking of sequences and fusion strategies may not generalize directly to other glioma subtypes. Direct extrapolation may be insufficiently rigorous without dedicated validation. Lower grade gliomas differ in enhancement, infiltration, and molecular context. These factors may alter which sequences are most informative. Even so, our findings support a purpose oriented and streamlined approach to sequence selection. They suggest that adding more sequences is not automatically beneficial. Diffusion and perfusion imaging may provide complementary microstructural and hemodynamic information. Future work should test standardized integration of these modalities with structural radiomics across glioma subtypes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>In this study, we systematically investigated the independent and combined prognostic value of radiomic features from four standard MRI sequences for survival classification in glioblastoma. Our results demonstrated that while the T2-weighted sequence provided the most performant single-sequence model, a dualsequence fusion of features from T1-Gd and T2 images yielded the highest predictive accuracy overall. Notably, this targeted twosequence combination outperformed the more complex model that aggregated features from all four sequences. In conclusion, our findings suggest that for glioblastoma survival prediction, the strategic selection of complementary imaging sequences, specifically the combination of T1-Gd and T2, is more effective than an indiscriminate aggregation of all available MRI data.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1</head><label>1</label><figDesc>FIGURE 1</figDesc><graphic coords="3,99.38,95.01,396.79,320.37" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 3</head><label>3</label><figDesc>FIGURE 3 Performance of single-sequence prognostic models. Boxplots comparing the distribution of AUC values for models constructed from each of the four individual MRI sequences across 10 independent experiments. (a) Performance on the training cohorts. (b) Performance on the corresponding validation cohorts.</figDesc><graphic coords="5,85.21,571.18,425.14,133.29" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIGURE 2</head><label>2</label><figDesc>FIGURE 2 Univariate analysis of significant prognostic features from different MRI sequences. (a) Bar chart illustrating the number of statistically significant features identified from each of the four MRI sequences (T1, T1-GD, T2, and T2-FLAIR). (b) Boxplot comparing the distribution of the AUC values for the significant features from each sequence.</figDesc><graphic coords="5,85.21,95.01,425.14,121.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 4</head><label>4</label><figDesc>FIGURE 4    </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><figDesc>(a) Performance on the training cohorts. (b) Performance on the validation cohorts.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2</head><label>2</label><figDesc>Univariate analysis for individual imaging feature.</figDesc><table><row><cell>Guo and Gao</cell><cell></cell><cell></cell><cell></cell><cell>10.3389/fonc.2025.1743451</cell></row><row><cell>Term</cell><cell>T1</cell><cell>T1-GD</cell><cell>T2</cell><cell>T2-FLAIR</cell></row><row><cell>Number</cell><cell>55</cell><cell>79</cell><cell>58</cell><cell>57</cell></row><row><cell>AUC: Mean ± STD</cell><cell>0.6447 ± 0.0285</cell><cell>0.6470 ± 0.0280</cell><cell>0.6410 ± 0.0279</cell><cell>0.6483 ± 0.0266</cell></row><row><cell>AUC: Median</cell><cell>0.6507</cell><cell>0.6504</cell><cell>0.6400</cell><cell>0.6530</cell></row><row><cell>AUC: Range</cell><cell>0.6033, 0.6864</cell><cell>0.5978, 0.7119</cell><cell>0.6024, 0.6864</cell><cell>0.6035, 0.6879</cell></row><row><cell>Frontiers in Oncology</cell><cell></cell><cell></cell><cell></cell><cell>frontiersin.org</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 3</head><label>3</label><figDesc>Detailed prognosis performance of single-sequence images using multivariate analysis.</figDesc><table><row><cell>Experiment No.</cell><cell>T1</cell><cell>T1-GD</cell><cell>T2</cell><cell>T2-FLAIR</cell></row><row><cell></cell><cell></cell><cell cols="2">Training cohort</cell><cell></cell></row><row><cell>1</cell><cell>0.8269</cell><cell>0.8277</cell><cell>0.8366</cell><cell>0.7963</cell></row><row><cell>2</cell><cell>0.7748</cell><cell>0.8096</cell><cell>0.7974</cell><cell>0.7619</cell></row><row><cell>3</cell><cell>0.7784</cell><cell>0.8203</cell><cell>0.7858</cell><cell>0.7800</cell></row><row><cell>4</cell><cell>0.8032</cell><cell>0.8300</cell><cell>0.828</cell><cell>0.7957</cell></row><row><cell>5</cell><cell>0.7923</cell><cell>0.812</cell><cell>0.8014</cell><cell>0.7717</cell></row><row><cell>6</cell><cell>0.7602</cell><cell>0.8126</cell><cell>0.8164</cell><cell>0.7681</cell></row><row><cell>7</cell><cell>0.7735</cell><cell>0.8045</cell><cell>0.8295</cell><cell>0.793</cell></row><row><cell>8</cell><cell>0.8043</cell><cell>0.8133</cell><cell>0.7845</cell><cell>0.7873</cell></row><row><cell>9</cell><cell>0.8020</cell><cell>0.8269</cell><cell>0.7853</cell><cell>0.7761</cell></row><row><cell>10</cell><cell>0.8005</cell><cell>0.8187</cell><cell>0.8082</cell><cell>0.7948</cell></row><row><cell>Mean</cell><cell>0.7916 ± 0.0197</cell><cell>0.8176 ± 0.0086</cell><cell>0.8073 ± 0.0196</cell><cell>0.7825 ± 0.0127</cell></row><row><cell></cell><cell></cell><cell cols="2">Validation cohort</cell><cell></cell></row><row><cell>1</cell><cell>0.6513</cell><cell>0.6179</cell><cell>0.6385</cell><cell>0.6556</cell></row><row><cell>2</cell><cell>0.6380</cell><cell>0.6582</cell><cell>0.7273</cell><cell>0.7020</cell></row><row><cell>3</cell><cell>0.6757</cell><cell>0.7275</cell><cell>0.8005</cell><cell>0.6740</cell></row><row><cell>4</cell><cell>0.6429</cell><cell>0.6393</cell><cell>0.6517</cell><cell>0.6102</cell></row><row><cell>5</cell><cell>0.6800</cell><cell>0.7071</cell><cell>0.7360</cell><cell>0.7097</cell></row><row><cell>6</cell><cell>0.6853</cell><cell>0.7121</cell><cell>0.7026</cell><cell>0.6819</cell></row><row><cell>7</cell><cell>0.6524</cell><cell>0.7152</cell><cell>0.6402</cell><cell>0.6254</cell></row><row><cell>8</cell><cell>0.6333</cell><cell>0.7385</cell><cell>0.7394</cell><cell>0.6723</cell></row><row><cell>9</cell><cell>0.6171</cell><cell>0.7105</cell><cell>0.7088</cell><cell>0.6248</cell></row><row><cell>10</cell><cell>0.7293</cell><cell>0.7121</cell><cell>0.6647</cell><cell>0.6431</cell></row><row><cell>Mean</cell><cell>0.6605 ± 0.0326</cell><cell>0.6939 ± 0.0404</cell><cell>0.7010 ± 0.0523</cell><cell>0.6599 ± 0.0338</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 4</head><label>4</label><figDesc>Detailed prognosis performance of dual-sequence images using multivariate analysis.</figDesc><table><row><cell>No.</cell><cell>T1, T1-GD</cell><cell>T1, T2</cell><cell>T1, FLAIR</cell><cell>T1-GD, T2</cell><cell>T1-GD, FLAIR</cell><cell>T2, FLAIR</cell><cell>ALL</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Training cohort</cell><cell></cell><cell></cell><cell></cell></row><row><cell>1</cell><cell>0.8480</cell><cell>0.8376</cell><cell>0.8254</cell><cell>0.8712</cell><cell>0.8378</cell><cell>0.8408</cell><cell>0.8573</cell></row><row><cell>2</cell><cell>0.8284</cell><cell>0.8070</cell><cell>0.7877</cell><cell>0.8240</cell><cell>0.8220</cell><cell>0.8101</cell><cell>0.8403</cell></row><row><cell>3</cell><cell>0.8235</cell><cell>0.7938</cell><cell>0.7965</cell><cell>0.8305</cell><cell>0.8289</cell><cell>0.8049</cell><cell>0.8381</cell></row><row><cell>4</cell><cell>0.8294</cell><cell>0.8329</cell><cell>0.8108</cell><cell>0.8313</cell><cell>0.8373</cell><cell>0.8291</cell><cell>0.8435</cell></row><row><cell>5</cell><cell>0.8218</cell><cell>0.8164</cell><cell>0.797</cell><cell>0.8274</cell><cell>0.8266</cell><cell>0.8015</cell><cell>0.8286</cell></row><row><cell>6</cell><cell>0.8097</cell><cell>0.8239</cell><cell>0.7654</cell><cell>0.8529</cell><cell>0.8073</cell><cell>0.8189</cell><cell>0.8492</cell></row><row><cell>7</cell><cell>0.8208</cell><cell>0.8419</cell><cell>0.7987</cell><cell>0.8329</cell><cell>0.8209</cell><cell>0.8314</cell><cell>0.8457</cell></row><row><cell>8</cell><cell>0.849</cell><cell>0.8148</cell><cell>0.8117</cell><cell>0.8289</cell><cell>0.8341</cell><cell>0.8193</cell><cell>0.8454</cell></row><row><cell>9</cell><cell>0.8451</cell><cell>0.802</cell><cell>0.773</cell><cell>0.8381</cell><cell>0.8185</cell><cell>0.7861</cell><cell>0.8507</cell></row><row><cell>10</cell><cell>0.8317</cell><cell>0.8306</cell><cell>0.8192</cell><cell>0.8464</cell><cell>0.8400</cell><cell>0.8366</cell><cell>0.8678</cell></row><row><cell>Mean</cell><cell>0.8307± 0.0130</cell><cell>0.8201± 0.0160</cell><cell>0.7985± 0.0193</cell><cell>0.8384± 0.0146</cell><cell>0.8273± 0.0104</cell><cell>0.8179± 0.0173</cell><cell>0.8467± 0.0107</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Validation cohort</cell><cell></cell><cell></cell><cell></cell></row><row><cell>1</cell><cell>0.5991</cell><cell>0.6573</cell><cell>0.6872</cell><cell>0.6344</cell><cell>0.6453</cell><cell>0.6197</cell><cell>0.6145</cell></row><row><cell>2</cell><cell>0.6380</cell><cell>0.6650</cell><cell>0.6751</cell><cell>0.6380</cell><cell>0.6751</cell><cell>0.7475</cell><cell>0.6658</cell></row><row><cell>3</cell><cell>0.7521</cell><cell>0.7054</cell><cell>0.7148</cell><cell>0.7572</cell><cell>0.7301</cell><cell>0.7708</cell><cell>0.7886</cell></row><row><cell>4</cell><cell>0.6702</cell><cell>0.6517</cell><cell>0.6658</cell><cell>0.6834</cell><cell>0.6949</cell><cell>0.664</cell><cell>0.6958</cell></row><row><cell>5</cell><cell>0.708</cell><cell>0.7088</cell><cell>0.7182</cell><cell>0.7623</cell><cell>0.6995</cell><cell>0.7385</cell><cell>0.7453</cell></row><row><cell>6</cell><cell>0.7526</cell><cell>0.7310</cell><cell>0.7845</cell><cell>0.7112</cell><cell>0.7388</cell><cell>0.7095</cell><cell>0.7086</cell></row><row><cell>7</cell><cell>0.7064</cell><cell>0.6472</cell><cell>0.6577</cell><cell>0.6925</cell><cell>0.6829</cell><cell>0.6603</cell><cell>0.7195</cell></row><row><cell>8</cell><cell>0.6961</cell><cell>0.7148</cell><cell>0.6808</cell><cell>0.7581</cell><cell>0.6876</cell><cell>0.7224</cell><cell>0.7334</cell></row><row><cell>9</cell><cell>0.6842</cell><cell>0.6511</cell><cell>0.6188</cell><cell>0.7224</cell><cell>0.7097</cell><cell>0.6876</cell><cell>0.7020</cell></row><row><cell>10</cell><cell>0.7293</cell><cell>0.7034</cell><cell>0.6759</cell><cell>0.7069</cell><cell>0.7103</cell><cell>0.6741</cell><cell>0.6560</cell></row><row><cell>Mean</cell><cell>0.6936± 0.0485</cell><cell>0.6836± 0.0319</cell><cell>0.6879± 0.0441</cell><cell>0.7066± 0.0462</cell><cell>0.6974± 0.0271</cell><cell>0.6994± 0.0465</cell><cell>0.7030± 0.0492</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Oncology frontiersin.org</p></note>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) declared that financial support was not received for this work and/or its publication.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The original contributions presented in the study are included in the article/supplementary material. Further inquiries can be directed to the corresponding author.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics statement</head><p>The dataset was public via TCIA. The original protocol was approved by the Institutional Review Board at the UPHS, and informed consent was obtained from all participants. The studies were conducted in accordance with the local legislation and institutional requirements. Written informed consent for participation was not required from the participants or the participants' legal guardians/next of kin in accordance with the national legislation and institutional requirements. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The authors declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generative AI statement</head><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The 2021 WHO Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Wesseling</surname></persName>
+			<idno type="ORCID">0000-0001-5453-5201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+			<idno type="ORCID">0000-0002-0633-6563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">A</forename><surname>Cree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><forename type="middle">M</forename><surname>Pfister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021-06-29">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis DN, Perry A, Wesseling P, Brat DJ, Cree IA, Figarella-Branger D, et al. The 2021 WHO classification of tumors of the central nervous system: a summary. Neuro- oncology. (2021) 23:1231-51. doi: 10.1093/neuonc/noab106</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2015–2019</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mackenzie</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><forename type="middle">A</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac202</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">Supplement_5</biblScope>
+			<biblScope unit="page" from="v1" to="v95" />
+			<date type="published" when="2022-10-05">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Price M, Neff C, Cioffi G, Waite KA, Kruchko C, et al. CBTRUS statistical report: primary brain and other central nervous system tumors diagnosed in the United States in 2015-2019. Neuro-oncology. (2022) 24:v1-v95. doi: 10.1093/neuonc/noac202</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Warren</forename><forename type="middle">P</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J B</forename><surname>Taphoorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Belanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alba</forename><forename type="middle">A</forename><surname>Brandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Marosi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulrich</forename><surname>Bogdahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Curschmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Janzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">K</forename><surname>Ludwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Gorlia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anouk</forename><surname>Allgeier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denis</forename><surname>Lacombe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Gregory</forename><surname>Cairncross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Eisenhauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">René</forename><forename type="middle">O</forename><surname>Mirimanoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa043330</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">352</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="987" to="996" />
+			<date type="published" when="2005-03-10">2005</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stupp R, Mason WP, Van Den Bent MJ, Weller M, Fisher B, Taphoorn MJ, et al. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. New Engl J Med. (2005) 352:987-96. doi: 10.1056/NEJMoa043330</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Epidemiologic and Molecular Prognostic Review of Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Jigisha</forename><forename type="middle">P</forename><surname>Thakkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Therese</forename><forename type="middle">A</forename><surname>Dolecek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Horbinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donita</forename><forename type="middle">D</forename><surname>Lightner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">L</forename><surname>Villano</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/1055-9965.epi-14-0275</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Epidemiology, Biomarkers &amp; Prevention</title>
+		<idno type="ISSN">1055-9965</idno>
+		<idno type="ISSNe">1538-7755</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1985" to="1996" />
+			<date type="published" when="2014-09-30">2014</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Thakkar JP, Dolecek TA, Horbinski C, Ostrom QT, Lightner DD, Barnholtz- Sloan JS, et al. Epidemiologic and molecular prognostic review of glioblastoma. Cancer Epidemiol Biomarkers Prev. (2014) 23:1985-96. doi: 10.1158/1055-9965.EPI-14-0275</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Consensus recommendations for a standardized Brain Tumor Imaging Protocol in clinical trials</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Ellingson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Boxerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Barboriak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Smits</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/nov095</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1188" to="1198" />
+			<date type="published" when="2015-08-06">2015</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ellingson BM, Bendszus M, Boxerman J, Barboriak D, Erickson BJ, Smits M, et al. Consensus recommendations for a standardized Brain Tumor Imaging Protocol in clinical trials. Neuro-oncology. (2015) 17:1188-98. doi: 10.1093/neuonc/nov095</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Glioma Groups Based on 1p/19q,&lt;i&gt;IDH&lt;/i&gt;, and&lt;i&gt;TERT&lt;/i&gt;Promoter Mutations in Tumors</title>
+		<author>
+			<persName><forename type="first">Jeanette</forename><forename type="middle">E</forename><surname>Eckel-Passow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">H</forename><surname>Lachance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><forename type="middle">M</forename><surname>Molinaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><forename type="middle">M</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugues</forename><surname>Sicotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terri</forename><surname>Rice</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><forename type="middle">L</forename><surname>Kosel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><forename type="middle">V</forename><surname>Smirnov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gobinda</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alissa</forename><forename type="middle">A</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Kollmeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinne</forename><forename type="middle">E</forename><surname>Praska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anisha</forename><forename type="middle">R</forename><surname>Chada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandralekha</forename><surname>Halder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helen</forename><forename type="middle">M</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucie</forename><forename type="middle">S</forename><surname>Mccoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paige</forename><forename type="middle">M</forename><surname>Bracci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roxanne</forename><surname>Marshall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shichun</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><forename type="middle">F</forename><surname>Reis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">R</forename><surname>Pico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">P</forename><surname>O’neill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">C</forename><surname>Buckner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Giannini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">T</forename><surname>Huse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarik</forename><surname>Tihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Prados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Wiemels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">K</forename><surname>Wiencke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margaret</forename><forename type="middle">R</forename><surname>Wrensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Jenkins</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/nejmoa1407279</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New England Journal of Medicine</title>
+		<title level="j" type="abbrev">N Engl J Med</title>
+		<idno type="ISSN">0028-4793</idno>
+		<idno type="ISSNe">1533-4406</idno>
+		<imprint>
+			<biblScope unit="volume">372</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="2499" to="2508" />
+			<date type="published" when="2015-06-25">2015</date>
+			<publisher>Massachusetts Medical Society</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eckel-Passow JE, Lachance DH, Molinaro AM, Walsh KM, Decker PA, Sicotte H, et al. Glioma groups based on 1p/19q, IDH, and TERT promoter mutations in tumors. New Engl J Med. (2015) 372:2499-508. doi: 10.1056/NEJMoa1407279</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Brain metastases: neuroimaging</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">B</forename><surname>Pope</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-811161-1.00007-4</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Clinical Neurology</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">149</biblScope>
+			<biblScope unit="page" from="89" to="112" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pope WB. Brain metastases: neuroimaging. Handb Clin Neurol. (2018) 149:89- 112. doi: 10.1016/B978-0-12-811161-1.00007-4</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Histopathological correlations of CT-based radiomics imaging biomarkers in native kidney biopsy</title>
+		<author>
+			<persName><forename type="first">Yoon</forename><forename type="middle">Ho</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji-Eun</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ro</forename><forename type="middle">Woon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Byoungje</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyeong</forename><forename type="middle">Chan</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Misun</forename><surname>Choe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaerim</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Woo</forename><forename type="middle">Yeong</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyubok</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seungyeup</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Hyuk</forename><surname>Paek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kipyo</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-024-01434-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">256</biblScope>
+			<date type="published" when="2024-09-27">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Choi YH, Kim J-E, Lee RW, Kim B, Shin HC, Choe M, et al. Histopathological correlations of CT-based radiomics imaging biomarkers in native kidney biopsy. BMC Med Imaging. (2024) 24:256. doi: 10.1186/s12880-024-01434-x</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Radiomics: Extracting more information from medical images using advanced feature analysis</title>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Rios-Velazquez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralph</forename><surname>Leijenaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruud</forename><forename type="middle">G P M</forename><surname>Van Stiphout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Granton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catharina</forename><forename type="middle">M L</forename><surname>Zegers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Gillies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><surname>Boellard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><surname>Dekker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">J W L</forename><surname>Aerts</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejca.2011.11.036</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Cancer</title>
+		<title level="j" type="abbrev">European Journal of Cancer</title>
+		<idno type="ISSN">0959-8049</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="441" to="446" />
+			<date type="published" when="2012-03">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lambin P, Rios-Velazquez E, Leijenaar R, Carvalho S, Van Stiphout RGPM, Granton P, et al. Radiomics: extracting more information from medical images using advanced feature analysis. Eur J Cancer. (2012) 48:441-6. doi: 10.1016/j.ejca.2011.11.036</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A radiomics approach based on support vector machine using MR images for preoperative lymph node status evaluation in intrahepatic cholangiocarcinoma</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengfei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjie</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihai</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weigen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyi</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shusen</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianye</forename><surname>Niu</surname></persName>
+		</author>
+		<idno type="DOI">10.7150/thno.34149</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Theranostics</title>
+		<title level="j" type="abbrev">Theranostics</title>
+		<idno type="ISSN">1838-7640</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="5374" to="5385" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Ivyspring International Publisher</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu L, Yang P, Liang W, Liu W, Wang W, Luo C, et al. A radiomics approach based on support vector machine using MR images for preoperative lymph node status evaluation in intrahepatic cholangiocarcinoma. Theranostics. (2019) 9:5374. doi: 10.7150/thno.34149</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Radiomic Profiling of Glioblastoma: Identifying an Imaging Predictor of Patient Survival with Improved Performance over Established Clinical and Radiologic Risk Models</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Kickingereder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sina</forename><surname>Burth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antje</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Götz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Eidel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz-Peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Bendszus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Radbruch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bonekamp</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2016160845</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">280</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="880" to="889" />
+			<date type="published" when="2016-09">2016</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kickingereder P, Burth S, Wick A, Götz M, Eidel O, Schlemmer H-P, et al. Radiomic profiling of glioblastoma: identifying an imaging predictor of patient survival with improved performance over established clinical and radiologic risk models. Radiology. (2016) 280:880-9. doi: 10.1148/radiol.2016160845</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Exploring the associations between features from multi-parametric MR images in Glioblastoma using radiomics</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenzhe</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruirui</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-025-01788-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">253</biblScope>
+			<date type="published" when="2025-07-01">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu L, Zhao W, Guo R, Huang X. Exploring the associations between features from multi-parametric MR images in Glioblastoma using radiomics. BMC Med Imaging. (2025) 25:253. doi: 10.1186/s12880-025-01788-w</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Non-invasive liver fibrosis screening on CT images using radiomics</title>
+		<author>
+			<persName><forename type="first">Jay</forename><forename type="middle">J</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khashayar</forename><surname>Namdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Carey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><forename type="middle">E</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Mcintosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farzad</forename><surname>Khalvati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrik</forename><surname>Rogalla</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12880-025-01823-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Medical Imaging</title>
+		<title level="j" type="abbrev">BMC Med Imaging</title>
+		<idno type="ISSNe">1471-2342</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">285</biblScope>
+			<date type="published" when="2025-07-15">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yoo JJ, Namdar K, Carey S, Fischer SE, McIntosh C, Khalvati F, et al. Non- invasive liver fibrosis screening on CT images using radiomics. BMC Med Imaging. (2025) 25:285. doi: 10.1186/s12880-025-01823-w</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Consensus recommendations for a standardized brain tumor imaging protocol for clinical trials in brain metastases</title>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">J</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Smits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerrold</forename><surname>Boxerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Barboriak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Tsien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">D</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lalitha</forename><surname>Shankar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evanthia</forename><surname>Galanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terry</forename><forename type="middle">C</forename><surname>Burns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">F</forename><surname>Parney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gavin</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priscilla</forename><forename type="middle">K</forename><surname>Brastianos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><forename type="middle">U</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">M</forename><surname>Ellingson</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaa030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="757" to="772" />
+			<date type="published" when="2020-02-12">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaufmann TJ, Smits M, Boxerman J, Huang R, Barboriak DP, Weller M, et al. Consensus recommendations for a standardized brain tumor imaging protocol for clinical trials in brain metastases. Neuro-oncology. (2020) 22:757-72. doi: 10.1093/ neuonc/noaa030</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Updated Response Assessment Criteria for High-Grade Gliomas: Response Assessment in Neuro-Oncology Working Group</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Gregory</forename><surname>Sorensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evanthia</forename><surname>Galanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Degroot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">R</forename><surname>Gilbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">B</forename><surname>Lassman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Tsien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Mikkelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">T</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">C</forename><surname>Chamberlain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Stupp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathleen</forename><forename type="middle">R</forename><surname>Lamborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Vogelbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/jco.2009.26.3541</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Oncology</title>
+		<title level="j" type="abbrev">JCO</title>
+		<idno type="ISSN">0732-183X</idno>
+		<idno type="ISSNe">1527-7755</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1963" to="1972" />
+			<date type="published" when="2010-04-10">2010</date>
+			<publisher>American Society of Clinical Oncology (ASCO)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wen PY, Macdonald DR, Reardon DA, Cloughesy TF, Sorensen AG, Galanis E, et al. Updated response assessment criteria for high-grade gliomas: response assessment in neuro-oncology working group. J Clin Oncol. (2010) 28:1963-72. doi: 10.1200/ JCO.2009.26.3541</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Radiomics strategy for glioma grading using texture features from multiparametric MRI</title>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin‐feng</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-0032-6636</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu‐chuan</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi‐cheng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hai‐yan</forename><surname>Nan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying‐zhi</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ping</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuai</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guang‐bin</forename><surname>Cui</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.26010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1518" to="1528" />
+			<date type="published" when="2018-03-23">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tian Q, Yan LF, Zhang X, Zhang X, Hu YC, Han Y, et al. Radiomics strategy for glioma grading using texture features from multiparametric MRI. J Magn Reson Imaging. (2018) 48:1518-28. doi: 10.1002/jmri.26010</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A radiomics nomogram based on multiparametric MRI might stratify glioblastoma patients according to survival</title>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongbing</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Na</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lulu</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaopan</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-019-06069-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="5528" to="5538" />
+			<date type="published" when="2019-03-07">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang X, Lu H, Tian Q, Feng N, Yin L, Xu X, et al. A radiomics nomogram based on multiparametric MRI might stratify glioblastoma patients according to survival. Eur Radiol. (2019) 29:5528-38. doi: 10.1007/s00330-019-06069-z</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, &amp; radiomics</title>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chiharu</forename><surname>Sako</surname></persName>
+			<idno type="ORCID">0000-0003-3243-3954</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+			<idno type="ORCID">0000-0001-6313-5437</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+			<idno type="ORCID">0000-0003-0795-8820</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Shukla</surname></persName>
+			<idno type="ORCID">0000-0001-7605-9365</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Rudie</surname></persName>
+			<idno type="ORCID">0000-0001-8609-8421</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Natali</forename><forename type="middle">Flores</forename><surname>Santamaría</surname></persName>
+			<idno type="ORCID">0000-0003-1024-2428</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anahita</forename><forename type="middle">Fathi</forename><surname>Kazerooni</surname></persName>
+			<idno type="ORCID">0000-0001-7131-2261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarthak</forename><surname>Pati</surname></persName>
+			<idno type="ORCID">0000-0003-2243-8487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+			<idno type="ORCID">0000-0002-9818-2978</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Mamourian</surname></persName>
+			<idno type="ORCID">0000-0001-8581-4887</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Min</forename><surname>Ha</surname></persName>
+			<idno type="ORCID">0000-0002-3526-9101</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Parker</surname></persName>
+			<idno type="ORCID">0000-0001-8017-0525</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jimit</forename><surname>Doshi</surname></persName>
+			<idno type="ORCID">0000-0002-2875-5814</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ujjwal</forename><surname>Baid</surname></persName>
+			<idno type="ORCID">0000-0001-5246-2088</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Bergman</surname></persName>
+			<idno type="ORCID">0000-0003-1220-6906</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zev</forename><forename type="middle">A</forename><surname>Binder</surname></persName>
+			<idno type="ORCID">0000-0003-1158-231X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+			<idno type="ORCID">0000-0002-7479-1007</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">A</forename><surname>Lustig</surname></persName>
+			<idno type="ORCID">0000-0003-0633-3802</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arati</forename><forename type="middle">S</forename><surname>Desai</surname></persName>
+			<idno type="ORCID">0000-0002-4849-4703</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Bagley</surname></persName>
+			<idno type="ORCID">0000-0002-7117-0539</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zissimos</forename><surname>Mourelatos</surname></persName>
+			<idno type="ORCID">0000-0002-9852-1845</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Morrissette</surname></persName>
+			<idno type="ORCID">0000-0001-9460-7177</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Watt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Brem</surname></persName>
+			<idno type="ORCID">0000-0002-5803-8920</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">L</forename><surname>Wolf</surname></persName>
+			<idno type="ORCID">0000-0003-1887-3697</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elias</forename><forename type="middle">R</forename><surname>Melhem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+			<idno type="ORCID">0000-0003-4861-0898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+			<idno type="ORCID">0000-0002-4025-115X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">M</forename><surname>O’rourke</surname></persName>
+			<idno type="ORCID">0000-0002-8479-7314</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+			<idno type="ORCID">0000-0002-1025-8561</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-022-01560-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">453</biblScope>
+			<date type="published" when="2022-07-29">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bakas S, Sako C, Akbari H, Bilello M, Sotiras A, Shukla G, et al. The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, &amp; radiomics. Sci Data. (2022) 9:453. doi: 10.1038/s41597-022-01560-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository</title>
+		<author>
+			<persName><forename type="first">Kenneth</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><surname>Vendt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kirk</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Koppel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanley</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Maffitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Pringle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Tarbox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fred</forename><surname>Prior</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10278-013-9622-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Digital Imaging</title>
+		<title level="j" type="abbrev">J Digit Imaging</title>
+		<idno type="ISSN">0897-1889</idno>
+		<idno type="ISSNe">1618-727X</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1045" to="1057" />
+			<date type="published" when="2013-07-25">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Clark K, Vendt B, Smith K, Freymann J, Kirby J, Koppel P, et al. The Cancer Imaging Archive (TCIA): maintaining and operating a public information repository. J Digital Imaging. (2013) 26:1045-57. doi: 10.1007/s10278-013-9622-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Receiver Operator Characteristic Analysis of Biomarkers Evaluation in Diagnostic Research</title>
+		<author>
+			<persName><forename type="first">Karimollah</forename><surname>Hajian-Tilaki</surname></persName>
+		</author>
+		<idno type="DOI">10.7860/jcdr/2018/32856.11609</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JOURNAL OF CLINICAL AND DIAGNOSTIC RESEARCH</title>
+		<title level="j" type="abbrev">JCDR</title>
+		<idno type="ISSN">2249-782X</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">627</biblScope>
+			<date type="published" when="2013">2013</date>
+			<publisher>JCDR Research and Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hajian-Tilaki K. Receiver operating characteristic (ROC) curve analysis for medical diagnostic test evaluation. Caspian J Internal Med. (2013) 4:627.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Comparing the Areas under Two or More Correlated Receiver Operating Characteristic Curves: A Nonparametric Approach</title>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">R</forename><surname>Delong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Delong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">L</forename><surname>Clarke-Pearson</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2531595</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrics</title>
+		<title level="j" type="abbrev">Biometrics</title>
+		<idno type="ISSN">0006-341X</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">837</biblScope>
+			<date type="published" when="1988-09">1988</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">DeLong ER, DeLong DM, Clarke-Pearson DL. Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics. (1988) 44:837-45. doi: 10.2307/2531595</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing</title>
+		<author>
+			<persName><forename type="first">Yoav</forename><surname>Benjamini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yosef</forename><surname>Hochberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.2517-6161.1995.tb02031.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Statistical Society Series B: Statistical Methodology</title>
+		<idno type="ISSN">1369-7412</idno>
+		<idno type="ISSNe">1467-9868</idno>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="289" to="300" />
+			<date type="published" when="1995-01-01">1995</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Benjamini Y, Hochberg Y. Controlling the false discovery rate: a practical and powerful approach to multiple testing. J R Stat Society: Ser B (Methodol). (1995) 57:289- 300. doi: 10.1111/j.2517-6161.1995.tb02031.x</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Prediction of neoadjuvant chemotherapy response in high-grade osteosarcoma: added value of non-tumorous bone radiomics using CT images</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengfei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Xu-Welliver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yidong</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinhua</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiale</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Rong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianye</forename><surname>Niu</surname></persName>
+		</author>
+		<idno type="DOI">10.21037/qims-20-681</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Quantitative Imaging in Medicine and Surgery</title>
+		<title level="j" type="abbrev">Quant Imaging Med Surg</title>
+		<idno type="ISSN">2223-4292</idno>
+		<idno type="ISSNe">2223-4306</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1184" to="1195" />
+			<date type="published" when="2021-04">2021</date>
+			<publisher>AME Publishing Company</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu L, Yang P, Hu K, Wu Y, Xu-Welliver M, Wan Y, et al. Prediction of neoadjuvant chemotherapy response in high-grade osteosarcoma: added value of non- tumorous bone radiomics using CT images. Quant Imaging Med Surg. (2021) 11:1184. doi: 10.21037/qims-20-681</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Generalized methodology for radiomic feature selection and modeling in predicting clinical outcomes</title>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengfei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yidong</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">Alexander</forename><surname>Yen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongjie</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Rong</surname></persName>
+			<idno type="ORCID">0000-0002-2620-1893</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tianye</forename><surname>Niu</surname></persName>
+			<idno type="ORCID">0000-0003-4181-3641</idno>
+		</author>
+		<idno type="DOI">10.1088/1361-6560/ac2ea5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine &amp; Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">215005</biblScope>
+			<date type="published" when="2021-10-22">2021</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang J, Xu L, Yang P, Wan Y, Luo C, Yen EA, et al. Generalized methodology for radiomic feature selection and modeling in predicting clinical outcomes. Phys Med Biol. (2021) 66:215005. doi: 10.1088/1361-6560/ac2ea5</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ding</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TPAMI.2005.159</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans Pattern Anal Mach Intell</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1226" to="1238" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Peng H, Long F, Ding C. Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy. IEEE Trans Pattern Anal Mach Intell. (2005) 27:1226-38. doi: 10.1109/TPAMI.2005.159</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">mRMRe: an R package for parallelized mRMR ensemble feature selection</title>
+		<author>
+			<persName><forename type="first">De</forename><surname>Jay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Papillon-Cavanagh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Olsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>El-Hachem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bontempi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Haibe-Kains</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btt383</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="2365" to="2368" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">De Jay N, Papillon-Cavanagh S, Olsen C, El-Hachem N, Bontempi G, Haibe- Kains B. mRMRe: an R package for parallelized mRMR ensemble feature selection. Bioinformatics. (2013) 29:2365-8. doi: 10.1093/bioinformatics/btt383</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Radiomics-based differentiation between glioblastoma and primary central nervous system lymphoma: a comparison of diagnostic performance across different MRI sequences and machine learning techniques</title>
+		<author>
+			<persName><forename type="first">Girish</forename><surname>Bathla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarv</forename><surname>Priya</surname></persName>
+			<idno type="ORCID">0000-0003-2442-1902</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yanan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caitlin</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nam</forename><forename type="middle">H</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neetu</forename><surname>Soni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ravishankar</forename><forename type="middle">Pillenahalli</forename><surname>Maheshwarappa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Varun</forename><surname>Monga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honghai</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Sonka</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-021-07845-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSN">0938-7994</idno>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="8703" to="8713" />
+			<date type="published" when="2021-04-23">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bathla G, Priya S, Liu Y, Ward C, Le NH, Soni N, et al. Radiomics-based differentiation between glioblastoma and primary central nervous system lymphoma: a comparison of diagnostic performance across different MRI sequences and machine learning techniques. Eur Radiol. (2021) 31:8703-13. doi: 10.1007/s00330-021-07845-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Defining the biological basis of radiomic phenotypes in lung cancer</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Grossmann</surname></persName>
+			<idno type="ORCID">0000-0003-4918-6902</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olya</forename><surname>Stringfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nehme</forename><surname>El-Hachem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marilyn</forename><forename type="middle">M</forename><surname>Bui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Rios Velazquez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chintan</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralph</forename><forename type="middle">Th</forename><surname>Leijenaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Haibe-Kains</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">J</forename><surname>Gillies</surname></persName>
+			<idno type="ORCID">0000-0002-8888-7747</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">Jwl</forename><surname>Aerts</surname></persName>
+			<idno type="ORCID">0000-0002-2122-2003</idno>
+		</author>
+		<idno type="DOI">10.7554/elife.23421</idno>
+	</analytic>
+	<monogr>
+		<title level="j">eLife</title>
+		<idno type="ISSNe">2050-084X</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">23421</biblScope>
+			<date type="published" when="2017-07-21">2017</date>
+			<publisher>eLife Sciences Publications, Ltd</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Grossmann P, Stringfield O, El-Hachem N, Bui MM, Rios Velazquez E, Parmar C, et al. Defining the biological basis of radiomic phenotypes in lung cancer. elife. (2017) 6:e23421. doi: 10.7554/eLife.23421</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Exploring the biological basis of CT imaging features in pancreatic neuroendocrine tumors: a two-center study</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luping</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongkai</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ze</forename><surname>Teng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jichen</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingchao</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongbin</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianye</forename><surname>Niu</surname></persName>
+			<idno type="ORCID">0000-0003-4181-3641</idno>
+		</author>
+		<idno type="DOI">10.1088/1361-6560/ad51c7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine &amp; Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">125013</biblScope>
+			<date type="published" when="2024-06-11">2024</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu L, Wu Y, Shen X, Zhou L, Lu Y, Teng Z, et al. Exploring the biological basis of CT imaging features in pancreatic neuroendocrine tumors: a two-center study. Phys Med Biol. (2024) 69:125013. doi: 10.1088/1361-6560/ad51c7</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

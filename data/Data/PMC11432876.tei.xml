@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">An explainable ensemble approach for advanced brain tumor classification applying Dual-GAN mechanism and feature extraction techniques over highly imbalanced data</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Public Library of Science (PLoS)</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-09-27">September 27, 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Priyanka</forename><surname>Roy</surname></persName>
+							<idno type="ORCID">0009-0006-2942-0131</idno>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>1</label> Department of Computer Science and Engineering , Hajee Mohammad Danesh Science and Technology University , Dinajpur , Bangladesh ,</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Hajee Mohammad Danesh Science and Technology University</orgName>
+								<address>
+									<settlement>Dinajpur</settlement>
+									<country key="BD">Bangladesh</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>2</label> Department of Computer Science and Engineering , Sylhet International University , Sylhet , Bangladesh</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Sylhet International University</orgName>
+								<address>
+									<settlement>Sylhet</settlement>
+									<country key="BD">Bangladesh</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Fahim</forename><forename type="middle">Mohammad Sadique</forename><surname>Srijon</surname></persName>
+							<idno type="ORCID">0009-0008-7411-9545</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Pankaj</forename><surname>Bhowmik</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>1</label> Department of Computer Science and Engineering , Hajee Mohammad Danesh Science and Technology University , Dinajpur , Bangladesh ,</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Hajee Mohammad Danesh Science and Technology University</orgName>
+								<address>
+									<settlement>Dinajpur</settlement>
+									<country key="BD">Bangladesh</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Deemed to be University , INDIA</note>
+								<orgName type="department">Deemed to</orgName>
+								<orgName type="institution">University</orgName>
+								<address>
+									<country key="IN">INDIA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">An explainable ensemble approach for advanced brain tumor classification applying Dual-GAN mechanism and feature extraction techniques over highly imbalanced data</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">PLOS ONE</title>
+						<title level="j" type="abbrev">PLoS ONE</title>
+						<idno type="eISSN">1932-6203</idno>
+						<imprint>
+							<publisher>Public Library of Science (PLoS)</publisher>
+							<biblScope unit="volume">19</biblScope>
+							<biblScope unit="issue">9</biblScope>
+							<biblScope unit="page">e0310748</biblScope>
+							<date type="published" when="2024-09-27">September 27, 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F04580FAE5EBF6F3E919C9B841547A8F</idno>
+					<idno type="DOI">10.1371/journal.pone.0310748</idno>
+					<note type="submission">Received: March 31, 2024 Accepted: September 5, 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T14:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Brain tumors are one of the leading diseases imposing a huge morbidity rate across the world every year. Classifying brain tumors accurately plays a crucial role in clinical diagnosis and improves the overall healthcare process. ML techniques have shown promise in accurately classifying brain tumors based on medical imaging data such as MRI scans. These techniques aid in detecting and planning treatment early, improving patient outcomes. However, medical image datasets are frequently affected by a significant class imbalance, especially when benign tumors outnumber malignant tumors in number. This study presents an explainable ensemble-based pipeline for brain tumor classification that integrates a Dual-GAN mechanism with feature extraction techniques, specifically designed for highly imbalanced data. This Dual-GAN mechanism facilitates the generation of synthetic minority class samples, addressing the class imbalance issue without compromising the original quality of the data. Additionally, the integration of different feature extraction methods facilitates capturing precise and informative features. This study proposes a novel deep ensemble feature extraction (DeepEFE) framework that surpasses other benchmark ML and deep learning models with an accuracy of 98.15%. This study focuses on achieving high classification accuracy while prioritizing stable performance. By incorporating Grad-CAM, it enhances the transparency and interpretability of the overall classification process. This research identifies the most relevant and contributing parts of the input images toward accurate outcomes enhancing the reliability of the proposed pipeline. The significantly improved Precision, Sensitivity and F1-Score demonstrate the effectiveness of the proposed mechanism in handling class imbalance and improving the overall accuracy. Furthermore, the integration of explainability enhances the transparency of the classification process to establish a reliable model for brain tumor classification, encouraging their adoption in clinical practice promoting trust in decision-making processes.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="30" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="31" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="32" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="33" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="34" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="35" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="36" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="37" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="38" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="39" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="40" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="41" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The human brain, a complicated organ, serves as the epicenter of the central nervous system, directing an array of cognitive, sensory, and motor functions <ref type="bibr" target="#b0">[1]</ref>. It is a vital organ and is also vulnerable to many diseases including brain tumors. A brain tumor is an abnormal growth of cells within the brain or the central spinal canal <ref type="bibr" target="#b1">[2]</ref>. These tumors can be benign (non-cancerous) or malignant (cancerous) and can originate from brain tissues or result from cancer elsewhere in the body that has spread to the brain. Brain tumors make up approximately 85% to 90% of all initial central nervous system (CNS) tumors <ref type="bibr" target="#b2">[3]</ref>. Worldwide, they affect a significant number of people, with hundreds of thousands of new cases reported each year. In 2023, it has reached even higher bars and the rate has increased by 1.8% <ref type="bibr" target="#b3">[4]</ref>. More than any other type of cancer, brain tumors have long-term, life-altering effects on a patient's physical, mental, and emotional health. The mortality rate associated with certain types of brain tumors is alarmingly high. Within the United States exclusively, the collective mortality attributed to cancer is approximated at 24,810 individuals, disaggregated into 14,280 male fatalities and 10,530 female fatalities <ref type="bibr" target="#b4">[5]</ref>. Therefore, it is very essential to address the need for precise detection and effective treatment.</p><p>In recent years, many studies have been done in the medical domain by using the advancement of artificial intelligence (AI). Different machine learning (ML) techniques including deep learning have been used to classify brain tumors. Brain tumor classification with machine learning on Magnetic Resonance Imaging (MRI) or Computerized Tomography (CT) images faces several challenges. Among these, a major obstacle is the highly imbalanced nature of brain tumor datasets. The limited access and availability to the medical data leads to insufficient data and hence, imbalanced class distribution. This leads to inaccurate model prediction due to the biased behavior of the classifier towards the majority class. While a few previous research have contributed to addressing data imbalance mostly for binary classification tasks, our study focuses on the challenging scenario of highly imbalanced datasets used in classifying multiple classes of brain tumors. Moreover, the accuracy that has been achieved to date reflects that a more reliable and stable model is needed. We aim to contribute by investigating advanced techniques that utilize the power of deep learning and feature extraction methods to enhance brain tumor classification, thereby paving the way for improved early detection and intervention. There has been very little work on classifying brain tumor disease in any case with imbalanced datasets. Our study is motivated by the scope for investigation in this scenario to ensure that brain tumor classification can be conducted without model bias even with the possibility of class imbalance in a multiclass dataset. To mitigate the existing shortcomings, our research intends to make the following contributions:</p><p>1. Propose a novel Deep Ensemble Feature Extraction (DeepEFE) model to enhance the early detection and diagnosis of brain tumors.</p><p>2. Propose a hybrid dual-GAN mechanism combining Real-ESRGAN and WGAN-GP to mitigate data imbalance issues and enhance the training process of the deep neural networks (DNN).</p><p>3. Establish a generalized pipeline that provides better performance compared to other existing models in terms of Accuracy, Precision, Sensitivity, F1-Score, and other performance standards by utilizing advanced deep learning techniques.</p><p>4. Facilitate model explainability through the eXplainable Artificial Intelligence (XAI) technique to ensure the transparency of the proposed model.</p><p>5. Contribute to the advancement of medical knowledge and healthcare standards in the field of brain tumor classification, ultimately leading to better patient outcomes and more reliable diagnostic procedures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background and related works</head><p>There have been many research works in the domain of brain tumor classification. The adaptive pillar K-means algorithm is used for segmentation purposes and a two-tier classification approach is used for the classification of brain tumors in one study using a dataset that is available online <ref type="bibr" target="#b5">[6]</ref>. The highest accuracy the study has achieved is 96.6%. Afshar et al.</p><p>proposed a deep learning approach titled "BoostCaps: A Boosted Capsule Network for Brain Tumor Classification" <ref type="bibr" target="#b6">[7]</ref>. They have used a brain tumor dataset from Figshare consisting of 3064 T1-weighted contrast-enhanced images <ref type="bibr" target="#b7">[8]</ref>. The proposed BoostCaps network has surpassed other single capsule networks with an accuracy of 92.45%. Shahzadi et al. discussed the classification of brain tumors, specifically gliomas, into High Grade (HG) and Low Grade (LG) <ref type="bibr" target="#b8">[9]</ref>. It introduces a method that combines Convolutional Neural Networks (CNNs) and Long Short Term Memory (LSTM) networks to classify 3D brain tumor MR images. The authors used the pre-trained VGG16 model for feature extraction on the BraTS 2015 dataset, which outperformed other feature extraction models (ResNet and AlexNet). They achieved an 84% accuracy in glioma classification <ref type="bibr" target="#b9">[10]</ref>.</p><p>Meanwhile, a study investigated the application of wrapper-based metaheuristic deep learning networks (WBM-DLNets) feature optimization algorithms <ref type="bibr" target="#b10">[11]</ref>. The study validated the proposed WBM-DLNets approach using an online dataset, with results demonstrating significant improvements in classification accuracy compared to using the full set of deep features <ref type="bibr" target="#b11">[12]</ref>. The dataset has 826, 822, 395, and 827 images of Glioma, Meningioma, No Tumor, and Pituitary Tumor classes respectively. The DenseNet-201-GWOA and Effi-cientNet-b0-ASOA combinations achieved the highest accuracy of 95.7%. Sujatha &amp; Rao explored the automation of brain tumor type detection from MRI images using a customized DenseNet201 deep neural network <ref type="bibr" target="#b12">[13]</ref>. They worked with a dataset comprising 7023 brain tumor MRI images across four classes ('no tumor, ' 'glioma, ' 'meningioma' , and 'pituitary') and fine-tuned the model by adapting the final layer to predict these classes. The model achieved 88% accuracy during testing. Bitto et el. proposed a Tumor-Net to classify brain images where they explored several deep learning algorithms (VGG16, VGG-19, ResNet50, Xeption, InceptionNet-V3) <ref type="bibr" target="#b13">[14]</ref>. Although the ResNet-50 achieved the highest classification accuracy (96.67%), the study was conducted on a balanced dataset consisting of only three classes.</p><p>Pilaoon et al. employed deep learning convolutional neural networks (CNN) for the binary classification of GBM brain tumors <ref type="bibr" target="#b14">[15]</ref>. The dataset consisted of 155 MRI images from the REMBRANDT database. Transfer learning, utilizing pre-trained networks such as GoogleNet and AlexNet, was employed to distinguish GBM brain tumors from normal brain tissue. The results showed that GoogleNet achieved an 80.85% accuracy, while AlexNet achieved a higher accuracy of 93.62%. Najeeb et al. 's work emphasized the limitations of manual identification <ref type="bibr" target="#b15">[16]</ref>. The study used deep learning networks and a Kaggle dataset for brain tumor segmentation. Transfer learning, U-Net, and Resnet architectures were used for multi-classification. The results demonstrated that this research framework outperformed existing methods, with Resnet achieving the highest accuracy of 90.2% in brain tumor classification. Toğaçar et al. introduced BrainMRNet, a convolutional neural network model using attention modules and hypercolumn technique for brain tumor detection from MRI images <ref type="bibr" target="#b16">[17]</ref>. BrainMRNet</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification excelled compared to pre-trained models like AlexNet, GoogleNet, and VGG16, achieving a classification success of 96.05%. Shree &amp; Kumar worked towards the enhancement of brain tumor detection accuracy in MRI images through a multi-step approach <ref type="bibr" target="#b17">[18]</ref>. It involved image preprocessing, morphological operations, and feature extraction methods like Discrete Wavelet Transform (DWT) and Gray-Level Co-occurrence Matrix (GLCM) features. A Probabilistic Neural Network (PNN) classifier was employed to distinguish between normal and abnormal brain tissues. The approach achieved 95% accuracy in identifying abnormal brain tissues. A hybrid feature extraction method with a regularized extreme learning machine (RELM) was used in a study for precise brain tumor classification <ref type="bibr" target="#b18">[19]</ref>. The approach involved feature extraction from brain images from the Figshare dataset using a hybrid method, followed by the computation of the covariance matrix and projection using principal component analysis (PCA). Finally, the RELM classifier is employed for tumor classification which achieved an average accuracy of 92.61%.</p><p>VGG19 combined with Inverted Pyramid Pooling Module (iPPM) were utilized in a research investigation to classify brain tumors <ref type="bibr" target="#b19">[20]</ref>. After intensive parameter optimization and 3-fold cross-validation, Adam optimizer provided the best classification accuracy of 99.3% on a balanced dataset with four types of tumor diseases' images. Another study explored the classification of epileptic seizure in the brain by conducting deep-learning models on electroencephalogram (EEG) data <ref type="bibr" target="#b20">[21]</ref>. Applying CNN's feature extraction power and LSTM's classification capacity, the study obtained an accuracy of 99.48%. Adaptive histogram contrast normalization with learning-based neural quantization (AHCN-LNQ) was used in a study where the AHCN was used as a preprocessing and noise-removing technique <ref type="bibr" target="#b21">[22]</ref>. Image segmentation by Otsu threshold was conducted for feature extraction purposes. The study's proposed model achieved an accuracy of 93%. The issue of data imbalance wasn't reflected in the paper, however.</p><p>Brain tumor classification using gene expression has also been studied. Classified gene expression data that has two classes of brain tumors was investigated in a research work <ref type="bibr" target="#b22">[23]</ref>. The study incorporated an optimization technique named PSCS. The metaheuristic algorithm such as the Cuckoo Search (CS) algorithm's effectiveness in improving the classification task was also explored in this study. This study's proposed methodology achieved an accuracy of 98.7% in classifying between the two tumor types. However, the study faced several constraints including hyperparameter sensitivity, lack of generalizability, complexity in interpretability due to the nature of gene-based data, and associated time cost for identifying the optimal hyperparameter set. Since redundant and unnecessary genes can pose a hindrance to accurately classifying the disease, it is necessary to identify the meaningful features of the genes. Such an initiative with a feature selection technique has been adopted in research work to classify breast cancer disease <ref type="bibr" target="#b23">[24]</ref>. To generate optimal features and increase outcome accuracy, the Sine Cosine Algorithm (SCA) was combined with the CS algorithm. Utilizing the privileges of SCA's local search and CS's global search functionality, their proposed model achieved an accuracy of 99.62%. However, the study did not address the cost management of the feature optimization process. Additionally, in the compared algorithms section, there is a writing anomaly about the fitness function definition.</p><p>Instead of SCA, the Spider Monkey Optimization (SMO) was combined with CS by a group of researchers <ref type="bibr" target="#b24">[25]</ref>. This study utilized an additional gene feature-reducing process named minimum redundancy maximum relevance (mRMR). It used 8 high-dimensional datasets consisting of gene information for several cancer diseases and achieved an average mean classification accuracy of 98.68% without considering the deviations. Like the previous studies on gene-feature selection, it was prone to parameter sensitivity. It was a resource-intensive model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Another investigation was conducted on different combinations of CS and SMO <ref type="bibr" target="#b25">[26]</ref>. One method (CSSMO) was utilizing CS followed by SMO. Another (SMOCS) was the reverse of the previous one, SMO followed by CS. To reduce gene expression redundancy, mRMR was also leveraged in this study. Six different cancer datasets were evaluated with the proposed models and 96.52% was the highest accuracy which was achieved in classifying Leukemia by the second method (SMOCS). All these studies on gene expression data faced some common limitations that are high dimensionality in datasets, redundant features, and computational cost. Such analysis with genetic data might not cover the scenario of all adjacent cells and thus could lose precision in classification <ref type="bibr" target="#b26">[27]</ref>.</p><p>Optimal feature selection through different metaheuristic algorithms was investigated for the detection of COVID-19 disease along with a newly proposed algorithm named Marine Predator Chaotic Algorithm (MPCA) <ref type="bibr" target="#b27">[28]</ref>. 96.27% mean accuracy was achieved with the proposed MPCA algorithm at the cost of computation cost.</p><p>Many researchers focused on using the generative adversarial network framework (GAN). A Generative Adversarial Network (GAN) is a deep learning model comprising a generator and discriminator that engage in a competitive process to create and distinguish realistic data, primarily used for image generation and enhancement tasks <ref type="bibr" target="#b28">[29]</ref>. Research has been conducted on the Figshare dataset using a progressive-growing generative adversarial network (PGGAN) <ref type="bibr" target="#b29">[30]</ref>. By augmenting brain tumor image data, employing a soft voting approach, and using balancing techniques, this approach compared different GAN techniques. The research highlighted PGGAN as the most suitable GAN technique for data generation. Han et al. also conducted extensive work using PGGAN <ref type="bibr" target="#b30">[31]</ref>. Their proposed approach consists of a two-step GAN-based Data Augmentation (DA) method: PGGANs and Multimodal UNsupervised Image-to-image Translation (MUNIT). The study explored various combinations of these GAN-based DA approaches and classic data augmentation. The combination of GANbased DA with classic DA outperformed other approaches.</p><p>Limited training data and incomplete MRI collections from various modalities can impact deep learning performance. Ge et al. proposed a novel pairwise Generative Adversarial Network (GAN) architecture to generate synthetic brain MRIs for missing modalities, aiming to enhance the training dataset and mitigate overfitting <ref type="bibr" target="#b31">[32]</ref>. The main objectives included the introduction of a cross-modality GAN-based image generation method, a two-stage training strategy combining GAN-augmented and real MRIs for glioma classification, and experimental validation on an open TCGA dataset, resulting in a 2.57% improvement in glioma classification accuracy <ref type="bibr" target="#b32">[33]</ref>. This dataset contains segmentation labels for pre-operative Low-Grade Glioma (LGG) scans from The Cancer Genome Atlas. These scans include various MRI modalities and have been processed to extract radiomic features. While the synthetic images slightly differed statistically from real ones, the proposed method proved effective in offering enhanced deep learning performance in glioma classification. A study introduced an ensemble approach for brain tumor classification employing a range of pre-trained CNNs to extract the deep features from brain MR images, which were then evaluated by various machine learning classifiers <ref type="bibr" target="#b33">[34]</ref>. Three datasets were used: the first two were from the Kaggle website, and the other one was the previously mentioned Figshare dataset <ref type="bibr" target="#b34">[35,</ref><ref type="bibr" target="#b35">36]</ref>. Notable findings included the suitability of DenseNet-169 for small datasets (accuracy of 98.04%) and the effectiveness (accuracy of 98.83%) of an ensemble of DenseNet-121, ResNeXt-101, and MnasNet for the second dataset.</p><p>Several limitations were observed in the reviewed work as some are depicted in Table <ref type="table">1</ref>. Some models demonstrated lower testing phase accuracy, indicating the need for improved model performance. Limited sample sizes in the datasets could potentially restrict the model's generalizability. High model complexity was seen in some studies, which could impact their practical applicability. Most of the studies used fewer classes. No study focused on how to address the</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification imbalanced dataset. Failure to address data imbalance issues may lead to biased results and hinder the classification process. Explanability to the model's performance wasn't found in any of the studies when reviewing the studies. Considering these shortcomings and understanding the need for more reliability this research comes with the following propositions:</p><p>1. The data imbalance issue, particularly between the majority class and the minority class within the MRI image datasets, needs to be addressed to create a more generalized model. To handle the data imbalance issue, different methods can be used such as the Generative Adversarial Networks (GANs).</p><p>2. Optimizing the quality and relevance of the dataset should be conducted appropriately by exploring and implementing advanced preprocessing methods that aim to improve data quality, reduce noise, and enhance the model's capacity to extract meaningful features from the input images.</p><p>3. Working with more diverse datasets should be ensured to secure model reliability and explore a broader scope.</p><p>4. Utilizing different efficient models such as the deep feature extraction methods should be explored to introduce a generalized and efficient pipeline for brain tumor classification that can aid the development of medical diagnostic approaches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>The methodology section of our research paper provides a broad explanation of the research process, describing the distinct stages and methodologies employed for the purpose of brain tumor classification.</p><p>Table 1. Some recent benchmark studies. Article Year Dataset Model Accuracy Limitation(s) 7 2020 Balanced (3 classes) BoostCaps 92.45% Validation missing and not prepared for imbalanced datasets 13 2023 Balanced (4 classes) DenseNet201 88.00% Data-imbalance issue not addressed and poor performance 14 2023 Balanced (4 classes) ResNet-50 96.76% Further scope for enhancing performance and and no focus on how to deal with real-life imbalanced datasets 23 2023 Balanced Dataset (2 classes) Particle Swarm Cuckoo Search (PSCS) 98.70% Hyperparameter sensitivity, lack of generalizability, and complexity in interpre-tability 24 2023 Gene Expression Data (2 classes) Sine Cosine Algorithm (SCA) 99.62% Cost intensive, high dimensional data, feature redundancy 25 2023 Gene Expression Data (2 classes) Spider Monkey Optimization (SMO) and Cuckoo Search (CS) 98.68% Prone to parameter sensitivity and a resource intensive model 26 2024 Gene Expression Data (2 classes) SMO followed by CS 96.52% Cost intensive, high dimensional data, lack of generalizability, sensitivity to model parameter tuning, and time-consuming model 28 2024 Numerical Datasets Marine Predator Chaotic Algorithm (MPCA) 96.27% Cost intensive 30 2023 Balanced (3 classes) PG-GAN 98.85% Did not address data imbalance issues and the proposed model was not stress-tested. 34 2021 3 Balanced datasets (2, 2, and 4 classes) Ensemble of Deep Features with SVM 98.83% No generalized pipeline or model proposed for brain tumor prediction as different models performed well for different datasets with different sizes. Moreover, lacks explaining why the FC CNN model performed better while extracting features The table provides insights into some of the state-of-the-art research works and the research gaps found by the current investigation. Notably, one common limitation is that no research addressed the issue of data imbalance. Additionally, no previous study focused on establishing a transparent generalized pipeline for brain tumor classification by incorporating advanced GAN techniques and XAI. <ref type="url" target="https://doi.org/10.1371/journal.pone.0310748.t001">https://doi.org/10.1371/journal.pone.0310748.t001</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Fig 1. Proposed methodology.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Overview of the proposed methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dataset description and preprocessing</head><p>There are a hundred different distinct classes of brain tumors. However, most researches address either binary classification or only three to four classes. In the process, those studies failed to address more brain tumor types as well as the data imbalance issue. Therefore, we have collected samples from different datasets to include more brain tumor types and to create an imbalanced dataset with classes having different sample sizes.</p><p>Dataset one (DS-I) is the combined version of Figshare, SARTAJ dataset, and Br35H <ref type="bibr" target="#b36">[37]</ref>. The Figshare dataset encompasses 3,064 MRI images captured in the T1-weighted contrast-enhanced mode. These images collectively represent three distinct categories of brain tumors, with the following distribution: meningioma, glioma, and pituitary tumors. More images on these classes and also for the 'no_tumor' class were collected from the other two datasets. Collectively, we gathered 7,023 images of human brain MRI images of four classes: 'glioma' , 'meningioma' , 'no_tumor' , and 'pituitary' from these three sources. From, the second dataset (DS-II), we have collected 70 samples for 'craniopharyngioma' <ref type="bibr" target="#b37">[38]</ref>. The total no. of MRI images used is 7,103 where the 'glioma' , the 'meningioma' , the 'no_tumor' , the 'pituitary' , and the 'craniopharyngioma  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p><p>We utilize one hot encoding to convert categorical variables in the datasets into numerical representations, enabling us to incorporate them as model-trainable features. Since the dataset does not have any ordinal rank between the target classes, this encoding technique allowed to maintain the integrity of the categorical information while enabling models to process the data effectively. To maintain input consistency and enhance model training, we implemented pixel value normalization on the images. Additionally, the normalization process helps to ensure that each feature contributes equally to the learning process, preventing any particular feature from dominating the others. This can lead to more stable and efficient model training, ultimately resulting in better performance and generalization to new data. Finally, a variety of data augmentation techniques were implemented, including zooming, cropping, rotation, and resizing. We resized all images to a uniform size of 240 × 240.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proposed Dual-GAN mechanism</head><p>Generative Adversarial Networks (GANs) are a well-known subset of Deep Adversarial Networks (DANs) that focus on generating synthetic data, such as images, audio, and text, that is convincingly similar to real data. By enabling the generation of synthetic data, they enhance model training and address data imbalance challenges <ref type="bibr" target="#b38">[39]</ref>.</p><p>Wasserstein GAN (WGAN) uses the Wasserstein loss to stabilize the model but it further imposed problems like the vanishing gradient problem and produced poor samples while failing to converge. In 2017, I. Gulrajani et al. introduced a gradient penalty to enhance stability, discouraging gradients with substantial norm values, albeit resulting in extended computational time <ref type="bibr" target="#b39">[40]</ref>. This model is commonly referred to as a WGAN-GP model. On the other hand, Enhanced Super-Resolution GANs or ESRGAN is a specialized GAN model used to enhance the resolution of the input image. It improves the image quality by generating super-resolution images from low-quality (resolution) images leading to better classification tasks <ref type="bibr" target="#b40">[41]</ref>.</p><p>Generating high-resolution synthetic data directly with WGAN-GP is computationally intensive and costly. Furthermore, training such a network would have cost a great amount of time and complexity along with requiring sophisticated hardware facilities. In contrast, generating low-resolution synthetic data (only 28 × 28) can reduce the computational cost and burden during the initial synthetic data generation phase. Therefore, to handle the small data size for our minority class 'craniopharyngioma' we propose a hybrid technique which we named the 'Dual-GAN' mechanism. We divided the proposed hybrid mechanism into two phases, 1) Data Generation, and 2) Data Enhancement. The proposed mechanism is shown in Fig 4 . 
+While the first phase provides a better generalization and diversity in generated synthetic data, the next phase enhances the image quality (240 × 240) and ensures fine-tuning of the final output images used for the classification task. Additionally, Real-ESRGAN performs progressive refinement of the low-resolution input images itself to capture the most relevant information and outputs better and more realistic images. Furthermore, because of the optimized architecture of Real-ESRGAN, most calculation is performed in a smaller resolution space, which reduces the GPU memory and computational resources consumption <ref type="bibr" target="#b41">[42]</ref>. Algorithm 1 explains the working principles of the proposed Dual-GAN mechanism.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Deep feature extraction</head><p>Feature extraction is a fundamental step in our proposed image analysis pipeline, where we aim to extract meaningful and discriminative features from the input data. It involves converting an image into a numerical vector encapsulating its semantic content. These features are further utilized to train the classification models to accurately classify and analyze images based on their content and characteristics. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification VGG16. The VGG16 architecture, or Visual Geometry Group 16 architecture, was first introduced by Simonyan and Zisserman in 2015 <ref type="bibr" target="#b42">[43]</ref>. It is a deep convolutional neural network known for its simplicity and effectiveness. It consists of multiple convolutional layers, followed by max-pooling layers, and culminating in several fully connected layers. VGG16's deep structure allows it to capture intricate features within the images. This hierarchical feature extraction contributes to superior feature representation, making VGG16 a strong choice for image-related tasks. Fig <ref type="figure" target="#fig_6">5</ref> demonstrates the inner layers of the model <ref type="bibr" target="#b43">[44]</ref>.</p><p>DenseNet201. DenseNet201, based on the densely connected architecture, is designed to maintain a strong gradient flow and encourage feature reuse across layers <ref type="bibr" target="#b44">[45]</ref>. Each layer can access and utilize the feature maps generated by its predecessors. This dense connectivity leads to efficient feature extraction, as the network can collectively capture both low-level and highlevel features. DenseNet201's feature-rich representation makes it well-suited for tasks that require the model to recognize complex patterns and relationships within the data.</p><p>InceptionResNetV2. InceptionResNetV2 is a complex feature extraction model that integrates concepts from the Inception architecture and residual connections <ref type="bibr" target="#b45">[46]</ref>. The Inception part employs multiple filter sizes and operations on the input data in parallel, enabling the model to capture features at various scales. Additionally, residual connections facilitate the flow of gradients and prevent the vanishing gradient problem.</p><p>Proposed DeepEFE model. This study proposes a novel Deep Ensemble Feature Extraction (DeepEFE) model for selecting and combining the valuable features from the </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification input images. It utilizes pre-trained deep learning models like VGG16, DenseNet201, and InceptionResNetV2 to extract rich and diverse features from images of all five classes. The proposed model derives its strength from the enhancements in its model architecture. The individual base models suffer from issues such as increased model complexity, lack of generalization ability, increased training time, and the vanishing gradient problem. However, the proposed DeepEFE effectively addresses these challenges by integrating the benefits from the base models. It maintains optimal performance by consistently ensuring significant accuracy in the image classification task. Our proposed DeepEFE model has the potential to extract a diverse range of rich features using a sophisticated multifaceted feature engineering technique. Furthermore, it is immune to overfitting due to the implementation of densely connected networks, which are specifically designed to efficiently reuse and integrate these extracted features. The deep features are subsequently concatenated into a unified feature vector, thereby enhancing the model's ability to capture subtle and intricate information from the input data. Lastly, this combined vector is fed to the machine learning classifier at the outermost layer for final prediction. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Description of classification algorithms</head><p>Support Vector Machine (SVM) is a powerful supervised machine learning algorithm used for classification tasks. It operates by finding the optimal hyperplane that best separates data points in different classes within a high-dimensional feature space. Its core objective is to maximize the margin between classes, making it robust against overfitting. Whereas, The Random Forest (RF) classifier is a machine-learning method that builds multiple decision trees during training. Through the bagging technique, it constructs these trees using random subsets of the training data, ensuring diversity among them and reducing overfitting. At each node of the trees, a random subset of features is considered for splitting, adding further randomness. XGBoost is another popular classifier algorithm that minimizes an object function to reach the desired outcome. Unlike traditional neural networks, CNNs are designed to automatically and adaptively learn spatial hierarchies of features from input data. At the core of CNNs are convolutional layers, which apply filters (kernels) to the input data to capture local patterns and features. These convolutional operations are followed by pooling layers that downsample the spatial dimensions of the data, reducing computational complexity while preserving important information. ResNet50, short for "Residual Network with 50 layers", is built on residual learning. Traditional deep networks aim to learn data's underlying features but can struggle with vanishing gradients in deeper architectures. ResNet50 overcomes this by introducing residual blocks with skip connections, enabling the network to learn residual functions directly. We have explored an Ensemble Deep Learning (EDL) model created by averaging the predictions of VGG16, InceptionResNetV2, and DenseNet201. The model architecture of the ensemble model is illustrated in Table <ref type="table" target="#tab_1">2</ref>. This approach harnesses the strengths of each model to enhance the overall performance as it integrates the feature extraction and classification capabilities of VGG16 and includes the capacity of DenseNet to capture hierarchical features from the input images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Performance metrics</head><p>One commonly used performance metric is accuracy, which measures the overall correctness of the model's predictions. Precision is a performance metric that focuses on the model's ability to correctly identify negative instances. Sensitivity, also known as the recall rate or true positive rate, quantifies the proportion of true positives to the total number of actual positive instances in the dataset. The F1-Score is a balanced measure that combines precision and sensitivity into a single metric. Area under the ROC Curve (AUC) represents the ability of the  </p><formula xml:id="formula_0">Precision TP TP FP = +<label>(2)</label></formula><formula xml:id="formula_1">Sensitivity TP TP FN = +<label>(3)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F1-Score Precision Sensitivity Precision Sensitivity</head><formula xml:id="formula_2">= + 2• • (4) AUC d = ∫ 0 1 TPR(FPR) FPR<label>(5)</label></formula><formula xml:id="formula_3">FPR FP FP TN = +<label>(6)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental results and discussions</head><p>This Experimental Results and Discussions section demonstrates the experimental results of all the stages of this research and provides a detailed analysis of those outcomes. The coding files of our proposed pipeline and experimental outcomes are available at <ref type="url" target="https://github.com/roypriyanka7/Brain-Tumor-Classification">https://github.com/  roypriyanka7/Brain-Tumor-Classification</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hyperparameter settings for the models used</head><p>Hyperparameter setup involves the formal definition of the configuration and values of hyperparameters for an ML learning model. These parameters control the behaviour of the deep learning models and guide the learning process as well. Table <ref type="table">3</ref> illustrates the parameters for each algorithm in the proposed pipeline. These parameters are crucial for optimizing model performance and its generalizability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Effect of imbalanced dataset on model prediction</head><p>This study aims to show the effect of class imbalance on a certain model's classification predictions. Our investigation commenced with an examination of the impact of an imbalanced dataset on brain tumor classification. As expected, the class imbalance introduced challenges in correctly identifying and distinguishing between tumor types. Table <ref type="table" target="#tab_3">4</ref> represents the performance of our classification models on the image dataset before applying the proposed Dual-GAN mechanism.</p><p>As the table shows, the proposed deep feature-based DeepEFE model surpassed all other models by achieving an accuracy of 97.26% on the imbalanced dataset. Yet a prime concern is that, although these models performed well for no_tumor, glioma, meningioma and pituitary classes (majority classes), the model performance for the minority class 'craniopharyngioma' is not satisfactory. The sensitivity value for the minority class is alarming (only 42%). This recall value of 42% indicates that the model can not even predict half of the positive cases correctly. This means that the model's performance is too poor and unreliable, significantly in the case of highly sensitive medical data where missing cases can have serious consequences. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Performance after applying proposed methodology</head><p>Mitigating the issue of imbalanced datasets in the medical field is crucial because it directly impacts patient care and diagnostic accuracy. Class imbalance can lead to biased model Table <ref type="table">3</ref>. Hyperparameter settings for the models used. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p><p>Table 4. Performance of the classification models before applying dual-GAN. Model Class Precision Sensitivity F1-Score Accuracy (%) FPR FNR Specificity State-of-the-Art Deep Learning Models CNN no_tumor 0.98 0.97 0.97 0.01 0.03 0.99 glioma 0.96 0.95 0.95 0.01 0.05 0.99 meningioma 0.92 0.94 0.93 95.71 0.02 0.06 0.98 pituitary 0.97 0.99 0.98 0.01 0.01 0.99 craniopharyngioma 0.40 0.17 0.24 0.00 0.83 1.00 ResNet50 no_tumor 0.93 0.96 0.94 0.03 0.04 0.97 glioma 0.98 0.88 0.93 0.00 0.12 1.00 meningioma 0.85 0.94 0.89 92.19 0.05 0.06 0.95 pituitary 0.96 0.93 0.94 0.01 0.07 0.99 craniopharyngioma 0.25 0.25 0.25 0.01 0.75 0.99 EDL no_tumor 0.95 0.97 0.96 0.02 0.03 0.98 glioma 0.93 0.90 0.91 0.02 0.10 0.98 meningioma 0.80 0.80 0.80 90.36 0.06 0.20 0.94 pituitary 0.92 0.95 0.93 0.03 0.05 0.97 craniopharyngioma 0.00 0.00 0.00 0.00 1.00 1.00 Deep Feature Extraction VGG16 + SVM no_tumor 0.99 0.98 0.99 0.00 0.02 1.00 glioma 0.98 0.96 0.97 0.01 0.04 0.99 meningioma 0.92 0.98 0.95 96.83 0.03 0.02 0.97 pituitary 0.98 0.98 0.98 0.01 0.02 0.99 craniopharyngioma 0.60 0.25 0.35 0.00 0.75 1.00 VGG16 + RF no_tumor 0.97 0.96 0.97 0.01 0.04 0.98 glioma 0.96 0.88 0.92 0.01 0.12 0.98 meningioma 0.85 0.88 0.87 91.84 0.04 0.12 0.94 pituitary 0.88 0.98 0.93 0.04 0.02 0.94 craniopharyngioma 0.00 0.00 0.00 0.00 1.00 1.00 VGG16 + XGB no_tumor 0.98 0.97 0.97 0.01 0.03 0.98 glioma 0.97 0.93 0.95 0.01 0.07 0.99 meningioma 0.89 0.92 0.91 94.51 0.03 0.08 0.96 pituitary 0.94 0.98 0.96 0.02 0.02 0.97 craniopharyngioma 1.00 0.08 0.15 0.00 0.92 1.00 Inception-ResNetV2 + SVM no_tumor 0.99 0.99 0.99 0.00 0.01 1.00 glioma 0.96 0.94 0.95 0.01 0.06 0.99 meningioma 0.89 0.92 0.91 95.43 0.03 0.08 0.97 pituitary 0.96 0.98 0.97 0.01 0.02 0.99 craniopharyngioma 1.00 0.42 0.59 0.00 0.58 1.00 Inception-ResNetV2 + RF no_tumor 0.98 0.96 0.97 0.01 0.04 0.99 glioma 0.90 0.84 0.87 0.03 0.16 0.97 meningioma 0.82 0.82 0.82 89.3 0.05 0.18 0.95 pituitary 0.86 0.97 0.91 0.05 0.03 0.95 craniopharyngioma 0.00 0.00 0.00 0.00 1.00 1.00 Inception-ResNetV2 + XGB no_tumor 0.98 0.97 0.98 0.01 0.03 0.99 glioma 0.95 0.88 0.91 0.01 0.12 0.99 meningioma 0.82 0.88 0.85 91.91 0.05 0.12 0.95 pituitary 0.91 0.97 0.94 0.03 0.03 0.97 craniopharyngioma 0.00 0.00 0.00 0.00 1.00 1.00 (Continued)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification predictions, particularly in scenarios where the minority class represents critical medical conditions. In our case, it represents a whole group of brain tumor categories, and as evident in Table <ref type="table" target="#tab_3">4</ref>, class imbalance significantly decreased the model's reliability and prediction accuracy in terms of distinguishing minority classes from majority classes. Addressing class imbalance ensures that machine learning models provide a more balanced and reliable assessment, leading to early detection and improved patient outcomes.</p><p>To palliate the imbalance dataset issue, we leveraged the power of Generative Adversarial Networks (GANs) and generated synthetic samples for the minority class. This approach was a strategic choice, as it aimed to address the class imbalance by artificially increasing the representation of the minority class, namely 'craniopharyngioma' . By introducing additional synthetic samples of this minority class, the model gains a better understanding of the unique features associated with it. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification</p><p>Table 5. Performance of Deep Feature Extraction Models after Applying Dual-GAN. Model Class Precision Sensitivity F1-Score Accuracy (%) FPR FNR Specificity State-of-the-Art Deep Learning Models CNN no_tumor 0.98 0.97 0.97 0.01 0.03 0.99 glioma 0.96 0.93 0.95 0.01 0.05 0.99 meningioma 0.91 0.94 0.92 95.99 0.02 0.06 0.98 pituitary 0.98 0.99 0.98 0.01 0.01 0.99 craniopharyngioma 0.98 0.97 0.98 0.00 0.83 1.00 ResNet50 no_tumor 0.98 0.94 0.96 0.01 0.06 0.99 glioma 0.92 0.91 0.92 0.02 0.09 0.98 meningioma 0.84 0.88 0.86 93.28 0.05 0.12 0.95 pituitary 0.96 0.97 0.97 0.01 0.03 0.99 craniopharyngioma 0.99 0.96 0.98 0.00 0.04 1.00 EDL no_tumor 0.95 0.95 0.95 0.02 0.05 0.98 glioma 0.91 0.89 0.9 0.02 0.11 0.98 meningioma 0.84 0.76 0.8 91.12 0.04 0.24 0.96 pituitary 0.88 1.00 0.93 0.04 0.00 0.96 craniopharyngioma 0.99 0.97 0.98 0.00 0.03 1.00 Deep Feature Extraction VGG16 + SVM no_tumor 0.99 0.98 0.98 0.00 0.02 1.00 glioma 0.98 0.96 0.97 0.01 0.04 0.99 meningioma 0.93 0.96 0.95 97.29 0.02 0.04 0.98 pituitary 0.99 0.99 0.99 0.00 0.01 1.00 craniopharyngioma 0.99 0.97 0.98 0.00 0.03 1.00 VGG16 + RF no_tumor 0.97 0.96 0.97 0.01 0.04 0.99 glioma 0.94 0.87 0.91 0.01 0.13 0.99 meningioma 0.85 0.87 0.86 92.53 0.04 0.13 0.96 pituitary 0.89 0.97 0.93 0.03 0.03 0.97 craniopharyngioma 1.00 0.96 0.98 0.00 0.04 1.00 VGG16 + XGB no_tumor 0.98 0.98 0.98 0.01 0.02 0.99 glioma 0.97 0.91 0.94 0.01 0.09 0.99 meningioma 0.88 0.9 0.89 94.69 0.03 0.10 0.97 pituitary 0.93 0.98 0.95 0.02 0.02 0.98 craniopharyngioma 1.00 0.96 0.98 0.00 0.04 1.00 Inception-ResNetV2 + SVM no_tumor 0.99 0.98 0.99 0.00 0.02 1.00 glioma 0.97 0.91 0.94 0.01 0.09 0.99 meningioma 0.89 0.95 0.92 96.05 0.03 0.05 0.97 pituitary 0.97 0.98 0.98 0.01 0.02 0.99 craniopharyngioma 0.99 0.99 0.99 0.00 0.01 1.00 Inception-ResNetV2 + RF no_tumor 0.98 0.94 0.96 0.01 0.06 0.99 glioma 0.94 0.83 0.88 0.01 0.17 0.99 meningioma 0.80 0.82 0.81 90.07 0.05 0.18 0.95 pituitary 0.83 0.97 0.89 0.05 0.03 0.95 craniopharyngioma 1.00 0.96 0.98 0.00 0.04 1.00 Inception-ResNetV2 + XGB no_tumor 0.99 0.96 0.97 0.00 0.04 1.00 glioma 0.97 0.87 0.92 0.01 0.13 0.99 meningioma 0.84 0.87 0.85 92.78 0.04 0.13 0.96 pituitary 0.88 0.98 0.93 0.04 0.02 0.96 craniopharyngioma 1.00 0.97 0.99 0.00 0.03 1.00 (Continued)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification approach in mitigating the class imbalance issue, resulting in enhanced classification performance across all brain tumor categories.</p><p>From the table, we can notice a significant change in outcome compared to the previous one. We observe improved sensitivity, F1-Score, and specificity across all brain tumor classes. The performance table shows that the proposed DeepEFE model combined with SVM surpassed other classifiers with a significant accuracy of 98.15%. This suggests that the Dual-GAN mechanism positively impacted the model's ability to correctly classify brain tumors, contributing to higher accuracy. Furthermore, all the models exhibited a considerable improvement in their performance metrics, most notably in terms of sensitivity and specificity. It is noticeable that all the Precision, Sensitivity, and F1-Score across all five (05) classes are between 94-100%, demonstrating our proposed solution's impactful performance in brain tumor diagnosis.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification still fall short compared to others. However, the minority class acted better than before even in these two model's outcomes. The higher these curve values are, the better and stable the models are performing. <ref type="bibr">Fig 11 presented</ref> below illustrates the generator and discriminator loss curves for the WGAN-GP. Notably, these curves depict a gradual convergence, underscoring the efficacy of our hybrid Dual-GAN mechanism in effectively generating synthetic samples to manage the imbalanced dataset. Real-ESRGAN used an improved VGG-style discriminator, a U-net discriminator with spectral normalization that is capable of addressing a much larger degradation space. This design outputs realness values for every pixel and provides a better per-pixel performance resulting in capturing more realistic information. This convergence signifies the remarkable progress made in our research and reinforces the applicability of our approach in the challenging domain of medical image analysis and highly skewed datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Validation results and performance evaluation</head><p>Cross-validation is a robust technique for model validation and evaluating the generalizability of a machine learning model. It provides insight into how the model is expected to perform on an independent dataset by partitioning the original dataset into a training set to train the model and a validation set to evaluate it. In this study, a 10-fold cross-validation is employed to assess the performance of the proposed DeepEFE model. The original dataset is split into ten <ref type="bibr" target="#b9">(10)</ref> random partitions where the model is trained on nine (09) folds and the remaining fold is utilized for validation purpose.</p><p>Table <ref type="table" target="#tab_6">6</ref> depicts the performance of the proposed model when combined with traditional ML classifiers. From the recorded results it is evident that DeepEFE demonstrates a stable and consistent performance across all the folds with average accuracy scores of 97.90%, 93.25%, and 95.64%, respectively. With significant Precision, Sensitivity, and F1-Scores the proposed model is proficient in accurate classification while maintaining minimal FPR and FNR rates listed in Table <ref type="table" target="#tab_7">7</ref>. These optimal outcomes infer that the proposed DeepEFE is a highly generalized, reliable, and efficient model, explicitly designed for classification tasks with its bias-free and accurate predictive quality.</p><p>During the cross-validation stages, the model accuracy for DeepEFE with SVM performed some fluctuations within a very limited range as depicted in Similarly, the next few figures illustrate the performance of the DeepEFE model coupled with Random Forest after 10-fold cross-validation. During the cross-validation stages, 94.94% is the highest accuracy that could be achieved by this model as seen in Fig <ref type="figure" target="#fig_23">16</ref> and is comparatively lower than the preceding model. Moreover, the outcomes showed more oscillation during the folds. The precision-recall curve per fold for the DeepEFE + RF model is depicted in Fig 17 . Although the curve possesses a significant AUC space, it is lower if compared with the model having the SVM classifier. One class is observed underperforming than the others in every fold. The same scenario prevailed through the average PR curve ( <ref type="bibr">Fig 18)</ref>.</p><p>The DeepEFE + XGB stands somewhere between the previous two models regarding performance. It is evident from the accuracy results of the model over 10 folds illustration (Fig <ref type="figure" target="#fig_14">19</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Explainabilty analysis</head><p>Explainability AI (XAI) is a vital aspect in the machine-learning research domain to explain the underlying mechanism of every model or functionality. Because, in a sensitive domain like the medical one, one of the major questions arises regarding the trustworthiness of the AI results and predictions. Therefore, these XAI techniques are helpful to bridge that trust gap. Gradient-Weighted Class-Activation Maps (Grad-CAM) is an XAI tool that is generally used in deep learning models to distinguish the input images' parts that contribute to the </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification prediction of a particular class <ref type="bibr" target="#b46">[47]</ref>. Therefore, we have utilized this technique to produce heatmaps overlaying the input images, with red regions denoting high importance and gradually bluish regions indicating progressively decreasing importance. It elucidates the model's decision boundaries and identifies potential areas of misinterpretation. The associated Grad-CAM function calculates the importance map by deriving the reduction layer output's derivative for a designated class with respect to a convolutional feature map, intelligently selecting suitable layers for the task in classification scenarios. <ref type="bibr">Fig 22 represents</ref> the Grad-CAM analysis on one image from each of the classes that are randomly chosen by the model. It is observed that Grad-CAM accurately highlights the critical area of interest in red, aligning with our research outcomes. From the visualization, we can locate the tumor sites precisely and identify the tumor to distinguish it from the tumor-negative class. However, to some extent, we have encountered cases where Grad-CAM has assigned a mixed color palette or assigned red color beyond the critical regions. This suggests the potential challenges in the model's accurate prediction outcome. Therefore, while Grad-CAM provides valuable insights into the model's attention mechanism, such scenarios strongly suggest that there is still scope to improve the existing XAI tools to convert the black-box artificial intelligence algorithms into glass-box models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparative analysis and discussion</head><p>Table <ref type="table" target="#tab_8">8</ref> provides an in-depth analysis of the models employed and the corresponding results, both in relevant studies found during the literature review and in the proposed methodology. The table highlights an important finding: previous research has mainly focused on using deep features for brain tumor classification, but has only achieved moderately satisfactory accuracies. This underscores a substantial opportunity for further progress and innovation within this domain. Furthermore, it is worth noting that previous studies on brain tumor classification have not adequately tackled the problem of imbalanced datasets. The majority of these studies have primarily focused on binary classification tasks neglecting the heterogeneity of the input data. This study, in contrast, introduces a highly effective pipeline to address the </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification challenge of imbalanced diversified datasets, while also significantly improving the accuracy of brain tumor classification. By addressing the imbalanced dataset challenge and prioritizing multi-class classification, the study seeks to elevate the accuracy and robustness of brain tumor classification algorithms. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion and future work</head><p>Detecting a brain tumor poses a significant challenge due to the intricate nature of the brain's structure. This study has navigated the complex landscape of brain tumor classification through the amalgamation of diverse machine learning and deep learning techniques. Dealing with imbalanced medical datasets presents a significant challenge in ensuring proper healthcare as it frequently leads to biased behavior favoring the majority classes. This research aims to address the critical issue of brain tumors by presenting a comprehensive and reliable pipeline for early-stage classification of brain tumors. The significance of this pipeline cannot be exaggerated, as it plays a crucial role in addressing the growing prevalence of brain tumor-related diseases worldwide.</p><p>The proposed pipeline incorporates a hybrid dual-GAN mechanism producing realistic synthetic images from the original image data, effectively. The hybrid dual-GAN mechanism utilizes both WGAN-GP and Real-ESRGAN to improve the quality of these newly created image data. This approach aims to address the imbalance in the MRI dataset and produce more realistic artificial images for improved training and analysis. Furthermore, the pipeline incorporates advanced ensemble feature extraction techniques to extract meaningful features   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Fig 14. The average Precision-recall curve for (DeepEFE + SVM) model after 10-Fold CV. parts of the input images. This makes the proposed mechanism more reliable by turning black-box models into easier-to-understand glass-box techniques. However, these XAI tools need further development for more accurate precision since they marked a few non-contributing regions as well which can lead to misinterpretation of the model. The current paper contributes to the field of medical diagnostics as the insights provided by Grad-CAM enhance the transparency and trustworthiness of the model's predictions. It lays the groundwork for further advancements in brain tumor classification integrating distributed ML approaches on more complex datasets.</p><p>We will prioritize the emphasis on ensuring user privacy and data confidentiality in our future work, as these concerns are of supreme importance in this 21 st century, especially when working with medical data. To achieve this, we aim to implement robust encryption protocols and integrate distributed ML approaches to our proposed pipeline. This approach not only minimizes the risk of potential data breaches but also allows for a more collaborative and secure healthcare environment by ensuring model training across decentralized devices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Fig 17. Precision-recall curve at each fold for (DeepEFE + RF) model. <ref type="url" target="https://doi.org/10.1371/journal.pone.0310748.g017">https://doi.org/10.1371/journal.pone.0310748.g017</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Additionally, we plan to analyze gene expression datasets to determine the efficacy of our proposed pipeline when trained on such datasets. We believe this integration will help experts gain valuable insights into how biological structures influence brain tumors ultimately leading to the development of more personalized treatment strategies based on individual gene expression patterns. Fig 19. (DeepEFE + XGB) model performance over 10-Fold CV. <ref type="url" target="https://doi.org/10.1371/journal.pone.0310748.g019">https://doi.org/10.1371/journal.pone.0310748.g019</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification Fig 21. The average Precision-recall curve for (DeepEFE + XGB) model after 10-fold CV. <ref type="url" target="https://doi.org/10.1371/journal.pone.0310748.g021">https://doi.org/10.1371/journal.pone.0310748.g021</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification PLOS ONE An explainable ensemble approach for advanced brain tumor classification Fig 23. Comparison with the baseline studies. (a) The image illustrates the analyzed model's performance comparison. (b) The image compares the proposed model with other novel studies on brain tumor classification. <ref type="url" target="https://doi.org/10.1371/journal.pone.0310748.g023">https://doi.org/10.1371/journal.pone.0310748.g023</ref> </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig 1 Fig 1 .</head><label>11</label><figDesc>Fig 1 illustrates the comprehensive methodology proposed by this study. This provides a detailed insight into the used components and steps taken. This study applies basic image preprocessing and augmentation techniques to the target image dataset, enhancing its quality and usability for further analysis and interpretation. We introduce a hybrid framework that combines Wasserstein GAN with Gradient Penalty (WGAN-GP) and Real Enhanced Super-Resolution GAN (Real-ESRGAN) to effectively address the issue of data imbalance by generating real-like artificial data images. Addressing data imbalance is crucial prior to the</figDesc><graphic coords="7,53.04,214.44,522.96,463.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig 2 .</head><label>2</label><figDesc>Fig 2. Flowchart of the proposed methodology. https://doi.org/10.1371/journal.pone.0310748.g002</figDesc><graphic coords="8,130.08,303.24,445.92,374.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>' classes contain 1621, 1645, 2000, 1767 and 70 images respectively. A snapshot of the utilized dataset is presented in Fig 3. It further depicts the imbalance nature of the dataset.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig 3 .</head><label>3</label><figDesc>Fig 3. Dataset samples and its imbalanced nature. https://doi.org/10.1371/journal.pone.0310748.g003</figDesc><graphic coords="9,42.72,330.84,533.28,346.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Algorithm 1</head><label>1</label><figDesc>PROPOSED DUAL-GAN MECHANISM Input: WGAN-GP, RealESRGAN, DS1, // DS1 contains the minority class images EPOCH_NUMBER, BATCH_SIZE Output: Balanced_Class Initialization: 1: Low-res_Data = [ ] // An empty list to store generated low-resolution images 2: Enhanced_Data = [ ] // An empty list to store enhanced synthetic images 3: Balanced_Class = [ ] // An empty list to store the real and synthetic images 4: for each in range(EPOCH_NUMBER) 5: for each in range (BATCH_SIZE) 6: Low-res_Data = (WGAN-GP, DS1) // Perform WGAN-GP 7: update WGAN-GP(parameters) 8: for each in Low-res_Data 9: Enhanced_Data = (RealESRGAN, Low-res_Data) // Perform RealESRGAN 10: Balanced_Class[ ] = Enhanced_Data[ ] || DS1[ ] // concatenation operation 11: return Balanced_Class // return the class with balanced data</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig 4 .</head><label>4</label><figDesc>Fig 4. The proposed dual-GAN mechanism. https://doi.org/10.1371/journal.pone.0310748.g004</figDesc><graphic coords="11,127.44,77.29,448.56,243.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig 5 .</head><label>5</label><figDesc>Fig 5. Architecture of VGG16. https://doi.org/10.1371/journal.pone.0310748.g005</figDesc><graphic coords="12,50.16,353.84,525.84,323.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig 6 Fig 6 .</head><label>66</label><figDesc>Fig 6. DeepEFE model architecture. https://doi.org/10.1371/journal.pone.0310748.g006</figDesc><graphic coords="13,99.60,483.00,476.40,194.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><figDesc>TN, FP, and FN refer to True Positive, True Negative, False Positive, and False Negative, respectively. Training Accuracy is a performance metric that measures the model's ability to predict the training dataset's labels or outcomes correctly. High training accuracy indicates that the model can accurately predict examples it has seen during training. Validation Accuracy assesses the model's predictive performance on a separate dataset called the validation dataset. A Loss Curve, also known as a learning curve, tracks the model's loss (a measure of error) on both the training and validation datasets across multiple training iterations or epochs. To evaluate the efficiency of the proposed Dual-GAN mechanism, generator and discriminator loss curves were assessed.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><figDesc>Fig 7 and Fig 8 provide more evidence regarding this scenario. Especially, the purple line depicting the minority class is seen as having lower values both in the AUC curve and the precision-recall curve.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><figDesc>layers = 7, optimizer = 'adam' , epochs = [40, 40], loss_function = sparse_categori-cal_crossentropy, activation = ReLU, metrics = ['accuracy'] ResNet50 weights = 'imagenet' , optimizer = 'adam' , epochs = [45, 42], loss_function = categorical_ crossentropy, include_top = False, metrics = ['accuracy'] EDL optimizer = adam, learning_rate = 0.0001, loss_function = sparse_categorical_crossentropy, metrics = ['accuracy'], include_top = False, epochs = [45, 27] VGG16 weights = 'imagenet' , optimizer = 'adam' , include_top = False, classifier_activation = softmax Inception-ResNetV2 weights = 'imagenet' , include_top = False, classifier_activation = softmax DenseNet201 weights = 'imagenet' , include_top = False, classifier_activation = softmax DeepEFE Base Models: DenseNet201, InceptionResNetV2, VGG16 weights: 'imagenet' , optimizer = 'adam' , include_top = False, classifier_activation = softmax Concatenation: Features from DenseNet201, InceptionResNetV2, and VGG16 SVM kernel = 'linear' , probability = True RF n_estimators = 100, random_state = 42 XGB max_depth = 3, learning_rate = 0.1, n_estimators = 100 This table presents the experimental setup and optimized hyperparameters for each of the utilized algorithms. The parameter `epoch' represents the number of epochs needed for a model to converge and make the final predictions. https://doi.org/10.1371/journal.pone.0310748.t003</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig 7 .</head><label>7</label><figDesc>Fig 7. Comparison of AUC curves on imbalanced dataset. (a) CNN, (b) ResNet50, (c) EDL, (d) VGG16 + SVM, (e) VGG16 + RF, (f) VGG16 + XGB, (g) InceptionResnetV2 + SVM, (h) InceptionResnetV2 + RF, (i) InceptionResnetV2 + XGB, (j) DenseNet201 + SVM, (k) DenseNet201 + RF, (l) DenseNet201 + XGB, (m) DeepEFE + SVM, (n) DeepEFE + RF, (o) DeepEFE + XGB. https://doi.org/10.1371/journal.pone.0310748.g007</figDesc><graphic coords="19,176.64,77.29,379.44,584.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Fig 8 .</head><label>8</label><figDesc>Fig 8. Comparison of Precision-recall curves for imbalanced dataset. (a) CNN, (b) ResNet50, (c) EDL, (d) VGG16 + SVM, (e) VGG16 + RF, (f) VGG16 + XGB, (g) InceptionResnetV2 + SVM, (h) InceptionResnetV2 + RF, (i) InceptionResnetV2 + XGB, (j) DenseNet201 + SVM, (k) DenseNet201 + RF, (l) DenseNet201 + XGB, (m) DeepEFE + SVM, (n) DeepEFE + RF, (o) DeepEFE + XGB. https://doi.org/10.1371/journal.pone.0310748.g008</figDesc><graphic coords="20,171.36,77.29,380.40,574.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><figDesc>Fig 9 and Fig 10 further validate these findings. Here we see a balanced AUC curve and precision-recall curve, although the performance of ResNet50 and the EDL model</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Fig 9 .</head><label>9</label><figDesc>Fig 9. Comparison of AUC curves on balanced dataset. (a) CNN, (b) ResNet50, (c) EDL, (d) VGG16 + SVM, (e) VGG16 + RF, (f) VGG16 + XGB, (g) InceptionResnetV2 + SVM, (h) InceptionResnetV2 + RF, (i) InceptionResnetV2 + XGB, (j) DenseNet201 + SVM, (k) DenseNet201 + RF, (l) DenseNet201 + XGB, (m) DeepEFE + SVM, (n) DeepEFE + RF, (o) DeepEFE + XGB. https://doi.org/10.1371/journal.pone.0310748.g009</figDesc><graphic coords="23,174.72,77.29,381.12,582.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>Fig 10 .</head><label>10</label><figDesc>Fig 10. Comparison of Precision-recall curves for balanced dataset. (a) CNN, (b) ResNet50, (c) EDL, (d) VGG16 + SVM, (e) VGG16 + RF, (f) VGG16 + XGB, (g) InceptionResnetV2 + SVM, (h) InceptionResnetV2 + RF, (i) Inception-ResnetV2 + XGB, (j) DenseNet201 + SVM, (k) DenseNet201 + RF, (l) DenseNet201 + XGB, (m) DeepEFE + SVM, (n) DeepEFE + RF, (o) DeepEFE + XGB. https://doi.org/10.1371/journal.pone.0310748.g010</figDesc><graphic coords="24,183.36,77.29,372.96,582.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><figDesc>Fig 12 which reflects the stability of the proposed combination. The highest accuracy achieved by the model in a fold is 98.52%. The precision-recall curve per fold for the proposed DeepEFE + SVM model is illustrated in Fig 13. And, the average PR curve for the model after a 10-fold CV is illustrated in the next figure (Fig 14). With no PR curve value lower than 0.99 it refers to the model's stable performance in classifying brain tumors. The next figure shows the confusion matrix of the model (Fig 15). With minimal misclassification, the confusion matrix reflects the tabulated results and resonates with the proposed model's superiority.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17"><figDesc>Likewise, the PR curves show a balanced and positive classification efficiency both during individual folds Fig 20 and in average Fig 21. The proposed DeepEFE model has shown a stable and reliable performance, especially when it was coupled with the SVM classifier. The analysis of the model performances reverberates the proposed model's precision and generalizability in classification task.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18"><figDesc>Fig 23 further demonstrates the outcomes derived from the hybrid pipeline implemented.The figure above clearly demonstrates that the combination of DeepEFE and SVM outperforms previous studies, with the highest average accuracy achieved. These promising results suggest that the integration of DeepEFE with SVM has the potential to improve accuracy in multi-class classification tasks significantly.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19"><figDesc>from medical imaging data, allowing for accurate and early detection of potential brain tumors. By leveraging advanced ML and deep learning algorithms, the model can classify brain tumor cases with high precision, paving the way for timely intervention and improved patient outcomes.The proposed Deep Ensemble Feature Extraction (DeepEFE) model, when combined with SVM, attained a remarkable accuracy of 98.15% surpassing other cutting-edge deep learning models. Moreover, the results obtained from 10-fold cross-validation demonstrate the robustness and generalizability of the proposed model. The model's consistent performance across all folds underscores its reliability, implying that it will excel with unseen data. This noteworthy performance demonstrates the effectiveness of combining feature extraction techniques with support vector machines for classification tasks. Furthermore, it showcases the potential of the proposed DeepEFE model in achieving high-performance results in multi-class classification. This study incorporates Grad-CAM to better understand the significantly contributing</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20"><head>Fig 12 .</head><label>12</label><figDesc>Fig 12. (DeepEFE + SVM) model performance over 10-fold cross-validation. https://doi.org/10.1371/journal.pone.0310748.g012</figDesc><graphic coords="30,47.76,77.29,528.24,402.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_21"><head>Fig 13 .Fig 14 .</head><label>1314</label><figDesc>Fig 13. Precision-recall curve at each fold for (DeepEFE + SVM) model. https://doi.org/10.1371/journal.pone.0310748.g013</figDesc><graphic coords="31,36.00,333.05,503.88,366.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_22"><head>Fig 15 .</head><label>15</label><figDesc>Fig 15. Confusion matrix for the proposed (DeepEFE + SVM) after 10-fold CV. https://doi.org/10.1371/journal.pone.0310748.g015</figDesc><graphic coords="32,58.80,77.29,517.20,400.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_23"><head>Fig 16 .</head><label>16</label><figDesc>Fig 16. (DeepEFE + RF) model performance over 10-Fold CV. https://doi.org/10.1371/journal.pone.0310748.g016</figDesc><graphic coords="33,36.00,77.29,459.60,349.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_24"><head>Fig 18 .</head><label>18</label><figDesc>Fig 18. The average precision-recall curve for (DeepEFE + RF) model after 10-Fold CV. https://doi.org/10.1371/journal.pone.0310748.g018</figDesc><graphic coords="34,45.60,77.29,530.40,385.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_25"><head>Fig 20 .Fig 21 .</head><label>2021</label><figDesc>Fig 20. Precision-recall curve at each fold for (DeepEFE + XGB) model. https://doi.org/10.1371/journal.pone.0310748.g020</figDesc><graphic coords="36,36.00,77.29,538.80,210.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_26"><head>Fig 22 .</head><label>22</label><figDesc>Fig 22. Visualization with Grad-CAM for model explainability: Red regions correspond to high scores for the class and blue corresponds to low evidence for the class. https://doi.org/10.1371/journal.pone.0310748.g022</figDesc><graphic coords="37,92.16,77.29,483.84,212.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Architecture of Ensemble Deep Learning (EDL) Model.</head><label>2</label><figDesc>An explainable ensemble approach for advanced brain tumor classification model to discriminate between positive and negative classes across various threshold values. False Positive Rate (FPR) quantifies the proportion of actual negative cases that were incorrectly classified as positive by the model. False Negative Rate (FNR) quantifies the proportion of actual negative cases that were incorrectly classified as negative by the model. True-negative rate (TNR), also known as Specificity, measures the proportion of actual negative cases that are correctly identified by a binary classification model.</figDesc><table><row><cell>Layer (type)</cell><cell>Output Shape</cell><cell>Param, #</cell><cell>Connected to</cell></row><row><cell>input_7 (InputLayer)</cell><cell>[(None,240, 3)]</cell><cell>0</cell><cell>[]</cell></row><row><cell>model (Functional)</cell><cell>(None, 5)</cell><cell>44,270,597</cell><cell>['input_7[0][0]']</cell></row><row><cell>model_1 (Functional)</cell><cell>(None, 5)</cell><cell>44,270,597</cell><cell>['input_7[0][0]']</cell></row><row><cell>model_2 (Functional)</cell><cell>(None, 5)</cell><cell>68,526,309</cell><cell>['input_7[0][0]'</cell></row><row><cell>average (Average)</cell><cell>(None, 5)</cell><cell>0</cell><cell>model[0][0]</cell></row><row><cell></cell><cell></cell><cell></cell><cell>model_1[0][0]</cell></row><row><cell></cell><cell></cell><cell></cell><cell>model_2[0][0]</cell></row><row><cell>Total params:</cell><cell>157,067,503</cell><cell></cell><cell></cell></row><row><cell>Trainable params:</cell><cell>102,730,767</cell><cell></cell><cell></cell></row><row><cell>Non-trainable params:</cell><cell>54,336,736</cell><cell></cell><cell></cell></row></table><note><p>The above table denotes the architecture of a hybrid ensemble deep learning (EDL) model introduced in this study. This EDL model is a combination of all three of the, InceptionResNetV2, and DenseNet201. https://doi.org/10.1371/journal.pone.0310748.t002</p><p>PLOS ONE</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Table5provides the results of classification models after applying our proposed Dual-GAN mechanism. This table showcases the positive impact of our This table illustrates the outcomes of different models during the imbalanced dataset. The performance of the minority class is very poor in comparison with the other majority classes, which further contributed to the overall poor outcome of the models.(Continued)</figDesc><table><row><cell>Model</cell><cell>Class</cell><cell>Precision</cell><cell>Sensitivity</cell><cell>F1-Score</cell><cell>Accuracy (%)</cell><cell>FPR</cell><cell>FNR</cell><cell>Specificity</cell></row><row><cell>Dense-Net201 + SVM</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.99</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.01</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.97</cell><cell>0.97</cell><cell>0.97</cell><cell></cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.92</cell><cell>0.96</cell><cell>0.94</cell><cell>96.97</cell><cell>0.02</cell><cell>0.04</cell><cell>0.98</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.99</cell><cell>0.98</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>1.00</cell><cell>0.33</cell><cell>0.50</cell><cell></cell><cell>0.00</cell><cell>0.67</cell><cell>1.00</cell></row><row><cell>Dense-Net201 + RF</cell><cell>no_tumor</cell><cell>0.98</cell><cell>0.97</cell><cell>0.97</cell><cell></cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.97</cell><cell>0.87</cell><cell>0.92</cell><cell></cell><cell>0.01</cell><cell>0.13</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.84</cell><cell>0.90</cell><cell>0.87</cell><cell>92.12</cell><cell>0.05</cell><cell>0.10</cell><cell>0.95</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.89</cell><cell>0.96</cell><cell>0.93</cell><cell></cell><cell>0.04</cell><cell>0.04</cell><cell>0.96</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.00</cell><cell>0.00</cell><cell>0.00</cell><cell></cell><cell>0.00</cell><cell>1.00</cell><cell>1.00</cell></row><row><cell>Dense-Net201 + XGB</cell><cell>no_tumor</cell><cell>0.97</cell><cell>0.99</cell><cell>0.98</cell><cell></cell><cell>0.01</cell><cell>0.01</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.99</cell><cell>0.93</cell><cell>0.96</cell><cell></cell><cell>0.00</cell><cell>0.07</cell><cell>1.00</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.90</cell><cell>0.92</cell><cell>0.91</cell><cell>95.21</cell><cell>0.03</cell><cell>0.08</cell><cell>0.97</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.94</cell><cell>0.99</cell><cell>0.96</cell><cell></cell><cell>0.02</cell><cell>0.01</cell><cell>0.98</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>1.00</cell><cell>0.08</cell><cell>0.15</cell><cell></cell><cell>0.00</cell><cell>0.92</cell><cell>1.00</cell></row><row><cell>DeepEFE + SVM</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.99</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.01</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.98</cell><cell>0.97</cell><cell>0.98</cell><cell></cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.93</cell><cell>0.96</cell><cell>0.94</cell><cell>97.26</cell><cell>0.02</cell><cell>0.04</cell><cell>0.98</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.98</cell><cell>0.98</cell><cell>0.98</cell><cell></cell><cell>0.01</cell><cell>0.02</cell><cell>0.99</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.83</cell><cell>0.42</cell><cell>0.56</cell><cell></cell><cell>0.00</cell><cell>0.58</cell><cell>1.00</cell></row><row><cell>DeepEFE + RF</cell><cell>no_tumor</cell><cell>0.98</cell><cell>0.97</cell><cell>0.98</cell><cell></cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.97</cell><cell>0.88</cell><cell>0.92</cell><cell></cell><cell>0.01</cell><cell>0.12</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.84</cell><cell>0.87</cell><cell>0.85</cell><cell>91.91</cell><cell>0.05</cell><cell>0.13</cell><cell>0.95</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.88</cell><cell>0.97</cell><cell>0.92</cell><cell></cell><cell>0.04</cell><cell>0.03</cell><cell>0.96</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.00</cell><cell>0.00</cell><cell>0.00</cell><cell></cell><cell>0.00</cell><cell>1.00</cell><cell>1.00</cell></row><row><cell>DeepEFE + XGB</cell><cell>no_tumor</cell><cell>0.98</cell><cell>0.98</cell><cell>0.98</cell><cell></cell><cell>0.01</cell><cell>0.02</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.98</cell><cell>0.92</cell><cell>0.95</cell><cell></cell><cell>0.00</cell><cell>0.08</cell><cell>1.00</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.88</cell><cell>0.93</cell><cell>0.90</cell><cell>94.58</cell><cell>0.04</cell><cell>0.07</cell><cell>0.96</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.94</cell><cell>0.98</cell><cell>0.96</cell><cell></cell><cell>0.02</cell><cell>0.02</cell><cell>0.98</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.75</cell><cell>0.25</cell><cell>0.38</cell><cell></cell><cell>0.00</cell><cell>0.75</cell><cell>1.00</cell></row></table><note><p>https://doi.org/10.1371/journal.pone.0310748.t004</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>The table demonstrates the outcomes of different models after following the proposed pipeline. A significant improvement is observed compared to the previous outcomes, especially in terms of the minor class 'craniopharyngioma' .(Continued)   </figDesc><table><row><cell>Model</cell><cell>Class</cell><cell>Precision</cell><cell>Sensitivity</cell><cell>F1-Score</cell><cell>Accuracy (%)</cell><cell>FPR</cell><cell>FNR</cell><cell>Specificity</cell></row><row><cell>Dense-Net201 + SVM</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.98</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.98</cell><cell>0.95</cell><cell>0.96</cell><cell></cell><cell>0.01</cell><cell>0.05</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.91</cell><cell>0.97</cell><cell>0.94</cell><cell>97.04</cell><cell>0.02</cell><cell>0.03</cell><cell>0.98</cell></row><row><cell></cell><cell>pituitary</cell><cell>1.00</cell><cell>0.98</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.98</cell><cell>0.97</cell><cell>0.97</cell><cell></cell><cell>0.00</cell><cell>0.03</cell><cell>1.00</cell></row><row><cell>Dense-Net201 + RF</cell><cell>no_tumor</cell><cell>0.98</cell><cell>0.97</cell><cell>0.97</cell><cell></cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.97</cell><cell>0.86</cell><cell>0.91</cell><cell></cell><cell>0.01</cell><cell>0.14</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.86</cell><cell>0.89</cell><cell>0.87</cell><cell>93.03</cell><cell>0.04</cell><cell>0.11</cell><cell>0.96</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.88</cell><cell>0.97</cell><cell>0.93</cell><cell></cell><cell>0.04</cell><cell>0.03</cell><cell>0.96</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>1.00</cell><cell>0.96</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.04</cell><cell>1.00</cell></row><row><cell>Dense-Net201 + XGB</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.97</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.03</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.98</cell><cell>0.92</cell><cell>0.95</cell><cell></cell><cell>0.00</cell><cell>0.08</cell><cell>1.00</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.90</cell><cell>0.94</cell><cell>0.92</cell><cell>95.81</cell><cell>0.03</cell><cell>0.06</cell><cell>0.97</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.96</cell><cell>0.99</cell><cell>0.97</cell><cell></cell><cell>0.01</cell><cell>0.01</cell><cell>0.99</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.98</cell><cell>0.97</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.03</cell><cell>1.00</cell></row><row><cell>DeepEFE + SVM</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.99</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.01</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.99</cell><cell>0.96</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.04</cell><cell>1.00</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.94</cell><cell>0.98</cell><cell>0.96</cell><cell>98.15</cell><cell>0.02</cell><cell>0.02</cell><cell>0.98</cell></row><row><cell></cell><cell>pituitary</cell><cell>1.00</cell><cell>0.99</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.01</cell><cell>1.00</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.99</cell><cell>0.98</cell><cell>0.99</cell><cell></cell><cell>0.00</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell>DeepEFE + RF</cell><cell>no_tumor</cell><cell>0.97</cell><cell>0.96</cell><cell>0.97</cell><cell></cell><cell>0.01</cell><cell>0.04</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.97</cell><cell>0.87</cell><cell>0.92</cell><cell></cell><cell>0.01</cell><cell>0.13</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.85</cell><cell>0.87</cell><cell>0.86</cell><cell>92.66</cell><cell>0.04</cell><cell>0.13</cell><cell>0.96</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.88</cell><cell>0.98</cell><cell>0.92</cell><cell></cell><cell>0.04</cell><cell>0.02</cell><cell>0.96</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>1.00</cell><cell>0.96</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.04</cell><cell>1.00</cell></row><row><cell>DeepEFE + XGB</cell><cell>no_tumor</cell><cell>0.99</cell><cell>0.98</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell></cell><cell>glioma</cell><cell>0.99</cell><cell>0.92</cell><cell>0.96</cell><cell></cell><cell>0.00</cell><cell>0.08</cell><cell>1.00</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.9</cell><cell>0.93</cell><cell>0.92</cell><cell>95.74</cell><cell>0.03</cell><cell>0.07</cell><cell>0.97</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.93</cell><cell>0.98</cell><cell>0.96</cell><cell></cell><cell>0.02</cell><cell>0.02</cell><cell>0.98</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.99</cell><cell>0.97</cell><cell>0.98</cell><cell></cell><cell>0.00</cell><cell>0.03</cell><cell>1.00</cell></row></table><note><p>https://doi.org/10.1371/journal.pone.0310748.t005</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6 . Evaluation of Performance Using Cross-Validation.</head><label>6</label><figDesc>This table demonstrates the Accuracy, Precision, Recall, and F1-Score across all the folds of the cross-validation technique. The values signify that DeepEFE coupled with SVM, notably surpasses other models in all the performance metrics.</figDesc><table><row><cell>Model</cell><cell>Fold</cell><cell>Accuracy</cell><cell>Precision</cell><cell>Sensitivity</cell><cell>F1-Score</cell><cell>Avg. Acc. (%)</cell></row><row><cell>DeepEFE + SVM</cell><cell>1</cell><cell>98.27</cell><cell>98.30</cell><cell>98.27</cell><cell>98.28</cell><cell>97.9</cell></row><row><cell></cell><cell>2</cell><cell>98.27</cell><cell>98.32</cell><cell>98.27</cell><cell>98.28</cell><cell></cell></row><row><cell></cell><cell>3</cell><cell>98.40</cell><cell>98.41</cell><cell>98.40</cell><cell>98.40</cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>97.04</cell><cell>97.07</cell><cell>97.04</cell><cell>97.05</cell><cell></cell></row><row><cell></cell><cell>5</cell><cell>98.02</cell><cell>98.08</cell><cell>98.02</cell><cell>98.03</cell><cell></cell></row><row><cell></cell><cell>6</cell><cell>97.65</cell><cell>97.66</cell><cell>97.65</cell><cell>97.66</cell><cell></cell></row><row><cell></cell><cell>7</cell><cell>98.52</cell><cell>98.55</cell><cell>98.52</cell><cell>98.52</cell><cell></cell></row><row><cell></cell><cell>8</cell><cell>98.02</cell><cell>98.04</cell><cell>98.02</cell><cell>98.03</cell><cell></cell></row><row><cell></cell><cell>9</cell><cell>97.04</cell><cell>97.14</cell><cell>97.04</cell><cell>97.04</cell><cell></cell></row><row><cell></cell><cell>10</cell><cell>97.78</cell><cell>97.83</cell><cell>97.78</cell><cell>97.80</cell><cell></cell></row><row><cell>DeepEFE + RF</cell><cell>1</cell><cell>94.45</cell><cell>94.73</cell><cell>94.45</cell><cell>94.50</cell><cell>93.25</cell></row><row><cell></cell><cell>2</cell><cell>92.48</cell><cell>92.90</cell><cell>92.48</cell><cell>92.50</cell><cell></cell></row><row><cell></cell><cell>3</cell><cell>94.20</cell><cell>94.50</cell><cell>94.20</cell><cell>94.24</cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>93.09</cell><cell>93.36</cell><cell>93.09</cell><cell>93.12</cell><cell></cell></row><row><cell></cell><cell>5</cell><cell>92.60</cell><cell>92.96</cell><cell>92.60</cell><cell>92.63</cell><cell></cell></row><row><cell></cell><cell>6</cell><cell>92.96</cell><cell>93.22</cell><cell>92.96</cell><cell>92.95</cell><cell></cell></row><row><cell></cell><cell>7</cell><cell>94.94</cell><cell>95.05</cell><cell>94.94</cell><cell>94.95</cell><cell></cell></row><row><cell></cell><cell>8</cell><cell>93.83</cell><cell>94.18</cell><cell>93.83</cell><cell>93.86</cell><cell></cell></row><row><cell></cell><cell>9</cell><cell>90.99</cell><cell>91.48</cell><cell>90.99</cell><cell>91.03</cell><cell></cell></row><row><cell></cell><cell>10</cell><cell>92.96</cell><cell>93.27</cell><cell>92.96</cell><cell>92.98</cell><cell></cell></row><row><cell>DeepEFE + XGB</cell><cell>1</cell><cell>96.42</cell><cell>96.54</cell><cell>96.42</cell><cell>96.44</cell><cell>95.64</cell></row><row><cell></cell><cell>2</cell><cell>95.07</cell><cell>95.20</cell><cell>95.07</cell><cell>95.08</cell><cell></cell></row><row><cell></cell><cell>3</cell><cell>96.18</cell><cell>96.22</cell><cell>96.18</cell><cell>96.17</cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>95.31</cell><cell>95.38</cell><cell>95.31</cell><cell>95.31</cell><cell></cell></row><row><cell></cell><cell>5</cell><cell>95.80</cell><cell>95.90</cell><cell>95.80</cell><cell>95.80</cell><cell></cell></row><row><cell></cell><cell>6</cell><cell>95.06</cell><cell>95.15</cell><cell>95.06</cell><cell>95.06</cell><cell></cell></row><row><cell></cell><cell>7</cell><cell>96.67</cell><cell>96.73</cell><cell>96.67</cell><cell>96.68</cell><cell></cell></row><row><cell></cell><cell>8</cell><cell>95.93</cell><cell>96.03</cell><cell>95.93</cell><cell>95.95</cell><cell></cell></row><row><cell></cell><cell>9</cell><cell>94.57</cell><cell>94.93</cell><cell>94.57</cell><cell>94.59</cell><cell></cell></row><row><cell></cell><cell>10</cell><cell>95.43</cell><cell>95.54</cell><cell>95.43</cell><cell>95.44</cell><cell></cell></row></table><note><p>https://doi.org/10.1371/journal.pone.0310748.t006</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 7 . Class-specific Cross Validation Performance Evaluation.</head><label>7</label><figDesc>The table represents the performance of each model against each class after performing cross-validation. Noteworthily, the proposed DeepEFE combined with SVM exhibits superior performance securing the highest sensitivity rates with lesser error ratio.</figDesc><table><row><cell>Model</cell><cell>Class</cell><cell>TPR</cell><cell>TNR</cell><cell>FPR</cell><cell>FNR</cell><cell>Specificity</cell></row><row><cell>DeepEFE + SVM</cell><cell>no_tumor</cell><cell>0.99</cell><cell>1.00</cell><cell>0.00</cell><cell>0.01</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.96</cell><cell>1.00</cell><cell>0.00</cell><cell>0.04</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.97</cell><cell>0.99</cell><cell>0.01</cell><cell>0.03</cell><cell>0.98</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.99</cell><cell>1.00</cell><cell>0.00</cell><cell>0.01</cell><cell>1.00</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.97</cell><cell>1.00</cell><cell>0.00</cell><cell>0.03</cell><cell>1.00</cell></row><row><cell>DeepEFE + RF</cell><cell>no_tumor</cell><cell>0.97</cell><cell>0.99</cell><cell>0.01</cell><cell>0.03</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.88</cell><cell>0.99</cell><cell>0.01</cell><cell>0.12</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.88</cell><cell>0.96</cell><cell>0.04</cell><cell>0.12</cell><cell>0.95</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.98</cell><cell>0.96</cell><cell>0.04</cell><cell>0.02</cell><cell>0.95</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.94</cell><cell>1.00</cell><cell>0.00</cell><cell>0.06</cell><cell>1.00</cell></row><row><cell>DeepEFE + XGB</cell><cell>no_tumor</cell><cell>0.98</cell><cell>0.99</cell><cell>0.01</cell><cell>0.01</cell><cell>0.99</cell></row><row><cell></cell><cell>glioma</cell><cell>0.92</cell><cell>1.00</cell><cell>0.00</cell><cell>0.08</cell><cell>0.99</cell></row><row><cell></cell><cell>meningioma</cell><cell>0.93</cell><cell>0.97</cell><cell>0.03</cell><cell>0.07</cell><cell>0.97</cell></row><row><cell></cell><cell>pituitary</cell><cell>0.98</cell><cell>0.98</cell><cell>0.02</cell><cell>0.02</cell><cell>0.98</cell></row><row><cell></cell><cell>craniopharyngioma</cell><cell>0.96</cell><cell>1.00</cell><cell>0.00</cell><cell>0.04</cell><cell>1.00</cell></row></table><note><p>https://doi.org/10.1371/journal.pone.0310748.t007</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 8 . Comparison with Baseline Studies.</head><label>8</label><figDesc>The table compares the existing approaches with the proposed model and highlights the supremacy of our proposed DeepEFE model. The proposed study addresses a comparatively greater number of classes.</figDesc><table><row><cell>Author</cell><cell>Year</cell><cell>Dataset</cell><cell>Model</cell><cell>Accuracy</cell></row><row><cell>Afshar et al.</cell><cell>2020</cell><cell>Public Dataset (3 classes)</cell><cell>Boosted Capsule Networks</cell><cell>92.45%</cell></row><row><cell>Ali et al.</cell><cell>2023</cell><cell>Public Dataset (4 classes)</cell><cell>WBM-DLNet with SVM</cell><cell>95.70%</cell></row><row><cell>Sujatha &amp; Rao</cell><cell>2023</cell><cell>Public Dataset</cell><cell>DenseNet201</cell><cell>88.00%</cell></row><row><cell>Bitto et al.</cell><cell>2023</cell><cell>Private Dataset</cell><cell>ResNet-50</cell><cell>96.76%</cell></row><row><cell>Najeeb et al.</cell><cell>2022</cell><cell>Public Dataset</cell><cell>Deep Features</cell><cell>90.20%</cell></row><row><cell>Togȃ çar et al.</cell><cell>2020</cell><cell>Public Dataset (2 classes)</cell><cell cols="2">CNN with attention modules and hypercolumn technique 96.05%</cell></row><row><cell>Ramamoorthy et al.</cell><cell>2022</cell><cell>Private Dataset (2 classes)</cell><cell>Adaptive Histogram Contrast Normalization with Learn-</cell><cell>93.00%</cell></row><row><cell></cell><cell></cell><cell></cell><cell>ing-based Neural Quantization</cell><cell></cell></row><row><cell>Shimanto et al. [48]</cell><cell>2023</cell><cell>Public Dataset (4 classes)</cell><cell>Deep Features with SVM</cell><cell>97.14%</cell></row><row><cell>Khan et al. [49]</cell><cell>2022</cell><cell>Public Dataset (4 classes)</cell><cell>23-layers CNN model</cell><cell>97.80%</cell></row><row><cell>Díaz-Pernas et al. [50]</cell><cell>2021</cell><cell>Public Dataset (4 classes)</cell><cell>CNN</cell><cell>97.00%</cell></row><row><cell>Dipu et al. [51]</cell><cell>2021</cell><cell>Public Dataset (2 classes)</cell><cell>FastAi</cell><cell>95.78%</cell></row><row><cell>Saxena et al. [52]</cell><cell>2020</cell><cell>Public Dataset (2 classes)</cell><cell>ResNet50</cell><cell>95.00%</cell></row><row><cell>Gudigar et al. [53]</cell><cell>2019</cell><cell>Public Dataset (2 classes)</cell><cell>Particle Swarm Optimization with SVM</cell><cell>97.40%</cell></row><row><cell>Hemanth et al. [54]</cell><cell>2019</cell><cell>Public Dataset (4 classes)</cell><cell>DCNN</cell><cell>95.00%</cell></row><row><cell>This Study</cell><cell>2024</cell><cell>Combined Dataset from 3 Publicly Avail-</cell><cell>Deep Ensemble Feature Extraction combined with SVM</cell><cell>98.15%</cell></row><row><cell></cell><cell></cell><cell>able Ones (5 classes)</cell><cell></cell><cell></cell></row></table><note><p>https://doi.org/10.1371/journal.pone.0310748.t008</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>PLOS ONE | https://doi.org/10.1371/journal.pone.0310748September 27, 2024   </p></note>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The author(s) received no specific funding for this work.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The data underlying the results presented in the study are available from (<ref type="url" target="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset">https://www.kaggle.com/  datasets/masoudnickparvar/brain-tumor-mri- dataset</ref> and <ref type="url" target="https://www.kaggle.com/datasets/niranjananehru/brain-tumour-dataset">https://www.kaggle.com/datasets/  niranjananehru/brain-tumour-dataset</ref>).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests:</head><p>The authors have declared that no competing interests exist.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PLOS ONE</head><p>An explainable ensemble approach for advanced brain tumor classification </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Handcrafted Deep-Feature-Based Brain Tumor Detection and Classification Using MRI Images</title>
+		<author>
+			<persName><forename type="first">Prakash</forename><surname>Mohan</surname></persName>
+			<idno type="ORCID">0000-0002-9476-3142</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sathishkumar</forename><surname>Veerappampalayam Easwaramoorthy</surname></persName>
+			<idno type="ORCID">0000-0002-8271-2022</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neelakandan</forename><surname>Subramani</surname></persName>
+			<idno type="ORCID">0000-0001-8583-0019</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Malliga</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangeetha</forename><surname>Meckanzi</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/electronics11244178</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Electronics</title>
+		<title level="j" type="abbrev">Electronics</title>
+		<idno type="ISSNe">2079-9292</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">24</biblScope>
+			<biblScope unit="page">4178</biblScope>
+			<date type="published" when="2022-12-14">December 14, 2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mohan P., Veerappampalayam Easwaramoorthy S., Subramani N., Subramanian M., Meckanzi S. Handcrafted Deep-Feature-Based Brain Tumor Detection and Classification Using MRI Images. Elec- tronics, vol. 11, no. 24, article number 4178, December 14, 2022. doi: 10.3390/electronics11244178</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">POSTTRAUMATIC CEREBRAL HEMORRHAGE WITH DELAYED SYMPTOMS SIMULATING BRAIN TUMOR: REPORT OF CASE</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Ecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Love</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0025-6196(25)11450-x</idno>
+		<ptr target="https://www.mayoclinic.org/diseases-conditions/brain-tumor/symptoms-causes/" />
+	</analytic>
+	<monogr>
+		<title level="j">Mayo Clinic Proceedings</title>
+		<title level="j" type="abbrev">Mayo Clinic Proceedings</title>
+		<idno type="ISSN">0025-6196</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="107" to="109" />
+			<date type="published" when="2023-10-26">2023. 2023-10-26</date>
+			<publisher>Elsevier BV</publisher>
+			<pubPlace>Year</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brain tumor-Symptoms and causes-Mayo Clinic. Year: 2023. Accessed on 2023-10-26. Available online: https://www.mayoclinic.org/diseases-conditions/brain-tumor/symptoms-causes/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">MRI U-Net-Based Semantic Segmentation for Enhanced Brain Tumor Diagnosis</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Arslan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ammara</forename><forename type="middle">Nawaz</forename><surname>Cheema</surname></persName>
+		</author>
+		<idno type="DOI">10.62500/icrtsda.1.1.11</idno>
+		<ptr target="https://www.cancer.net/cancer-types/brain-tumor/statistics" />
+	</analytic>
+	<monogr>
+		<title level="m">Resent Trends in Statistics Data Analytics</title>
+		<imprint>
+			<publisher>Air University</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="95" to="99" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brain Tumor-Statistics. Year: 2023. Available online: https://www.cancer.net/cancer-types/ brain-tumor/statistics.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">StatBite SEER Incidence of Brain and Other Nervous System Cancers 1992-2007</title>
+		<idno type="DOI">10.1093/jnci/djq255</idno>
+		<ptr target="https://seer.cancer.gov/statfacts/html/brain.html" />
+	</analytic>
+	<monogr>
+		<title level="j">JNCI Journal of the National Cancer Institute</title>
+		<title level="j" type="abbrev">JNCI Journal of the National Cancer Institute</title>
+		<idno type="ISSN">0027-8874</idno>
+		<idno type="ISSNe">1460-2105</idno>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="930" to="930" />
+			<date type="published" when="2024-03-12">2024-03-12</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cancer of the Brain and Other Nervous System-Cancer Stat Facts. Accessed on 2024-03-12. Avail- able at: https://seer.cancer.gov/statfacts/html/brain.html.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">MRI U-Net-Based Semantic Segmentation for Enhanced Brain Tumor Diagnosis</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Arslan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ammara</forename><forename type="middle">Nawaz</forename><surname>Cheema</surname></persName>
+		</author>
+		<idno type="DOI">10.62500/icrtsda.1.1.11</idno>
+		<ptr target="https://www.cancer.net/cancer-types/brain-tumor/statistics" />
+	</analytic>
+	<monogr>
+		<title level="m">Resent Trends in Statistics Data Analytics</title>
+		<imprint>
+			<publisher>Air University</publisher>
+			<date type="published" when="2024-03-12">2024-03-12</date>
+			<biblScope unit="page" from="95" to="99" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brain Tumor-Statistics. Accessed on 2024-03-12. Available at: https://www.cancer.net/cancer-types/ brain-tumor/statistics.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Brain tumour classification using two‐tier classifier with adaptive segmentation technique</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Anitha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Murugavalli</surname></persName>
+		</author>
+		<idno type="DOI">10.1049/iet-cvi.2014.0193</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IET Computer Vision</title>
+		<title level="j" type="abbrev">IET Computer Vision</title>
+		<idno type="ISSN">1751-9632</idno>
+		<idno type="ISSNe">1751-9640</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="9" to="17" />
+			<date type="published" when="2016-02">February 2016</date>
+			<publisher>Institution of Engineering and Technology (IET)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Anitha V. and Murugavalli S. Brain tumour classification using twotier classifier with adaptive seg- mentation technique. IET Computer Vision, vol. 10, no. 1, pp. 9-17, February 2016. doi: 10.1049/ iet-cvi.2014.0193</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">BoostCaps: A Boosted Capsule Network for Brain Tumor Classification</title>
+		<author>
+			<persName><forename type="first">Parnian</forename><surname>Afshar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantinos</forename><forename type="middle">N</forename><surname>Plataniotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arash</forename><surname>Mohammadi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/embc44109.2020.9175922</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-07">2020. 2020 July</date>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1075" to="1079" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Afshar, P. and Plataniotis, K. N. and Mohammadi, A. BoostCaps: A Boosted Capsule Network for Brain Tumor Classification. 2020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC). 2020 July.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Brain Tumor Dataset. figshare</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Cheng</surname></persName>
+		</author>
+		<idno type="DOI">10.6084/m9.figshare.1512427.v5</idno>
+		<ptr target="https://doi.org/10.6084/m9.figshare.1512427.v5" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cheng, Jun. Brain Tumor Dataset. figshare, 2017. Available online: https://doi.org/10.6084/ m9.figshare.1512427.v5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">CNN-LSTM: Cascaded Framework For Brain Tumour Classification</title>
+		<author>
+			<persName><forename type="first">Iram</forename><surname>Shahzadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><forename type="middle">Boon</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabrice</forename><surname>Meriadeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdul</forename><surname>Quyyum</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iecbes.2018.8626704</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE-EMBS Conference on Biomedical Engineering and Sciences (IECBES)</title>
+		<meeting><address><addrLine>IECBES</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-12">2018. December 2018</date>
+			<biblScope unit="page" from="633" to="637" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shahzadi, I. and Tang, T. B. and Meriadeau, F. and Quyyum, A. CNN-LSTM: Cascaded Framework For Brain Tumour Classification. 2018 IEEE-EMBS Conference on Biomedical Engineering and Sciences (IECBES), December 2018.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)</title>
+		<author>
+			<persName><forename type="first">Bjoern</forename><forename type="middle">H</forename><surname>Menze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andras</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliya</forename><surname>Burren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><surname>Porz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Slotboom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Levente</forename><surname>Lanczi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-Andre</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Arbel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">B</forename><surname>Avants</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Ayache</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Buendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Louis</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Cordier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">J</forename><surname>Corso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Criminisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tilak</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Delingette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cagatay</forename><surname>Demiralp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Durst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Dojat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Senan</forename><surname>Doyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joana</forename><surname>Festa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ezequiel</forename><surname>Geremia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Glocker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Polina</forename><surname>Golland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotao</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andac</forename><surname>Hamamci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">M</forename><surname>Iftekharuddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raj</forename><surname>Jena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">M</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ender</forename><surname>Konukoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danial</forename><surname>Lashkari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">Antonio</forename><surname>Mariz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doina</forename><surname>Precup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tammy</forename><forename type="middle">Riklin</forename><surname>Raviv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">M S</forename><surname>Reza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Duygu</forename><surname>Sarikaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hoo-Chang</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Shotton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">A</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Sousa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nagesh</forename><forename type="middle">K</forename><surname>Subbanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabor</forename><surname>Szekely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Owen</forename><forename type="middle">M</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Tustison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gozde</forename><surname>Unal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flor</forename><surname>Vasseur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Wintermark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><forename type="middle">Hye</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Binsheng</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darko</forename><surname>Zikic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Prastawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><surname>Van Leemput</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2014.2377694</idno>
+		<ptr target="https://doi.org/10.1109/TMI.2014.2377694" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1993" to="2024" />
+			<date type="published" when="2015-10-01">October 1, 2015</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). Available online: https://doi. org/10.1109/TMI.2014.2377694, October 1, 2015.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">WBM-DLNets: Wrapper-Based Metaheuristic Deep Learning Networks Feature Optimization for Enhancing Brain Tumor Detection</title>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Muhammad Umair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hussain</forename><surname>Shaik Javeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zafar</forename><surname>Amad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Bhutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><surname>Raheel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Seung Won</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/bioengineering10040475</idno>
+		<idno type="PMID">37106662</idno>
+		<ptr target="https://www.mdpi.com/2306-5354/10/4/475.doi:10.3390/bioengineering10040475" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioengineering</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">475</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ali Muhammad Umair, Hussain Shaik Javeed, Zafar Amad, Bhutta Muhammad Raheel, Lee Seung Won. WBM-DLNets: Wrapper-Based Metaheuristic Deep Learning Networks Feature Optimization for Enhancing Brain Tumor Detection. Bioengineering, vol. 10, no. 4, article number 475, 2023. Available online: https://www.mdpi.com/2306-5354/10/4/475. doi: 10.3390/bioengineering10040475 PMID: 37106662</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Figure 5: Class distribution of the Kaggle brain tumor MRI dataset.</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chakrabarty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kanchan</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.3165/fig-5</idno>
+		<ptr target="https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri?select=Training" />
+	</analytic>
+	<monogr>
+		<title level="m">Brain Tumor Classification (MRI)</title>
+		<imprint>
+			<publisher>PeerJ</publisher>
+			<date type="published" when="2022-03-17">17 March 2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chakrabarty, N., Kanchan, S. Brain Tumor Classification (MRI). Available online: https://www.kaggle. com/datasets/sartajbhuvaji/brain-tumor-classification-mri?select=Training. Accessed on 17 March 2022.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Densenet201:A Customized DNN Model for Multi-Class Classification and Detection of Tumors Based on Brain MRI Images</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sujatha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Srinivasa</forename><surname>Rao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icecct56650.2023.10179642</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 Fifth International Conference on Electrical, Computer and Communication Technologies (ICECCT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-02-22">201. 2023. February 22, 2023</date>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sujatha, K. and Rao, B. S. Densenet201: A Customized DNN model for Multi-Class Classification and Detection of Tumors Based on Brain MRI Images. 2023 Fifth International Conference on Electrical, Computer and Communication Technologies (ICECCT), February 22, 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Tumor-Net: convolutional neural network modeling for classifying brain tumors from MRI images</title>
+		<author>
+			<persName><forename type="first">Abu</forename><forename type="middle">Kowshir</forename><surname>Bitto</surname></persName>
+			<idno type="ORCID">0000-0003-1561-960X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Hasan Imam</forename><surname>Bijoy</surname></persName>
+			<idno type="ORCID">0000-0002-4756-3025</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sabina</forename><surname>Yesmin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Imran</forename><surname>Mahmud</surname></persName>
+			<idno type="ORCID">0000-0003-2962-8515</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Jueal</forename><surname>Mia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khalid</forename><forename type="middle">Been Badruzzaman</forename><surname>Biplob</surname></persName>
+		</author>
+		<idno type="DOI">10.26555/ijain.v9i2.872</idno>
+		<ptr target="https://doi.org/10.26555/ijain.v9i2.872" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Advances in Intelligent Informatics</title>
+		<title level="j" type="abbrev">Int. J. Adv. Intell. Informatics</title>
+		<idno type="ISSN">2442-6571</idno>
+		<idno type="ISSNe">2548-3161</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">148</biblScope>
+			<date type="published" when="2023-04-07">April 7, 2023</date>
+			<publisher>Universitas Ahmad Dahlan</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bitto A. K., Bijoy M. H. I., Yesmin S., Mahmud I., Mia M. J., and Biplob K. B. B. Tumor-Net: convolu- tional neural network modeling for classifying brain tumors from MRI images. In: International Journal of Advances in Intelligent Informatics, volume 9, number 2, page 148. April 7, 2023. https://doi. org/10.26555/ijain.v9i2.872</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Classification using Pretrained Deep Convolutional Neural Network</title>
+		<author>
+			<persName><forename type="first">Pongsak</forename><surname>Pilaoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noppadol</forename><surname>Maneerat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Athasart</forename><surname>Nakthewan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruttikorn</forename><surname>Varakulsiripunth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazuhiko</forename><surname>Hamamoto</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iceast58324.2023.10157725</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 9th International Conference on Engineering, Applied Sciences, and Technology (ICEAST)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06-01">2023. June 1, 2023</date>
+			<biblScope unit="page" from="84" to="88" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pilaoon, P., Maneerat, N., Nakthewan, A., Varakulsiripunth, R., Hamamoto, K. Brain Tumor Classifi- cation using Pretrained Deep Convolutional Neural Network. 2023 9th International Conference on Engineering, Applied Sciences, and Technology (ICEAST), June 1, 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Segmentation Utilizing Generative Adversarial, Resnet And Unet Deep Learning</title>
+		<author>
+			<persName><forename type="first">Raghad</forename><forename type="middle">S</forename><surname>Mahamed Najeeb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ielaf</forename><forename type="middle">O</forename><surname>Abdul Majjed Dahl</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccitm56309.2022.10031760</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 8th International Conference on Contemporary Information Technology and Mathematics (ICCITM)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-08-31">2022. August 31, 2022</date>
+			<biblScope unit="page" from="85" to="89" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mahamed Najeeb, R. S., Abdul Majjed Dahl, I. O. Brain Tumor Segmentation Utilizing Generative Adversarial, Resnet And Unet Deep Learning. 2022 8th International Conference on Contemporary Information Technology and Mathematics (ICCITM), August 31, 2022.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">BrainMRNet: Brain tumor detection using magnetic resonance images with a novel convolutional neural network model</title>
+		<author>
+			<persName><forename type="first">Mesut</forename><surname>Toğaçar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Burhan</forename><surname>Ergen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zafer</forename><surname>Cömert</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mehy.2019.109531</idno>
+		<idno type="PMID">31877442</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Hypotheses</title>
+		<title level="j" type="abbrev">Medical Hypotheses</title>
+		<idno type="ISSN">0306-9877</idno>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="page">109531</biblScope>
+			<date type="published" when="2020-01">January 2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Toğaçar M., Ergen B., Cömert Z. BrainMRNet: Brain tumor detection using magnetic resonance images with a novel convolutional neural network model. Medical Hypotheses, vol. 134, p. 109531, January 2020. doi: 10.1016/j.mehy.2019.109531 PMID: 31877442</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Identification and classification of brain tumor MRI images with feature extraction using DWT and probabilistic neural network</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shree</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Varuna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N R</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s40708-017-0075-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Informatics</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="23" to="30" />
+			<date type="published" when="2018-01-08">January 8, 2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shree N. Varuna, Kumar T. N. R. Identification and classification of brain tumor MRI images with fea- ture extraction using DWT and probabilistic neural network. Brain Informatics, vol. 5, no. 1, pp. 23-30, January 8, 2018. doi: 10.1007/s40708-017-0075-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A Hybrid Feature Extraction Method With Regularized Extreme Learning Machine for Brain Tumor Classification</title>
+		<author>
+			<persName><forename type="first">Abdu</forename><surname>Gumaei</surname></persName>
+			<idno type="ORCID">0000-0001-8512-9687</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Mehedi</forename><surname>Hassan</surname></persName>
+			<idno type="ORCID">0000-0002-3479-3606</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Rafiul</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdulhameed</forename><surname>Alelaiwi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giancarlo</forename><surname>Fortino</surname></persName>
+			<idno type="ORCID">0000-0002-4039-891X</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2019.2904145</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="36266" to="36273" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gumaei A., Hassan M. M., Hassan M. R., Alelaiwi A., Fortino G. A Hybrid Feature Extraction Method With Regularized Extreme Learning Machine for Brain Tumor Classification. IEEE Access, vol. 7, pp. 36266-36273, 2019. doi: 10.1109/ACCESS.2019.2904145</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">NeuroNet19: an explainable deep neural network model for the classification of brain tumors using magnetic resonance imaging data</title>
+		<author>
+			<persName><forename type="first">Rezuana</forename><surname>Haque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Mehedi</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anupam</forename><forename type="middle">Kumar</forename><surname>Bairagi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheikh</forename><forename type="middle">Mohammed</forename><surname>Shariful Islam</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-51867-1</idno>
+		<ptr target="https://doi.org/10.1038/s41598-024-51867-1PMID:38233516" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024-01-17">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haque R., Hassan M. M., Bairagi A. K., &amp; S. Islam S. M. NeuroNet19: an explainable deep neural net- work model for the classification of brain tumors using magnetic resonance imaging data. Scientific Reports, 14(1), 2024. https://doi.org/10.1038/s41598-024-51867-1 PMID: 38233516</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">NeuroWave-Net: Enhancing epileptic seizure detection from EEG brain signals via advanced convolutional and long short-term memory networks</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Mehedi</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rezuana</forename><surname>Haque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheikh</forename><forename type="middle">Mohammed Shariful</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hossam</forename><surname>Meshref</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roobaea</forename><surname>Alroobaea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehedi</forename><surname>Masud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anupam</forename><forename type="middle">Kumar</forename><surname>Bairagi</surname></persName>
+		</author>
+		<idno type="DOI">10.3934/bioeng.2024006</idno>
+		<ptr target="https://doi.org/10.3934/bioeng.2024006" />
+	</analytic>
+	<monogr>
+		<title level="j">AIMS Bioengineering</title>
+		<title level="j" type="abbrev">AIMSBOA</title>
+		<idno type="ISSN">2375-1495</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="85" to="109" />
+			<date type="published" when="2024">2024</date>
+			<publisher>American Institute of Mathematical Sciences (AIMS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hassan M. M., Haque R., Islam S. M. S., Meshref H., Alroobaea R., Masud M., et al. NeuroWave-Net: Enhancing epileptic seizure detection from EEG brain signals via advanced convolutional and long short-term memory networks. AIMS Bioengineering, 11(1), 85-109, 2024. https://doi.org/10.3934/ bioeng.2024006</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Earlier Detection of Brain Tumor by Pre-Processing Based on Histogram Equalization with Neural Network</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ramamoorthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shamimul</forename><surname>Qamar</surname></persName>
+			<idno type="ORCID">0000-0002-1091-7715</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ramachandran</forename><surname>Manikandan</surname></persName>
+			<idno type="ORCID">0000-0001-6116-2132</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Noor</forename><forename type="middle">Zaman</forename><surname>Jhanjhi</surname></persName>
+			<idno type="ORCID">0000-0001-8116-4733</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mehedi</forename><surname>Masud</surname></persName>
+			<idno type="ORCID">0000-0001-6019-7245</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">A</forename><surname>Alzain</surname></persName>
+			<idno type="ORCID">0000-0001-5595-4280</idno>
+		</author>
+		<idno type="DOI">10.3390/healthcare10071218</idno>
+		<ptr target="https://doi.org/10.3390/healthcare10071218PMID:35885745" />
+	</analytic>
+	<monogr>
+		<title level="j">Healthcare</title>
+		<title level="j" type="abbrev">Healthcare</title>
+		<idno type="ISSNe">2227-9032</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">1218</biblScope>
+			<date type="published" when="2022-06-29">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ramamoorthy M., Qamar S., Manikandan R., Jhanjhi N. Z., Masud M., &amp; AlZain M. A. Earlier Detection of Brain Tumor by Pre-Processing Based on Histogram Equalization with Neural Network. Healthcare, 10(7), 1218, 2022. https://doi.org/10.3390/healthcare10071218 PMID: 35885745</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Deep learning approach for brain tumor classification using metaheuristic optimization with gene expression data</title>
+		<author>
+			<persName><forename type="first">Amol</forename><forename type="middle">Avinash</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rabia</forename><forename type="middle">Musheer</forename><surname>Aziz</surname></persName>
+			<idno type="ORCID">0000-0003-2655-7272</idno>
+		</author>
+		<idno type="DOI">10.1002/ima.23007</idno>
+		<ptr target="https://doi.org/10.1002/ima.23007" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Imaging Systems and Technology</title>
+		<title level="j" type="abbrev">Int J Imaging Syst Tech</title>
+		<idno type="ISSN">0899-9457</idno>
+		<idno type="ISSNe">1098-1098</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2023-12-16">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Joshi A. A., &amp; Aziz R. M. Deep learning approach for brain tumor classification using metaheuristic optimization with gene expression data. International Journal of Imaging Systems and Technology, 2023. https://doi.org/10.1002/ima.23007</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Optimizing Gene Selection and Cancer Classification with Hybrid Sine Cosine and Cuckoo Search Algorithm</title>
+		<author>
+			<persName><forename type="first">Abrar</forename><surname>Yaqoob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Navneet</forename><forename type="middle">Kumar</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rabia</forename><forename type="middle">Musheer</forename><surname>Aziz</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-3357558/v1</idno>
+		<ptr target="https://doi.org/10.21203/rs.3.rs-3357558/v1" />
+		<imprint>
+			<date type="published" when="2023-09-25">2023</date>
+			<publisher>Research Square Platform LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+	<note type="raw_reference">Yaqoob A., Verma N. K., &amp; Aziz R. M. Optimizing Gene Selection and Cancer Classification with Hybrid Sine Cosine and Cuckoo Search Algorithm. Preprint, 2023. https://doi.org/10.21203/ rs.3.rs-3357558/v1</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A novel and innovative cancer classification framework through a consecutive utilization of hybrid feature selection</title>
+		<author>
+			<persName><forename type="first">Rajul</forename><surname>Mahto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saboor</forename><forename type="middle">Uddin</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rizwan</forename><forename type="middle">Ur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rabia</forename><forename type="middle">Musheer</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priyanka</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saurav</forename><surname>Mallik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aimin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohd</forename><forename type="middle">Asif</forename><surname>Shah</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12859-023-05605-5</idno>
+		<ptr target="https://doi.org/10.1186/s12859-023-05605-5PMID:38102551" />
+	</analytic>
+	<monogr>
+		<title level="j">BMC Bioinformatics</title>
+		<title level="j" type="abbrev">BMC Bioinformatics</title>
+		<idno type="ISSNe">1471-2105</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-12-15">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mahto R., Ahmed S. U., Rahman R. U., Aziz R. M., Roy P., Mallik S., et al. A novel and innovative cancer classification framework through a consecutive utilization of hybrid feature selection. BMC Bioinformatics, 24(1), 2023. https://doi.org/10.1186/s12859-023-05605-5 PMID: 38102551</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A two-phase cuckoo search based approach for gene selection and deep learning classification of cancer disease using gene expression data with a novel fitness function</title>
+		<author>
+			<persName><forename type="first">Amol</forename><forename type="middle">Avinash</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rabia</forename><forename type="middle">Musheer</forename><surname>Aziz</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-024-18327-4</idno>
+		<ptr target="https://doi.org/10.1007/s11042-024-18327-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Tools and Applications</title>
+		<title level="j" type="abbrev">Multimed Tools Appl</title>
+		<idno type="ISSNe">1573-7721</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">28</biblScope>
+			<biblScope unit="page" from="71721" to="71752" />
+			<date type="published" when="2024-02-06">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Joshi A. A., &amp; Aziz R. M. A two-phase cuckoo search based approach for gene selection and deep learning classification of cancer disease using gene expression data with a novel fitness function. Multimedia Tools and Applications, 2024. https://doi.org/10.1007/s11042-024-18327-4</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Machine learning and data mining for breast cancer detection: a comprehensive review</title>
+		<author>
+			<persName><surname>Cbiit</surname></persName>
+		</author>
+		<idno type="DOI">10.19101/tipcv.2023.924003</idno>
+		<ptr target="https://datascience.cancer.gov/news-events/blog/machine-learning-and-computer-vision-offer-new-way-looking-cancer" />
+	</analytic>
+	<monogr>
+		<title level="j">ACCENTS Transactions on Image Processing and Computer Vision</title>
+		<title level="j" type="abbrev">TIPCV</title>
+		<idno type="ISSNe">2455-4707</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<date type="published" when="2021-06-10">2021. June 10, 2024</date>
+			<publisher>ACCENTS</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">CBIIT. Machine learning and computer vision offer a new way of looking at cancer. CBIIT Blog, 2021. Retrieved June 10, 2024, from https://datascience.cancer.gov/news-events/blog/ machine-learning-and-computer-vision-offer-new-way-looking-cancer</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A comprehensive evaluation of Marine predator chaotic algorithm for feature selection of COVID-19</title>
+		<author>
+			<persName><forename type="first">Akash</forename><surname>Saxena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddharth</forename><forename type="middle">Singh</forename><surname>Chouhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rabia</forename><forename type="middle">Musheer</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vani</forename><surname>Agarwal</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12530-023-09557-2</idno>
+		<ptr target="https://doi.org/10.1007/s12530-023-09557-2" />
+	</analytic>
+	<monogr>
+		<title level="j">Evolving Systems</title>
+		<title level="j" type="abbrev">Evolving Systems</title>
+		<idno type="ISSN">1868-6478</idno>
+		<idno type="ISSNe">1868-6486</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1235" to="1248" />
+			<date type="published" when="2024-01-04">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saxena A., Chouhan S. S., Aziz R. M., &amp; Agarwal V. A comprehensive evaluation of Marine predator chaotic algorithm for feature selection of COVID-19. Evolving Systems, 2024. https://doi.org/10.1007/ s12530-023-09557-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agrawal</surname></persName>
+		</author>
+		<ptr target="https://www.analyticsvidhya.com/blog/2021/10/an-end-to-end-introduction-to-generative-adversari-al-networksgans/" />
+		<title level="m">An End-to-End Introduction to Generative Adversarial Networks (GANs)</title>
+		<imprint>
+			<date type="published" when="2023-06-02">June 2, 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Agrawal, R. An End-to-End Introduction to Generative Adversarial Networks (GANs). Available online: https://www.analyticsvidhya.com/blog/2021/10/an-end-to-end-introduction-to-generative-adversari- al-networksgans/, June 2, 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">An Augmented Modulated Deep Learning Based Intelligent Predictive Model for Brain Tumor Detection Using GAN Ensemble</title>
+		<author>
+			<persName><forename type="first">Sahoo</forename><surname>Saswati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mishra</forename><surname>Sushruta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Panda</forename><surname>Baidyanath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akash</forename><surname>Bhoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barsocchi</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Paolo</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s23156930</idno>
+		<idno type="PMID">37571713</idno>
+		<ptr target="https://www.mdpi.com/1424-8220/23/15/6930.doi:10.3390/s23156930" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<date type="published" when="2023">6930. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sahoo Saswati, Mishra Sushruta, Panda Baidyanath, Bhoi Akash Kumar, Barsocchi Paolo. An Aug- mented Modulated Deep Learning Based Intelligent Predictive Model for Brain Tumor Detection Using GAN Ensemble. Sensors, vol. 23, no. 15, article number 6930, 2023. Available online: https://www. mdpi.com/1424-8220/23/15/6930. doi: 10.3390/s23156930 PMID: 37571713</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Combining Noise-to-Image and Image-to-Image GANs: Brain MR Image Augmentation for Tumor Detection</title>
+		<author>
+			<persName><forename type="first">Changhee</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0002-4429-3859</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Leonardo</forename><surname>Rundo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryosuke</forename><surname>Araki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yudai</forename><surname>Nagano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yujiro</forename><surname>Furukawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giancarlo</forename><surname>Mauri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideki</forename><surname>Nakayama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideaki</forename><surname>Hayashi</surname></persName>
+			<idno type="ORCID">0000-0002-4800-1761</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2019.2947606</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="156966" to="156977" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Han C. and Rundo L. and Araki R. and Nagano Y. and Furukawa Y. and Mauri G. et al. Combining Noise-to-Image and Image-to-Image GANs: Brain MR Image Augmentation for Tumor Detection. IEEE Access, vol. 7, pp. 156966-156977, 2019. doi: 10.1109/ACCESS.2019.2947606</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Cross-Modality Augmentation of Brain Mr Images Using a Novel Pairwise Generative Adversarial Network for Enhanced Glioma Classification</title>
+		<author>
+			<persName><forename type="first">Chenjie</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irene Yu-Hua</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asgeir</forename><surname>Store Jakola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icip.2019.8803808</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE International Conference on Image Processing (ICIP)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019. September 2019</date>
+			<biblScope unit="page" from="559" to="563" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ge, C. and Gu, I. Y. H. and Store Jakola, A. and Yang, J. Cross-Modality Augmentation of Brain Mr Images Using a Novel Pairwise Generative Adversarial Network for Enhanced Glioma Classification. 2019 IEEE International Conference on Image Processing (ICIP), September 2019.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection and Classification Using Fine-Tuned CNN with ResNet50 and U-Net Model: A Study on TCGA-LGG and TCIA Dataset for MRI Applications</title>
+		<author>
+			<persName><forename type="first">Abdullah</forename><forename type="middle">A</forename><surname>Asiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmad</forename><surname>Shaf</surname></persName>
+			<idno type="ORCID">0000-0002-0633-5587</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tariq</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Aamir</surname></persName>
+			<idno type="ORCID">0000-0003-0580-3921</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Irfan</surname></persName>
+			<idno type="ORCID">0000-0003-4161-6875</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saeed</forename><surname>Alqahtani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khlood</forename><forename type="middle">M</forename><surname>Mehdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanan</forename><forename type="middle">Talal</forename><surname>Halawani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">H</forename><surname>Alghamdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdullah</forename><forename type="middle">Fahad A</forename><surname>Alshamrani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samar</forename><forename type="middle">M</forename><surname>Alqhtani</surname></persName>
+			<idno type="ORCID">0000-0002-8664-8953</idno>
+		</author>
+		<idno type="DOI">10.3390/life13071449</idno>
+		<ptr target="https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=24282668" />
+	</analytic>
+	<monogr>
+		<title level="j">Life</title>
+		<title level="j" type="abbrev">Life</title>
+		<idno type="ISSNe">2075-1729</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">1449</biblScope>
+			<date type="published" when="2023-06-26" />
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Segmentation Labels and Radiomic Features for the Pre-operative Scans of the TCGA-LGG collec- tion (BraTS-TCGA-LGG)-TCIA DOIs-Cancer Imaging Archive Wiki. Available online: https://wiki. cancerimagingarchive.net/pages/viewpage.action?pageId=24282668.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">MRI-Based Brain Tumor Classification Using Ensemble of Deep Features and Machine Learning Classifiers</title>
+		<author>
+			<persName><forename type="first">Jaeyong</forename><surname>Kang</surname></persName>
+			<idno type="ORCID">0000-0003-1211-2678</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zahid</forename><surname>Ullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeonghwan</forename><surname>Gwak</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s21062222</idno>
+		<ptr target="https://doi.org/10.3390/s21062222PMID:33810176" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">2222</biblScope>
+			<date type="published" when="2021-03-22">2222. March 22, 2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kang J. and Ullah Z. and Gwak J. MRI-Based Brain Tumor Classification Using Ensemble of Deep Features and Machine Learning Classifiers. Sensors, vol. 21, no. 6, p. 2222, March 22, 2021. https:// doi.org/10.3390/s21062222 PMID: 33810176</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection and Classification from MRI Images</title>
+		<author>
+			<persName><forename type="first">Anjaneya</forename><forename type="middle">Teja Sarma</forename><surname>Kalvakolanu</surname></persName>
+		</author>
+		<idno type="DOI">10.15368/theses.2021.16</idno>
+		<ptr target="https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection" />
+	</analytic>
+	<monogr>
+		<title level="m">Brain MRI Images for Brain Tumor Detection</title>
+		<imprint>
+			<publisher>Robert E. Kennedy Library, Cal Poly</publisher>
+			<date type="published" when="2019-04-14">April 14, 2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brain MRI Images for Brain Tumor Detection. Available online: https://www.kaggle.com/datasets/ navoneel/brain-mri-images-for-brain-tumor-detection, April 14, 2019.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<ptr target="https://www.kaggle.com/datasets/ahmed-hamada0/brain-tumor-detection" />
+	</analytic>
+	<monogr>
+		<title level="m">Brain Tumor Detection</title>
+		<imprint>
+			<date type="published" when="2020-11-14">2020. November 14, 2021</date>
+			<biblScope unit="volume">35</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Br35H :: Brain Tumor Detection 2020. Available online: https://www.kaggle.com/datasets/ahmed- hamada0/brain-tumor-detection, November 14, 2021.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Figure 5: Class distribution of the Kaggle brain tumor MRI dataset.</title>
+		<author>
+			<persName><surname>Kaggle</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.3165/fig-5</idno>
+		<ptr target="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset" />
+	</analytic>
+	<monogr>
+		<title level="m">Brain Tumor MRI Dataset</title>
+		<imprint>
+			<publisher>PeerJ</publisher>
+			<date type="published" when="2021-09-24">September 24, 2021</date>
+		</imprint>
+	</monogr>
+	<note>Published online</note>
+	<note type="raw_reference">Kaggle. Brain Tumor MRI Dataset. Published online, September 24, 2021. Available: https://www. kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Figure 5: Class distribution of the Kaggle brain tumor MRI dataset.</title>
+		<author>
+			<persName><surname>Kaggle</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.3165/fig-5</idno>
+		<ptr target="https://www.kaggle.com/datasets/niranjananehru/brain-tumour-dataset" />
+		<imprint>
+			<date type="published" when="2023-07-01">July 1, 2023</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+	<note>Published online</note>
+	<note type="raw_reference">Kaggle. Brain Tumour Dataset. Published online, July 1, 2023. Available: https://www.kaggle.com/ datasets/niranjananehru/brain-tumour-dataset.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Generative Adversarial Networks for Classification</title>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Israel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Goldstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">S</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Talamonti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franklin</forename><surname>Tanner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shane</forename><surname>Zabel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">A</forename><surname>Sallee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Mccoy</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/aipr.2017.8457952</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Applied Imagery Pattern Recognition Workshop (AIPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">2017</date>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Israel, Steven A., J.H. Goldstein, Jeffrey S. Klein, James Talamonti, Franklin Tanner, Shane Zabel, et al. Generative Adversarial Networks for Classification. In: 2017 IEEE Applied Imagery Pattern Recog- nition Workshop (AIPR), pages 1-4. 2017.</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Improved Training of Wasserstein GANs</title>
+		<author>
+			<persName><forename type="first">Ishaan</forename><forename type="middle">;</forename><surname>Gulrajani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faruk</forename><forename type="middle">;</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Arjovsky</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Martin; Dumoulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Courville</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1704.00028</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Year</note>
+	<note type="raw_reference">Gulrajani, Ishaan; Ahmed, Faruk; Arjovsky, Martin; Dumoulin, Vincent; Courville, Aaron. Improved Training of Wasserstein GANs. Year: 2017. ArXiv preprint arXiv:1704.00028.</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks</title>
+		<author>
+			<persName><forename type="first">Xintao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shixiang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinjin</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><forename type="middle">Change</forename><surname>Loy</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-11021-5_5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018-09">September 2018</date>
+			<biblScope unit="page" from="63" to="79" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, Xintao, Ke Yu, Shixiang Wu, Jinjin Gu, Yihao Liu, Chao Dong, et al. ESRGAN: Enhanced super-resolution generative adversarial networks. In: The European Conference on Computer Vision Workshops (ECCVW). September 2018.</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data</title>
+		<author>
+			<persName><forename type="first">Xintao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liangbin</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Shan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccvw54120.2021.00217</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="page" from="1905" to="1914" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, Xintao, Liangbin Xie, Chao Dong, and Ying Shan. Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data. In: International Conference on Computer Vision Work- shops (ICCVW). 2021.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Very Deep Convolutional Networks for Large-Scale Image Recognition</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1409.1556</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.1409.1556" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Simonyan, K., &amp; Zisserman, A. Very Deep Convolutional Networks for Large-Scale Image Recog- nition. In International Conference on Learning Representations, 2015. https://doi.org/10.48550/ arXiv.1409.1556</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Table 7: Accuracy comparisons of proposed CXRVN architecture against Google net, VGG-16, Resnet-18, and Alex net on Dataset-2 and Dataset-3.</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bangar</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.358/table-7</idno>
+		<ptr target="https://medium.com/@siddheshb008/vgg-net-architecture-explained-71179310050f" />
+		<imprint>
+			<date type="published" when="2022-06-29">2022. June 29</date>
+			<publisher>PeerJ</publisher>
+			<pubPlace>Medium</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bangar, S. VGG-Net Architecture Explained-Siddhesh Bangar-Medium. Medium, 2022, June 29. https://medium.com/@siddheshb008/vgg-net-architecture-explained-71179310050f</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Densely Connected Convolutional Networks</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1608.06993</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.1608.06993" />
+	</analytic>
+	<monogr>
+		<title level="j">CVPR</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">3</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang G., Liu Z., Van Der Maaten L., &amp; Weinberger K. Q. Densely Connected Convolutional Net- works. In CVPR, vol. 1, no. 2, p. 3, 2017. https://doi.org/10.48550/arXiv.1608.06993</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Inception-v4, inception-ResNet and the impact of residual connections on learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Alemi</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1602.07261</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.1602.07261" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence</title>
+		<meeting>the Thirty-First AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="4278" to="4284" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Szegedy, C., Ioffe, S., Vanhoucke, V., &amp; Alemi, A. A. Inception-v4, inception-ResNet and the impact of residual connections on learning. In Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence, 2017. AAAI Press, pages 4278-4284. https://doi.org/10.48550/arXiv.1602.07261</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Neuroscope: An Explainable AI Toolbox for Semantic Segmentation and Image Classification of Convolutional Neural Nets</title>
+		<author>
+			<persName><forename type="first">Schorr</forename><surname>Christian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Goodarzi</forename><surname>Payman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Fei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dahmen</forename><surname>Tim</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/app11052199</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Sciences</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<date type="published" when="2021">2199. March 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schorr Christian, Goodarzi Payman, Chen Fei, and Dahmen Tim. Neuroscope: An Explainable AI Toolbox for Semantic Segmentation and Image Classification of Convolutional Neural Nets. In: Applied Sciences, volume 11, page 2199. March 2021. doi: 10.3390/app11052199</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection and Classification by SVM Algorithm and Performance Analysis Through CNN Approach</title>
+		<author>
+			<persName><forename type="first">Shahriar</forename><forename type="middle">Alam</forename><surname>Shimanto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Kamal</forename><surname>Hosain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuvra</forename><forename type="middle">Prokash</forename><surname>Biswas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Saiful</forename><surname>Islam</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ecce57851.2023.10101618</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 International Conference on Electrical, Computer and Communication Engineering (ECCE)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-02-23">2023</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shimanto SA, Hosain MK, Biswas SP, Islam MS. Brain tumor detection and classification by SVM algorithm and performance analysis through CNN approach. 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Accurate brain tumor detection using deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Saikat Islam</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anichur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanoy</forename><surname>Debnath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Razaul</forename><surname>Karim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostofa</forename><forename type="middle">Kamal</forename><surname>Nasir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahab</forename><forename type="middle">S</forename><surname>Band</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>Mosavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iman</forename><surname>Dehzangi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.csbj.2022.08.039</idno>
+		<idno type="PMID">36147663</idno>
+		<ptr target="https://doi.org/10.1016/j.csbj.2022.08.039" />
+	</analytic>
+	<monogr>
+		<title level="j">Computational and Structural Biotechnology Journal</title>
+		<title level="j" type="abbrev">Computational and Structural Biotechnology Journal</title>
+		<idno type="ISSN">2001-0370</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="4733" to="4745" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khan MSI, Rahman A, Debnath T, Karim MR, Nasir MK, Band SS, et al. Accurate brain tumor detec- tion using deep convolutional neural network. Comput Struct Biotechnol J. 2022;20:4733-45. https:// doi.org/10.1016/j.csbj.2022.08.039 PMID: 36147663</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">A Deep Learning Approach for Brain Tumor Classification and Segmentation Using a Multiscale Convolutional Neural Network</title>
+		<author>
+			<persName><forename type="first">Francisco</forename><forename type="middle">Javier</forename><surname>Díaz-Pernas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Martínez-Zarzuela</surname></persName>
+			<idno type="ORCID">0000-0002-6866-3316</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Míriam</forename><surname>Antón-Rodríguez</surname></persName>
+			<idno type="ORCID">0000-0002-3328-5183</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>González-Ortega</surname></persName>
+			<idno type="ORCID">0000-0001-5271-1822</idno>
+		</author>
+		<idno type="DOI">10.3390/healthcare9020153</idno>
+		<ptr target="https://doi.org/10.3390/healthcare9020153PMID:33540873" />
+	</analytic>
+	<monogr>
+		<title level="j">Healthcare</title>
+		<title level="j" type="abbrev">Healthcare</title>
+		<idno type="ISSNe">2227-9032</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">153</biblScope>
+			<date type="published" when="2021-02-02">2021</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Díaz-Pernas FJ, Martínez-Zarzuela M, Antón-Rodríguez M, González-Ortega D. A deep learning approach for brain tumor classification and segmentation using a multiscale convolutional neural net- work. Healthcare (Basel). 2021;9(2):153. https://doi.org/10.3390/healthcare9020153 PMID: 33540873</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Deep Learning Based Brain Tumor Detection and Classification</title>
+		<author>
+			<persName><forename type="first">Nadim</forename><forename type="middle">Mahmud</forename><surname>Dipu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sifatul</forename><forename type="middle">Alam</forename><surname>Shohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kma</forename><forename type="middle">M A</forename><surname>Salam</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/conit51480.2021.9498384</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 International Conference on Intelligent Technologies (CONIT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06-25">2021</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dipu NM, Shohan SA, Salam KMA. Deep learning based brain tumor detection and classification. 2021.</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Predictive modeling of brain tumor: a deep learning approach</title>
+		<author>
+			<persName><forename type="first">Maheshwari</forename><surname>Saxena Priyansh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maheshwari</forename><surname>Akshat</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Saumil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Predictive modeling and its applications in biomedical engineering</title>
+		<imprint>
+			<date type="published" when="2020-09">September 2020</date>
+			<biblScope unit="page" from="275" to="285" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saxena Priyansh, Maheshwari Akshat, Maheshwari Saumil. Predictive modeling of brain tumor: a deep learning approach. In: Predictive modeling and its applications in biomedical engineering, pp. 275-285, September 2020. ISBN: 978-981-15-6066-8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Application of multiresolution analysis for automated detection of brain abnormality using MR images: A comparative study</title>
+		<author>
+			<persName><forename type="first">Anjan</forename><surname>Gudigar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Raghavendra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tan</forename><forename type="middle">Ru</forename><surname>San</surname></persName>
+			<idno type="ORCID">0000-0003-2086-6517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">J</forename><surname>Ciaccio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">Rajendra</forename><surname>Acharya</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2018.08.008</idno>
+		<ptr target="https://doi.org/10.1016/j.future.2018.08.008" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="359" to="367" />
+			<date type="published" when="2019-01">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gudigar A, Raghavendra U, San TR, Ciaccio EJ, Acharya UR. Application of multiresolution analysis for automated detection of brain abnormality using MR images: A comparative study. Future Genera- tion Computer Systems. 2019;90:359-67. https://doi.org/10.1016/j.future.2018.08.008</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">A Modified Deep Convolutional Neural Network for Abnormal Brain Image Classification</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Jude</forename><surname>Hemanth</surname></persName>
+			<idno type="ORCID">0000-0002-6091-1880</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Anitha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antoanela</forename><surname>Naaji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oana</forename><surname>Geman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniela</forename><forename type="middle">Elena</forename><surname>Popescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Hoang Son</surname></persName>
+			<idno type="ORCID">0000-0002-7967-8732</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2018.2885639</idno>
+		<ptr target="https://doi.org/10.1109/access.2018.2885639" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="4275" to="4283" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hemanth DJ, Anitha J, Naaji A, Geman O, Popescu DE, Hoang Son L. A modified deep convolutional neural network for abnormal brain image classification. IEEE Access. 2019;7:4275-83. https://doi. org/10.1109/access.2018.2885639</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,2541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Image Quality Assessment and Reliability Analysis of Artificial Intelligence-Based Tumor Classification of Stimulated Raman Histology of Tumor Biobank Samples</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>MDPI AG</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-11-30">30 November 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Anna-Katharina</forename><surname>Meißner</surname></persName>
+							<email>anna-katharina.meissner@uk-koeln.de</email>
+							<idno type="ORCID">0000-0003-4150-7265</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tobias</forename><surname>Blau</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Institute for Neuropathology , University of Duisburg-Essen , 45141 Essen , Germany</note>
+								<orgName type="department">Institute for Neuropathology</orgName>
+								<orgName type="institution">University of Duisburg-Essen</orgName>
+								<address>
+									<postCode>45141</postCode>
+									<settlement>Essen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+							<idno type="ORCID">0000-0002-3298-9517</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gina</forename><surname>Fürtjes</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lili</forename><surname>Leyer</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nina</forename><surname>Müller</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+							<idno type="ORCID">0000-0002-9873-1711</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Institute for Neuropathology , University of Duisburg-Essen , 45141 Essen , Germany</note>
+								<orgName type="department">Institute for Neuropathology</orgName>
+								<orgName type="institution">University of Duisburg-Essen</orgName>
+								<address>
+									<postCode>45141</postCode>
+									<settlement>Essen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Neurosurgery , Westküstenklinikum Heide , 25746 Heide , Germany</note>
+								<orgName type="department">Department of Neurosurgery</orgName>
+								<orgName type="institution">Westküstenklinikum Heide</orgName>
+								<address>
+									<postCode>25746</postCode>
+									<settlement>Heide</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Thomas</forename><surname>Stehle</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Institute for Neuropathology , Faculty of Medicine , University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Institute for Neuropathology</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Abdulkader</forename><surname>Al Shugri</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Institute for Neuropathology , Faculty of Medicine , University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Institute for Neuropathology</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Reinhard</forename><surname>Büttner</surname></persName>
+							<idno type="ORCID">0000-0001-8806-4786</idno>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> Department of Pathology , Faculty of Medicine , University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of Pathology</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Marco</forename><surname>Timmer</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+							<email>volker.neuschmelting@uk-koeln.de</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of General Neurosurgery , Center for Neurosurgery , Faculty of Medicine and University Hospital Cologne , University of Cologne , 50937 Cologne , Germany</note>
+								<orgName type="department" key="dep1">Department of General Neurosurgery</orgName>
+								<orgName type="department" key="dep2">Center for Neurosurgery</orgName>
+								<orgName type="department" key="dep3">Faculty of Medicine</orgName>
+								<orgName type="institution" key="instit1">University Hospital Cologne</orgName>
+								<orgName type="institution" key="instit2">University of Cologne</orgName>
+								<address>
+									<postCode>50937</postCode>
+									<settlement>Cologne</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Image Quality Assessment and Reliability Analysis of Artificial Intelligence-Based Tumor Classification of Stimulated Raman Histology of Tumor Biobank Samples</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Diagnostics</title>
+						<title level="j" type="abbrev">Diagnostics</title>
+						<idno type="eISSN">2075-4418</idno>
+						<imprint>
+							<publisher>MDPI AG</publisher>
+							<biblScope unit="volume">14</biblScope>
+							<biblScope unit="issue">23</biblScope>
+							<biblScope unit="page">2701</biblScope>
+							<date type="published" when="2024-11-30">30 November 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F7D95ED389FD74914720248F89304137</idno>
+					<idno type="DOI">10.3390/diagnostics14232701</idno>
+					<note type="submission">Received: 28 October 2024 Revised: 21 November 2024 Accepted: 26 November 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T19:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>stimulated Raman histology</term>
+					<term>artificial intelligence</term>
+					<term>digital pathology</term>
+					<term>brain tumors</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background: Stimulated Raman histology (SRH) is a label-free optical imaging method for rapid intraoperative analysis of fresh tissue samples. Analysis of SRH images using Convolutional Neural Networks (CNN) has shown promising results for predicting the main histopathological classes of neurooncological tumors. Due to the relatively low number of rare tumor representations in CNN training datasets, a valid prediction of rarer entities remains limited. To develop new reliable analysis tools, larger datasets and greater tumor variety are crucial. One way to accomplish this is through research biobanks storing frozen tumor tissue samples. However, there is currently no data available regarding the pertinency of previously frozen tissue samples for SRH analysis. The aim of this study was to assess image quality and perform a comparative reliability analysis of artificial intelligence-based tumor classification using SRH in fresh and frozen tissue samples. Methods: In a monocentric prospective study, tissue samples from 25 patients undergoing brain tumor resection were obtained. SRH was acquired in fresh and defrosted samples of the same specimen after varying storage durations at -80 • C. Image quality was rated by an experienced neuropathologist, and prediction of histopathological diagnosis was performed using two established CNNs. Results: The image quality of SRH in fresh and defrosted tissue samples was high, with a mean image quality score of 1.96 (range 1-5) for both groups. CNN analysis showed high internal consistency for histo-(Cα 0.95) and molecular (Cα 0.83) pathological tumor classification. The results were confirmed using a dataset with samples from the local tumor biobank (Cα 0.91 and 0.53). Conclusion: Our results showed that SRH appears comparably reliable in fresh and frozen tissue samples, enabling the integration of tumor biobank specimens to potentially improve the diagnostic range and reliability of CNN prediction tools.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Stimulated Raman Histology (SRH) is a new label-free chemical optimal imaging method for near real-time intraoperative analysis of fresh tissue samples using stimulated Raman scattering (SRS) microscopy <ref type="bibr" target="#b0">[1]</ref>. A small unprocessed tissue sample is scanned in a portable SRH microscope equipped with a dual-wavelength fiber laser at two Raman shifts, corresponding to the intrinsic biological properties of lipids, DNA, and proteins <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. The SRS image is converted into a virtual image (SRH image) resembling H&amp;E-like staining to facilitate clinical interpretation <ref type="bibr" target="#b0">[1]</ref>. The entire process of image acquisition takes 2-3 min, enabling improvements in intraoperative diagnosis, which is integral to tumor surgery, biopsy, and resection control. SRH has been clinically validated against standard H&amp;E sections and has proven to be a valuable time-saving intraoperative tool for diagnosing the main adult and pediatric neurooncological tumor types <ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref>. Furthermore, SRH imaging has been shown to be feasible for detecting residual tumor tissue in the infiltration zone of diffuse gliomas <ref type="bibr" target="#b9">[10]</ref>. One limitation of these studies is that automated, observerindependent real-time image analysis was not feasible for all neurooncological tumor entities with adequate predictive performance. The necessity for visual assessment of SRH images, which is time-consuming, continues to limit its use in routine surgical settings.</p><p>Recent studies addressing this issue have shown that the analysis of SRH images with Artificial Intelligence (AI) methods reveals promising results for fully automated, time-efficient intraoperative diagnosis <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b11">12]</ref>. A Convolutional Neural Network (CNN) trained with SRH images from different neurooncological tumors achieved valid results for distinguishing tumor from normal brain tissue and can be used for intraoperative resection control <ref type="bibr" target="#b12">[13]</ref>. Furthermore, recent studies by Hollon T et al. demonstrated promising results for predicting the histopathological diagnosis of the main classes of neurooncological tumors, with a high overall diagnostic accuracy of 94.6% <ref type="bibr" target="#b13">[14]</ref>, and for classifying molecular subtypes of diffuse adult gliomas <ref type="bibr" target="#b14">[15]</ref>. Moreover, a CNN-based classifier showed good diagnostic performance in distinguishing vital tumor tissue from therapy-associated changes and pseudoprogression <ref type="bibr" target="#b15">[16]</ref>.</p><p>While current studies on SRH and AI tools have achieved good results in predicting common tumor classes, the reliable prediction of rarer tumor entities remains limited, most likely due to the lower representation of rare tumor samples in the training and test datasets. Some rare tumor classes have not yet been represented in any SRH-based AI tool. Therefore, the routine clinical use of AI analysis for SRH is not yet feasible. The availability of broader, more diverse, and more general diagnostic tools for diverse classification tasks would be highly beneficial to the clinical workflow in neurooncological surgery.</p><p>To train new AI tools and improve existing ones, large datasets for training and validation are necessary, especially for rare tumor entities and molecular tumor subclasses. SRH is a relatively new technology, and SRH microscopes are not broadly available. Moreover, rare neurooncological tumors are few in number due to the generally low incidence of these diseases. Therefore, even pooling data from different centers with access to SRH microscopes might not provide a sufficient dataset for reliable model training in a reasonable timeframe. Recent studies using only fresh specimens have therefore lacked the opportunity to implement larger training and test datasets.</p><p>One option to overcome this obstacle could be to augment the training data pool with SRH images obtained from frozen tumor tissue stored in research biobanks. The aim of this study was to assess the image quality of SRH analysis in previously frozen tissue samples and to perform a reliability analysis of CNN-based entity and molecular tumor class prediction using SRH in fresh and defrosted samples of the same specimen. The findings were validated in a randomly selected brain tumor biobank cohort with varying freezing durations. Data analyses of previously frozen samples subjected to SRH are scarce. This study assesses the applicability of SRH in defrosted tumor tissue and offers an opportunity to incorporate the use of frozen tissue into the workflow of developing SRH-based diagnostic tools.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Patient Dataset</head><p>In a single-center prospective observational study, patients were recruited in 2022 and 2023 after surgical resection of a brain tumor, indicated by an interdisciplinary neurooncological tumor board. The study was conducted according to the guidelines of the declaration of Helsinki and approved by the Ethics Committee of the University Hospital Cologne, Germany, (IRB No. . All patients gave their written informed consent for the scientific use of their data.</p><p>Inclusion criteria were (1) suspected tumor, (2) age over 18, (3) patient is willing and able to give informed consent for participation. Patients were excluded if not willing or able to give informed consent for participation. Final histopathological results were obtained following routine clinical pathology diagnostics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Biobank Dataset</head><p>Frozen tissue samples of varying storage duration were randomly selected from the local neurooncology research biobank to undergo SRH acquisition and analysis. Of note, small samples of every specimen that had been contributed to the biobank for storage had been scanned in the SRH microscope prior to this study at the time of the initial tissue collection and discarded after imaging as part of the routine research tissue collection process. The initial SRH imaging data of the specimens served as reference for the data acquired in the study. The observers and reviewers acquiring and analyzing the SRH images were blinded for the histopathological diagnosis and storage duration. All patients had given their written informed consent for acquisition, storing and scientific use of the tissue samples (Ethics Committee of the University Hospital Cologne, Germany, IRB No. 03-170).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Specimen Collection and Stimulated Raman Histology</head><p>During surgery, a small tissue sample was collected from the core of the lesion for SRH imaging. The sample #1 (3-4 mm in size) of the specimen was processed immediately and a fresh unstained squash preparation on a microscopic glass slide with a coverslip was prepared. The slide was scanned (scan 1 sample #1) with a field-of view of 2.7 × 2.9 mm in a clinical SRH microscope (Invenio Imaging Inc., Santa Clara, CA, USA). The portable SRH microscope contains four main components: <ref type="bibr" target="#b0">[1]</ref> a fiber-coupled microscope, <ref type="bibr" target="#b1">[2]</ref> a dualwavelength (790 and 1020 nm) fiber-laser module, <ref type="bibr" target="#b2">[3]</ref> a laser and microscope control module, and <ref type="bibr" target="#b3">[4]</ref> a computer for data displaying, processing, and application of a convolutional neuronal network <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b16">17]</ref>. The power in focus is approximately 120 and 160 mW for the 790 and 1020 nm beam, respectively <ref type="bibr" target="#b16">[17]</ref>. Tissue samples were scanned at two predefined Raman Shift wave numbers, characteristic for the vibrational frequencies of lipid-rich structures (2845 cm -1 ), proteins and DNA (2930 cm -1 ). The image contrast is generated by the differences in the Raman scattering spectrum depending on the tissue composition. The raw images were stitched and via subtraction a virtual H&amp;E like image was created digitally, referred to as the SRH image as previously described in detail <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref>.</p><p>The squash preparation of sample #1 was then immediately frozen at -80 • C and stored in a regular deep-freezer for research purposes. After varying time intervals (range 2-164 days) the sample was slowly defrosted under room temperature conditions.</p><p>After defrosting sample #1 was scanned again (re-scan sample #1) in the SRH microscope with a field-of view of 2.7 × 2.9 mm (see Figure <ref type="figure" target="#fig_0">1</ref>).</p><p>The tissue samples from the biobank dataset (5-10 mm in size) were deep frozen with liquid nitrogen without further agents for cryoconservation immediately after resection on the day of surgery and stored in the local tissue biobank at -80 • C. Tissue samples with various storage duration were slowly defrosted at room temperature and scanned in the SRS microscope using a small sample of 2 × 2 mm in size and a field-of view of 2.7 × 2.9 mm. For all biobank specimens a previously acquired SRH image scanned from a different fresh tissue sample of the same specimen on the day of surgery was available for comparison. All SRH images were analyzed by the CNNs. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Image Quality Assessment</head><p>All SRH images in the patient dataset were reviewed as DICOM images with 3600 × 3900 pixels in a random order by a senior board-certified neuropathologist with more than 16 years of experience in the field. The pathologist was blinded for the histopathological diagnosis, clinical data and the timepoint of the SRH scan (fresh vs. defrosted). Images were classified according to common criteria applied in digital pathology with scores ranging from 1-5 (1 indicating the best result and 5 the worst result) for the following parameters: (freezing) artifacts, general image quality, image sharpness and color contrast <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b21">22]</ref>. Mean values and standard deviation for each parameter were calculated for fresh and defrosted samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Image Analysis by Convolutional Neural Networks</head><p>For prediction of the histo-and molecular pathological tumor classes, two established and prospectively validated CNNs were used for inference, as previously described in detail <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b14">15]</ref>. In brief, in the first network, overlapping high-resolution patches from the SRH images were generated by a sliding window algorithm and used for training of the deep CNN. The CNN was trained to classify 13 histological categories: White matter, gray matter, gliosis, ependymoma, malignant glioma, diffuse low grade glioma, medulloblastoma, lymphoma, pilocytic astrocytoma, meningioma, metastasis, pituitary adenoma. For the final diagnostic prediction, all patches from one specimen were merged into a probability distribution map <ref type="bibr" target="#b13">[14]</ref>. The second network was trained to classify molecular diagnostic and prognostic features in gliomas: the IDH mutation and the LOH status as previously described <ref type="bibr" target="#b14">[15]</ref>. In brief, an SRH image feature encoder and a genetic embedding model using public glioma genomic data were pretrained. Both models were then integrated into a single transformer architecture for multilabel molecular glioma classification <ref type="bibr" target="#b14">[15]</ref>. Both networks are integrated in the SRH microscope analysis software and were applied for inference as previously published.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical Analysis</head><p>Statistical analysis was performed using SPSS Statistics Version 29 (IBM, Chicago, IL, USA). For descriptive statistics, continuous values are given in mean with standard deviation.</p><p>Internal consistency of the CNN prediction was analyzed using Cronbach's alpha (Cα). Cronbach's alpha is a well-established statistical measure <ref type="bibr" target="#b22">[23]</ref> used to evaluate the internal consistency or reliability of a set of scale items. It assesses how closely related a set of items are as a group, indicating the extent to which they measure the same underlying construct.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Prospective Patient Dataset-Characteristics</head><p>We included 25 consecutive patients undergoing brain tumor surgery for different tumor entities. The most common neurooncological tumor classes (diffuse adult gliomas, meningioma, pituitary adenomas, various carcinoma and melanoma metastases, schwannoma) were represented. A total of 25 tumor samples were collected and 50 SRH images were acquired. The mean interval between the day of surgery and the day of thawing was 36 days (range 2-164) (see Supplementary Materials Table <ref type="table">S1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Biobank Dataset-Characteristics</head><p>The biobank dataset comprised 30 randomly chosen tissue samples from the tissue biobank, representing the most common tumor classes (diffuse adult glioma, meningioma, pituitary adenoma, schwannoma, metastasis). Different samples from all specimens had been scanned in the SRH microscope during the initial surgery. A total of 60 SRH images were acquired. Mean storage duration was 26 months (±12 months).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Image Quality Score</head><p>All SRH images of fresh and frozen tumor samples from the prospective patient dataset were visually assessed for image quality, image sharpness, color contrast, and occurrence of potential freezing artifacts by the same experienced neuropathologist. All scores ranged from 1-5, with 1 indicating the best and 5 the worst result. Typical histologic features of the tumor classes were identified in the SRH images of both fresh and defrosted samples (see Figure <ref type="figure" target="#fig_1">2</ref>).</p><p>Mean total image quality score for all SRH images was 1.96 ± 0.95. There was no difference in the mean image quality score between the SRH images of fresh and defrosted samples (2.08 ± 0.99 vs. 1.84 ± 0.99). Mean image sharpness and color contrast showed equivalent values of 2.12 ± 0.85 and 2.26 ± 085, respectively. No significant differences were observed between the values of the fresh and frozen samples. Relevant artifacts (score ≥ 3, range 1-5, 1 indicating no artifacts, 5 severe artifacts), potentially due to freezing, were described in 5 out of 25 (20%) SRH images of defrosted tissue samples. Artifacts in SRH images of freshly processed specimens were observed in 6 out of 25 cases (24%).</p><p>We further assessed the occurrence of freezing artifacts depending on the storage duration in an additional subset of 5 biobank specimens (one from each class: meningioma, pituitary adenoma, diffuse glioma, schwannoma, and metastasis), with freezing periods ranging from 86 to 92 months and a mean freezing period of 90 months. No relevant freezing artifacts were observed. Mean image quality score was comparable to the patient dataset with a mean storage duration of 36 days (2.2. vs. 1.96). For these specimens, no SRH images of fresh specimens were available for further CNN classification due to the long storage duration of approximately 8 years, as SRH had not yet been available in clinics at that time. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Prospective Patient Dataset-CNN Based Histological Tumor Class Prediction</head><p>Among all scans, after defrosting compared to the corresponding fresh specimen, 24 out of 25 (96%) SRH images were classified correctly within the same diagnostic subgroup for intraoperative distinction and decision-making (tumor, non-tumorous, non-surgical tumors such as lymphoma, surgical tumors with glial and non-glial entities) according to the tumor group classification model by Hollon TC et al. <ref type="bibr" target="#b13">[14]</ref>. The CNN predicted the same histological tumor class in 92% of SRH images (23/25) of thawed samples.</p><p>A change in CNN diagnosis of SRH images after defrosting occurred in one patient with glioma, which was classified as meningioma, and one patient with meningioma, classified as schwannoma (see Figure <ref type="figure" target="#fig_2">3</ref>). No classification change was associated with potential freezing artifacts. The internal consistency (scan sample #1 vs. re-scan sample #1) was high, with a Cronbach's alpha (Cα) of 0.95.  SRH images of the six predicted adult-type diffuse glioma specimens underwent CNNbased molecular subtype classification. The CNN predicted the same molecular subtype after defrosting in 67% (4/6) of glioma cases compared to the initial diagnosis on fresh tissue and showed good internal consistency with a Cα of 0.83 (see Figure <ref type="figure" target="#fig_2">3</ref>). Discordant classification occurred in one IDH wildtype glioma after defrosting, as well as in one fresh specimen of an IDH wildtype glioma, which was misclassified as oligodendroglioma (IDH mut, 1p19q codel) in scan 1. Prediction levels were comparably low in these borderline cases, ranging from 49-67%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Biobank Dataset-CNN Based Histological Tumor Class Prediction</head><p>The CNN predicted the same entity diagnosis in 27 out of 30 (90%) cases in the biobank dataset (see Figure <ref type="figure" target="#fig_4">4</ref>). A change in CNN diagnosis of SRH images after defrosting occurred in one patient with schwannoma, which was classified as metastasis; one patient with meningioma, which was classified as schwannoma; and one patient with metastasis, which was classified as pituitary adenoma (see Figure <ref type="figure" target="#fig_4">4</ref>). The internal consistency was high, with a Cα of 0.91. We further assessed the occurrence of classification changes depending on the storage duration. In the biobank dataset, freezing periods ranged from 3 to 38 months, with a mean storage duration of 26 months. Moreover, 17 specimens had a freezing period of over two years and 13 specimens had a storage duration less than 2 years. We did not observe significant differences in the tumor entity classification for longer freezing periods. In the group of specimens with a freezing period of over two years, two changes in tumor entity classification were observed (11.8%), whereas for the group with freezing duration less than two years, likewise two classification changes (15%) were detected.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7.">Biobank Dataset-CNN-Based Molecular Subtype Classification ("Deep Glioma")</head><p>SRH images of the 13 predicted adult-type diffuse glioma specimens in the biobank dataset underwent CNN-based molecular subtype classification. The CNN predicted the same molecular subtype after defrosting in 85% (11/13) of glioma cases compared to the initial diagnosis on fresh tissue (see Figure <ref type="figure" target="#fig_4">4</ref>). Discrepant classification occurred in two IDH wildtype gliomas classified as IDH mutant. Prediction levels were comparably low in these borderline cases. Therefore, internal consistency was lower, with a Cα of 0.53.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>Reliable intraoperative histolopathological diagnosis is essential to achieve maximum safe tumor resection, especially for lesions in eloquent areas, cases with previously unknown diagnosis, or inconclusive intraoperative findings <ref type="bibr" target="#b23">[24]</ref>. SRH, in combination with CNN-based analyses, has shown promise as a time-efficient tool for intraoperative diagnosis of the main classes of neurooncological tumors <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b24">25]</ref>. Established CNNs are trained on large datasets containing common tumor entities, but rare cases-which might lead to inconclusive intraoperative findings and difficult surgical decisions-are underrepresented due to their low incidence. One potential solution to address this gap is to augment available datasets with frozen tissue samples from tissue biobanks. Raman spectroscopy has previously been successfully performed on formalin-fixed and paraffin-embedded (FFPE) tissue <ref type="bibr" target="#b25">[26]</ref>, as well as on frozen sections <ref type="bibr" target="#b26">[27,</ref><ref type="bibr" target="#b27">28]</ref> of glioblastoma, to distinguish vital tumor, necrosis, and peritumoral regions with classification accuracy rates ranging from 70% to 99% <ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref>. These findings indicate that histological features of neurooncological tumors can be captured adequately in spectroscopic images even after freezing. However, extensive tissue processing-such as formalin fixation and paraffin embedding-can cause severe changes in spectral properties <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b28">29,</ref><ref type="bibr" target="#b29">30]</ref>, leading to potential misclassification. In contrast, the freezing process does not interfere with chemical properties, suggesting that spectroscopic images of defrosted tissue samples remain stable. However, the applicability of SRH and CNN analyses on frozen and defrosted tissue, as well as on FFPE samples, was unclear and may substantially influence the accuracy of the CNN models.</p><p>The first finding of our study is that SRH is feasible in defrosted tumor samples, with good image quality and no significant freezing artifacts, as confirmed by visual neuropathological analysis. High general image quality, good color contrast, and sharpness-common quality parameters in digital pathology-are essential for visual analysis of SRH images of defrosted tissue samples and are prerequisites for subsequent CNN analyses.</p><p>In conventional intraoperative histomorphological frozen section analysis, artifacts are often reported due to several steps during section preparation, including mechanical tissue destruction, tissue preprocessing, insufficient freezing stability, mechanical sectioning, and slide preparation <ref type="bibr" target="#b26">[27,</ref><ref type="bibr" target="#b30">31,</ref><ref type="bibr" target="#b31">32]</ref>. The occurrence of artifacts may complicate a timely and reliable diagnosis, delaying surgical procedures. In comparison, SRH, an optical method based on infrared spectroscopy, can be performed on samples with a thickness of several millimeters, which are less susceptible to tears compared to conventional microscopy of thin frozen sections. Furthermore, SRH requires fewer tissue processing steps, reducing the risk of artifact occurrence, as confirmed in our study.</p><p>Tissue storage at -80 • C is a commonly used technique for conservation of biospecimens with known high-quality preservation of proteins and DNA over years to decades <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b33">34]</ref>. As SRH mainly relies on the intrinsic properties of lipids, DNA, and proteins, tissue storage at -80 • C appears feasible, even for long periods, as observed in our study samples stored for over two years. Further analysis of a subset of five biobank specimens with freezing periods of up to eight years showed no relevant freezing artifacts and image quality comparable to the patient dataset with a mean freezing period of 36 days. This suggests that SRH imaging is feasible with high quality, regardless of storage duration.</p><p>This finding aligns with a comparative study in conventional histopathology on brain tissue specimens stored at -80 • C, which investigated the effect of long-term frozen storage on immunohistochemistry analyses. Their multiple regression analysis revealed general stability of the examined antigens over decades <ref type="bibr" target="#b34">[35]</ref>. Considering this finding, analysis of molecular tumor subtype using SRH in biobank specimens seems to be technically feasible.</p><p>The second aim of our study was to evaluate the reliability of an established CNN in both fresh and previously frozen tumor samples to enable potential data augmentation for future AI training. Our results demonstrate that CNN-based histological tumor classification using SRH of fresh and defrosted samples of the most common tumor entities is feasible with high internal consistency.</p><p>CNN analysis achieved comparable accuracy of 90-96% in frozen samples, similar to previously published AI-based accuracy of 94.6% <ref type="bibr" target="#b13">[14]</ref> and human-based review of SRH with an accuracy of 85% <ref type="bibr" target="#b2">[3]</ref>. As the published CNN was mainly trained on high-quality images, the performance might have been affected by the small sample size and the lower number of high-quality diagnostic patches. A threshold of approximately 140 diagnostic patches has been identified to obtain valid CNN results <ref type="bibr" target="#b11">[12]</ref>. An increase in the number of high-quality patches by using a larger field-of view for image acquisition in samples with impaired tissue quality might improve the predictive performance of the established CNNs. Nevertheless, the published CNN has not yet been evaluated in unfiltered, mixed-quality data or previously frozen samples.</p><p>A classification change in CNN prediction for fresh and frozen samples of the same specimen was found in one glioma and one meningioma case. One possible reason might be that SRH images at slightly different fields of view of the same sample can show different histologic features and might therefore lead to different prediction results. SRH is based on small tissue samples, similar to conventional rapid frozen sections, representing histological features from a local tumor area. Intraoperative diagnosis discrepancies between rapid frozen sections and final histological classification are well-known, especially in glioma surgery <ref type="bibr" target="#b35">[36,</ref><ref type="bibr" target="#b36">37]</ref>. Therefore, it should be considered that known confounders in conventional rapid frozen sections, such as biopsy location or sample size, might also contribute to classification changes and lower overall predictive accuracy from intraoperative SRH analysis compared to final histopathological results.</p><p>Grading diffuse adult gliomas is challenging during intraoperative rapid frozen section diagnostics, as unclear cases are usually categorized as "infiltrating glioma" without further grading <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b35">36]</ref>. A large clinical validation study comparing SRH with standard H&amp;E stained tissue found a lower diagnostic accuracy of 77.6% for gliomas compared to an overall accuracy of 85% <ref type="bibr" target="#b2">[3]</ref>. Especially the occurrence of classification changes in glial tumors between intraoperative rapid frozen sections and final histopathological results are a known challenge of intraoperative tissue analysis in glioma surgery <ref type="bibr" target="#b35">[36]</ref>. Therefore, the determination of molecular features as IDH mutation and LOH status as stable parameters in adult-type gliomas have become mandatory for molecular integrated diagnoses according to the WHO classification of brain tumors 2021 <ref type="bibr" target="#b37">[38]</ref>. Conventional rapid frozen section analysis lacks the ability to perform molecular subtyping and molecular pathology integrated diagnosis of gliomas. AI-based SRH analysis might offer a potential solution for time-efficient intraoperative molecular subtype analysis and consequent improvement in glioma rapid diagnostics for intraoperative decision-making.</p><p>In our study, the results of the genetic tissue analysis indicate that SRH-based molecular glioma subtype classification seems to be feasible in defrosted tumor samples. Nevertheless, we observed a lower accuracy of 70-80% for molecular classification compared to the histological entity prediction Therefore, the results should be interpreted with caution. Observed changes in the molecular subtype prediction might have been associated with small samples and field-of views lacking certain diagnostical features necessary for complex AI analysis limiting a profound prediction, especially in borderline cases with lower CNN prediction levels.</p><p>Although further training of established AI tools would benefit most from SRH images of rare tumor entities, our proof-of concept study included the most common neurooncological tumor classes represented in the CNN. For rare tumor classes like pilocytic astrocytoma, ependymoma, and medulloblastoma, a lower predictive class accuracy of 50-75% for CNN analysis was reported <ref type="bibr" target="#b13">[14]</ref>. Therefore, the use of these rare tumor entities would have potentially impaired the validity of our results. Nonetheless, the analysis of defrosted samples from rare tumor classes needs be further tested to validate our promising findings.</p><p>Beyond the limited sample number, the generalizability of our results may be affected by the varied freezing techniques used in neurooncological research. Even though we used a simple standard freezing process in the prospective patient cohort, a high image quality without significant freezing artifacts was achieved and confirmed in the biobank dataset with samples that underwent a different freezing method. These results indicate that SRH might be feasible even for tissues that have undergone different freezing protocols, making data pooling from different centers and biobanks feasible.</p><p>In the biobank dataset, different tissue samples of the same specimen were scanned using the SRH microscope, both freshly on the day of surgery and after defrosting. The freshly scanned tissue sample from the squash preparation was not available for further analysis. Using an additional tissue sample of the same specimen may capture different histological features and areas of a tumor. Nevertheless, the CNN prediction showed high internal consistency between scans of the two different samples.</p><p>One limitation of our study is the relatively low number of specimens included in the patient dataset, even though further analysis of the biobank dataset confirmed the reliability results. Our findings suggest that using frozen tissue samples to train larger CNNs seems to be generally feasible, warranting further evaluation in follow-up studies focusing on rare tumor entities.</p><p>While the CNN for tumor entity prediction in fresh and previously frozen tissue achieved high accuracy of up to 96%, the results of the molecular glioma classification showed a lower accuracy of 70-80%. Therefore, these results should be interpreted with caution. To assess applicability of molecular classification using SRH in previously frozen tissue samples, the performance of the CNN requires further validation, preferably in a larger cohort of different glial tumors with larger samples and fields of view.</p><p>Furthermore, as the CNN used for tumor entity prediction is trained to capture typical histomorphological features, the performance of this classifier might be more likely to be impaired by freezing artifacts while using previously frozen tumor tissue. In comparison, a CNN-based on biomolecular components for molecular tumor classification might be less prone to freezing artifacts but might be affected by changes in the biochemical composition in the raw spectroscopic data due to e.g., long-term freezing.</p><p>Another limitation of our study is that image quality scores were assessed objectively by an experienced neuropathologist with potential observer related bias. Objective quantitative image quality assessment, as introduced in digital pathology for whole slide image analysis <ref type="bibr" target="#b38">[39,</ref><ref type="bibr" target="#b39">40]</ref> would have been beneficial. Automated image quality assessment was not feasible for our study as it is has not yet been routinely established for SRH imaging. Visual image analysis is time-consuming, expensive, and constrained suitable for large datasets that are needed for further CNN training. Therefore, evaluation and establishment of automated image quality assessment methods as used in digital pathology could avoid observer related bias and enable objective time and cost-efficient image quality control in the future.</p><p>In the first portable clinically certified SRH microscope, two Raman shifts are implemented, which are intrinsic to the medical device for in vitro diagnostic use and cannot be adapted based on the IVD MDR. Therefore, further analysis of a broader Raman spectrum is not possible based on the Raman microscope in clinical use and the presented results are mostly valid for the implemented two Raman shifts, representing the most important biomolecular peaks to enable virtual HE-like diagnostics while analyzing the most common tissue types.</p><p>Our results suggest that SRH is generally feasible for defrosted tumor tissue. Therefore, in clinical practice, freshly scanned squashed preparations or additional tumor samples can be frozen and stored for possible further SRH imaging. Implementation of the freezing workflow offers the opportunity to acquire at least double the amount of data when defrosting the samples to augment datasets for further development of diagnostic AI-based tools in a reasonable timeframe. Nevertheless, potential pitfalls such as varying freezing and defrosting processes and the stability of freezing conditions must be considered. Furthermore, regular random SRH image quality checks for defrosted tissue samples should be implemented using subjective or objective image assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>The general image quality of SRH images of different neurooncological tumor classes was found to be highly concordant between freshly acquired and previously frozen tumor samples. Potential freezing artifacts that might preclude histological and molecular pathological diagnosis were rare. CNN-based analyses of SRH images demonstrated high test-retest reliability despite samples being frozen and defrosted in between. These findings suggest that SRH databases could be augmented with rare entities derived from frozen tumor biobank samples to widen the diagnostic spectrum and further improve the accuracy of CNN prediction tools in the future.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Workflow of the test-retest analysis of the patient dataset. A small (3-4 mm) tissue sample (sample #1) was collected during surgery and immediately processed for SRH imaging. The fresh squash preparation was scanned in the SRH microscope (scan 1 sample #1) and frozen at -80 • C afterwards. After varying time intervals, the sample was defrosted and scanned again in the SRH microscope (re-scan sample #1). All SRH images from fresh and frozen samples were assessed for image quality and occurrence of freezing artifacts by an experienced neuropathologist and analyzed by the CNNs. CNN: Convolutional Neural Network.</figDesc><graphic coords="4,46.94,86.89,501.12,189.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. SRH images of fresh and thawed tissue samples. Upper row: SRH images of a meningioma (CNS WHO grade 1) ((A): scan 1 sample #1, fresh; (B) re-scan 1, sample #1, defrosted), showing typical histologic features, such as meningothelial whorls (green arrows). Middle row: SRH images of a pulmonary adenocarcinoma metastasis ((C) scan 1, sample #1, fresh; (D) re-scan 1, sample #1, defrosted), showing sheets of epithelial tumor cells. Lower row: SRH images of a glioblastoma, IDH wild type (CNS WHO grade 4) ((E) scan 1, sample #1, fresh; (F) re-scan 1, sample #1, defrosted), showing infiltration of fibrillary tumor.</figDesc><graphic coords="6,166.39,86.89,264.60,349.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Confusion matrix of the CNN-based histological entity differentiation (left), and diffuse adult-type glioma subclassification (right) in fresh and frozen tumor tissue samples from the same patient. Ca = Cronbach's alpha.</figDesc><graphic coords="7,71.83,86.89,451.33,189.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>3. 5 .</head><label>5</label><figDesc>Prospective Patient Dataset-CNN Based Molecular Subtype Classification ("Deep Glioma")</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Confusion matrix of the CNN-based histological entity differentiation (left), and diffuse adult-type glioma subclassification (right) in tumor biobank samples comparing SRH images of fresh and frozen tumor samples. Ca = Cronbach's alpha.</figDesc><graphic coords="7,83.23,554.37,428.54,177.98" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments:</head><p>We thank <rs type="person">Florian Khalid</rs> and <rs type="person">Adrian Ian-Margineanu</rs> for technical support.</p></div>
+<div><head>Conflicts of Interest:</head><p>The authors declare no conflicts of interest.</p></div>
+			</div>
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The datasets used during the current study are available from the corresponding author on reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following supporting information can be downloaded at: <ref type="url" target="https://www.mdpi.com/article/10.3390/diagnostics14232701/s1">https://  www.mdpi.com/article/10.3390/diagnostics14232701/s1</ref>, Table <ref type="table">S1</ref>: Patients characteristics and histopathological results for the specimens in the patient and biobank dataset. mut = mutated, wt = wildtype. Informed Consent Statement: Informed consent was obtained from all subjects involved in the study.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Rapid intraoperative histology of unprocessed surgical specimens via fibre-laser-based stimulated Raman scattering microscopy</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yashar</forename><forename type="middle">S</forename><surname>Niknafs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julianne</forename><surname>Boyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mia</forename><surname>Garrard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><forename type="middle">J L</forename><surname>Garton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cormac</forename><forename type="middle">O</forename><surname>Maher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oren</forename><surname>Sagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Andrew</forename><surname>Wilkinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sriram</forename><surname>Venneti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shakti</forename><forename type="middle">H</forename><surname>Ramkissoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><forename type="middle">A</forename><surname>Mcfadden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Fisher-Hubbard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">P</forename><surname>Lieberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Sunney</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><forename type="middle">K</forename><surname>Trautman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41551-016-0027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2017-02-06">2017. 0027</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Orringer, D.A.; Pandian, B.; Niknafs, Y.S.; Hollon, T.C.; Boyle, J.; Lewis, S.; Garrard, M.; Hervey-Jumper, S.L.; Garton, H.J.L.; Maher, C.O.; et al. Rapid Intraoperative Histology of Unprocessed Surgical Specimens via Fibre-Laser-Based Stimulated Raman Scattering Microscopy. Nat. Biomed. Eng. 2017, 1, 0027. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Label-Free Biomedical Imaging with High Sensitivity by Stimulated Raman Scattering Microscopy</title>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">G</forename><surname>Saar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sijia</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gary</forename><forename type="middle">R</forename><surname>Holtom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengwei</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">C</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><forename type="middle">X</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Sunney</forename><surname>Xie</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1165758</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<title level="j" type="abbrev">Science</title>
+		<idno type="ISSN">0036-8075</idno>
+		<idno type="ISSNe">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="issue">5909</biblScope>
+			<biblScope unit="page" from="1857" to="1861" />
+			<date type="published" when="2008-12-19">2008</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Freudiger, C.W.; Min, W.; Saar, B.G.; Lu, S.; Holtom, G.R.; He, C.; Tsai, J.C.; Kang, J.X.; Xie, X.S. Label-Free Biomedical Imaging with High Sensitivity by Stimulated Raman Scattering Microscopy. Science 2008, 322, 1857-1861. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Clinical Validation of Stimulated Raman Histology for Rapid Intraoperative Diagnosis of Central Nervous System Tumors</title>
+		<author>
+			<persName><forename type="first">Misha</forename><surname>Movahed-Ezazi</surname></persName>
+			<idno type="ORCID">0000-0002-9249-5498</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mustafa</forename><surname>Nasir-Moin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camila</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isabella</forename><surname>Pizzillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristyn</forename><surname>Galbraith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Drexler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><forename type="middle">A</forename><surname>Krasnozhen-Ratush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seema</forename><surname>Shroff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Zagzag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>William</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.modpat.2023.100219</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Modern Pathology</title>
+		<title level="j" type="abbrev">Modern Pathology</title>
+		<idno type="ISSN">0893-3952</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">100219</biblScope>
+			<date type="published" when="2023-09">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Movahed-Ezazi, M.; Nasir-Moin, M.; Fang, C.; Pizzillo, I.; Galbraith, K.; Drexler, S.; Krasnozhen-Ratush, O.A.; Shroff, S.; Zagzag, D.; William, C.; et al. Clinical Validation of Stimulated Raman Histology for Rapid Intraoperative Diagnosis of Central Nervous System Tumors. Mod. Pathol. 2023, 36, 100219. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Stimulated Raman histology for rapid and accurate intraoperative diagnosis of CNS tumors: prospective blinded study</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">G</forename><surname>Eichberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Di</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexa</forename><forename type="middle">M</forename><surname>Semonche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Jimsheleishvili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">M</forename><surname>Luther</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Sarkiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allan</forename><forename type="middle">D</forename><surname>Levi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sakir</forename><forename type="middle">H</forename><surname>Gultekin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">J</forename><surname>Komotar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">E</forename><surname>Ivan</surname></persName>
+		</author>
+		<idno type="DOI">10.3171/2019.9.jns192075</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurosurgery</title>
+		<idno type="ISSN">0022-3085</idno>
+		<idno type="ISSNe">1933-0693</idno>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="137" to="143" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Journal of Neurosurgery Publishing Group (JNSPG)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eichberg, D.G.; Shah, A.H.; Di, L.; Semonche, A.M.; Jimsheleishvili, G.; Luther, E.M.; Sarkiss, C.A.; Levi, A.D.; Gultekin, S.H.; Komotar, R.J.; et al. Stimulated Raman Histology for Rapid and Accurate Intraoperative Diagnosis of CNS Tumors: Prospective Blinded Study. J. Neurosurg. 2019, 134, 137-143. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Stimulated Raman histology facilitates accurate diagnosis in neurosurgical patients: a one-to-one noninferiority study</title>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">H</forename><surname>Einstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faina</forename><surname>Ablyazova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><surname>Rosenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manju</forename><surname>Harshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Wahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gady</forename><surname>Har-El</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">D</forename><surname>Constantino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">A</forename><surname>Boockvar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Langer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Randy</forename><forename type="middle">S</forename><surname>D’amico</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-022-04071-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">159</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="369" to="375" />
+			<date type="published" when="2022-06-28">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Einstein, E.H.; Ablyazova, F.; Rosenberg, A.; Harshan, M.; Wahl, S.; Har-El, G.; Constantino, P.D.; Ellis, J.A.; Boockvar, J.A.; Langer, D.J.; et al. Stimulated Raman Histology Facilitates Accurate Diagnosis in Neurosurgical Patients: A One-to-One Noninferiority Study. J. Neurooncol. 2022, 159, 369-375. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Neuropathological interpretation of stimulated Raman histology images of brain and spine tumors: part B</title>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Straehle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Erny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Neidert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieter</forename><forename type="middle">Henrik</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>El Rahal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vlad</forename><surname>Sacalean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Steybe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Schmelzeisen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Vlachos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Mizaikoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">Christoph</forename><surname>Reinacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><forename type="middle">Arnd</forename><surname>Coenen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Prinz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Schnell</surname></persName>
+			<idno type="ORCID">0000-0002-1284-1427</idno>
+		</author>
+		<idno type="DOI">10.1007/s10143-021-01711-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Review</title>
+		<title level="j" type="abbrev">Neurosurg Rev</title>
+		<idno type="ISSNe">1437-2320</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1721" to="1729" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Straehle, J.; Erny, D.; Neidert, N.; Henrik Heiland, D.; El Rahal, A.; Sacalean, V.; Steybe, D.; Schmelzeisen, R.; Vlachos, A.; Mizaikoff, B.; et al. Neuropathological Interpretation of Stimulated Raman Histology Images of Brain and Spine Tumors: Part B. Neurosurg. Rev. 2022, 45, 1721-1729. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Toward digital histopathological assessment in surgery for central nervous system tumors using stimulated Raman histology</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">I</forename><surname>Wadiura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Kiesel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Roetzer-Pejrimovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Mischkulnig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clemens</forename><forename type="middle">C</forename><surname>Vogel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">A</forename><surname>Hainfellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Matula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adelheid</forename><surname>Wöhrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Roessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+		</author>
+		<idno type="DOI">10.3171/2022.9.focus22429</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Focus</title>
+		<idno type="ISSNe">1092-0684</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">E12</biblScope>
+			<date type="published" when="2022-12">2022</date>
+			<publisher>Journal of Neurosurgery Publishing Group (JNSPG)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wadiura, L.I.; Kiesel, B.; Roetzer-Pejrimovsky, T.; Mischkulnig, M.; Vogel, C.C.; Hainfellner, J.A.; Matula, C.; Freudiger, C.W.; Orringer, D.A.; Wöhrer, A.; et al. Toward Digital Histopathological Assessment in Surgery for Central Nervous System Tumors Using Stimulated Raman Histology. Neurosurg. Focus 2022, 53, E12. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Rapid Intraoperative Diagnosis of Pediatric Brain Tumors Using Stimulated Raman Histology</title>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yashar</forename><forename type="middle">S</forename><surname>Niknafs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mia</forename><forename type="middle">R</forename><surname>Garrard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><surname>Garton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cormac</forename><forename type="middle">O</forename><surname>Maher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><surname>Mcfadden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">P</forename><surname>Lieberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><surname>Muraszko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/0008-5472.can-17-1974</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Research</title>
+		<idno type="ISSN">0008-5472</idno>
+		<idno type="ISSNe">1538-7445</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="278" to="289" />
+			<date type="published" when="2018-01-01">2018</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.C.; Lewis, S.; Pandian, B.; Niknafs, Y.S.; Garrard, M.R.; Garton, H.; Maher, C.O.; McFadden, K.; Snuderl, M.; Lieberman, A.P.; et al. Rapid Intraoperative Diagnosis of Pediatric Brain Tumors Using Stimulated Raman Histology. Cancer Res. 2018, 78, 278-289. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Rapid Intraoperative Diagnosis of Meningiomas using Stimulated Raman Histology</title>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Di</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">G</forename><surname>Eichberg</surname></persName>
+			<idno type="ORCID">0000-0002-7654-2944</idno>
+		</author>
+		<author>
+			<persName><forename type="first">You</forename><forename type="middle">Jeong</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-0942-7997</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aria</forename><forename type="middle">M</forename><surname>Jamshidi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">M</forename><surname>Luther</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">M</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">J</forename><surname>Komotar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">E</forename><surname>Ivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sakir</forename><forename type="middle">H</forename><surname>Gultekin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2021.02.097</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page" from="e108" to="e116" />
+			<date type="published" when="2021-06">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Di, L.; Eichberg, D.G.; Park, Y.J.; Shah, A.H.; Jamshidi, A.M.; Luther, E.M.; Lu, V.M.; Komotar, R.J.; Ivan, M.E.; Gultekin, S.H. Rapid Intraoperative Diagnosis of Meningiomas Using Stimulated Raman Histology. World Neurosurg. 2021, 150, e108-e116. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Detection of glioma infiltration at the tumor margin using quantitative stimulated Raman scattering histology</title>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Pekmezci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramin</forename><forename type="middle">A</forename><surname>Morshed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pranathi</forename><surname>Chunduru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><forename type="middle">E</forename><surname>Villanueva-Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarik</forename><surname>Tihan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">A</forename><surname>Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manish</forename><forename type="middle">K</forename><surname>Aghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><forename type="middle">M</forename><surname>Molinaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-91648-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12162</biblScope>
+			<date type="published" when="2021-06-09">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pekmezci, M.; Morshed, R.A.; Chunduru, P.; Pandian, B.; Young, J.; Villanueva-Meyer, J.E.; Tihan, T.; Sloan, E.A.; Aghi, M.K.; Molinaro, A.M.; et al. Detection of Glioma Infiltration at the Tumor Margin Using Quantitative Stimulated Raman Scattering Histology. Sci. Rep. 2021, 11, 12162. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Rapid Automated Analysis of Skull Base Tumor Specimens Using Intraoperative Optical Imaging and Artificial Intelligence</title>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Bhattacharya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">R</forename><surname>Linzey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rushikesh</forename><forename type="middle">S</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sung</forename><forename type="middle">Jik</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sudharsan</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Alber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Kondepudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esteban</forename><surname>Urias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><forename type="middle">N</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">E</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Gregory</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siri</forename><forename type="middle">Sahib S</forename><surname>Khalsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donato</forename><forename type="middle">R</forename><surname>Pacione</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Golfinos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+		</author>
+		<idno type="DOI">10.1227/neu.0000000000001929</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgery</title>
+		<idno type="ISSN">0148-396X</idno>
+		<idno type="ISSNe">1524-4040</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="758" to="767" />
+			<date type="published" when="2022-03-30">2022</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jiang, C.; Bhattacharya, A.; Linzey, J.R.; Joshi, R.S.; Cha, S.J.; Srinivasan, S.; Alber, D.; Kondepudi, A.; Urias, E.; Pandian, B.; et al. Rapid Automated Analysis of Skull Base Tumor Specimens Using Intraoperative Optical Imaging and Artificial Intelligence. Neurosurgery 2022, 90, 758-767. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Streamlined Intraoperative Brain Tumor Classification and Molecular Subtyping in Stereotactic Biopsies Using Stimulated Raman Histology and Deep Learning</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+			<idno type="ORCID">0000-0002-3298-9517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Ruess</surname></persName>
+			<idno type="ORCID">0000-0003-1811-5132</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna-Katharina</forename><surname>Meissner</surname></persName>
+			<idno type="ORCID">0000-0003-4150-7265</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gina</forename><surname>Fürtjes</surname></persName>
+			<idno type="ORCID">0000-0003-3727-9984</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+			<idno type="ORCID">0000-0002-9873-1711</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Ion-Margineanu</surname></persName>
+			<idno type="ORCID">0000-0003-3788-2257</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Khalid</surname></persName>
+			<idno type="ORCID">0009-0008-2675-3592</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Blau</surname></persName>
+			<idno type="ORCID">0000-0003-0439-971X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Stehle</surname></persName>
+			<idno type="ORCID">0009-0000-9873-1714</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abdulkader</forename><surname>Al-Shugri</surname></persName>
+			<idno type="ORCID">0009-0001-4042-011X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Reinhard</forename><surname>Büttner</surname></persName>
+			<idno type="ORCID">0000-0001-8806-4786</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+			<idno type="ORCID">0000-0002-1927-0022</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><forename type="middle">I</forename><surname>Ruge</surname></persName>
+			<idno type="ORCID">0000-0003-0466-6646</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+			<idno type="ORCID">0000-0001-7527-6990</idno>
+		</author>
+		<idno type="DOI">10.1158/1078-0432.ccr-23-3842</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Cancer Research</title>
+		<idno type="ISSN">1078-0432</idno>
+		<idno type="ISSNe">1557-3265</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="3824" to="3836" />
+			<date type="published" when="2024-07-08">2024</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reinecke, D.; Ruess, D.; Meissner, A.-K.; Fürtjes, G.; von Spreckelsen, N.; Ion-Margineau, A.; Khalid, F.; Blau, T.; Stehle, T.; Al-Shughri, A.; et al. Streamlined Intraoperative Brain Tumor Classification and Molecular Subtyping in Stereotactic Biopsies Using Stimulated Raman Histology and Deep Learning. Clin. Cancer Res. 2024, 30, 3824-3836. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Novel rapid intraoperative qualitative tumor detection by a residual convolutional neural network using label-free stimulated Raman scattering microscopy</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+			<idno type="ORCID">0000-0002-3298-9517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Mawrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Ion-Margineanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gina</forename><surname>Fürtjes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><forename type="middle">T</forename><surname>Jünger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Khalid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Timmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><forename type="middle">I</forename><surname>Ruge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40478-022-01411-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica Communications</title>
+		<title level="j" type="abbrev">acta neuropathol commun</title>
+		<idno type="ISSNe">2051-5960</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">109</biblScope>
+			<date type="published" when="2022-08-06">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reinecke, D.; Spreckelsen, N.; Mawrin, C.; Ion-Margineanu, A.; Fürtjes, G.; Jünger, S.T.; Khalid, F.; Freudiger, C.W.; Timmer, M.; Ruge, M.I.; et al. Novel Rapid Intraoperative Qualitative Tumor Detection by a Residual Convolutional Neural Network Using Label-Free Stimulated Raman Scattering Microscopy. Acta Neuropathol. Commun. 2022, 10, 109. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Near real-time intraoperative brain tumor diagnosis using stimulated Raman histology and deep neural networks</title>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+			<idno type="ORCID">0000-0001-5987-6531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><forename type="middle">R</forename><surname>Adapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esteban</forename><surname>Urias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><forename type="middle">V</forename><surname>Save</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siri</forename><forename type="middle">Sahib S</forename><surname>Khalsa</surname></persName>
+			<idno type="ORCID">0000-0003-0800-3866</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">G</forename><surname>Eichberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Randy</forename><forename type="middle">S</forename><surname>D’amico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zia</forename><forename type="middle">U</forename><surname>Farooq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petros</forename><forename type="middle">D</forename><surname>Petridis</surname></persName>
+			<idno type="ORCID">0000-0001-7608-5723</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tamara</forename><surname>Marie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugh</forename><forename type="middle">J L</forename><surname>Garton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cormac</forename><forename type="middle">O</forename><surname>Maher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erin</forename><forename type="middle">L</forename><surname>Mckean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">E</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parag</forename><forename type="middle">G</forename><surname>Patil</surname></persName>
+			<idno type="ORCID">0000-0002-2300-6136</idno>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Gregory</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oren</forename><surname>Sagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guy</forename><forename type="middle">M</forename><surname>Mckhann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">J</forename><surname>Komotar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">E</forename><surname>Ivan</surname></persName>
+			<idno type="ORCID">0000-0002-4798-4989</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">L</forename><surname>Otten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">B</forename><surname>Sisti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">N</forename><surname>Bruce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><forename type="middle">M</forename><surname>Muraszko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><surname>Trautman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Canoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-019-0715-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="52" to="58" />
+			<date type="published" when="2020-01">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.C.; Pandian, B.; Adapa, A.R.; Urias, E.; Save, A.V.; Khalsa, S.S.S.; Eichberg, D.G.; D&apos;Amico, R.S.; Farooq, Z.U.; Lewis, S.; et al. Near Real-Time Intraoperative Brain Tumor Diagnosis Using Stimulated Raman Histology and Deep Neural Networks. Nat. Med. 2020, 26, 52-58. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Artificial-intelligence-based molecular classification of diffuse gliomas using rapid, label-free optical imaging</title>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Hollon</surname></persName>
+			<idno type="ORCID">0000-0001-5987-6531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0003-1759-4960</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Asadur</forename><surname>Chowdury</surname></persName>
+			<idno type="ORCID">0000-0002-5653-9721</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mustafa</forename><surname>Nasir-Moin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Kondepudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Aabedi</surname></persName>
+			<idno type="ORCID">0000-0002-7935-5458</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><surname>Adapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oren</forename><surname>Sagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>Lowenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">Irina</forename><surname>Wadiura</surname></persName>
+			<idno type="ORCID">0000-0002-0749-7684</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+			<idno type="ORCID">0000-0001-6014-0273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+			<idno type="ORCID">0000-0001-7527-6990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+			<idno type="ORCID">0000-0002-3298-9517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+			<idno type="ORCID">0000-0002-9873-1711</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Golfinos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matija</forename><surname>Snuderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-023-02252-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="828" to="832" />
+			<date type="published" when="2023-03-23">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.; Jiang, C.; Chowdury, A.; Nasir-Moin, M.; Kondepudi, A.; Aabedi, A.; Adapa, A.; Al-Holou, W.; Heth, J.; Sagher, O.; et al. Artificial-Intelligence-Based Molecular Classification of Diffuse Gliomas Using Rapid, Label-Free Optical Imaging. Nat. Med. 2023, 29, 828-832. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Rapid, label-free detection of diffuse glioma recurrence using intraoperative stimulated Raman histology and deep neural networks</title>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balaji</forename><surname>Pandian</surname></persName>
+			<idno type="ORCID">0000-0002-1020-9794</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Esteban</forename><surname>Urias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><forename type="middle">V</forename><surname>Save</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><forename type="middle">R</forename><surname>Adapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sudharsan</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><forename type="middle">K</forename><surname>Jairath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zia</forename><surname>Farooq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamara</forename><surname>Marie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wajd</forename><forename type="middle">N</forename><surname>Al-Holou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Eddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Heth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siri</forename><forename type="middle">Sahib S</forename><surname>Khalsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><surname>Conway</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oren</forename><surname>Sagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">N</forename><surname>Bruce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Canoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">W</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglak</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaa162</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="144" to="155" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.C.; Pandian, B.; Urias, E.; Save, A.V.; Adapa, A.R.; Srinivasan, S.; Jairath, N.K.; Farooq, Z.; Marie, T.; Al-Holou, W.N.; et al. Rapid, Label-Free Detection of Diffuse Glioma Recurrence Using Intraoperative Stimulated Raman Histology and Deep Neural Networks. Neuro Oncol. 2021, 23, 144-155. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Intraoperative microscopic autofluorescence detection and characterization in brain tumors using stimulated Raman histology and two-photon fluorescence</title>
+		<author>
+			<persName><forename type="first">Gina</forename><surname>Fürtjes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reinecke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Von Spreckelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna-Katharina</forename><surname>Meißner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Rueß</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Timmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Freudiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Ion-Margineanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Khalid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Watrinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Mawrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andriy</forename><surname>Chmyrov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Bruns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1146031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">1146031</biblScope>
+			<date type="published" when="2023-05-10">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fürtjes, G.; Reinecke, D.; Von Spreckelsen, N.; Meißner, A.-K.; Rueß, D.; Timmer, M.; Freudiger, C.; Ion-Margineanu, A.; Khalid, F.; Watrinet, K.; et al. Intraoperative Microscopic Autofluorescence Detection and Characterization in Brain Tumors Using Stimulated Raman Histology and Two-Photon Fluorescence. Front. Oncol. 2023, 13, 1146031. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Stimulated Raman histology in the neurosurgical workflow of a major European neurosurgical center — part A</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Neidert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Straehle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Erny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vlad</forename><surname>Sacalean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>El Rahal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Steybe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Schmelzeisen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Vlachos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">Christoph</forename><surname>Reinacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><forename type="middle">Arnd</forename><surname>Coenen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Mizaikoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieter</forename><forename type="middle">Henrik</forename><surname>Heiland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Prinz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Schnell</surname></persName>
+			<idno type="ORCID">0000-0002-1284-1427</idno>
+		</author>
+		<idno type="DOI">10.1007/s10143-021-01712-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Review</title>
+		<title level="j" type="abbrev">Neurosurg Rev</title>
+		<idno type="ISSNe">1437-2320</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1731" to="1739" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Neidert, N.; Straehle, J.; Erny, D.; Sacalean, V.; El Rahal, A.; Steybe, D.; Schmelzeisen, R.; Vlachos, A.; Reinacher, P.C.; Coenen, V.A.; et al. Stimulated Raman Histology in the Neurosurgical Workflow of a Major European Neurosurgical Center-Part A. Neurosurg. Rev. 2022, 45, 1731-1739. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">An automated tissue-to-diagnosis pipeline using intraoperative stimulated Raman histology and deep learning</title>
+		<author>
+			<persName><forename type="first">Todd</forename><forename type="middle">C</forename><surname>Hollon</surname></persName>
+			<idno type="ORCID">0000-0001-5987-6531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<idno type="DOI">10.1080/23723556.2020.1736742</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular &amp; Cellular Oncology</title>
+		<title level="j" type="abbrev">Molecular &amp; Cellular Oncology</title>
+		<idno type="ISSNe">2372-3556</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">1736742</biblScope>
+			<date type="published" when="2020-04-01">2020</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.C.; Orringer, D.A. An Automated Tissue-to-Diagnosis Pipeline Using Intraoperative Stimulated Raman Histology and Deep Learning. Mol. Cell Oncol. 2020, 7, 1736742. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Label-free brain tumor imaging using Raman-based methods</title>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Hollon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Orringer</surname></persName>
+			<idno type="ORCID">0000-0001-6427-8376</idno>
+		</author>
+		<idno type="DOI">10.1007/s11060-019-03380-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="393" to="402" />
+			<date type="published" when="2021-02">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hollon, T.; Orringer, D.A. Label-Free Brain Tumor Imaging Using Raman-Based Methods. J. Neurooncol. 2021, 151, 393-402. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Objective and Subjective Assessment of Digital Pathology Image Quality</title>
+		<author>
+			<persName><forename type="first">Prarthana</forename><surname>Shrestha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rik</forename><surname>Kneepkens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gijs</forename><surname>Van Elswijk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Vrijnsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roxana</forename><surname>Ion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Verhagen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Abels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Vossen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">And</forename><surname>Bas Hulsken</surname></persName>
+		</author>
+		<idno type="DOI">10.3934/medsci.2015.1.65</idno>
+	</analytic>
+	<monogr>
+		<title level="j">AIMS Medical Science</title>
+		<idno type="ISSN">2375-1576</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="65" to="78" />
+			<date type="published" when="2015">2015</date>
+			<publisher>American Institute of Mathematical Sciences (AIMS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shrestha, P.; Kneepkens, R.; van Elswijk, G.; Vrijnsen, J.; Ion, R.; Verhagen, D.; Abels, E.; Vossen, D.; Hulsken, B. Objective and Subjective Assessment of Digital Pathology Image Quality. AIMS Med. Sci. 2015, 2, 65-78. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Referenceless image quality evaluation for whole slide imaging</title>
+		<author>
+			<persName><forename type="first">Noriaki</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pinky</forename><forename type="middle">A</forename><surname>Bautista</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masahiro</forename><surname>Yamaguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nagaaki</forename><surname>Ohyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yukako</forename><surname>Yagi</surname></persName>
+		</author>
+		<idno type="DOI">10.4103/2153-3539.93891</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Pathology Informatics</title>
+		<title level="j" type="abbrev">Journal of Pathology Informatics</title>
+		<idno type="ISSN">2153-3539</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">9</biblScope>
+			<date type="published" when="2012-01">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hashimoto, N.; Bautista, P.A.; Yamaguchi, M.; Ohyama, N.; Yagi, Y. Referenceless Image Quality Evaluation for Whole Slide Imaging. J. Pathol. Inform. 2012, 3, 9. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Cronbach’s Alpha</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">G</forename><surname>Forero</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Cronbach's Alpha</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-94-007-0753-5_622</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Encyclopedia of Quality of Life and Well-Being Research</title>
+		<meeting><address><addrLine>Dordrecht, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Netherlands</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1357" to="1359" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Forero, C.G. Cronbach&apos;s Alpha. In Encyclopedia of Quality of Life and Well-Being Research; Springer: Dordrecht, The Netherlands, 2014; pp. 1357-1359.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Intraoperative Diagnosis of Central Nervous System Tumors: Challenges, Errors, Lessons Learned, and the Surgeon’s Perspective</title>
+		<author>
+			<persName><forename type="first">Yookarin</forename><surname>Khonglah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bifica</forename><forename type="middle">Sofia</forename><surname>Lyngdoh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arindom</forename><surname>Kakati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaya</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostafa</forename><forename type="middle">Muhammad</forename><surname>Al Aman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pranjal</forename><surname>Phukan</surname></persName>
+		</author>
+		<idno type="DOI">10.7759/cureus.17823</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cureus</title>
+		<idno type="ISSN">2168-8184</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">17823</biblScope>
+			<date type="published" when="2021-09-08">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khonglah, Y.; Lyngdoh, B.S.; Kakati, A.; Mishra, J.; Al Aman, M.M.; Phukan, P. Intraoperative Diagnosis of Central Nervous System Tumors: Challenges, Errors, Lessons Learned, and the Surgeon&apos;s Perspective. Cureus 2021, 13, e17823. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Personalisierte Hirntumorchirurgie mittels intraoperativer stimulierter Raman-Histologie</title>
+		<author>
+			<persName><forename type="first">Anna-Katharina</forename><surname>Meißner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Neuschmelting</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00104-024-02038-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Die Chirurgie</title>
+		<title level="j" type="abbrev">Chirurgie</title>
+		<idno type="ISSN">2731-6971</idno>
+		<idno type="ISSNe">2731-698X</idno>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="274" to="279" />
+			<date type="published" when="2024-02-09">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Meißner, A.-K.; Goldbrunner, R.; Neuschmelting, V. Intraoperative Stimulated Raman Histology for Personalized Brain Tumor Surgery. Chirurgie 2024, 95, 274-279. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Application of Raman spectroscopy for detection of histologically distinct areas in formalin-fixed paraffin-embedded glioblastoma</title>
+		<author>
+			<persName><forename type="first">Gilbert</forename><forename type="middle">Georg</forename><surname>Klamminger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Jacques</forename><surname>Gérardy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Finn</forename><surname>Jelke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giulia</forename><surname>Mirizzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rédouane</forename><surname>Slimani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karoline</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Husch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Hertel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Mittelbronn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><forename type="middle">B</forename><surname>Kleine-Borgmann</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/noajnl/vdab077</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology Advances</title>
+		<idno type="ISSNe">2632-2498</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">77</biblScope>
+			<date type="published" when="2021-01-01">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Klamminger, G.G.; Gérardy, J.-J.; Jelke, F.; Mirizzi, G.; Slimani, R.; Klein, K.; Husch, A.; Hertel, F.; Mittelbronn, M.; Kleine- Borgmann, F.B. Application of Raman Spectroscopy for Detection of Histologically Distinct Areas in Formalin-Fixed Paraffin- Embedded Glioblastoma. Neurooncol. Adv. 2021, 3, vdab077. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Raman spectroscopy to distinguish grey matter, necrosis, and glioblastoma multiforme in frozen tissue sections</title>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">N</forename><surname>Kalkanis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">E</forename><surname>Kast</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">L</forename><surname>Rosenblum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Mikkelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sally</forename><forename type="middle">M</forename><surname>Yurgelevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katrina</forename><forename type="middle">M</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Raghunathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laila</forename><forename type="middle">M</forename><surname>Poisson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">W</forename><surname>Auner</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-013-1326-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="477" to="485" />
+			<date type="published" when="2014-01-04">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kalkanis, S.N.; Kast, R.E.; Rosenblum, M.L.; Mikkelsen, T.; Yurgelevic, S.M.; Nelson, K.M.; Raghunathan, A.; Poisson, L.M.; Auner, G.W. Raman Spectroscopy to Distinguish Grey Matter, Necrosis, and Glioblastoma Multiforme in Frozen Tissue Sections. J. Neurooncol. 2014, 116, 477-485. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Raman molecular imaging of brain frozen tissue sections</title>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">E</forename><surname>Kast</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">W</forename><surname>Auner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">L</forename><surname>Rosenblum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Mikkelsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sally</forename><forename type="middle">M</forename><surname>Yurgelevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Raghunathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laila</forename><forename type="middle">M</forename><surname>Poisson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">N</forename><surname>Kalkanis</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-014-1536-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="55" to="62" />
+			<date type="published" when="2014-07-20">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kast, R.E.; Auner, G.W.; Rosenblum, M.L.; Mikkelsen, T.; Yurgelevic, S.M.; Raghunathan, A.; Poisson, L.M.; Kalkanis, S.N. Raman Molecular Imaging of Brain Frozen Tissue Sections. J. Neurooncol. 2014, 120, 55-62. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Raman spectral imaging of single cancer cells: probing the impact of sample fixation methods</title>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Draux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cyril</forename><surname>Gobinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josep</forename><surname>Sulé-Suso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aurélie</forename><surname>Trussardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Manfait</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Jeannesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ganesh</forename><forename type="middle">D</forename><surname>Sockalingum</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00216-010-3759-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Analytical and Bioanalytical Chemistry</title>
+		<title level="j" type="abbrev">Anal Bioanal Chem</title>
+		<idno type="ISSN">1618-2642</idno>
+		<idno type="ISSNe">1618-2650</idno>
+		<imprint>
+			<biblScope unit="volume">397</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2727" to="2737" />
+			<date type="published" when="2010-05-20">2010</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Draux, F.; Gobinet, C.; Sulé-Suso, J.; Trussardi, A.; Manfait, M.; Jeannesson, P.; Sockalingum, G.D. Raman Spectral Imaging of Single Cancer Cells: Probing the Impact of Sample Fixation Methods. Anal. Bioanal. Chem. 2010, 397, 2727-2737. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Effect of formalin fixation on the near-infrared Raman spectroscopy of normal and cancerous human bronchial tissues</title>
+		<author>
+			<persName><forename type="first">Zhiwei</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annette</forename><surname>Mcwilliams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>English</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Mclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harvey</forename><surname>Lui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haishan</forename><surname>Zeng</surname></persName>
+		</author>
+		<idno type="DOI">10.3892/ijo.23.3.649</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Oncology</title>
+		<title level="j" type="abbrev">Int J Oncol</title>
+		<idno type="ISSN">1019-6439</idno>
+		<idno type="ISSNe">1791-2423</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="649" to="655" />
+			<date type="published" when="2003-09-01">2003</date>
+			<publisher>Spandidos Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang, Z.; McWilliams, A.; Lam, S.; English, J.; McLean, D.; Lui, H.; Zeng, H. Effect of Formalin Fixation on the Near-Infrared Raman Spectroscopy of Normal and Cancerous Human Bronchial Tissues. Int. J. Oncol. 2003, 23, 649-655. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Artifacts in Frozen Section Preparation</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">B</forename><surname>Desciak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">E</forename><surname>Maloney</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1524-4725.2000.99246.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Dermatologic Surgery</title>
+		<title level="j" type="abbrev">Dermatologic Surgery</title>
+		<idno type="ISSN">1076-0512</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="500" to="504" />
+			<date type="published" when="2000-05">2000</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Desciak, E.B.; Maloney, M.E. Artifacts in Frozen Section Preparation. Dermatol. Surg. 2000, 26, 500-504. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Ex vivo fluorescence confocal microscopy: chances and changes in the analysis of breast tissue</title>
+		<author>
+			<persName><forename type="first">Maja</forename><forename type="middle">Carina</forename><surname>Nackenhorst</surname></persName>
+			<idno type="ORCID">0000-0002-1591-0483</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Kasiri</surname></persName>
+			<idno type="ORCID">0000-0003-1184-6303</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bernd</forename><surname>Gollackner</surname></persName>
+			<idno type="ORCID">0000-0002-7313-0960</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz</forename><surname>Regele</surname></persName>
+			<idno type="ORCID">0000-0003-2929-6135</idno>
+		</author>
+		<idno type="DOI">10.1186/s13000-022-01240-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostic Pathology</title>
+		<title level="j" type="abbrev">Diagn Pathol</title>
+		<idno type="ISSNe">1746-1596</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">55</biblScope>
+			<date type="published" when="2022-06-28">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nackenhorst, M.C.; Kasiri, M.; Gollackner, B.; Regele, H. Ex Vivo Fluorescence Confocal Microscopy: Chances and Changes in the Analysis of Breast Tissue. Diagn. Pathol. 2022, 17, 55. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The procurement, storage, and quality assurance of frozen blood and tissue biospecimens in pathology, biorepository, and biobank settings</title>
+		<author>
+			<persName><forename type="first">Maryam</forename><surname>Shabihkhani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">M</forename><surname>Lucey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Mareninov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><forename type="middle">J</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harry</forename><forename type="middle">V</forename><surname>Vinters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elyse</forename><forename type="middle">J</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">H</forename><surname>Yong</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clinbiochem.2014.01.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Biochemistry</title>
+		<title level="j" type="abbrev">Clinical Biochemistry</title>
+		<idno type="ISSN">0009-9120</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4-5</biblScope>
+			<biblScope unit="page" from="258" to="266" />
+			<date type="published" when="2014-03">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shabihkhani, M.; Lucey, G.M.; Wei, B.; Mareninov, S.; Lou, J.J.; Vinters, H.V.; Singer, E.J.; Cloughesy, T.F.; Yong, W.H. The Procurement, Storage, and Quality Assurance of Frozen Blood and Tissue Biospecimens in Pathology, Biorepository, and Biobank Settings. Clin. Biochem. 2014, 47, 258-266. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Frozen tissue biobanks. Tissue handling, cryopreservation, extraction, and use for proteomic analysis</title>
+		<author>
+			<persName><forename type="first">Christer</forename><surname>Ericsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Franzén</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monica</forename><surname>Nistér</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/02841860600818047</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Oncologica</title>
+		<title level="j" type="abbrev">Acta Oncologica</title>
+		<idno type="ISSN">0284-186X</idno>
+		<idno type="ISSNe">1651-226X</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="643" to="661" />
+			<date type="published" when="2006-01">2006</date>
+			<publisher>MJS Publishing, Medical Journals Sweden AB</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ericsson, C.; Franzén, B.; Nistér, M. Frozen Tissue Biobanks. Tissue Handling, Cryopreservation, Extraction, and Use for Proteomic Analysis. Acta Oncol. 2006, 45, 643-661. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Evaluation of Long-Term Cryostorage of Brain Tissue Sections for Quantitative Histochemistry</title>
+		<author>
+			<persName><forename type="first">Larissa</forename><forename type="middle">I</forename><surname>Estrada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amy</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">C</forename><surname>Amaral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eustathia</forename><forename type="middle">L</forename><surname>Giannaris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadine</forename><forename type="middle">C</forename><surname>Heyworth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farzad</forename><surname>Mortazavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">B</forename><surname>Ngwenya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Debra</forename><forename type="middle">E</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><forename type="middle">J</forename><surname>Cabral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">J</forename><surname>Killiany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><forename type="middle">L</forename><surname>Rosene</surname></persName>
+		</author>
+		<idno type="DOI">10.1369/0022155416686934</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Histochemistry &amp; Cytochemistry</title>
+		<title level="j" type="abbrev">J Histochem Cytochem.</title>
+		<idno type="ISSN">0022-1554</idno>
+		<idno type="ISSNe">1551-5044</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="153" to="171" />
+			<date type="published" when="2017-01-12">2017</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Estrada, L.I.; Robinson, A.A.; Amaral, A.C.; Giannaris, E.L.; Heyworth, N.C.; Mortazavi, F.; Ngwenya, L.B.; Roberts, D.E.; Cabral, H.J.; Killiany, R.J.; et al. Evaluation of Long-Term Cryostorage of Brain Tissue Sections for Quantitative Histochemistry. J. Histochem. Cytochem. 2017, 65, 153-171. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Confounders of intraoperative frozen section pathology during glioma surgery</title>
+		<author>
+			<persName><forename type="first">Johanna</forename><forename type="middle">Waltraud Anita</forename><surname>Harms</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eileen</forename><forename type="middle">Maria Susanne</forename><surname>Streckert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nora</forename><forename type="middle">Maren</forename><surname>Kiolbassa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Grauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Oertel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><forename type="middle">Theodor</forename><surname>Eich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Stummer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Werner</forename><surname>Paulus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Brokinkel</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10143-023-02169-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Review</title>
+		<title level="j" type="abbrev">Neurosurg Rev</title>
+		<idno type="ISSNe">1437-2320</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">286</biblScope>
+			<date type="published" when="2023-10-28">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Harms, J.W.A.; Streckert, E.M.S.; Kiolbassa, N.M.; Thomas, C.; Grauer, O.; Oertel, M.; Eich, H.T.; Stummer, W.; Paulus, W.; Brokinkel, B. Confounders of Intraoperative Frozen Section Pathology during Glioma Surgery. Neurosurg. Rev. 2023, 46, 286. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">An Audit of Diagnostic Disparity between Intraoperative Frozen Section Diagnosis and Final Histopathological Diagnosis of Central Nervous System Lesions at a Tertiary Care Center</title>
+		<author>
+			<persName><forename type="first">Meghna</forename><surname>Yadav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pragya</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vikram</forename><surname>Singh</surname></persName>
+			<idno type="ORCID">0000-0001-8939-7515</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rohit</forename><surname>Tewari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prabha</forename><forename type="middle">Shankar</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaushik</forename><surname>Roy</surname></persName>
+		</author>
+		<idno type="DOI">10.1055/s-0042-1750064</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Laboratory Physicians</title>
+		<title level="j" type="abbrev">J Lab Physicians</title>
+		<idno type="ISSN">0974-2727</idno>
+		<idno type="ISSNe">0974-7826</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">04</biblScope>
+			<biblScope unit="page" from="384" to="393" />
+			<date type="published" when="2022-08-17">2022</date>
+			<publisher>Scientific Scholar</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yadav, M.; Sharma, P.; Singh, V.; Tewari, R.; Mishra, P.S.; Roy, K. An Audit of Diagnostic Disparity between Intraoperative Frozen Section Diagnosis and Final Histopathological Diagnosis of Central Nervous System Lesions at a Tertiary Care Center. J. Lab. Physicians 2022, 14, 384-393. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The 2021 WHO Classification of Tumors of the Central Nervous System: a summary</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">N</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arie</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Wesseling</surname></persName>
+			<idno type="ORCID">0000-0001-5453-5201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Brat</surname></persName>
+			<idno type="ORCID">0000-0002-0633-6563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">A</forename><surname>Cree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Figarella-Branger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><forename type="middle">M</forename><surname>Pfister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">W</forename><surname>Ellison</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1231" to="1251" />
+			<date type="published" when="2021-06-29">2021. 2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Louis, D.N.; Perry, A.; Wesseling, P.; Brat, D.J.; Cree, I.A.; Figarella-Branger, D.; Hawkins, C.; Ng, H.K.; Pfister, S.M.; Reifenberger, G.; et al. The 2021 WHO Classification of Tumors of the Central Nervous System: A Summary. Neuro Oncol. 2021, 23, 1231-1251. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The Effect of Quality Control on Accuracy of Digital Pathology Image Analysis</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">I</forename><surname>Wright</surname></persName>
+			<idno type="ORCID">0000-0002-3310-1145</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Catriona</forename><forename type="middle">M</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Hale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><forename type="middle">G A</forename><surname>Hutchins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darren</forename><forename type="middle">E</forename><surname>Treanor</surname></persName>
+			<idno type="ORCID">0000-0002-4579-484X</idno>
+		</author>
+		<idno type="DOI">10.1109/jbhi.2020.3046094</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Biomedical and Health Informatics</title>
+		<title level="j" type="abbrev">IEEE J. Biomed. Health Inform.</title>
+		<idno type="ISSN">2168-2194</idno>
+		<idno type="ISSNe">2168-2208</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="314" />
+			<date type="published" when="2021-02">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wright, A.I.; Dunn, C.M.; Hale, M.; Hutchins, G.G.A.; Treanor, D.E. The Effect of Quality Control on Accuracy of Digital Pathology Image Analysis. IEEE J. Biomed. Health Inform. 2021, 25, 307-314. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Focus Quality Assessment of High-Throughput Whole Slide Imaging in Digital Pathology</title>
+		<author>
+			<persName><forename type="first">Mahdi</forename><forename type="middle">S</forename><surname>Hosseini</surname></persName>
+			<idno type="ORCID">0000-0002-9147-0731</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jasper</forename><forename type="middle">A Z</forename><surname>Brawley-Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yueyang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lyndon</forename><surname>Chan</surname></persName>
+			<idno type="ORCID">0000-0002-1185-7961</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantinos</forename><surname>Plataniotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Savvas</forename><surname>Damaskinos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2019.2919722</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="74" />
+			<date type="published" when="2020-01">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hosseini, M.S.; Brawley-Hayes, J.A.Z.; Zhang, Y.; Chan, L.; Plataniotis, K.; Damaskinos, S. Focus Quality Assessment of High-Throughput Whole Slide Imaging in Digital Pathology. IEEE Trans. Med. Imaging 2020, 39, 62-74.</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Focus Quality Assessment of High-Throughput Whole Slide Imaging in Digital Pathology</title>
+		<author>
+			<persName><forename type="first">Mahdi</forename><forename type="middle">S</forename><surname>Hosseini</surname></persName>
+			<idno type="ORCID">0000-0002-9147-0731</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jasper</forename><forename type="middle">A Z</forename><surname>Brawley-Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yueyang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lyndon</forename><surname>Chan</surname></persName>
+			<idno type="ORCID">0000-0002-1185-7961</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantinos</forename><surname>Plataniotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Savvas</forename><surname>Damaskinos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2019.2919722</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="74" />
+			<date type="published" when="2020-01" />
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">An overview of the challenges of bringing a medical device for the spine to the market * *Disclaimer: Any opinions expressed in this article are solely the personal opinions of the author at the time of writing, and do not necessarily represent those of any company, organisation or institution.</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Alcock</surname></persName>
+		</author>
+		<idno type="DOI">10.1533/9780857096197.1.41</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Biomaterials for Spinal Surgery</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="41" to="77" />
+		</imprint>
+	</monogr>
+	<note>Disclaimer/Publisher&apos;s Note MDPI and/or the editor(s MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content</note>
+	<note type="raw_reference">Disclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

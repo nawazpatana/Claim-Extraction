@@ -1,0 +1,2484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Predicting isocitrate dehydrogenase status in glioma using hierarchical attention-based deep 3D multiple instance learning</title>
+				<funder ref="#_j4aEXKP">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder ref="#_zxPFVre">
+					<orgName type="full">Shaanxi Provincial Key Industrial Innovation Chain Project</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-18">18 December 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Qinqin</forename><surname>Xie</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> PET-CT Center , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">PET-CT Center</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Network Information , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">Department of Network Information</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yongheng</forename><surname>Sun</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> School of Mathematics and Statistics , Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department">School of Mathematics and Statistics</orgName>
+								<orgName type="institution">Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuxia</forename><surname>Liang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> PET-CT Center , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">PET-CT Center</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yu</forename><surname>Shang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> PET-CT Center , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">PET-CT Center</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Haifeng</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> School of Mathematics and Statistics , Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department">School of Mathematics and Statistics</orgName>
+								<orgName type="institution">Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Fan</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Rong</forename><surname>Wei</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Network Information , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">Department of Network Information</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> School of Mathematics and Statistics , Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department">School of Mathematics and Statistics</orgName>
+								<orgName type="institution">Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bin</forename><surname>Chen</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Data Center , Hangzhou First People&apos;s Hospital , Hangzhou , China</note>
+								<orgName type="department">Data Center</orgName>
+								<orgName type="institution">Hangzhou First People&apos;s Hospital</orgName>
+								<address>
+									<settlement>Hangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ming</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> PET-CT Center , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">PET-CT Center</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chen</forename><surname>Niu</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> PET-CT Center , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">PET-CT Center</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Network Information , The First Affiliated Hospital of Xi&apos;an Jiaotong University , Xi&apos;an , China ,</note>
+								<orgName type="department" key="dep1">Department of Network Information</orgName>
+								<orgName type="department" key="dep2">The First Affiliated Hospital</orgName>
+								<orgName type="institution">of Xi&apos;an Jiaotong University</orgName>
+								<address>
+									<settlement>Xi&apos;an</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<note type="raw_affiliation">University and City of Health and Science Hospital , Italy</note>
+								<orgName type="institution">University and City of Health and Science Hospital</orgName>
+								<address>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<note type="raw_affiliation">IRCCS Ospedale San Raffaele , Italy</note>
+								<orgName type="institution">IRCCS Ospedale San Raffaele</orgName>
+								<address>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<note type="raw_affiliation">Harbin University of Science and Technology , China</note>
+								<orgName type="institution">Harbin University of Science and Technology</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Predicting isocitrate dehydrogenase status in glioma using hierarchical attention-based deep 3D multiple instance learning</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Oncology</title>
+						<title level="j" type="abbrev">Front. Oncol.</title>
+						<idno type="eISSN">2234-943X</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<date type="published" when="2025-12-18">18 December 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DA583F7FCB1A87817563AE01E24D3EB7</idno>
+					<idno type="DOI">10.3389/fonc.2025.1665690</idno>
+					<note type="submission">RECEIVED 16 July 2025 REVISED 02 December 2025 ACCEPTED 03 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T18:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>dynamic gated attention</term>
+					<term>glioma</term>
+					<term>IDH</term>
+					<term>location encoding</term>
+					<term>Multiple Instance Learning Frontiers in Oncology frontiersin.org 01</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background: According to the 2021 WHO classification of tumors of the central nervous system, isocitrate dehydrogenase (IDH) status serve an independent prognostic biomarker and is closely associated with tumor diagnosis and treatment response. At present, the determination of IDH status still relies on invasive surgical procedures. Method: A total of 345 patients with pathologically confirmed gliomas diagnosed at the First Affiliated Hospital of Xi'an Jiaotong University between October 2019 and October 2024 were retrospectively included, comprising 148 (42.9%) IDHwild and 197 (57.1%) IDH-mutant. An additional 495 glioma patients were obtained from the public TCIA dataset. Patients were randomly split into training, validation, and test cohorts 6:2:2. A Hierarchical Attention-Based Multiple Instance Learning (HAB-MIL) framework was developed, integrating auxiliary positional encoding into feature maps to capture spatially specific information and generate refined 3D lesion representations. Model performance was evaluated using five-fold cross-validation, with receiver operating characteristic (ROC) curves, area under the curve (AUC), sensitivity, and specificity as assessment metrics. Result: HAB-MIL achieved competitive performance, with AUCs of 0.917 and 0.892 on the glioma datasets from TCIA and the First Affiliated Hospital of Xi'an Jiaotong University. Additionally, our work achieves results that are comparable to the state-of-the-art methods in TCIA dataset and demonstrates that multiple instance learning has great potential for IDH prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion:</head><p>The proposed HAB-MIL achieved IDH classification based on conventional preoperative MRI images, eliminating the need for pixel-level annotations and significantly reducing the annotation burden for doctors.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.389" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.389" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.389" lry="841.66"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Gliomas, the most prevalent malignant tumor in the central nervous system, account for approximately 80% of all intracranial tumors <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b1">2)</ref>. According to the WHO 2021 classification of central nervous system tumors, isocitrate dehydrogenase (IDH) status is considered as a critical biomarker for the diagnosis and treatment of glioma and plays a vital role in prognosis and treatment strategies <ref type="bibr" target="#b2">(3,</ref><ref type="bibr" target="#b3">4)</ref>. Previous studies have shown that patients with IDH-wild generally have a poorer prognosis and exhibit less sensitivity to the therapeutic targeting of lDH mutations with vorasidenib compared with those with IDH-mutant <ref type="bibr" target="#b4">(5)</ref><ref type="bibr" target="#b5">(6)</ref><ref type="bibr" target="#b6">(7)</ref>. At present, determination of IDH status primarily depends on surgical sampling followed by genetic sequencing. However, these approaches have several limitations: lesions that are deeply situated or located near eloquent brain regions may be difficult or impossible to sample <ref type="bibr" target="#b7">(8,</ref><ref type="bibr" target="#b8">9)</ref>. Consequently, the accurate and noninvasive prediction of IDH status has become an urgent clinical need.</p><p>Recent advances in artificial intelligence, particularly in deep learning, have enabled noninvasive assessment of IDH status through MRI <ref type="bibr" target="#b9">(10)</ref><ref type="bibr" target="#b10">(11)</ref><ref type="bibr" target="#b11">(12)</ref>. Deep learning models can automatically learn complex patterns directly from raw images, thereby minimizing the need for manual feature extraction and extensive domain expertise. In contrast to traditional tissue biopsies, it provides a safe, efficient, and repeatable way to preoperative evaluation and long-term follow-up <ref type="bibr" target="#b12">(13,</ref><ref type="bibr" target="#b13">14)</ref>. However, it largely depends on access to high-quality annotated datasets <ref type="bibr" target="#b14">(15)</ref>. Data labeling is labor-intensive and requires the expertise of highly trained specialists.</p><p>To overcome the challenges, weakly supervised learning approaches-such as Multiple Instance Learning (MIL)-have gained considerable attention in medical image analysis <ref type="bibr" target="#b15">(16)</ref><ref type="bibr" target="#b16">(17)</ref><ref type="bibr" target="#b17">(18)</ref>. In the MIL framework, an image is regarded as a "bag" consisting of multiple "instances," such as image patches or slices. For binary classification tasks, a bag is labeled as positive if at least one instance is positive. By relying on bag-level rather than instance-level labels, MIL is well suited for medical imaging lacking of fine-grained labeling <ref type="bibr" target="#b18">(19)</ref>.</p><p>Although MIL approaches, such as Attention-based Multiple Instance Learning (AB-MIL) and Clustering-constrained Attention Multiple Instance Learning (CLAM), have achieved remarkable progress in instance-level feature aggregation, they often overlook the spatial positional relationships among instances within the original image. In AB-MIL, the attention weights are derived from a fixed parameter matrix shared across all samples. This global static attention mechanism struggles to adapt to the diverse morphological variations of lesions and tends to overemphasize irrelevant background or noisy regions <ref type="bibr" target="#b19">(20,</ref><ref type="bibr" target="#b20">21)</ref>. Similarly, CLAM, despite introducing a clustering constraint to improve instancelevel discriminability, still relies on a single static attention mechanism and therefore lacks the capability to dynamically adjust attention distributions in response to varying feature patterns across different samples <ref type="bibr" target="#b21">(22,</ref><ref type="bibr" target="#b22">23)</ref>.</p><p>To address these limitations, we propose a MIL network named Hierarchical Attention-Based Multiple Instance Learning (HAB-MIL). The model includes a Dynamic Gated Attention (DGA) module that integrates a learnable singular value decomposition (LSVD) framework. This framework adaptively decomposes a n d r e w e i g h t s t h e i ns t a n c e fe a t u r e m a t r i x , al l o w i n g dynamic modulation of the key components within the attention map. It enables the network to capture latent inter-instance dependencies and adjust the attention distribution in a dataadaptive manner.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Patient</head><p>This study included patients who were preoperatively diagnosed with glioma and underwent surgical treatment at the Department of Neurosurgery, the First Affiliated Hospital of Xi'an Jiaotong University, between October 2019 and October 2024. A total of 506 patients with histopathologically confirmed glioma and available genetic testing were initially screened according to the 2021 WHO classification of tumors of the central nervous system, 5th edition. After applying the inclusion and exclusion criteria, 345 patients who met all requirements were ultimately enrolled in the study cohort, as shown in Figure <ref type="figure" target="#fig_0">1</ref>. The IDH status of all data was determined by DNA sequencing.</p><p>Inclusion Criteria:</p><p>1. Patients aged 18-80 years with a single intracranial lesion confirmed as glioma by postoperative pathology, with complete molecular genetic testing results.</p><p>2. Mini-Mental State Examination (MMSE) score between 28 and 30, indicating no significant cognitive impairment and sufficient ability to cooperate during MRI scanning. 3. No MRI contraindications, such as metallic implants, cardiac pacemakers, or severe claustrophobia. 4. No prior history of craniotomy or radiotherapy. Exclusion Criteria: 1. Poor imaging quality or severe artifacts resulting in data unsuitable for analysis. 2. Presence of infectious, structural, or metabolic brain diseases that could interfere with image interpretation. 3. Incomplete or indeterminate pathological and molecular genetic testing results.</p><p>All patients underwent preoperative cranial MRI examinations and provided written informed consent prior to imaging. The study was approved by the Ethics Committee of the First Affiliated Hospital of Xi'an Jiaotong University and was registered at ClinicalTrials.gov (registration number: NCT05019196).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Method</head><p>Given a complete histopathological image slice X, our goal is to predict the image label Y by analyzing the features extracted from discrimination patches x 1 , x 2 , …, x n . To achieve this, we designed a two-stage framework for the classification of IDH status, as illustrated in Figure <ref type="figure" target="#fig_1">2</ref>. In the first stage, we encode the spatial features of the tumor. In the second stage, we introduce a novel HAB-MIL network, which comprises multiple layers of convolutional neural networks and an attention mechanism module. This module aggregates the features of the candidate instance in the Yimage-level prediction by recalibrating the importance coefficients for each instance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Deep instance generation</head><p>In MIL, the data is organized into "bags", each containing multiple "instances". The label assigned to a bag depends on the instances it contains. For a binary classification task, the bag is labeled positive if at least one instance within it is positive; otherwise, it is labeled negative. In the weakly supervised histopathology image classification problem, the dataset D = X 1 , X 2 , …, X N f g consists of NMRI images, where each slide x i has label y i ∈ 0, 1 f g, and the objective is to train a model to predict the labels of MRIs. This relationship is formally expressed as (Equation <ref type="formula">1</ref>):</p><formula xml:id="formula_0">Y = 0, if o M i=1 y i = 0 1, else 8 &gt; &lt; &gt; : (1)</formula><p>where Y is the bag label, y i is the label of instance, and is the number of instances in each bag. In our work, this assumption indicates that MRI is from a glioma patient if it involves at least one lesion. Based on the assumption, the empirical loss is formulated by (Equation <ref type="formula" target="#formula_1">2</ref>):</p><formula xml:id="formula_1">Ê̂Q h f À Á = 1 m o m i=1 l h f X i ð Þ, Y i À Á<label>(2)</label></formula><p>where h f represents a labeling function induced an MIL scoring function f , and l • ð Þcan be any loss function. The MIL process can be mathematically represented as follows (Equation <ref type="formula" target="#formula_2">3</ref>):</p><formula xml:id="formula_2">Y = g h f x 1 ð Þ, f x 2 ð Þ, …, f x N ð Þ ð Þ ð Þ (<label>3</label></formula><formula xml:id="formula_3">)</formula><p>where f is the feature extraction function, his the instance-level aggregation operator, g is predicts the bag-level label. The model processes three MRI modalities: T1w, T2w and Flair, which represented as a 3D tensor x ∈ R BÂCÂHÂWÂD , where Bis the batch size, Cis the number of channels and H Â W Â Dis the spatial resolution. The final layer of 3D fully CNN outputs a series of 3D feature maps F final with the shape of H * Â W * Â S * Â D, where H * , W * , S * and Drepresent the high, width, spatial, and feature dimension of 3D feature maps, respectively. The feature extraction process consists of multiple 3D convolutional layers, batch normalization, ReLU activation, max pooling, and dropout layers. Finally, feature map is formulated as (Equation <ref type="formula" target="#formula_4">4</ref>):</p><formula xml:id="formula_4">F final = Dropout MaxPool s BN W 0 * x + b 0 ð Þ ð Þ ð Þ ð Þ<label>(4)</label></formula><p>where W 0 is a 3D convolution kernels, with size 3 Â 3 Â 3, and the output channels are 32. * indicates the 3D convolution operation. Batch Normalization (BN) is used to stabilize training. s is the ReLU activation function.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Collateral location encoding</head><p>The spatial location of a tumor often provides critical diagnostic cues <ref type="bibr" target="#b23">(24,</ref><ref type="bibr" target="#b24">25)</ref>, since we proposed Collateral location encoding (CLE), as illustrated in Figure <ref type="figure" target="#fig_1">2. P x</ref>, <ref type="figure">y</ref>, <ref type="figure">z</ref> ð Þrepresents the voxel coordinates of the image. Since p = x, y, z ð Þtypically takes continuous values, employing a smooth nonlinear transformation like GELU allows for a more natural modeling of the relationships between coordinates, unlike ReLU, which introduces abrupt discontinuities. The location feature map F p ð Þor each position of pixel p = x, y, z ð Þ is calculated as (Equation <ref type="formula">5</ref>):</p><formula xml:id="formula_5">F p ð Þ = a 2 • GELU a 1 • p + b 1 ð Þ + b 2 (5)</formula><p>where a 1 , a 2 , b 1 , b 2 are the learnable weights and biases of our neural positional encoding layers. The learned features F and location encoding F from the previous feature extraction are first normalized to benefit the training and backpropagation process. Then features concatenated to be the input of this phase, which can be denoted as (Equation <ref type="formula" target="#formula_6">6</ref>):</p><formula xml:id="formula_6">F 0 = Norm F ð Þ Norm F À Á É È<label>(6)</label></formula><p>where kmeans the concatenation operation, Norm F ð Þ, Norm F À Á r e f e r t o t h e n o r m a l i z a t i o n o f F, F ,</p><formula xml:id="formula_7">H 0 = H norm Ĥ norm É = H norm 1 ½ k Ĥ norm 1 È Ã , …, H norm k Ĥ norm k Ã Â É È H norm k , Ĥ norm k ∈ R n .</formula><p>Then, using the self-attention mechanism, the importance of the features can be calculated by (Equations 7, 8):</p><formula xml:id="formula_8">A = softmax WH 0 + b À Á<label>(7)</label></formula><formula xml:id="formula_9">O = H 0 ⊗ A<label>(8)</label></formula><p>where W, b denote the learnable weight and bias parameters. H 0 and O represent the input and output of the adaptive feature importance weighting mechanism based on the attention module. Softmax operation is applied to normalize the attention scores and resulting in an attention weight matrix A that maps each weight to the interval 0, 1 ½ and guarantees the sum of these mapped attention weights to be 1. ⊗denotes element-wise multiplication. Through this process, the input features can be weighted and assigned different importance, enabling the model to emphasize critical features and thereby enhance overall performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Dynamic gated attention</head><p>Attention mechanisms are well known for dynamically highlighting important parts of input data by assigning different weights, allowing the model to focus on the most critical information for the task at hand <ref type="bibr" target="#b25">(26)</ref><ref type="bibr" target="#b26">(27)</ref><ref type="bibr" target="#b27">(28)</ref>. To enhance the accuracy of learning attention weights, we propose Dynamic Overview of the hierarchical attention-based multiple instance learning for predicting isocitrate dehydrogenase status in glioma.</p><p>Gated Attention (DGA), which achieves superior performance. As illustrated in Figure <ref type="figure" target="#fig_1">2</ref>, the DGA module integrates two different processing methods.</p><p>The first component is an attention representation that uses Tanh as the activation function. With an output range of -1, 1 ½ , Tanh provides both positive and negative activation signals, allowing the model to capture complex relationship features. In addition, a dropout function is incorporated to mitigate overfitting. The attention weights are defined as (Equation <ref type="formula" target="#formula_10">9</ref>):</p><formula xml:id="formula_10">a Tanh x ð Þ = e x -e -x e x + e -x<label>(9)</label></formula><p>The second component utilizes a different attention representation. As illustrated in Figure <ref type="figure">3</ref>, we propose using Learnable Singular Value Decomposition (LSVD) to reduce the dimensionality of the feature map (29), followed by a Sigmoid activation function, which creates a "switch-like" effect, indicating whether the model should attend to or ignore a particular feature. The algorithm flowchart is shown in Algorithm 1.</p><p>Fact1 The feature map A i can be decomposed as</p><formula xml:id="formula_11">A i = a U S 0 a V , where a U ∈ R nÂℜ A i</formula><p>ð Þ is an orthogonal matrix with the left singular vector of A i as the column vector, where a T V ∈ R nÂℜ A ð Þ is an orthogonal matrix formed by the right singular vectors of A i . The</p><formula xml:id="formula_12">matrix o 0 ∈ R ℜ A i ð ÞÂℜ A i ð Þ is a diagonal matrix consisting of the singular values of A i .</formula><p>Proof of the Fact 1: According to the Singular Value Decomposition (SVD), any matrix M ∈ R mÂn admits a factorization of the form M = U o V T , where s 1 ≥ s 2 ≥ … ≥ s r &gt; 0 are the singular values and r = ℜ M ð Þ is the rank of M. Hence, for A i ∈ R mÂn , the decomposition is as shown in (Equation <ref type="formula" target="#formula_13">10</ref>):</p><formula xml:id="formula_13">A i = m 1 ⋯ m m ð Þ mÂm s 1 ⋯ 0 0 ⋮ ⋱ ⋮ ⋮ 0 ⋯ s r 0 0 ⋯ 0 0 0 B B B B B @ 1 C C C C C A mÂn v 1 ⋯ v n ð Þ T nÂn ≈ m 1 ⋯ m r ð Þ rÂr s 1 ⋯ 0 ⋮ ⋱ ⋮ 0 ⋯ s r 0 B B @ 1 C C A rÂr v 1 ⋯ v r ð Þ T rÂr<label>(10)</label></formula><p>Here, m i , n i ∈ R nÂ1 are the singular vectors, r = ℜ A i À Á is the number of nonzero singular values. For clarity, we denote the left singular matrix</p><formula xml:id="formula_14">m 1 … m r ð Þ as a U , the diagonal matrix diag s 1 , s 2 , …, s r ð Þ as S 0</formula><p>, and the right singular matrix</p><formula xml:id="formula_15">n 1 … n r ð Þ T as a T V , yielding: A i = a U S 0 a T V . The remaining challenge is to determine a U , S 0 , a T V .</formula><p>A natural approach is to leverage neural networks to learn these latent representations. Specifically, assuming o 0 is a trainable diagonal matrix defined as (Equation <ref type="formula" target="#formula_16">11</ref>):</p><formula xml:id="formula_16">o 0 = diag w 1 , w 2 , …, w r ð Þ<label>(11)</label></formula><p>where w i ∈ R are trainable parameters in the neural network, which are initialized prior to training and subsequently optimized via backpropagation.</p><p>Then, we utilize two learnable layers of X to fit a U , a T V as shown in Equation <ref type="formula">12</ref>, 13):</p><formula xml:id="formula_17">a U = softmax f U X ð Þ ð Þ (12) FIGURE 3</formula><p>Illustration of the learnable singular value decomposition.</p><formula xml:id="formula_18">a T V = softmax f V X ð Þ ð Þ (13) Among these, f U • ð Þ, f V • ð Þ</formula><p>are projection layers to transform the n Â d matrix Xinto matrices of shape n Â r. In our implementation, we share the same set of two linear layers for</p><formula xml:id="formula_19">f U • ð Þ, f V • ð Þ by employing a common set of linear transformation parameters W a ∈ R dÂr , b a ∈ R 1Âr .</formula><p>The transformation is defined as (Equation <ref type="formula" target="#formula_20">14</ref>):</p><formula xml:id="formula_20">f U x ð Þ = f V x ð Þ = XW a + b a (<label>14</label></formula><formula xml:id="formula_21">)</formula><formula xml:id="formula_22">Input: feature matrix A i ∈ ℜ mÂn , rank r, learning rate h, m a x e p o c h TO u t p u t : a U , a V , o 0 , Â 1 : i n i t i a l i z e parameters W f ∈ ℜ dÂr , b f ∈ ℜ r , w ∈ ℜ r 2: for t = 1, 2, …, Tdo 3: /* step1: compute left\right singular vectors */ 4: project features f U X ð Þ = XW f + b f</formula><p>5: compute left singular vectors a U by Equation <ref type="formula">12</ref>6: Formally, we denote Y = y 1 , y 2 , …, y n f g by a bag of n deep instance, the attention-based MIL pooling is defined by as shown in (Equations 15, 16):</p><formula xml:id="formula_23">project features f V X ð Þ = XW f + b f 7: compute right</formula><formula xml:id="formula_24">a n = softmax Linear a LSVD • a Tanh ð Þ ð Þ<label>(15)</label></formula><formula xml:id="formula_25">z = o N n=1 a n y n (<label>16</label></formula><formula xml:id="formula_26">)</formula><p>where a LSVD and a Tanh are attention weights.</p><p>3 Experiment</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Dataset</head><p>In this study, two distinct datasets were used for model development and evaluation. Both datasets extract the same features and do not specify whether the IDH-mutant are of the IDH1 or IDH2 type.</p><p>In-house data set: The first data set was acquired from the First Affiliated Hospital of Xi'an Jiaotong University and comprised 789 MRI samples of 344 subjects (incorporating FLAIR, T1w, and T2w sequences, all occurrences of "T1w" refer to T1 without contrast injection, and "T1c" refers to T1 with contrast injection.), as summarized in Table <ref type="table" target="#tab_1">1</ref>. All patients underwent surgical resection followed by genetic sequencing to confirm IDH status. For patients d i a g n o s e d b e f o r e 2 0 2 1 , w e p e r f o r m e d a c e n t r a l i z e d histopathological review. Two board-certified neuropathologists, who specialize in brain tumor pathology, re-examined the archival hematoxylin-eosin and immunohistochemistry slides (including IDH1 R132H, ATRX, p53 and other markers when available) and reviewed the original molecular pathology reports. Based on these materials, tumors were reclassified according to the 2021 World Health Organization Classification of Tumors of the Central Nervous System (5th edition), using all available molecular markers. Importantly, no additional molecular testing (such as TERT, EGFR or chromosomal analyses) was performed because of the retrospective design and limited archival tissue in some case <ref type="bibr" target="#b29">(30,</ref><ref type="bibr" target="#b30">31)</ref>. Public data set: The second data set was obtained from The Cancer Imaging Archive (TCIA), which included 1485 MRI samples from 495 subjects (395 wild-type cases and 100 mutanttype cases). Each subject in the TCIA dataset provided Flair, T1w, and T2w modalities, together with documented IDH status. Both datasets underwent identical pre-processing and post-processing pipelines. The diagnosis of glioma for all patients was performed according to the 2021 WHO classification of tumors of the central nervous system, 5th edition <ref type="bibr" target="#b31">(32)</ref>. Specifically, MRI volumes were preserved in the DICOM format and standardized to a uniform dimension of 240 Â 240 Â 155. Standard intensity normalization and artifact removal procedures were applied, followed by data augmentation strategies such as color jitter and random affine transformations to mitigate overfitting. This unified preprocessing approach allowed for direct comparisons between the two datasets and a robust evaluation of the proposed HAB-MIL framework.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Implementation details</head><p>The framework was implemented using Pytorch2.5.1, and all models were trained with NVIDIA 3090 GPU with CUDA 11.8. We use 3D convolutional neural networks as the deep instance generator. We set the output shape H * Â W * Â S * Â D of y to be 2 Â 2 Â 2 Â 64 according to cross-validation. The input shapes of the MRI slices are 240 Â 240 Â 155 We set training epoch T to 100 and batch size to 2. Data enhancement strategies included color jitter and random affine transformations. The network was trained using the ADAM optimizer with an initial learning rate 1e-4 and weight decay of 1e-5. In all experiments, 60% of the subjects was used for training, 20% for model selection and hyperparameter tuning, and the remaining 20% for testing. The dataset was augmented with random flipping, random affine transformation, intensity scaling, color jitter as was done to train the segmentation network. No scans from the same subject were included in both the training and the testing samples to ensure data independence and avoid potential information leakage. Five-fold cross-validation is performed within the training set, where the validation portion in each fold is applied for model selection and hyperparameter verification. Each experiment was repeated five times to ensure fair comparisons. Evaluation metrics included accuracy (Acc), area under the curve (AUC), sensitivity (Sens), specificity (Spec) and ROC curves.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Result</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Ablation experiment</head><p>A series of ablation studies on the TCIA data set was carried out to evaluate the effectiveness of the two modules (CLE and DGA) in HAB-MIL. Initially, use only the 3D convolution and MIL modules (denoted as Ablation-1) to evaluate the performance of the backbone. In the backbone, features can still be extracted from three concatenated conventional magnetic resonance sequences for the prediction of IDH. Next, add only the CLE module to the backbone (denoted Ablation-2), using positional encoding as a feature, and train the model. Next, add only the DGA module to the backbone (denoted Ablation-3). The results of the ablation experiments are presented in Table <ref type="table" target="#tab_2">2</ref>. Compared to backbone results, the incorporation of tumor location encoding improved the accuracy of IDH prediction by 21.8%. This suggests that positional encoding enables our HAB-MIL to learn locationspecific features, which aids in predicting consistent differences across all image regions. Then, by adding the DGA module and selecting key instances, the model's accuracy was further improved by 24%. Finally, combining all three modules results in the best prediction performance. Therefore, the CLE module can be used to explore the spatial relationships of pixels, and the DGA module helps select key instances, improving IDH prediction.</p><p>Table <ref type="table" target="#tab_3">3</ref> lists classification results of various methods for the prediction of IDH. Among the various methods compared, the SPE can be used as a baseline to measure the validity of segmentation. We first ablate the effects of our CLE in the HAB-MIL for the test. As can be seen, Sinusoidal Positional Encoding (SPE) which simply concatenates the sinusoidal positional encoding of the pixel locations (x, y) values directly into the encoder stage leads to a slight performance improvement of 2% in most metrics compared to those without it (denoted as "w/o SPE"). Bello propose neural positional encoding (NPE) for depth estimation <ref type="bibr" target="#b32">(33)</ref>. However, our HAB-MIL shows substantial performance improvements in all metrics by incorporating our CLE. Specifically, the AUC increased by 28.8% and the ACC by 27.1% compared to the model w/o SPE. This improvement can be attributed to the learnable auxiliary positional encoding, which allows the model to more flexibly capture and leverage position-specific feature information. From the comparison between these methods, it can be observed that CLE is more helpful for IDH prediction, as it incorporates information that accurately describe location and morphological features of tumor and peritumoral edema.</p><p>To evaluate the effectiveness and feasibility of the DGA module within HAB-MIL, we considered three attention weighting methods: max pooling, average pooling, and AB-MIL approaches. These methods were compared against our proposed HAB-MIL model. Specifically, the max-pooling-based and average-poolingbased methods follow the traditional MIL assumption, where the final subject-level prediction is obtained from the most significant instance or the average of all instances within a bag, respectively. In contrast, the attention-pooling-based method leverages an attention mechanism to assign weights to each instance embedding, facilitating learning at the bag level. In contrast, HAB-MIL considers a dynamic attention mechanism to selectively focus on the most relevant instances, effectively minimizing the inclusion of irrelevant information. As shown in Table <ref type="table" target="#tab_4">4</ref>, our proposed HAB-MIL achieved the best overall performance, attaining an accuracy of 90.4%. Max-pooling demonstrated the lowest performance among all methods, with an AUC of 69.3%, which is expected as it only considers the single most prominent instance for prediction. In contrast, the mean-based approach, while accounting for all instances, introduces a significant amount of irrelevant information, leading to less satisfactory results. Moreover, although plain attention pooling improved AUC and ACC by 5.3% and 8.9% respectively at the instance level compared to traditional methods, our proposed HAB-MIL achieves superior performance in terms of accuracy, recall, precision and F1, indicating that the effectiveness of the DGA module.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Different combination of MRI sequences</head><p>We designed experiments to demonstrate the necessity of using different sequences simultaneously in the model. As shown in Tables <ref type="table" target="#tab_6">5</ref> and <ref type="table" target="#tab_5">6</ref>, removing the T1w or T2w sequence from the input of the model results in a decrease in IDH prediction performance. Figure <ref type="figure" target="#fig_4">4</ref> shows the ROC curves of different sequences in the TCIA dataset. This indicates that the T1w and T2w sequences are crucial for the IDH prediction task, as they guide the network to focus more on the tumor region and extract features that are highly relevant for gliomas.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Comparison with the state-of-the-art algorithms</head><p>To validate the proposed HAB-MIL algorithm for IDH statusclassification more effectively, we compared our proposed HAB-MIL algorithm with eight state-of-the-art IDH prediction methods, including Radiomics approaches <ref type="bibr" target="#b33">(34)</ref><ref type="bibr" target="#b34">(35)</ref><ref type="bibr" target="#b35">(36)</ref>, MDL <ref type="bibr" target="#b36">(37)</ref>, MultiGeneNet <ref type="bibr" target="#b37">(38)</ref>, FAD <ref type="bibr" target="#b38">(39)</ref>, SGPNet <ref type="bibr" target="#b39">(40)</ref>, PS-Net <ref type="bibr" target="#b40">(41)</ref>, MFEF Net <ref type="bibr" target="#b23">(24)</ref>, MTTU Net <ref type="bibr" target="#b41">(42)</ref>, MTS-UNET <ref type="bibr" target="#b42">(43)</ref> and GLISP <ref type="bibr" target="#b43">(44)</ref>. The results of the different methods are shown in the Table <ref type="table" target="#tab_7">7</ref>. By comparing the proposed method with other IDH prediction networks, the following results can be observed.</p><p>He, Bumes, and Kandalgaonkar et al. applied radiomics-based approaches in their studies. In terms of data acquisition, Bumes utilized magnetic resonance spectroscopy (MRS), while He employed contrast-enhanced T1-weighted imaging (T1C). Although multimodal data were incorporated, insufficient feature standardization or inter-modality registration may have hindered the effective integration of information, resulting in amplified noise and reduced model performance. Moreover, conventional radiomics methods are limited to extracting shallow, handcrafted features, which may fail to capture the complex pathological heterogeneity underlying gliomas.</p><p>Firstly, GLISP model for patch-level prediction employs a lightweight CNN architecture. While this design ensures computational efficiency, it may fall short in capturing deeper and more complex pathological features compared to more advanced models. Secondly, the prediction accuracy of MultiGeneNet is higher than that of FAD. This is because MultiGeneNet is designed to simultaneously predict multiple key genetic mutations. It employs a shared feature extraction backbone with separate classification branches for each task, enabling effective  feature sharing while preserving task-specific distinctionsultimately improving overall performance. However, the model processes patch samples from whole-slide images without explicitly modeling intra-tumoral heterogeneity, which may result in the loss of important regional variations within the tumor.</p><p>Then MTS-UNET architecture lacks an explicit positional encoding mechanism, which may hinder its ability to capture spatial context-such as the relative positioning of lesionsparticularly in scenarios involving high tumor heterogeneity. The poor performance of MTDL may be due to the loss of information on intra-tumoral heterogeneity and the variation in tumor size between patients. The model searches for the largest tumor bounding box and then crops the input image to a fixed large size without incorporating the tumor mask information. This approach can introduce irrelevant background information into the model, particularly when the tumor size is small.</p><p>Although the MFEF net model incorporates advanced modules such as segmentation-guided feature extraction, asymmetric amplification, and dual-attention feature fusion, the asymmetric amplification module may amplify not only pathological features, but also noise. Additionally, the feature spaces of the T2w and Flair sequences may differ significantly. Calculating these differences directly can introduce inconsistencies, affecting the stability of feature representation and prediction performance, resulting in suboptimal outcomes. MTTU Net achieved good results using a CNN transformer encoder, but it employs an uncertainty-aware pseudo-label selection method to generate and select pseudo-label. If the initial model generates a significant number of incorrect pseudo-labels, these errors may propagate and amplify with each iteration, causing the model to gradually deviate from the correct target and fall into a negative feedback loop.</p><p>Hence, the proposed HAB-MIL model is designed to address the limitations of approaches by explicitly accounting for the high heterogeneity of gliomas. It integrates positional encoding during the feature extraction phase and leverages the DGA module to emphasize the significance of key instances. As a result, it achieves superior performance in IDH status prediction compared to all other evaluated methods.  <ref type="formula" target="#formula_1">2</ref>) key patches identified by HAB-MIL, and (3) Grad-CAM visualizations produced by HAB-MIL. According to Figure <ref type="figure" target="#fig_3">5</ref>, the Key patches in wild-type IDH tumors are more widely distributed, encompassing both the tumor core and surrounding regions. In contrast, key patches in mutant-type IDH tumors are predominantly confined to the tumor core or adjacent areas, indicating a more localized distribution and reduced invasiveness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Interpretative visualization</head><p>The boundaries of wild-type IDH tumors appear relatively indistinct, and some tumor regions show low contrast to surrounding tissues, suggesting a tendency to invasive growth. In comparison, mutant-type IDH tumors show well-defined boundaries, concentrated lesions, and more prominent high signals in the tumor core, indicating a denser internal structure. These observations highlight significant differences in morphological characteristics, invasiveness, and growth patterns between the two types of tumors, offering valuable imaging-based insights to guide treatment decisions and prognosis assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Discussion</head><p>Despite the significant success of deep neural networks in the field of IDH prediction, it still encounters challenges related to weak interpretability and low credibility. In clinical practice, classification of IDH status is crucial for guiding subsequent treatment strategies and predicting the prognosis of patients. Currently, the only way to determine IDH status is to obtain pathological tissue by open surgery. Consequently, if we can describe the imaging distinctions between IDH-wild and IDH-mutant and integrate these characteristics into the diagnostic model, the interpretability of the model would be enhanced, and its classification performance could be further improved. Following this strategy, a novel Hierarchical Attention-Based Multiple Instance Learning (HAB-MIL) framework is proposed. To effectively capture tumor location information, auxiliary positional encoding was employed to encode imaging features, which were then concatenated with the feature  maps derived from a deep instance-level feature extractor, as illustrated in Figure <ref type="figure" target="#fig_0">1</ref>. Tumor location, serving as a non-invasive biomarker, not only significantly enhances the accuracy of the classification model but also provides valuable insights for preoperative prediction of IDH status. Additionally, we developed a weakly supervised learning-based classification network, which substantially reduces annotation costs and better accommodates the spatial heterogeneity of gliomas. This approach facilitates the automatic identification of key regional features closely associated with IDH prediction, thereby improving the model's accuracy, generalization performance, and clinical interpretability. Table <ref type="table" target="#tab_2">2</ref> presents the results of the ablation study on different modules. As shown in table, the model's performance improves to a certain extent with the addition of both modules compared to using the backbone alone. Table <ref type="table" target="#tab_3">3</ref> presents the ablation study results for different positional encoding methods. Testing with various positional encodings led to slight variations in the performance of the proposed algorithm, demonstrating the flexibility and effectiveness of GeLU. Table <ref type="table" target="#tab_4">4</ref> compares the performance of different attention mechanisms. The dynamic attention mechanism used in this study improves the precision of feature selection through a gating mechanism and dropout regularization, while also enhancing the model's generalization capability. This approach is particularly well-suited for applications in few-shot learning or multi-instance learning scenarios.</p><p>Tables <ref type="table" target="#tab_6">5</ref> and <ref type="table" target="#tab_5">6</ref> present the results of different modality combinations on the TCIA dataset and the in-house dataset, respectively. The performance on the TCIA dataset is slightly better than that on the in-house dataset, likely due to the strict quality control typically applied to public datasets prior to release. In contrast, the quality of in-house data may be affected by factors such as the acquisition environment, equipment variability, or human error. In both datasets, the combination of three modalities consistently yields better performance, which attributed to the  varying sensitivities of different modalities to tissue structures, lesions, and fluids. By integrating multiple modalities, more comprehensive and informative imaging data can be obtained. Additionally, the network shows increased robustness to missing modalities when setting the T1 and T2 or FLAIR sequence to zero while training.</p><p>There is only a small decrease in performance when only providing the T1w, T2w and Flair scans compared to all three MRI as input. This is especially useful as not all three MRI modalities are available for all patients in the Xi'an Jiaotong University Hospital dataset. This way an accurate prediction could still be obtained for these patients.</p><p>The very high specificity and slightly lower sensitivity indicate that prediction inaccuracies are due to parts of the surrounding edema that are not detected by the network. An in-depth analysis of Figure <ref type="figure" target="#fig_4">4</ref> and the attention weights learned by the model reveals a consistent anatomical distribution pattern of lDH-mutant gliomas. Specifically, gliomas located in the thalamus and cerebellum are predominantly IDH wild-type, whereas those in the insular cortex are more likely to harbor IDH mutations. This observation is consistent with previous radiological and histopathological studies, further validating the reliability of our model. Compared to existing methods, our approach offers three distinct advantages: first, HAB-MIL accurately identifies subtle imaging differences between IDH wild-type and lDH-mutant gliomas through key instance selection, helping clinicians pinpoint regions that are most informative for distinguishing IDH status. Second, the process of identifying key instances is intuitive and straightforward to implement. Finally, the clinical application of this model requires only routine MRI sequences (T1w, T2w, and FLAIR) as input, without the need for contrast agents, thereby reducing potential risks in practical use. Furthermore, the model processes the entire MRI image directly, requiring only skull-stripping and registration steps, without manual tumor delineation by radiologists. This design minimizes reliance on specialized expertise and facilitates broader clinical implementation. This study still has several limitations. First, the HAB-MIL model has not yet been validated in large-scale, multicenter clinical settings; therefore, its feasibility and stability in real-world clinical practice remain to be further confirmed. Second, some cases in this study lacked key molecular markers such as TERT promoter mutation, EGFR amplification, and chromosome 7 gain/chromosome 10 loss (+7/-10).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>In this study, we proposed a HAB-MIL framework, contributing to the prediction of IDH status using only routinely acquired preoperative MRI. Compared with conventional clinical workflows that require labor-intensive, slice-by-slice tumor annotation, HAB-MIL employs a weakly supervised learning strategy that relies solely on case-level labels, eliminating the need for detailed lesion delineation. This approach significantly reduces annotation time and manual effort while preserving model accuracy. Moreover, the model requires only routine MRI sequences such as T1-weighted, T2weighted, and FLAIR images, without the need for contrast agents, thereby minimizing potential procedural risks and reducing the overall financial burden on patients.</p><p>In addition, future work will focus on further refining and expanding this study. First, we plan to validate the HAB-MIL model in large-scale, multicenter clinical settings to evaluate its feasibility and stability in real-world clinical practice. Second, we will collect more diverse datasets encompassing cases acquired from different imaging devices and scanning protocols, as well as additional modalities such as MR perfusion and DTI, to further enhance the model's generalization and robustness. Finally, we will conduct comparative analyses with other noninvasive prediction methods to comprehensively evaluate the model's performance.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1 Flowchart</head><label>1</label><figDesc>FIGURE 1Flowchart of patient inclusion and exclusion.</figDesc><graphic coords="3,129.03,95.01,337.44,297.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 2</head><label>2</label><figDesc>FIGURE 2</figDesc><graphic coords="4,85.21,95.02,425.14,247.29" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>singular vectors a V by Equation 13 8: /* step2: compute learnable singular values */ 9: construct diagonal matrix o 0 by Equation 11 10: /* step3: reconstruct matrix using SVD components */ 11: reconstruct matrix Â = a U S 0 a V 12: /* step4: compute reconstruction loss */ 13: compute loss L = Loss Â , A 14: /* step5: backpropagate and update parameters */ 15: update W f = W fh m l Â , A 16: update b f = b fh m l Â , A 17: update w = wh m l Â , A 16: end for Algorithm 1. Learnable Singular Value Decomposition.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5</head><label>5</label><figDesc>Figure 5 illustrates how our proposed HAB-MIL model localizes discriminative regions for the prediction of IDH status. In particular, the three columns of images are shown for each subject: (1) Original image of different patients, (2) key patches identified by HAB-MIL, and (3) Grad-CAM visualizations produced by HAB-MIL. According to Figure 5, the Key patches in wild-type IDH tumors are more widely distributed, encompassing both the tumor core and surrounding regions. In contrast, key patches in mutant-type IDH tumors are predominantly confined to the tumor core or adjacent areas, indicating a more localized distribution and reduced invasiveness.The boundaries of wild-type IDH tumors appear relatively indistinct, and some tumor regions show low contrast to surrounding tissues, suggesting a tendency to invasive growth. In comparison, mutant-type IDH tumors show well-defined boundaries, concentrated lesions, and more prominent high signals in the tumor core, indicating a denser internal structure. These observations highlight significant differences in morphological characteristics, invasiveness, and growth patterns between the two types of tumors, offering valuable imaging-based insights to guide treatment decisions and prognosis assessment.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIGURE 4 ROC</head><label>4</label><figDesc>FIGURE 4ROC curves of different sequences in the TCIA dataset.</figDesc><graphic coords="10,63.84,95.02,212.60,164.86" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>GURE 5 FI</head><label>5</label><figDesc>Interpretability of the HAB-MIL model. The first column is FLAIR slices extracted from different patients. Meanwhile, the second column is key patches from HAB-MIL, whereas the third column is their corresponding Grad-CAMs with the HAB-MIL.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="5,99.38,95.01,396.85,256.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 1</head><label>1</label><figDesc>Summary of datasets.</figDesc><table><row><cell>Dataset</cell><cell>TCIA</cell><cell></cell><cell>Xi'an</cell><cell></cell></row><row><cell>IDH status</cell><cell>Mutant</cell><cell>Wild</cell><cell>Mutant</cell><cell>Wild</cell></row><row><cell>Number</cell><cell>100</cell><cell>395</cell><cell>147</cell><cell>197</cell></row><row><cell>Age</cell><cell>38.80 ± 15.11</cell><cell>61.54 ± 15.00</cell><cell>47.58 ± 9.68</cell><cell>52.74 ± 11.97</cell></row><row><cell>Gender(M\F)</cell><cell>47\153</cell><cell>234\161</cell><cell>90\57</cell><cell>113\84</cell></row><row><cell>Astrocytoma, IDH-mutant</cell><cell>87(17.9%)</cell><cell>\</cell><cell>100(29.0%)</cell><cell>\</cell></row><row><cell>Astrocytoma, IDH-wildtype</cell><cell>\</cell><cell>24(4.7%)</cell><cell>\</cell><cell>17(4.9%)</cell></row><row><cell>Astrocytoma, IDH-wildtype, NOS</cell><cell>\</cell><cell>\</cell><cell>\</cell><cell>53(15.4%)</cell></row><row><cell>Oligodendroglioma</cell><cell>13(2.5%)</cell><cell>\</cell><cell>47(13.6%)</cell><cell>\</cell></row><row><cell>Glioblastoma</cell><cell>\</cell><cell>371(74.6%)</cell><cell>\</cell><cell>99(28.7%)</cell></row><row><cell>Diffuse midline glioma</cell><cell>\</cell><cell>\</cell><cell>\</cell><cell>28(8.1%)</cell></row><row><cell>WHO grade 2</cell><cell>46</cell><cell>10</cell><cell>111</cell><cell>18</cell></row><row><cell>WHO grade 3</cell><cell>29</cell><cell>14</cell><cell>36</cell><cell>6</cell></row><row><cell>WHO grade 4</cell><cell>25</cell><cell>371</cell><cell>\</cell><cell>173</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2</head><label>2</label><figDesc>Classification results in the TCIA dataset of different modules in terms of AUC, ACC, SEN, SPE.</figDesc><table><row><cell cols="4">Benchmark Backbone CLE DGA</cell><cell>AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell><cell>Parameter size (M)</cell><cell>Train time (h)</cell></row><row><cell>Ablation-1</cell><cell>✓</cell><cell></cell><cell></cell><cell>0.532 ± 0.021</cell><cell>0.514 ± 0.103</cell><cell>0.587 ± 0.015</cell><cell>0.612 ± 0.001</cell><cell>1.165</cell><cell>3.84</cell></row><row><cell>Ablation-1</cell><cell>✓</cell><cell>✓</cell><cell></cell><cell>0.750 ± 0.027</cell><cell>0.692 ± 0.001</cell><cell>0.750 ± 0.038</cell><cell>0.699 ± 0.018</cell><cell>1.198</cell><cell>5.83</cell></row><row><cell>Ablation-1</cell><cell>✓</cell><cell></cell><cell>✓</cell><cell>0.772 ± 0.007</cell><cell>0.712 ± 0.003</cell><cell>0.781 ± 0.012</cell><cell>0.727 ± 0.003</cell><cell>1.255</cell><cell>5.67</cell></row><row><cell>HAB-MIL</cell><cell>✓</cell><cell>✓</cell><cell>✓</cell><cell cols="4">0.917 ± 0.015 0.904 ± 0.001 0.858 ± 0.008 0.921 ± 0.016</cell><cell>1.313</cell><cell>7.31</cell></row><row><cell>Data are given as mean ± SD.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="8">AUC, area under the curve; SEN, sensitivity; ACC, accuracy; SPE, specificity. All values in bold represent the optimal performance.</cell><cell></cell></row><row><cell cols="2">It applies to all tables unless otherwise noted.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 3</head><label>3</label><figDesc>Comparison results among CLE module and different location coding functions in terms of AUC, ACC, SEN, SPE.</figDesc><table><row><cell cols="2">Method AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell></row><row><cell>w/o SPE</cell><cell>0.629 ± 0.003</cell><cell>0.633 ± 0.005</cell><cell>0.618 ± 0.013</cell><cell>0.607 ± 0.001</cell></row><row><cell>SPE</cell><cell>0.631 ± 0.025</cell><cell>0.618 ± 0.018</cell><cell>0.653 ± 0.001</cell><cell>0.593 ± 0.035</cell></row><row><cell>NPE</cell><cell>0.863 ± 0.001</cell><cell>0.813 ± 0.012</cell><cell>0.792 ± 0.008</cell><cell>0.901 ± 0.012</cell></row><row><cell>CLE</cell><cell cols="4">0.917 ± 0.015 0.904 ± 0.001 0.858 ± 0.008 0.921 ± 0.016</cell></row><row><cell cols="3">All values in bold represent the optimal performance.</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 4</head><label>4</label><figDesc>Comparison results among DGA module and different weight functions in terms of AUC, ACC, SEN, SPE.</figDesc><table><row><cell>Method</cell><cell>AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell></row><row><cell>Max-pooling</cell><cell>0.693 ± 0.013</cell><cell>0.612 ± 0.008</cell><cell>0.635 ± 0.007</cell><cell>0.594 ± 0.018</cell></row><row><cell>Mean-pooling</cell><cell>0.712 ± 0.021</cell><cell>0.683 ± 0.001</cell><cell>0.712 ± 0.035</cell><cell>0.853 ± 0.002</cell></row><row><cell>Attention-based</cell><cell>0.765 ± 0.135</cell><cell>0.701 ± 0.100</cell><cell>0.761 ± 0.092</cell><cell>0.732 ± 0.001</cell></row><row><cell>DGA</cell><cell>0.917 ± 0.015</cell><cell>0.904 ± 0.001</cell><cell>0.858 ± 0.008</cell><cell>0.921 ± 0.016</cell></row></table><note><p>All values in bold represent the optimal performance.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE 6</head><label>6</label><figDesc>Classification results in the in-house dataset of three different sequences in terms of AUC, ACC, SEN, SPE.</figDesc><table><row><cell cols="2">Method AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell></row><row><cell>T1</cell><cell>0.523 ± 0.031</cell><cell>0.561 ± 0.218</cell><cell>0.612 ± 0.015</cell><cell>0.616 ± 0.102</cell></row><row><cell>T2</cell><cell>0.576 ± 0.005</cell><cell>0.583 ± 0.035</cell><cell>0.638 ± 0.005</cell><cell>0.593 ± 0.001</cell></row><row><cell>FLAIR</cell><cell>0.608 ± 0.032</cell><cell>0.672 ± 0.010</cell><cell>0.665 ± 0.012</cell><cell>0.656 ± 0.002</cell></row><row><cell>T1+T2</cell><cell>0.761 ± 0.013</cell><cell>0.831 ± 0.105</cell><cell>0.791 ± 0.019</cell><cell>0.753 ± 0.052</cell></row><row><cell>T1+FLAIR</cell><cell>0.733 ± 0.031</cell><cell>0.793 ± 0.005</cell><cell cols="2">0.812 ± 0.324 0.792 ± 0.168</cell></row><row><cell>T2+FLAIR</cell><cell>0.833 ± 0.012</cell><cell>0.809 ± 0.006</cell><cell>0.762 ± 0.109</cell><cell>0.837 ± 0.020</cell></row><row><cell>HAB-MIL</cell><cell cols="3">0.892 ± 0.031 0.857 ± 0.012 0.791 ± 0.003</cell><cell>0.848 ± 0.131</cell></row></table><note><p>All values in bold represent the optimal performance.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 5</head><label>5</label><figDesc>Classification results in the TCIA dataset of three different sequences in terms of AUC, ACC, SEN, SPE.</figDesc><table><row><cell cols="2">Method AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell></row><row><cell>T1</cell><cell>0.583 ± 0.135</cell><cell>0.502 ± 0.031</cell><cell>0.623 ± 0.528</cell><cell>0.175 ± 0.291</cell></row><row><cell>T2</cell><cell>0.667 ± 0.161</cell><cell>0.680 ± 0.003</cell><cell>0.608 ± 0.060</cell><cell>0.730 ± 0.012</cell></row><row><cell>FLAIR</cell><cell>0.625 ± 0.032</cell><cell>0.658 ± 0.031</cell><cell>0.637 ± 0.012</cell><cell>0.708 ± 0.139</cell></row><row><cell>T1+T2</cell><cell>0.854 ± 0.010</cell><cell>0.711 ± 0.021</cell><cell>0.692 ± 0.211</cell><cell>0.789 ± 0.091</cell></row><row><cell>T1+FLAIR</cell><cell>0.792 ± 0.164</cell><cell>0.820 ± 0.012</cell><cell>0.703 ± 0.001</cell><cell>0.838 ± 0.032</cell></row><row><cell>T2+FLAIR</cell><cell>0.833 ± 0.021</cell><cell>0.767 ± 0.121</cell><cell>0.675 ± 0.230</cell><cell>0.776 ± 0.021</cell></row><row><cell>HAB-MIL</cell><cell cols="4">0.917 ± 0.015 0.904 ± 0.001 0.858 ± 0.008 0.921 ± 0.016</cell></row><row><cell cols="3">All values in bold represent the optimal performance.</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>TABLE 7</head><label>7</label><figDesc>Performance of all classifiers on testing set.</figDesc><table><row><cell>Model</cell><cell>AUC</cell><cell>ACC</cell><cell>SEN</cell><cell>SPE</cell></row><row><cell>He</cell><cell>0.873 ± 0.050</cell><cell>0.876 ± 0.090</cell><cell>0.875 ± 0.110</cell><cell>0.877 ± 0.150</cell></row><row><cell>Bumes</cell><cell>0.820</cell><cell>0.761</cell><cell>0.826</cell><cell>0.727</cell></row><row><cell>Kandalgaonkar</cell><cell>0.890</cell><cell>0.890</cell><cell>0.800</cell><cell>0.030</cell></row><row><cell>VGG16 a</cell><cell>0.718 ± 0.131</cell><cell>0.684 ± 0.172</cell><cell>0.725 ± 0.231</cell><cell>0.606 ± 0.108</cell></row><row><cell>DenseNet b</cell><cell>0.791 ± 0.324</cell><cell>0.838 ± 0.291</cell><cell>0.776 ± 0.162</cell><cell>0.701 ± 0.031</cell></row><row><cell>ResNet-50 c</cell><cell>0.732 ± 0.002</cell><cell>0.714 ± 0.015</cell><cell>0.782 ± 0.184</cell><cell>0.584 ± 0.320</cell></row><row><cell>Inception-v3 d</cell><cell>0.706 ± 0.272</cell><cell>0.668 ± 0.069</cell><cell>0.634 ± 0.142</cell><cell>0.596 ± 0.165</cell></row><row><cell>MDL (37)</cell><cell>0.872 ± 0.039</cell><cell>0.812 ± 0.021</cell><cell>0.740 ± 0.003</cell><cell>0.849 ± 0.001</cell></row><row><cell>MultiGeneNet (38)</cell><cell>0.886 ± 0.001</cell><cell>0.835 ± 0.035</cell><cell>0.755 ± 0.058</cell><cell>0.833 ± 0.036</cell></row><row><cell>FAD (39)</cell><cell>0.801 ± 0.031</cell><cell>0.767 ± 0.116</cell><cell>0.774 ± 0.236</cell><cell>0.734 ± 0.021</cell></row><row><cell>SGP Net (40)</cell><cell>0.837 ± 0.056</cell><cell>0.785 ± 0.165</cell><cell>0.794 ± 0.003</cell><cell>0.685 ± 0.355</cell></row><row><cell>PS-NET (41)</cell><cell>0.821 ± 0.013</cell><cell>0.791 ± 0.067</cell><cell>0.789 ± 0.147</cell><cell>0.773 ± 0.236</cell></row><row><cell>MFEF Net (24)</cell><cell>0.856 ± 0.102</cell><cell>0.802 ± 0.102</cell><cell>0.837 ± 0.312</cell><cell>0.813 ± 0.052</cell></row><row><cell>MTTU Net (42)</cell><cell>0.903 ± 0.056</cell><cell>0.857 ± 0.099</cell><cell>0.812 ± 0.069</cell><cell>0.894 ± 0.128</cell></row><row><cell>MTS-UNET (43)</cell><cell>0.803 ± 0.010</cell><cell>0.868 ± 0.044</cell><cell>0.813 ± 0.028</cell><cell>0.796 ± 0.030</cell></row><row><cell>GLISP (44)</cell><cell>0.750 ± 0.028</cell><cell>0.720 ± 0.039</cell><cell>0.590 ± 0.037</cell><cell>0.680 ± 0.106</cell></row><row><cell>HAB-MIL</cell><cell>0.917 ± 0.015</cell><cell>0.904 ± 0.001</cell><cell>0.858 ± 0.008</cell><cell>0.921 ± 0.016</cell></row></table><note><p>a Visual Geometry Group 16-layer network. b Densely Connected Convolutional Network. c Residual Network 50-layer. d Inception Version 3.</p><p>All values in bold represent the optimal performance.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Oncology frontiersin.org</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><head>Funding</head><p>The author(s) declared that financial support was received for this work and/or its publication. This study was funded by the <rs type="funder">Shaanxi Provincial Key Industrial Innovation Chain Project</rs> (No. <rs type="grantNumber">2024SF-ZDCYL02-10</rs>),<rs type="projectName">2024 Research Project on Clinical Applications of Medical Artificial Intelligence</rs> (No.<rs type="grantNumber">YLXX24AIA021</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_zxPFVre">
+					<idno type="grant-number">2024SF-ZDCYL02-10</idno>
+					<orgName type="project" subtype="full">2024 Research Project on Clinical Applications of Medical Artificial Intelligence</orgName>
+				</org>
+				<org type="funding" xml:id="_j4aEXKP">
+					<idno type="grant-number">YLXX24AIA021</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The original contributions presented in the study are included in the article/Supplementary Material. Further inquiries can be directed to the corresponding author.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics statement</head><p>The studies involving humans were approved by The Ethics Committee of the First Affiliated Hospital of Xi'an Jiaotong University. The studies were conducted in accordance with the local legislation and institutional requirements. Written informed consent for participation was not required from the participants or the participants' legal guardians/next of kin in accordance with the national legislation and institutional requirements. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The authors declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generative AI statement</head><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Glioblastoma and Other Primary Brain Malignancies in Adults</title>
+		<author>
+			<persName><forename type="first">Lauren</forename><forename type="middle">R</forename><surname>Schaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jama.2023.0023</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<title level="j" type="abbrev">JAMA</title>
+		<idno type="ISSN">0098-7484</idno>
+		<imprint>
+			<biblScope unit="volume">329</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">574</biblScope>
+			<date type="published" when="2023-02-21">2023</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schaff LR, Mellinghoff IK. Glioblastoma and other primary brain Malignancies in adults: A review. JAMA. (2023) 329:574. doi: 10.1001/jama.2023.0023</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Glioma</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Dirven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Monje</surname></persName>
+			<idno type="ORCID">0000-0002-3547-237X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41572-024-00516-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Disease Primers</title>
+		<title level="j" type="abbrev">Nat Rev Dis Primers</title>
+		<idno type="ISSNe">2056-676X</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">33</biblScope>
+			<date type="published" when="2024-05-09">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Weller M, Wen PY, Chang SM, Dirven L, Lim M, Monje M, et al. Glioma. Nat Rev Dis Primers. (2024) 10:33. doi: 10.1038/s41572-024-00516-y</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Glioblastoma at the crossroads: current understanding and future therapeutic horizons</title>
+		<author>
+			<persName><forename type="first">Shilpi</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devanjan</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Debashis</forename><surname>Barik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iteeshree</forename><surname>Mohapatra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mayur</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sujata</forename><surname>Prasad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peize</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amar</forename><surname>Singh</surname></persName>
+			<idno type="ORCID">0000-0002-4721-1513</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gatikrushna</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41392-025-02299-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Signal Transduction and Targeted Therapy</title>
+		<title level="j" type="abbrev">Sig Transduct Target Ther</title>
+		<idno type="ISSNe">2059-3635</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">213</biblScope>
+			<date type="published" when="2025-07-09">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh S, Dey D, Barik D, Mohapatra I, Kim S, Sharma M, et al. Glioblastoma at the crossroads: current understanding and future therapeutic horizons. Sig Transduct Target Ther. (2025) 10:213. doi: 10.1038/s41392-025-02299-4</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Targeting Isocitrate Dehydrogenase (IDH) in Solid Tumors: Current Evidence and Future Perspectives</title>
+		<author>
+			<persName><forename type="first">Francesca</forename><surname>Carosi</surname></persName>
+			<idno type="ORCID">0009-0003-2979-6495</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabetta</forename><surname>Broseghini</surname></persName>
+			<idno type="ORCID">0000-0002-7401-9842</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Fabbri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giacomo</forename><surname>Corradi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Gili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Forte</surname></persName>
+			<idno type="ORCID">0009-0008-8267-3781</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Roncarati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daria</forename><forename type="middle">Maria</forename><surname>Filippini</surname></persName>
+			<idno type="ORCID">0000-0003-3328-7282</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manuela</forename><surname>Ferracin</surname></persName>
+			<idno type="ORCID">0000-0002-1595-6887</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers16152752</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">2752</biblScope>
+			<date type="published" when="2024-08-02">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Carosi F, Broseghini E, Fabbri L, Corradi G, Gili R, Forte V, et al. Targeting isocitrate dehydrogenase (IDH) in solid tumors: current evidence and future perspectives. Cancers. (2024) 16:2752. doi: 10.3390/cancers16152752</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">IDH wild-type grade 2 diffuse astrocytomas: prognostic factors and impact of treatments within molecular subgroups</title>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Rudà</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Bruno</surname></persName>
+			<idno type="ORCID">0000-0001-8087-5293</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tamara</forename><surname>Ius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Silvani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Pace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Lombardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Bertero</surname></persName>
+			<idno type="ORCID">0000-0001-9887-7668</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Pizzolitto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bianca</forename><surname>Pollo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Conti Nibali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessia</forename><surname>Pellerino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrica</forename><surname>Migliore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miran</forename><surname>Skrap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noab239</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="809" to="820" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rudà R, Bruno F, Ius T, Silvani A, Minniti G, Pace A, et al. IDH wild-type grade 2 diffuse astrocytomas: prognostic factors and impact of treatments within molecular subgroups. Neuro-Oncology. (2022) 24:809-20. doi: 10.1093/neuonc/noab239</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The survival outcomes of molecular glioblastoma IDH-wildtype: a multicenter study</title>
+		<author>
+			<persName><forename type="first">Andres</forename><surname>Ramos-Fresnedo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">W</forename><surname>Pullen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Perez-Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">A</forename><surname>Domingo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oluwaseun</forename><forename type="middle">O</forename><surname>Akinduro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joao</forename><forename type="middle">P</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paola</forename><surname>Suarez-Meade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lina</forename><surname>Marenco-Hillembrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Jentoft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernard</forename><forename type="middle">R</forename><surname>Bendok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">M</forename><surname>Trifiletti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaisorn</forename><forename type="middle">L</forename><surname>Chaichana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alyx</forename><forename type="middle">B</forename><surname>Porter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfredo</forename><surname>Quiñones-Hinojosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terence</forename><forename type="middle">C</forename><surname>Burns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sani</forename><forename type="middle">H</forename><surname>Kizilbash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">H</forename><surname>Middlebrooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wendy</forename><forename type="middle">J</forename><surname>Sherman</surname></persName>
+			<idno type="ORCID">0000-0002-1321-0600</idno>
+		</author>
+		<idno type="DOI">10.1007/s11060-022-03960-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">157</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="177" to="185" />
+			<date type="published" when="2022-02-17">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ramos-Fresnedo A, Pullen MW, Perez-Vega C, Domingo RA, Akinduro OO, Almeida JP, et al. The survival outcomes of molecular glioblastoma IDH-wildtype: a multicenter study. J Neurooncol. (2022) 157:177-85. doi: 10.1007/s11060-022-03960-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Mutant IDH in Gliomas: Role in Cancer and Treatment Options</title>
+		<author>
+			<persName><forename type="first">Georgios</forename><surname>Solomou</surname></persName>
+			<idno type="ORCID">0000-0002-9795-0517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alina</forename><surname>Finch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asim</forename><surname>Asghar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiara</forename><surname>Bardella</surname></persName>
+			<idno type="ORCID">0000-0002-7780-2541</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers15112883</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">2883</biblScope>
+			<date type="published" when="2023-05-23">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Solomou G, Finch A, Asghar A, Bardella C. Mutant IDH in gliomas: role in cancer and treatment options. Cancers. (2023) 15:2883. doi: 10.3390/cancers15112883</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Isocitrate dehydrogenase (IDH) mutant gliomas: A Society for Neuro-Oncology (SNO) consensus review on diagnosis, management, and future directions</title>
+		<author>
+			<persName><forename type="first">Julie</forename><forename type="middle">J</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Nicolas</forename><surname>Gonzalez Castro</surname></persName>
+			<idno type="ORCID">0000-0001-7699-5188</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Mcbrayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+			<idno type="ORCID">0000-0002-1748-174X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Cloughesy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jana</forename><surname>Portnow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ovidiu</forename><surname>Andronesi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brigitta</forename><forename type="middle">G</forename><surname>Baumert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+			<idno type="ORCID">0000-0003-1983-4892</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenya</forename><forename type="middle">Linda</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ranjit</forename><surname>Bindra</surname></persName>
+			<idno type="ORCID">0000-0002-3255-0467</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Cahill</surname></persName>
+			<idno type="ORCID">0000-0003-2552-6546</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">F</forename><surname>Costello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Horbinski</surname></persName>
+			<idno type="ORCID">0000-0001-8340-9992</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><forename type="middle">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Jenkins</surname></persName>
+			<idno type="ORCID">0000-0002-4049-694X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">L</forename><surname>Ligon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingo</forename><forename type="middle">K</forename><surname>Mellinghoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Burt</forename><surname>Nabors</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Platten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><forename type="middle">D</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Schiff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Wick</surname></persName>
+			<idno type="ORCID">0000-0002-6171-634X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hai</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">G</forename><surname>Kaelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac207</idno>
+		<idno>doi: 10.1093/neuonc/noac207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="25" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note>2025.1665690 (SNO) consensus review on diagnosis, management, and future directions</note>
+	<note type="raw_reference">Miller JJ, Gonzalez Castro LN, McBrayer S, Weller M, Cloughesy T, Portnow J, et al. Isocitrate dehydrogenase (IDH) mutant gliomas: A Society for Neuro-Oncology Xie et al. 10.3389/fonc.2025.1665690 (SNO) consensus review on diagnosis, management, and future directions. Neuro- Oncology. (2023) 25:4-25. doi: 10.1093/neuonc/noac207</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Combination of MRI-based prediction and CRISPR/Cas12a-based detection for IDH genotyping in glioma</title>
+		<author>
+			<persName><forename type="first">Donghu</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qisheng</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yilei</forename><surname>Xiao</surname></persName>
+			<idno type="ORCID">0000-0002-6651-4122</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhebin</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiyu</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxiang</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Lan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingjun</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fuhua</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zefen</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-0194-2521</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Gao</surname></persName>
+			<idno type="ORCID">0000-0002-5938-8957</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiqiang</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-4148-780X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41698-024-00632-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Precision Oncology</title>
+		<title level="j" type="abbrev">npj Precis. Onc.</title>
+		<idno type="ISSNe">2397-768X</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">140</biblScope>
+			<date type="published" when="2024-07-01">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yu D, Zhong Q, Xiao Y, Feng Z, Tang F, Feng S, et al. Combination of MRI-based prediction and CRISPR/Cas12a-based detection for IDH genotyping in glioma. NPJ Precis Onc. (2024) 8:140. doi: 10.1038/s41698-024-00632-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Deep learning-based quantification of T2-FLAIR mismatch sign: extending IDH mutation prediction in adult-type diffuse lower-grade glioma</title>
+		<author>
+			<persName><forename type="first">Young</forename><forename type="middle">Hun</forename><surname>Jeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyu</forename><forename type="middle">Sung</forename><surname>Choi</surname></persName>
+			<idno type="ORCID">0000-0002-5175-3307</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kyung</forename><forename type="middle">Hoon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seong</forename><forename type="middle">Yun</forename><surname>Jeong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Ye</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taehyuk</forename><surname>Ham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Inpyeong</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roh-Eul</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koung</forename><forename type="middle">Mi</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tae</forename><forename type="middle">Jin</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji-Hoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chul-Ho</forename><surname>Sohn</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00330-025-11475-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Radiology</title>
+		<title level="j" type="abbrev">Eur Radiol</title>
+		<idno type="ISSNe">1432-1084</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="5193" to="5202" />
+			<date type="published" when="2025-03-07">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jeon YH, Choi KS, Lee KH, Jeong SY, Lee JY, Ham T, et al. Deep learning-based quantification of T2-FLAIR mismatch sign: extending IDH mutation prediction in adult-type diffuse lower-grade glioma. Eur Radiol. (2025) 35:5193-202. doi: 10.1007/ s00330-025-11475-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Bridging the clinical gap: Confidence informed IDH prediction in brain gliomas using MRI and deep learning</title>
+		<author>
+			<persName><forename type="first">Bangalore</forename><surname>Yogananda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">G</forename><surname>Truong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ncd</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bowerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename></persName>
+		</author>
+		<idno type="DOI">10.1093/noajnl/vdaf142</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncol Adv</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">142</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bangalore Yogananda CG, Truong NCD, Wagner BC, Xi Y, Bowerman J, Reddy DD, et al. Bridging the clinical gap: Confidence informed IDH prediction in brain gliomas using MRI and deep learning. Neuro-Oncol Adv. (2025) 7:vdaf142. doi: 10.1093/noajnl/vdaf142</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">VASARI 2.0: a new updated MRI VASARI lexicon to predict grading and IDH status in brain glioma</title>
+		<author>
+			<persName><forename type="first">Alberto</forename><surname>Negro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Gemini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Tortora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianvito</forename><surname>Pace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raffaele</forename><surname>Iaccarino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Marchese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Elefante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Tortora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincenzo</forename><surname>D'agostino</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2024.1449982</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">1449982</biblScope>
+			<date type="published" when="2024-12-23">2024</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Negro A, Gemini L, Tortora M, Pace G, Iaccarino R, Marchese M, et al. VASARI 2.0: a new updated MRI VASARI lexicon to predict grading and IDH status in brain glioma. Front Oncol. (2024) 14:1449982. doi: 10.3389/fonc.2024.1449982</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Deep Learning-Based, Multiclass Approach to Cancer Classification on Liquid Biopsy Data</title>
+		<author>
+			<persName><forename type="first">Maksym</forename><forename type="middle">A</forename><surname>Jopek</surname></persName>
+			<idno type="ORCID">0000-0002-7530-2199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Krzysztof</forename><surname>Pastuszak</surname></persName>
+			<idno type="ORCID">0000-0002-5562-0114</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Cygert</surname></persName>
+			<idno type="ORCID">0000-0002-4763-8381</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Myron</forename><forename type="middle">G</forename><surname>Best</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wurdinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacek</forename><surname>Jassem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">J</forename><surname>Żaczek</surname></persName>
+			<idno type="ORCID">0000-0003-1482-6068</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Supernat</surname></persName>
+			<idno type="ORCID">0000-0002-3113-0540</idno>
+		</author>
+		<idno type="DOI">10.1109/jtehm.2024.3360865</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Translational Engineering in Health and Medicine</title>
+		<title level="j" type="abbrev">IEEE J. Transl. Eng. Health Med.</title>
+		<idno type="ISSNe">2168-2372</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="306" to="313" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jopek MA, Pastuszak K, Cygert S, Best MG, Wurdinger T, Jassem J, et al. Deep learning-based, multiclass approach to cancer classification on liquid biopsy data. IEEE J Transl Eng Health Med. (2024) 12:306-13. doi: 10.1109/JTEHM.2024.3360865</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Comparison of Multiparametric Magnetic Resonance Imaging and Targeted Biopsy With Systematic Biopsy Alone for the Diagnosis of Prostate Cancer</title>
+		<author>
+			<persName><forename type="first">Martha</forename><forename type="middle">M C</forename><surname>Elwenspoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Athena</forename><forename type="middle">L</forename><surname>Sheppard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">D F</forename><surname>Mcinnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">W D</forename><surname>Merriel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">W J</forename><surname>Rowe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Bryant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jenny</forename><forename type="middle">L</forename><surname>Donovan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Penny</forename><surname>Whiting</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamanetworkopen.2019.8427</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Network Open</title>
+		<title level="j" type="abbrev">JAMA Netw Open</title>
+		<idno type="ISSNe">2574-3805</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e198427</biblScope>
+			<date type="published" when="2019-08-07">2019</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elwenspoek MMC, Sheppard AL, McInnes MDF, Merriel SWD, Rowe EWJ, Bryant RJ, et al. Comparison of multiparametric magnetic resonance imaging and targeted biopsy with systematic biopsy alone for the diagnosis of prostate cancer: A systematic review and meta-analysis. JAMA Netw Open. (2019) 2:e198427. doi: 10.1001/jamanetworkopen.2019.8427</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A survey on dataset quality in machine learning</title>
+		<author>
+			<persName><forename type="first">Youdi</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangzhen</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunzhi</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingzhong</forename><surname>Meng</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.infsof.2023.107268</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Software Technology</title>
+		<title level="j" type="abbrev">Information and Software Technology</title>
+		<idno type="ISSN">0950-5849</idno>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page">107268</biblScope>
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gong Y, Liu G, Xue Y, Li R, Meng L. A survey on dataset quality in machine learning. Inf Softw Technol. (2023) 162:107268. doi: 10.1016/j.infsof.2023.107268</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Multiple instance learning for digital pathology: A review of the state-of-the-art, limitations &amp; future potential</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Gadermayr</surname></persName>
+			<idno type="ORCID">0000-0003-1450-9222</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Tschuchnig</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compmedimag.2024.102337</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computerized Medical Imaging and Graphics</title>
+		<title level="j" type="abbrev">Computerized Medical Imaging and Graphics</title>
+		<idno type="ISSN">0895-6111</idno>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page">102337</biblScope>
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gadermayr M, Tschuchnig M. Multiple instance learning for digital pathology: A review of the state-of-the-art, limitations &amp; future potential. Comput Med Imaging Graphics. (2024) 112:102337. doi: 10.1016/j.compmedimag.2024.102337</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Modality-based attention and dual-stream multiple instance convolutional neural network for predicting microvascular invasion of hepatocellular carcinoma</title>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhao</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiafeng</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinzhu</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2023.1195110</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">1195110</biblScope>
+			<date type="published" when="2023-06-26">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li Z, Wang Y, Zhu Y, Xu J, Wei J, Xie J, et al. Modality-based attention and dual- stream multiple instance convolutional neural network for predicting microvascular invasion of hepatocellular carcinoma. Front Oncol. (2023) 13:1195110. doi: 10.3389/ fonc.2023.1195110</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A Review on Machine Learning Styles in Computer Vision—Techniques and Future Directions</title>
+		<author>
+			<persName><forename type="first">Supriya</forename><forename type="middle">V</forename><surname>Mahadevkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bharti</forename><surname>Khemani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shruti</forename><surname>Patil</surname></persName>
+			<idno type="ORCID">0000-0002-4903-1540</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ketan</forename><surname>Kotecha</surname></persName>
+			<idno type="ORCID">0000-0003-2653-3780</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Deepali</forename><forename type="middle">R</forename><surname>Vora</surname></persName>
+			<idno type="ORCID">0000-0003-3969-9800</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ajith</forename><surname>Abraham</surname></persName>
+			<idno type="ORCID">0000-0002-0169-6738</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lubna</forename><forename type="middle">Abdelkareim</forename><surname>Gabralla</surname></persName>
+			<idno type="ORCID">0000-0002-6910-6861</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2022.3209825</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="107293" to="107329" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mahadevkar SV, Khemani B, Patil S, Kotecha K, Vora DR, Abraham A, et al. A review on machine learning styles in computer vision-Techniques and future directions. IEEE Access. (2022) 10:107293-329. doi: 10.1109/ACCESS.2022.3209825</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">MedFILIP: Medical Fine-Grained Language-Image Pre-Training</title>
+		<author>
+			<persName><forename type="first">Xinjie</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-7681-7787</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fanding</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0009-0003-1783-2399</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-1874-9947</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kuanquan</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-1347-3491</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suyu</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gongning</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0003-3662-0335</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-5184-3230</idno>
+		</author>
+		<idno type="DOI">10.1109/jbhi.2025.3528196</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Biomedical and Health Informatics</title>
+		<title level="j" type="abbrev">IEEE J. Biomed. Health Inform.</title>
+		<idno type="ISSN">2168-2194</idno>
+		<idno type="ISSNe">2168-2208</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3587" to="3597" />
+			<date type="published" when="2025-05">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liang X, Li X, Li F, Jiang J, Dong Q, Wang W, et al. MedFILIP: medical fine- grained language-image pre-training. IEEE J BioMed Health Inform. (2025) 29:3587- 97. doi: 10.1109/JBHI.2025.3528196</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Loss-Based Attention for Deep Multiple Instance Learning</title>
+		<author>
+			<persName><forename type="first">Xiaoshuang</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fuyong</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanpu</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zizhao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v34i04.6030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">04</biblScope>
+			<biblScope unit="page" from="5742" to="5749" />
+			<date type="published" when="2020-04-03">2020</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shi X, Xing F, Xie Y, Zhang Z, Cui L, Yang L. Loss-based attention for deep multiple instance learning. AAAI. (2020) 34:5742-9. doi: 10.1609/aaai.v34i04.6030</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Multi-attention multiple instance learning</title>
+		<author>
+			<persName><forename type="first">Andrei</forename><forename type="middle">V</forename><surname>Konstantinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lev</forename><forename type="middle">V</forename><surname>Utkin</surname></persName>
+			<idno type="ORCID">0000-0002-5637-1420</idno>
+		</author>
+		<idno type="DOI">10.1007/s00521-022-07259-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computing and Applications</title>
+		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
+		<idno type="ISSN">0941-0643</idno>
+		<idno type="ISSNe">1433-3058</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="14029" to="14051" />
+			<date type="published" when="2022-04-20">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Konstantinov AV, Utkin LV. Multi-attention multiple instance learning. Neural Comput Applic. (2022) 34:14029-51. doi: 10.1007/s00521-022-07259-5</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Whole slide image-level classification of malignant effusion cytology using clustering-constrained attention multiple instance learning</title>
+		<author>
+			<persName><forename type="first">Dongwoo</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-6744-4680</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jongwon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minsoo</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kwangil</forename><surname>Yim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gisu</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongjun</forename><surname>Yoon</surname></persName>
+			<idno type="ORCID">0000-0002-4723-327X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daeky</forename><surname>Jeong</surname></persName>
+			<idno type="ORCID">0009-0007-4705-6086</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Won</forename><forename type="middle">June</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Rizwan</forename><surname>Alam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gyungyub</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nam</forename><forename type="middle">Hoon</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chong</forename><forename type="middle">Woo</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yosep</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyung</forename><forename type="middle">Jin</forename><surname>Seo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.lungcan.2025.108552</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Lung Cancer</title>
+		<title level="j" type="abbrev">Lung Cancer</title>
+		<idno type="ISSN">0169-5002</idno>
+		<imprint>
+			<biblScope unit="volume">204</biblScope>
+			<biblScope unit="page">108552</biblScope>
+			<date type="published" when="2025-06">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kim D, Lee J, Jung M, Yim K, Hwang G, Yoon H, et al. Whole slide image-level classification of Malignant effusion cytology using clustering-constrained attention multiple instance learning. Lung Cancer. (2025) 204:108552. doi: 10.1016/ j.lungcan.2025.108552</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Data-efficient and weakly supervised computational pathology on whole-slide images</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0009-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiffany</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-2546-2941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matteo</forename><surname>Barbieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41551-020-00682-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<title level="j" type="abbrev">Nat Biomed Eng</title>
+		<idno type="ISSNe">2157-846X</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="555" to="570" />
+			<date type="published" when="2021-03-01">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu MY, Williamson DFK, Chen TY, Chen RJ, Barbieri M, Mahmood F. Data- efficient and weakly supervised computational pathology on whole-slide images. Nat BioMed Eng. (2021) 5:555-70. doi: 10.1038/s41551-020-00682-w</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Multi-Level Feature Exploration and Fusion Network for Prediction of IDH Status in Gliomas From MRI</title>
+		<author>
+			<persName><forename type="first">Jiawei</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0007-9411-8673</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianyun</forename><surname>Cao</surname></persName>
+			<idno type="ORCID">0000-0001-8323-3923</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0001-8253-2315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qianjin</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meiyan</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-2138-9580</idno>
+		</author>
+		<idno type="DOI">10.1109/jbhi.2023.3279433</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Biomedical and Health Informatics</title>
+		<title level="j" type="abbrev">IEEE J. Biomed. Health Inform.</title>
+		<idno type="ISSN">2168-2194</idno>
+		<idno type="ISSNe">2168-2208</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="42" to="53" />
+			<date type="published" when="2024-01">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang J, Cao J, Tang F, Xie T, Feng Q, Huang M. Multi-level feature exploration and fusion network for prediction of IDH status in gliomas from MRI. IEEE J BioMed Health Inform. (2024) 28:42-53. doi: 10.1109/JBHI.2023.3279433</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Self-supervised learning for medical image analysis: a comprehensive review</title>
+		<author>
+			<persName><forename type="first">Veenu</forename><surname>Rani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munish</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aastha</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><surname>Sachdeva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krishan</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12530-024-09581-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Evolving Systems</title>
+		<title level="j" type="abbrev">Evolving Systems</title>
+		<idno type="ISSN">1868-6478</idno>
+		<idno type="ISSNe">1868-6486</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1607" to="1633" />
+			<date type="published" when="2024-04-16">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rani V, Kumar M, Gupta A, Sachdeva M, Mittal A, Kumar K. Self-supervised learning for medical image analysis: a comprehensive review. Evolving Syst. (2024) 15:1607-33. doi: 10.1007/s12530-024-09581-w</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A systematic comparison of deep learning methods for Gleason grading and scoring</title>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">P</forename><surname>Dominguez-Morales</surname></persName>
+			<idno type="ORCID">0000-0002-5474-107X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lourdes</forename><surname>Duran-Lopez</surname></persName>
+			<idno type="ORCID">0000-0002-5849-8003</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niccolò</forename><surname>Marini</surname></persName>
+			<idno type="ORCID">0000-0002-5273-5741</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saturnino</forename><surname>Vicente-Diaz</surname></persName>
+			<idno type="ORCID">0000-0001-9466-485X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandro</forename><surname>Linares-Barranco</surname></persName>
+			<idno type="ORCID">0000-0002-6056-740X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manfredo</forename><surname>Atzori</surname></persName>
+			<idno type="ORCID">0000-0001-5397-2063</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henning</forename><surname>Müller</surname></persName>
+			<idno type="ORCID">0000-0001-6800-9878</idno>
+		</author>
+		<idno type="DOI">10.1016/j.media.2024.103191</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page">103191</biblScope>
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dominguez-Morales JP, Duran-Lopez L, Marini N, Vicente-Diaz S, Linares- Barranco A, Atzori M, et al. A systematic comparison of deep learning methods for Gleason grading and scoring. Med Image Anal. (2024) 95:103191. doi: 10.1016/ j.media.2024.103191</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Deep Multi-Instance Learning with Adaptive Recurrent Pooling for Medical Image Classification</title>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liming</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xianbin</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bibm55620.2022.9995191</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</title>
+		<meeting><address><addrLine>Las Vegas, NV, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-12-06">2022</date>
+			<biblScope unit="page" from="3335" to="3342" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ding Y, Zhao L, Yuan L, Wen X. (2022). Deep multi-instance learning with adaptive recurrent pooling for medical image classification, in: 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), Las Vegas, NV, USA. pp. 3335- 42. IEEE. doi: 10.1109/BIBM55620.2022.9995191</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Not-so-supervised: A survey of semi-supervised, multi-instance, and transfer learning in medical image analysis</title>
+		<author>
+			<persName><forename type="first">Veronika</forename><surname>Cheplygina</surname></persName>
+			<idno type="ORCID">0000-0003-0176-9324</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marleen</forename><surname>De Bruijne</surname></persName>
+			<idno type="ORCID">0000-0002-6328-902X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Josien</forename><forename type="middle">P W</forename><surname>Pluim</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2019.03.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="280" to="296" />
+			<date type="published" when="2019-05">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cheplygina V, de Bruijne M, Pluim JPW. Not-so-supervised: A survey of semi- supervised, multi-instance, and transfer learning in medical image analysis. Med Image Anal. (2019) 54:280-96. doi: 10.1016/j.media.2019.03.009</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Singular value decomposition based under‐sampling pattern optimization for MRI reconstruction</title>
+		<author>
+			<persName><forename type="first">Xinglong</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luyi</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinlin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinnian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ritse</forename><surname>Mann</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/mp.17860</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Physics</title>
+		<title level="j" type="abbrev">Medical Physics</title>
+		<idno type="ISSN">0094-2405</idno>
+		<idno type="ISSNe">2473-4209</idno>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">17860</biblScope>
+			<date type="published" when="2025-04-28">2025</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liang X, Han L, Zhang X, Li X, Sun Y, Tong T, et al. Singular value decomposition based under-sampling pattern optimization for MRI reconstruction. Med Phys. (2025) 52:e17860. doi: 10.1002/mp.17860</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Completely non-invasive prediction of IDH mutation status based on preoperative native CT images</title>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Musigmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melike</forename><surname>Bilgin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabriye</forename><forename type="middle">Sennur</forename><surname>Bilgin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hermann</forename><surname>Krähling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Heindel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manoj</forename><surname>Mannil</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-77789-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">26763</biblScope>
+			<date type="published" when="2024-11-05">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Musigmann M, Bilgin M, Bilgin SS, Krähling H, Heindel W, Mannil M. Completely non-invasive prediction of IDH mutation status based on preoperative native CT images. Sci Rep. (2024) 14:26763. doi: 10.1038/s41598-024-77789-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">MRI-Based Radiomics Combined with Deep Learning for Distinguishing IDH-Mutant WHO Grade 4 Astrocytomas from IDH-Wild-Type Glioblastomas</title>
+		<author>
+			<persName><forename type="first">Seyyed</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elahe</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ghasem</forename><surname>Hajianfar</surname></persName>
+			<idno type="ORCID">0000-0001-5359-2407</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Isaac</forename><surname>Shiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stijn</forename><surname>Servaes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>Rosa-Neto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laiz</forename><surname>Godoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><surname>Nasrallah</surname></persName>
+			<idno type="ORCID">0000-0003-4861-0898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><surname>O’rourke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+			<idno type="ORCID">0000-0002-4025-115X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjeev</forename><surname>Chawla</surname></persName>
+			<idno type="ORCID">0000-0001-6978-7284</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers15030951</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">951</biblScope>
+			<date type="published" when="2023-02-02">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hosseini S, Hosseini E, Hajianfar G, Shiri I, Servaes S, Rosa-Neto P, et al. MRI- based radiomics combined with deep learning for distinguishing IDH-mutant WHO grade 4 astrocytomas from IDH-wild-type glioblastomas. Cancers. (2023) 15:951. doi: 10.3390/cancers15030951</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The University of California San Francisco Preoperative Diffuse Glioma MRI Dataset</title>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Calabrese</surname></persName>
+			<idno type="ORCID">0000-0002-1464-0354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><forename type="middle">E</forename><surname>Villanueva-Meyer</surname></persName>
+			<idno type="ORCID">0000-0002-5910-0757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Rudie</surname></persName>
+			<idno type="ORCID">0000-0001-8609-8421</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><forename type="middle">M</forename><surname>Rauschecker</surname></persName>
+			<idno type="ORCID">0000-0003-0633-9876</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ujjwal</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Soonmee</forename><surname>Cha</surname></persName>
+			<idno type="ORCID">0000-0002-5924-5876</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">T</forename><surname>Mongan</surname></persName>
+			<idno type="ORCID">0000-0003-2765-7451</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">P</forename><surname>Hess</surname></persName>
+			<idno type="ORCID">0000-0002-5132-5302</idno>
+		</author>
+		<idno type="DOI">10.1148/ryai.220058</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology: Artificial Intelligence</title>
+		<title level="j" type="abbrev">Radiology: Artificial Intelligence</title>
+		<idno type="ISSNe">2638-6100</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">220058</biblScope>
+			<date type="published" when="2022-11-01">2022</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Calabrese E, Villanueva-Meyer JE, Rudie JD, Rauschecker AM, Baid U, Bakas S, et al. The university of california san francisco preoperative diffuse glioma MRI dataset. Radiol: Artif Intell. (2022) 4:e220058. doi: 10.1148/ryai.220058</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">PLADE-Net: Towards Pixel-Level Accuracy for Self-Supervised Single-View Depth Estimation with Neural Positional Encoding and Distilled Matting Loss</title>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Luis Gonzalez</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munchurl</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.00678</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<meeting><address><addrLine>Nashville, TN, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021. 2021</date>
+			<biblScope unit="page" from="6847" to="6856" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bello JLG, Kim M. (2021). PLADE-net: towards pixel-level accuracy for self- supervised single-view depth estimation with neural positional encoding and distilled matting loss, in: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Nashville, TN, USA. pp. 6847-56. IEEE. doi: 10.1109/ CVPR46437.2021.00678</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Predicting IDH Mutation Status in Low-Grade Gliomas Based on Optimal Radiomic Features Combined with Multi-Sequence Magnetic Resonance Imaging</title>
+		<author>
+			<persName><forename type="first">Ailing</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aihua</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yankui</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianhuan</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-8714-2543</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/diagnostics12122995</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">2995</biblScope>
+			<date type="published" when="2022-11-30">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">He A, Wang P, Zhu A, Liu Y, Chen J, Liu L. Predicting IDH mutation status in low-grade gliomas based on optimal radiomic features combined with multi-sequence magnetic resonance imaging. Diagnostics. (2022) 12:2995. doi: 10.3390/ diagnostics12122995</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Validation Study for Non-Invasive Prediction of IDH Mutation Status in Patients with Glioma Using In Vivo 1H-Magnetic Resonance Spectroscopy and Machine Learning</title>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><surname>Bumes</surname></persName>
+			<idno type="ORCID">0000-0001-6915-3206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Claudia</forename><surname>Fellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franz</forename><forename type="middle">A</forename><surname>Fellner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><surname>Fleischanderl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Häckl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Lenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralf</forename><surname>Linker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Mirus</surname></persName>
+			<idno type="ORCID">0000-0002-8619-7793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">J</forename><surname>Oefner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Paar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">Andreas</forename><surname>Proescholdt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><forename type="middle">J</forename><surname>Riemenschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharina</forename><surname>Rosengarth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Weis</surname></persName>
+			<idno type="ORCID">0000-0001-6750-2599</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Wendl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sibylle</forename><surname>Wimmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Hau</surname></persName>
+			<idno type="ORCID">0000-0003-3894-5053</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfram</forename><surname>Gronwald</surname></persName>
+			<idno type="ORCID">0000-0003-3646-0060</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Hutterer</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers14112762</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">2762</biblScope>
+			<date type="published" when="2022-06-02">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bumes E, Fellner C, Fellner FA, Fleischanderl K, Häckl M, Lenz S, et al. Validation study for non-invasive prediction of IDH mutation status in patients with glioma using in vivo 1H-magnetic resonance spectroscopy and machine learning. Cancers. (2022) 14:2762. doi: 10.3390/cancers14112762</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Predicting IDH subtype of grade 4 astrocytoma and glioblastoma from tumor radiomic patterns extracted from multiparametric magnetic resonance images using a machine learning approach</title>
+		<author>
+			<persName><forename type="first">Pashmina</forename><surname>Kandalgaonkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arpita</forename><surname>Sahu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ann</forename><forename type="middle">Christy</forename><surname>Saju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akanksha</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Mahajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meenakshi</forename><surname>Thakur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayushi</forename><surname>Sahay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sridhar</forename><surname>Epari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shwetabh</forename><surname>Sinha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Archya</forename><surname>Dasgupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prakash</forename><surname>Shetty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aliasgar</forename><surname>Moiyadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaiprakash</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tejpal</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayant</forename><forename type="middle">S</forename><surname>Goda</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2022.879376</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">879376</biblScope>
+			<date type="published" when="2022-09-30">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kandalgaonkar P, Sahu A, Saju AC, Joshi A, Mahajan A, Thakur M, et al. Predicting IDH subtype of grade 4 astrocytoma and glioblastoma from tumor radiomic patterns extracted from multiparametric magnetic resonance images using a machine learning approach. Front Oncol. (2022) 12:879376. doi: 10.3389/fonc.2022.879376</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Biologically interpretable multi-task deep learning pipeline predicts molecular alterations, grade, and prognosis in glioma patients</title>
+		<author>
+			<persName><forename type="first">Xuewei</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuaitong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0006-8536-4541</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenyu</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-5570-090X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zicong</forename><surname>He</surname></persName>
+			<idno type="ORCID">0000-0002-2095-4413</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zexin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiwei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingjing</forename><surname>You</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhui</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xianzhi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongming</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingliang</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuixing</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-7377-382X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-6286-6227</idno>
+		</author>
+		<idno type="DOI">10.1038/s41698-024-00670-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Precision Oncology</title>
+		<title level="j" type="abbrev">npj Precis. Onc.</title>
+		<idno type="ISSNe">2397-768X</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">181</biblScope>
+			<date type="published" when="2024-08-16">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wu X, Zhang S, Zhang Z, He Z, Xu Z, Wang W, et al. Biologically interpretable multi-task deep learning pipeline predicts molecular alterations, grade, and prognosis in glioma patients. NPJ Precis Onc. (2024) 8:181. doi: 10.1038/s41698-024-00670-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Multi-scale feature fusion for prediction of IDH1 mutations in glioma histopathological images</title>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0009-0000-1777-3681</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wanming</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0002-3632-1258</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Songhui</forename><surname>Diao</surname></persName>
+			<idno type="ORCID">0000-0002-0971-8591</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Deboch</forename><forename type="middle">Eyob</forename><surname>Abera</surname></persName>
+			<idno type="ORCID">0000-0002-2461-1952</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Racoceanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjian</forename><surname>Qin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cmpb.2024.108116</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods and Programs in Biomedicine</title>
+		<title level="j" type="abbrev">Computer Methods and Programs in Biomedicine</title>
+		<idno type="ISSN">0169-2607</idno>
+		<imprint>
+			<biblScope unit="volume">248</biblScope>
+			<biblScope unit="page">108116</biblScope>
+			<date type="published" when="2024-05">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu X, Hu W, Diao S, Abera DE, Racoceanu D, Qin W. Multi-scale feature fusion for prediction of IDH1 mutations in glioma histopathological images. Comput Methods Programs Biomed. (2024) 248:108116. doi: 10.1016/j.cmpb.2024.108116</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Fully automated hybrid approach to predict the&lt;i&gt;IDH&lt;/i&gt;mutation status of gliomas via deep learning and radiomics</title>
+		<author>
+			<persName><forename type="first">Yoon</forename><forename type="middle">Seong</forename><surname>Choi</surname></persName>
+			<idno type="ORCID">0000-0002-6034-9912</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sohi</forename><surname>Bae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jong</forename><forename type="middle">Hee</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seok-Gu</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Se</forename><forename type="middle">Hoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinna</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tyler</forename><forename type="middle">Hyungtaek</forename><surname>Rim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajan</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung-Koo</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noaa177</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="304" to="313" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Choi YS, Bae S, Chang JH, Kang S-G, Kim SH, Kim J, et al. Fully automated hybrid approach to predict the IDH mutation status of gliomas via deep learning and radiomics. Neuro-Oncology. (2021) 23:304-13. doi: 10.1093/neuonc/noaa177</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">SGPNet: A Three‐Dimensional Multitask Residual Framework for Segmentation and IDH Genotype Prediction of Gliomas</title>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3034-1354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-4751-0708</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chunjie</forename><surname>Guo</surname></persName>
+			<idno type="ORCID">0000-0002-5784-0479</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shuangquan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-9245-5982</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lili</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0001-5473-4470</idno>
+		</author>
+		<idno type="DOI">10.1155/2021/5520281</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Intelligence and Neuroscience</title>
+		<title level="j" type="abbrev">Computational Intelligence and Neuroscience</title>
+		<idno type="ISSN">1687-5265</idno>
+		<idno type="ISSNe">1687-5273</idno>
+		<imprint>
+			<biblScope unit="volume">2021</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5520281</biblScope>
+			<date type="published" when="2021-01">2021</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang Y, Wang Y, Guo C, Zhang S, Yang L. SGPNet: A three-dimensional multitask residual framework for segmentation and IDH genotype prediction of gliomas. Comput Intell Neurosci. (2021) 2021:5520281. doi: 10.1155/2021/5520281</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Combined molecular subtyping, grading, and segmentation of glioma using multi-task deep learning</title>
+		<author>
+			<persName><forename type="first">Sebastian</forename><forename type="middle">R</forename><surname>Van Der Voort</surname></persName>
+			<idno type="ORCID">0000-0002-6526-8126</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fatih</forename><surname>Incekara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maarten</forename><forename type="middle">M J</forename><surname>Wijnenga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgios</forename><surname>Kapsas</surname></persName>
+			<idno type="ORCID">0000-0001-8043-958X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Renske</forename><surname>Gahrmann</surname></persName>
+			<idno type="ORCID">0000-0001-7384-8633</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joost</forename><forename type="middle">W</forename><surname>Schouten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rishi</forename><surname>Nandoe Tewarie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geert</forename><forename type="middle">J</forename><surname>Lycklama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">C</forename><surname>De Witt Hamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roelant</forename><forename type="middle">S</forename><surname>Eijgelaar</surname></persName>
+			<idno type="ORCID">0000-0002-1765-4444</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pim</forename><forename type="middle">J</forename><surname>French</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hendrikus</forename><forename type="middle">J</forename><surname>Dubbink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnaud</forename><forename type="middle">J P E</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wiro</forename><forename type="middle">J</forename><surname>Niessen</surname></persName>
+			<idno type="ORCID">0000-0002-5822-1995</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+			<idno type="ORCID">0000-0001-5710-5127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Smits</surname></persName>
+			<idno type="ORCID">0000-0001-5563-2871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Klein</surname></persName>
+			<idno type="ORCID">0000-0003-4449-6784</idno>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac166</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="289" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">van der Voort SR, Incekara F, Wijnenga MMJ, Kapsas G, Gahrmann R, Schouten JW, et al. Combined molecular subtyping, grading, and segmentation of glioma using multi-task deep learning. Neuro-Oncology. (2023) 25:279-89. doi: 10.1093/neuonc/ noac166</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">A Fully Automated Multimodal MRI-Based Multi-Task Learning for Glioma Segmentation and IDH Genotyping</title>
+		<author>
+			<persName><forename type="first">Jianhong</forename><surname>Cheng</surname></persName>
+			<idno type="ORCID">0000-0001-6092-211X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-4961-7074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hulin</forename><surname>Kuang</surname></persName>
+			<idno type="ORCID">0000-0001-7341-9871</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxin</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-1516-0480</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2022.3142321</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1520" to="1532" />
+			<date type="published" when="2022-06">2022</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cheng J, Liu J, Kuang H, Wang J. A fully automated multimodal MRI-based multi-task learning for glioma segmentation and IDH genotyping. IEEE Trans Med Imaging. (2022) 41:1520-32. doi: 10.1109/TMI.2022.3142321</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Towards a multimodal MRI-based foundation model for multi-level feature exploration in segmentation, molecular subtyping, and grading of glioma</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hejazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Ieva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fatemizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2503.06828</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Farahani S, Hejazi M, Di Ieva A, Fatemizadeh E, Liu S. Towards a multimodal MRI-based foundation model for multi-level feature exploration in segmentation, molecular subtyping, and grading of glioma. (2025). doi: 10.48550/ arXiv.2503.06828</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Glioma Image-Level and Slide-Level Gene Predictor (GLISP) for Molecular Diagnosis and Predicting Genetic Events of Adult Diffuse Glioma</title>
+		<author>
+			<persName><forename type="first">Minh-Khang</forename><surname>Le</surname></persName>
+			<idno type="ORCID">0000-0002-4571-0888</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Masataka</forename><surname>Kawai</surname></persName>
+			<idno type="ORCID">0000-0003-1106-239X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kenta</forename><surname>Masui</surname></persName>
+			<idno type="ORCID">0000-0002-5824-6690</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takashi</forename><surname>Komori</surname></persName>
+			<idno type="ORCID">0000-0002-6812-2149</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Takakazu</forename><surname>Kawamata</surname></persName>
+			<idno type="ORCID">0000-0002-6076-7065</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshihiro</forename><surname>Muragaki</surname></persName>
+			<idno type="ORCID">0000-0001-8336-5328</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tomohiro</forename><surname>Inoue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ippei</forename><surname>Tahara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazunari</forename><surname>Kasai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tetsuo</forename><surname>Kondo</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/bioengineering12010012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioengineering</title>
+		<title level="j" type="abbrev">Bioengineering</title>
+		<idno type="ISSNe">2306-5354</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2024-12-27">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Le M-K, Kawai M, Masui K, Komori T, Kawamata T, Muragaki Y, et al. Glioma image-level and slide-level gene predictor (GLISP) for molecular diagnosis and predicting genetic events of adult diffuse glioma. Bioengineering. (2024) 12:12. doi: 10.3390/bioengineering12010012</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

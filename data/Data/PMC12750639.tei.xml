@@ -1,0 +1,2727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Single-cell and spatial transcriptomics reveal lactylation-associated tumor cell clusters and define a prognostic risk model in glioblastoma</title>
+				<funder ref="#_YhZJura #_2sgtYmY">
+					<orgName type="full">Jilin Jilin Province Science and Technology Development Plan</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-11-22">2025-11-22</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Rui</forename><surname>Han</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurovascular Surgery , The First Hospital of Jilin University , No. 71 , Xinmin Street , Chaoyang District , Changchun City , Jilin Province 130021 , People&apos;s Republic of China</note>
+								<orgName type="department">Department of Neurovascular Surgery</orgName>
+								<orgName type="institution">The First Hospital of Jilin University</orgName>
+								<address>
+									<addrLine>No. 71 Xinmin Street Chaoyang District</addrLine>
+									<postCode>130021</postCode>
+									<settlement>Changchun City</settlement>
+									<region>Jilin Province</region>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Guangfan</forename><surname>Chi</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Key Laboratory of Pathobiology , Ministry of Education , College of Basic Medical Sciences , Jilin University , Changchun , Jilin 130012 , China</note>
+								<orgName type="department" key="dep1">Ministry of Education</orgName>
+								<orgName type="department" key="dep2">College of Basic Medical Sciences</orgName>
+								<orgName type="laboratory">The Key Laboratory of Pathobiology</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<postCode>130012</postCode>
+									<settlement>Changchun</settlement>
+									<region>Jilin</region>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Dongjie</forename><surname>Sun</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> The Key Laboratory of Pathobiology , Ministry of Education , College of Basic Medical Sciences , Jilin University , Changchun , Jilin 130012 , China</note>
+								<orgName type="department" key="dep1">Ministry of Education</orgName>
+								<orgName type="department" key="dep2">College of Basic Medical Sciences</orgName>
+								<orgName type="laboratory">The Key Laboratory of Pathobiology</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<postCode>130012</postCode>
+									<settlement>Changchun</settlement>
+									<region>Jilin</region>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ziran</forename><surname>Xu</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Clinical Laboratory , Lequn Branch , The First Hospital of Jilin University , Changchun , Jilin 130021 , China</note>
+								<orgName type="department" key="dep1">Department of Clinical Laboratory</orgName>
+								<orgName type="department" key="dep2">Lequn Branch</orgName>
+								<orgName type="institution">The First Hospital of Jilin University</orgName>
+								<address>
+									<postCode>130021</postCode>
+									<settlement>Changchun</settlement>
+									<region>Jilin</region>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Liangfu</forename><surname>Zhou</surname></persName>
+							<email>lfzhouc@jlu.edu.cn</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurovascular Surgery , The First Hospital of Jilin University , No. 71 , Xinmin Street , Chaoyang District , Changchun City , Jilin Province 130021 , People&apos;s Republic of China</note>
+								<orgName type="department">Department of Neurovascular Surgery</orgName>
+								<orgName type="institution">The First Hospital of Jilin University</orgName>
+								<address>
+									<addrLine>No. 71 Xinmin Street Chaoyang District</addrLine>
+									<postCode>130021</postCode>
+									<settlement>Changchun City</settlement>
+									<region>Jilin Province</region>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kan</forename><surname>Xu</surname></persName>
+							<email>xukan@jlu.edu.cn</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neurovascular Surgery , The First Hospital of Jilin University , No. 71 , Xinmin Street , Chaoyang District , Changchun City , Jilin Province 130021 , People&apos;s Republic of China</note>
+								<orgName type="department">Department of Neurovascular Surgery</orgName>
+								<orgName type="institution">The First Hospital of Jilin University</orgName>
+								<address>
+									<addrLine>No. 71 Xinmin Street Chaoyang District</addrLine>
+									<postCode>130021</postCode>
+									<settlement>Changchun City</settlement>
+									<region>Jilin Province</region>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Single-cell and spatial transcriptomics reveal lactylation-associated tumor cell clusters and define a prognostic risk model in glioblastoma</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">BMC Cancer</title>
+						<title level="j" type="abbrev">BMC Cancer</title>
+						<idno type="eISSN">1471-2407</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">25</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-11-22" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">4D3B817E745359B28752B0B9E1EBAA0F</idno>
+					<idno type="DOI">10.1186/s12885-025-15291-6</idno>
+					<note type="submission">Received: 8 May 2025 / Accepted: 4 November 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T14:32+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Glioblastoma multiforme</term>
+					<term>Lactylation</term>
+					<term>Single-cell RNA sequencing</term>
+					<term>Spatial transcriptomics Single-cell and spatial transcriptomics reveal lactylation-associated tumor cell clusters</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background Glioblastoma (GBM) is the most aggressive adult brain tumor, marked by intratumoral heterogeneity and therapy resistance. Metabolic reprogramming through histone lactylation has been linked to tumor progression and immune suppression. However, the spatial and single-cell landscape of lactylation in GBM and its prognostic significance remain poorly understood.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>We employed a multi-omics approach integrating bulk RNA sequencing, single-cell RNA sequencing (scRNA-seq), and spatial transcriptomics to investigate lactylation-related signatures in GBM. Differential expression and pathway analyses were performed using GEO and TCGA datasets. Cell clustering, SCENIC transcriptional network inference, CellChat intercellular communication modeling, and pseudotime analysis were conducted. A prognostic risk model was constructed using LASSO-Cox regression based on lactylation-associated genes. Experimental validation was performed using western blotting, immunohistochemistry, and functional assays in GBM cell lines.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>Lactylation-related genes were significantly upregulated in GBM and associated with poor prognosis and immunosuppressive tumor microenvironments. Single-cell analysis revealed high-lactylation malignant subpopulations enriched in hypoxic tumor cores, exhibiting metabolic reprogramming and enhanced immune evasion. Spatial transcriptomics confirmed the localization of S100A6-high-lactylation GBM cells in aggressive tumor regions. A nine-gene lactylation-based risk model stratified patients into high-and low-risk groups with significantly different survival outcomes (AUC: 0.77-0.87). Experimental knockdown of S100A6 reduced GBM cell proliferation, migration, and invasion.</p><p>Conclusions Lactylation defines distinct tumor cell clusters in GBM that are spatially localized, metabolically reprogrammed, and immunosuppressive. The S100A6-associated lactylation signature serves as a robust prognostic biomarker and potential therapeutic target in GBM.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.276" lry="793.7"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Glioblastoma multiforme (GBM) is the most malignant primary brain tumor in adults, characterized by a median survival of only 15 months, even with aggressive treatments that include surgery, radiation therapy, and chemotherapy <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. e poor prognosis of GBM is primarily due to its extensive heterogeneity, rapid cell proliferation, and strong resistance to standard treatment approaches <ref type="bibr" target="#b2">[3]</ref>.</p><p>e tumor microenvironment (TME), marked by considerable cellular heterogeneity and metabolic alterations, is crucial in driving tumor progression, invasion, and immune evasion <ref type="bibr" target="#b3">[4]</ref>. Understanding the complex interactions between tumor cells and the TME is essential for designing more effective therapy strategies for GBM.</p><p>Recent studies have highlighted the pivotal role of metabolic reprogramming in GBM, with a particular focus on how lactate and lactylation influence tumor progression and immune evasion <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>. Lactylation, a recently identified post-translational modification derived from lactate, has become a critical regulator of gene expression, especially in glycolysis-dependent tumors under hypoxic conditions <ref type="bibr" target="#b6">[7]</ref>. In GBM, lactate accumulation is driven by the Warburg effect, in which tumor cells preferentially use glycolysis even in the presence of oxygen.</p><p>is metabolic shift leads to enhanced lactate production, creating an acidic TME that supports tumor growth and immune modulation <ref type="bibr" target="#b7">[8]</ref>. Increased lactylation levels have been associated with improved proliferation, immune suppression, and metabolic reprogramming in various cancers, including GBM <ref type="bibr" target="#b8">[9]</ref>. Nonetheless, the role of lactylation in GBM's heterogeneity and its influence on the TME remains poorly defined.</p><p>e spatial distribution of lactylation-enriched cells in GBM is particularly significant, as these cells are primarily located in the hypoxic core of the tumor, where metabolic reprogramming fuels aggressive behavior <ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref>.</p><p>ese cells demonstrate several adaptations that allow survival in harsh conditions, including enhanced glycolysis, altered amino acid metabolism, and resistance to oxidative stress.</p><p>e interplay between lactylation and hypoxia helps the tumor evade immune surveillance while supporting growth in hostile environments <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13]</ref>.</p><p>e interactions between tumor and stromal cells within the TME further help cancer progression <ref type="bibr" target="#b13">[14]</ref>.</p><p>ese mechanisms are particularly pronounced in GBM, where immune evasion and metabolic reprogramming are essential for tumor growth and resistance to therapy.</p><p>is study aimed to comprehensively delineate the role of lactylation in GBM through multi-omics approaches, encompassing bulk transcriptomics, single-cell RNA sequencing (scRNA-seq), and spatial transcriptomics. Additionally, the expression patterns of lactylation-associated genes in GBM and their correlation with tumor progression, prognosis, and immune cell infiltration were analyzed. Specific GBM subpopulations related to high lactylation were identified, and their metabolic and regulatory characteristics were examined. We explored cell-cell communication influenced by lactylation. Single-cell and spatial transcriptomics were employed to map the distribution of high-risk malignant cells, evaluate their metabolic reprogramming, and analyze their interactions with other TME components. ese analyses provide deeper insights into the role of lactylation in GBM progression and patient prognosis. Experimental validation confirmed that S100A6 promotes GBM cell proliferation, migration and invasion, offering potential therapeutic targets to mitigate GBM progression. Overall, our findings shed new light on lactylation's role in GBM heterogeneity, immune modulation, and metabolic reprogramming, offering valuable insights into the pathogenesis and potential therapies for GBM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data preprocessing</head><p>In this study, datasets including GSE194319, GSE135045, GSE162631 from GEO database, and TCGA-GBM cohort form TCGA database, were analyzed. Summary characteristics of these cohorts, including patient numbers, profiling platforms, follow-up time, and survival events, are presented in Table <ref type="table" target="#tab_0">1</ref>. Differentially expressed genes (DEGs) between tumor and normal samples were identified with the limma package <ref type="bibr" target="#b14">[15]</ref>, setting an adjusted p-value threshold of &lt; 0.05.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Single-sample gene set enrichment analysis (ssGSEA) and gene set enrichment analysis (GSEA)</head><p>e lactylation-related gene from previously published studies <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b15">16]</ref> was listed in supplementary Table <ref type="table" target="#tab_0">1</ref>. e lactylation-related gene scores were calculated using ssGSEA, as implemented in the GSVA (version GSVA) R package. Additionally, GSEA was performed using the ClusterProfiler R package <ref type="bibr" target="#b16">[17]</ref> to identify lactylationassociated pathways in GBM samples compared to normal tissues, with statistical significance defined as FDR &lt; 0.05. To ensure reproducibility, all analysis codes (including preprocessing, ssGSEA/GSEA scoring, scRNA-seq workflows, and model construction) have been deposited in a public Jianguoyun repository ( h t t p s : / / w w w . j i a n g u o y u n . c o m / p / D U N I q r g Q q u e t D R j y 6 P 0 F I A A) with detailed documentation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Single-cell RNA sequencing analysis</head><p>For scRNA-seq analysis, the GSE135045 dataset was utilized. Quality control was performed with the Seurat package (v4.0.5). Cells with 200-6,000 detected genes, &lt; 10% mitochondrial content, and &lt; 25,000 UMIs were retained, while putative doublets were removed using DoubletFinder v2.0. Batch effects were corrected with Harmony v1.0 (theta = 2, lambda = 1, 30 dimensions, set. seed = 1234). Clustering was performed with the Louvain algorithm (resolution = 0.6), and UMAP was used for visualization. Cross-dataset label transfer employed FindTransferAnchors (dims = 1:30, k.anchor = 5, k.filter = 200) and MapQuery. Dimensionality reduction was achieved via principal component analysis (PCA), and cell clustering was performed using the Louvain algorithm. Visualization of clusters was implemented through t-distributed stochastic neighbor embedding (t-SNE). To ensure reproducibility, random seeds were fixed across all major steps. Cells with fewer than 15% mitochondrial genes and between 200 and 3000 features were retained for analysis, and the top 2000 highly variable genes were selected for data scaling. Batch effects in GBM samples were corrected using the Harmony v1.0 package, and cell clusters were identified through the "FindClusters" and "FindNeighbors" functions. Uniform manifold approximation and projection (UMAP) was employed for further nonlinear dimensional reduction, using 20 major components with a resolution of 0.8. Cell types were initially annotated with the SingleR package <ref type="bibr" target="#b17">[18]</ref> and manually curated using marker genes from the CellMarker database and previous studies <ref type="bibr" target="#b18">[19]</ref>. Marker genes in each cell cluster were identified using the FindAllMarkers function, applying thresholds of logFC &gt;0.35, min.pct &gt;0.35, and adjusted p-value &lt; 0.05. To visualize top gene expression levels across GBM clusters, the Dotplot tool was utilized. InferCNV analysis was performed to infer chromosomal copy number variations and identify malignant cell populations <ref type="bibr" target="#b19">[20]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Functional enrichment analysis</head><p>Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analyses, facilitated by the ClusterProfiler (version v4.0.5,) package, were performed to explore biological processes associated with identified cell subpopulations, particularly those related to lactylation, such as glycolysis, immune evasion, and cell cycle regulation. GSEA and Hallmark pathway enrichment analyses further assessed functional differences between high-lactylation and low-lactylation subpopulations, as well as between high-risk and lowrisk GBM groups. Pathways with an adjusted p-value (FDR) &lt; 0.05 were considered significant; Nominal p-values are reported only when multiple testing correction was not supported by the analytical framework. Potential pathways associated with the risk model were identified through ssGSEA, computing GSVA scores for 50 key pathways, while c5.go.v7.5.1.symbols.gmt was employed for GSEA enrichment analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SCENIC analysis</head><p>To explore the transcriptional regulatory landscape within various GBM subpopulations, Single-Cell Regulatory Network Inference and Clustering (SCENIC) analysis was carried out using pySCENIC (version v0.11.2) <ref type="bibr" target="#b20">[21]</ref>.</p><p>e resulting data were analyzed to identify transcription factor enrichment across distinct GBM cell clusters. Patterns of transcription factor activity were visualized through t-SNE and UMAP, revealing key transcription factors that shape the regulatory network in high-lactylation GBM cells, shedding light on underlying mechanisms of metabolic reprogramming and immune modulation. All SCENIC analyses were performed with Python 3.7, utilizing relevant libraries such as arboreto and pySCENIC, executed on a Linux-based server capable of managing large scRNA-seq datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CellChat analysis</head><p>Intercellular communication was analyzed using Cell-Chat v1.1.3 with 1,000 permutations and an edge weight threshold of 0.05 <ref type="bibr" target="#b21">[22]</ref>.</p><p>e CellChatDB.human ligandreceptor database was applied to scRNA-seq clusters to identify key signaling inputs and outputs across GBM populations. Cell-cell communication networks were then constructed between target clusters and the broader GBM microenvironment. Significant ligand-receptor </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Spatial transcriptomics analysis</head><p>Spatial transcriptomics analysis was conducted using the GSE162631 dataset. Clustering and dimensionality reduction techniques were applied to the spatial transcriptomic data, revealing spatial patterns among different GBM subpopulations. To integrate scRNA-seq and ST data, we employed the Seurat v4 anchor-based integration framework <ref type="bibr" target="#b22">[23]</ref>. Using the FindTransfer-Anchors and MapQuery functions, cell type annotations from scRNA-seq were projected onto ST spots, enabling robust identification of high-lactylation and low-lactylation cell populations in their spatial context while accounting for cross-platform differences. Mapping was then performed to identify the localization of highlactylation and low-lactylation cells within the tumor tissue. In addition, specific metabolic pathway activity and ligand-receptor interactions were analyzed to investigate the spatial heterogeneity of tumor cells. Ligand-receptor interactions between high-lactylation and low-lactylation GBM cells and other cell types were further examined to elucidate spatial dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pseudotime analysis</head><p>Pseudotime analysis <ref type="bibr" target="#b23">[24]</ref> was utilized to trace the developmental trajectories of high-lactylation GBM clusters. CytoTRACE <ref type="bibr" target="#b24">[25]</ref> assessed the differentiation potential of these clusters, while Monocle was used to construct pseudotime trajectories. Differential gene expression along the pseudotime trajectory was analyzed to gain insights into dynamic changes in gene expression during tumor progression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prognostic model construction</head><p>A prognostic model based on lactylation-related genes was constructed using LASSO-Cox regression analysis via the glmnet package in R. Nine key Differentially Expressed Genes (DEGs) from S100A6-high-lactylation GBM cells were selected to calculate a risk score for each patient in the TCGA cohort. Kaplan-Meier survival analysis was performed to compare overall survival between high-and low-risk groups. e model's predictive accuracy was evaluated by calculating the area under the ROC curve (AUC) using the timeROC (version v0.4). R v4.1.2 package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Immune infiltration and ESTIMATE analysis</head><p>Immune infiltration was analyzed using the CIBERSORT algorithm (1,000 permutations) to estimate relative proportions of immune cell subsets in GBM samples. Tumor purity was assessed using the ESTIMATE algorithm, and ESTIMATE scores were included as covariates for sensitivity adjustment in immune infiltration comparisons between high-and low-risk groups. Correlations between lactylation-related risk genes and immune cell types were quantified using Spearman's correlation, and effect sizes (correlation coefficients, standardized mean differences) were reported alongside significance values. Multiple-testing correction was applied using the Benjamini-Hochberg method, with FDR &lt; 0.05 considered significant.</p><p>For distance-based analyses, the Mantel test was employed to evaluate associations between lactylation scores and immune infiltration patterns. Analyses were performed using Spearman distance matrices with 999 permutations to assess significance. Results were visualized using heatmaps and correlation plots, with both effect sizes and adjusted p-values reported.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Drug sensitivity analysis</head><p>Drug sensitivity analysis was conducted by comparing the half-maximal inhibitory concentration (IC50) values of various chemotherapeutic agents between high-and low-risk groups using the pRRophetic package <ref type="bibr" target="#b25">[26]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ScPagwas analysis</head><p>For scPagwas analysis, Single-cell Phenotype-Associated Gene Weighted Analysis (scPagwas) <ref type="bibr" target="#b26">[27]</ref> was employed.</p><p>e scRNA-seq data were sourced from GSE datasets and processed using the Seurat package version (v4.0.5) in R. Quality control steps involved filtering out lowquality cells, doublets, and cells with high mitochondrial content. scPagwas was then used to associate gene expression profiles with phenotypic data, such as GBM survival, through linear regression models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Western blotting analysis</head><p>Western blotting analysis was conducted to assess lactylation modifications in normal human astrocytes (NHA) and GBM cell lines (U87, U251, LN229). Cell lysates were prepared using RIPA buffer, and the extracted proteins were separated by SDS-PAGE, transferred onto PVDF membranes, and probed with antibodies specific to panlactylation and S100A6. Protein signals were visualized using enhanced chemiluminescence (ECL).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Immunohistochemistry (IHC)</head><p>IHC was performed to evaluate S100A6 expression in GBM tumor tissues and adjacent normal tissues. Formalin-fixed, paraffin-embedded (FFPE) tissue sections were stained with anti-S100A6 antibody, and staining intensity was analyzed to compare protein expression levels between tumor and normal tissues.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Lentiviral-mediated knockdown</head><p>U87 cells were transduced with lentiviral vectors carrying shRNAs targeting S100A6. Western blotting analysis was performed to confirm successful S100A6 knockdown. Functional assays, including the EDU assay and wound healing assay, were subsequently conducted to evaluate the impact of S100A6 knockdown on cell proliferation and migration, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Wound healing assay</head><p>To assess the migratory capacity of GBM cells following S100A6 knockdown, a wound healing assay was performed. U87 cells were seeded in 6-well plates and grown to about 90% confluency. A uniform scratch was introduced into the cell monolayer using a sterile 200 µL pipette tip, and PBS was used to wash away any debris. Images of the wound area were taken at 0 and 48 h using an inverted microscope. Wound closure was quantified by measuring the wound area at each time point using ImageJ software, with results expressed as a percentage of wound closure relative to the initial wound size.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>EDU assay</head><p>e EDU (5-ethynyl-2'-deoxyuridine) assay was employed to assess cell proliferation in U87 glioblastoma cells after S100A6 knockdown. Cells were seeded in 24-well plates and transfected with either shRNA targeting S100A6 or a negative control. After 48 h, cells were incubated with 10 µM EDU for 2 h at 37 °C. Cells were subsequently fixed with 4% paraformaldehyde and permeabilized with 0.5% Triton X-100. EDU incorporation was detected using the Click-iT EDU Imaging Kit (Invitrogen) according to the manufacturer's protocol. Nuclei were counterstained with DAPI, and images were acquired using a fluorescence microscope. e percentage of EDU-positive cells was calculated to determine the proliferation rate, with data presented as the mean ± standard deviation from three independent experiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cell migration and invasion assay</head><p>Cell migration and invasion assays were performed using Transwell chambers. For the migration assay, cells (2 × 10 ) were seeded in the upper chamber with an uncaoted membrane. For the invasion assay, the upper chamber membrane was pre-coated with Matrigel before seeding the cells. After 24 hours of incubation, cells that had migrated or invaded to the bottom surface of the membrane were fixed, stained with crystal violet and counted for analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis</head><p>All statistical analyses were conducted using R software (version v4.1.2) and Python (version v3.7). Data are presented as mean ± standard deviation. All statistical tests were two-sided by default. For comparisons between two groups, Student's t-test was used, while multiple-group comparisons employed analysis of variance (ANOVA) followed by appropriate post hoc tests. Where multiple comparisons were performed, p-values were adjusted using the FDR method. Results are reported with effect sizes (e.g., hazard ratios with 95% confidence intervals for Cox regression models, standardized mean differences where appropriate) alongside nominal and adjusted p-values. Statistical significance was defined as FDR &lt; 0.05 unless otherwise specified.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Lactylation-related features identified through multi-omics analyses</head><p>To investigate the role of lactylation in GBM, lactylationrelated gene expression was analyzed using datasets from GSE16561, GSE135046, and TCGA-GBM. A heatmap of DEGs revealed distinct expression patterns of lactylation-related genes in GBM compared to normal brain tissues (Fig. <ref type="figure" target="#fig_0">1A</ref>). Additionally, ssGSEA was utilized to assess lactylation activity, showing elevated lactylation scores in tumor samples (Fig. <ref type="figure" target="#fig_0">1A</ref>, right panel). GSEA further demonstrated significant upregulation of lactylation scores in GBM compared to normal controls, suggesting a pivotal role of lactylation in GBM biology (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">1B</ref>). Validation using TCGA and single-cell datasets revealed significantly higher lactylation scores in tumor tissues compared to normal samples (p &lt; 0.001, Fig. <ref type="figure" target="#fig_0">1C</ref>). To further investigate lactylation's influence on the TME, correlations between lactylation scores and immune cell infiltration were analyzed.</p><p>e Mantel test revealed a positive association between lactylation and immunosuppressive macrophages (M2), resting NK cells, and CD8 T cells, while a negative correlation was observed with regulatory T cells (Tregs) and monocytes (all FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">1D</ref>). ese results suggest that lactylation may promote an immunosuppressive TME in GBM. Single-cell transcriptomics data from GSE162631 were employed to examine the distribution of lactylation-related genes across cell types within GBM tissues. UMAP visualization displayed distinct cell-specific patterns of lactylation activity (Fig. <ref type="figure" target="#fig_0">1E</ref>, <ref type="figure">F</ref>), with the core tumor regions enriched for malignant cells exhibiting high lactylation scores, while peri-tumoral regions showed lower activity (Fig. <ref type="figure" target="#fig_0">1G</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Single-cell characterization of GBM heterogeneity</head><p>To further investigate the impact of lactylation on different cell types within GBM tissue, scRNA-seq analysis was performed using the GSE135045 dataset. Unsupervised clustering of the scRNA-seq data revealed multiple cell subpopulations, including immune cells (e.g., T cells, macrophages, microglia) and non-immune stromal cells, such as astrocytes, oligodendrocytes, endothelial cells, and pericytes (Fig. <ref type="figure">2A</ref>, Supplementary Table <ref type="table">2</ref>). Each subpopulation exhibited distinct gene expression profiles, providing a comprehensive map of GBM cellular heterogeneity. e 21 cell clusters were annotated into nine distinct cell types, visualized through t-SNE plots (Figs. <ref type="figure">2B</ref>, <ref type="figure">C</ref>). To confirm the malignant identity of certain clusters, inferCNV analysis was performed, revealing significant chromosomal alterations in malignant cells compared to non-malignant counterparts (Fig. <ref type="figure">2D</ref>). Identified malignant cells were displayed in a t-SNE plot (Fig. <ref type="figure">2E</ref>). Functional enrichment analysis was conducted to uncover the biological processes and pathways associated with the identified cell subpopulations. In the malignant clusters, pathways regulating nervous system development were notably enriched (FDR &lt; 0.05; Fig. <ref type="figure">2F</ref>).).</p><p>Lactylation scores were then computed for GBM malignant cells, and cells were stratified into "high-lactylation" and "low-lactylation" groups using the median ssGSEA lactylation score as the cut-off (top 50% = high, bottom 50% = low; Fig. <ref type="figure">3A</ref>). A bar plot illustrated the proportions of various cell types within each GBM sample (Fig. <ref type="figure">3B</ref>). To elucidate functional differences among the identified GBM subpopulations, a comprehensive metabolic pathway analysis was conducted. Substantial heterogeneity in metabolic pathway activity was observed between high-lactylation malignant cells and other cell populations (Fig. <ref type="figure">3C</ref>). High-lactylation malignant cells displayed enhanced activity in pathways related to glycolysis, glycine, and lipid metabolism, reflecting metabolic reprogramming that facilitates rapid proliferation and adaptation to the TME. Notably, these cells demonstrated a significant increase in metabolites, including deoxyuridine, glucose-6-phosphate, glucuronic acid, aspartate, and β-alanine (Fig. <ref type="figure">3D</ref>), highlighting elevated nucleotide biosynthesis, energy metabolism, and amino acid synthesis essential for tumor growth and adaptation to harsh conditions. Overall metabolic pathway scores (Fig. <ref type="figure">3E</ref>) were significantly higher in high-lactylation malignant cells, underscoring the extensive metabolic reprogramming in these cells. Inflammatory response and immune modulation pathways were also examined across different GBM subpopulations (Fig. <ref type="figure">3F</ref>). Pathway enrichment analysis, based on DEGs between highand low-lactylation malignant cells, revealed significant enrichment in pathways related to DNA replication, cell cycle progression, and immune evasion (DEGs defined as |logFC| &gt;0.25, FDR &lt; 0.05; Figs. <ref type="figure">3I-K</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Regulatory networks and cell-cell communication in GBM</head><p>To investigate the regulatory landscape of GBM subpopulations, SCENIC analysis was conducted to identify key transcription factors (TFs) and their regulatory targets across different cell types.</p><p>is analysis uncovered substantial heterogeneity in regulatory network activity among GBM subpopulations, with distinct TFs driving gene expression in high-lactylation and low-lactylation Fig. 3 (See legend on next page.)</p><p>malignant cells (Fig. <ref type="figure" target="#fig_2">4A</ref>). Notably, malignant cells demonstrated elevated regulatory activity of TFs such as POU3F2, ILF2, and RFX4, all of which are linked to tumor progression, metabolic adaptation, and immune evasion. e top five TFs for each cell cluster are shown in Fig. <ref type="figure" target="#fig_2">4B</ref>. SCENIC analysis further identified SOX9 as significantly enriched in high-lactylation malignant cells (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_2">4C</ref>). CellChat analysis was performed (FDR &lt; 0.05 unless otherwise indicated; Fig. <ref type="figure" target="#fig_2">4D</ref>). e strength of these communication networks was visualized through a signaling interaction network, which highlighted key pathways and cell types involved in shaping the GBM microenvironment (Fig. <ref type="figure" target="#fig_2">4E</ref>). Notably, GRN and EGF signaling were identified as incoming signals in high-lactylation malignant cells compared to their lowlactylation counterparts (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_2">4F</ref>). High-lactylation malignant cells also secreted ligands such as MK and PTN (Fig. <ref type="figure" target="#fig_2">4G</ref>).</p><p>Specific signaling pathways, including EGF and MK, were found to be particularly active in interactions involving high-lactylation malignant cells (Figs. <ref type="figure" target="#fig_2">4H</ref>, <ref type="figure">J</ref>). EGFR was highly enriched in high-lactylation malignant cells (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_2">4I</ref>), positioning these cells as key mediators of MK signaling, with high expression of ITGA6 and ITGB1 (Fig. <ref type="figure" target="#fig_2">4K</ref>). Additionally, PTN-NCL signaling from high-and low-lactylation malignant cells toward immune cells, including T cells, macrophages, and monocytes (Figs. <ref type="figure" target="#fig_2">4L</ref>, <ref type="figure">M</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Spatial transcriptomics analysis of GBM subpopulations</head><p>To elucidate the spatial localization of high-lactylation and low-lactylation GBM subpopulations, spatial transcriptomics analysis was conducted. Dimensionality reduction and clustering of spatial transcriptomic data revealed distinct spatial patterns across GBM tissue sections, identifying 10 clusters (Fig. <ref type="figure">5A</ref>). To objectively define the tumor core, we first calculated a hypoxia score for each spatial spot based on the hallmark hypoxia gene signature. Regions with the highest quartile of hypoxia scores were designated as the 'hypoxic core' (Supplementary Fig. <ref type="figure">2</ref>). Our analysis revealed that spatial spots with high lactylation signature scores-as determined by ssG-SEA-were significantly enriched in and predominantly co-localized with this data-driven hypoxic core (Figs. <ref type="figure">5B</ref>, <ref type="figure">D</ref>, <ref type="figure">E</ref>, <ref type="figure">F</ref>). In contrast, oligodendrocytes were enriched in the low-lactylation malignant regions. Metabolic pathway activity among these cell subpopulations was also analyzed (Fig. <ref type="figure">5C</ref>). High-lactylation malignant cells (mainly clusters 1, 2, 3, and 8) and low-lactylation malignant cells (primarily clusters 0 and 9) displayed elevated glycolysis, lipid metabolism, and nucleotide biosynthesis compared to other cell types. Key ligand-receptor pairs such as PTN-PTPRZ1, EGF-EGFR, and MDK-ITGA4/ ITGB1 were identified (Figs. <ref type="figure">5G-I</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Clustering and functional analysis of high-lactylation GBM cells</head><p>Dimensionality reduction and clustering of high-lactylation malignant cells revealed eight distinct subpopulations (GBM_0 to GBM_7), each characterized by unique transcriptional profiles (Fig. <ref type="figure">6A</ref>).</p><p>ese clusters capture the inherent heterogeneity within GBM samples (Fig. <ref type="figure">6B</ref>), suggesting that each high-lactylation cluster plays a distinct role in GBM progression, potentially contributing differently to tumor aggressiveness and resistance to treatment. Pathway enrichment analysis based on cluster-specific marker genes further elucidated the biological functions of these subpopulations.</p><p>e top three marker genes of each high-lactylation subcluster were identified, with GO and KEGG enrichment analyses indicating significant functional diversity among the clusters (FDR &lt; 0.05; Fig. <ref type="figure">6C</ref>). HALLMARK enrichment analysis showed that GBM_0, GBM_5, and GBM_6 were notably enriched in pathways linked to glycolysis, hypoxia response, metabolic regulation, and cell cycle activities (FDR &lt; 0.05; Fig. <ref type="figure">6D</ref>).</p><p>To uncover the regulatory mechanisms driving the distinct behaviors of high-lactylation clusters, TF analysis was performed (Fig. <ref type="figure">6E</ref>). e top five TFs for each cluster were identified (Fig. <ref type="figure">6F</ref>), with t-SNE plots illustrating the relative expression levels of key TFs (Fig. <ref type="figure">6G</ref>). In Cluster 7, TFs such as SOX10, SP1, and NR2F1 were identified as primary regulators, correlating with enhanced proliferation and glycolytic activity. In contrast, Cluster 5 showed enrichment of TFs involved in differentiation, including ZNF25 and FOXG1, highlighting divergent regulatory programs within the high-lactylation population. Metabolic pathway analysis revealed substantial variation in metabolic activity across the clusters, with significant pathways determined by FDR &lt; 0.05 (Fig. <ref type="figure">6H</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pseudotime analysis of high-lactylation GBM clusters</head><p>CytoTRACE inferred that clusters GBM_1 and GBM_7 were positioned at the early stages of the developmental (See figure on previous page.) Fig. <ref type="figure">3</ref> Functional and metabolic analysis of GBM malignant cell subpopulations. A Clustering of high-and low-lactylation malignant cells based on lactylation scores. B Bar plot illustrating the proportions of various cell types across GBM samples. C Metabolic pathway heterogeneity observed between high-lactylation malignant cells and other cell populations. D Analysis of metabolite levels in high-lactylation malignant cells. E Comparison of overall metabolic pathway activity scores between high-and low-lactylation malignant cells. F Enrichment of inflammatory response and immune modulation pathways in high-lactylation malignant cells. G Volcano plot displaying DEGs between high-and low-lactylation malignant cells. (H, I Enrichment analysis comparing biological pathways between high-and low-lactylation malignant cells. J, K GSEA results comparing functional pathways in high-and lowlactylation malignant cells timeline (Fig. <ref type="figure">7A</ref>, <ref type="figure">B</ref>). Pseudotime trajectory analysis from Monocle indicated that these clusters represent cells in the initial stages of tumor progression (Fig. <ref type="figure">7C</ref>). UMAP plots showed the starting point and developmental direction of GBM subclusters (FDR &lt; 0.05; Fig. <ref type="figure">7D</ref>). Clusters GBM_0 and GBM_7 likely consist of progenitorlike or less differentiated tumor cells, which may play a critical role in initiating tumor growth and establishing the tumor microenvironment.</p><p>e pseudotime trajectory further outlined the progression of high-lactylation malignant cells from early progenitor-like states (GBM_0 and GBM_7) to more differentiated stages (Fig. <ref type="figure">7E-G</ref>).</p><p>To elucidate these functional shifts, key gene expression patterns across the developmental timeline were examined (Fig. <ref type="figure">7H</ref>, <ref type="figure">I</ref>). GFAP and EEF1A1 were upregulated in later pseudotime states, highlighting their roles in promoting tumor cell differentiation and maintaining cellular functions. In contrast, early states displayed upregulation of metabolic genes such as ACAT2 and CALD1, suggesting that metabolic reprogramming supports early tumor cell survival. Pathway enrichment analysis along the pseudotime trajectory revealed significant shifts in key biological pathways (all FDR &lt; 0.05; Fig. <ref type="figure">7J</ref>, <ref type="figure">K</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prognostic significance, spatial characteristics, and cell-cell communication of high-lactylation GBM subclusters</head><p>Patients with higher scores for S100A6-high-lactylation and S100A11-high-lactylation GBM clusters exhibited significantly worse overall survival compared to those with lower scores (Fig. <ref type="figure">8A</ref>), with clear statistical significance in survival outcomes (Fig. <ref type="figure">8B</ref>). To investigate the spatial distribution of these prognostic GBM cells within the TME, gene expression profiles of the clusters were deconvoluted onto spatial transcriptomic data (Fig. <ref type="figure">8C</ref>). e spatial analysis showed that both S100A6and S100A11-high-lactylation cells were predominantly located in densely cellular tumor regions, with S100A6high-lactylation cells exhibiting a more widespread distribution. Cell-cell communication analysis revealed significant ligand-receptor pairs mediating these interactions (Fig. <ref type="figure">8D</ref>), particularly those involving MK, PTN, and EGF signaling pathways (Figs. <ref type="figure">8E-G</ref>). e interaction networks illustrated that S100A6-high-lactylation and S100A11-high-lactylation GBM cells actively engaged with macrophages, endothelial cells, and T cells, thereby fostering an immunosuppressive environment and promoting angiogenesis (Figs. <ref type="figure">8H-J</ref>). Further examination identified specific ligand-receptor pairs, such as SPP1-CD44, PTN-NCL, and MDK-ITGA4/ITGB1, as critical modulators of the TME (Figs. <ref type="figure">8K</ref>, <ref type="figure">L</ref>). Notably, PTN-NCL signaling exhibited robust interaction strength with other cell types, with PTN ligand-receptor pairs being significantly enriched (Fig. <ref type="figure">8N</ref>). Additionally, S100A6-highlactylation GBM cells demonstrated the highest levels of both incoming and outgoing interaction strengths (all FDR &lt; 0.05; Fig. <ref type="figure">8M</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ScPagwas analysis and characterization of S100A6-highlactylation GBM cells</head><p>To further investigate the link between high-lactylation subpopulations and GBM traits, scPagwas analysis was conducted, revealing that S100A6-high-lactylation GBM cells exhibited the strongest correlation with GBMrelated characteristics (Fig. <ref type="figure" target="#fig_4">9A</ref>). S100A6-high-lactylation GBM cells possess significantly lower immune and stromal estimate scores than the low-expression group (Fig. <ref type="figure" target="#fig_4">9B</ref>), indicative of reduced immune cell infiltration. Moreover, downregulation of several TNF-related cytokines and receptors was observed in the high-lactylation group (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_4">9C</ref>, <ref type="figure">D</ref>), along with diminished NK cell cytotoxicity gene expression (Fig. <ref type="figure" target="#fig_4">9E</ref>), further reinforcing the notion of an impaired immune response. Immune therapy response analysis revealed that the low S100A6-high-lactylation group exhibited higher TIDE and dysfunction scores, as well as elevated CAF, CTL, CD274, and IFNG treatment scores. In contrast, the high S100A6-high-lactylation group demonstrated increased MDSC and TAM M2 treatment scores (Fig. <ref type="figure" target="#fig_4">9F</ref>). Beyond immune differences, drug sensitivity assessments based on IC50 values for various chemotherapeutic agents (all FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_4">9J</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prognostic model based on S100A6-high-lactylation GBM cells</head><p>To further examine the prognostic relevance of S100A6high-lactylation GBM cells, a prognostic model was constructed using characteristic genes identified through LASSO-Cox regression analysis (Fig. <ref type="figure" target="#fig_0">10A</ref>, <ref type="figure">B</ref>). is analysis yielded nine risk-associated DEGs (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">10C</ref>, Supplementary Table <ref type="table">3</ref>), which were employed to calculate a risk score for each GBM sample, facilitating stratification into high-and low-risk groups (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">10D</ref>). Kaplan-Meier survival analysis revealed significantly worse overall survival in the high-risk group compared to the low-risk group (p &lt; 0.001, Fig. <ref type="figure" target="#fig_0">10E</ref>). Moreover, time-dependent ROC curves demonstrated the model's strong predictive performance, with AUC values of 0.77, 0.87, and 0.87 at 1, 2, and 3 years, respectively (Fig. <ref type="figure" target="#fig_0">10F</ref>), indicating the risk score model's robustness in predicting GBM outcomes with high precision. Hallmark enrichment analysis was performed (FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">10G</ref>). External validation analyse was perform through CGGA cohort (Supplementary Fig. <ref type="figure" target="#fig_0">1</ref>).</p><p>e high-risk group showed significant enrichment in pathways linked to hypoxia, glycolysis, and immune evasion, including p53, KRAS, and TNF-α signaling via NF-κB, all of which are known to drive tumor aggressiveness. Conversely, the low-risk group exhibited enrichment in pathways related to cell cycle regulation and oxidative phosphorylation, suggesting a less aggressive tumor phenotype (Fig. <ref type="figure" target="#fig_0">10H</ref>). KEGG pathway analysis revealed notable correlations between the risk score and pathways involved in cell cycle control, hypoxia response, metabolic reprogramming (all FDR &lt; 0.05; Fig.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Characterization of high-risk and low-risk GBM groups</head><p>To further delineate the characteristics of the high-risk and low-risk GBM groups identified by the prognostic model, a comprehensive analysis of their associated pathways, immune landscapes, and immunotherapy responses was conducted. Enrichment analysis identified distinct pathways linked to the nine key risk genes (Fig. <ref type="figure" target="#fig_0">11A</ref>, <ref type="figure">B</ref>). Immune profiling comparisons revealed notable differences in immune cell infiltration between the groups (Fig. <ref type="figure" target="#fig_0">11C</ref>), with the high-risk group showing increased infiltration of activated CD8 T cells, regulatory T cells, and NK cells. Correlation analysis pinpointed specific relationships between risk genes and immune cell populations (Fig. <ref type="figure" target="#fig_0">11D</ref>). ESTIMATE analysis provided additional insight, indicating that LRRTM3, VGF, ZNF22, and ZNF627 were negatively correlated with the ESTIMATE score, while MXRA8 showed a positive correlation (Fig. <ref type="figure" target="#fig_0">11E</ref>), suggesting these genes may influence tumor microenvironment dynamics and contribute to immune evasion in high-risk GBM. Survival analyses based on surrogate ICI response datasets suggested that the low-risk group may experience improved outcomes under immunotherapy(HR = 0.52, 95% CI: 0.34-0.80, p = Fig. <ref type="figure" target="#fig_0">11G</ref>). Furthermore, Patients with lower risk scores were more likely, according to these surrogate predictors, to be classified as potential responders (CR/PR) compared to non-responders (SD/PD)(p &lt; 0.01; Fig. <ref type="figure" target="#fig_0">11H</ref>), underscoring that the low-risk group exhibited higher responsiveness suggesting that the low-risk group may have greater likelihood of immunotherapy benefit. A greater proportion of low-risk patients were predicted to fall into CR/PR categories in surrogate datasets, as illustrated by the bar plot (all FDR &lt; 0.05; Fig. <ref type="figure" target="#fig_0">11I</ref>).  Fig. 11 Characterization of high-risk and low-risk GBM groups. A, B Enrichment analysis of pathways related to risk genes. C Immune cell infiltration comparison. D Correlation between risk genes and immune cell types. E ESTIMATE analysis of tumor microenvironment differences. G-I Comparison of immunotherapy outcomes in risk groups</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Single-cell and spatial transcriptomics analysis of risk score in GBM</head><p>To elucidate the distribution and impact of the risk score within GBM, single-cell and spatial transcriptomic analyses were performed. Mapping the expression of risk genes identified in the prognostic model across singlecell data revealed their specific localization within distinct cell populations (Fig. <ref type="figure" target="#fig_0">12A</ref>). e heatmap illustrates the expression of the top risk genes across various cell types (Fig. <ref type="figure" target="#fig_0">12B</ref>), with BEX5, CNPY4, LRRTM3, SCG5, TIMP4, VGF, ZNF22, and ZNF627 notably enriched in malignant cells. e t-SNE plot visualizes the distribution of high-and low-risk malignant cells within the singlecell dataset (Fig. <ref type="figure" target="#fig_0">12C</ref>). Spatial transcriptomic analysis further highlighted the localization of these cells in GBM tissues, with high-risk malignant cells predominantly occupying the tumor core, suggesting an association with hypoxic and proliferative regions, while low-risk cells were more evenly dispersed, primarily located in tumoradjacent areas (Fig. <ref type="figure" target="#fig_0">12D</ref>). To investigate the interactions between high-and low-risk cells and the TME, ligandreceptor analysis was conducted, focusing on specific Fig. 13 (See legend on next page.)</p><p>signaling pathways such as PTN and MDK (FDR &lt; 0.05; Figs. <ref type="figure" target="#fig_0">12E</ref>, <ref type="figure">F</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental validation of lactylation and S100A6 expression in GBM</head><p>Western blotting analysis was employed to assess lactylation modifications in normal human astrocytes (NHA) and GBM cell lines (U87, U251, LN229), revealing significantly elevated lactylation levels in the GBM cells compared to NHA (p &lt; 0.01; Fig. <ref type="figure" target="#fig_0">13A</ref>), indicating lactylation upregulation in GBM. IHC further evaluated S100A6 expression in GBM tumor tissue and adjacent normal tissue, showing a substantial increase in S100A6 levels within GBM tissue (Fig. <ref type="figure" target="#fig_0">13B</ref>), suggesting its involvement in tumor progression. is was corroborated by Western blotting analysis, which confirmed notably higher S100A6 expression in U87, U251, and LN229 cells relative to NHA (p &lt; 0.01; Fig. <ref type="figure" target="#fig_0">13C</ref>, <ref type="figure">D</ref>). Tissue microarray analysis demonstrated a positive correlation between S100A6 expression and advancing WHO GBM grades (FDR &lt; 0.05;Figure <ref type="figure" target="#fig_0">13E</ref>, <ref type="figure">F</ref>). High-grade gliomas (HGG) exhibited a significantly larger proportion of cells with elevated S100A6 compared to low-grade gliomas (LGG) (p &lt; 0.001;; Fig. <ref type="figure" target="#fig_0">13G</ref>). Survival analysis further indicated that patients with elevated S100A6 levels had significantly worse overall survival (HR = 1.78, 95% CI: 1.22-2.59, p = 0.003; Fig. <ref type="figure" target="#fig_0">13H</ref>) and disease-free survival (HR = 1.65, 95% CI: 1.14-2.41, p = 0.008; Fig. <ref type="figure" target="#fig_0">13I</ref>).</p><p>To further investigate S100A6's functional role, lentiviral-mediated knockdown of S100A6 in U87 cells was performed. Western blotting analysis confirmed efficient knockdown using sh-S100A6-2 and sh-S100A6-3, resulting in markedly reduced S100A6 expression (Fig. <ref type="figure" target="#fig_0">13J</ref>, <ref type="figure">K</ref>). Additionally, the EDU assay revealed a significant reduction in cell proliferation following S100A6 knockdown (p &lt; 0.01; Fig. <ref type="figure" target="#fig_0">13N</ref>), and the wound healing assay demonstrated diminished cell migration in the knockdown group compared to the negative control (NC) group (Fig. <ref type="figure" target="#fig_0">13O</ref>). To investigate the effect of S100A6 on GBM cell migration and invasion, Transwell assays were performed (p &lt; 0.01; Fig. <ref type="figure" target="#fig_0">13P</ref>, <ref type="figure">Q</ref>). In the migration assay, U87 cells in the sh-S100A6 group showed significantly reduced migration compared to the NC group (fold change = 0.45, p &lt; 0.001).</p><p>e quantification of the migrated cells indicated a relative fold change of 0.45 in the sh-S100A6 group, suggesting that S100A6 downregulation impairs cell migration ability. In the invasion assay, cells from the sh-S100A6 group demonstrated a marked reduction in invasiveness compared to the NC group. e relative fold change in cell invasion was 0.35, p &lt; 0.001, further supporting the role of S100A6 in promoting GBM cell invasion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>is study employed an integrated approach combining bulk RNA sequencing, scRNA-seq, and spatial transcriptomics to comprehensively characterize the role of lactylation in GBM. Our findings provide detailed insights into how lactylation contributes to tumor aggressiveness, immune evasion, and poor prognosis in GBM. e elevated lactylation observed in GBM cells suggests that this modification promotes an aggressive tumor phenotype by facilitating metabolic adaptation and immune evasion.</p><p>rough the identification of lactylation-enriched subpopulations, this study uncovered key mechanisms driving GBM progression and heterogeneity, highlighting promising therapeutic targets.</p><p>Our results indicate that high-lactylation GBM cells are predominantly localized in the tumor core, where they undergo significant metabolic reprogramming, including upregulation of glycolysis, lipid metabolism, and amino acid biosynthesis.</p><p>ese metabolic shifts enable highlactylation cells to survive and proliferate under harsh microenvironmental conditions, thus promoting tumor growth and resistance to therapy <ref type="bibr" target="#b27">[28]</ref>. In line with previous studies, hypoxia-driven metabolic reprogramming appears crucial for GBM cell survival <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b30">30]</ref>, and lactate accumulation under such conditions enhances lactylation, further driving tumor progression and metabolic plasticity.</p><p>Our analysis showed reduced immune cell infiltration, decreased TNF signaling, and impaired NK cell cytotoxicity in regions with high lactylation, underscoring the role of these cells in immune evasion. e study also sheds light on the intricate cell-cell communication network within the GBM microenvironment. High-lactylation cells engage in extensive cross-talk with immune, stromal, and other tumor cells via ligand-receptor interactions, particularly involving MK, PTN, and EGF signaling pathways. Notably, ligand-receptor pairs such as PTN-PTPRZ1 and MDK-ITGA4/ITGB1 were more prevalent in high-lactylation cells, suggesting their involvement in promoting immune evasion and angiogenesis <ref type="bibr" target="#b32">[31,</ref><ref type="bibr" target="#b33">32]</ref>. ese observations align with previous reports (See figure on previous page.) Fig. <ref type="bibr" target="#b12">13</ref> Experimental validation of lactylation and S100A6 expression in GBM. A Western blot analysis showing elevated lactylation levels in GBM cell lines compared to NHA. B IHC analysis demonstrating higher S100A6 expression in GBM tissues compared to adjacent normal tissues. C, D Western blot validation showing higher S100A6 levels in GBM cell lines compared to NHA. E-G Tissue microarray and survival analysis showing increased S100A6 expression in high-grade glioma, and poorer survival outcomes. J, K Lentiviral-mediated knockdown of S100A6 in U87 cells validated by western blot. L, M EDU assay showing decreased proliferation ability after S100A6 knockdown U87 cells. N, O Wound healing assay demonstrated downregulation of migration ability in S100A6 knockdown U87 cells. P, Q The Transwell migration and invasion assay on lactylation's role in modulating immune cell behavior and contributing to immune suppression within the TME <ref type="bibr" target="#b34">[33,</ref><ref type="bibr" target="#b35">34]</ref>. Targeting these pathways could disrupt malignant cell communication with the TME, potentially mitigating tumor aggressiveness and improving therapeutic outcomes.</p><p>SCENIC analysis identified distinct regulatory networks governed by key TFs in GBM subpopulations. High-lactylation malignant cells exhibited increased activity of TFs linked to tumor progression, metabolic adaptation, and immune evasion. TFs such as POU3F2, ILF2, and RFX4, which may drive the gene expression programs of high-lactylation GBM cells, were highlighted.</p><p>ese transcription factors are known to play critical roles in tumor progression, metabolic shifts, and immune modulation <ref type="bibr" target="#b36">[35]</ref><ref type="bibr" target="#b37">[36]</ref><ref type="bibr" target="#b38">[37]</ref>, underscoring the intricate regulatory networks underlying lactylation-mediated tumorigenesis.</p><p>Spatial transcriptomics analysis further clarified the localization of high-lactylation GBM cells, predominantly situated in hypoxic tumor core regions. is spatial distribution aligns with lactylation's role in facilitating tumor cell survival and adaptation in low-oxygen environments. High-lactylation GBM cells exhibited metabolic reprogramming, characterized by increased glycolysis and lipid metabolism, which likely meets the elevated biosynthetic and energy demands essential for tumor growth <ref type="bibr" target="#b39">[38,</ref><ref type="bibr">39]</ref>. ese findings emphasize the critical role of lactylation in the spatial and functional heterogeneity of GBM, suggesting that targeting lactylation could disrupt the metabolic adaptations of tumor cells within hypoxic niches.</p><p>Our study highlights the significance of S100A6 not only as a marker but also as a functional contributor to the aggressive, high-lactylation phenotype in GBM. Elevated S100A6 expression has been previously associated with tumor aggressiveness, particularly concerning cancer cell survival, invasion, and immune evasion mechanisms <ref type="bibr" target="#b42">[40]</ref><ref type="bibr" target="#b43">[41]</ref><ref type="bibr" target="#b44">[42]</ref>. Consistent with our results, patients with high S100A6-lactylation GBM cells exhibited worse survival outcomes. Crucially, our work provides a functional connection between S100A6, cellular behavior, and metabolic reprogramming <ref type="bibr" target="#b45">[43]</ref>. Our experimental validation confirms that S100A6 knockdown in GBM cells leads to reduced proliferation, migration, and invasion, cementing its role in driving the malignant phenotype. Furthermore, our single-cell analysis directly links the S100A6-high phenotype to a reprogrammed metabolic state characterized by enhanced glycolysis and lipid metabolism <ref type="bibr" target="#b46">[44]</ref>.</p><p>is suggests that S100A6 is integral to the metabolic adaptations that allow tumor cells to thrive, especially within the hypoxic tumor core where we spatially located these cells. While our study establishes this strong correlation, the precise molecular mechanism by which S100A6 directly regulates histone lactylation or orchestrates this broad metabolic shift requires further experimental investigation. Importantly, while our analyses revealed strong correlations between lactylation scores, immune infiltration, and S100A6 expression, these findings do not establish direct causality. e phenotypic effects observed following S100A6 knockdown may arise from a combination of lactylation-related mechanisms and other established functions of S100A6. Previous studies have shown that histone lactylation directly regulates transcriptional programs linked to immune suppression and tumor progression <ref type="bibr" target="#b45">[43,</ref><ref type="bibr" target="#b46">44]</ref>, Suggesting that lactylation may contribute to the aggressive phenotype we observed. However, S100A6 is also known to function independently of histone modifications, particularly through roles in cytoskeletal dynamics, integrin signaling, and calcium-dependent regulation of migration and invasion <ref type="bibr" target="#b47">[45]</ref><ref type="bibr" target="#b48">[46]</ref><ref type="bibr" target="#b49">[47]</ref>. us, the phenotypic changes in proliferation, migration, and invasion upon S100A6 knockdown may reflect both lactylation-dependent mechanisms and broader S100A6-mediated pathways. Future mechanistic experiments that selectively manipulate histone lactylation, in parallel with S100A6 perturbation, will be required to disentangle these overlapping contributions. By acknowledging these limitations, our study provides a foundation for future work while underscoring the potential of lactylation and S100A6 as therapeutic targets in GBM. Nevertheless, by positioning S100A6 as a key player in the lactylation-associated aggressive state, our findings underscore its potential as a valuable therapeutic target. S100A6 is known to regulate several cancerrelated processes, including cell proliferation, migration, and resistance to apoptosis, often through interactions with integrins and p53 <ref type="bibr" target="#b49">[47,</ref><ref type="bibr" target="#b50">48]</ref>. Its involvement in cancer stem cells <ref type="bibr" target="#b42">[40]</ref>, especially in invasive and resistant GBM subtypes, suggests a role in enhancing the migratory and invasive properties of tumor cells, which are essential for the rapid progression and treatment resistance characteristic of GBM. Furthermore, S100A6 has been implicated in promoting angiogenesis <ref type="bibr" target="#b50">[48,</ref><ref type="bibr" target="#b51">49]</ref>, likely aiding GBM adaptation within the hypoxic regions of the TME, consistent with our spatial transcriptomics findings, which showed S100A6-high cells clustering in core tumor areas. Notably, the dual role of S100A6 in both angiogenesis and immune evasion positions it as a promising therapeutic target. erefore, targeting S100A6 in GBM may represent a powerful strategy to disrupt not only cell proliferation and invasion but also the critical tumor-supportive metabolic adaptations within the TME, potentially inhibiting overall tumor growth and progression.</p><p>To evaluate the clinical significance of lactylation in GBM, a prognostic model was constructed based on the characteristic genes of S100A6-high-lactylation GBM cells. is model effectively stratified patients into high-risk and low-risk groups, with the high-risk cohort exhibiting significantly poorer overall survival. e identification of specific signaling pathways enriched in the high-risk group-such as hypoxia response, glycolysis, and immune evasion-offers potential therapeutic targets for enhancing GBM treatment outcomes.</p><p>We focused on TCGA-GBM for its uniformly processed transcriptomic and survival data, which ensured methodological consistency across our multi-omics analyses. Future studies will incorporate independent cohorts to strengthen the model's generalizability.</p><p>Experimental validation revealed significantly increased lactylation and S100A6 expression in GBM cell lines and patient tissues. S100A6 knockdown in GBM cells led to reduced proliferation and migration, highlighting its crucial role in tumor growth and invasiveness.</p><p>ese findings suggest that S100A6 could be a valuable therapeutic target for GBM. Future research should focus on developing inhibitors targeting lactylation or S100A6 and evaluating their efficacy in preclinical GBM models. Given the spatial heterogeneity of lactylation-associated features GBM, it is crucial to explore how different tumor regions respond to treatment and whether targeting specific subpopulations can improve patient outcomes. Another limitation is the absence of in vivo validation (e.g., orthotopic xenograft or spheroid models), as only in vitro assays were feasible with our resources. Future work should incorporate in vivo approaches to confirm the therapeutic potential of S100A6 and lactylation targeting. We also acknowledge the lack of site-specific biochemical assays (e.g., LC-MS/ MS or ChIP-qPCR); such methods will be essential to directly anchor the transcript-derived lactylation score to biochemical measurements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>Our findings highlight lactylation's crucial role in shaping the metabolic and proliferative landscape of GBM, driving its aggressiveness and therapy resistance. Targeting lactylation and its pathways may offer novel therapeutic strategies to improve GBM treatment outcomes.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 Lactylation-related features identified through multi-omics analyses. A Heatmap of differentially expressed lactylation-related genes between GBM and normal brain tissues. Right panel shows lactylation activity evaluated by ssGSEA. B GSEA plots showing the enrichment of lactylation-related scores in tumor vs. normal controls. C Lactylation scores comparison between GBM and normal brain tissues in TCGA-GBM dataset. D Mantel test reveals correlation of lactylation scores with immune cell infiltration. E-G UMAP visualization indicating the spatial distribution of lactylation scores in different GBM regions, highlighting enrichment in the tumor core</figDesc><graphic coords="6,59.50,84.00,476.28,343.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 Fig. 3 (</head><label>23</label><figDesc>Fig. 2 Single-cell characterization of GBM heterogeneity. A Unsupervised clustering of scRNA-seq data from GSE135045, showing major cell subpopulations. B, C t-SNE visualization of 21 cell clusters annotated as 9 distinct cell types. D inferCNV analysis revealing chromosomal alterations in malignant clusters. E t-SNE plot of GBM malignant cells. F Functional enrichment analysis showing significant pathways</figDesc><graphic coords="7,59.50,84.00,476.28,450.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Regulatory networks and cell-cell communication in GBM. A SCENIC analysis identifying key transcription factors (TFs) in GBM subpopulations. B Top five TFs enriched in each GBM cell cluster. C t-SNE plots of TFs in high-lactylation malignant cells. D CellChat analysis showing extensive communication between malignant and immune cells. E Signaling interaction network highlighting communication pathways in GBM microenvironment. F-K Incoming signaling and key ligands of cell interaction. L, M Specific signaling pathways of cell interaction</figDesc><graphic coords="10,59.50,84.00,476.28,601.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 Fig. 6 Fig. 7 Fig. 8</head><label>5678</label><figDesc>Fig. 5 Spatial transcriptomics analysis of GBM subpopulations. A Spatial clustering analysis revealing 10 distinct GBM clusters. B Spatial localization of cell types. C Metabolism pathways of high-lactylation malignant subclusters. D-F Spatial localization of high-and low-lactylation malignant cells. G-I Spatial ligand-receptor analysis</figDesc><graphic coords="11,59.50,84.00,476.28,350.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 9</head><label>9</label><figDesc>Fig. 9 scPagwas analysis and characterization of S100A6-high-lactylation GBM cells. A scPagwas analysis identifying the association between cell clusters and GBM traits. B Comparison of immune and stromal scores between high-and low-S100A6 GBM cell groups. C-E TNF-related cytokines, receptors, and decreased NK cell cytotoxicity showing in high-and low-S100A6 GBM cell groups. F Immune therapy response differences between high-and low-S100A6 GBM cell groups. J Chemotherapeutic sensitivity analysis comparing IC50 values in different groups</figDesc><graphic coords="16,110.02,84.00,375.24,609.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 10 Fig. 11</head><label>1011</label><figDesc>Fig. 10 Prognostic model based on S100A6-high-lactylation GBM cells. A scPagwas analysis identifying the association between cell clusters and GBM traits. B Comparison of immune and stromal scores between high-and low-S100A6 GBM cell groups. C-E TNF-related cytokines, receptors, and decreased NK cell cytotoxicity showing in high-and low-S100A6 GBM cell groups. F Immune therapy response differences between high-and low-S100A6 GBM cell groups. J Chemotherapeutic sensitivity analysis comparing IC50 values in different groups</figDesc><graphic coords="17,59.50,84.00,476.28,546.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 12 Fig. 13 (</head><label>1213</label><figDesc>Fig. 12 Single-cell and spatial transcriptomics analysis of risk score in GBM. A t-SNE plots of risk genes in scRNA-seq. B Heatmap of risk genes mapped across cell populations. C t-SNE plot showing distribution of high-and low-risk malignant cells. D Spatial distribution of high-and low-risk malignant cells within GBM tissues. E, F Ligand-receptor analysis highlighting distinct interactions of PTN and MDK signaling between high-risk and low-risk cells</figDesc><graphic coords="19,59.50,226.38,476.28,469.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Characteristics of datasets included in this study.</figDesc><table><row><cell cols="6">Summary of bulk RNA-seq, single-cell RNA-seq, and Spatial</cell></row><row><cell cols="6">transcriptomics datasets analyzed. Patient/sample numbers,</cell></row><row><cell cols="5">platforms, follow-up times, and survival events are listed</cell><cell></cell></row><row><cell cols="6">where available. Survival information was available only for the</cell></row><row><cell cols="6">TCGA-GBM cohort. GEO datasets were used for tumor-normal</cell></row><row><cell cols="6">comparison (GSE16561), single-cell profiling (GSE135046), and</cell></row><row><cell cols="5">Spatial transcriptomics integration (GSE162631)</cell><cell></cell></row><row><cell>Dataset</cell><cell>Platform</cell><cell>Sample</cell><cell>Pa-</cell><cell>Median</cell><cell>Sur-</cell></row><row><cell></cell><cell></cell><cell>type</cell><cell>tients/</cell><cell>follow-up</cell><cell>vival</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Sam-</cell><cell>(months)</cell><cell>events</cell></row><row><cell></cell><cell></cell><cell></cell><cell>ples (n)</cell><cell></cell><cell>(n)</cell></row><row><cell cols="2">TCGA-GBM RNA-seq</cell><cell>Primary</cell><cell>~152</cell><cell>~14.4</cell><cell>~127</cell></row><row><cell></cell><cell>(Illumina</cell><cell>GBM tu-</cell><cell></cell><cell>months</cell><cell></cell></row><row><cell></cell><cell>HiSeq)</cell><cell>mors (with</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>clinical</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>survival</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>data)</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">GSE16561 Microarray</cell><cell>Normal</cell><cell>46</cell><cell>-</cell><cell>-</cell></row><row><cell></cell><cell>(Affymetrix</cell><cell>brain</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Human Ge-</cell><cell>(n=24) vs.</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>nome U133</cell><cell>GBM tumor</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Plus 2.0)</cell><cell>(n=22)</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">GSE135046 scRNA-</cell><cell>Primary</cell><cell>~71,000</cell><cell>-</cell><cell>-</cell></row><row><cell></cell><cell>seq (10x</cell><cell>GBM cells</cell><cell>single</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Genomics</cell><cell>across 10</cell><cell>cells (10</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Chromium)</cell><cell>patients</cell><cell>tumors)</cell><cell></cell><cell></cell></row><row><cell cols="2">GSE162631 Spatial tran-</cell><cell>GBM tumor</cell><cell>~55,000</cell><cell>-</cell><cell>-</cell></row><row><cell></cell><cell>scriptomics</cell><cell>tissue</cell><cell>spatial</cell><cell></cell><cell></cell></row><row><cell></cell><cell>(10x Visium)</cell><cell>sections</cell><cell>spots</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(patients</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>n=13)</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><head>Funding statement</head><p>This study was supported by <rs type="funder">Jilin Jilin Province Science and Technology Development Plan</rs> (<rs type="grantNumber">20200801022GH</rs>, <rs type="grantNumber">20210204159YY</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_YhZJura">
+					<idno type="grant-number">20200801022GH</idno>
+				</org>
+				<org type="funding" xml:id="_2sgtYmY">
+					<idno type="grant-number">20210204159YY</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The datasets generated and/or analyzed during the current study are available in publicly accessible repositories. Single-cell and spatial transcriptomic data were obtained from the Gene Expression Omnibus (GEO) under accession numbers GSE16561, GSE135046, and GSE162631. Bulk RNA-seq data from glioblastoma samples were retrieved from The Cancer Genome Atlas (TCGA-GBM) project. All scripts and processed data used for analysis and figure generation are available from the corresponding authors upon reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information</head><p>The online version contains supplementary material available at h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 2 8 8 5 -0 2 5 -1 5 2 9 1 -6. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Ethics approval and consent to participate Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consent for publication</head><p>Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Glioblastoma: pathology, molecular mechanisms and markers</title>
+		<author>
+			<persName><forename type="first">Kenneth</forename><surname>Aldape</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gelareh</forename><surname>Zadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheila</forename><surname>Mansouri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Reifenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00401-015-1432-1</idno>
+		<ptr target="//doi.org/10" />
+	</analytic>
+	<monogr>
+		<title level="j">Acta Neuropathologica</title>
+		<title level="j" type="abbrev">Acta Neuropathol</title>
+		<idno type="ISSN">0001-6322</idno>
+		<idno type="ISSNe">1432-0533</idno>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="829" to="848" />
+			<date type="published" when="1932">2015. 3 2 -1</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aldape K, Zadeh G, Mansouri S, Reifenberger G, von Deimling A. Glioblas- toma: pathology, molecular mechanisms and markers. Acta Neuropathol. 2015;129:829-48. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 0 0 4 0 1 -0 1 5 -1 4 3 2 -1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Treatment of Glioblastoma (GBM) with the Addition of Tumor-Treating Fields (TTF): A Review</title>
+		<author>
+			<persName><forename type="first">Denise</forename><surname>Fabian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Del Pilar</forename><surname>Guillermo Prieto Eibl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iyad</forename><surname>Alnahhas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikhil</forename><surname>Sebastian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Giglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinay</forename><surname>Puduvalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">D</forename><surname>Palmer</surname></persName>
+			<idno type="ORCID">0000-0003-3311-0129</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers11020174</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">174</biblScope>
+			<date type="published" when="2019-02-02">2019</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / c a n c e r s 1 1 0 2 0 1 7 4.</note>
+	<note type="raw_reference">Fabian D, Guillermo Prieto Eibl MDP, Alnahhas I, Sebastian N, Giglio P, Pudu- valli V, et al. Treatment of glioblastoma (GBM) with the addition of Tumor- Treating fields (TTF): A review. Cancers (Basel). 2019;11:174. h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / c a n c e r s 1 1 0 2 0 1 7 4.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">_Unravelling glioblastoma heterogeneity by means of single-cell RNA sequencing</title>
+		<author>
+			<persName><surname>Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Martínez</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">_2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hernández. Martínez _2022_Unravelling glioblastoma heterogeneity by means of single-cell RNA sequencing.pdf.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Identification of the novel prognostic biomarker, MLLT11, reveals its relationship with immune checkpoint markers in glioma</title>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zujian</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyu</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chubei</forename><surname>Teng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siyi</forename><surname>Wanggou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejun</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2022.889351</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">889351</biblScope>
+			<date type="published" when="2022-08-12">2022. 8 8 9 3 5 1.</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 8 9 / f o n c . 2 0 2 2 .</note>
+	<note type="raw_reference">Chen L, Xiong Z, Zhao H, Teng C, Liu H, Huang Q, et al. Identification of the novel prognostic biomarker, MLLT11, reveals its relationship with immune checkpoint markers in glioma. Front Oncol. 2022;12:889351. h t t p s : / / d o i . o r g / 1 0 . 3 3 8 9 / f o n c . 2 0 2 2 . 8 8 9 3 5 1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Lactate attenuates astrocytic inflammation by inhibiting ubiquitination and degradation of NDRG2 under oxygen–glucose deprivation conditions</title>
+		<author>
+			<persName><forename type="first">Jinying</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guichen</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haiying</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangyang</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meiying</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yulin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangfan</forename><surname>Chi</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12974-022-02678-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroinflammation</title>
+		<title level="j" type="abbrev">J Neuroinflammation</title>
+		<idno type="ISSNe">1742-2094</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">314</biblScope>
+			<date type="published" when="1978-06">2022. 7 8 -6</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i</note>
+	<note type="raw_reference">Xu J, Ji T, Li G, Zhang H, Zheng Y, Li M, et al. Lactate attenuates astrocytic inflammation by inhibiting ubiquitination and degradation of NDRG2 under oxygen-glucose deprivation conditions. J Neuroinflammation. 2022;19:314. h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 2 9 7 4 -0 2 2 -0 2 6 7 8 -6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Lactylation-related gene signature for prognostic prediction and immune infiltration analysis in breast cancer</title>
+		<author>
+			<persName><forename type="first">Yangchi</forename><surname>Jiao</surname></persName>
+			<idno type="ORCID">0009-0002-5769-7673</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fuqing</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lan</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yonggang</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juliang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.heliyon.2024.e24777</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Heliyon</title>
+		<title level="j" type="abbrev">Heliyon</title>
+		<idno type="ISSN">2405-8440</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">e24777</biblScope>
+			<date type="published" when="2024-02">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s 6 / j . h e l i y o n . 2 0 2 4 . e 2 4 7 7 7</note>
+	<note type="raw_reference">Jiao Y. Lactylation-related gene signature for prognostic prediction and immune infiltration analysis in breast cancer. Heliyon. 2024. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . h e l i y o n . 2 0 2 4 . e 2 4 7 7 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Metabolic regulatory crosstalk between tumor microenvironment and tumor-associated macrophages</title>
+		<author>
+			<persName><forename type="first">Degao</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongjun</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.7150/thno.51777</idno>
+		<idno>doi: 10/gqxjtg</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Theranostics</title>
+		<title level="j" type="abbrev">Theranostics</title>
+		<idno type="ISSN">1838-7640</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1016" to="1030" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Ivyspring International Publisher</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen D, Zhang X, Li Z, Zhu B. Metabolic regulatory crosstalk between tumor microenvironment and tumor-associated macrophages. Theranostics. 2021;11:1016-1030. doi: 10/gqxjtg.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Targeting nucleotide metabolic pathways in colorectal cancer by integrating scRNA-seq, spatial transcriptome, and bulk RNA-seq data</title>
+		<author>
+			<persName><forename type="first">Songyun</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengpeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sen</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaheng</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ning</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peihua</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10142-024-01356-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Functional &amp; Integrative Genomics</title>
+		<title level="j" type="abbrev">Funct Integr Genomics</title>
+		<idno type="ISSN">1438-793X</idno>
+		<idno type="ISSNe">1438-7948</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">72</biblScope>
+			<date type="published" when="1956-05">2024. 5 6 -5</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s</note>
+	<note type="raw_reference">Zhao S, Zhang P, Niu S, Xie J, Liu Y, Liu Y, et al. Targeting nucleotide metabolic pathways in colorectal cancer by integrating scRNA-seq, spatial transcriptome, and bulk RNA-seq data. Funct Integr Genomics. 2024;24:72. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 1 0 1 4 2 -0 2 4 -0 1 3 5 6 -5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Histone H3K9 Lactylation Confers Temozolomide Resistance in Glioblastoma via LUC7L2‐Mediated MLH1 Intron Retention</title>
+		<author>
+			<persName><forename type="first">Qu</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixiong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yufei</forename><surname>Lan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyang</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manqing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boming</forename><surname>Zuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianci</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiankun</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boyang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongbo</forename><surname>Guo</surname></persName>
+			<idno type="ORCID">0000-0003-3671-0445</idno>
+		</author>
+		<idno type="DOI">10.1002/advs.202309290</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Science</title>
+		<title level="j" type="abbrev">Advanced Science</title>
+		<idno type="ISSN">2198-3844</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">2309290</biblScope>
+			<date type="published" when="2024-03-13">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / a d v s . 2 0 2 3 0 9 2 9 0</note>
+	<note type="raw_reference">Yue Q, Wang Z, Shen Y, Lan Y, Zhong X, Luo X, et al. Histone H3K9 lactylation confers Temozolomide resistance in glioblastoma via LUC7L2-mediated MLH1 intron retention. Adv Sci. 2024;11:e2309290. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / a d v s . 2 0 2 3 0 9 2 9 0.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Glucosedriven histone lactylation promotes the immunosuppressive activity of monocyte-derived macrophages in glioblastoma</title>
+		<author>
+			<persName><forename type="first">De</forename><surname>Leo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ugolini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Scirocchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Scocozza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Peixoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/j.immuni.2024.04.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="1105" to="e11238" />
+			<date type="published" when="2004">2024. j . i m m u n i . 2 0 2 4 . 0 4 . 0 0 6.</date>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i</note>
+	<note type="raw_reference">De Leo A, Ugolini A, Yu X, Scirocchi F, Scocozza D, Peixoto B, et al. Glucose- driven histone lactylation promotes the immunosuppressive activity of monocyte-derived macrophages in glioblastoma. Immunity. 2024;57:1105- e11238. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . i m m u n i . 2 0 2 4 . 0 4 . 0 0 6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Histone lactylation-derived LINC01127 promotes the self-renewal of glioblastoma stem cells via the cis-regulating the MAP4K4 to activate JNK pathway</title>
+		<author>
+			<persName><forename type="first">Lulu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziwei</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangqi</forename><surname>Meng</surname></persName>
+			<idno type="ORCID">0000-0001-9550-6087</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxiang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianye</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaifu</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junzhe</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daohan</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianlang</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuanlu</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinquan</forename><surname>Cai</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.canlet.2023.216467</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Letters</title>
+		<title level="j" type="abbrev">Cancer Letters</title>
+		<idno type="ISSN">0304-3835</idno>
+		<imprint>
+			<biblScope unit="volume">579</biblScope>
+			<biblScope unit="issue">1 0</biblScope>
+			<biblScope unit="page">216467</biblScope>
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>1 6 / j . c a n l e t . 2 0 2 3 . 2 1 6 4 6 7</note>
+	<note type="raw_reference">Li L, Li Z, Meng X, Wang X, Song D, Liu Y, et al. Histone lactylation-derived LINC01127 promotes the self-renewal of glioblastoma stem cells via the cis- regulating the MAP4K4 to activate JNK pathway. Cancer Lett. 2023;579. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c a n l e t . 2 0 2 3 . 2 1 6 4 6 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Hypoxia induces mitochondrial protein lactylation to limit oxidative phosphorylation</title>
+		<author>
+			<persName><forename type="first">Yunzi</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaojiao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiadi</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhifang</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaiqiang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haowen</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haihui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yineng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengcheng</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baixing</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0003-2502-9785</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yiyuan</forename><surname>Yuan</surname></persName>
+			<idno type="ORCID">0000-0003-0829-3824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianyuan</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0001-9861-0330</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shimin</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0002-3674-9107</idno>
+		</author>
+		<idno type="DOI">10.1038/s41422-023-00864-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Research</title>
+		<title level="j" type="abbrev">Cell Res</title>
+		<idno type="ISSNe">1748-7838</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="13" to="30" />
+			<date type="published" when="0864-06">2024. 8 6 4 -6</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mao Y, Zhang J, Zhou Q, He X, Zheng Z, Wei Y, et al. Hypoxia induces mito- chondrial protein lactylation to limit oxidative phosphorylation. Cell Res. 2024;34:13-30. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 4 2 2 -0 2 3 -0 0 8 6 4 -6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Metabolic regulation of gene expression by histone lactylation</title>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanyun</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guolin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yejing</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenchao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunjoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangkyu</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathew</forename><surname>Perez-Neut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Czyz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maomao</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">George</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><forename type="middle">A</forename><surname>Shuman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lunzhi</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">G</forename><surname>Roeder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lev</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingming</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-019-1678-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">574</biblScope>
+			<biblScope unit="issue">7779</biblScope>
+			<biblScope unit="page" from="575" to="580" />
+			<date type="published" when="1978">2019. 7 8 -1</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang D, Tang Z, Huang H, Zhou G, Cui C, Weng Y, et al. Metabolic regulation of gene expression by histone lactylation. Nature. 2019;574:575-80. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 8 6 -0 1 9 -1 6 7 8 -1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Microenvironmental regulation of tumor progression and metastasis</title>
+		<author>
+			<persName><forename type="first">Daniela</forename><forename type="middle">F</forename><surname>Quail</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><forename type="middle">A</forename><surname>Joyce</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nm.3394</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1423" to="1437" />
+			<date type="published" when="1938">2013. 0 3 8 / n m . 3 3 9 4</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Quail DF, Joyce JA. Microenvironmental regulation of tumor progression and metastasis. Nat Med. 2013;19:1423-37. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n m . 3 3 9 4.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">limma powers differential expression analyses for RNA-sequencing and microarray studies</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">E</forename><surname>Ritchie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Belinda</forename><surname>Phipson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charity</forename><forename type="middle">W</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><forename type="middle">K</forename><surname>Smyth</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/nar/gkv007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Research</title>
+		<idno type="ISSN">0305-1048</idno>
+		<idno type="ISSNe">1362-4962</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="e47" to="e47" />
+			<date type="published" when="2015-01-20">2015</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note>1 0 9 3 / n a r / g k v 0 0 7</note>
+	<note type="raw_reference">Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. Limma powers dif- ferential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res. 2015;43:e47. h t t p s : / / d o i . o r g / 1 0 . 1 0 9 3 / n a r / g k v 0 0 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Identification of lactylation related model to predict prognostic, tumor infiltrating immunocytes and response of immunotherapy in gastric cancer</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoming</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shifeng</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ange</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nana</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fimmu.2023.1149989</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Immunology</title>
+		<title level="j" type="abbrev">Front. Immunol.</title>
+		<idno type="ISSNe">1664-3224</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">1149989</biblScope>
+			<date type="published" when="1923">2023. 0 2 3 . 1 1 4 9 9 8 9</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 8 9 / fi m m u . 2</note>
+	<note type="raw_reference">Yang H, Zou X, Yang S, Zhang A, Li N, Ma Z. Identification of lactylation related model to predict prognostic, tumor infiltrating immunocytes and response of immunotherapy in gastric cancer. Front Immunol. 2023;14:1149989. h t t p s : / / d o i . o r g / 1 0 . 3 3 8 9 / fi m m u . 2 0 2 3 . 1 1 4 9 9 8 9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Using clusterProfiler to characterize multiomics data</title>
+		<author>
+			<persName><forename type="first">Shuangbin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erqiang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yantong</forename><surname>Cai</surname></persName>
+			<idno type="ORCID">0000-0003-2137-4979</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zijing</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Zhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenli</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianwen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingdong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenqin</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianzhi</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liwei</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangchuang</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0002-6485-8781</idno>
+		</author>
+		<idno type="DOI">10.1038/s41596-024-01020-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Protocols</title>
+		<title level="j" type="abbrev">Nat Protoc</title>
+		<idno type="ISSN">1754-2189</idno>
+		<idno type="ISSNe">1750-2799</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3292" to="3320" />
+			<date type="published" when="1920">2024. 2 0 -z</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu S, Hu E, Cai Y, Xie Z, Luo X, Zhan L, et al. Using clusterprofiler to character- ize multiomics data. Nat Protoc. 2024. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 6 -0 2 4 -0 1 0 2 0 -z.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage</title>
+		<author>
+			<persName><forename type="first">Dvir</forename><surname>Aran</surname></persName>
+			<idno type="ORCID">0000-0001-6334-5039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Agnieszka</forename><forename type="middle">P</forename><surname>Looney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leqian</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valerie</forename><surname>Fong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Austin</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suzanna</forename><surname>Chak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ram</forename><forename type="middle">P</forename><surname>Naikawadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">J</forename><surname>Wolters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">R</forename><surname>Abate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atul</forename><forename type="middle">J</forename><surname>Butte</surname></persName>
+			<idno type="ORCID">0000-0002-7433-2740</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mallar</forename><surname>Bhattacharya</surname></persName>
+			<idno type="ORCID">0000-0002-5439-547X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41590-018-0276-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Immunology</title>
+		<title level="j" type="abbrev">Nat Immunol</title>
+		<idno type="ISSN">1529-2908</idno>
+		<idno type="ISSNe">1529-2916</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="163" to="172" />
+			<date type="published" when="0276">2019. 9 0 -0 1 8 -0 2 7 6 -y.</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aran D, Looney AP, Liu L, Wu E, Fong V, Hsu A, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage. Nat Immunol. 2019;20:163-72. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 0 -0 1 8 -0 2 7 6 -y.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Unravelling glioblastoma heterogeneity by means of single-cell RNA sequencing</title>
+		<author>
+			<persName><forename type="first">Hernández</forename><surname>Martínez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Madurga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>García-Romero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ayuso-Sacido</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Á</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/j.canlet.2021.12.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Lett</title>
+		<imprint>
+			<biblScope unit="volume">527</biblScope>
+			<biblScope unit="page" from="66" to="79" />
+			<date type="published" when="1921">2022. 2 1 . 1 2 . 0 0 8</date>
+		</imprint>
+	</monogr>
+	<note>c a n l e t . 2 0</note>
+	<note type="raw_reference">Hernández Martínez A, Madurga R, García-Romero N, Ayuso-Sacido Á. Unrav- elling glioblastoma heterogeneity by means of single-cell RNA sequencing. Cancer Lett. 2022;527:66-79. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c a n l e t . 2 0 2 1 . 1 2 . 0 0 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage</title>
+		<author>
+			<persName><forename type="first">Dvir</forename><surname>Aran</surname></persName>
+			<idno type="ORCID">0000-0001-6334-5039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Agnieszka</forename><forename type="middle">P</forename><surname>Looney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leqian</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valerie</forename><surname>Fong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Austin</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suzanna</forename><surname>Chak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ram</forename><forename type="middle">P</forename><surname>Naikawadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">J</forename><surname>Wolters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">R</forename><surname>Abate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atul</forename><forename type="middle">J</forename><surname>Butte</surname></persName>
+			<idno type="ORCID">0000-0002-7433-2740</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mallar</forename><surname>Bhattacharya</surname></persName>
+			<idno type="ORCID">0000-0002-5439-547X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41590-018-0276-y</idno>
+		<idno>9 0 -0 1 8 -0 2 7 6 -y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Immunology</title>
+		<title level="j" type="abbrev">Nat Immunol</title>
+		<idno type="ISSN">1529-2908</idno>
+		<idno type="ISSNe">1529-2916</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="163" to="172" />
+			<date type="published" when="2019-01-14">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aran D, Looney AP, Liu L, Wu E, Fong V, Hsu A, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage. Nat Immunol. 2019;20. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 0 -0 1 8 -0 2 7 6 -y.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">SCENIC: single-cell regulatory network inference and clustering</title>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Aibar</surname></persName>
+			<idno type="ORCID">0000-0001-6104-7134</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carmen</forename><forename type="middle">Bravo</forename><surname>González-Blas</surname></persName>
+			<idno type="ORCID">0000-0003-0973-9410</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Moerman</surname></persName>
+			<idno type="ORCID">0000-0003-2445-1001</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vân</forename><forename type="middle">Anh</forename><surname>Huynh-Thu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hana</forename><surname>Imrichova</surname></persName>
+			<idno type="ORCID">0000-0003-0385-1823</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gert</forename><surname>Hulselmans</surname></persName>
+			<idno type="ORCID">0000-0003-2205-1899</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Rambow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Christophe</forename><surname>Marine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Geurts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Aerts</surname></persName>
+			<idno type="ORCID">0000-0002-6416-2717</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joost</forename><surname>Van Den Oord</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeynep</forename><forename type="middle">Kalender</forename><surname>Atak</surname></persName>
+			<idno type="ORCID">0000-0003-4761-8169</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jasper</forename><surname>Wouters</surname></persName>
+			<idno type="ORCID">0000-0002-7129-2990</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stein</forename><surname>Aerts</surname></persName>
+			<idno type="ORCID">0000-0002-8006-0315</idno>
+		</author>
+		<idno type="DOI">10.1038/nmeth.4463</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1083" to="1086" />
+			<date type="published" when="2017-10-09">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n m e t h . 4 4 6 3.</note>
+	<note type="raw_reference">Aibar S, González-Blas CB, Moerman T, Huynh-Thu VA, Imrichova H, Hulsel- mans G, et al. SCENIC: single-cell regulatory network inference and clustering. Nat Methods. 2017;14:1083-6. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n m e t h . 4 4 6 3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Inference and analysis of cell-cell communication using CellChat</title>
+		<author>
+			<persName><forename type="first">Suoqin</forename><surname>Jin</surname></persName>
+			<idno type="ORCID">0000-0002-5131-0215</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">F</forename><surname>Guerrero-Juarez</surname></persName>
+			<idno type="ORCID">0000-0002-6245-6412</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lihua</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raul</forename><surname>Ramos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen-Hsiang</forename><surname>Kuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peggy</forename><surname>Myung</surname></persName>
+			<idno type="ORCID">0000-0002-2970-4170</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maksim</forename><forename type="middle">V</forename><surname>Plikus</surname></persName>
+			<idno type="ORCID">0000-0002-8845-2559</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Nie</surname></persName>
+			<idno type="ORCID">0000-0002-8804-3368</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-021-21246-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1088</biblScope>
+			<date type="published" when="0246">2021. 2 4 6 -9</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s</note>
+	<note type="raw_reference">Jin S, Guerrero-Juarez CF, Zhang L, Chang I, Ramos R, Kuan C-H, et al. Infer- ence and analysis of cell-cell communication using cellchat. Nat Commun. 2021;12:1088. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 4 6 7 -0 2 1 -2 1 2 4 6 -9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Integrated analysis of multimodal single-cell data</title>
+		<author>
+			<persName><forename type="first">Yuhan</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>Hao</surname></persName>
+			<idno type="ORCID">0000-0002-1700-9699</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erica</forename><surname>Andersen-Nissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">M</forename><surname>Mauck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiwei</forename><surname>Zheng</surname></persName>
+			<idno type="ORCID">0000-0001-6682-6743</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Butler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maddie</forename><forename type="middle">J</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0001-5039-6806</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">J</forename><surname>Wilk</surname></persName>
+			<idno type="ORCID">0000-0003-1430-5852</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Charlotte</forename><surname>Darby</surname></persName>
+			<idno type="ORCID">0000-0003-2195-5300</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Zager</surname></persName>
+			<idno type="ORCID">0000-0002-9416-8685</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Hoffman</surname></persName>
+			<idno type="ORCID">0000-0002-7693-8957</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marlon</forename><surname>Stoeckius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Efthymia</forename><surname>Papalexi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eleni</forename><forename type="middle">P</forename><surname>Mimitou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaison</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avi</forename><surname>Srivastava</surname></persName>
+			<idno type="ORCID">0000-0001-9798-2079</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Stuart</surname></persName>
+			<idno type="ORCID">0000-0002-3044-0897</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lamar</forename><forename type="middle">M</forename><surname>Fleming</surname></persName>
+			<idno type="ORCID">0000-0002-6180-5545</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bertrand</forename><surname>Yeung</surname></persName>
+			<idno type="ORCID">0000-0003-3908-1162</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Angela</forename><forename type="middle">J</forename><surname>Rogers</surname></persName>
+			<idno type="ORCID">0000-0001-6969-6200</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juliana</forename><forename type="middle">M</forename><surname>Mcelrath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">A</forename><surname>Blish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Gottardo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Smibert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Satija</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2021.04.048</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">184</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="3573" to="3587.e29" />
+			<date type="published" when="2021-06">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c e l l . 2 0 2 1 . 0 4 . 0 4 8.</note>
+	<note type="raw_reference">Hao Y, Hao S, Andersen-Nissen E, et al. Integrated analysis of multimodal single-cell data. Cell. 2021;184(13):3573-e358729. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c e l l . 2 0 2 1 . 0 4 . 0 4 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells</title>
+		<author>
+			<persName><forename type="first">Cole</forename><surname>Trapnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Cacchiarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonna</forename><surname>Grimsby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prapti</forename><surname>Pokharel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Morse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niall</forename><forename type="middle">J</forename><surname>Lennon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">J</forename><surname>Livak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarjei</forename><forename type="middle">S</forename><surname>Mikkelsen</surname></persName>
+			<idno type="ORCID">0000-0002-8133-3135</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">L</forename><surname>Rinn</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nbt.2859</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biotechnology</title>
+		<title level="j" type="abbrev">Nat Biotechnol</title>
+		<idno type="ISSN">1087-0156</idno>
+		<idno type="ISSNe">1546-1696</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="381" to="386" />
+			<date type="published" when="2014-03-23">2014. n b t . 2 8 5 9</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Trapnell C, Cacchiarelli D, Grimsby J, Pokharel P, Li S, Morse M, et al. The dynamics and regulators of cell fate decisions are revealed by pseudotempo- ral ordering of single cells. Nat Biotechnol. 2014;32:381-6. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n b t . 2 8 5 9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Mapping single-cell developmental potential in health and disease with interpretable deep learning</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Jja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grgsa</forename><surname>El</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A U</forename><surname>Bwz</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2024.03.19.585637</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BioRxiv: Preprint Serv Biology</title>
+		<imprint>
+			<biblScope unit="issue">1 1 0 1 / 2 0 2</biblScope>
+			<date type="published" when="2003">2024. 4 . 0 3 . 1 9 . 5 8 5 6 3 7.</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jja MK, Gs A, El GRGSA, A U BWZ. Mapping single-cell developmental poten- tial in health and disease with interpretable deep learning. BioRxiv: Preprint Serv Biology. 2024. h t t p s : / / d o i . o r g / 1 0 . 1 1 0 1 / 2 0 2 4 . 0 3 . 1 9 . 5 8 5 6 3 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">pRRophetic: an R package for prediction of clinical chemotherapeutic response from tumor gene expression levels</title>
+		<author>
+			<persName><forename type="first">Pgnc</forename><surname>Rs</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0107468</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2014">2014. 0 7 4 6 8.</date>
+		</imprint>
+	</monogr>
+	<note>1 3 7 1 / j o u r n a l . p o n e . 0 1</note>
+	<note type="raw_reference">Rs PGNC. pRRophetic: an R package for prediction of clinical chemothera- peutic response from tumor gene expression levels. PLoS ONE. 2014;9. h t t p s : / / d o i . o r g / 1 0 . 1 3 7 1 / j o u r n a l . p o n e . 0 1 0 7 4 6 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Polygenic regression uncovers trait-relevant cellular contexts through pathway activation transformation of single-cell RNA sequencing data</title>
+		<author>
+			<persName><forename type="first">Yunlong</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunyu</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yijun</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaru</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dingping</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gongwei</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingjing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianwei</forename><surname>Shuai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianzhong</forename><surname>Su</surname></persName>
+			<idno type="ORCID">0000-0003-1054-6042</idno>
+		</author>
+		<idno type="DOI">10.1016/j.xgen.2023.100383</idno>
+		<idno>/ 1 0 . 1 0 1 6 /</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Genomics</title>
+		<title level="j" type="abbrev">Cell Genomics</title>
+		<idno type="ISSN">2666-979X</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">100383</biblScope>
+			<date type="published" when="2023-03">2023. 3 . 1 0 0 3 8 3.</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g j . x g e n . 2 0 2</note>
+	<note type="raw_reference">Ma Y, Deng C, Zhou Y, Zhang Y, Qiu F, Jiang D, et al. Polygenic regression uncovers trait-relevant cellular contexts through pathway activation transfor- mation of single-cell RNA sequencing data. Cell Genom. 2023;3:100383. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . x g e n . 2 0 2 3 . 1 0 0 3 8 3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Lactate-Lactylation Hands between Metabolic Reprogramming and Immunosuppression</title>
+		<author>
+			<persName><forename type="first">Lihua</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-7149-6056</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lixiang</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Cang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengming</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0002-5072-6091</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Xiang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijms231911943</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Molecular Sciences</title>
+		<title level="j" type="abbrev">IJMS</title>
+		<idno type="ISSNe">1422-0067</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">11943</biblScope>
+			<date type="published" when="2022-10-08">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 3 1 9 1 1 9 4 3.</note>
+	<note type="raw_reference">Chen L, Huang L, Gu Y, Cang W, Sun P, Xiang Y. Lactate-lactylation hands between metabolic reprogramming and immunosuppression. Int J Mol Sci. 2022;23:11943. h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 3 1 9 1 1 9 4 3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">ALKBH5 Facilitates Hypoxia-Induced Paraspeckle Assembly and IL8 Secretion to Generate an Immunosuppressive Tumor Microenvironment</title>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyang</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baofeng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuan</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongsheng</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fangling</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuan</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanli</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">You</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingying</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunsheng</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xudong</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0001-9594-479X</idno>
+		</author>
+		<idno type="DOI">10.1158/0008-5472.can-21-1456</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Research</title>
+		<idno type="ISSN">0008-5472</idno>
+		<idno type="ISSNe">1538-7445</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="5876" to="5888" />
+			<date type="published" when="2008">2021. 8 / 0 0 0 8 -5 4 7 2</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i</note>
+	<note type="raw_reference">Dong F, Qin X, Wang B, Li Q, Hu J, Cheng X, et al. ALKBH5 facilitates hypoxia-induced paraspeckle assembly and IL8 secretion to generate an immunosuppressive tumor microenvironment. Cancer Res. 2021;81:5876-88. h t t p s : / / d o i . o r g / 1 0 . 1 1 5 8 / 0 0 0 8 -5 4 7 2</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">ALKBH5 Facilitates Hypoxia-Induced Paraspeckle Assembly and IL8 Secretion to Generate an Immunosuppressive Tumor Microenvironment</title>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyang</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baofeng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuan</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongsheng</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fangling</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuan</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanli</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">You</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingying</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunsheng</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xudong</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0001-9594-479X</idno>
+		</author>
+		<idno type="DOI">10.1158/0008-5472.can-21-1456</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Research</title>
+		<idno type="ISSN">0008-5472</idno>
+		<idno type="ISSNe">1538-7445</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="5876" to="5888" />
+			<date type="published" when="2021-12-01" />
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">C A N -2 1 -1 4 5 6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Hypoxia-induced acetylation of PAK1 enhances autophagy and promotes brain tumorigenesis via phosphorylating ATG5</title>
+		<author>
+			<persName><forename type="first">Xing</forename><surname>Feng</surname></persName>
+			<idno type="ORCID">0000-0001-8226-3389</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Heng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingbing</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiwen</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingxin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghua</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-8576-1607</idno>
+		</author>
+		<idno type="DOI">10.1080/15548627.2020.1731266</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Autophagy</title>
+		<title level="j" type="abbrev">Autophagy</title>
+		<idno type="ISSN">1554-8627</idno>
+		<idno type="ISSNe">1554-8635</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="723" to="742" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 8 0 / 1 5 5 4 8 6 2 7 . 2</note>
+	<note type="raw_reference">Feng X, Zhang H, Meng L, Song H, Zhou Q, Qu C, et al. Hypoxia-induced acetylation of PAK1 enhances autophagy and promotes brain tumorigenesis via phosphorylating ATG5. Autophagy. 2021;17(3):723-42. h t t p s : / / d o i . o r g / 1 0 . 1 0 8 0 / 1 5 5 4 8 6 2 7 . 2</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Hypoxia-induced acetylation of PAK1 enhances autophagy and promotes brain tumorigenesis via phosphorylating ATG5</title>
+		<author>
+			<persName><forename type="first">Xing</forename><surname>Feng</surname></persName>
+			<idno type="ORCID">0000-0001-8226-3389</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Heng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingbing</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiwen</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingxin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghua</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xing</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-8576-1607</idno>
+		</author>
+		<idno type="DOI">10.1080/15548627.2020.1731266</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Autophagy</title>
+		<title level="j" type="abbrev">Autophagy</title>
+		<idno type="ISSN">1554-8627</idno>
+		<idno type="ISSNe">1554-8635</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="723" to="742" />
+			<date type="published" when="2020-03-18" />
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">0 2 0 . 1 7 3 1 2 6 6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Integrated bulk and single-cell RNA sequencing identifies an aneuploidy-based gene signature to predict sensitivity of lung adenocarcinoma to traditional chemotherapy drugs and patients&apos; prognosis</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">W</forename></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj.17545</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PeerJ</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7 7</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>1 7 / p e e r j . 1 7 5 4 5</note>
+	<note type="raw_reference">X W. Integrated bulk and single-cell RNA sequencing identifies an aneu- ploidy-based gene signature to predict sensitivity of lung adenocarcinoma to traditional chemotherapy drugs and patients&apos; prognosis. PeerJ. 2024;12. h t t p s : / / d o i . o r g / 1 0 . 7 7 1 7 / p e e r j . 1 7 5 4 5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">PTN-PTPRZ1 signaling axis blocking mediates tumor microenvironment remodeling for enhanced glioblastoma treatment</title>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingyi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyue</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qin</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tieying</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yazhou</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jconrel.2022.11.025</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Controlled Release</title>
+		<title level="j" type="abbrev">Journal of Controlled Release</title>
+		<idno type="ISSN">0168-3659</idno>
+		<imprint>
+			<biblScope unit="volume">353</biblScope>
+			<biblScope unit="page" from="63" to="76" />
+			<date type="published" when="1925">2023. 2 0 2 2 . 1 1 . 0 2 5</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang M, Wang B, Yin Y, Ma X, Tang L, Zhang Y, et al. PTN-PTPRZ1 signaling axis blocking mediates tumor microenvironment remodeling for enhanced glioblastoma treatment. J Control Release. 2023;353:63-76. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . j c o n r e l . 2 0 2 2 . 1 1 . 0 2 5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The Role of Pyruvate Kinase M2 Posttranslational Modification in the Occurrence and Development of Hepatocellular Carcinoma</title>
+		<author>
+			<persName><forename type="first">Zhao</forename><surname>Chunlian</surname></persName>
+			<idno type="ORCID">0009-0004-8603-3598</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wan</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhao</forename><surname>Rui</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cbf.4125</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Biochemistry and Function</title>
+		<title level="j" type="abbrev">Cell Biochemistry &amp;amp; Function</title>
+		<idno type="ISSN">0263-6484</idno>
+		<idno type="ISSNe">1099-0844</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">4125</biblScope>
+			<date type="published" when="2024-09-26">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>1 0 0 2 / c b f . 4 1 2 5</note>
+	<note type="raw_reference">Chunlian Z, Qi W, Rui Z. The role of pyruvate kinase M2 posttranslational modification in the occurrence and development of hepatocellular carci- noma. Cell Biochem Funct. 2024;42:e4125. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / c b f . 4 1 2 5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Comprehensive review of histone lactylation: Structure, function, and therapeutic targets</title>
+		<author>
+			<persName><forename type="first">Kaiwen</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanshuang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Gu</surname></persName>
+			<idno type="ORCID">0000-0002-3852-9319</idno>
+		</author>
+		<idno type="DOI">10.1016/j.bcp.2024.116331</idno>
+		<idno>/ 1 0 . 1 0 1 6 /</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biochemical Pharmacology</title>
+		<title level="j" type="abbrev">Biochemical Pharmacology</title>
+		<idno type="ISSN">0006-2952</idno>
+		<imprint>
+			<biblScope unit="volume">225</biblScope>
+			<biblScope unit="page">116331</biblScope>
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g j . b c p . 2 0 2 4 . 1 1 6 3 3 1.</note>
+	<note type="raw_reference">Xu K, Zhang K, Wang Y, Gu Y. Comprehensive review of histone lacty- lation: structure, function, and therapeutic targets. Biochem Pharmacol. 2024;225:116331. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . b c p . 2 0 2 4 . 1 1 6 3 3 1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Overexpression of POU3F2 promotes radioresistance in triple-negative breast cancer via Akt pathway activation</title>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jieling</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Ling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zishen</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tingting</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaoze</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guozhu</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0002-3377-3099</idno>
+		</author>
+		<idno type="DOI">10.1007/s10549-023-06876-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Breast Cancer Research and Treatment</title>
+		<title level="j" type="abbrev">Breast Cancer Res Treat</title>
+		<idno type="ISSN">0167-6806</idno>
+		<idno type="ISSNe">1573-7217</idno>
+		<imprint>
+			<biblScope unit="volume">198</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="437" to="446" />
+			<date type="published" when="0876-05">2023. 8 7 6 -5</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang H, Zheng J, Fu Y, Ling J, Liu Z, Lin X, et al. Overexpression of POU3F2 promotes radioresistance in triple-negative breast cancer via Akt pathway activation. Breast Cancer Res Treat. 2023;198:437-46. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 1 0 5 4 9 -0 2 3 -0 6 8 7 6 -5.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">NUSAP1 Binds ILF2 to Modulate R-Loop Accumulation and DNA Damage in Prostate Cancer</title>
+		<author>
+			<persName><forename type="first">Chun-Lung</forename><surname>Chiu</surname></persName>
+			<idno type="ORCID">0000-0001-7514-9676</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caiyun</forename><forename type="middle">G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Verschueren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ru</forename><forename type="middle">M</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dalin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">A</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongjuan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amato</forename><forename type="middle">J</forename><surname>Giaccia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">D</forename><surname>Brooks</surname></persName>
+			<idno type="ORCID">0000-0003-4521-7505</idno>
+		</author>
+		<idno type="DOI">10.3390/ijms24076258</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Molecular Sciences</title>
+		<title level="j" type="abbrev">IJMS</title>
+		<idno type="ISSNe">1422-0067</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">6258</biblScope>
+			<date type="published" when="2023-03-26">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 4 0 7 6 2 5 8.</note>
+	<note type="raw_reference">Chiu C-L, Li CG, Verschueren E, Wen RM, Zhang D, Gordon CA, et al. NUSAP1 binds ILF2 to modulate R-loop accumulation and DNA damage in prostate cancer. Int J Mol Sci. 2023;24:6258. h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 4 0 7 6 2 5 8.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">High expression of RFX4 is associated with tumor progression and poor prognosis in patients with glioblastoma</title>
+		<author>
+			<persName><forename type="first">Hang</forename><forename type="middle">Yeon</forename><surname>Jeong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyun-Jin</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheol-Eun</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seongsoo</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moon-Chang</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sung-Hak</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00207454.2020.1732969</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Neuroscience</title>
+		<title level="j" type="abbrev">International Journal of Neuroscience</title>
+		<idno type="ISSN">0020-7454</idno>
+		<idno type="ISSNe">1543-5245</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="14" />
+			<date type="published" when="2020-03-02">2021. 4 . 2 0 2 0 . 1 7 3 2 9 6 9</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jeong HY, Kim H-J, Kim C-E, Lee S, Choi M-C, Kim S-H. High expression of RFX4 is associated with tumor progression and poor prognosis in patients with glioblastoma. Int J Neurosci. 2021;131:7-14. h t t p s : / / d o i . o r g / 1 0 . 1 0 8 0 / 0 0 2 0 7 4 5 4 . 2 0 2 0 . 1 7 3 2 9 6 9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Effects of glucose metabolism, lipid metabolism, and glutamine metabolism on tumor microenvironment and clinical implications</title>
+		<author>
+			<persName><forename type="first">L Z</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Z</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">W</forename></persName>
+		</author>
+		<idno type="DOI">10.3390/biom12040580</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomolecules</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / b i o m 1 2 0 4 0 5 8</note>
+	<note type="raw_reference">L Z, X Z, Y W. Effects of glucose metabolism, lipid metabolism, and glutamine metabolism on tumor microenvironment and clinical implications. Biomol- ecules. 2022;12: h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / b i o m 1 2 0 4 0 5 8</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Enhanced Lipid Accumulation and Metabolism Are Required for the Differentiation and Activation of Tumor-Associated Macrophages</title>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enguang</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingzhe</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lintao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maojie</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianfei</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Yi</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/0008-5472.can-19-2994</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Research</title>
+		<idno type="ISSN">0008-5472</idno>
+		<idno type="ISSNe">1538-7445</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1438" to="1450" />
+			<date type="published" when="2008">2020. 8 / 0 0 0 8 -5 4 7 2</date>
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Su P, Wang Q, Bi E, Ma X, Liu L, Yang M, et al. Enhanced lipid accumulation and metabolism are required for the differentiation and activation of tumor- associated macrophages. Cancer Res. 2020;80:1438-50. h t t p s : / / d o i . o r g / 1 0 . 1 1 5 8 / 0 0 0 8 -5 4 7 2</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Enhanced Lipid Accumulation and Metabolism Are Required for the Differentiation and Activation of Tumor-Associated Macrophages</title>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enguang</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingzhe</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lintao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maojie</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianfei</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Yi</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/0008-5472.can-19-2994</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Research</title>
+		<idno type="ISSN">0008-5472</idno>
+		<idno type="ISSNe">1538-7445</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1438" to="1450" />
+			<date type="published" when="2020-04-02" />
+			<publisher>American Association for Cancer Research (AACR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">C A N -1 9 -2 9 9 4.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">S100A6 as a Constituent and Potential Marker of Adult and Cancer Stem Cells</title>
+		<author>
+			<persName><forename type="first">Wiesława</forename><surname>Leśniak</surname></persName>
+			<idno type="ORCID">0000-0001-8394-1751</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Filipek</surname></persName>
+			<idno type="ORCID">0000-0001-9484-9555</idno>
+		</author>
+		<idno type="DOI">10.1007/s12015-022-10403-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Stem Cell Reviews and Reports</title>
+		<title level="j" type="abbrev">Stem Cell Rev and Rep</title>
+		<idno type="ISSN">2629-3269</idno>
+		<idno type="ISSNe">2629-3277</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2699" to="2708" />
+			<date type="published" when="0403-02">2022. 4 0 3 -2</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s</note>
+	<note type="raw_reference">Leśniak W, Filipek A. S100A6 as a constituent and potential marker of adult and cancer stem cells. Stem Cell Rev Rep. 2022;18:2699-708. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 1 2 0 1 5 -0 2 2 -1 0 4 0 3 -2.</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">S100A6 drives lymphatic metastasis of liver cancer via activation of the RAGE/NF-kB/VEGF-D pathway</title>
+		<author>
+			<persName><forename type="first">Tianyi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yeling</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingwei</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangtao</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hu</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiujun</forename><surname>Cai</surname></persName>
+			<idno type="ORCID">0000-0002-6457-0577</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junjie</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.canlet.2024.216709</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Letters</title>
+		<title level="j" type="abbrev">Cancer Letters</title>
+		<idno type="ISSN">0304-3835</idno>
+		<imprint>
+			<biblScope unit="volume">587</biblScope>
+			<biblScope unit="page">216709</biblScope>
+			<date type="published" when="2024-04">2024. 4 . 2 1 6 7 0 9</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c a n l e t . 2 0 2</note>
+	<note type="raw_reference">Chen T, Ruan Y, Ji L, Cai J, Tong M, Xue Y, et al. S100A6 drives lymphatic metastasis of liver cancer via activation of the RAGE/NF-kB/VEGF-D pathway. Cancer Lett. 2024;587:216709. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . c a n l e t . 2 0 2 4 . 2 1 6 7 0 9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">S100A6 inhibits MDM2 to suppress breast cancer growth and enhance sensitivity to chemotherapy</title>
+		<author>
+			<persName><forename type="first">Mengxin</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xianglan</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baohui</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingxiang</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Xiong</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13058-023-01657-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Breast Cancer Research</title>
+		<title level="j" type="abbrev">Breast Cancer Res</title>
+		<idno type="ISSNe">1465-542X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">55</biblScope>
+			<date type="published" when="0657">2023. 6 5 7 -w</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s</note>
+	<note type="raw_reference">Qi M, Yi X, Yue B, Huang M, Zhou S, Xiong J. S100A6 inhibits MDM2 to sup- press breast cancer growth and enhance sensitivity to chemotherapy. Breast Cancer Res. 2023;25:55. h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 3 0 5 8 -0 2 3 -0 1 6 5 7 -w.</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Metabolic regulation of gene expression by histone lactylation</title>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanyun</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guolin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yejing</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenchao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunjoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangkyu</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathew</forename><surname>Perez-Neut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Czyz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maomao</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">George</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Howard</forename><forename type="middle">A</forename><surname>Shuman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lunzhi</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">G</forename><surname>Roeder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lev</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingming</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-019-1678-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">574</biblScope>
+			<biblScope unit="issue">7779</biblScope>
+			<biblScope unit="page" from="575" to="580" />
+			<date type="published" when="1678">2019. 9 -1 6 7 8 -1</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s</note>
+	<note type="raw_reference">Zhang D, Tang Z, Huang H, Zhou G, Cui C, Weng Y, et al. Metabolic regulation of gene expression by histone lactylation. Nature. 2019;574(7779):575-80. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 8 6 -0 1 9 -1 6 7 8 -1.</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Lactate-Lactylation Hands between Metabolic Reprogramming and Immunosuppression</title>
+		<author>
+			<persName><forename type="first">Lihua</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-7149-6056</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lixiang</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Cang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengming</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0002-5072-6091</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Xiang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijms231911943</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Molecular Sciences</title>
+		<title level="j" type="abbrev">IJMS</title>
+		<idno type="ISSNe">1422-0067</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">11943</biblScope>
+			<date type="published" when="2022-10-08">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note>t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 3 1 9 1 1 9 4 3.</note>
+	<note type="raw_reference">Chen L, Huang L, Gu Y, Cang W, Sun P. Lactate-lactylation hands between metabolic reprogramming and immunosuppression. Int J Mol Sci. 2022;23:11943. h t t p s : / / d o i . o r g / 1 0 . 3 3 9 0 / i j m s 2 3 1 9 1 1 9 4 3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Intracellular and extracellular roles of S100 proteins</title>
+		<author>
+			<persName><forename type="first">Rosario</forename><surname>Donato</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jemt.10296</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Microscopy Research and Technique</title>
+		<title level="j" type="abbrev">Microscopy Res &amp;amp; Technique</title>
+		<idno type="ISSN">1059-910X</idno>
+		<idno type="ISSNe">1097-0029</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="540" to="551" />
+			<date type="published" when="2003-03-12">2003</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / j e m t . 1 0 2 9 6</note>
+	<note type="raw_reference">Donato R. Intracellular and extracellular roles of S100 proteins. Microsc Res Tech. 2003;60(6):540-51. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 2 / j e m t . 1 0 2 9 6.</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">S100 proteins: structure, functions and pathology</title>
+		<author>
+			<persName><forename type="first">Claus,</forename><forename type="middle">W</forename><surname>Heizmann</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Günter</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>Schafer</surname></persName>
+		</author>
+		<idno type="DOI">10.2741/heizmann</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Bioscience</title>
+		<title level="j" type="abbrev">Front Biosci</title>
+		<idno type="ISSN">1093-9946</idno>
+		<idno type="ISSNe">1093-4715</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page">d1356</biblScope>
+			<date type="published" when="2002">2002</date>
+			<publisher>IMR Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Heizmann CW, Günter, Fritz, Schafer BW. S100 proteins: structure, functions and pathology. Front Biosci. 2002;7(1):1356-68.</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">S100 proteins in cancer</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Bresnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danna</forename><forename type="middle">B</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zimmer</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nrc38939</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Cancer</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="96" to="109" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n r c 3 8 9 3 9</note>
+	<note type="raw_reference">Bresnick AR, David J, Weber, Danna B, Zimmer. S100 proteins in cancer. Nat Rev Cancer. 2015;15(2):96-109. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n r c 3 8 9 3 9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">S100A6 binds p53 and affects its activity</title>
+		<author>
+			<persName><forename type="first">Łukasz</forename><forename type="middle">P</forename><surname>Słomnicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Nawrot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wiesława</forename><surname>Leśniak</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.biocel.2008.08.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The International Journal of Biochemistry &amp; Cell Biology</title>
+		<title level="j" type="abbrev">The International Journal of Biochemistry &amp; Cell Biology</title>
+		<idno type="ISSN">1357-2725</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="784" to="790" />
+			<date type="published" when="2009-04">2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>b i o c e l . 2 0 0 8 . 0 8 . 0 0 7</note>
+	<note type="raw_reference">Słomnicki ŁP, Nawrot B, Leśniak W. S100A6 binds p53 and affects its activity. Int J Biochem Cell Biol. 2009;41:784-90. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . b i o c e l . 2 0 0 8 . 0 8 . 0 0 7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">S100A6: molecular function and biomarker role</title>
+		<author>
+			<persName><forename type="first">Yidian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuewen</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fengguang</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40364-023-00515-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomarker Research</title>
+		<title level="j" type="abbrev">Biomark Res</title>
+		<idno type="ISSNe">2050-7771</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2015">2023. 1 5 -3</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang Y, Kang X, Kang X, Yang F. S100A6: molecular function and biomarker role. Biomark Res. 2023;11. h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 4 0 3 6 4 -0 2 3 -0 0 5 1 5 -3.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

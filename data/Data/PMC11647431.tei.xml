@@ -1,0 +1,2535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Proof of concept: Portable ultra‐low‐field magnetic resonance imaging for the diagnosis of epileptogenic brain pathologies</title>
+				<funder ref="#_m2g8Hz5">
+					<orgName type="full">Else Kröner-Fresenius Foundation</orgName>
+				</funder>
+				<funder ref="#_rMMQR8q">
+					<orgName type="full">Neuro-aCSis Bonn Neuroscience Clinician Scientist Program</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Wiley</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-10-29">2024-10-29</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Tobias</forename><surname>Bauer</surname></persName>
+							<idno type="ORCID">0000-0002-0555-6214</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuroradiology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neuroradiology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Epileptology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Epileptology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> German Center for Neurodegenerative Diseases (DZNE) , Bonn , Germany</note>
+								<orgName type="department">German Center for Neurodegenerative Diseases (DZNE)</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Simon</forename><surname>Olbrich</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuroradiology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neuroradiology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Epileptology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Epileptology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Anne</forename><surname>Groteklaes</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Neonatology and Pediatric Intensive Care , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neonatology and Pediatric Intensive Care</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nils</forename><forename type="middle">Christian</forename><surname>Lehnen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mousa</forename><surname>Zidan</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuroradiology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neuroradiology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Annalena</forename><surname>Lange</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Neuroradiology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neuroradiology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Epileptology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Epileptology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> Institute for Computer Science , University of Bonn , Bonn , Germany</note>
+								<orgName type="department">Institute for Computer Science</orgName>
+								<orgName type="institution">University of Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Section for Global Health , Institute for Hygiene and Public Health , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department" key="dep1">Section for Global Health</orgName>
+								<orgName type="department" key="dep2">Institute for Hygiene and Public Health</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Justus</forename><surname>Bisten</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Lennart</forename><surname>Walger</surname></persName>
+							<idno type="ORCID">0000-0002-3300-6877</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Jennifer</forename><surname>Faber</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> German Center for Neurodegenerative Diseases (DZNE) , Bonn , Germany</note>
+								<orgName type="department">German Center for Neurodegenerative Diseases (DZNE)</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> Department of Neurology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Neurology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Walter</forename><surname>Bruchhausen</surname></persName>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Section for Global Health , Institute for Hygiene and Public Health , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department" key="dep1">Section for Global Health</orgName>
+								<orgName type="department" key="dep2">Institute for Hygiene and Public Health</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Philipp</forename><surname>Vollmuth</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ulrich</forename><surname>Herrlinger</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Alexander</forename><surname>Radbruch</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Rainer</forename><surname>Surges</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Epileptology , University Hospital Bonn , Bonn , Germany</note>
+								<orgName type="department">Department of Epileptology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hemmen</forename><surname>Sabir</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Theodor</forename><surname>Rüber</surname></persName>
+							<email>theodor.rueber@ukbonn.de</email>
+							<idno type="ORCID">0000-0002-6180-7671</idno>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<note type="raw_affiliation">Department of Neuroradiology , Venusberg</note>
+								<orgName type="department">Department of Neuroradiology</orgName>
+								<address>
+									<addrLine>Venusberg</addrLine>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff9">
+								<note type="raw_affiliation">-Campus 1 , University Hospital Bonn , Bonn 53127 , Germany.</note>
+								<orgName type="department">-Campus 1</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<postCode>53127</postCode>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff10">
+								<note type="raw_affiliation">Neuro-aCSis Bonn Neuroscience Clinician Scientist Program ,</note>
+								<orgName type="department">Neuro-aCSis Bonn Neuroscience Clinician Scientist Program</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Proof of concept: Portable ultra‐low‐field magnetic resonance imaging for the diagnosis of epileptogenic brain pathologies</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Epilepsia</title>
+						<title level="j" type="abbrev">Epilepsia</title>
+						<idno type="ISSN">0013-9580</idno>
+						<idno type="eISSN">1528-1167</idno>
+						<imprint>
+							<publisher>Wiley</publisher>
+							<biblScope unit="volume">65</biblScope>
+							<biblScope unit="issue">12</biblScope>
+							<biblScope unit="page" from="3607" to="3618"/>
+							<date type="published" when="2024-10-29" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">9C506FE43D7E72B874E1A8CEF28CB7C8</idno>
+					<idno type="DOI">10.1111/epi.18171</idno>
+					<note type="submission">Received: 19 August 2024 | Revised: 12 October 2024 | Accepted: 14 October 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T22:49+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Objective: High-field magnetic resonance imaging (MRI) is a standard in the diagnosis of epilepsy. However, high costs and technical barriers have limited adoption in low-and middle-income countries. Even in high-income nations, many individuals with epilepsy face delays in undergoing MRI. Recent advancements in ultralow-field (ULF) MRI technology, particularly the development of portable scanners, offer a promising solution to the limited accessibility of MRI. In this study, we present and evaluate the imaging capability of ULF MRI in detecting structural abnormalities typically associated with epilepsy and compare it to high-field MRI at 3 T. Methods: Data collection was conducted within 3 consecutive weeks at the University Hospital Bonn. Inclusion criteria were a minimum age of 18 years, diagnosed epilepsy, and clinical high-field MRI with abnormalities. We used a .064 T Swoop portable MR Imaging System. Both high-field MRI and ULF MRI scans were evaluated independently by two experienced neuroradiologists as part of their clinical routine, comparing pathology detection and diagnosis completeness.</p><p>Results: Twenty-three individuals with epilepsy were recruited. One subject presented with a dual pathology. Across the entire cohort, in 17 of 24 (71%) pathologies, an anomaly colocalizing with the actual lesion was observed on ULF MRI. For 11 of 24 (46%) pathologies, the full diagnosis could be made based on ULF MRI.</p><p>Tumors and posttraumatic lesions could be diagnosed best on ULF MRI, whereas cortical dysplasia and other focal pathologies were the least well diagnosed.</p><p>Significance: This single-center series of individuals with epilepsy demonstrates the feasibility and utility of ULF MRI for the field of epileptology. Its integration into epilepsy care offers transformative potential, particularly in resource-limited</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">| I N T RO DUCTI ON</head><p>Magnetic resonance imaging (MRI) is a mainstay in the diagnosis of epilepsy, enabling the visualization of potentially epileptogenic brain lesions. <ref type="bibr" target="#b0">1,</ref><ref type="bibr" target="#b1">2</ref> Conventional MRI devices operate at field strengths between 1.5 and 3 T. In the diagnostic workup of epilepsy, MRI is trending toward higher field strengths such as 3 T (high field [HF]) or 7 T (ultra-high field), <ref type="bibr" target="#b2">3,</ref><ref type="bibr" target="#b3">4</ref> in the hope that the high field strength will also allow smaller potentially epileptogenic lesions to be better detected or described. Theses anticipations are bolstered by previous research showing the superiority of 3 T over 1.5 T MRI for epilepsy imaging <ref type="bibr" target="#b4">5,</ref><ref type="bibr" target="#b5">6</ref> and by the first 7 T MRI studies in individuals with epilepsy. <ref type="bibr" target="#b6">7,</ref><ref type="bibr" target="#b7">8</ref> The high cost and complex infrastructure requirements of HF MRI or ultra-high-field MRI often limit their accessibility, particularly in resource-constrained settings. This is why the vast majority of the approximately 50 000 MRI scanners worldwide are located in high-resource countries, such as those in North America, Western Europe, and parts of East Asia. <ref type="bibr" target="#b8">9</ref> Here, the density of MRI scanners can be quite high, often ranging from 10 to &gt;40 MRI units per million people. In contrast, in low-resource countries, especially in parts of Africa, Southeast Asia, and Latin America, the number can be as low as .1-1 MRI unit per million people. <ref type="bibr" target="#b9">10</ref> In 2019, 11 countries in Africa had no MRI scanners. <ref type="bibr" target="#b8">9</ref> Approximately 80% of people with epilepsy live in low-and middle-income countries. <ref type="bibr" target="#b10">11</ref> Barriers in access to MRI exacerbate the challenges faced in providing optimal care for people with epilepsy in low-and middle-income regions. Globally, up to 90% of all people with epilepsy lack access to MRI. <ref type="bibr" target="#b11">12</ref> However, also in high-resource countries, not all people with epilepsy undergo MRI, as it is generally recommended, and many have it delayed. <ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14</ref> Recent advancements in imaging technology have led to the development of portable ultra-low-field (ULF) MRI systems, <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref> which operate at substantially lower magnetic field strength and do not require helium cooling. These systems are by far less expensive to purchase and maintain. Therefore, ULF MRI systems hold promise for expanding the accessibility of neuroimaging in various settings, including resource-limited environments and point-of-care diagnostics. <ref type="bibr" target="#b17">18</ref> The feasibility of ULF MRI has been shown in a number of environments, <ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref> including intensive care settings <ref type="bibr" target="#b21">22,</ref><ref type="bibr" target="#b22">23</ref> and for the detection of stroke. <ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b23">24</ref> However, ULF MRI has not yet been deployed for the diagnosis of epilepsy. Yet, the application of ULF MRI scanners presents a unique opportunity to bridge the gap in diagnostic capabilities between well-resourced and limited-resource settings in epileptology.</p><p>This proof-of-concept study investigates the clinical utility of ULF MRI for the diagnosis of epilepsy. We aim to present and evaluate the imaging capability of ULF MRI in detecting structural abnormalities typically associated with epilepsy and compare it to HF MRI in a clinical routine setting with two neuroradiologists. We hypothesize that the diagnostic yield of ULF MRI is lower than that of HF MRI but not as low as may be expected intuitively. MRI examination (e.g., pacemakers, MRI-incompatible implants). The study was approved by the institutional review board of the University Hospital Bonn. All participants provided written informed consent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">| MATERIALS AND METHO D S</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">| Cohort recruitment</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">| Clinical HF MRI routine protocol</head><p>Clinical HF MRI scans were performed using a 3 T MRI scanner (Achieva, Philips Healthcare). Our routine epilepsy protocol, which adheres to international consensus recommendations, includes at least a three-dimensional (3D) T1-weighted sequence (.9 mm), 3D fluid-attenuated inversion recovery (FLAIR; 1 mm), and axial and coronal T2-weighted sequences. <ref type="bibr" target="#b13">14</ref> Depending on the clinical indication, other sequences (e.g, diffusion-weighted or susceptibility-weighted) were added and gadoliniumbased contrast agents were applied. The scan duration ranged from 24 to 52 min (median = 31 min).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">| ULF MRI protocol</head><p>ULF MRI scans were acquired using a .064 T Swoop Portable MR Imaging System (Hyperfine). The protocol provided by the manufacturer included 3D T1-weighted and T2-weighted sequences, axial and coronal FLAIR, and axial diffusion-weighted images. The total scanning time was 48 min 16 s. Sequence parameters are detailed in Table <ref type="table">1</ref>. If contrast agents were used in the clinical routine scan, ULF MRI was performed not earlier than 24 h thereafter to be considered nonenhanced. If ULF MRI was performed immediately after a contrast-enhanced clinical MRI, it was considered contrast-enhanced. Figure <ref type="figure" target="#fig_1">1</ref> shows an example of an ULF MRI scanning setup.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">| Image quality evaluation</head><p>To compare image quality between ULF MRI and HF MRI, we ran FSL FAST on the T1-weighted scans to segment gray and white matter and estimate the bias field. <ref type="bibr" target="#b24">25</ref> Four metrics were calculated: (1) bias-field magnitude-difference between maximum and minimum value of the bias-field estimated in FSL FAST, (2) gray matter signal-to-noise ratioaverage gray matter signal divided by SD of background noise (all voxels outside the head), (3) white matter signalto-noise ratio-average white matter signal divided by SD of background noise, and (4) contrast-to-noise ratio-difference between average gray and white matter signals divided by SD of background noise. These metrics were compared between ULF MRI and HF MRI using two-sided paired t-tests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">| Image assessment</head><p>Clinical HF MRI scans were evaluated as part of the clinical routine by a radiology resident and a consultant neuroradiologist. ULF MRI scans were assessed by a different radiology resident and a consultant neuroradiologist who were not involved in reading the clinical HF MRI scans and were blinded to the results of the clinical HF MRI. Both sets of readers were provided with the same clinical information to ensure a consistent context of assessment. We used two operational categories to assess whether a clinical HF MRI-visible pathology was detected on ULF MRI: (1) anomaly found-this indicates that a finding deviating from that on the clinical HF MRI, which aligns anatomically with the true lesion, was detected; for example, a cavernoma described as a "hyperintense lesion" or "unspecific defect" on ULF MRI would fall into this category; and (2) full diagnosis-this means that all relevant information from the clinical HF MRI reading was also present in the ULF MRI report.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">| RESU LTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">| Study cohort</head><p>Twenty-three individuals with epilepsy were recruited.</p><p>One subject presented with a dual pathology. The median</p><p>T A B L E 1 Scanning protocol used for the ULF MRI. Sequence Orientation In-plane resolution, mm Slice thickness, mm TR, ms TE, ms TI, ms Duration, min:s T1w 3D 2.2 2.2 1000 4.75 270 9:46 T2w 3D 2.2 2.2 2000 148.16 NA 10:04 FLAIR Axial 1.7 5 3500 162.18 1301.11 8:59 FLAIR Coronal 1.7 5 3500 168.60 1296.56 9:06 DWI Axial 2.4 5.9 1000 80.3 NA 10:21 Abbreviations: 3D, three-dimensional; DWI, diffusion-weighted imaging; FLAIR, fluid-attenuated inversion recovery; NA, not applicable; T1w, T1-weighted; T2w, T2-weighted; TE, echo time; TI, inversion time; TR, repetition time.</p><p>age at MRI was 36 years (range = 18-84); 11 participants were male (48%), and 12 participants were female (52%).</p><p>In one case, a clinical HF MRI was scheduled after ULF MRI but could not be performed for organizational reasons. In this case, the clinical HF MRI closest to the ULF MRI performed 116 days earlier was used for the analysis. In the remaining cases, median absolute difference between clinical HF MRI and ULF MRI was 1 day (range = 0-36); both scans were performed the same day in seven cases (30%). Sixteen ULF MRI scans were carried out in a clinical examination room; six individuals were scanned in the patient's room on the ward. There were no complications or adverse events during deployment of the ULF MRI. See Table <ref type="table">2</ref> for clinical details of all individuals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">| Image quality</head><p>The bias-field magnitude was significantly larger on ULF MRI than HF MRI (mean = .97 vs. .27, t 22 = 6.54, p &lt; .001; Figure <ref type="figure" target="#fig_2">2A</ref>). Both gray and white matter signal-to-noise ratios, as well as the contrast-to-noise ratio, were significantly lower on ULF MRI than HF MRI (gray matter: 44.5 vs. 103.4, t 44 = 8.34, p &lt; .001, Figure <ref type="figure" target="#fig_2">2B</ref>; white matter: 78.2 vs. 158.0, t 22 = 6.65, p &lt; .001, Figure <ref type="figure" target="#fig_2">2C</ref>; contrast: 33.8 vs. 54.6, t 22 = 3.64, p = .001, Figure <ref type="figure" target="#fig_2">2D</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">| Detection rate</head><p>Across the entire cohort, in 17 of 24 (71%) pathologies, an anomaly colocalizing with the actual lesion was observed on ULF MRI (Category 1). For 12 of 24 (50%) pathologies, the full diagnosis could be made based on ULF MRI (Category 2). Note that the number of lesions adds to 24, not 23, because two different pathologies (meningioma and cavernoma) were observed in Case 2. Please see Figure <ref type="figure" target="#fig_2">2E</ref> for a visualization of detection rates in all subgroups. In three of 24 cases (13%), findings on ULF MRI were identified exclusively by the consultant neurologist and missed by the neuroradiology resident.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">| Mesiotemporal pathologies</head><p>Clinical HF MRI showed mesiotemporal pathologies in four individuals (Cases 12, 16, 17, and 18). Of the individuals diagnosed with unilateral hippocampal sclerosis (Cases 12 and 16), the typical pattern with unilateral hippocampal volume loss and hyperintensity was only observed in one participant on ULF MRI (Case 16; Figure <ref type="figure" target="#fig_3">3A</ref>), whereas the other case was diagnosed to be nonlesional (Case 12). Unilateral hippocampal hyperintensity was observed concordantly on clinical HF MRI and ULF MRI (Case 18; Figure <ref type="figure" target="#fig_3">3B</ref>). Bilateral hippocampal sclerosis was reported on clinical HF MRI in another participant (Case 17), whereas only bilateral hippocampal hyperintensity was observed on ULF MRI. Taken together, mesiotemporal hyperintensity was consistently found in three of four cases, whereas volume loss was observed in only one of three cases on ULF MRI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">| Neocortical malformations</head><p>Clinical HF MRI revealed neocortical malformations in three cases (Cases 1, 3, and 5), two of which had a focal  <ref type="figure" target="#fig_3">3C</ref>] and Case 5) and one had a polymicrogyria (Case 3; Figure <ref type="figure" target="#fig_3">3D</ref>). None of these three pathologies was visible on ULF MRI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6">| Other focal nonprogressive pathologies</head><p>Other focal nonprogressive pathologies were found in six individuals (Cases 2, 6, 7, 10, 11, and 15) using clinical HF MRI. It showed cavernomas with typical characteristics, including a T2-hypointense rim and a reticulated core of heterogeneous signal intensity in three individuals (Cases 6, 10, and 11). Two cavernomas were described as T2-hyperintense lesions (Cases 6 and 11; Figure <ref type="figure" target="#fig_3">3E</ref>) on ULF MRI. In the third individual (Case 10), the was described as an unspecific brain lesion associated with an adjacent meningioma.</p><p>The typical characteristics of a cavernoma, however, were not visible on ULF MRI in any of these individuals. Furthermore, a left thalamic defect (Case 2) was also seen on ULF MRI, but a small cystic lesion (3 × 4 mm, Case 7; Figure <ref type="figure" target="#fig_3">3F</ref>) and a small tuber cinereum hamartoma (7 mm, Case 15) were not detected on ULF MRI. Taken together, anomalies were found in four of six (Category 1), but full diagnosis was made in only one of six (Category 2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7">| Posttraumatic lesions</head><p>Five participants showed posttraumatic lesions on clinical HF MRI (Cases 8, 9, 13, 14, and 23). In all cases with defects (Cases 8, 9, 14, and 23), the defect area was as well visible on ULF MRI (see Figure <ref type="figure" target="#fig_4">4A</ref>,<ref type="figure">B</ref>). What was not observed on ULF MRI but was on clinical MRI, however, was supra-and infratentorial microbleeds in an individual after new onset refractory status epilepticus (Case 13) and the small remainder of an old subdural hematoma (Case 14). Thus, full diagnosis was made in three of five (Category 2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.8">| Tumors</head><p>Five individuals presented with tumor-associated epilepsy ( Cases 10, 19, 20, 21, and 22). Specifically, multiple meningiomas could be identified as such using ULF MRI (Case 10; Figure <ref type="figure" target="#fig_4">4E</ref>). In this case, the ULF MRI scan was performed immediately after the contrast-enhanced clinical HF MRI and the ULF MRI T1-weighted sequence was started 27 min after contrast agent injection.</p><p>In the four other cases (Cases 19-22; including cerebral ID Age, years Sex Etiology Semiology Clinical HF MRI findings ULF MRI findings 18 25 F Unknown Focal aware sensory-vestibular Hyperintensity in right hippocampus Hyperintensity in right hippocampus 19 69 F Cerebral metastatic bronchial carcinoma Focal impaired awareness motor Left frontal and parietal lesions with surrounding edema Left frontal and parietal lesions with surrounding edema 20 36 M Glioblastoma Focal aware autonomic with nausea Right-frontal space-occupying lesion, surrounding edema, midline shift Right-frontal space-occupying lesion, surrounding edema, midline shift 21 61 F Unspecified brain tumor Focal aware motor Multiple right-hemispheric space-occupying lesions, midline shift Multiple right-hemispheric space-occupying lesions 22 72 M Low-grade glioma Absence Right-mesiotemporal space-occupying lesion Right-mesiotemporal space-occupying lesion 23 65 M Posttraumatic Focal impaired awareness tonic Right frontal defect, periventricular leukoencephalopathy, microbleeds supraand infratentorial Right frontal defect, periventricular leukoencephalopathy, microbleeds supra-and infratentorial Abbreviations: F, female; HF, high field; M, male; MRI, magnetic resonance imaging; NORSE, new onset refractory status epilepticus; ULF, ultra-low-field.</p><formula xml:id="formula_0">T A B L E 2 (Continued)</formula><p>metastases, low-grade glioma, and glioblastoma), the space-occupying tumor mass could be detected on nonenhanced ULF MRI, as well as the surrounding edema (see Figure <ref type="figure" target="#fig_4">4C</ref>,<ref type="figure">D</ref>). A midline shift was reported on clinical HF MRI in two individuals but was only detected in one of two cases on ULF MRI (Case 20; see Figure <ref type="figure" target="#fig_4">4C</ref>). Taking this into account, anomalies (Category 1) were found in all cases, but full diagnosis was made in only four of five (Category 2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.9">| Hemiatrophy</head><p>Case 4 presented with hemiatrophy and caudate nucleus atrophy, which is indicative for Rasmussen syndrome despite the atypical onset age. A biopsy to confirm this diagnosis, however, has not yet been performed. The MRI characteristics were visible on both the clinical HF and ULF MRI (Category 2; Figure <ref type="figure" target="#fig_4">4F</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">| D I S C U S SION</head><p>Our findings demonstrate for the first time the deployment of ULF MRI in epileptology. We report the diagnostic value of ULF MRI as compared to clinical HF MRI in the diagnosis of epilepsy. In this limited cohort, roughly two thirds (17/24, 71%) of potentially epileptogenic pathologies known from clinical HF MRI can be detected on ULF MRI, and a complete diagnosis is possible in approximately half of the cases (11/24, 46%). However, we note that the diagnostic yield of ULF MRI is different for different pathologies. Unsurprisingly, hemispheric pathologies like hemispheric atrophy or large pathological entities like tumors or posttraumatic lesions can be diagnosed well; anomalies were found in 10 of 11 cases, and full diagnosis was possible in eight of 11 cases. The diagnosis of more focal pathologies such as cortical dysplasia was more difficult on ULF MRI; still, anomalies were found in four of nine cases, but full diagnosis was possible in only one of nine cases. In mesiotemporal pathologies, hippocampal FLAIR hyperintensity was consistently found in three of four cases, whereas volume loss was observed in only one of three cases on ULF MRI. This may indicate that ULF MRI has a higher sensitivity for detecting hippocampal FLAIR hyperintensity compared to hippocampal volume loss.</p><p>Although the diagnostic yield of ULF MRI in our study appears to be moderate, it should not be omitted that our study only includes individuals with epilepsy and abnormal HF MRI, whereas half of individuals with epilepsy show normal HF MRI. <ref type="bibr" target="#b4">5,</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref> With the estimated sensitivity of 71% and an assumed near perfect specificity for ULF MRI (i.e., assuming that ULF MRI produces minimal false-positive results), the diagnostic accuracy could potentially exceed 80%. This makes ULF MRI a predestined screening method.</p><p>However, given the current evidence regarding sensitivity and specificity, this remains pure speculation. The main limitation of this study is the single-center design and the limited size of the cohort. Furthermore, our study is limited in that it only included individuals with known MRI abnormalities on clinical HF MRI and in that we were not able to directly compare interrater agreement between HF MRI and ULF MRI. Further studies should be conducted in a multicenter setting, involve a larger cohort, and use standardized reporting to quantify diagnostic accuracy and interrater reliability. Moreover, these studies should subspecialize on ULF MRI after the first seizure or its application in presurgical evaluation in addition to clinical HF MRI. Particularly, the prospective inclusion of individuals irrespective of known MRI abnormalities is warranted.</p><p>Furthermore, it will be necessary in the future to make computer-aided image processing methods accessible for ULF MRI. Two approaches are conceivable here: on the one hand, dedicated postprocessing to adapt the image quality of ULF MRI to conventional MRI, <ref type="bibr" target="#b28">[29]</ref><ref type="bibr" target="#b29">[30]</ref><ref type="bibr" target="#b30">[31]</ref> on the other hand, an optimization of the algorithms to the image quality of ULF MRI. <ref type="bibr" target="#b31">[32]</ref><ref type="bibr" target="#b32">[33]</ref><ref type="bibr" target="#b33">[34]</ref> In epileptology, it is often intuitively and wrongly assumed that the clinical value of MRI is linearly related to its field strength. However, 7 T is neither per se "more than twice as good" as 3 T, nor does the diagnostic significance of .064 T appear to be only a few percent of that. Rather, the diagnostic advantage is incremental from .064 T through 1.5 T and 3 T to 7 T, and each field strength has its own advantages and disadvantages. In the case of .064 T, advantages are lower cost, smaller footprint, enhanced accessibility, lower power, and fewer safety risks. The disadvantages include lower signal-tonoise ratio, decreased resolution, increased scan time, and reduced gray/white matter contrast. <ref type="bibr" target="#b14">15,</ref><ref type="bibr" target="#b34">35</ref> In addition, geometric inaccuracies can occur with ULF MRI, which preclude its use for critical applications such as stereotaxis in its current state of development. As the global availability of high field-strength is elusive in the medium term and the epilepsy community is challenged both by the unmet global needs of individuals with epilepsy and by the general imperative of sustainability, <ref type="bibr" target="#b35">36</ref> it will be the subject of future studies to establish and validate a triagelike system in which individuals with epilepsy are directed to MRI facilities according to their expected clinical need and the accessibility of these systems. Subject to further development of ULF scanners, the application of ULF MRI is imaginable also in highincome countries and cases with low clinical urgency for imaging to save the cost-and resource-intensive HF and ultra-high-field MRI. Additionally, ULF MRI could vanquish barriers of intraoperative MRI for some procedures due to reduced requirements for radiofrequency shielding, operational safety, 5 G line distance, and increased magnetic resonance compatibility for traditional surgical implements. <ref type="bibr" target="#b14">15,</ref><ref type="bibr" target="#b36">37,</ref><ref type="bibr" target="#b37">38</ref> In summary, this single-center series of individuals with epilepsy demonstrates the feasibility and utility of ULF MRI for the field of epileptology. Its integration into epileptological care offers transformative potential, particularly in resource-limited settings. As innovation continues, portable ULF MRI will enable the democratization of MRI and open up new applications not previously feasible with conventional systems, <ref type="bibr" target="#b38">39</ref> thereby improving the diagnosis, treatment, and overall management of epilepsy, ultimately reducing the global burden of this condition and achieving more global health equity. Further research is required in prospective multicenter studies to delineate pathology-specific detection rates, quantify the reliability of established biomarkers, and test the validity of routinely used diagnostic algorithms.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>For 3</head><label>3</label><figDesc>consecutive weeks (in May 2024), all adults with epilepsy who presented at the Department of Neuroradiology, University Hospital Bonn, for a clinical HF MRI at 3 T as part of their clinical assessment and had a HF MRI-visible lesion were invited to have an additional ULF MRI scan. All exclusion criteria relevant for ULF MRI were already covered by the exclusion criteria for a clinical HF settings. Further research is needed to position ULF MRI within imaging modalities in the diagnosis of epilepsy. K E Y W O R D S Epilepsy, Global Epileptology, limited ressources, Neuroimaging, Sustainability Key points • High-field MRI is a standard in the diagnosis of epilepsy but has limited accessibility. • Ultra-low-field MRI offers a solution with portable and less expensive devices potentially beneficial for underserved areas. • This study compares the diagnostic yield of ultra-low-field to high-field MRI in 23 individuals with epilepsy. • Two thirds of pathologies could be localized on ultra-low-field MRI, and in half of the cases full diagnosis was possible. • Ultra-low-field MRI may play a crucial role in the diagnosis of epilepsy, both globally and as a complement in high-income countries.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>F I G U R E 1 A</head><label>1</label><figDesc>person with epilepsy undergoes imaging in the hyperfine ultralow-field scanner at the bedside.T A B L E 2 Patient cohort and MRI reading.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>F I G U R E 2</head><label>2</label><figDesc>Image quality and detection rates for each subgroup of pathologies. (A) Comparison of bias-field magnitude, (B) gray matter signal-to-noise ratio (SNR), (C) white matter SNR, and (D) contrast-to-noise ratio (CNR) between ultra-low-field (ULF) magnetic resonance imaging (MRI), and high field (HF) MRI. (E) For each of the six pathology groups as identified on HF MRI (mesiotemporal pathologies, neocortical malformations, other focal pathologies, posttraumatic lesions, tumor, hemiatrophy), the graph reads as follows. Left bar: Total number of pathologies. Middle bar: Number of pathologies where an anomaly colocalizing with the actual lesion was observed (Category 1). Right bar: Number of pathologies where full diagnosis was made based on ULF MRI (Category 2). Images from all cases are presented in Data S1. **p = .001, ***p &lt; .001.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>F I G U R E 3</head><label>3</label><figDesc>Comparison of clinical high field (HF) magnetic resonance imaging (MRI) and ultra-low-field (ULF) MRI for selected cases with typical epileptogenic lesions. In all panels, clinical HF MRI is shown on the left, and ULF MRI is shown on the right. (A) Coronal fluid-attenuated inversion recovery (FLAIR): left hippocampal sclerosis. (B) Coronal FLAIR: right hippocampal T2 hyperintensity (HI). (C) Axial FLAIR: focal cortical dysplasia. (D) Axial T1-weighted: polymicrogyria. (E) Axial T2-weighted (T2w): cavernoma. (F) Axial T2w: cystic lesion. Arrows mark the relevant lesions; dotted arrows are used when the lesion was not found in neuroradiological readings of ULF MRI.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>F I G U R E 4</head><label>4</label><figDesc>Comparison of clinical high field (HF) magnetic resonance imaging (MRI) and ultra-low-field (ULF) MRI for selected individuals with posttraumatic and tumor-associated epilepsy. In all panels, clinical HF MRI is shown on the left, and ULF MRI is shown on the right. (A) Axial fluid-attenuated inversion recovery (FLAIR): focal postencephalitis lesion associated with Rasmussen syndrome. (B) Axial T1-weighted (T1w): multiple posttraumatic defects. (C) Axial FLAIR: glioblastoma; solid line illustrates midline shift toward the left hemisphere. (D) Axial FLAIR: low-grade glioma of right amygdala. (E) Axial contrast-enhanced T1w: meningioma; ULF MRI scan was 27 min after contrast agent injection. (F) Axial T1w: left caudate atrophy and insular/temporal hemiatrophy suggesting Rasmussen syndrome. Arrows mark the relevant lesion.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGMENTS</head><p>We thank the <rs type="institution" subtype="infrastructure">Ultra Low Field Neuroimaging in the Young Consortium</rs> for providing the Hyperfine Swoop System. T.B. is funded by the <rs type="funder">Neuro-aCSis Bonn Neuroscience Clinician Scientist Program</rs> (<rs type="grantNumber">2024-12-07</rs>). P.V. is funded through an <rs type="grantName">Else Kröner Clinician Scientist Endowed Professorship</rs> by the <rs type="funder">Else Kröner-Fresenius Foundation</rs> (<rs type="grantNumber">2022_EKCS.17</rs>).</p></div>
+			</div>
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding information</head></div>
+			</div>
+
+
+			<listOrg type="funding">
+				<org type="funding" xml:id="_rMMQR8q">
+					<idno type="grant-number">2024-12-07</idno>
+					<orgName type="grant-name">Else Kröner Clinician Scientist Endowed Professorship</orgName>
+				</org>
+				<org type="funding" xml:id="_m2g8Hz5">
+					<idno type="grant-number">2022_EKCS.17</idno>
+				</org>
+			</listOrg>
+
+			<listOrg type="infrastructure">
+				<org type="infrastructure">					<orgName type="extracted">Ultra Low Field Neuroimaging in the Young Consortium</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DATA AVAILABILITY STATEMENT</head><p>The data that support the findings of this study are available on request from the corresponding author. The data are not publicly available due to their containing information that could compromise the privacy of research participants.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>CONFLICT OF INTEREST STATEMENT P.V. has received consulting fees and stock options from Need, and honoraria for lectures from Bayer and advisory board participation for Cercare Medical, outside the submitted work. A.R. serves on the scientific advisory boards for GE Healthcare, Bracco, Bayer, Guerbet, and AbbVie; has received speaker honoraria from Bayer, Guerbet, Siemens, and Medscape; and is a consultant for, and has received institutional study support from, Guerbet and Bayer. R.S. has received personal fees as a speaker or for serving on advisory boards from Angelini, Arvelle, Bial, Desitin, Eisai, Jazz Pharmaceuticals Germany, Janssen-Cilag, LivaNova, LivAssured, Novartis, Precisis, Rapport Therapeutics, Tabuk Pharmaceuticals, UCB Pharma, UNEEG, and Zogenix. He is an editorial board member of Epilepsy and Behavior and associate editor of Epilepsia Open. These activities were not related to the content of this article. None of the other authors has any conflict of interest to disclose. We confirm that we have read the Journal's position on issues involved in ethical publication and affirm that this report is consistent with those guidelines.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPORTING INFORMATION</head><p>Additional supporting information can be found online in the Supporting Information section at the end of this article.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Imaging epilepsy with SISCOM</title>
+		<author>
+			<persName><forename type="first">Marino</forename><forename type="middle">M</forename><surname>Bianchin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lauro</forename><surname>Wichert-Ana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tonicarlo</forename><forename type="middle">R</forename><surname>Velasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">Paula P</forename><surname>Martins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Américo</forename><forename type="middle">C</forename><surname>Sakamoto</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nrneurol.2010.131-c1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Neurology</title>
+		<title level="j" type="abbrev">Nat Rev Neurol</title>
+		<idno type="ISSN">1759-4758</idno>
+		<idno type="ISSNe">1759-4766</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="240" to="240" />
+			<date type="published" when="2011-04">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bianchin MM, Wichert-Ana L, Velasco TR, Martins APP, Sakamoto AC. Imaging epilepsy with SISCOM. Nat Rev Neurol. 2011;7:240.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Neuroimaging of epilepsy</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Cendes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Theodore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">H</forename><surname>Brinkmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sulc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">D</forename><surname>Cascino</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-444-53486-6.00051-x</idno>
+		<ptr target="https://doi.org/10.1016/B978-0-444-53486-6.00051-X" />
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Clinical Neurology</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="985" to="1014" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cendes F, Theodore WH, Brinkmann BH, Sulc V, Cascino GD. Neuroimaging of epilepsy. Neuroimaging Part II. Elsevier; 2016. p. 985-1014 Available from: https:// doi. org/ 10. 1016/ B978-0-444-53486-6. 00051-X</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Germany’s journey toward 14 Tesla human magnetic resonance</title>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Ladd</surname></persName>
+			<idno type="ORCID">0000-0002-4128-9440</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Harald</forename><forename type="middle">H</forename><surname>Quick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Speck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Bock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnd</forename><surname>Doerfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Forsting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Hennig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernd</forename><surname>Ittermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harald</forename><forename type="middle">E</forename><surname>Möller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armin</forename><forename type="middle">M</forename><surname>Nagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thoralf</forename><surname>Niendorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Remy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Schaeffter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Scheffler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heinz-Peter</forename><surname>Schlemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Schmitter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Schreiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">Jon</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tony</forename><surname>Stöcker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Uder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arno</forename><surname>Villringer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaus</forename><surname>Weiskopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moritz</forename><surname>Zaiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxim</forename><surname>Zaitsev</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10334-023-01085-z</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/37029886/" />
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance Materials in Physics, Biology and Medicine</title>
+		<title level="j" type="abbrev">Magn Reson Mater Phy</title>
+		<idno type="ISSNe">1352-8661</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="191" to="210" />
+			<date type="published" when="2023-04-08">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Ladd ME, Quick HH, Speck O, Bock M, Doerfler A, Forsting M, et al. Germany&apos;s journey toward 14 tesla human magnetic res- onance. MAGMA. 2023;36(2):191-210. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 37029 886/</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">MRI in epilepsy: clinical standard and evolution</title>
+		<author>
+			<persName><forename type="first">Theodor</forename><surname>Rüber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bastian</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">E</forename><surname>Elger</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/wco.0000000000000539</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Opinion in Neurology</title>
+		<idno type="ISSN">1350-7540</idno>
+		<idno type="ISSNe">1473-6551</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="223" to="231" />
+			<date type="published" when="2018-04">2018</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rüber T, David B, Elger CE. MRI in epilepsy: clinical standard and evolution. Curr Opin Neurol. 2018;31(2):1-231.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The value of repeat neuroimaging for epilepsy at a tertiary referral centre: 16 years of experience</title>
+		<author>
+			<persName><forename type="first">Gavin</forename><forename type="middle">P</forename><surname>Winston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caroline</forename><surname>Micallef</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">E</forename><surname>Kendell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippa</forename><forename type="middle">A</forename><surname>Bartlett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elaine</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><forename type="middle">L</forename><surname>Burdett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">S</forename><surname>Duncan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.eplepsyres.2013.02.022</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Epilepsy Research</title>
+		<title level="j" type="abbrev">Epilepsy Research</title>
+		<idno type="ISSN">0920-1211</idno>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="349" to="355" />
+			<date type="published" when="2013-08">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Winston GP, Micallef C, Kendell BE, Bartlett PA, Williams EJ, Burdett JL, et al. The value of repeat neuroimaging for epilepsy at a tertiary referral centre: 16 years of experience. Epilepsy Res. 2013;105(3):349-55.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">3T phased array MRI improves the presurgical evaluation in focal epilepsies</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Knake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Triantafyllou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">L</forename><surname>Wald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wiggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P</forename><surname>Kirk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Stufflebeam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Foley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Shiraishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Dale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Halgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Grant</surname></persName>
+		</author>
+		<idno type="DOI">10.1212/01.wnl.0000179355.04481.3c</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurology</title>
+		<title level="j" type="abbrev">Neurology</title>
+		<idno type="ISSN">0028-3878</idno>
+		<idno type="ISSNe">1526-632X</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1026" to="1031" />
+			<date type="published" when="2005-10-11">2005</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Knake S, Triantafyllou C, Wald LL, Wiggins G, Kirk GP, Larsson PG, et al. 3T phased array MRI improves the presurgical eval- uation in focal epilepsies: a prospective study. Neurology. 2005;65(7):1026-31.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">7T Epilepsy Task Force Consensus Recommendations on the Use of 7T MRI in Clinical Practice</title>
+		<author>
+			<persName><forename type="first">Giske</forename><surname>Opheim</surname></persName>
+			<idno type="ORCID">0000-0002-1516-0838</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anja</forename><surname>Van Der Kolk</surname></persName>
+			<idno type="ORCID">0000-0002-8267-8848</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><forename type="middle">Markenroth</forename><surname>Bloch</surname></persName>
+			<idno type="ORCID">0000-0002-3310-6667</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">J</forename><surname>Colon</surname></persName>
+			<idno type="ORCID">0000-0002-7642-4884</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><forename type="middle">A</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">R</forename><surname>Henry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacobus</forename><forename type="middle">F A</forename><surname>Jansen</surname></persName>
+			<idno type="ORCID">0000-0002-5271-8060</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">E</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jullie</forename><forename type="middle">W</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl</forename><surname>Rössler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+			<idno type="ORCID">0000-0002-0741-1780</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">C</forename><surname>Strandberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siegfried</forename><surname>Trattnig</surname></persName>
+			<idno type="ORCID">0000-0003-1623-3303</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre-Francois</forename><surname>Van De Moortele</surname></persName>
+			<idno type="ORCID">0000-0002-6941-5947</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Isabel</forename><surname>Vargas</surname></persName>
+			<idno type="ORCID">0000-0002-6571-5336</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabrice</forename><surname>Bartolomei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neda</forename><surname>Bernasconi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Bernasconi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Bernhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isabella</forename><surname>Björkman-Burtscher</surname></persName>
+			<idno type="ORCID">0000-0002-9023-3363</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mirco</forename><surname>Cosottini</surname></persName>
+			<idno type="ORCID">0000-0001-9400-6574</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sandhitsu</forename><forename type="middle">R</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucie</forename><surname>Hertz-Pannier</surname></persName>
+			<idno type="ORCID">0000-0003-4952-7009</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Inati</surname></persName>
+			<idno type="ORCID">0000-0002-7587-5085</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">T</forename><surname>Jurkiewicz</surname></persName>
+			<idno type="ORCID">0000-0002-4641-3172</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">R</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuli</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoyun</forename><forename type="middle">Emily</forename><surname>Ma</surname></persName>
+			<idno type="ORCID">0000-0002-1264-2858</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Srinivasan</forename><surname>Mukundan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heath</forename><surname>Pardoe</surname></persName>
+			<idno type="ORCID">0000-0002-0123-2167</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><forename type="middle">H</forename><surname>Pinborg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">R</forename><surname>Polimeni</surname></persName>
+			<idno type="ORCID">0000-0002-1348-1179</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Philippe</forename><surname>Ranjeva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Steijvers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Stufflebeam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><forename type="middle">J</forename><surname>Veersema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Vignaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalie</forename><surname>Voets</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Vulliemoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">J</forename><surname>Wiggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Renzo</forename><surname>Guerrini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxime</forename><surname>Guye</surname></persName>
+			<idno type="ORCID">0000-0002-4435-2257</idno>
+		</author>
+		<idno type="DOI">10.1212/wnl.0000000000011413</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/33361257/" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurology</title>
+		<title level="j" type="abbrev">Neurology</title>
+		<idno type="ISSN">0028-3878</idno>
+		<idno type="ISSNe">1526-632X</idno>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="327" to="341" />
+			<date type="published" when="2021-02-16">2021</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Opheim G, Van Der Kolk A, Bloch KM, Colon AJ, Davis KA, Henry TR, et al. 7T epilepsy task force consensus recommen- dations on the use of 7T MRI in clinical practice. Neurology. 2021;96(7):327-41. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 33361 257/</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Value of 7T MRI and post‐processing in patients with nonlesional 3T MRI undergoing epilepsy presurgical evaluation</title>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3829-5217</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sehong</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingmar</forename><surname>Blümcke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Coras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balu</forename><surname>Krishnan</surname></persName>
+			<idno type="ORCID">0000-0002-1897-3359</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanghoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Mcbride</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olesya</forename><surname>Grinenko</surname></persName>
+			<idno type="ORCID">0000-0002-1950-8328</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yicong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margit</forename><surname>Overmyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tin</forename><forename type="middle">Tun</forename><surname>Aung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Lowe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mykol</forename><surname>Larvie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><forename type="middle">V</forename><surname>Alexopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Bingaman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><forename type="middle">A</forename><surname>Gonzalez‐martinez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Imad</forename><surname>Najm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">E</forename><surname>Jones</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/epi.16682</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/32949471/" />
+	</analytic>
+	<monogr>
+		<title level="j">Epilepsia</title>
+		<title level="j" type="abbrev">Epilepsia</title>
+		<idno type="ISSN">0013-9580</idno>
+		<idno type="ISSNe">1528-1167</idno>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2509" to="2520" />
+			<date type="published" when="2020-09-19">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Wang I, Oh S, Blümcke I, Coras R, Krishnan B, Kim S, et al. Value of 7T MRI and post-processing in patients with nonle- sional 3T MRI undergoing epilepsy presurgical evaluation. Epilepsia. 2020;61(11):2509-20. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 32949 471/</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Accessible magnetic resonance imaging: A review</title>
+		<author>
+			<persName><forename type="first">Sairam</forename><surname>Geethanath</surname></persName>
+			<idno type="ORCID">0000-0002-3776-4114</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Thomas</forename><surname>Vaughan</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.26638</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/30637891/" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="65" to="e77" />
+			<date type="published" when="2019-01-14">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Geethanath S, Vaughan JT. Accessible magnetic resonance im- aging: a review. J Magn Reson Imaging. 2019;49(7):e65-e77. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 30637 891/</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Magnetic resonance imaging units, total</title>
+		<idno type="DOI">10.1787/magresimaging-table-en</idno>
+		<ptr target="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/total-density-per-million-population-magnetic-resonance-imaging" />
+		<imprint>
+			<date type="published" when="2012-10-22" />
+			<publisher>OECD Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note>density. 2024 [cited 2024</note>
+	<note type="raw_reference">Magnetic resonance imaging units (per million population), total density. 2024 [cited 2024]. Available from: https:// www. who. int/ data/ gho/ data/ indic ators/ indic ator-detai ls/ GHO/ total -densi ty-per-milli on-popul ation -magne tic-reson ance-imaging</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Global, regional, and national burden of epilepsy, 1990-2016: a systematic analysis for the global burden of disease study 2016</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Beghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Giussani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Abd-Allah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Abdela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abdelalim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">N</forename><surname>Abraha</surname></persName>
+		</author>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/30773428/" />
+	</analytic>
+	<monogr>
+		<title level="j">Lancet Neurol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="357" to="375" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Beghi E, Giussani G, Abd-Allah F, Abdela J, Abdelalim A, Abraha HN, et al. Global, regional, and national burden of ep- ilepsy, 1990-2016: a systematic analysis for the global burden of disease study 2016. Lancet Neurol. 2019;18(4):357-75. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 30773 428/</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Bringing MRI to low‐ and middle‐income countries: Directions, challenges and potential solutions</title>
+		<author>
+			<persName><forename type="first">Sanjana</forename><surname>Murali</surname></persName>
+			<idno type="ORCID">0000-0001-7980-6733</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fope</forename><surname>Adedeji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cathy</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johnes</forename><surname>Obungoloch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iris</forename><surname>Asllani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udunna</forename><surname>Anazodo</surname></persName>
+			<idno type="ORCID">0000-0001-8864-035X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ntobeko</forename><forename type="middle">A B</forename><surname>Ntusi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Regina</forename><surname>Mammen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thoralf</forename><surname>Niendorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sola</forename><surname>Adeleke</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/nbm.4992</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/37401341/" />
+	</analytic>
+	<monogr>
+		<title level="j">NMR in Biomedicine</title>
+		<title level="j" type="abbrev">NMR in Biomedicine</title>
+		<idno type="ISSN">0952-3480</idno>
+		<idno type="ISSNe">1099-1492</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">4992</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Murali S, Ding H, Adedeji F, Qin C, Obungoloch J, Asllani I, et al. Bringing MRI to low-and middle-income countries: di- rections, challenges and potential solutions. NMR Biomed. 2024;37(7):e4992 [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 37401 341/</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">MRI essentials in epileptology: a review from the ILAE Imaging Taskforce</title>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Bernasconi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Bernhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hal</forename><surname>Blumenfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Cendes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yotin</forename><surname>Chinvarun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Graeme</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victoria</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Rampp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">Elisabetta</forename><surname>Vaudano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Federico</surname></persName>
+		</author>
+		<idno type="DOI">10.1684/epd.2020.1174</idno>
+		<ptr target="https://onlinelibrary.wiley.com/doi/full/10.1684/epd.2020.1174" />
+	</analytic>
+	<monogr>
+		<title level="j">Epileptic Disorders</title>
+		<title level="j" type="abbrev">Epileptic Disorders</title>
+		<idno type="ISSN">1294-9361</idno>
+		<idno type="ISSNe">1950-6945</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="421" to="437" />
+			<date type="published" when="2020-08">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Wang I, Bernasconi A, Bernhardt B, Blumenfeld H, Cendes F, Chinvarun Y, et al. MRI essentials in epileptology: a review from the ILAE imaging taskforce. Epileptic Disord. 2020;22(4):421- 37. [cited 2024]; Available from: https://onlinelibrary.wiley. com/doi/full/10.1684/epd.2020.1174</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Recommendations for the use of structural magnetic resonance imaging in the care of patients with epilepsy: A consensus report from the International League Against Epilepsy Neuroimaging Task Force</title>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Bernasconi</surname></persName>
+			<idno type="ORCID">0000-0001-9358-5703</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Cendes</surname></persName>
+			<idno type="ORCID">0000-0001-9336-9568</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">H</forename><surname>Theodore</surname></persName>
+			<idno type="ORCID">0000-0002-4669-5747</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ravnoor</forename><forename type="middle">S</forename><surname>Gill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">J</forename><surname>Koepp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">Edward</forename><surname>Hogan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Graeme</forename><forename type="middle">D</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Federico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angelo</forename><surname>Labate</surname></persName>
+			<idno type="ORCID">0000-0002-8827-7324</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">Elisabetta</forename><surname>Vaudano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingmar</forename><surname>Blümcke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Ryvlin</surname></persName>
+			<idno type="ORCID">0000-0001-7775-6576</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neda</forename><surname>Bernasconi</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/epi.15612</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/31135062/" />
+	</analytic>
+	<monogr>
+		<title level="j">Epilepsia</title>
+		<title level="j" type="abbrev">Epilepsia</title>
+		<idno type="ISSN">0013-9580</idno>
+		<idno type="ISSNe">1528-1167</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1054" to="1068" />
+			<date type="published" when="2019-05-28">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Bernasconi A, Cendes F, Theodore WH, Gill RS, Koepp MJ, Hogan RE, et al. Recommendations for the use of structural magnetic resonance imaging in the care of patients with epi- lepsy: a consensus report from the international league against epilepsy neuroimaging task force. Epilepsia. 2019;60(6):1054- 68. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 31135 062/</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Low‐field MRI: Clinical promise and challenges</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">Campbell</forename><surname>Arnold</surname></persName>
+			<idno type="ORCID">0000-0001-8226-8497</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Colbey</forename><forename type="middle">W</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Litt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+			<idno type="ORCID">0000-0002-0741-1780</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.28408</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/36120962/" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="44" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Arnold TC, Freeman CW, Litt B, Stein JM. Low-field MRI: clinical promise and challenges. J Magn Reson Imaging. 2023;57(1):25-44. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 36120 962/</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Future of Neurology &amp; Technology: Neuroimaging Made Accessible Using Low-Field, Portable MRI</title>
+		<author>
+			<persName><forename type="first">Nethra</forename><forename type="middle">R</forename><surname>Parasuram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">L</forename><surname>Crawford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mercy</forename><forename type="middle">H</forename><surname>Mazurek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isha</forename><forename type="middle">R</forename><surname>Chavva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Beekman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">J</forename><surname>Gilmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nils</forename><forename type="middle">H</forename><surname>Petersen</surname></persName>
+			<idno type="ORCID">0000-0001-9711-3340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seyedmehdi</forename><surname>Payabvash</surname></persName>
+			<idno type="ORCID">0000-0003-4628-0370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Sze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><surname>Eugenio Iglesias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sacit</forename><forename type="middle">B</forename><surname>Omay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Matouk</surname></persName>
+			<idno type="ORCID">0000-0003-3234-9541</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erin</forename><forename type="middle">E</forename><surname>Longbrake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>De Havenon</surname></persName>
+			<idno type="ORCID">0000-0001-8178-8597</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">J</forename><surname>Schiff</surname></persName>
+			<idno type="ORCID">0000-0003-2623-3614</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+			<idno type="ORCID">0000-0002-2519-8530</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+			<idno type="ORCID">0000-0003-2003-5473</idno>
+		</author>
+		<idno type="DOI">10.1212/wnl.0000000000207074</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/36720639/" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurology</title>
+		<title level="j" type="abbrev">Neurology</title>
+		<idno type="ISSN">0028-3878</idno>
+		<idno type="ISSNe">1526-632X</idno>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page" from="1067" to="1071" />
+			<date type="published" when="2023-05-30">2023</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Parasuram NR, Crawford AL, Mazurek MH, et al. Future of Neurology &amp; Technology: neuroimaging made accessible using low-field, portable MRI. Neurology. 2023;100(22):1067-71. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 36720 639/</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Methodology for Low-Field, Portable Magnetic Resonance Neuroimaging at the Bedside</title>
+		<author>
+			<persName><forename type="first">Anjali</forename><forename type="middle">M</forename><surname>Prabhat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">L</forename><surname>Crawford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mercy</forename><forename type="middle">H</forename><surname>Mazurek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">M</forename><surname>Yuen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isha</forename><forename type="middle">R</forename><surname>Chavva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrienne</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">V</forename><surname>Hofmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nona</forename><surname>Timario</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><forename type="middle">R</forename><surname>Qualls</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juliana</forename><surname>Helland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Wira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Sze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fneur.2021.760321</idno>
+		<ptr target="www.frontiersin.org" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neurology</title>
+		<title level="j" type="abbrev">Front. Neurol.</title>
+		<idno type="ISSNe">1664-2295</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">760321</biblScope>
+			<date type="published" when="2021-12-10">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Prabhat AM, Crawford AL, Mazurek MH, et al. Methodology for low-field, portable magnetic resonance neuroimaging at the bedside. Front Neurol. 2021;12:760321 [cited 2024]; Available from: www. front iersin. org</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Emerging ethical issues raised by highly portable MRI research in remote and resource-limited international settings</title>
+		<author>
+			<persName><forename type="first">Francis</forename><forename type="middle">X</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">M</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Supriya</forename><surname>Bhavnani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Deoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jed</forename><forename type="middle">T</forename><surname>Elison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Damien</forename><surname>Fair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Garwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">S</forename><surname>Gee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sairam</forename><surname>Geethanath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kendrick</forename><surname>Kay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelvin</forename><forename type="middle">O</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgia</forename><surname>Lockwood Estrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monica</forename><surname>Luciana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Peloquin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Rommelfanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicoline</forename><surname>Schiess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><surname>Siddiqui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Efraín</forename><surname>Torres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Thomas</forename><surname>Vaughan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2021.118210</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/34062266/;238:118210" />
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">238</biblScope>
+			<biblScope unit="page">118210</biblScope>
+			<date type="published" when="2021-09">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Shen FX, Wolf SM, Bhavnani S, Deoni S, Elison JT, Fair D, et al. Emerging ethical issues raised by highly portable MRI research in remote and resource-limited international set- tings. NeuroImage. 2021 [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 34062 266/ ;238:118210.</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Managing Patients With Unlabeled Passive Implants on &lt;scp&gt;MR&lt;/scp&gt; Systems Operating Below 1.5 T</title>
+		<author>
+			<persName><forename type="first">Frank</forename><forename type="middle">G</forename><surname>Shellock</surname></persName>
+			<idno type="ORCID">0000-0002-6823-6031</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunder</forename><surname>Rajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandar</forename><forename type="middle">N</forename><surname>Nacev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">V</forename><surname>Crues</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.29002</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/37767980/" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1514" to="1522" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Shellock FG, Rosen MS, Webb A, et al. Managing patients with unlabeled passive implants on MR systems operating below 1.5 T. J Magn Reson Imaging. 2024;59(5):1514-22. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 37767 980/</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Utilization of an ultra-low-field, portable magnetic resonance imaging for brain tumor assessment in lower middle-income countries</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Altaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Waqas Saeed</forename><surname>Baqai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faiza</forename><surname>Urooj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Sami</forename><surname>Alam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hafiza</forename><forename type="middle">Fatima</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatima</forename><surname>Mubarak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edmond</forename><forename type="middle">A</forename><surname>Knopp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">M</forename><surname>Siddiqui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Ather</forename><surname>Enam</surname></persName>
+		</author>
+		<idno type="DOI">10.25259/sni_123_2023</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/37560587/" />
+	</analytic>
+	<monogr>
+		<title level="j">Surgical Neurology International</title>
+		<idno type="ISSN">2229-5097</idno>
+		<idno type="ISSNe">2152-7806</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">260</biblScope>
+			<date type="published" when="2023-07-28">2023</date>
+			<publisher>Scientific Scholar</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Altaf A, Baqai MWS, Urooj F, Alam MS, Aziz HF, Mubarak F, et al. Utilization of an ultra-low-field, portable magnetic res- onance imaging for brain tumor assessment in lower middle- income countries. Surg Neurol Int. 2023;14:260 [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 37560 587/</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Development of a mobile low-field MRI scanner</title>
+		<author>
+			<persName><forename type="first">Sean</forename><forename type="middle">C L</forename><surname>Deoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Medeiros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandra</forename><forename type="middle">T</forename><surname>Deoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phoebe</forename><surname>Burton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Beauchemin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viren</forename><surname>D’sa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eddy</forename><surname>Boskamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samantha</forename><surname>By</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Mcnulty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Mileski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">E</forename><surname>Welch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Huentelman</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-022-09760-2</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/35383255/" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5690</biblScope>
+			<date type="published" when="2022-04-05">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Deoni SCL, Medeiros P, Deoni AT, Burton P, Beauchemin J, D&apos;Sa V, et al. Development of a mobile low-field MRI scanner. Sci Rep. 2022;12(1):5690 [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 35383 255/</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Assessment of Brain Injury Using Portable, Low-Field Magnetic Resonance Imaging at the Bedside of Critically Ill Patients</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mercy</forename><forename type="middle">H</forename><surname>Mazurek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">M</forename><surname>Yuen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">A</forename><surname>Cahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">T</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrienne</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">A</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">J</forename><surname>Gilmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><forename type="middle">J</forename><surname>Falcone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nils</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">T</forename><surname>Gobeske</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Firas</forename><surname>Kaddouh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">Y</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Schindler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lauren</forename><surname>Sansing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Matouk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Rothberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Sze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Siner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serena</forename><surname>Spudich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamaneurol.2020.3263</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/32897296/" />
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Neurology</title>
+		<title level="j" type="abbrev">JAMA Neurol</title>
+		<idno type="ISSN">2168-6149</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">41</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Sheth KN, Mazurek MH, Yuen MM, Cahn BA, Shah JT, Ward A, et al. Assessment of brain injury using portable, low-field magnetic resonance imaging at the bedside of critically ill pa- tients. JAMA Neurol. 2020;78(1):41-7. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 32897 296/</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Assessing the SAfety and FEasibility of bedside portable low-field brain Magnetic Resonance Imaging in patients on ECMO (SAFE-MRI ECMO study): study protocol and first case series experience</title>
+		<author>
+			<persName><forename type="first">Sung-Min</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Wilcox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Acton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Rando</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Etchill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katherine</forename><surname>Giuliano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Errol</forename><forename type="middle">L</forename><surname>Bush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haris</forename><forename type="middle">I</forename><surname>Sair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Pitts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><forename type="middle">Soo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Glenn</forename><surname>Whitman</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13054-022-03990-6</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/35501837/" />
+	</analytic>
+	<monogr>
+		<title level="j">Critical Care</title>
+		<title level="j" type="abbrev">Crit Care</title>
+		<idno type="ISSNe">1364-8535</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">119</biblScope>
+			<date type="published" when="2022-04-30">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Cho SM, Wilcox C, Keller S, Acton M, Rando H, Etchill E, et al. Assessing the SAfety and FEasibility of bedside portable low- field brain magnetic resonance imaging in patients on ECMO (SAFE-MRI ECMO study): study protocol and first case series experience. Crit Care. 2022;26(1):119 [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 35501 837/</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Diffusion‐Weighted Imaging Fluid‐Attenuated Inversion Recovery Mismatch on Portable, Low‐Field Magnetic Resonance Imaging Among Acute Stroke Patients</title>
+		<author>
+			<persName><forename type="first">Annabel</forename><surname>Sorby‐adams</surname></persName>
+			<idno type="ORCID">0000-0003-1648-3898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>De Havenon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seyedmehdi</forename><surname>Payabvash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Sze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nandor</forename><forename type="middle">K</forename><surname>Pinter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinay</forename><surname>Jaikumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Siddiqui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Baldassano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana‐lucia</forename><surname>Garcia‐guarniz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Zabinska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dheeraj</forename><surname>Lalwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emma</forename><surname>Peasley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">N</forename><surname>Goldstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivia</forename><forename type="middle">K</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><forename type="middle">W</forename><surname>Schaefer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">R</forename><surname>Wira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Pitts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivien</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">W</forename><surname>Muir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahid</forename><forename type="middle">M</forename><surname>Nimjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Kirsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Eugenio</forename><surname>Iglesias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+			<idno type="ORCID">0000-0003-2003-5473</idno>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/ana.26954</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/38738750/" />
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Neurology</title>
+		<title level="j" type="abbrev">Annals of Neurology</title>
+		<idno type="ISSN">0364-5134</idno>
+		<idno type="ISSNe">1531-8249</idno>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="321" to="331" />
+			<date type="published" when="2024-05-13">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Sorby-Adams A, Guo J, de Havenon A, et al. Diffusion- weighted imaging fluid-attenuated inversion recovery mis- match on portable, low-field magnetic resonance imaging among acute stroke patients. Ann Neurol. 2024;96(2):321-31. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 38738 750/ .</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brady</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/42.906424</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="57" />
+			<date type="published" when="2001">2001</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang Y, Brady M, Smith S. Segmentation of brain MR im- ages through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imaging. 2001;20(1):45-57.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Brain imaging in the assessment for epilepsy surgery</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">S</forename><surname>Duncan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gavin</forename><forename type="middle">P</forename><surname>Winston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">J</forename><surname>Koepp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastien</forename><surname>Ourselin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1474-4422(15)00383-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Neurology</title>
+		<title level="j" type="abbrev">The Lancet Neurology</title>
+		<idno type="ISSN">1474-4422</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="420" to="433" />
+			<date type="published" when="2016-04">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Duncan JS, Winston GP, Koepp MJ, Ourselin S. Brain imaging in the assessment for epilepsy surgery. The Lancet Neurology. 2016;15:420-33.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Neuroimaging in epilepsy</title>
+		<author>
+			<persName><forename type="first">Meneka</forename><forename type="middle">Kaur</forename><surname>Sidhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">S</forename><surname>Duncan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josemir</forename><forename type="middle">W</forename><surname>Sander</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/wco.0000000000000568</idno>
+		<ptr target="http://insights.ovid.com/crossref?an=00019052-900000000-99118" />
+	</analytic>
+	<monogr>
+		<title level="j">Current Opinion in Neurology</title>
+		<idno type="ISSN">1350-7540</idno>
+		<idno type="ISSNe">1473-6551</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="371" to="378" />
+			<date type="published" when="2018-08">2018</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sidhu MK, Duncan JS, Sander JW. Neuroimaging in epilepsy. Curr Opin Neurol. 2018;31(4):371-8. Available from: http:// insig hts. ovid. com/ cross ref? an= 00019 052-90000 0000-99118</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">MRI-identified pathology in adults with new-onset seizures</title>
+		<author>
+			<persName><forename type="first">Tahir</forename><surname>Hakami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anne</forename><surname>Mcintosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marian</forename><surname>Todaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elaine</forename><surname>Lui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raju</forename><surname>Yerra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Meng</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>French</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Desmond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zelko</forename><surname>Matkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terence</forename><forename type="middle">J</forename><surname>O'brien</surname></persName>
+		</author>
+		<idno type="DOI">10.1212/wnl.0b013e3182a35193</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurology</title>
+		<title level="j" type="abbrev">Neurology</title>
+		<idno type="ISSN">0028-3878</idno>
+		<idno type="ISSNe">1526-632X</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="920" to="927" />
+			<date type="published" when="2013-09-03">2013</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hakami T, McIntosh A, Todaro M, et al. MRI-identified pathology in adults with new-onset seizures. Neurology. 2013;81(10):920-7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Super resolution using sparse sampling at portable ultra-low field MR</title>
+		<author>
+			<persName><forename type="first">Corinne</forename><surname>Donnay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serhat</forename><forename type="middle">V</forename><surname>Okar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charidimos</forename><surname>Tsagkas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">María</forename><forename type="middle">I</forename><surname>Gaitán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Megan</forename><surname>Poorman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Reich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Govind</forename><surname>Nair</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fneur.2024.1330203</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neurology</title>
+		<title level="j" type="abbrev">Front. Neurol.</title>
+		<idno type="ISSNe">1664-2295</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">1330203</biblScope>
+			<date type="published" when="2024-05-24">2024</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Donnay C, Okar SV, Tsagkas C, Gaitán MI, Poorman M, Reich DS, et al. Super resolution using sparse sampling at portable ultra-low field MR. Front Neurol. 2024;15:1330203.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Bridging the gap: improving correspondence between low-field and high-field magnetic resonance images in young people</title>
+		<author>
+			<persName><forename type="first">Rebecca</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">A</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><surname>Corcoran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">Campbell</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">C</forename><surname>Glahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Jalbrzikowski</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fneur.2024.1339223</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neurology</title>
+		<title level="j" type="abbrev">Front. Neurol.</title>
+		<idno type="ISSNe">1664-2295</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">1339223</biblScope>
+			<date type="published" when="2024-02-23">2024</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Cooper R, Hayes RA, Corcoran M, Sheth KN, Arnold TC, Stein JM, et al. Bridging the gap: improving correspondence between low-field and high-field magnetic resonance images in young people. Front Neurol. 2024 [cited 2024];15:1339223.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Quantitative Brain Morphometry of Portable Low-Field-Strength MRI Using Super-Resolution Machine Learning</title>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Eugenio</forename><surname>Iglesias</surname></persName>
+			<idno type="ORCID">0000-0001-7569-173X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Riana</forename><surname>Schleicher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sonia</forename><surname>Laguna</surname></persName>
+			<idno type="ORCID">0000-0003-3504-2051</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Billot</surname></persName>
+			<idno type="ORCID">0000-0002-3018-1282</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><surname>Schaefer</surname></persName>
+			<idno type="ORCID">0000-0002-4222-6134</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brenna</forename><surname>Mckaig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">N</forename><surname>Goldstein</surname></persName>
+			<idno type="ORCID">0000-0002-6406-1828</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+			<idno type="ORCID">0000-0002-2519-8530</idno>
+		</author>
+		<idno type="DOI">10.1148/radiol.220522</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">306</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">220522</biblScope>
+			<date type="published" when="2023-03-01">2023</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Iglesias JE, Schleicher R, Laguna S, Billot B, Schaefer P, McKaig B, et al. Quantitative brain morphometry of portable low- field-strength MRI using super-resolution machine learning. Radiology. 2023;306(3):e220522.</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Robust machine learning segmentation for large-scale analysis of heterogeneous clinical brain MRI datasets</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Billot</surname></persName>
+			<idno type="ORCID">0000-0002-3018-1282</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Colin</forename><surname>Magdamo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">You</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">E</forename><surname>Arnold</surname></persName>
+			<idno type="ORCID">0000-0002-9487-415X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sudeshna</forename><surname>Das</surname></persName>
+			<idno type="ORCID">0000-0002-9486-6811</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Eugenio</forename><surname>Iglesias</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.2216399120</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">e2216399120</biblScope>
+			<date type="published" when="2023-02-21">2023</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Billot B, Magdamo C, Cheng Y, Arnold SE, Das S, Iglesias JE. Robust machine learning segmentation for large-scale analysis of heterogeneous clinical brain MRI datasets. Proc Natl Acad Sci USA. 2023;120(9):e2216399120.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Sensitivity of portable low-field magnetic resonance imaging for multiple sclerosis lesions</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">Campbell</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danni</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serhat</forename><forename type="middle">V</forename><surname>Okar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Govind</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samantha</forename><surname>By</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karan</forename><forename type="middle">D</forename><surname>Kawatra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">E</forename><surname>Robert-Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">M</forename><surname>Desiderio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">K</forename><surname>Schindler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Russell</forename><forename type="middle">T</forename><surname>Shinohara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">S</forename><surname>Reich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nicl.2022.103101</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage: Clinical</title>
+		<title level="j" type="abbrev">NeuroImage: Clinical</title>
+		<idno type="ISSN">2213-1582</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">103101</biblScope>
+			<date type="published" when="2022">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arnold TC, Tu D, Okar SV, Nair G, By S, Kawatra KD, et al. Sensitivity of portable low-field magnetic resonance im- aging for multiple sclerosis lesions. Neuroimage Clin. 2022;35:103101.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Ultra-low-field brain MRI morphometry: test-retest reliability and correspondence to high-field MRI</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Váša</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bennallick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>Bourke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Padormo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Baljer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Briski</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2024.08.14.607942v1</idno>
+		<ptr target="https://www.biorxiv.org/content/10.1101/2024.08.14.607942v1" />
+	</analytic>
+	<monogr>
+		<title level="j">bioRxiv</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Váša F, Bennallick C, Bourke NJ, Padormo F, Baljer L, Briski U, et al. Ultra-low-field brain MRI morphometry: test-retest re- liability and correspondence to high-field MRI. bioRxiv. 2024; [cited 2024]. Available from: https://www.biorxiv.org/content/ 10.1101/2024.08.14.607942v1</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Low‐field MRI: A report on the 2022 ISMRM workshop</title>
+		<author>
+			<persName><forename type="first">Adrienne</forename><forename type="middle">E</forename><surname>Campbell‐washburn</surname></persName>
+			<idno type="ORCID">0000-0002-7169-5693</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><forename type="middle">E</forename><surname>Keenan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">P</forename><surname>Mugler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krishna</forename><forename type="middle">S</forename><surname>Nayak</surname></persName>
+			<idno type="ORCID">0000-0001-5735-3550</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">G</forename><surname>Webb</surname></persName>
+			<idno type="ORCID">0000-0003-4045-9732</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Johnes</forename><surname>Obungoloch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Hennig</surname></persName>
+			<idno type="ORCID">0000-0002-2273-3497</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Najat</forename><surname>Salameh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">K</forename><surname>Sodickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">P</forename><surname>Marques</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Orlando</forename><forename type="middle">P</forename><surname>Simonetti</surname></persName>
+			<idno type="ORCID">0000-0002-8994-0095</idno>
+		</author>
+		<idno type="DOI">10.1002/mrm.29743</idno>
+		<ptr target="https://pubmed.ncbi.nlm.nih.gov/37345725/" />
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance in Medicine</title>
+		<title level="j" type="abbrev">Magnetic Resonance in Med</title>
+		<idno type="ISSN">0740-3194</idno>
+		<idno type="ISSNe">1522-2594</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1682" to="1694" />
+			<date type="published" when="2023-06-22">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Campbell-Washburn AE, Keenan KE, Hu P, Mugler JP 3rd, Nayak KS, Webb AG, et al. Low-field MRI: a report on the 2022 ISMRM workshop. Magn Reson Med. 2023;90(4):1682-94. [cited 2024]; Available from: https:// pubmed. ncbi. nlm. nih. gov/ 37345 725/</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Climate change and epilepsy: Time to take action</title>
+		<author>
+			<persName><forename type="first">Sanjay</forename><forename type="middle">M</forename><surname>Sisodiya</surname></persName>
+			<idno type="ORCID">0000-0002-1511-5893</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hayley</forename><forename type="middle">J</forename><surname>Fowler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iain</forename><surname>Lake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosemary</forename><forename type="middle">O</forename><surname>Nanji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><surname>Gawel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camila</forename><forename type="middle">V</forename><surname>Esguerra</surname></persName>
+			<idno type="ORCID">0000-0002-2271-8094</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Newton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aideen</forename><surname>Foley</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/epi4.12359</idno>
+		<ptr target="https://onlinelibrary.wiley.com/doi/full/10.1002/epi4.12359" />
+	</analytic>
+	<monogr>
+		<title level="j">Epilepsia Open</title>
+		<title level="j" type="abbrev">Epilepsia Open</title>
+		<idno type="ISSN">2470-9239</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="524" to="536" />
+			<date type="published" when="2019-09-20">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Sisodiya SM, Fowler HJ, Lake I, Nanji RO, Gawel K, Esguerra CV, et al. Climate change and epilepsy: time to take action. Epilepsia Open. 2019;4(4):524-36. [cited 2024]; Available from: https://onlinelibrary.wiley.com/doi/full/10.1002/epi4.12359</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Intraoperative use of low-field magnetic resonance imaging for brain tumors: A systematic review</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Altaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Shakir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Jawad Amin</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aabiya</forename><surname>Arif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatima</forename><surname>Mubarak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eddie</forename><surname>Knopp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><surname>Siddiqui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Ather</forename><surname>Enam</surname></persName>
+		</author>
+		<idno type="DOI">10.25259/sni_510_2023</idno>
+		<ptr target="/pmc/articles/PMC10629339/" />
+	</analytic>
+	<monogr>
+		<title level="j">Surgical Neurology International</title>
+		<idno type="ISSN">2229-5097</idno>
+		<idno type="ISSNe">2152-7806</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">357</biblScope>
+			<date type="published" when="2023-10-06">2023</date>
+			<publisher>Scientific Scholar</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Altaf A, Shakir M, Malik MJA, Arif A, Islam O, Mubarak F, et al. Intraoperative use of low-field magnetic resonance imaging for brain tumors: a systematic review. Surg Neurol Int. 2023;14:357 [cited 2024]; Available from: /pmc/articles/PMC10629339/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Intraoperative use of ultra-low-field, portable magnetic resonance imaging – first report</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Altaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Waqas Saeed</forename><surname>Baqai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faiza</forename><surname>Urooj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Sami</forename><surname>Alam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hafiza</forename><forename type="middle">Fatima</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatima</forename><surname>Mubarak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edmond</forename><surname>Knopp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><surname>Siddiqui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Ather</forename><surname>Enam</surname></persName>
+		</author>
+		<idno type="DOI">10.25259/sni_124_2023</idno>
+		<ptr target=":/pmc/articles/PMC10316138/" />
+	</analytic>
+	<monogr>
+		<title level="j">Surgical Neurology International</title>
+		<idno type="ISSN">2229-5097</idno>
+		<idno type="ISSNe">2152-7806</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">212</biblScope>
+			<date type="published" when="2023-06-23">2023</date>
+			<publisher>Scientific Scholar</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Altaf A, Baqai MWS, Urooj F, Alam MS, Aziz HF, Mubarak F, et al. Intraoperative use of ultra-low-field, portable magnetic resonance imaging-first report. Surg Neurol Int. 2023;14:212 [cited 2024]; Available from: /pmc/articles/PMC10316138/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Brain imaging with portable low-field MRI</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Taylor</forename><surname>Kimberly</surname></persName>
+			<idno type="ORCID">0000-0002-2519-8530</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Annabel</forename><forename type="middle">J</forename><surname>Sorby-Adams</surname></persName>
+			<idno type="ORCID">0000-0003-1648-3898</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">G</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ed</forename><forename type="middle">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Beekman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ritvij</forename><surname>Bowry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">J</forename><surname>Schiff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>De Havenon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><forename type="middle">X</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Sze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><surname>Schaefer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Eugenio</forename><surname>Iglesias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">S</forename><surname>Rosen</surname></persName>
+			<idno type="ORCID">0000-0002-7194-002X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Sheth</surname></persName>
+			<idno type="ORCID">0000-0003-2003-5473</idno>
+		</author>
+		<idno type="DOI">10.1038/s44222-023-00086-w</idno>
+		<ptr target="https://www.nature.com/articles/s44222-023-00086-w" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Bioengineering</title>
+		<title level="j" type="abbrev">Nat Rev Bioeng</title>
+		<idno type="ISSNe">2731-6092</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="617" to="630" />
+			<date type="published" when="2023-07-17">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>cited 2024</note>
+	<note type="raw_reference">Kimberly WT, Sorby-Adams AJ, Webb AG, Wu EX, Beekman R, Bowry R, et al. Brain imaging with portable low-field MRI. Nat Rev Bioeng. 2023;1(9):617-30. [cited 2024]; Available from: https:// www. nature. com/ artic les/ s4422 2-023-00086 -w</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

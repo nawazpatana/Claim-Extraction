@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Mod-SE(2): a geometric deep learning framework for brain tumor classification and segmentation in MRI images</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-01-12">2026-01-12</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Clara</forename><forename type="middle">Lavita</forename><surname>Angelina</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Fu-Ren</forename><surname>Xiao</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Institute of Medical Device and Imaging , National Taiwan University , Taipei 10051 , Taiwan.</note>
+								<orgName type="department">Institute of Medical Device and Imaging</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10051</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff9">
+								<note type="raw_affiliation"><label>10</label> Program for Precision Health and Intelligent Medicine , National Taiwan University , Taipei 106319 , Taiwan.</note>
+								<orgName type="department">Program for Precision Health and Intelligent Medicine</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>106319</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sunil</forename><surname>Vyas</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Institute of Medical Device and Imaging , National Taiwan University , Taipei 10051 , Taiwan.</note>
+								<orgName type="department">Institute of Medical Device and Imaging</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10051</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> YongLin Institute of Health , National Taiwan University , Taipei 10087 , Taiwan.</note>
+								<orgName type="department">YongLin Institute of Health</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10087</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pan-Chyr</forename><surname>Yang</surname></persName>
+							<email>pcyang@ntu.edu.tw</email>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Internal Medicine , National Taiwan University Hospital , Taipei 100225 , Taiwan.</note>
+								<orgName type="department">Department of Internal Medicine</orgName>
+								<orgName type="institution">National Taiwan University Hospital</orgName>
+								<address>
+									<postCode>100225</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<note type="raw_affiliation"><label>5</label> College of Medicine , National Taiwan University Hospital , National Taiwan University , Taipei 10051 , Taiwan.</note>
+								<orgName type="department">College of Medicine</orgName>
+								<orgName type="institution" key="instit1">National Taiwan University Hospital</orgName>
+								<orgName type="institution" key="instit2">National Taiwan University</orgName>
+								<address>
+									<postCode>10051</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> YongLin Institute of Health , National Taiwan University , Taipei 10087 , Taiwan.</note>
+								<orgName type="department">YongLin Institute of Health</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10087</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<note type="raw_affiliation"><label>9</label> Taiwan International Bio Research Center , National Taiwan University , Taipei 106319 , Taiwan.</note>
+								<orgName type="department">Taiwan International Bio Research Center</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>106319</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff9">
+								<note type="raw_affiliation"><label>10</label> Program for Precision Health and Intelligent Medicine , National Taiwan University , Taipei 106319 , Taiwan.</note>
+								<orgName type="department">Program for Precision Health and Intelligent Medicine</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>106319</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hsuan-Ting</forename><surname>Chang</surname></persName>
+							<email>htchang@yuntech.edu.tw</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Graduate School of Engineering Science and Technology , National Yunlin University of Science and Technology , Yunlin 64002 , Taiwan.</note>
+								<orgName type="department">Graduate School of Engineering Science and Technology</orgName>
+								<orgName type="institution">National Yunlin University of Science and Technology</orgName>
+								<address>
+									<postCode>64002</postCode>
+									<settlement>Yunlin</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Electrical Engineering , National Yunlin University of Science and Tech- nology , Yunlin 64002 , Taiwan.</note>
+								<orgName type="department">Department of Electrical Engineering</orgName>
+								<orgName type="institution">National Yunlin University of Science and Tech- nology</orgName>
+								<address>
+									<postCode>64002</postCode>
+									<settlement>Yunlin</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Graduate School of Intelligent Data Science , National Yunlin University of Science and Technology , Yunlin 64002 , Taiwan.</note>
+								<orgName type="department">Graduate School of Intelligent Data Science</orgName>
+								<orgName type="institution">National Yunlin University of Science and Technology</orgName>
+								<address>
+									<postCode>64002</postCode>
+									<settlement>Yunlin</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuan</forename><surname>Luo</surname></persName>
+							<email>yuanluo@ntu.edu.tw</email>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Institute of Medical Device and Imaging , National Taiwan University , Taipei 10051 , Taiwan.</note>
+								<orgName type="department">Institute of Medical Device and Imaging</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10051</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<note type="raw_affiliation"><label>7</label> YongLin Institute of Health , National Taiwan University , Taipei 10087 , Taiwan.</note>
+								<orgName type="department">YongLin Institute of Health</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10087</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<note type="raw_affiliation"><label>8</label> Depart- ment of Biomedical Engineering , National Taiwan University , Taipei 10617 , Taiwan.</note>
+								<orgName type="department">Depart- ment of Biomedical Engineering</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>10617</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<note type="raw_affiliation"><label>9</label> Taiwan International Bio Research Center , National Taiwan University , Taipei 106319 , Taiwan.</note>
+								<orgName type="department">Taiwan International Bio Research Center</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>106319</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff9">
+								<note type="raw_affiliation"><label>10</label> Program for Precision Health and Intelligent Medicine , National Taiwan University , Taipei 106319 , Taiwan.</note>
+								<orgName type="department">Program for Precision Health and Intelligent Medicine</orgName>
+								<orgName type="institution">National Taiwan University</orgName>
+								<address>
+									<postCode>106319</postCode>
+									<settlement>Taipei</settlement>
+									<country key="TW">Taiwan</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Mod-SE(2): a geometric deep learning framework for brain tumor classification and segmentation in MRI images</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Journal of Biomedical Science</title>
+						<title level="j" type="abbrev">J Biomed Sci</title>
+						<idno type="eISSN">1423-0127</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">33</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2026-01-12" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">D3697FB6FB8DDBE7691CFF537C893E4D</idno>
+					<idno type="DOI">10.1186/s12929-025-01213-y</idno>
+					<note type="submission">Received: 4 September 2025 Accepted: 20 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T23:58+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Geometric deep learning</term>
+					<term>Mod-SE(2)</term>
+					<term>Brain tumor classification</term>
+					<term>MRI</term>
+					<term>Medical imaging</term>
+					<term>Roto-translation invariance</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Background Accurate classification and segmentation of brain tumors in MRI scans are essential for diagnosis and treatment planning. However, the heterogeneous morphology of brain tumors, including irregular shapes, sizes, and spatial variability, makes this task highly challenging. Traditional convolutional neural networks (CNNs) lack rotational and translational invariance, which limits their ability to generalize across different orientations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>This study introduces a geometric deep learning framework called Modified Special Euclidean (Mod-SE(2)), which integrates geometric priors to enhance spatial consistency and reduce reliance on data augmentation. By incorporating symmetry-preserving group convolutions and spatial priors, Mod-SE(2) improves the robustness in tumor classification (namely Mod-Cls-SE(2)) and segmentation (mentioned as Mod-Seg-SE(2)). Unlike conventional CNNs, geometric deep learning encodes roto-translation symmetry directly into the architecture. This addresses the spatial variability and orientation sensitivity that are common in MRI-based diagnostics. Mod-SE(2) was evaluated on three MRI datasets and two other medical image datasets for classification and segmentation tasks. It incorporates lifting layers, group convolutions, and feature recalibration. It was benchmarked against U-Net, NN U-Net, VGG16, VGG19, and ResNet architectures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>Mod-Cls-SE(2) achieved an average classification accuracy of 0.914, outperforming ResNet101 with 0.682, VGG16 with 0.705, and their variants. In the binary classification of five tumor types (AVM, Meningioma, Pituitary, Metastases, and Schwannoma) from the private dataset, the model achieved an accuracy of 0.935 and a precision of 0.960 for pituitary tumors and a precision of 0.96. For segmentation tasks, Mod-Seg-SE(2) achieved a dice coefficient of 0.9503 and an IoU of 0.9616 on the BraTS2020 dataset. This result exceeds those of U-Net and NN U-Net with dice scores of 0.797 and 0.815, respectively. The model also reduced inference time and demonstrated strong computational performance.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Brain tumors pose a significant challenge in clinical practice due to their diverse appearances, growth patterns, and locations within the brain <ref type="bibr" target="#b0">[1]</ref>. Among the various intracranial growths encountered, arteriovenous malformations (AVMs), pituitary tumors, meningiomas, schwannomas, and metastatic lesions account for a large percentage of diagnosed cases. Although Magnetic Resonance Imaging (MRI) is the established standard for evaluating brain tumors, providing high-resolution details of soft tissues and anatomy <ref type="bibr" target="#b1">[2]</ref>, distinguishing between different tumor types can be difficult to distinguish. e precise classification and segmentation of these tumors remains challenging due to overlapping features seen on imaging and the variability within individual tumors <ref type="bibr" target="#b2">[3,</ref><ref type="bibr">4]</ref>. e necessity of precise diagnostic tools that can accurately differentiate between these tumor types underscores the importance of innovations in medical imaging technology <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6]</ref>. While histopathology and molecular analysis remain essential for definitive diagnosis, prognostication, and treatment planning in neuro-oncology, these methods are time-consuming, require invasive procedures, and are not always practical in urgent clinical situations. ese limitations have led to a growing interest in automated, high-precision diagnostic tools that can deliver reliable results with minimal human intervention. In this work, we aim to enhance non-invasive imaging analysis prior to histopathology.</p><p>Each type of brain tumor presents unique challenges for both imaging and biological interpretation. AVMs, being congenital vascular abnormalities, have complex, tangled vessel structures that make them difficult to outline precisely. Pituitary tumors, though often small, exhibit a wide range of functional profiles that impact hormone levels and thus complicate diagnosis. Meningiomas and schwannomas can appear similar on MRI scans despite originating from different cell types. e diverse imaging characteristics of metastases, which depend on their primary source, add another layer of complexity. Accurately classifying and delineating these various tumor types is crucial for effective treatment planning, guiding surgical procedures, and predicting patient outcomes.</p><p>Convolutional neural networks (CNNs) have shown strong performance in both classification and segmentation tasks, including lung cancer classification <ref type="bibr" target="#b6">[7]</ref> and brain tumor analysis <ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref>. Notably, models like Res-BRNet and EfficientNet-B0 have achieved impressive results when trained on large-scale datasets <ref type="bibr" target="#b10">[11]</ref>. Similarly, architectures such as U-Net <ref type="bibr" target="#b11">[12]</ref> and NN U-Net <ref type="bibr" target="#b12">[13]</ref> have become the standard for tumor segmentation tasks. Dee-pLabV3+ and Efficient-Enhanced U-Net also achieved impressive results when trained on BraTS dataset <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b14">15]</ref>. However, CNNs inherently struggle with spatial variations, especially rotations and translations. is requires extensive data augmentation, which can lead to inconsistencies in how features are extracted from MRIs acquired in different orientations. Consequently, this increases computational demands and reduces the interpretability of the models. Although transfer learning has improved performance in some instances <ref type="bibr" target="#b15">[16]</ref>, pre-trained models still lack an inherent understanding of geometric invariance.</p><p>To overcome these limitations, geometric deep learning (GDL) has emerged as a promising alternative. Models such as Group Equivariant CNNs (G-CNNs) <ref type="bibr" target="#b16">[17]</ref> and Harmonic Networks <ref type="bibr" target="#b17">[18]</ref> are designed to respect rotational symmetry, making them more robust to changes in orientation. However, many of these models primarily focus on rotational equivariance and often overlook translational invariance, which is vital for accurately locating tumors. Previous research has typically concentrated on either classification or segmentation, rarely addressing both tasks within a unified model or encompassing the full spectrum of brain tumor diversity.</p><p>GDL provides a biologically inspired approach to incorporating spatial knowledge and structural symmetry into neural networks <ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref>. It has gained increasing traction across medical imaging domains beyond brain tumor classification. For instance, Bronstein et al. demonstrated the GDL in analyzing cortical surfaces and mapping functional regions using non-Euclidean mesh representations <ref type="bibr" target="#b21">[22]</ref>. In diffusion MRI, Ewert et al. introduced a GDL method for continuous signal reconstruction <ref type="bibr" target="#b22">[23]</ref>. A deeper representation of GDL is also employed. Zhang et al. applied local-to-global graph neural networks to classify Autism Spectrum Disorder (ASD) and Alzheimer's disease (AD) by analyzing disease-related local brain regions and biomarkers <ref type="bibr" target="#b23">[24]</ref>. Additionally, Kerkela et al. modeled spherical neural networks to improve the estimation of microstructural data from brain MRI data <ref type="bibr" target="#b24">[25]</ref>.</p><p>is research improves prediction accuracy compared to models that apply less or no rotational variance. is emphasizes the effectiveness of a model in medical images for models that use rotational features, such as GDL methods. Zhu et al. proposed a unified GDL model to predict task-based fMRI activity from anatomical features in sMRI, highlighting cross-modal learning <ref type="bibr" target="#b25">[26]</ref>. In CT imaging, Koetzier et al. presented a graph-based deep reconstruction method to recover highfidelity CT volumes from undersampled data <ref type="bibr" target="#b26">[27]</ref>. Winkels and Cohen proved CNN model with roto-translation group convolutions performs similarly to a regular CNN with ten times less data <ref type="bibr" target="#b27">[28]</ref>. is research trained a roto-translation group 3D CNN on a pulmonary nodule detection dataset and compared it with a regular CNN model. e regular CNN model received data augmentation, yet still needed ten times more data to perform at an acceptable level. In digital pathology, Li et al. use GDL to conduct spatial analysis using histopathology images for single-cell analysis <ref type="bibr" target="#b28">[29]</ref>. Biologically, analyzing histopathology images at the single-cell level offers a significant advantage over traditional patch-based methods by providing detailed cellular information. is research focuses on exploring more into the microenvironment of a tumor. In their experiments, their proposed model has consistently eclipsed existing patchbased and cell graph-based methods across two independent datasets.</p><p>is study aims to address two fundamental tasks in neuro-oncological imaging, which are classifying various tumor types and performing semantic segmentation. For classification, we use a private MRI dataset containing five distinct tumor categories: AVM, meningioma, pituitary adenoma, metastatic tumors, and schwannoma. Arteriovenous malformations are vascular malformations with an incidence of approximately 1 per 100,000 per year and carry a risk of serious hemorrhage, where their detection via MRI is critical for preventing stroke and guiding surgical planning <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b30">31]</ref>. Meningiomas account for roughly 30-37 % of all primary brain tumors, are frequently benign, and often produce symptoms through mass effect, with MRI guiding both diagnosis and surgical strategy <ref type="bibr" target="#b31">[32]</ref>. Pituitary adenomas represent 10-25% of intracranial neoplasms, with microadenomas being particularly common (prevalence up to ~17%), and can cause visual or hormonal symptoms that MRI is uniquely suited to identify <ref type="bibr" target="#b32">[33]</ref>. Brain metastases, occurring in an estimated 10-40 % of cancer patients, are the most frequent intracranial tumors, significantly impacting prognosis and treatment decisions <ref type="bibr" target="#b33">[34]</ref>. Vestibular schwannomas (also called acoustic neuromas) are benign tumors arising from Schwann cells of the vestibular portion of the eighth cranial nerve. ey account for approximately 8-10% of all intracranial tumors and up to 80% of tumors in the cerebellopontine angle. Patients typically present with hearing loss, tinnitus, and balance disturbances <ref type="bibr" target="#b34">[35]</ref>. Collectively, these tumor types underscore the need for an imaging tool capable of both classification and localization across heterogeneous tumor morphologies in real-world neuro-oncology practice. For segmentation, we perform pixel-level labeling to precisely outline tumor regions. is is essential for estimating tumor volume and tracking its boundaries. Our goal is to provide radiologists with clinically valuable insights to assist them in diagnosis and treatment planning.</p><p>To achieve these goals, we introduce Mod-SE(2), a Modified Special Euclidean CNN that combines roto-translational equivariance with a mechanism for recalibrating feature importance. is approach ensures spatial consistency, enabling the model to robustly classify and segment brain tumors while reducing the need for extensive data augmentation. By integrating GDL, our approach leverages spatial relationships and structural priors. e GDL approach can significantly improve both classification accuracy and segmentation precision <ref type="bibr" target="#b35">[36]</ref>. Our primary contributions include: (1) developing Mod-SE(2), an extension of SE(2) CNNs that explicitly accounts for both rotational and translational transformations (2) demonstrating improved performance compared to conventional models using both publicly available and our private datasets and (3) analyzing computational efficiency and highlighting its reduced processing cost and improved scalability. From a clinical standpoint, Mod-SE(2) allows for a more interpretable and reproducible tumor analysis. Different tumor types, such as AVMs, schwannomas, and meningiomas, not only have distinct origins and exhibit characteristic spatial behaviors. By preserving these geometric structures, Mod-SE(2) makes predictions that more accurately reflect the actual anatomy. ese predictions can aid in tasks such as surgical planning and monitoring tumor progression over time. Furthermore, the model's ability to precisely map boundaries and provide high-resolution structural priors enhances interpretation and tumor localization.</p><p>is enables neurosurgeons to plan resections while preserving functional brain regions. Its ability to reduce processing time while maintaining accuracy makes Mod-SE(2) a practical tool for real-time neurodiagnostic workflows. Our model is versatile and clinically relevant across the full spectrum of neuro-oncology care.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head><p>is section explains the building blocks of the CNNbased Modified Special Euclidean (Mod-SE(2)) architecture. It highlights the core components that define this convolutional network, which is based on a modification of the Special Euclidean group SE <ref type="bibr" target="#b1">(2)</ref>. As part of this modification, we replaced the max-pooling layers in the baseline SE(2)-CNN with average pooling, as preliminary experiments showed that max pooling suppressed fine-scale activations critical for detecting small or morphologically complex tumors. Average pooling preserved these subtle yet informative signals, resulting in more stable spatial representations and improved robustness across both classification and segmentation settings. Specifically, it introduces two specialized variants, which are Mod-Cls-SE(2) for classification tasks and Mod-Seg-SE(2) for segmentation tasks. Additionally, this section outlines the evaluation metrics used to assess the robustness of the proposed models, or how well they perform or remain stable under specific conditions, such as geometric transformations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model architecture and training Mathematical Formulation of Mod-SE(2)</head><p>e proposed Mod-SE(2) ensures that the corresponding transformations in feature maps are preserved throughout the network when rotational and translational transformations are applied to the input. Mathematically, this is formulated as follows:</p><p>where f (x) represents the feature map that encodes tumor characteristics, and T g a Mod-SE(2) transfor- mation (e.g., rotation, or translation). Unlike standard CNNs, which require data augmentation, Mod-SE(2) group convolutions inherently encode these transformations, ensuring robustness across varying orientations.</p><p>To maintain high-level stability, deeper layers enforce invariance, where group pooling aggregates features across transformations, thereby forming figure representations. Figure <ref type="figure">1</ref> shows the transformation visually. It illustrates a series of geometric transformations applied to a reference shape.</p><p>ese transformations include rotations, translations, and combinations of both. All this transformation applied (1)</p><formula xml:id="formula_0">T g (f (x)) = f (T g (x)) (2) f (T g (x)) = f (x)</formula><p>Fig. <ref type="figure">1</ref> Visualization of Mod-SE(2) transformations applied to a biological object, illustrating rotations, translations, and their combinations to the original shape, which is located at the center (Identity). Mathematically, the group action of SE(2) on a point x ∈ R 2 is defined as: where R θ is a rotation matrix, and t a translation vec- tor, reflecting the SE(2) group structure. For an element g = (x, R θ ) ∈ Mod-SE(2), transformations act as:</p><p>where I is an original input image. With equivariance in intermediate layers:</p><p>And invariance in classification: e Mod-SE(2) group models spatial transformations in 2D, combining rotation and translation <ref type="bibr" target="#b36">[37]</ref>. Each element g can be re ′ presented as a pair (x, R θ , where x denotes a translation vector (spatial shift for aligning anatomical structures), and R θ is a rotation matrix for angle θ , enabling orientation-invariant feature learning. This composition allows the Mod-SE(2) CNN to propagate spatial transformations coherently across network layers, ensuring consistent boundary localization and internal textures under varying orientations. This is an important step to achieve reliable segmentation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Network architecture</head><p>The Mod-SE(2) model was used for classification and segmentation. It incorporates roto-translation layers and group convolutions, which improve spatial feature extraction. These enhancements make the model particularly effective in medical imaging, where anatomical structures exhibit orientation variability <ref type="bibr" target="#b16">[17]</ref>.</p><p>To clarify in subsequent sections, we refer to the classification-specific configuration of the model as Mod-Cls, and the segmentation-specific configuration as Mod-Seg. Mod-Cls is optimized to identify and categorize image-level features, while the Mod-Seg configuration is tailored for pixel-level delineation of anatomical regions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification network</head><p>e core architecture is adapted from the original SE(2) group convolutional network proposed by <ref type="bibr" target="#b16">[17]</ref>, with</p><formula xml:id="formula_1">(3) T (θ ,t) (x) = R θ x + t (4) T g (I) = R θ • I + t (5) T g (f (I)) = f (T g (I)) (6) f (T g (I)) = f (I) (7) g.g′ = (x, R θ ) • (x′, R θ ′ ) = (R θ x′ + x, R θ +θ′ )</formula><p>custom modifications tailored to our dataset. Specifically, we replaced the original max pooling layers with average pooling. Average pooling resulted in smoother downsampling of features and improved the stability of the network when processing the high-resolution MRI scans in our dataset. Additionally, we fine-tuned the number of filters used in each layer and adjusted the dimensions of the intermediate feature representations to better align with the characteristics of our datasets, including their distribution, resolution, and inherent variability, of our datasets.</p><p>Figure <ref type="figure">2</ref> shows the classification pipeline of Mod-Cls-SE(2), which begins with a Conv2D layer (3 × 3 kernel, 32 filters), followed by the Lifting Layer (64 filters). e lifting layer plays a critical role by transforming the standard 2D image data, which exists on the Euclidean plane R 2 , into a richer, higher-dimensional representation on the SE(2) group. is abstract space inherently captures both translational and discrete rotational transformations.</p><p>is transformation is achieved by convolving the input image with a set of filters, each rotated at different angles (for instance, 8 or 16 distinct orientations). is process generates a set of feature maps that are oriented according to the features they detect. By encoding features based on both their location and their orientation, the lifting layer preserves crucial spatial structure and directional information, setting the stage for subsequent layers to perform equivariant processing. is joint encoding of position and orientation allows the network to differentiate between patterns that might look structurally similar but appear at different angles -a particularly important capability in the context of medical image analysis.</p><p>Following the lifting layer, the architecture employs a sequence of group convolution layers.</p><p>ese layers perform convolutions directly within the SE(2) group domain. Unlike standard convolutional layers, which are only equivariant to translations (meaning a shift in the input leads to a corresponding shift in the output), group convolutions maintain equivariance to both rotations and translations. is means that if the input image (or the features it contains) is shifted or rotated, the resulting output feature maps will transform consistently and predictably. is property makes our network significantly more robust to the natural anatomical variability. Consequently, this inherent geometric awareness reduces the need for extensive data augmentation during training and ultimately improves the model's generalization performance on unseen data.</p><p>To reduce the spatial dimensions and extract dominant features, we incorporate an average pooling layer after the lifting layer. Unlike max pooling, which captures only the most prominent activation in each region, average pooling summarizes features by computing their mean and preserving broader contextual information. After each group convolution, we apply batch normalization  Fig. 3 Mod-Seg-SE(2) architecture for brain tumor segmentation. The network includes an initial convolution and lifting layer, group convolutions for transformation robustness, and group deconvolutions (GdeConv) in the decoder for precise segmentation mask reconstruction</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Segmentation network</head><p>For the segmentation task, the Mod-Seg-SE(2) uses a U-Netinspired structure, where the encoder is the same as the previously described classification network. Figure <ref type="figure">3</ref> shows the architecture of the Mod-Seg-SE(2) CNN. e model includes the same lifting layer and stack of group convolution layers, enabling it to extract orientation-aware features that are equivariant to both rotation and translation (see Section 2: Mod-Seg-SE(2) Architecture in Supplementary File 1). Reusing this encoder allows the segmentation branch to benefit from a robust and geometrically informed feature representation that is already optimized for tumor classification.</p><p>e decoder replaces standard deconvolution layers with group deconvolutions (GDeconv), which perform transposed convolutions over the SE(2) group. Unlike traditional upsampling layers, which operate only in the spatial domain, GDeconv layers reconstruct features in both spatial and orientation dimensions. is allows the decoder to upsample SE(2)-structured feature maps while maintaining their equivariant properties. Consequently, the segmentation outputs preserve the model's geometric consistency and remain stable under transformations such as rotation and translation. Pairing a shared classification encoder with an equivariant decoder in this architectural design ensures that Mod-SE(2) can produce accurate and consistent segmentation masks across a wide range of tumor presentations and orientations. is structure enables the network to handle spatial variability in medical images without relying on extensive data augmentation, making it highly effective for brain MRI segmentation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 1 Mod-SE(2) architecture</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dataset and preprocessing</head><p>We evaluated Mod-SE(2) using three MRI datasets and two medical image datasets, which covered both classification and segmentation tasks (see Section 3: Dataset and preprocessing in Supplementary File 1).</p><p>e datasets used in our experiments are summarized in Table <ref type="table" target="#tab_0">1</ref>.</p><p>e MRI Alzheimer's dataset is primarily used for classification tasks, distinguishing between different stages of Alzheimer's disease. e Public MRI Brain Tumors dataset contains labeled tumor images for classification and segmentation tasks. It is labeled as public because the dataset is available publicly on the Kaggle platform. e private MRI Brain Tumors dataset was obtained from National Taiwan University (NTU) Hospital, Taiwan, and is not publicly available online (see Supplementary File 2-5). ese two datasets consist of high-resolution tumor scans and provide an additional test set to evaluate our model's generalizability.</p><p>e skin lesion and blood cell datasets are used for segmentation tasks. ey consist of paired images and corresponding ground truth masks that enable the model to accurately detect and localize target objects, such as lesions or cells, within their surrounding context. For the Skin Lesion dataset, the lesion types include malignant melanoma, benign melanocytic nevus, and seborrheic keratosis. For the Blood Cell dataset, the annotated white blood cell types include lymphocytes, monocytes, eosinophils, and neutrophils. ese datasets were included solely to evaluate the generalizability of Mod-Seg-SE(2) to other medical image segmentation domains beyond brain MRI.</p><p>Figure <ref type="figure" target="#fig_2">4</ref> shows representative examples from our private MRI brain tumor dataset under real-world clinical settings. Experienced radiologists have annotated each scan to serve as ground truth for classification and segmentation tasks.</p><p>e examples demonstrate the significant variability in tumor size, shape, intensity, and anatomical location, which reflects the inherent heterogeneity encountered in this field.</p><p>To ensure consistency across datasets and improve model performance, we applied a standardized preprocessing pipeline before training.</p><p>is pipeline included standardization to uniform resolution, histogram equalization, data augmentation, and lastly, pixel value normalization. First, we resized all MRI scans to a uniform resolution of 256×256 pixels to maintain consistency across datasets and facilitate batch processing in deep learning models. en, we performed intensity normalization using histogram equalization to enhance contrast and improve tumor visibility. is mitigates variations in brightness and contrast caused by different MRI acquisition protocols. To increase the dataset's diversity and improve the model's robustness to rotational features, minor augmentations were applied to the training data, including random rotations (up to ±15°) and scaling (±10%).</p><p>ese transformations help the model generalize better to unseen orientations and variations in tumor shape. Finally, all the image pixel intensities were normalized to the [0,1] range to stabilize training and prevent numerical instability. Normalization ensures that input values remain within a consistent range, thereby optimizing convergence speed during training. ese preprocessing steps ensure that the input data remains well-conditioned for deep learning models, which minimizes the impact of variability across MRI scans and improves Mod-SE(2)'s overall generalizability in brain tumor and Alzheimer's disease classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Training strategy and hyperparameter selection</head><p>For classification, three MRI datasets are used, which are the MRI Alzheimer's dataset for four-class classification (Mild Demented, Moderate Demented, Non-Demented, Very Mild Demented); the public MRI Brain Tumor dataset; and the private dataset for multi-class tumor classification, assessing the models' ability to differentiate pathological conditions.</p><p>For segmentation, the datasets include blood cell segmentation, skin lesion segmentation, and the private MRI brain tumor segmentation dataset across five tumor classes: AVM, Meningioma, Pituitary, Metastases, and Schwannoma.</p><p>e segmentation models addressed challenges such as cell overlap, boundary variations, and pixel-wise tumor delineation. Unlike standard CNNs that require extensive augmentation, Mod-SE( <ref type="formula">2</ref>) is inherently invariant to transformations, thus reducing the need for augmentation. e model is trained using the following configuration, as summarized in Table <ref type="table" target="#tab_1">2</ref>.</p><p>We ran all experiments on an NVIDIA GeForce RTX 3090, using TensorFlow 2.4 and <ref type="bibr">CUDA 11.</ref> is setup enabled efficient training of the data and computationally intensive group convolutions. We applied the following regularization techniques were applied: batch normalization stabilizes training by normalizing activations across layers, dropout (0.4 probability) reduces overfitting by randomly deactivating neurons during training, and weight decay (0.0005) acts as a regularization term to prevent excessive weight magnitudes.</p><p>ese techniques collectively improve model robustness, ensuring stable training and better generalization to unseen MRI scans.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation metrics</head><p>We evaluate the performance of the Mod-SE(2) CNN in classification (Mod-Cls-SE(2)) and segmentation (Mod-Seg-SE(2)) tasks using various metrics. We measure classification tasks using accuracy, precision, recall, and F1 score.</p><p>e segmentation task is evaluated based on its dice coefficient, Intersection over Union (IoU), precision, and recall value. ese metrics provide a comprehensive evaluation of the effectiveness of classification, which is crucial in medical imaging, where false positives and false negatives can have significant clinical consequences.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification metrics</head><p>Accuracy ( Acc ) is a measure of the model's overall cor- rectness. It is calculated by dividing the number of correctly classified instances by the total number of instances:  is metric provides an overview of the model's performs but may not sufficient in cases of class imbalance.</p><p>Precision ( P c ) quantifies the proportion of correctly predicted positive cases among all positive predictions. It ensures that the model minimizes false alarms, which is crucial in medical diagnostics. Similarly, recall ( R c ), also known as sensitivity, measures the model's ability to detect actual positive cases, ensuring that malignant cases are not overlooked.</p><p>ese metrics are defined as follows:</p><p>Finally, the F1 score ( F 1 ) provides a balanced meas- ure of precision and recall by computing their harmonic mean.</p><p>is metric is particularly useful in imbalanced datasets, where a high precision or recall alone may not be sufficient. It is defined as: is equation illustrates the trade-off between precision and recall, ensuring optimal classification performance, particularly in situations where false positives and false negatives carry significant consequences. Together, these metrics provide a comprehensive evaluation of the Mod-Cls-SE(2)'s classification performance. High values, particularly for the F 1 score, demonstrate the model's ability to accurately detect true positives while minimizing false positives and false negatives, making the model highly effective for real-world medical imaging applications. where A is the predicted segmentation and B is the ground truth.</p><p>e Intersection over Union (IoU) evaluates the ratio of the intersection to the union of the predicted and true regions, representing segmentation accuracy: e Precision ( P s ) quantifies the proportion of cor- rectly predicted positive pixels among all pixels predicted as positive. It is defined as: e Recall ( R s ), or sensitivity, measures the propor- tion of actual positive pixels that are correctly identified by the model, ensuring minimal false negatives in tumor detection:</p><p>ese metrics assess the Mod-Seg-SE(2)'s ability to segment brain tumors with high accuracy and consistency.</p><p>e dice coefficient and IoU are key for evaluating spatial overlap, ensuring the model's clinical viability in medical diagnostics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>is research evaluated segmentation and classification tasks using various medical imaging datasets, including blood cell images, skin lesion images, brain MRI <ref type="bibr" target="#b11">(12</ref></p><formula xml:id="formula_2">) D = 2 |A ∩ B| |A| + |B| (13) IoU = |A ∩ B| |A ∪ B|<label>(14)</label></formula><p>P s = True Positives True Positives + False Positive (15) R s = True Positives True Positives + False Negatives Optimal convergence point scans (both public and private), as well as MRI data from patients with Alzheimer's disease. All images were standardized to a 2D format and underwent normalization to ensure consistency in pixel intensity and reduce variations from acquisition conditions <ref type="bibr" target="#b40">[42]</ref>. e Mod-SE(2) modification was compared with VGG16 <ref type="bibr" target="#b41">[43]</ref>, VGG19 <ref type="bibr" target="#b42">[44]</ref>, ResNet50 <ref type="bibr" target="#b43">[45]</ref>, ResNet101 <ref type="bibr" target="#b44">[46]</ref>, HoverNet <ref type="bibr" target="#b45">[47]</ref>, and Harmonic Net <ref type="bibr" target="#b17">[18]</ref>, as well as U-Net based segmentation model from the work of <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b46">48]</ref> and No New U-Net (NN U-Net) <ref type="bibr" target="#b47">[49]</ref>, ensuring a comprehensive evaluation against both traditional deep learning and specialized segmentation networks. Using roto-translation equivariance, Mod-SE(2) demonstrated improved spatial consistency and reduced false positives, validating its robustness in multiple medical imaging tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification performance</head><p>Table <ref type="table" target="#tab_3">3</ref> shows the classification performance across the model. We compared the predicted labels generated by Mod-Cls-SE(2) with the expert-annotated ground truth labels provided in each dataset in public MRI brain classification. It achieves the highest accuracy of 0.906, precision of 0.910, recall of 0.904, and an exceptional F1 score of 0.908. ese results highlight the model's robustness in handling spatial transformations and its ability to maintain both sensitivity and specificity without relying excessively on data augmentation. In contrast, Harmon-icNet achieves a higher recall of 0.875 compared to most conventional models, although it slightly struggles with a precision of 0.830, resulting in a balanced F1 score of 0.852. Traditional CNN-based models such as VGG16, VGG19, and ResNet variants exhibit significantly lower performance.</p><p>eir accuracy values range from 0.755 to 0.8, which reinforces their limitations in dealing with spatial variability. VGG16 shows moderate recall of 0.795 and slightly better precision of 0.805, indicating a tendency toward false negatives. ese results confirm that the roto-translation equivariance of Mod-SE(2) effectively enhances feature stability, making it a more reliable and computationally efficient solution for brain MRI classification. Remarkably, despite its more sophisticated and computationally complex architecture, Mod-Cls-SE(2) has fewer parameters and is more efficient than denser models, such as VGG19 and ResNet101, in terms of computational resource utilization and performance.</p><p>is highlights its efficiency and effectiveness in clinical MRI classification.</p><p>Table <ref type="table">4</ref> shows the most effective model for private MRI brain classification. It achieves the highest performance across all evaluation metrics, with an accuracy of 0.931, precision of 0.947, recall of 0.918, and F1 score of 0.933. is comprehensive superiority highlights the Mod-SE(2) based model's robustness in correctly identifying positive cases while maintaining low false positive and false negative rates. Compared to all other models, including HarmonicNet, HoverNet, VGG variants, and ResNet architectures, Mod-Cls-SE(2) outperforms them all in every aspect. HarmonicNet, while also a group-equivariant model, trails behind in all metrics. Traditional CNN-based models such as VGG16, VGG19, ResNet50, and ResNet101 show notably lower performance, struggling particularly with recall and F1 score, which are key indicators of balanced and reliable classification. ese findings underscore the value of group-equivariant architectures, particularly Mod-SE(2)'s built-in rototranslation equivariance, in enhancing generalization and spatial understanding.</p><p>is makes Mod-Cls-SE(2) especially well-suited for complex medical imaging tasks, such as brain MRI classification.</p><p>Table <ref type="table" target="#tab_5">5</ref> shows Mod-Cls-SE(2)'s performance across five binary tumor classification tasks and highlights its ability to adapt to different tumor types with varying levels of sensitivity and specificity.</p><p>Among the tumor types, the Pituitary task achieves the highest precision of 0.960 and recall of 0.920, resulting in the best F1 score of 0.939.</p><p>is indicates that Mod-Cls-SE( <ref type="formula">2</ref>) is especially effective at identifying pituitary tumors with both high sensitivity and specificity. Meningioma also shows a balanced performance with a precision of 0.952, recall of 0.914, and F1 score of 0.932, while Schwannoma demonstrates a similarly robust performance precision of 0.945, recall of 0.910, and F1 score of 0.928. In contrast, AVM vs Non AVM and Metastases, though slightly lower, still maintain high overall performance with precision of 0.940 -0.945, recall of 0.905, and F1 scores of 0.924 and 0.923, respectively. ese results collectively suggest that Mod-Cls-SE(2) consistently balances precision and recall across different tumor classifications and excels in scenarios where high sensitivity is critical.</p><p>Table <ref type="table" target="#tab_6">6</ref> shows that Mod-Cls-SE(2) outperforms traditional models, including VGG16, VGG19, ResNet50, and ResNet101, across all metrics. It achieved the highest accuracy of 0.914, far surpassing ResNet101's 0.682.</p><p>is demonstrates Mod-Cls-SE(2)'s superior capability in brain tumor classification. is improvement highlights the effectiveness of its roto-translation invariance in handling spatial and rotational variations without extensive data augmentation. Furthermore, Mod-Cls-SE(2) consistently delivered higher precision of 0.923, recall of 0.909, and F1 score of 0.916 than the conventional CNN-based models. Mod-Cls-SE(2) also demonstrated a reduction in inference time during the evaluation phase, making it suitable for real-time clinical applications. e model's computational efficiency was also a significant advantage, requiring only 2.5 hours for training compared to 6-7 hours for the ResNet-based models. With considerably shorter inference and training time, Mod-Cls-SE( <ref type="formula">2</ref>) not only reduces computational load but also outperforms existing CNN-based models in classification tasks. Overall, these results underscore how the inherent geometric priors of the Mod-SE(2) based model, especially Mod-Cls-SE(2), contribute to both improved performance and reduced computational cost.</p><p>In addition to evaluating accuracy and training efficiency, we assessed the model's suitability for real-time clinical applications by evaluating the inference time per image. Table <ref type="table" target="#tab_7">7</ref> shows that the proposed Mod-Cls-SE(2) achieves a remarkably low average inference time of 0.1099 seconds per image.</p><p>is is significantly faster than all baseline models, including VGG16 with a time of 0.2242 seconds, VGG19 of 0.8326 seconds, ResNet50 of 10.2734 seconds, and ResNet101 of 10.3045 seconds.</p><p>is substantial difference highlights the computational efficiency of Mod-Cls-SE(2), which reduces the need for the excessive feature computations typically required by deeper, conventional CNNs. e combination of this speed advantage, combined with high classification accuracy, reinforces the potential of Mod-Cls-SE <ref type="bibr" target="#b1">(2)</ref> for deployment in time-sensitive environments, such as clinical decision support systems and point-of-care diagnostics.</p><p>Overall, the model performs well, but errors between neighboring severity levels suggest room for improvement. Enhancements such as data augmentation, threshold adjustments, or network modifications could help reduce misclassifications. Figures <ref type="figure" target="#fig_5">5a-c</ref> show a heatmap area comparison and ROC curve for three brain tumor classifications in the Mod-Cls-SE(2) rotational model, HoverNet, and HarmonicNet, respectively, using a sample MRI scan.</p><p>e heatmap shows how each rotational model highlights important features from the dataset. In Figure <ref type="figure" target="#fig_5">5a</ref>, the Mod-Cls-SE(2) model demonstrates the most accurate and focused segmentation, with its heatmap showing a highly concentrated prediction of the tumor. e associated TPR and FPR graph indicates superior performance, benefiting from its unified geometric framework that ensures both rotation and translation equivariance, requiring less data augmentation. In contrast, Figure <ref type="figure" target="#fig_5">5b</ref> shows that HoverNet produces a less precise segmentation with a more spread-out heatmap, and the graph shows more false positives, reflecting its limitation in handling variations in orientation. Although it uses post-processing techniques, it lacks full roto-translation invariance. Figure <ref type="figure" target="#fig_5">5c</ref> shows that Table 4 Performance metrics for private MRI brain classification, comparing Mod-Cls-SE(2), HoverNet, HarmonicNet, VGG16, VGG19, ResNet50, and ResNet101 Model's type Model's name Accuracy Precision Recall F1 Score Group-equivariant network Mod-Cls-SE(2) 0.931 0.947 0.918 0.933 HarmonicNet 0.885 0.814 0.896 0.853 Non group-equivariant network HoverNet 0.784 0.863 0.717 0.783 VGG16 0.837 0.904 0.760 0.826 VGG19 0.730 0.859 0.576 0.690 ResNet50 0.440 0.766 0.149 0.249 ResNet101 0.788 0.883 0.682 0.770 HarmonicNet produces the least accurate segmentation. Its heatmap is diffuse, and its performance is the lowest. is is because HarmonicNet only addresses rotation equivariance through circular harmonics without fully accounting for translation.</p><p>ese results prove that the Mod-Cls-SE(2) outperforms both HoverNet and Har-monicNet, particularly in tasks requiring the handling of high spatial variability, offering more robust and precise segmentation.</p><p>Segmentation performance e selection of baseline models is based on their proven effectiveness in deep learning tasks. VGG and ResNet are included because of their strong ability to extract hierarchical features, making them standard choices for learning features in convolutional neural networks. However, these architectures lack inherent geometric awareness, limiting their ability to capture spatial transformations such as rotation and translation <ref type="bibr" target="#b48">[50]</ref>. U-Net and NN U-Net were chosen because they are state-ofthe-art architectures for image segmentation, especially in medical imaging and remote sensing applications.</p><p>eir robust segmentation performance allows for a fair comparison when evaluating the effectiveness of the proposed approach <ref type="bibr" target="#b12">[13]</ref>. However, these models do not explicitly incorporate mechanisms for handling geometric transformations, which are crucial for tasks requiring spatial equivariance. To assess the impact of incorporating geometric priors further, we compared Mod-Seg-SE(2) with the baseline architectures.</p><p>We quantitatively evaluated segmentation performance by comparing model-generated masks with expertannotated ground truth masks. For the MRI brain tumor datasets, certified radiologists delineated ground truth annotations based on clinical diagnostic protocols, ensuring high spatial fidelity and anatomical accuracy. For the skin lesion dataset, the ground truth segmentation was established using clinically validated methods, which are follow-up examinations, expert consensus, and confirmation via in vivo confocal microscopy, as detailed in the dataset's metadata. For the blood cell dataset, ground truth masks for white blood cells were created through manual pixel-wise annotations by trained experts using stained microscopic images, ensuring precise delineation of cellular boundaries. We use the Skin Lesion and Blood Cell segmentation experiments are secondary, crossdomain validation studies. ey are intended to demonstrate the model's ability to generalize to diverse medical imaging modalities. We compared the segmentation performance of Mod-Seg-SE(2), U-Net, and NN U-Net using the Dice coefficient, precision, recall, intersection over union (IoU), and F1 score. ese metrics evaluate tumor boundary delineation, false positive suppression, and alignment with ground truth. Table <ref type="table" target="#tab_8">8</ref> summarizes the comparative results across these key metrics. The Mod-Seg-SE(2) demonstrated superior segmentation performance in MRI Brain Tumors (Private) , achieving the highest dice score of 0.635 and IoU value of 0.715. These scores surpassed those of U-Net with 0.375 and 0.465 in dice score and IoU, respectively, and NN U-Net with 0.505 and 0.595 in dice score and IoU, respectively. The Mod-Seg-SE(2) also achieved a higher precision of 0.685 and recall of 0.655, indicating a balanced ability to correctly identify tumor regions while minimizing both false positives and false negatives. In contrast, NN U-Net exhibited a lower recall of 0.545, which could cause model to miss tumor regions. This is a critical issue in clinical diagnosis. The incorporation of roto-translation equivariance in Mod-Seg-SE(2) contributes to its robust boundary delineation and spatial consistency. The performance of Mod-Seg-SE(2) is also proven by its high performance by achieving 0.9503 and 0.9616 in dice score and IoU, respectively. In contrast, both U-Net (dice score of 0.797 and IoU of 0.742) and NN U-Net (dice score of 0.815 and IoU of 0.802) yield notably lower scores, which are critical for accurate tumor segmentation. These evaluations were conducted on the BraTS2020 dataset, a well-established and widely used benchmark for brain tumor segmentation tasks. The consistent superiority across multiple evaluation metrics underscores the framework's reliability and effectiveness and makes the model well-suited for brain tumor segmentation in medical imaging applications. On the Skin Lesion dataset, Mod-Seg-SE(2) achieved the highest performance with a dice score of 0.900 and IoU of 0.8601, surpassing U-Net and NN U-Net. Its high precision of 0.9345 and recall of 0.8810 demonstrate its ability to detect boundaries in dermatological segmentation. The model outperformed others with a Dice score of 0.8788 and an IoU of 0.7851. Its precision of 0.8982 and recall of 0.8223 indicate its robustness in handling overlapping cells. These results confirm that Mod-Seg-SE(2) generalizes effectively across different medical imaging tasks.</p><p>Figure <ref type="figure" target="#fig_6">6a</ref>-c compares brain tumor segmentation results using three deep learning models: Mod-Seg-SE(2), U-Net, and NN U-Net, respectively. Figure <ref type="figure" target="#fig_6">6a</ref> shows that Mod-Seg-SE(2) produces clearer and more accurate segmentation. In contrast, Figure <ref type="figure" target="#fig_6">6b</ref> shows that U-Net more localized segmentation that may lack comprehensiveness. In contrast, NN U-Net produces a broader segmentation that appears less precise in Fig- <ref type="figure" target="#fig_6">ure 6c</ref>, but effectively captures the tumor region. Overall, Mod-Seg-SE(2) appears to offer the most optimal segmentation performance of the three models.</p><p>Figure <ref type="figure" target="#fig_7">7</ref> provides a qualitative comparison of segmentation results across several methods to further demonstrate the effectiveness of Mod-Seg-SE(2) compared to existing segmentation models. Figure <ref type="figure" target="#fig_7">7a</ref> shows the input MRI scan, and Figure <ref type="figure" target="#fig_7">7b</ref> shows the corresponding ground truth. Figure <ref type="figure" target="#fig_7">7c</ref> shows an overlay of the predicted segmentation outputs from Mod-Seg-SE(2), U-Net, and NN U-Net. is overlay offers a visual summary of the method's relative performance and highlighting areas of agreement and discrepancy. Figures <ref type="figure" target="#fig_7">7d to 7f</ref> show the individual outputs from Mod-Seg-SE(2), U-Net, and NN U-Net, respectively. is comparison emphasizes Mod-Seg-SE(2)'s ability to capture spatial features, while NN U-Net offers competitive boundary precision.</p><p>Figure <ref type="figure" target="#fig_8">8</ref> shows a radar chart that compares the performance of segmentation across multiple modalities, such as blood cell, skin lesion, and MRI brain datasets. e results demonstrate that the Mod-SE(2) based model outperforms U-Net and NN U-Net in terms of dice score, IoU, precision, and recall, highlighting its superior segmentation accuracy. Importantly, the model's strong performance across different datasets showcases its generalizability and robustness. It proves its capability to handle diverse medical imaging modalities beyond just MRI, making it a versatile tool for various segmentation tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ablation study</head><p>To determine which Mod-SE(2) components contribute most to performance gains, we conducted an ablation study. We systematically removed elements such as roto-translation equivariance, feature recalibration layers (SE-Blocks), and group convolutions, and performed validations using the MNIST dataset <ref type="bibr" target="#b49">[51]</ref>. On observing classification model performance and the COCO dataset <ref type="bibr" target="#b50">[52]</ref>, and on observing segmentation model performance. The results of this study, summarized in Table <ref type="table" target="#tab_9">9</ref>, confirm that the Mod-SE(2) model consistently outshines all ablated versions, achieving the highest classification accuracy of 0.9899 and a segmentation dice score of 0.9514. The integration of roto-translation equivariance and feature recalibration ensures that the model can robustly generalize across different spatial orientations and feature variations, leading to improved feature representation and decision-making. This happened because for a standard convolutional layer: Meanwhile, for a group convolutional layer:</p><p>Group convolutions divide channels into smaller groups, each of which processes a fraction of the input channels. is reduces the number of trainable parameters per layer.</p><p>e model without roto-translation equivariance experiences an increase in the number of parameters.</p><p>is occurs because the group convolutions, which preserve roto-translation equivariance, are replaced with standard convolutions that process all input channels simultaneously. Each layer now has significantly more parameters because instead of dividing channels into groups, the full input feature map is processed at every layer. Similarly to models without rotational translation, the model without group convolutions replaces all group convolutions and replaces them with standard convolutions. Standard convolutions have much larger parameters because they require more filters per layer, which increases the model's memory and computational cost. and adaptability positions Mod-SE(2) as a highly promising tool for improving AI-assisted diagnostics in neuro-oncology. With a training time of just 2.5 hours and low computational overhead, Mod-SE(2) is well-suited for deployment in clinical settings. Compared to baseline CNN models, the model demonstrated a noticeable reduction in inference time, highlighting its potential for real-time clinical applications, such as Picture Archiving and Communication Systems (PACS), where speed and accuracy are essential. One of its key applications is in PACS, where Mod-SE(2) can be integrated for real-time MRI analysis. By automating preliminary tumor classification, Mod-SE( <ref type="formula">2</ref>) enables radiologists to streamline their workflow, reducing the time needed for manual review while maintaining diagnostic accuracy. We emphasize that Mod-SE( <ref type="formula">2</ref>) is designed to operate within the imaging stage of the clinical pipeline and is not a substitute for histopathology or molecular analysis. Rather, it can serve as a supportive tool in the interval before histopathology results are available, helping to prioritize cases, assist surgical planning, and potentially accelerate multidisciplinary decision-making.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>is integration could significantly enhance efficiency in hospitals and imaging centers, enabling faster and more reliable diagnoses. Beyond PACS, Mod-SE(2)'s shorter training time compared to traditional models makes it highly compatible with cloud-based radiology platforms. is efficiency makes it feasible for remote AI-powered diagnostics, supporting telemedicine and decentralized healthcare solutions.</p><p>ese capabilities are valuable in regions with limited access to specialized radiology services, allowing AI-assisted diagnostics to be performed remotely without requiring extensive computational resources. Hence, Mod-SE(2) enhances decision support for radiologists by incorporating feature recalibration mechanisms that generate heatmaps highlighting critical tumor regions. is interpretability feature helps radiologists validate AI predictions, increasing trust and adoption in clinical workflows. By improving both efficiency and transparency, Mod-SE(2) has the potential to become a valuable tool in AI-assisted neuro-oncology and medical imaging. Despite these promising results, this study has certain methodological limitations. Notably, we did not perform k-fold crossvalidation due to computational constraints and to maintain a consistent training configuration for direct comparison with baseline models. While this approach facilitated fair benchmarking, we acknowledge that employing k-fold crossvalidation could further enhance the statistical rigor and generalizability of our findings. Addressing this limitation will be a focus of future work, aiming to reinforce the robustness of Mod-SE(2) across diverse datasets and clinical environments. Real-world deployment still requires prospective validation in clinical trials to assess its robustness in diverse patient populations and imaging environments. Future work will focus on scaling Mod-SE(2) for larger and broader datasets and multi-institutional studies.</p><p>e real-time clinical  integration, like Monte Carlo simulation for pre-surgical and PET-MRI integration, ensures its reliability and effectiveness in comprehensive practical medical applications. e future work will also extend Mod-SE(2) to Mod-SE(3) using recent advances in spherical harmonic representations and sparse group convolutions <ref type="bibr" target="#b51">[53]</ref><ref type="bibr" target="#b52">[54]</ref><ref type="bibr" target="#b53">[55]</ref><ref type="bibr" target="#b54">[56]</ref><ref type="bibr" target="#b55">[57]</ref>. is integration will enable volumetric analysis while preserving equivariance across all spatial dimensions. We will focus on balancing computational cost with clinical utility, which remains a key challenge of the implementation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>We introduce Mod-SE(2), a geometry-aware deep learning framework that improves spatial consistency, interpretability, and efficiency in brain tumor MRI analysis. Mod-SE(2) embeds roto-translational symmetry through lifting layers, group convolutions, and SE blocks. is enables robust, orientation-invariant feature extraction across diverse tumor types and imaging conditions. Extensive experiments demonstrate that Mod-SE(2) significantly improves classification and segmentation performance. It outperforms baseline CNNs in terms of accuracy, precision, and recall, particularly in anatomically complex and rotationally variant cases. e SE(2)modified model achieved a dice score of 0.90, surpassing the U-Net of 0.863 and outperforming other variants by over 4.5%. For classification, it reached an F1-score of 0.933 on a private MRI dataset, surpassing VGG and ResNet-based models. Mod-SE(2) offers transformative clinical potential for precision medicine by providing spatially consistent, interpretable outputs, which are critical for surgical planning, tumor monitoring, and evaluating treatment responses. Its symmetry-aware design of Mod-SE(2) reduces the reliance on extensive data augmentation by inherently capturing rotational and translational invariances, contributing to accurate tumor boundary delineation.</p><p>is capability improves decision-making in real-world neuroimaging applications and ensures consistent performance across different MRI acquisition protocols. e model's spatially precise tumor localization output can be directly utilized as input for Monte Carlo simulations in high-precision preoperative radiotherapy planning, as well as intraoperative surgical guidance. is reduces the risk of incomplete resection or inadvertent damage to critical brain structures. Furthermore, its geometric consistency across modalities facilitates seamless integration with Positron Emission Tomography (PET) imaging, enabling effective fusion of structural and metabolic information.</p><p>ese strengths highlight the versatility of Mod-SE(2) in supporting multimodal imaging pipelines and advanced computational modeling, reinforcing its potential for personalized and comprehensive neuro-oncological care.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>to stabilize training and a Squeeze-and-Excitation (SE) block to enable the network to learn channel-wise attention, effectively weighing the importance of different feature channels. e resulting feature maps are then flattened and fed into a series of fully connected layers, culminating in a Softmax classifier that outputs the probability of each tumor class. Mod-Cls-SE(2) integrates roto-translation transformations, enabling robust handling of spatial variations in medical images (see Section 1: Mod-Cls-SE(2) Architecture in Supplementary File 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 Fig. 3</head><label>23</label><figDesc>Fig. 2 Mod-Cls-SE(2) architecture for brain tumor classification. The network includes an initial convolution layer, a lifting layer for roto-translation, group convolutions for rotation equivariance, and average pooling. It concludes with a fully connected layer to classify various tumor types</figDesc><graphic coords="6,62.38,88.58,470.52,198.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Representative samples from the Private MRI Brain Tumor dataset collected from NTU Hospital, Taiwan. The images illustrate the diversity in tumor size, location, and morphology (see Supplementary File 2-5)</figDesc><graphic coords="8,106.30,581.42,382.68,116.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>e</head><figDesc>Dice coefficient (D) measures the overlap between predicted segmentation and the ground truth. It provides a score that reflects how closely the model's output matches the actual tumor regions. It is defined as follows:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5</head><label>5</label><figDesc>Fig. 5 Heatmap and ROC curves comparison for brain tumor classification using three rotational models. A larger AUC indicates better classification performance, minimizing false positives while maximizing true positives. a Mod-Cls-SE(2) demonstrates the most accurate and focused segmentation, with a concentrated heatmap around the tumor region. The corresponding ROC curve (blue) indicates high classification performance with a large area under the curve (AUC), benefiting from its roto-translation equivariant architecture and reduced reliance on data augmentation. b HoverNet exhibits a more diffuse heatmap, indicating less precise feature localization. The associated ROC curve (orange) shows increased false positives, reflecting limitations in handling rotational variance despite the use of post-processing techniques. c HarmonicNet yields the least accurate segmentation, with a broad and less informative heatmap. Its ROC curve (green) is attributed to its partial rotation equivariance via circular harmonics without translation invariance</figDesc><graphic coords="13,62.38,88.58,470.52,269.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 6</head><label>6</label><figDesc>Fig. 6 Heatmap visualization of predicted tumor regions in an MRI scan. Colored heatmap overlays reflect each model's confidence in tumor localization, with Mod-Seg-SE(2) demonstrating the most balanced and reliable performance across both completeness and spatial specificity. a Mod-Seg-SE(2) achieves the most accurate and spatially precise segmentation, with sharply defined tumor boundaries and high confidence in localized predictions. b U-Net produces a more localized segmentation that is relatively limited in scope, potentially missing peripheral tumor regions. c NN U-Net yields a broader segmentation, capturing more of the tumor area but with reduced boundary precision</figDesc><graphic coords="15,106.30,513.14,382.68,155.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 7</head><label>7</label><figDesc>Fig. 7 Comparison of brain tumor segmentation results using Mod-Seg-SE(2), U-Net, and NN U-Net. The input MRI scan and corresponding ground truth mask are provided for reference. This visual comparison highlights the superior spatial feature capture of Mod-Seg-SE(2), while NN U-Net offers competitive performance in delineating tumor boundaries. a Input MRI scan. b Ground truth segmentation mask for reference. c Overlay of predicted segmentation results from Mod-Seg-SE(2), U-Net, and NN U-Net, highlighting areas of overlap and divergence across models. d Output from Mod-Seg-SE(2), showing high spatial accuracy and strong alignment with the ground truth. e Output from U-Net, demonstrating more localized segmentation with some under-segmentation. f Output from NN U-Net, providing broader coverage with relatively accurate boundary definition</figDesc><graphic coords="16,106.30,88.58,382.68,350.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 8</head><label>8</label><figDesc>Fig. 8 Radar chart comparison of Mod-Seg-SE(2), U-Net, and NN U-Net across Blood Cell, Skin Lesion, and MRI Brain datasets, demonstrating the superior performance of Mod-SE(2) in key segmentation metrics</figDesc><graphic coords="17,62.38,88.58,470.52,378.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><graphic coords="4,62.38,379.14,470.52,329.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Overview of MRI datasets used for evaluation</figDesc><table><row><cell>Dataset</cell><cell>Type</cell><cell>Train</cell><cell>Test</cell></row><row><cell>BraTS2020 [38]</cell><cell>Segmentation</cell><cell>628</cell><cell>110</cell></row><row><cell>Skin Lesion [39]</cell><cell>Segmentation</cell><cell>900</cell><cell>100</cell></row><row><cell>Blood Cell [40]</cell><cell>Segmentation</cell><cell>1169</cell><cell>159</cell></row><row><cell>MRI Brain Tumors (Public) [41]</cell><cell>Classification</cell><cell>2235</cell><cell>496</cell></row><row><cell>MRI Brain Tumors (Private)</cell><cell>Classification &amp;</cell><cell>3878</cell><cell>969</cell></row><row><cell></cell><cell>segmentation</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Training Hyperparameters and Justifications</figDesc><table><row><cell>Parameter</cell><cell>Value</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3</head><label>3</label><figDesc>Performance metrics for public MRI brain classification, comparing Mod-Cls-SE(2), HoverNet, HarmonicNet, VGG16, VGG19, ResNet50, and ResNet101</figDesc><table><row><cell>Model's type</cell><cell>Model's name</cell><cell>Accuracy</cell><cell>Precision</cell><cell>Recall</cell><cell>F1 Score</cell></row><row><cell>Group-equivariant network</cell><cell>Mod-Cls-SE(2)</cell><cell>0.906</cell><cell>0.910</cell><cell>0.904</cell><cell>0.908</cell></row><row><cell></cell><cell>HarmonicNet</cell><cell>0.863</cell><cell>0.830</cell><cell>0.875</cell><cell>0.852</cell></row><row><cell>Non group-equivariant network</cell><cell>HoverNet</cell><cell>0.780</cell><cell>0.790</cell><cell>0.770</cell><cell>0.780</cell></row><row><cell></cell><cell>VGG16</cell><cell>0.800</cell><cell>0.805</cell><cell>0.795</cell><cell>0.800</cell></row><row><cell></cell><cell>VGG19</cell><cell>0.763</cell><cell>0.771</cell><cell>0.753</cell><cell>0.762</cell></row><row><cell></cell><cell>ResNet50</cell><cell>0.755</cell><cell>0.760</cell><cell>0.740</cell><cell>0.750</cell></row><row><cell></cell><cell>ResNet101</cell><cell>0.771</cell><cell>0.783</cell><cell>0.763</cell><cell>0.772</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5</head><label>5</label><figDesc>Performance of Mod-SE(2) in five binary classification tasks, demonstrating its robustness in brain tumor detection</figDesc><table><row><cell>No</cell><cell>Classification task</cell><cell>Accuracy</cell><cell>Precision</cell><cell>Recall</cell><cell>F1 Score</cell></row><row><cell>1</cell><cell>AVM vs non AVM</cell><cell>0.923</cell><cell>0.945</cell><cell>0.905</cell><cell>0.924</cell></row><row><cell>2</cell><cell>Meningioma vs non meningioma</cell><cell>0.931</cell><cell>0.952</cell><cell>0.914</cell><cell>0.932</cell></row><row><cell>3</cell><cell>Pituitary vs non pituitary</cell><cell>0.935</cell><cell>0.960</cell><cell>0.920</cell><cell>0.939</cell></row><row><cell>4</cell><cell>Metastases vs non metastases</cell><cell>0.925</cell><cell>0.940</cell><cell>0.905</cell><cell>0.923</cell></row><row><cell>5</cell><cell>Schwannoma vs non schwannoma</cell><cell>0.928</cell><cell>0.945</cell><cell>0.910</cell><cell>0.928</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6</head><label>6</label><figDesc>Average performance comparison of Mod-Cls-SE(2), VGG16, VGG19, ResNet50, and ResNet101. Mod-Cls-SE(2) achieves the best overall performance and fastest computation time, demonstrating its efficiency in medical image classification</figDesc><table><row><cell>Model's type</cell><cell>Model's name</cell><cell>Accuracy</cell><cell>Precision</cell><cell>Recall</cell><cell>F1 score</cell><cell>Time</cell></row><row><cell>Group-equivariant network</cell><cell>Mod-Cls-SE(2)</cell><cell>0.914</cell><cell>0.923</cell><cell>0.909</cell><cell>0.916</cell><cell>2.5 h</cell></row><row><cell>Non group-equivariant network</cell><cell>VGG16</cell><cell>0.705</cell><cell>0.688</cell><cell>0.676</cell><cell>0.677</cell><cell>6 h</cell></row><row><cell></cell><cell>VGG19</cell><cell>0.635</cell><cell>0.607</cell><cell>0.582</cell><cell>0.567</cell><cell>5.5 h</cell></row><row><cell></cell><cell>ResNet50</cell><cell>0.548</cell><cell>0.562</cell><cell>0.422</cell><cell>0.402</cell><cell>6.2 h</cell></row><row><cell></cell><cell>ResNet101</cell><cell>0.682</cell><cell>0.659</cell><cell>0.597</cell><cell>0.623</cell><cell>7 h</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 7</head><label>7</label><figDesc>Average inference time per image for each model</figDesc><table><row><cell>Model's name</cell><cell>Inference</cell></row><row><cell></cell><cell>(seconds/</cell></row><row><cell></cell><cell>image)</cell></row><row><cell>Mod-Cls-SE(2)</cell><cell>0.1099</cell></row><row><cell>VGG16</cell><cell>0.2242</cell></row><row><cell>VGG19</cell><cell>0.8326</cell></row><row><cell>ResNet50</cell><cell>10.2734</cell></row><row><cell>ResNet101</cell><cell>10.3045</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 8</head><label>8</label><figDesc>Performance comparison of segmentation models on medical imaging datasets. Mod-Seg-SE(2) surpasses U-Net and NN U-Net in dice score, IoU, Precision, and Recall</figDesc><table><row><cell>Dataset</cell><cell>Model</cell><cell>Group equivariant</cell><cell>Dice score</cell><cell>IoU</cell><cell>Precision</cell><cell>Recall</cell></row><row><cell></cell><cell></cell><cell>network</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Blood cell</cell><cell>Mod-Seg-SE(2)</cell><cell>✓</cell><cell>0.8788</cell><cell>0.7851</cell><cell>0.8982</cell><cell>0.8223</cell></row><row><cell>Blood cell</cell><cell>U-Net</cell><cell></cell><cell>0.6983</cell><cell>0.6884</cell><cell>0.7082</cell><cell>0.6831</cell></row><row><cell>Blood cell</cell><cell>NN U-Net</cell><cell></cell><cell>0.7518</cell><cell>0.7248</cell><cell>0.8709</cell><cell>0.7307</cell></row><row><cell>Skin lesion</cell><cell>Mod-Seg-SE(2)</cell><cell>✓</cell><cell>0.9000</cell><cell>0.8601</cell><cell>0.9345</cell><cell>0.8810</cell></row><row><cell>Skin lesion</cell><cell>U-Net</cell><cell></cell><cell>0.8060</cell><cell>0.7311</cell><cell>0.8476</cell><cell>0.8145</cell></row><row><cell>Skin lesion</cell><cell>NN U-Net</cell><cell></cell><cell>0.8420</cell><cell>0.8345</cell><cell>0.8798</cell><cell>0.8309</cell></row><row><cell>MRI brain</cell><cell>Mod-Seg-SE(2)</cell><cell>✓</cell><cell>0.635</cell><cell>0.715</cell><cell>0.685</cell><cell>0.655</cell></row><row><cell>MRI brain</cell><cell>U-Net</cell><cell></cell><cell>0.375</cell><cell>0.465</cell><cell>0.465</cell><cell>0.465</cell></row><row><cell>MRI brain</cell><cell>NN U-Net</cell><cell></cell><cell>0.505</cell><cell>0.595</cell><cell>0.505</cell><cell>0.545</cell></row><row><cell>BraTS2020</cell><cell>Mod-Seg-SE(2)</cell><cell>✓</cell><cell>0.9503</cell><cell>0.9616</cell><cell>0.947</cell><cell>0.930</cell></row><row><cell>BraTS2020</cell><cell>U-Net</cell><cell></cell><cell>0.797</cell><cell>0.742</cell><cell>0.715</cell><cell>0.762</cell></row><row><cell>BraTS2020</cell><cell>NN U-Net</cell><cell></cell><cell>0.815</cell><cell>0.802</cell><cell>0.805</cell><cell>0.802</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 9</head><label>9</label><figDesc>Ablation study results for Mod-SE<ref type="bibr" target="#b1">(2)</ref> </figDesc><table><row><cell>Model variant</cell><cell>Parameters Classification</cell><cell>Segmentation</cell></row><row><cell></cell><cell>accuracy</cell><cell>dice score</cell></row><row><cell cols="2">FullMod-SE(2) (Proposed) 12,284,518 0.9899</cell><cell>0.9514</cell></row><row><cell cols="2">Without Roto-Translation 16,741,300 0.9839</cell><cell>0.9450</cell></row><row><cell>Without Feature Recali-</cell><cell>12,284,518 0.9773</cell><cell>0.9421</cell></row><row><cell>bration</cell><cell></cell><cell></cell></row><row><cell>Without Group Convolu-</cell><cell>16,741,300 0.9875</cell><cell>0.9498</cell></row><row><cell>tion</cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>The authors thank <rs type="institution">National Taiwan University</rs> for providing patient-MRI brain tumor (private) data.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Abbreviations</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CNN</head><p>Convolutional Neural Network Mod-SE <ref type="bibr" target="#b1">(2)</ref> Modified Special Euclidean Mod-Cls-SE <ref type="bibr" target="#b1">(2)</ref> Modified Classification Special Euclidean Mod-Seg-SE <ref type="bibr" target="#b1">(2)</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The datasets generated and/or analyzed during the current study are available in the Kaggle repository <ref type="bibr" target="#b35">[36]</ref><ref type="bibr" target="#b36">[37]</ref><ref type="bibr" target="#b37">[38]</ref><ref type="bibr" target="#b38">[39]</ref>, but a private dataset is available from the corresponding author on reasonable request.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations Ethics approval and consent to participate</head><p>The MRI brain tumor private dataset was processed in accordance with the Institutional Review Board (IRB) approval from National Taiwan University Hospital (NTUH), under protocol number 202412117RINA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consent for publication</head><p>All authors have approved the manuscript for submission and publication.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A Review of Recent Advances in Brain Tumor Diagnosis Based on AI-Based Classification</title>
+		<author>
+			<persName><forename type="first">Reham</forename><surname>Kaifi</surname></persName>
+			<idno type="ORCID">0000-0002-5490-6639</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics13183007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page">3007</biblScope>
+			<date type="published" when="2023-09-20">2023</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaifi R. A review of recent advances in brain tumor diagnosis based on AI-based classification. Diagnostics (Basel). 2023;13(18):3007.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A review of deep learning for brain tumor analysis in MRI</title>
+		<author>
+			<persName><forename type="first">Felix</forename><forename type="middle">J</forename><surname>Dorfner</surname></persName>
+			<idno type="ORCID">0009-0003-5914-3233</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><forename type="middle">B</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><forename type="middle">R</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">P</forename><surname>Bridge</surname></persName>
+			<idno type="ORCID">0000-0002-2242-351X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41698-024-00789-2</idno>
+		<ptr target="https://doi.org/10.1038/s41698-024-00789-2" />
+	</analytic>
+	<monogr>
+		<title level="j">npj Precision Oncology</title>
+		<title level="j" type="abbrev">npj Precis. Onc.</title>
+		<idno type="ISSNe">2397-768X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2025-01-03">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dorfner FJ, Patel JB, Kalpathy-Cramer J, Gerstner ER, Bridge CP. A review of deep learning for brain tumor analysis in MRI. NPJ Precis Oncol. 2025;9(1):2. https:// doi. org/ 10. 1038/ s41698-024-00789-2.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A Review on Brain Tumor Segmentation and Classification for MRI Images</title>
+		<author>
+			<persName><forename type="first">Preeti</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">Prakash</forename><surname>Shukla</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icacite51222.2021.9404662</idno>
+		<ptr target="https://doi.org/10.1109/ICACITE51222.2021.94046" />
+	</analytic>
+	<monogr>
+		<title level="m">2021 International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-03-04">2021</date>
+			<biblScope unit="page" from="963" to="967" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sharma P, Shukla AP. A review on brain tumor segmentation and clas- sification for MRI images. In: 2021 International Conference on Advanced Computing and Innovative Technologies in Engineering (ICACITE). pp. 963-967. 2021. https:// doi. org/ 10. 1109/ ICACI TE512 22. 2021. 94046</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Clinical Decision Support Framework for Segmentation and Classification of Brain Tumor MRIs Using a U-Net and DCNN Cascaded Learning Algorithm</title>
+		<author>
+			<persName><forename type="first">Nagwan</forename><forename type="middle">Abdel</forename><surname>Samee</surname></persName>
+			<idno type="ORCID">0000-0001-5957-1383</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tahir</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noha</forename><forename type="middle">F</forename><surname>Mahmoud</surname></persName>
+			<idno type="ORCID">0000-0003-0608-6661</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ghada</forename><surname>Atteia</surname></persName>
+			<idno type="ORCID">0000-0002-5462-595X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hanaa</forename><forename type="middle">A</forename><surname>Abdallah</surname></persName>
+			<idno type="ORCID">0000-0003-0307-1384</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Atif</forename><surname>Rizwan</surname></persName>
+			<idno type="ORCID">0000-0001-6669-8147</idno>
+		</author>
+		<idno type="DOI">10.3390/healthcare10122340</idno>
+		<ptr target="https://doi.org/10.3390/healthcare10122340" />
+	</analytic>
+	<monogr>
+		<title level="j">Healthcare</title>
+		<title level="j" type="abbrev">Healthcare</title>
+		<idno type="ISSNe">2227-9032</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">2340</biblScope>
+			<date type="published" when="2022-11-22">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Samee NA, Ahmad T, Mahmoud NF, Atteia G, Abdallah HA, Rizwan A. Clinical decision support framework for segmentation and classification of brain tumor MRIs using a U-Net and DCNN cascaded learning algo- rithm. Healthcare. 2022. https:// doi. org/ 10. 3390/ healt hcare 10122 340.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Optimizing the Dice Score and Jaccard Index for Medical Image Segmentation: Theory and Practice</title>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Bertels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Eelbode</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxim</forename><surname>Berman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Vandermeulen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederik</forename><surname>Maes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raf</forename><surname>Bisschops</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">B</forename><surname>Blaschko</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-32245-8_11</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Shen</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Liu</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Peters</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><forename type="middle">H</forename><surname>Staib</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Essert</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Zhou</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="92" to="100" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bertels J, Eelbode T, Berman M, Vandermeulen D, Maes F, Bisschops R, et al. Optimizing the dice score and jaccard index for medical image segmentation: Theory and practice. In: Shen D, Liu T, Peters TM, Staib LH, Essert C, Zhou S, et al., editors. Medical image computing and computer assisted intervention-MICCAI 2019. Cham: Springer; 2019. p. 92-100.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Advances in Medical Image Segmentation: A Comprehensive Review of Traditional, Deep Learning and Hybrid Approaches</title>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0009-0007-8187-0276</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rixiang</forename><surname>Quan</surname></persName>
+			<idno type="ORCID">0009-0003-1794-7241</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weiting</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fengyuan</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-7915-5341</idno>
+		</author>
+		<idno type="DOI">10.3390/bioengineering11101034</idno>
+		<ptr target="https://doi.org/10.3390/bioengineering11101034" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioengineering</title>
+		<title level="j" type="abbrev">Bioengineering</title>
+		<idno type="ISSNe">2306-5354</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">1034</biblScope>
+			<date type="published" when="2024-10-16">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu Y, Quan R, Xu W, Huang Y, Chen X, Liu F. Advances in medical image segmentation: a comprehensive review of traditional, deep learning, and hybrid approaches. Bioengineering. 2024. https:// doi. org/ 10. 3390/ bioen ginee ring1 11010 34.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Machine learning enabled classification of lung cancer cell lines co-cultured with fibroblasts with lightweight convolutional neural network for initial diagnosis</title>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Germain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Sabol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anjani</forename><surname>Chavali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giles</forename><surname>Fitzwilliams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexa</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Khuon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bailey</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Calvin</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Minna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Young-Tae</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-5725-3709</idno>
+		</author>
+		<idno type="DOI">10.1186/s12929-024-01071-0</idno>
+		<ptr target="https://doi.org/10.1186/s12929-024-01071-0" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biomedical Science</title>
+		<title level="j" type="abbrev">J Biomed Sci</title>
+		<idno type="ISSNe">1423-0127</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">84</biblScope>
+			<date type="published" when="2024-08-23">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Germain A, Sabol A, Chavali A, et al. Machine learning enabled clas- sification of lung cancer cell lines co-cultured with fibroblasts with a lightweight convolutional neural network for initial diagnosis. J Biomed Sci. 2024;31:84. https:// doi. org/ 10. 1186/ s12929-024-01071-0.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Brain Tumor MRI Classification Using a Novel Deep Residual and Regional CNN</title>
+		<author>
+			<persName><forename type="first">Mirza</forename><forename type="middle">Mumtaz</forename><surname>Zahoor</surname></persName>
+			<idno type="ORCID">0000-0002-7345-4834</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saddam</forename><forename type="middle">Hussain</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tahani</forename><forename type="middle">Jaser</forename><surname>Alahmadi</surname></persName>
+			<idno type="ORCID">0000-0002-0067-692X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tariq</forename><surname>Alsahfi</surname></persName>
+			<idno type="ORCID">0000-0003-4299-1626</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alanoud</forename><forename type="middle">S Al</forename><surname>Mazroa</surname></persName>
+			<idno type="ORCID">0000-0002-6201-0410</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hesham</forename><forename type="middle">A</forename><surname>Sakr</surname></persName>
+			<idno type="ORCID">0000-0001-6241-4397</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saeed</forename><surname>Alqahtani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdullah</forename><surname>Albanyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bader</forename><forename type="middle">Khalid</forename><surname>Alshemaimri</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/biomedicines12071395</idno>
+		<ptr target="https://doi.org/10.3390/biomedicines12071395" />
+	</analytic>
+	<monogr>
+		<title level="j">Biomedicines</title>
+		<title level="j" type="abbrev">Biomedicines</title>
+		<idno type="ISSNe">2227-9059</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">1395</biblScope>
+			<date type="published" when="2024-06-23">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zahoor MM, Khan SH, Alahmadi TJ, Alsahfi T, Mazroa ASA, Sakr HA, et al. Brain tumor MRI classification using a novel deep residual and regional CNN. Biomedicines. 2024. https:// doi. org/ 10. 3390/ biome dicin es120 71395.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Advanced U-Net Model for Precise Brain Tumor Segmentation in MRI Images</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dasari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eswara</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rama</forename><surname>Mohana Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<idno type="DOI">10.46632/jdaai/3/2/11</idno>
+		<ptr target="https://doi.org/10.46632/jdaai/3/2/11" />
+	</analytic>
+	<monogr>
+		<title level="j">REST Journal on Data Analytics and Artificial Intelligence</title>
+		<title level="j" type="abbrev">jdaai</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2 June 2024</biblScope>
+			<biblScope unit="page" from="75" to="88" />
+			<date type="published" when="2024-07-13">2024</date>
+			<publisher>REST Publisher</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dasari S, Eswara Reddy B, Rama Mohana Reddy A. Advanced U-Net model for precise brain tumor segmentation in MRI images. REST J Data Anal Artif. 2024. https:// doi. org/ 10. 46632/ jdaai/3/ 2/ 11.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Machine learning-based segmentation of ischemic penumbra by using diffusion tensor metrics in a rat model</title>
+		<author>
+			<persName><forename type="first">Duen-Pang</forename><surname>Kuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Po-Chih</forename><surname>Kuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yung-Chieh</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Chieh Jill</forename><surname>Kao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ching-Yen</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hsiao-Wen</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Yu</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12929-020-00672-9</idno>
+		<ptr target="https://doi.org/10.1186/s12929-020-00672-9" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biomedical Science</title>
+		<title level="j" type="abbrev">J Biomed Sci</title>
+		<idno type="ISSNe">1423-0127</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">80</biblScope>
+			<date type="published" when="2020-07-15">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kuo DP, Kuo PC, Chen YC, et al. Machine learning-based segmentation of ischemic penumbra by using diffusion tensor metrics in a rat model. J Biomed Sci. 2020;27:80. https:// doi. org/ 10. 1186/ s12929-020-00672-9.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Enhanced Brain Tumor Detection Using a Modified EfficientNet Model with MRI Imaging</title>
+		<author>
+			<persName><forename type="first">Biswa</forename><forename type="middle">Swarup</forename><surname>Tripathy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amrutanshu</forename><surname>Rath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Debendra</forename><surname>Muduli</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icccnt61001.2024.10723948</idno>
+		<ptr target="https://doi.org/10.1109/ICCCNT61001.2024.10723948" />
+	</analytic>
+	<monogr>
+		<title level="m">2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-24">2024</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tripathy BS, Rath A, Muduli D. Enhanced brain tumor detection using a modified EfficientNet model with MRI imaging. In: 2024 15th Interna- tional Conference on Computing Communication and Networking Technologies (ICCCNT). pp. 1-5. 2024. https:// doi. org/ 10. 1109/ ICCCN T61001. 2024. 10723 948</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+		<ptr target="https://arxiv.org/abs/1505.04597" />
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ronneberger O, Fischer P, Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. 2015. https:// arxiv. org/ abs/ 1505. 04597</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation</title>
+		<author>
+			<persName><forename type="first">Fabian</forename><surname>Isensee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">F</forename><surname>Jaeger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">A A</forename><surname>Kohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><forename type="middle">H</forename><surname>Maier-Hein</surname></persName>
+			<idno type="ORCID">0000-0002-6626-2463</idno>
+		</author>
+		<idno type="DOI">10.1038/s41592-020-01008-z</idno>
+		<ptr target="https://doi.org/10.1038/s41592-020-01008-z" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="211" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Isensee F, Jaeger PF, Kohl SAA, Petersen J, Maier-Hein KH. NN U-net: a self-configuring method for deep learning-based biomedical image segmentation. Nat Methods. 2021;18(2):203-11. https:// doi. org/ 10. 1038/ s41592-020-01008-z.</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Explainability of deep neural networks for MRI analysis of brain tumors</title>
+		<author>
+			<persName><forename type="first">Ramy</forename><forename type="middle">A</forename><surname>Zeineldin</surname></persName>
+			<idno type="ORCID">0000-0002-8630-9046</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">E</forename><surname>Karar</surname></persName>
+			<idno type="ORCID">0000-0002-0474-4723</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ziad</forename><surname>Elshaer</surname></persName>
+			<idno type="ORCID">0000-0003-2643-5646</idno>
+		</author>
+		<author>
+			<persName><forename type="first">·jan</forename><surname>Coburger</surname></persName>
+			<idno type="ORCID">0000-0002-3677-8258</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">R</forename><surname>Wirtz</surname></persName>
+			<idno type="ORCID">0000-0001-8358-1813</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Burgert</surname></persName>
+			<idno type="ORCID">0000-0001-7118-4730</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Franziska</forename><surname>Mathis-Ullrich</surname></persName>
+			<idno type="ORCID">0000-0001-5239-5305</idno>
+		</author>
+		<idno type="DOI">10.1007/s11548-022-02619-x</idno>
+		<ptr target="https://doi.org/10.1007/s11548-022-02619-x" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Assisted Radiology and Surgery</title>
+		<title level="j" type="abbrev">Int J CARS</title>
+		<idno type="ISSNe">1861-6429</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1673" to="1683" />
+			<date type="published" when="2022-04-23">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zeineldin RA, Karar ME, Elshaer Z, Coburger J, Wirtz CR, Burgert O, et al. Explainability of deep neural networks for MRI analysis of brain tumors. Int J Comput Assist Radiol Surg. 2022;17:1673-83. https:// doi. org/ 10. 1007/ s11548-022-02619-x.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Deep learning-based MRI brain tumor segmentation with EfficientNet-enhanced UNet</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Tiwary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Katiyar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Chhipa</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ACCESS.2023.3325157</idno>
+		<ptr target="https://doi.org/10.1109/ACCESS.2023.3325157" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="113378" to="113391" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tiwary PK, Johri P, Katiyar A, Chhipa MK. Deep learning-based MRI brain tumor segmentation with EfficientNet-enhanced UNet. IEEE Access. 2023;11:113378-91. https:// doi. org/ 10. 1109/ ACCESS. 2023. 33251 57.</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Transfer Learning Using Convolutional Neural Network Architectures for Brain Tumor Classification from MRI Images</title>
+		<author>
+			<persName><forename type="first">Rayene</forename><surname>Chelghoum</surname></persName>
+			<idno type="ORCID">0000-0002-5618-4385</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ameur</forename><surname>Ikhlef</surname></persName>
+			<idno type="ORCID">0000-0002-5111-0547</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amina</forename><surname>Hameurlaine</surname></persName>
+			<idno type="ORCID">0000-0001-9053-8768</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sabir</forename><surname>Jacquir</surname></persName>
+			<idno type="ORCID">0000-0002-6296-7888</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-49161-1_17</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IFIP Advances in Information and Communication Technology</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="189" to="200" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chelghoum R, Ameur I, Hameurlaine A, Jacquir S. Transfer learning using convolutional neural network architectures for brain tumor classification from MRI images. New York: Springer; 2020.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Roto-Translation Covariant Convolutional Networks for Medical Image Analysis</title>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">J</forename><surname>Bekkers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxime</forename><forename type="middle">W</forename><surname>Lafarge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitko</forename><surname>Veta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><forename type="middle">A J</forename><surname>Eppenhof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josien</forename><forename type="middle">P W</forename><surname>Pluim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remco</forename><surname>Duits</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-00928-1_50</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Frangi</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Schnabel</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Davatzikos</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Alberola-L´opez</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Fichtinger</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="440" to="448" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bekkers EJ, Lafarge MW, Veta M, Eppenhof KAJ, Pluim JPW, Duits R. Roto- translation covariant convolutional networks for medical image analysis. In: Frangi AF, Schnabel JA, Davatzikos C, Alberola-L´opez C, Fichtinger G, editors. Medical Image Computing and Computer Assisted Interven- tion-MICCAI 201. Cham: Springer; 2018.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Harmonic Networks: Deep Translation and Rotation Equivariance</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">E</forename><surname>Worrall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><forename type="middle">J</forename><surname>Garbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniyar</forename><surname>Turmukhambetov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><forename type="middle">J</forename><surname>Brostow</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.758</idno>
+		<ptr target="https://arxiv.org/abs/1612.04642" />
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-07">2017</date>
+			<biblScope unit="page" from="7168" to="7177" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Worrall DE, Garbin SJ, Turmukhambetov D, Brostow GJ. Harmonic Net- works: Deep Translation and Rotation Equivariance. 2017. https:// arxiv. org/ abs/1612.04642</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Oxygen and Water Vapour Barrier Films with Low Moisture Sensitivity Fabricated from Self-Crosslinking Fibrillated Cellulose</title>
+		<author>
+			<persName><forename type="first">Per</forename><forename type="middle">A</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joby</forename><forename type="middle">J</forename><surname>Kochumalayil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Wågberg</surname></persName>
+		</author>
+		<idno type="DOI">10.15376/frc.2013.2.851</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Trans. of the XVth Fund. Res. Symp. Cambridge, 2013</title>
+		<meeting><address><addrLine>Stockholm</addrLine></address></meeting>
+		<imprint>
+			<publisher>Fundamental Research Committee (FRC), Manchester</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="851" to="866" />
+		</imprint>
+		<respStmt>
+			<orgName>KTH Royal Institute of Technology</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+	<note type="raw_reference">Sinzinger F. Geometric deep learning for medical image processing prob- lems. PhD thesis. KTH Royal Institute of Technology. Stockholm. 2024.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Image registration is a geometric deep learning task</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sideri-Lampretsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Stolt-Ans´o</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Menten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcginnis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rueckert</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2412.13294" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sideri-Lampretsa V, Stolt-Ans´o N, Menten M, Qiu H, McGinnis J, Rueckert D. Image registration is a geometric deep learning task. 2024. https:// arxiv. org/ abs/ 2412. 13294</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A geometric approach to robust medical image segmentation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Santhirasekaram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Frangi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-024-42280-3</idno>
+		<ptr target="https://doi.org/10.1038/s41467-024-42280-3" />
+	</analytic>
+	<monogr>
+		<title level="j">Nat Commun</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">1869</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Santhirasekaram S, Liu J, Liu W, Hu Y, Frangi AF. A geometric approach to robust medical image segmentation. Nat Commun. 2024;15:1869. https:// doi. org/ 10. 1038/ s41467-024-42280-3.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Geometric Deep Learning: Going beyond Euclidean data</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">M</forename><surname>Bronstein</surname></persName>
+			<idno type="ORCID">0000-0002-1262-7252</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joan</forename><surname>Bruna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Szlam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Vandergheynst</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/msp.2017.2693418</idno>
+		<ptr target="https://arxiv.org/abs/2104.13478" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Signal Processing Magazine</title>
+		<title level="j" type="abbrev">IEEE Signal Process. Mag.</title>
+		<idno type="ISSN">1053-5888</idno>
+		<idno type="ISSNe">1558-0792</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="18" to="42" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bronstein MM, Bruna J, Cohen T, Veliˇckovi´c P. Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges. 2021. https:// arxiv. org/ abs/ 2104.13478</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Geometric deep learning for diffusion MRI signal reconstruction with continuous samplings (DISCUS)</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Ewert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Kügler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rüdiger</forename><surname>Stirnberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandra</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anastasia</forename><surname>Yendiki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Reuter</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/imag_a_00121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Imaging Neuroscience</title>
+		<idno type="ISSNe">2837-6056</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2024-04">2024</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ewert C, Ku¨gler D, Stirnberg R, Koch A, Yendiki A, Reuter M. Geometric deep learning for diffusion MRI signal reconstruction with continuous samplings (DISCUS). Imaging Neurosci (Camb). 2024;2:1-18.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Classification of Brain Disorders in rs-fMRI via Local-to-Global Graph Neural Networks</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-5736-1235</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ran</forename><surname>Song</surname></persName>
+			<idno type="ORCID">0000-0002-1344-4415</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Liping</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dawei</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-4488-2135</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-5601-2145</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-4960-3190</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2022.3219260</idno>
+		<ptr target="https://doi.org/10.1109/TMI.2022.3219260" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="444" to="455" />
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang H, Song R, Wang L, Zhang L, Wang D, Wang C, et al. Classification of brain disorders in rs-fMRI via local-to-global graph neural networks. IEEE Trans Med Imaging. 2023;42(2):444-55. https:// doi. org/ 10. 1109/ TMI. 2022. 32192 60.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Spherical convolutional neural networks can improve brain microstructure estimation from diffusion MRI data</title>
+		<author>
+			<persName><forename type="first">Leevi</forename><surname>Kerkelä</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kiran</forename><surname>Seunarine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Szczepankiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><forename type="middle">A</forename><surname>Clark</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnimg.2024.1349415</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neuroimaging</title>
+		<title level="j" type="abbrev">Front. Neuroimaging</title>
+		<idno type="ISSNe">2813-1193</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">1349415</biblScope>
+			<date type="published" when="2024-03-14">2024</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kerkela L, Seunarine K, Szczepankiewicz F, Clark CA. Spherical convolu- tional neural networks can improve brain microstructure estimation from diffusion MRI data. Front Neuroimaging. 2024;3:1349415.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">From sMRI to task-fMRI: A unified geometric deep learning framework for cross-modal brain anatomo-functional mapping</title>
+		<author>
+			<persName><forename type="first">Zhiyuan</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taicheng</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zonglei</forename><surname>Zhen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-5184-3230</idno>
+		</author>
+		<idno type="DOI">10.1016/j.media.2022.102681</idno>
+		<ptr target="https://doi.org/10.1016/j.media.2022.102681" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page">102681</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhu Z, Huang T, Zhen Z, Wang B, Wu X, Li S. From sMRI to task-fMRI: a uni- fied geometric deep learning framework for cross-modal brain anatomo- functional mapping. Med Image Anal. 2023;83:102681. https:// doi. org/ 10. 1016/j. media. 2022. 102681.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Deep Learning Image Reconstruction for CT: Technical Principles and Clinical Prospects</title>
+		<author>
+			<persName><forename type="first">Lennart</forename><forename type="middle">R</forename><surname>Koetzier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenico</forename><surname>Mastrodicasa</surname></persName>
+			<idno type="ORCID">0000-0001-8227-0757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">P</forename><surname>Szczykutowicz</surname></persName>
+			<idno type="ORCID">0000-0002-3008-6568</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Niels</forename><forename type="middle">R</forename><surname>Van Der Werf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">S</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-9234-1264</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Veit</forename><surname>Sandfort</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aart</forename><forename type="middle">J</forename><surname>Van Der Molen</surname></persName>
+			<idno type="ORCID">0000-0002-2376-9424</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dominik</forename><surname>Fleischmann</surname></persName>
+			<idno type="ORCID">0000-0003-0715-0952</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Willemink</surname></persName>
+			<idno type="ORCID">0000-0002-6991-6557</idno>
+		</author>
+		<idno type="DOI">10.1148/radiol.221257</idno>
+		<ptr target="https://doi.org/10.1148/radiol.221257" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">306</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">221257</biblScope>
+			<date type="published" when="2023-03-01">2023</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Koetzier LR, Mastrodicasa D, Szczykutowicz TP, Werf NR, Wang AS, Sandfort V, et al. Deep learning image reconstruction for CT: technical principles and clinical prospects. Radiology. 2023;306(3):221257. https:// doi. org/ 10. 1148/ radiol. 221257.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Pulmonary nodule detection in CT scans with equivariant CNNs</title>
+		<author>
+			<persName><forename type="first">Marysia</forename><surname>Winkels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taco</forename><forename type="middle">S</forename><surname>Cohen</surname></persName>
+			<idno type="ORCID">0000-0003-3072-3405</idno>
+		</author>
+		<idno type="DOI">10.1016/j.media.2019.03.010</idno>
+		<ptr target="https://doi.org/10.1016/j.media.2019.03.010" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="15" to="26" />
+			<date type="published" when="2019-07">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Winkels M, Cohen TS. Pulmonary nodule detection in CT scans with equivariant CNNs. Med Image Anal. 2019;55:15-26. https:// doi. org/ 10. 1016/j. media. 2019. 03. 010.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Single-Cell Spatial Analysis of Histopathology Images for Survival Prediction via Graph Attention Network</title>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuming</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leon</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruijiang</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-47076-9_12</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023-10-26">2023. 2023</date>
+			<biblScope unit="page" from="114" to="124" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li Z, Jiang Y, Liu L, Xia Y, Li R. Single-cell spatial analysis of histopathology images for survival prediction via graph attention network. In: Applica- tions of Medical Artificial Intelligence (AMAI 2023). Lecture Notes in Computer Science. Cham: Springer; 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A systematic review of the frequency and prognosis of arteriovenous malformations of the brain in adults</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Al-Shahi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Warlow</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/124.10.1900</idno>
+		<ptr target="https://doi.org/10.1093/brain/124.10.1900" />
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<idno type="ISSNe">1460-2156</idno>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1900" to="1926" />
+			<date type="published" when="2001-10-01">2001</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Al-Shahi R, Warlow C, et al. A systematic review of the frequency and prognosis of arteriovenous malformations of the brain in adults. Brain. 2001;124(10):1900-26. https:// doi. org/ 10. 1093/ brain/ 124. 10. 1900.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2015–2019</title>
+		<author>
+			<persName><forename type="first">Quinn</forename><forename type="middle">T</forename><surname>Ostrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mackenzie</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Neff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Cioffi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><forename type="middle">A</forename><surname>Waite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Kruchko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><forename type="middle">S</forename><surname>Barnholtz-Sloan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noac202</idno>
+		<ptr target="https://doi.org/10.1093/neuonc/noac202" />
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">Supplement_5</biblScope>
+			<biblScope unit="page" from="v1" to="v95" />
+			<date type="published" when="2022-10-05">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ostrom QT, Patil N, Cioffi G, Waite KA, Kruchko C, Barnholtz-Sloan JS, et al. CBTRUS statistical report: primary brain and other central nervous system tumors diagnosed in the United States, 2015-2019. Neuro Oncology. 2022;24:v1-95. https:// doi. org/ 10. 1093/ neuonc/ noac2 02.</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">EANO guidelines for the diagnosis and treatment of meningiomas</title>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Minniti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Preusser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Jenkinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kita</forename><surname>Sallabanda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Houdart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Von Deimling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pantelis</forename><surname>Stavrinou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Lefranc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morten</forename><surname>Lund-Johansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth Cohen-Jonathan</forename><surname>Moyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieta</forename><surname>Brandsma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Henriksson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Riccardo</forename><surname>Soffietti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Weller</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1470-2045(16)30321-7</idno>
+		<ptr target="https://doi.org/10.1016/S1470-2045(16)30321-7" />
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Oncology</title>
+		<title level="j" type="abbrev">The Lancet Oncology</title>
+		<idno type="ISSN">1470-2045</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="e383" to="e391" />
+			<date type="published" when="2016-09">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goldbrunner R, Minniti G, Preusser M, Jenkinson MD, Sallabanda K, Houdart E, et al. EANO guidelines for the diagnosis and treatment of meningiomas. Lancet Oncol. 2016;17(9):e383-91. https:// doi. org/ 10. 1016/ S1470-2045(16) 30321-7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Diagnosis and Treatment of Pituitary Adenomas</title>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Molitch</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jama.2016.19699</idno>
+		<ptr target="https://doi.org/10.1001/jama.2016.19699" />
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<title level="j" type="abbrev">JAMA</title>
+		<idno type="ISSN">0098-7484</idno>
+		<imprint>
+			<biblScope unit="volume">317</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">516</biblScope>
+			<date type="published" when="2017-02-07">2017</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Molitch ME. Diagnosis and treatment of pituitary adenomas: a review. JAMA. 2017;317(5):516-24. https:// doi. org/ 10. 1001/ jama. 2016. 19699.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Epidemiology of Brain Metastases</title>
+		<author>
+			<persName><forename type="first">Lakshmi</forename><surname>Nayak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eudocia</forename><forename type="middle">Quant</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">Y</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11912-011-0203-y</idno>
+		<ptr target="https://doi.org/10.1007/s11912-011-0203-y" />
+	</analytic>
+	<monogr>
+		<title level="j">Current Oncology Reports</title>
+		<title level="j" type="abbrev">Curr Oncol Rep</title>
+		<idno type="ISSN">1523-3790</idno>
+		<idno type="ISSNe">1534-6269</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="48" to="54" />
+			<date type="published" when="2012">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nayak L, Lee EQ, Wen PY. Epidemiology of brain metastases. Curr Oncol Rep. 2012;14(1):48-54. https:// doi. org/ 10. 1007/ s11912-011-0203-y.</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The Natural History of Vestibular Schwannoma</title>
+		<author>
+			<persName><forename type="first">Sven-Eric</forename><surname>Stangerup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Per</forename><surname>Caye-Thomasen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mirko</forename><surname>Tos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Thomsen</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/01.mao.0000217356.73463.e7</idno>
+		<ptr target="https://doi.org/10.1097/01.mao.0000217356.73463.e7" />
+	</analytic>
+	<monogr>
+		<title level="j">Otology &amp; Neurotology</title>
+		<idno type="ISSN">1531-7129</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="547" to="552" />
+			<date type="published" when="2006-06">2006</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stangerup SE, Caye-Thomasen P, Tos M, Thomsen J. The natural history of vestibular schwannoma. Otol Neurotol. 2006;27(4):547-52. https:// doi. org/ 10. 1097/ 01. mao. 00002 17356. 73463. e7.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">DeepTumor: Framework for Brain MR Image Classification, Segmentation and Tumor Detection</title>
+		<author>
+			<persName><forename type="first">Ghazanfar</forename><surname>Latif</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/diagnostics12112888</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">2888</biblScope>
+			<date type="published" when="2022-11-21">2022</date>
+			<publisher>MDPI AG</publisher>
+			<pubPlace>Basel)</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Latif G. DeepTumor: framework for brain MR image classification, seg- mentation, and tumor detection. Diagnostics (Basel). 2022;12(11):2888.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Roto-translation equivariant convolutional networks: Application to histopathology image analysis</title>
+		<author>
+			<persName><forename type="first">Maxime</forename><forename type="middle">W</forename><surname>Lafarge</surname></persName>
+			<idno type="ORCID">0000-0001-9235-783X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">J</forename><surname>Bekkers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josien</forename><forename type="middle">P W</forename><surname>Pluim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remco</forename><surname>Duits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitko</forename><surname>Veta</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2020.101849</idno>
+		<ptr target="https://doi.org/10.1016/j.media.2020.101849" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page">101849</biblScope>
+			<date type="published" when="2021-02">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lafarge MW, Bekkers EJ, Pluim JPW, Duits R, Veta M. Roto-translation equivariant convolutional networks: application to histopathology image analysis. Med Image Anal. 2021;68:101849. https:// doi. org/ 10. 1016/j. media. 2020. 101849.</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Brain Tumor Segmentation (BraTS2020) dataset</title>
+		<author>
+			<persName><surname>Aswaf</surname></persName>
+		</author>
+		<ptr target="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aswaf. Brain Tumor Segmentation (BraTS2020) dataset. 2020. https:// www. kaggle. com/ datas ets/ awsaf 49/ brats 2020-train ing-data</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Skin cancer lesions segmentation dataset</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Pivoshenko</surname></persName>
+		</author>
+		<ptr target="https://www.kaggle.com/datasets/volodymyrpivoshenko/skin-cancer-lesions-segmentati" />
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pivoshenko V. Skin cancer lesions segmentation dataset. 2023. https:// www. kaggle. com/ datas ets/ volod ymyrp ivosh enko/ skin-cancer-lesio ns- segme ntati on</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">BCCD dataset with mask. A blood cell detection dataset</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Blahiri</surname></persName>
+		</author>
+		<idno type="DOI">10.34740/kaggle/dsv/2645886</idno>
+		<ptr target="https://doi.org/10.34740/kag-gle/dsv/2645886" />
+	</analytic>
+	<monogr>
+		<title level="j">Tumor MRI Dataset</title>
+		<imprint>
+			<date type="published" when="2020">2023. 2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Blahiri J. BCCD dataset with mask. A blood cell detection dataset. 2023. https:// www. kaggle. com/ datas ets/ jeetb lahiri/ bccd-datas et-with-mask 41. Msoud N. Brain Tumor MRI Dataset. 2020. https:// doi. org/ 10. 34740/ kag- gle/ dsv/ 26458 86</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Multi-Method Analysis of Medical Records and MRI Images for Early Diagnosis of Dementia and Alzheimer’s Disease Based on Deep Learning and Hybrid Methods</title>
+		<author>
+			<persName><forename type="first">Badiea</forename><forename type="middle">Abdulkarem</forename><surname>Mohammed</surname></persName>
+			<idno type="ORCID">0000-0003-3539-4161</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ebrahim</forename><forename type="middle">Mohammed</forename><surname>Senan</surname></persName>
+			<idno type="ORCID">0000-0002-7508-7601</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taha</forename><forename type="middle">H</forename><surname>Rassem</surname></persName>
+			<idno type="ORCID">0000-0001-6259-0622</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nasrin</forename><forename type="middle">M</forename><surname>Makbol</surname></persName>
+			<idno type="ORCID">0000-0002-9677-3862</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adwan</forename><forename type="middle">Alownie</forename><surname>Alanazi</surname></persName>
+			<idno type="ORCID">0000-0002-8448-5273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyad</forename><forename type="middle">Ghaleb</forename><surname>Al-Mekhlafi</surname></persName>
+			<idno type="ORCID">0000-0001-6367-0309</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tariq</forename><forename type="middle">S</forename><surname>Almurayziq</surname></persName>
+			<idno type="ORCID">0000-0003-3695-3375</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fuad</forename><forename type="middle">A</forename><surname>Ghaleb</surname></persName>
+			<idno type="ORCID">0000-0002-1468-0655</idno>
+		</author>
+		<idno type="DOI">10.3390/electronics10222860</idno>
+		<ptr target="https://doi.org/10.3390/electronics10222860" />
+	</analytic>
+	<monogr>
+		<title level="j">Electronics</title>
+		<title level="j" type="abbrev">Electronics</title>
+		<idno type="ISSNe">2079-9292</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page">2860</biblScope>
+			<date type="published" when="2021-11-20">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mohammed BA, Senan EM, Rassem TH, Makbol NM, Alanazi AA, Al-Al- Mekhlafi ZG, et al. Multi-method analysis of medical records and MRI images for early diagnosis of dementia and alzheimer&apos;s disease based on deep learning and hybrid methods. Electronics. 2021. https:// doi. org/ 10. 3390/ elect ronic s1022 2860.</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures</title>
+		<author>
+			<persName><forename type="first">Luqman</forename><surname>Ali</surname></persName>
+			<idno type="ORCID">0000-0001-5996-7804</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fady</forename><surname>Alnajjar</surname></persName>
+			<idno type="ORCID">0000-0001-6102-3765</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamad</forename><forename type="middle">Al</forename><surname>Jassmi</surname></persName>
+			<idno type="ORCID">0000-0002-4230-4067</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Munkhjargal</forename><surname>Gocho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wasif</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0003-2227-3299</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Adel</forename><surname>Serhani</surname></persName>
+			<idno type="ORCID">0000-0001-7001-3710</idno>
+		</author>
+		<idno type="DOI">10.3390/s21051688</idno>
+		<ptr target="https://doi.org/10.3390/s21051688" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">1688</biblScope>
+			<date type="published" when="2021-03-01">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ali L, Alnajjar F, Jassmi H, Gochoo M, Khan W, Serhani M. Performance evaluation of deep CNN-based crack detection and localization tech- niques for concrete structures. Sensors. 2021;21:1688. https:// doi. org/ 10. 3390/ s2105 1688.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A Convolutional Neural Network Classifier VGG-19 Architecture for Lesion Detection and Grading in Diabetic Retinopathy Based on Deep Learning</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sudha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>T. R. Ganeshbabu</surname></persName>
+		</author>
+		<idno type="DOI">10.32604/cmc.2020.012008</idno>
+		<ptr target="https://doi.org/10.32604/cmc.2020.012008" />
+	</analytic>
+	<monogr>
+		<title level="j">Computers, Materials &amp; Continua</title>
+		<idno type="ISSN">1546-2226</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="827" to="842" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Tech Science Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sudha V, Ganeshbabu D. A convolutional neural network classifier VGG- 19 architecture for lesion detection and grading in diabetic retinopathy based on deep learning. Comput Mater Contin. 2020;66:827-42. https:// doi. org/ 10. 32604/ cmc. 2020. 012008.</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">An Adapted ResNet-50 Architecture for Predicting Flow Fields of an Underwater Vehicle</title>
+		<author>
+			<persName><forename type="first">Zifeng</forename><surname>Duan</surname></persName>
+			<idno type="ORCID">0009-0009-9697-1787</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Biao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaosheng</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Jiang</surname></persName>
+			<idno type="ORCID">0000-0002-0939-0442</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2024.3399077</idno>
+		<ptr target="https://doi.org/10.1109/ACCESS.2024.3399077" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="66398" to="66407" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Duan Z, Wang F, Wang B, Luo G, Jiang Z. An adapted ResNet-50 archi- tecture for predicting flow fields of an underwater vehicle. IEEE Access. 2024;12:66398-407. https:// doi. org/ 10. 1109/ ACCESS. 2024. 33990 77.</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+		<ptr target="https://arxiv.org/abs/1512.03385" />
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">He K, Zhang X, Ren S, Sun J. Deep Residual Learning for Image Recogni- tion. 2015. https:// arxiv. org/ abs/ 1512. 03385</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Hover-Net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images</title>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Graham</surname></persName>
+			<idno type="ORCID">0000-0002-2214-8212</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Quoc</forename><forename type="middle">Dang</forename><surname>Vu</surname></persName>
+			<idno type="ORCID">0000-0003-2075-9201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shan</forename><forename type="middle">E Ahmed</forename><surname>Raza</surname></persName>
+			<idno type="ORCID">0000-0002-1097-1738</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ayesha</forename><surname>Azam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yee</forename><forename type="middle">Wah</forename><surname>Tsang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Tae</forename><surname>Kwak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nasir</forename><surname>Rajpoot</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2019.101563</idno>
+		<ptr target="https://doi.org/10.1016/j.media.2019.101563" />
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page">101563</biblScope>
+			<date type="published" when="2019-12">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Graham S, Vu QD, Raza SEA, Azam A, Tsang YW, Kwak JT, et al. Hover-net: simultaneous segmentation and classification of nuclei in multi-tissue histology images. Med Image Anal. 2019;58:101563. https:// doi. org/ 10. 1016/j. media. 2019. 101563.</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Improved UNet with Attention for Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Al Qurri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Almekkawy</surname></persName>
+			<idno type="ORCID">0000-0002-9222-3003</idno>
+		</author>
+		<idno type="DOI">10.3390/s23208589</idno>
+		<ptr target="https://doi.org/10.3390/s23208589" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page">8589</biblScope>
+			<date type="published" when="2023-10-20">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">AL Qurri A, Almekkawy M. Improved unet with attention for medical image segmentation. Sensors. 2023. https:// doi. org/ 10. 3390/ s2320 8589.</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Exploring advanced architectural variations of nnUNet</title>
+		<author>
+			<persName><forename type="first">Niccolò</forename><surname>Mcconnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nchongmaje</forename><surname>Ndipenoch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alina</forename><surname>Miron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongmin</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neucom.2023.126837</idno>
+		<ptr target="https://doi.org/10.1016/j.neucom.2023.126837" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<title level="j" type="abbrev">Neurocomputing</title>
+		<idno type="ISSN">0925-2312</idno>
+		<imprint>
+			<biblScope unit="volume">560</biblScope>
+			<biblScope unit="page">126837</biblScope>
+			<date type="published" when="2023-12">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McConnell N, Ndipenoch N, Cao Y, Miron A, Li Y. Exploring advanced architectural variations of nnunet. Neurocomputing. 2023;560:126837. https:// doi. org/ 10. 1016/j. neucom. 2023. 126837.</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Understanding transformation tolerant visual object representations in the human brain and convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Yaoda</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maryam</forename><surname>Vaziri-Pashkam</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2022.119635</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">263</biblScope>
+			<biblScope unit="page">119635</biblScope>
+			<date type="published" when="2022-11">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu Y, Vaziri-Pashkam M. Understanding transformation-tolerant visual object representations in the human brain and convolutional neural networks. Neuroimage. 2022;263(119635):119635.</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">AN INTELLIGENT ROLLING BEARING FAULT DIAGNOSIS METHOD OF CNN BASED ON MNIST DATABASE OF HANDWRITTEN DIGITS</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Burges</surname></persName>
+		</author>
+		<idno type="DOI">10.17683/ijomam.issue5.19</idno>
+		<ptr target="http://yann.lecun.com/exdb/mnist/" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Mechatronics and Applied Mechanics</title>
+		<title level="j" type="abbrev">IJOMAM</title>
+		<idno type="ISSN">2559-4397</idno>
+		<idno type="ISSNe">2559-6497</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="1998">1998</date>
+			<publisher>INCDMTM</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">LeCun, Y, Cortes C, Burges C. The MNIST database of handwritten digits. 1998. http://yann.lecun.com/exdb/mnist/</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Microsoft coco: Common objects in context</title>
+		<author>
+			<persName><forename type="first">Lin T.-Y</forename><surname>Maire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Belongie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hays</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Perona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ramanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Doll´ar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zitnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename></persName>
+		</author>
+		<idno>2014. 10.1007</idno>
+		<ptr target="https://cocodataset" />
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision (ECCV)</title>
+		<imprint>
+			<biblScope unit="page" from="740" to="755" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lin T.-Y., Maire M, Belongie S, Hays J, Perona P, Ramanan D, Doll´ar P, Zitnick C.L. Microsoft coco: Common objects in context. In: European Conference on Computer Vision (ECCV), pp. 740-755. 2014. 10.1007/ https://cocodataset</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Sparse Data–Driven Learning for Effective and Efficient Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">A</forename><surname>Onofrey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">H</forename><surname>Staib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojie</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xenophon</forename><surname>Papademetris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Metaxas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Rueckert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">S</forename><surname>Duncan</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-bioeng-060418-052147</idno>
+		<ptr target="https://doi.org/10.1146/annurev-bioeng-060418-052147" />
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Biomedical Engineering</title>
+		<title level="j" type="abbrev">Annu. Rev. Biomed. Eng.</title>
+		<idno type="ISSN">1523-9829</idno>
+		<idno type="ISSNe">1545-4274</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="127" to="153" />
+			<date type="published" when="2020-06-04">2020</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Onofrey JA, Staib LH, Huang X, Zhang F, Papademetris X, Metaxas D, et al. Sparse data-driven learning for effective and efficient biomedical image segmentation. Annu Rev Biomed Eng. 2020;22:127-53. https:// doi. org/ 10. 1146/ annur ev-bioeng-060418-052147.</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The spherical harmonic based resolution increase and decrease method for cell mesh model with the vertex and face numbers consistency</title>
+		<author>
+			<persName><forename type="first">Chinyi</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yusri</forename><forename type="middle">Dwi</forename><surname>Heryanto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryo</forename><surname>Yamada</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iciibms50712.2020.9336403</idno>
+		<ptr target="https://doi.org/10.1109/ICIIBMS50712.2020.9336403" />
+	</analytic>
+	<monogr>
+		<title level="m">2020 5th International Conference on Intelligent Informatics and Biomedical Sciences (ICIIBMS)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-11-18">2020</date>
+			<biblScope unit="page" from="225" to="228" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cheng C, Heryanto YD, Yamada R. The spherical harmonic-based resolu- tion increase and decrease method for cell mesh model with vertex and face number consistency. In: 2020 5th International Conference on Intel- ligent Informatics and Biomedical Sciences (ICIIBMS). pp. 225-228. 2020. https:// doi. org/ 10. 1109/ ICIIB MS507 12. 2020. 93364 03</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Reconstructing 3D Facial Shape Using Spherical Harmonics</title>
+		<author>
+			<persName><forename type="first">Chengming</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanghui</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwin</forename><forename type="middle">R</forename><surname>Hancock</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-04146-4_101</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">Lecture notes in computer science</title>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Foggia</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Sansone</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Vento</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="volume">5716</biblScope>
+			<biblScope unit="page" from="949" to="957" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zou C, Zhao G, Hancock ER. Reconstructing 3D facial shape using spheri- cal harmonics. In: Foggia P, Sansone C, Vento M, editors. Image analysis and processing (ICIAP). Lecture notes in computer science, vol. 5716. Heidelberg: Springer; 2009. p. 846-55.</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Self-supervised neural network for phase retrieval in QDPC microscopy</title>
+		<author>
+			<persName><forename type="first">Ying-Ju</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunil</forename><surname>Vyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hsuan-Ming</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Luo</surname></persName>
+		</author>
+		<idno type="DOI">10.1364/oe.491496</idno>
+		<ptr target="https://doi.org/10.1364/OE.491496" />
+	</analytic>
+	<monogr>
+		<title level="j">Optics Express</title>
+		<title level="j" type="abbrev">Opt. Express</title>
+		<idno type="ISSNe">1094-4087</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">19897</biblScope>
+			<date type="published" when="2023-05-30">2023</date>
+			<publisher>Optica Publishing Group</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen YJ, Vyas S, Huang HM, Luo Y. Self-supervised neural network for phase retrieval in QDPC microscopy. Optics Express. 2023;31(12):19897. https:// doi. org/ 10. 1364/ OE. 491496.</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Patch-Based U-Net Model for Isotropic Quantitative Differential Phase Contrast Imaging</title>
+		<author>
+			<persName><forename type="first">An-Cin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-4933-6491</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sunil</forename><surname>Vyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Hsiang</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-You</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hsuan-Ming</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0001-9776-7897</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2021.3091207</idno>
+		<ptr target="https://doi.org/10.1109/TMI.2021.3091207" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3229" to="3237" />
+			<date type="published" when="2021-11">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li AC, Vyas S, Lin YH, Huang YY, Huang HM, Luo Y. Patch-Based U-Net model for isotropic quantitative differential phase contrast imaging. IEEE Trans Med Imaging. 2021;40(11):3229-37. https:// doi. org/ 10. 1109/ TMI. 2021. 30912 07.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

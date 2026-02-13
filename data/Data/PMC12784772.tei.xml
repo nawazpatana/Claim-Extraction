@@ -1,0 +1,2063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Timepoint-Specific Benchmarking of Deep Learning Models for Glioblastoma Follow-Up MRI</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>MDPI AG</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-12-22">22 December 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Wenhao</forename><surname>Guo</surname></persName>
+							<idno type="ORCID">0009-0006-3673-0285</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Department of Computer Science and Engineering , The Ohio State University , Columbus , OH 43210 , USA;</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">The Ohio State University</orgName>
+								<address>
+									<postCode>43210</postCode>
+									<settlement>Columbus</settlement>
+									<region>OH</region>
+									<country>USA;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Golrokh</forename><surname>Mirzaei</surname></persName>
+							<email>mirzaei.4@osu.edu</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Department of Computer Science and Engineering , The Ohio State University , Columbus , OH 43210 , USA;</note>
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">The Ohio State University</orgName>
+								<address>
+									<postCode>43210</postCode>
+									<settlement>Columbus</settlement>
+									<region>OH</region>
+									<country>USA;</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Timepoint-Specific Benchmarking of Deep Learning Models for Glioblastoma Follow-Up MRI</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Cancers</title>
+						<title level="j" type="abbrev">Cancers</title>
+						<idno type="eISSN">2072-6694</idno>
+						<imprint>
+							<publisher>MDPI AG</publisher>
+							<biblScope unit="volume">18</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<biblScope unit="page">36</biblScope>
+							<date type="published" when="2025-12-22">22 December 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">639E1270C779CF2637502923167312FB</idno>
+					<idno type="DOI">10.3390/cancers18010036</idno>
+					<note type="submission">Received: 13 November 2025 Revised: 2 December 2025 Accepted: 3 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-02-01T14:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>glioblastoma</term>
+					<term>MRI</term>
+					<term>deep learning</term>
+					<term>true tumor</term>
+					<term>pseudoprogression</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Glioblastoma is an aggressive brain cancer, and follow-up MRI scans are used to determine whether changes after treatment represent real tumor growth or temporary treatment effects. This decision is difficult, especially at the first follow-up. We analyzed 180 patients and compared eleven deep learning models across two follow-up timepoints. Overall accuracy was similar at both timepoints, ranging from about 70% to 74%. However, the second follow-up provided clearer separation between the three clinical outcomes, with the best model improving its F1 score from 0.44 at the first follow-up timepoint to 0.53 at the second follow-up timepoint. A model that combines convolutional features with a state-space sequence method consistently gave the best balance of accuracy and efficiency, while some transformer models reached higher AUC values but required much more computation. These findings offer a practical benchmark to guide future research and clinical tool development.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="841.89" lry="595.28"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Gliomas are a heterogeneous group of tumors that originate from glial cells in the central nervous system and are among the most common types of brain tumors. They account for approximately 30% of all brain tumors and about 80% of malignant brain tumors. Gliomas can be classified into different types, including astrocytomas, oligodendrogliomas, and glioblastomas, with glioblastoma being the most aggressive and lethal form. The prognosis for patients with glioblastoma remains poor, with a median survival of approximately 15 months despite advances in treatment. The complexity and variability of gliomas, coupled with their infiltrative nature, present significant challenges in diagnosis and treatment, underscoring the need for innovative approaches to improve patient outcomes. A critical challenge in the treatment of brain tumors is differentiating between true tumor progression (TP) and treatment effect (TE), such as pseudoprogression (PsP) and radiation necrosis. TP refers to the actual growth or recurrence of the tumor, indicating a need for a change in treatment strategy to more aggressive or alternative therapies. In contrast, PsP and radiation necrosis are phenomena related to treatment effects and often managed by close monitoring rather than aggressive treatment. Because their imaging appearances can closely mimic true progression, accurate differentiation is difficult and can complicate clinical decision-making.</p><p>Machine learning (ML) and deep learning (DL) methods have been increasingly applied to address this challenge. Hu et al. applied a support vector machine on multiparametric MRI, comprising diffusion and perfusion parameters <ref type="bibr" target="#b0">[1]</ref>. While the study was limited by a relatively small cohort, their voxel-wise classification approach demonstrated that the integration of advanced MRI modalities enhances discriminative ability. Radiomics-based approaches have also shown promise: a random forest classifier trained on T1C images outperformed neuroradiologists <ref type="bibr" target="#b1">[2]</ref>, gradient boosting on pre-treatment T1C radiomics demonstrated strong accuracy in external validation <ref type="bibr" target="#b2">[3]</ref>, and even lowparameter supervised methods yielded moderate AUCs on limited datasets <ref type="bibr" target="#b3">[4]</ref>. Building on these early efforts, deep learning frameworks have achieved significant progress. Early studies combined MRI with clinical data in CNN-LSTM frameworks, achieving improved predictive accuracy over unimodal methods <ref type="bibr" target="#b4">[5]</ref>. <ref type="bibr">Li et al.</ref> proposed a DCGAN-AlexNet framework to mitigate overfitting in small datasets <ref type="bibr" target="#b5">[6]</ref>, while CNN-LSTM models treating multiparametric MRI as spatial sequences further boosted accuracy and AUC <ref type="bibr" target="#b6">[7]</ref>. Automated DL methods, such as 3D DenseNet-121 applied to T2 and CET1 MRI <ref type="bibr" target="#b7">[8]</ref>, and radiomics classifiers validated on biopsy-proven gliomas <ref type="bibr" target="#b8">[9]</ref>, confirmed the feasibility of noninvasive PsP-TP prediction. Recent work has moved toward advanced multimodal and transformer-based approaches. Integration of imaging features with MGMT promoter methylation achieved high diagnostic performance <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref>. Multiparametric MRI combined with MGMT status enhanced PsP-TP classification <ref type="bibr" target="#b11">[12]</ref>. CFINet, an attention-based crossmodality feature interaction network leveraging T1-and T2-weighted MRI, demonstrated strong generalization on independent cohorts by effectively capturing complementary information across modalities <ref type="bibr" target="#b12">[13]</ref>. Self-supervised multimodal ViTs leveraging contrastive and context-restoration pretraining further improved performance <ref type="bibr" target="#b13">[14]</ref>. Nonetheless, most methods remain constrained to single timepoints and heterogeneous datasets, limiting reproducibility and generalizability.</p><p>One of the main challenges in ML/DL in this setting is the small sample size and resulting class imbalance due to the low prevalence of TP and PsP. Several studies have used oversampling techniques, such as the Synthetic Minority Oversampling Technique (SMOTE) <ref type="bibr" target="#b14">[15]</ref>. Two-network architectures with similarity loss improved robustness under limited-data conditions <ref type="bibr" target="#b15">[16]</ref> by training two identical networks in parallel with independently undersampled k-space inputs at different reduction factors. A cosine similarity-based loss combined with L1 loss enforced the networks to learn both common and distinct features, while exponential moving average (EMA) updating of the target network further stabilized training. Methodological cautions highlight that oversampling must be confined to training sets to avoid data leakage <ref type="bibr" target="#b16">[17]</ref>. More advanced methods, such as OCH-SMOTE <ref type="bibr" target="#b17">[18]</ref>, DR-SMOTE <ref type="bibr" target="#b18">[19]</ref>, and hybrid BSGAN <ref type="bibr" target="#b19">[20]</ref>, further expanded applicability. Taken together, these findings underscore the importance of class balancing strategies in ensuring robust and generalizable ML/DL pipelines for PsP-TP classification.</p><p>Another challenge is how different DL architectures perform across longitudinal follow-ups. Multiple studies have shown that pseudoprogression tends to occur early after radiotherapy; for example, up to 50% of malignant glioma patients show evidence of pseudoprogression on MRI immediately after chemo-radiotherapy <ref type="bibr" target="#b20">[21]</ref>, and about 60% of PsP cases are reported within the first 3 months post-radiotherapy <ref type="bibr" target="#b21">[22]</ref>. By contrast, true tumor progression generally emerges later, and MRI changes beyond 3-6 months are more likely to reflect actual recurrence than transient treatment effects <ref type="bibr" target="#b22">[23]</ref>. No prior study has systematically examined whether specific architectures are better suited for early versus late follow-ups-a question with direct clinical relevance.</p><p>In this work, we address this critical gap using the Burdenko Glioblastoma Progression Dataset <ref type="bibr" target="#b23">[24]</ref>, which comprises 180 patients, is substantially larger than previously reported cohorts, and provides longitudinal T1C MRI follow-ups. Table <ref type="table" target="#tab_0">1</ref> summarizes prior studies, where most datasets ranged between 30 and 130 patients. We preprocessed raw MRI data, mitigated class imbalance through an autoencoder (AE) hybrid with SMOTE and augmentation strategies, and conducted a systematic comparison of deep learning techniques to determine which follow-up timepoint offers greater diagnostic utility and which architectures perform most effectively at each timepoint. We benchmarked CNNs, LSTMs, CNN-LSTM hybrids, ResNets, attention-augmented CNNs, Vision Transformers (2D/3D), Swin Transformers, and Mamba-based hybrids across two clinically relevant timepoints: (1) the first follow-up after radiation therapy and before adjuvant chemotherapy and (2) the second follow-up after combined chemo-radiotherapy. By harmonizing preprocessing protocols and employing patient-level cross-validation, we present the first timepoint-specific comparative evaluation of modern deep learning models in longitudinal glioma imaging. Our findings establish a rigorous benchmark that not only guides methodological choices for machine learning researchers but also delivers translational insights for neuro-oncology, underscoring the importance of timepoint-adaptive modeling strategies in clinical decision support. Table 1. Cont. Reference # of Patients # of TP and PsP Imaging Type Method Performance Elshafeey et al. [30] 105 TP = 83/PsP = 22 DSE, DSC SVM AUC = 0.89 Acc = 90.82% Bani-sadr et al. [31] TP = 53/PsP = 23 T1, T1C, FLAIR Random forest AUC = 0.85 Acc = 79.2% Lee et al. [7] ---T1, T1C, T2, T2FLAIR, DWI, T1-post-T1-minus pre-contrast, T2 minus FLAIR CNN+LSTM AUC = 0.81 Jang et al. [32] 104 TP = 66/PsP = 38 T1C CNN AUC = 0.86 Liu et al. [33] TP = 61/PsP = 23 DTI CNN AUC = 0.98 Acc = 88% Akbari et al. [34] TP = 63/PsP = 20 T1, T1C, T2, T2FLAIR, DTI, DSC SVM AUC = 0.919 Acc = 87.3% Lohmann et al. [35] TP = 18/PsP = 16 FET-PET Random forest AUC = 0.73 Acc = 70% Kebir et al. [36] TP = 30/PsP = 14 FET-PET Linear discriminant analysis AUC = 0.93 Sun et al. [2] TP = 51/PsP = 26 T1C Random forest Acc = 72.78% Barine et al. [37] PsP = 8/ Other = 27 T1C Random forest AUC = 0.82 Moassefi et al. [8] 124 TP = 61/PsP = 63 T1, T2 3D-DenseNet AUC = 0.756 Acc = 76.4% Ari et al. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Methods</head><p>We systematically developed and benchmarked a diverse set of architectures to interrogate post-treatment glioblastoma MRI, spanning conventional 3D CNNs and ResNets, sequential models (LSTM-based), transformer variants (2D/3D-ViT, Swin Transformer), Mamba models, and novel hybrids that combine CNNs with attention, LSTM, shift windows patching, or Mamba state-space modules. The detailed architectures of these models are provided in the Supplementary Materials.</p><p>To systematically investigate how model architecture and clinical timepoint affect predictive performance, we developed a standardized pipeline encompassing dataset curation, preprocessing, model implementation, training/validation, and evaluation. The workflow was designed to ensure reproducibility, prevent information leakage, and provide a fair basis for comparison across architectures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Dataset and Preprocessing</head><p>We used the Burdenko Glioblastoma Progression Dataset (Burdenko-GBM-Progression), <ref type="url" target="https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/">https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/</ref> (accessed on 2 December 2025. Archived version: <ref type="url" target="https://web.archive.org/web/20240101000000/https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/">https://web.archive.org/web/20240101000000  /https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/</ref>), comprising 180 patients with primary glioblastoma treated between 2014 and 2020. The dataset includes multi-sequence MRI, CT, clinical, and molecular data; for this study, we focused exclusively on contrast-enhanced T1-weighted MRI (T1C), the most widely available and clinically relevant sequence for follow-up assessment. Imaging was acquired on scanners from four vendors with heterogeneous protocols, reflecting real-world clinical variability. Notably, the dataset documentation does not report scanner field strengths. The dataset is publicly available through The Cancer Imaging Archive (TCIA).</p><p>All T1C volumes were standardized through a multi-timepoint pipeline (Figure <ref type="figure" target="#fig_1">1</ref>). First, raw DICOM series were converted to NIfTI format using dicom2nifti 2.6.1. and subjected to quality control. Implausible acquisitions were excluded using geometry thresholds on voxel spacing, anisotropy, and slice thickness; among valid candidates, the volume with the highest clarity score was selected per timepoint. Logs and slice previews were generated for auditability. Retained volumes were resampled to 128 3 voxels, skullstripped using the BET2 (FSL 6.0.7.17, Oxford, UK), rigidly registered to MNI152 space with the "MNI152_T1_1mm.nii.gz" template provided in FSL 6.0.7.17, and Z-score normalized within the brain mask to ensure cross-subject consistency. Deterministic image-label pairing ensured reproducibility at the patient level. For training, data imbalance was mitigated through oversampling and augmentation. Synthetic 3D MR volumes were generated using a lightweight autoencoder with latent-space interpolation, and mild perturbations-small affine transforms (in-plane rotations within ±3 • and scaling between 0.98 and 1.02) and Gaussian noise (zero-mean, σ ≤ 0.02)-were applied to both real and synthetic data. After augmentation, 1611 subjects were available at the first follow-up and 1431 subjects at the second follow-up. Full implementation details, including thresholds and parameter settings, are provided in the Supplementary Methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Labeling Strategy</head><p>In the Burdenko dataset, each follow-up visit is annotated with a clinical label, which can vary over time. To create a single, reproducible outcome label per patient, we developed a consolidation framework in consultation with a neuro-oncologist. The rules were as follows:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>•</head><p>Progression override: Any evidence of true progression at any timepoint defined the patient as Progression, irrespective of prior or subsequent labels, given its clinical impact.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>•</head><p>Pseudoprogression: A patient was labeled PsP if the most recent follow-up indicated PsP and no prior imaging confirmed progression. PsP was also retained if the initial PsP was followed by stability or response without subsequent progression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>•</head><p>Stable disease: Patients with ≥3 consecutive follow-ups showing only stability or response, without new progression, were labeled Stable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>•</head><p>Scarce follow-up: For patients with ≤2 assessments, the most recent report determined the label (PsP if the last scan was PsP; otherwise, Progression).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>•</head><p>Distant progression: Cases with new lesions outside the primary site were immediately classified as Progression.</p><p>This systematic framework ensured that final labels were clinically meaningful, consistent across patients, and reproducible for downstream modeling. Accordingly, the final consolidated outcome categories consisted of three labels: Progression, Pseudoprogression, and Stable. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Model Architectures</head><p>We benchmarked eleven representative DL architectures spanning three design families: (1) Base volumetric models: 3D CNN, LSTM, 3D-ViT, and ResNet. These capture spatial or sequential dependencies directly from T1C volumes. ( <ref type="formula">2</ref>  Shift Window Patching CNN (Swin CNN)-Despite recent transformer variants, convolutional networks remain highly efficient for volumetric data because shared 3 × 3 × 3 kernels capture local structures with modest parameters. We therefore adopted a 3D-CNN that borrows the window shift idea from Swin: the input T1C volume (1 × 128 × 128 × 128) was first processed by two Conv3D-BatchNorm-ReLU blocks (kernel 3 3 , padding 1) to extract low-level features, which is shown in Figure <ref type="figure" target="#fig_3">2b</ref>. The resulting feature map was then partitioned into fixed-size 3D windows, within which an additional per-window Conv3D-BN-ReLU was applied. To allow limited cross-window interaction while preserving locality, a second pass with shifted windows (offset by half the window size) could be performed; in practice, this yielded stable performance without materially increasing memory. Window-local convolutions focused capacity on fine anatomical details and constrained computation/memory, while the initial global blocks provided broader context. Features were aggregated (global pooling to a 128-D vector) and fed to a linear-SoftMax head (128 → 3) to produce class probabilities.</p><p>Two-Dimensional Linear-Time Sequence Modeling with Selective State Spaces (2D-Mamba)-Mamba is a selective state-space model (SSM) introduced for long-sequence modeling with linear-time complexity; vision adaptations (often called Vision Mamba) map 2D grids to scan orders processed by SSM blocks, offering competitive accuracy with fewer parameters than attention-based transformers. In Figure <ref type="figure" target="#fig_4">3a</ref>, each preprocessed T1-contrast (T1C) volume was represented as an ordered set of 50 axial slices. Slices were pad/cropnormalized to 128 × 128 and then resized to 224 × 224 and channel-expanded (grayscale replicated) to match ImageNet-style pretraining. A Vision-Mamba tiny backbone produced a 384-dimensional embedding per slice, yielding a sequence of shapes 50 × 384. Sequence features were mean-pooled to a volume-level descriptor, projected to 128 dimensions, and passed to a linear-SoftMax classifier to output three class probabilities. By using SSM blocks to capture long-range dependencies within slices while aggregating across slices with lightweight pooling, this model retains global contextual modeling with favorable computational efficiency. Two-Dimensional Mamba Hybrid with CNN-Convolutional networks capture local spatial patterns efficiently, while Mamba-a selective state-space model (SSM)-models' long-range dependencies in linear time, offering a lighter alternative to self-attention. In Figure <ref type="figure" target="#fig_4">3b</ref>, we combined both: each preprocessed T1-contrast volume (1 × 128 × 128 × 128) was first subjected to mean pooling along the z-axis to reduce through-plane redundancy, then passed through three Conv3D-BatchNorm-ReLU blocks interleaved with MaxPool3D (stride 2) to extract and compress volumetric features. The resulting feature map was upsampled and rearranged into an ordered slice sequence (50 slices), which was fed to a Vision-Mamba tiny backbone, producing a 384-dimensional embedding per slice. Sequence embeddings were mean-pooled to a volume-level descriptor, projected to 128 dimensions, and classified with a linear-SoftMax head (128 → 3). This design leverages CNNs for fine local structure while using SSM blocks to aggregate global context across slices with favorable compute and parameter efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head><p>Analyses were anchored to two clinically defined follow-ups, evaluated as independent cohorts under identical procedures: (1) the first follow-up after radiotherapy (typically ~3-4 weeks post-RT) and ( <ref type="formula">2</ref>) the second follow-up after radiotherapy (typically ~2-3 months post-RT). Evaluating the baseline and follow-up scans independently allowed us to characterize model performance across different timepoints. Between the two timepoints of follow-ups, some clear patterns emerged. The performance, in general, was similar across architectures, and the first follow-up was not as good in terms of the separability of classes as the second. The complex models tended to have better discrimination at the expense of significantly larger computation time, while the lightweight models were computationally efficient but less robust. The hybrid architectures achieved the best trade-off between accuracy and efficiency. These patterns form the context for the detailed results reported below.</p><p>All experiments were implemented in Python3.9.23 using PyTorch 2.5.1 (with CUDA 12.1) and MONAI 1.4.0. and executed on a workstation with an NVIDIA RTX A6000 (48 GB) GPU and 128 GB RAM. Unless otherwise noted, the models were trained using Adam optimizer (learning rate = 1 × 10 -4 ), cross-entropy loss, 10 epochs, determined empirically, and random seeds {21, 33, 42}. Batch sizes of one and eight were used for most models, while computationally intensive architectures (Mamba, Swin Transformer) required smaller batch sizes (one and six) due to GPU memory limits on 3D volumes. The 2D-Mamba+CNN model was further evaluated under batch sizes {1, 2, 4, 8} to assess robustness. Patient-level stratified five-fold cross-validation was used throughout. To prevent information leakage, all preprocessing, augmentation, and synthetic oversampling were fit exclusively on the training split within each fold. Class imbalance was mitigated using latent-space SMOTE (256-D embedding, k = 3) applied to autoencoder features and reconstructed into 3D volumes, with caps on synthetic samples to prevent oversampling bias. Mild augmentations (small affine transforms, Gaussian noise) were applied only to the training data. We report accuracy, macro-averaged F1 score, and macro-averaged AUC to reflect overall performance and robustness under class imbalance. In addition, we measured computational efficiency: FLOPs, parameter count, average batch inference time, and total training runtime.</p><p>Classification performance-Table <ref type="table" target="#tab_2">2</ref> summarizes the predictive performance across both follow-up cohorts. Accuracy values were relatively stable across timepoint (≈0.70-0.74), but discrimination improved at the second follow-up, reflected in higher F1 and AUC values for several models. The 2D-Mamba+CNN model demonstrated the most consistent tradeoff across follow-ups, achieving 74.5% accuracy and F1 = 0.44 at the first follow-up and improving to 74.1% accuracy and F1 = 0.53 at the second follow-up. This suggests enhanced class separability later in the care pathway. The transformer-based models (3D-ViT, 2D-ViT+LSTM, Swin Transformer) yielded competitive accuracy and AUC but exhibited higher variance and unstable F1 scores. The lightweight CNNs remained efficient and stable, though their discrimination performance lagged behind. Notably, the highest AUC at the first follow-up was obtained with the 3D-ViT model (AUC = 0.57), whereas at the second follow-up, the 2D-Mamba+CNN model achieved the strongest AUC (0.66). Full results across all batch sizes are reported in Supplementary Table <ref type="table" target="#tab_0">S1</ref>. Representative predictions from 2D-Mamba+CNN are illustrated in Figure <ref type="figure" target="#fig_4">3b</ref>.</p><p>Computational Complexity-We quantify computational efficiency using FLOPs, trainable parameters, average batch inference time, and total training runtime (Table <ref type="table" target="#tab_3">3</ref>). All values are reported as mean ± SD across seeds {21, 33, 42} under the same hardware configuration. The transformer-based models (2D-ViT+LSTM, 3D-ViT, Swin Transformer) were computationally demanding (≥230 GFLOPs) with runtimes exceeding 1000 min, which challenges clinical deployment despite competitive accuracy/AUC. In contrast, the lightweight CNNs were highly efficient (&lt;13 GFLOPs; &lt;0.1M parameters), with stable runtimes, but exhibited lower discrimination. Full results across all batch sizes are reported in Supplementary Table <ref type="table" target="#tab_2">S2</ref>. The 2D-Mamba+CNN model provided the most favorable efficiency-performance balance: a moderate parameter count (~24M) coupled with very low compute (&lt;1 GFLOP) and reasonable runtime, while maintaining the most consistent accuracy-F1 trade-off across both follow-ups. These characteristics suggest a more practical path toward resourceconstrained clinical environments than transformer variants, without the performance drops observed for ultra-light CNNs.</p><p>To conclude, the empirical evidence demonstrates that the hybrids of convolutional and Linear-Time Sequence Modeling with Selective State Spaces (Mamba+CNN) consistently yield the best trade-off between predictive cost and computational cost. At both follow-up MRIs, Mamba+CNN had the most stable performance with accuracy and a significantly improved F1-score in the second follow-up, indicating that it could capture spatial and temporal dependencies. While the transformer-based models showed strong accuracy and AUC, their computational requirements prohibited their use in real clinical settings. On the other hand, the efficient CNNs were computationally inexpensive, but the quality of classification dropped significantly. Although Mamba+CNN achieved the best performance across most metrics and performed best with smaller batch sizes, it did not obtain the highest AUC. At the first follow-up, the highest AUC was achieved by 3D-ViT with a batch size of one, while at the second follow-up, CNN+Mamba with a batch size of four achieved the highest AUC. The Mamba+CNN model's predicted results for each class are shown in Figure <ref type="figure" target="#fig_5">4</ref>.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>In general, the second follow-up exhibited a greater separation between progression, pseudoprogression, and stable disease, representing the expected shift in the clinic from treatment-related changes in early imaging to more definitive evidence of recurrence at later timepoints. Although transformer-based models provide strong discrimination, they are computationally intensive, which restricts their use in daily clinical practice. The lightweight CNNs were highly efficient but offered lower robustness, whereas the 2D-Mamba+CNN model provided the strongest balance between performance and computational cost, making it a more viable candidate for clinical integration.</p><p>Several limitations should be noted. This study focused on two standardized posttreatment MRI timepoints that were consistently available across patients. The first follow-up, obtained approximately 3 weeks after radiotherapy (RT), reflects the early post-treatment period when inflammatory and treatment-related effects are most prominent. The second follow-up, performed 2-3 months after RT, represents a later stage in which evolving tumor biology or emerging pseudoprogression becomes more apparent. Although additional MRIs existed for some patients, these timepoints were not uniformly available or aligned across the cohort. Therefore, we selected these two clinically meaningful and consistently acquired follow-ups to ensure comparability and avoid substantial loss of sample size or selection bias. The dataset is still quite small and imbalanced, and multi-center validation is required to verify its generalizability. In addition, this study only assessed T1C MRI. While this sequence is widely accessible, it cannot comprehensively describe treatment-induced alterations on imaging, and the addition of multi-sequence MRI, such as FLAIR, T1, and T2, may lead to an even better separation of progression from pseudoprogression. in glioblastoma and underscore the importance of standardized, leakage-aware training and evaluation protocols for this challenging task.</p><p>At the architectural level, our findings extend prior work on hybrid models for medical imaging by systematically comparing CNNs, transformers, and state-space-based approaches in longitudinal glioblastoma follow-ups. A 2D-Mamba+CNN model provided the most reliable trade-off between predictive accuracy and computational efficiency, whereas transformer-based models (e.g., ViT, Swin) achieved competitive accuracy and AUC at the cost of higher computational burden and more variable F1 scores. In contrast, lightweight CNNs were highly efficient in terms of FLOPs and parameter counts but exhibited lower discrimination, reflecting the difficulty of handling class imbalance and complex spatiotemporal patterns in this setting. Broader validation on multi-center, multi-sequence cohorts, incorporation of clinical and molecular covariates, and exploration of self-supervised and model-compression strategies will be critical next steps toward practical deployment of automated follow-up MRI analysis in neuro-oncology.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>#</head><figDesc>means number, DTI = diffusion tensor imaging, T1 = T1-weighted imaging, T1C = T1-weighted contrastenhanced imaging, T2 = T2-weighted imaging, FLAIR = fluid-attenuated inversion recovery, DTI = diffusion tensor imaging, DSC = dynamic susceptibility contrast perfusion MRI, DSE = diffusion-sensitive echo imaging, TTP = time-to-peak, MTT= mean transit time, FET-PET = fluoroethyl-tyrosine PET, Acc = accuracy.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Preprocessing workflow. (a) Whole-set pipeline from raw T1C identification to standardized outputs. (b) High-quality selection logic per patient-timepoint with explicit geometry thresholds and clarity-score ranking; per-series CSV logging and preview generation. (c) Training-only oversampling and augmentation: 3D AE latent-space SMOTE with decoding to 3D volumes augmentations; validation/test splits remain unmodified.</figDesc><graphic coords="6,79.77,139.85,435.12,482.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>) Hybrid models: CNN+LSTM, CNN+SE Attention, and 2D-ViT+LSTM. These combine local convolutional features with sequential or attention-based mechanisms. (3) Advanced models: 3D Swin Transformer, Swin CNN, 2D-Mamba, and 2D-Mamba+CNN, which incorporate hierarchical attention or state-space modeling for efficient long-range dependency capture. Architectures were chosen to represent the spectrum of contemporary strategies: convolutional inductive biases, recurrent modeling of slice order, attention-based global context, and state-space efficiency. All models were trained under the same preprocessing, augmentation, and patient-level cross-validation pipeline, ensuring that observed performance differences reflected architecture rather than implementation. The architectures of the base volumetric models and hybrid models are provided in Supplementary FiguresS1-S7Methods. The details of the developed models for the advanced models are described as follows:Shift Windows Transformer (Swin Transformer)-To reduce the quadratic cost of global attention, Swin Transformer introduces windowed self-attention with shifted windows and a hierarchical (pyramidal) design, yielding strong accuracy-efficiency trade-offs. For volumetric MRI, the input T1C volume (1 × 128 × 128 × 128) was partitioned into non-overlapping 4 × 4 × 4 patches and linearly embedded, as shown in Figure2a. The token grid was processed by four 3D Swin stages (W-MSA/SW-MSA+MLP with residual connections and layer normalization). Channel widths increased 48 → 96 → 192 → 384 with patch-merging down-sampling the resolution 32 3 → 16 3 → 8 3 → 4 3 , enabling cross- window interaction while controlling compute. The final feature map was aggregated by AdaptiveAvgPool3D (1, 1, 1), projected to 128 dimensions, and passed to a linear-SoftMax classifier (128 → 3) to yield class probabilities. This formulation captures long-range volumetric dependencies efficiently while preserving locality through windowed attention.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The architecture of the developed Swin-based models: (a) 3D-Swin Transformer and (b) Swin CNN (architectures).</figDesc><graphic coords="7,81.61,390.45,435.84,118.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. The architecture of the developed Mamba-based models: (a) 2D Mamba and (b) 2D Mamba+CNN architectures. The asterisk (*) denotes the beginning token of the entire sequence.</figDesc><graphic coords="8,76.99,251.38,440.64,294.24" type="vector_box" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Representative examples of model predictions of the first follow-up's and second followup's three classes T1C MRI.</figDesc><graphic coords="12,475.03,179.45,73.68,89.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Summary of prior imaging-based machine and deep learning studies for differentiating true progression (TP) from pseudoprogression (PsP) in glioblastoma.</figDesc><table><row><cell>Reference</cell><cell># of Patients</cell><cell># of TP and PsP</cell><cell>Imaging Type</cell><cell>Method</cell><cell>Performance</cell></row><row><cell>Hu et al. [1]</cell><cell>31</cell><cell>TP = 15/PsP = 16</cell><cell>T1, T2, FLAIR, TTP, DWI, DSC, MTT</cell><cell>One-class SVM</cell><cell>AUROC = 0.9439</cell></row><row><cell>Qian et al. [25]</cell><cell>35</cell><cell>TP = 22/PsP = 13</cell><cell>DTI</cell><cell>Spatiotemporal discriminative dictionary learning</cell><cell>AUC = 0.875 Acc = 77%</cell></row><row><cell>Zhang et al. [26]</cell><cell>79</cell><cell>TP = 56/PsP = 23</cell><cell>DTI</cell><cell>SVM</cell><cell>AUC = 0.87</cell></row><row><cell>Booth et al. [27]</cell><cell>26</cell><cell>TP = 15/PsP = 9</cell><cell>T2</cell><cell>SVM</cell><cell>Acc = 86%</cell></row><row><cell>Ismall et al. [28]</cell><cell>105</cell><cell>TP = 34/PsP = 71</cell><cell>T1, T1C</cell><cell>SVM</cell><cell>AUC = 90.2%</cell></row><row><cell>Jang et al. [5]</cell><cell>78</cell><cell>TP = 48/PsP = 30</cell><cell>T1, T1C</cell><cell>CNN+LSTM</cell><cell>AUC = 0.83</cell></row><row><cell>Li et al. [6]</cell><cell>84</cell><cell>TP = 61/PsP = 23</cell><cell>DTI</cell><cell>DC-AL GAN+SVM</cell><cell>Acc = 92%</cell></row><row><cell>Kim et al. [29]</cell><cell>95</cell><cell>TP = 49/PsP = 46</cell><cell>T1, T1C, FLAIR, DWI, DSC</cell><cell cols="2">Logistic Regression AUC = 0.96 Acc = 95%</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">https://doi.org/10.3390/cancers18010036</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Summary of classification performance (accuracy, F1-score, and AUC) on first and second follow-up MRIs using a consistent batch size (Batch = 1). Complete results across all batch sizes are provided in Supplementary TableS1.</figDesc><table><row><cell></cell><cell></cell><cell>First Follow-Up</cell><cell></cell><cell></cell><cell>Second Follow-Up</cell><cell></cell></row><row><cell>Model</cell><cell>Accuracy</cell><cell>F1</cell><cell>AUC</cell><cell>Accuracy</cell><cell>F1</cell><cell>AUC</cell></row><row><cell>2DViT+LSTM (Batch = 1)</cell><cell>0.728 ± 0.0</cell><cell>0.2808 ± 0.0</cell><cell cols="2">0.4612 ± 0.0367 0.7024 ± 0.0001</cell><cell>0.2749 ± 0.0</cell><cell>0.4869 ± 0.0063</cell></row><row><cell cols="4">3DViT (Batch = 1) 0.7181 ± 0.0154 0.3607 ± 0.0455 0.5728 ± 0.0121</cell><cell>0.724 ± 0.0244</cell><cell cols="2">0.4216 ± 0.0412 0.5879 ± 0.0541</cell></row><row><cell>CNN (Batch = 1)</cell><cell cols="6">0.6693 ± 0.0216 0.3329 ± 0.0209 0.4655 ± 0.0738 0.6324 ± 0.0645 0.3857 ± 0.0778 0.5537 ± 0.0322</cell></row><row><cell>CNN+Attention (SE) (Batch = 1)</cell><cell cols="6">0.7061 ± 0.0213 0.3563 ± 0.0305 0.5439 ± 0.0473 0.6867 ± 0.0147 0.3878 ± 0.0251 0.5346 ± 0.0453</cell></row><row><cell>CNN+LSTM (Batch = 1)</cell><cell>0.728 ± 0.0</cell><cell>0.2808 ± 0.0</cell><cell cols="4">0.5257 ± 0.0268 0.7057 ± 0.0058 0.2903 ± 0.0266 0.5412 ± 0.0199</cell></row><row><cell>Swin CNN (Batch = 1)</cell><cell cols="3">0.6341 ± 0.0864 0.3069 ± 0.0738 0.5251 ± 0.0376</cell><cell>0.6117 ± 0.084</cell><cell cols="2">0.2921 ± 0.0257 0.4754 ± 0.0118</cell></row><row><cell cols="7">LSTM (Batch = 1) 0.7305 ± 0.0043 0.2989 ± 0.0157 0.5008 ± 0.0723 0.7089 ± 0.0113 0.2649 ± 0.0174 0.4726 ± 0.0134</cell></row><row><cell>2D-Mamba (16 slices) (Batch = 1)</cell><cell>0.7024 ± 0.0</cell><cell>0.2749 ± 0.0</cell><cell>0.5556 ± 0.086</cell><cell cols="3">0.6358 ± 0.1154 0.2513 ± 0.0409 0.5336 ± 0.0893</cell></row><row><cell>2D-Mamba</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>(50 slices)</cell><cell cols="3">0.6095 ± 0.1185 0.2413 ± 0.0395 0.5198 ± 0.0539</cell><cell>0.6706 ± 0.055</cell><cell cols="2">0.2642 ± 0.0185 0.4687 ± 0.0126</cell></row><row><cell>(Batch = 1)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>2D-Mamba+CNN (Batch = 1)</cell><cell cols="6">0.7451 ± 0.0261 0.4427 ± 0.1143 0.5529 ± 0.0493 0.7410 ± 0.025 0.5264 ± 0.0565 0.6332 ± 0.0418</cell></row><row><cell>ResNet (Batch = 1)</cell><cell cols="4">0.6935 ± 0.0348 0.3331 ± 0.0852 0.4981 ± 0.0519 0.6705 ± 0.0305</cell><cell>0.38 ± 0.0459</cell><cell>0.5744 ± 0.015</cell></row><row><cell>Swin Transformer (Batch = 1)</cell><cell cols="2">0.7009 ± 0.0535 0.2843 ± 0.0198</cell><cell>0.4806 ± 0.039</cell><cell>0.7056 ± 0.011</cell><cell cols="2">0.3065 ± 0.0033 0.4921 ± 0.0192</cell></row><row><cell></cell><cell cols="5">Bold value indicates the best-performing values among all experiments.</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>Summary of computational complexity and efficiency metrics (FLOPs, number of parameters, batch time, and runtime) across models using a consistent batch size (batch = 1). Detailed results for all batch sizes are provided in Supplementary TableS2.</figDesc><table><row><cell>First Follow-Up</cell></row></table><note><p>Bold value indicates the best-performing values among all experiments.</p><p>https://doi.org/10.3390/cancers18010036</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>https://doi.org/10.3390/cancers18010036</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>https://doi.org/10.3390/cancers18010036Cancers 2026,<ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b35">36</ref> </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head n="5.">Conclusions</head><p>We presented the first timepoint-specific benchmarking of deep learning architectures for differentiating true progression from pseudoprogression in glioblastoma using followup MRI. Evaluating eleven model families within a unified, quality-controlled pipeline, we found that overall performance remains moderate but improves at later follow-ups, consistent with richer clinical separability between treatment effects and true recurrence over time. These results establish a timepoint-aware benchmark for follow-up MRI analysis Acknowledgments: The authors thank <rs type="person">Pierre Giglio</rs>, Director of <rs type="affiliation">Neuro-Oncology at The Ohio State University Wexner Medical Center</rs>, for his advice on MRI labeling and for reviewing the labeling strategy.</p></div>
+			</div>
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The MRI data used in this study are publicly available from The Cancer Imaging Archive (TCIA) under the Burdenko Glioblastoma Progression Dataset (Burdenko-GBM-Progression). The dataset can be accessed at <ref type="url" target="https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/">https://www.cancerimagingarchive.net/  collection/burdenko-gbm-progression/</ref> (accessed on 2 December 2025). Archived version: <ref type="url" target="https://web.archive.org/web/20240101000000/https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/">https://  web.archive.org/web/20240101000000/https://www.cancerimagingarchive.net/collection/burdenko-</ref>gbm-progression/.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following supporting information can be downloaded at: <ref type="url" target="https://www.mdpi.com/article/10.3390/cancers18010036/s1">https:  //www.mdpi.com/article/10.3390/cancers18010036/s1</ref>, Figure <ref type="figure">S1</ref>  <ref type="table">S1</ref>: Summary of classification performance on first and second follow-up MRIs; Table <ref type="table">S2</ref>: Computational complexity and runtime metrics for all models.</p><p>Author Contributions: Methodology, formal analysis, original draft preparation, W.G. Supervision, review, and editing, G.M. All authors have read and agreed to the published version of the manuscript.</p><p>Funding: This research received no funding.</p><p>Institutional Review Board Statement: Ethical review and approval were waived for this study because the MRI data were fully anonymized and obtained from a publicly available dataset on The Cancer Imaging Archive, and no identifiable human information was accessed.</p><p>Informed Consent Statement: Patient consent was waived due to the use of fully anonymized and publicly available MRI data from The Cancer Imaging Archive, and no identifiable information was accessed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflicts of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Support vector machine multiparametric MRI identification of pseudoprogression from tumor recurrence in patients with resected glioblastoma</title>
+		<author>
+			<persName><forename type="first">Xintao</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelvin</forename><forename type="middle">K</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">S</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">T</forename><surname>Wong</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmri.22432</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="296" to="305" />
+			<date type="published" when="2011-01-27">2011</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hu, X.; Wong, K.K.; Young, G.S.; Guo, L.; Wong, S.T. Support vector machine multiparametric MRI identification of pseudopro- gression from tumor recurrence in patients with resected glioblastoma. J. Magn. Reson. Imaging 2011, 33, 296-305. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Differentiation of Pseudoprogression from True Progressionin Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combinedwith Radiomics Features from T1-weighted Contrast-enhanced Imaging</title>
+		<author>
+			<persName><forename type="first">Y.-Z</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-F</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Nan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W.-H</forename><surname>Pu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z.-Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-C</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers18010036</idno>
+		<ptr target="18" />
+	</analytic>
+	<monogr>
+		<title level="j">BMC Med. Imaging</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page">36</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sun, Y.-Z.; Yan, L.-F.; Han, Y.; Nan, H.-Y.; Xiao, G.; Tian, Q.; Pu, W.-H.; Li, Z.-Y.; Wei, X.-C.; Wang, W.; et al. Differentiation of Pseudoprogression from True Progressionin Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combinedwith Radiomics Features from T1-weighted Contrast-enhanced Imaging. BMC Med. Imaging 2021, 21, 17. [CrossRef] [PubMed] https://doi.org/10.3390/cancers18010036 Cancers 2026, 18, 36</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Pseudoprogression prediction in high grade primary CNS tumors by use of radiomics</title>
+		<author>
+			<persName><forename type="first">Asena</forename><forename type="middle">Petek</forename><surname>Ari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Burak</forename><forename type="middle">Han</forename><surname>Akkurt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><surname>Musigmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Orkhan</forename><surname>Mammadov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">A</forename><surname>Blömer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dilek</forename><forename type="middle">N G</forename><surname>Kasap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dylan</forename><forename type="middle">J H A</forename><surname>Henssen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nabila</forename><forename type="middle">Gala</forename><surname>Nacul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><surname>Sartoretti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Sartoretti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Backhaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Stummer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Heindel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manoj</forename><surname>Mannil</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-022-09945-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5915</biblScope>
+			<date type="published" when="2022-04-08">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ari, A.P.; Akkurt, B.H.; Musigmann, M.; Mammadov, O.; Blömer, D.A.; Kasap, D.N.G.; Henssen, D.J.H.A.; Nacul, N.G.; Sartoretti, E.; Sartoretti, T.; et al. Pseudoprogression prediction in high grade primary CNS tumors by use of radiomics. Sci. Rep. 2022, 12, 5915. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Low-parameter supervised learning models can discriminate pseudoprogression and true progression in non-perfusion-based MRI</title>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Warner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joonsang</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santhoshi</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shariq</forename><surname>Mohammed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashok</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayapalli</forename><surname>Bapuraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arvind</forename><surname>Rao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/embc40787.2023.10340435</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 45th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+		<meeting><address><addrLine>Sydney, Australia</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-07-27">24-27 July 2023</date>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Warner, E.; Lee, J.; Krishnan, S.; Wang, N.; Mohammed, S.; Srinivasan, A.; Bapuraj, J.; Rao, A. Low-parameter supervised learning models can discriminate pseudoprogression and true progression in non-perfusion MRI. In Proceedings of the IEEE EMBC 2023, Sydney, Australia, 24-27 July 2023; pp. 1-4. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Prediction of Pseudoprogression versus Progression using Machine Learning Algorithm in Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Bum-Sup</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hyuck</forename><surname>Jeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Il</forename><forename type="middle">Han</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">In</forename><forename type="middle">Ah</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-018-31007-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12516</biblScope>
+			<date type="published" when="2018-08-21">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jang, B.-S.; Jeon, S.H.; Kim, I.H.; Kim, I.A. Prediction of Pseudoprogression versus Progression using Machine Learning Algorithm in Glioblastoma. Sci. Rep. 2018, 8, 12516. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Pseudoprogression and True Tumor Progression of Glioblastoma Multiform Image Classification Based on DCGAN and AlexNet</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-Al</forename><surname>Dc</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gan</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1902.06085</idno>
+		<idno type="arXiv">arXiv:1902.06085</idno>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Li, M.; Tang, H.; Chan, M.D.; Zhou, X.; Qian, X. DC-AL GAN: Pseudoprogression and True Tumor Progression of Glioblastoma Multiform Image Classification Based on DCGAN and AlexNet. arXiv 2019, arXiv:1902.06085. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Discriminating pseudoprogression and true progression in diffuse infiltrating glioma using multi-parametric MRI data through deep learning</title>
+		<author>
+			<persName><forename type="first">Joonsang</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sevcan</forename><surname>Turk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shariq</forename><surname>Mohammed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remy</forename><surname>Lobo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Larry</forename><surname>Junck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayapalli</forename><surname>Bapuraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashok</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arvind</forename><surname>Rao</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-020-77389-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">20331</biblScope>
+			<date type="published" when="2020-11-23">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, J.; Wang, N.; Turk, S.; Mohammed, S.; Lobo, R.; Kim, J.; Liao, E.; Camelo-Piragua, S.; Kim, M.; Junck, L.; et al. Discriminating pseudoprogression and true progression in diffuse glioma using multi-parametric MRI and data through deep learning. Sci. Rep. 2020, 10, 20331. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A deep learning model for discriminating true progression from pseudoprogression in glioblastoma patients</title>
+		<author>
+			<persName><forename type="first">Mana</forename><surname>Moassefi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahriar</forename><surname>Faghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gian</forename><forename type="middle">Marco</forename><surname>Conte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roman</forename><forename type="middle">O</forename><surname>Kowalchuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanaz</forename><surname>Vahdati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">J</forename><surname>Crompton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Perez-Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">A Domingo</forename><surname>Cabreja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sujay</forename><forename type="middle">A</forename><surname>Vora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfredo</forename><surname>Quiñones-Hinojosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">F</forename><surname>Parney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">M</forename><surname>Trifiletti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11060-022-04080-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neurooncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">159</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="447" to="455" />
+			<date type="published" when="2022-07-19">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Moassefi, M.; Faghani, S.; Conte, G.M.; Kowalchuk, R.O.; Vahdati, S.; Crompton, D.J.; Perez-Vega, C.; Domingo Cabreja, R.A.; Vora, S.A.; Quiñones-Hinojosa, A.; et al. A deep learning model for discriminating true progression from pseudoprogression in glioblastoma patients. J. Neurooncol. 2022, 159, 447-455. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Comparative study of radiologists vs machine learning in differentiating biopsy-proven pseudoprogression and true progression in diffuse gliomas</title>
+		<author>
+			<persName><forename type="first">Sevcan</forename><surname>Turk</surname></persName>
+			<idno type="ORCID">0000-0003-0243-864X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">C</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-9796-4532</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Omer</forename><surname>Kitis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shariq</forename><surname>Mohammed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianwen</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remy</forename><surname>Lobo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-9223-7640</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Camelo-Piragua</surname></persName>
+			<idno type="ORCID">0000-0002-9606-9402</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><forename type="middle">M</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0001-7566-6411</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Larry</forename><surname>Junck</surname></persName>
+			<idno type="ORCID">0000-0002-8203-0400</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Toshio</forename><surname>Moritani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashok</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arvind</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayapalli</forename><forename type="middle">R</forename><surname>Bapuraj</surname></persName>
+			<idno type="ORCID">0000-0003-3933-203X</idno>
+		</author>
+		<idno type="DOI">10.1016/j.neuri.2022.100088</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience Informatics</title>
+		<title level="j" type="abbrev">Neuroscience Informatics</title>
+		<idno type="ISSN">2772-5286</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">100088</biblScope>
+			<date type="published" when="2022-09">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Turk, S.; Wang, N.C.; Kitis, O.; Mohammed, S.; Ma, T.; Lobo, R.; Kim, J.; Camelo-Piragua, S.; Johnson, T.D.; Kim, M.M.; et al. Comparative study of radiologists vs machine learning in differentiating biopsy-proven pseudoprogression and true progression in diffuse gliomas. Neurosci. Inform. 2022, 2, 100088. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Distinguishing Pseudoprogression From True Early Progression in Isocitrate Dehydrogenase Wild-Type Glioblastoma by Interrogating Clinical, Radiological, and Molecular Features</title>
+		<author>
+			<persName><forename type="first">Mingxiao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohui</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gehong</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jincheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haihui</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuanwei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuzhe</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghui</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kefu</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Song</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2021.627325</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">627325</biblScope>
+			<date type="published" when="2021-04-20">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, M.; Ren, X.; Dong, G.; Wang, J.; Jiang, H.; Yang, C.; Zhao, X.; Zhu, Q.; Cui, Y.; Yu, K.; et al. Distinguishing Pseudoprogression From True Early Progression in Isocitrate Dehydrogenase Wild-Type Glioblastoma by Interrogating Clinical, Radiological, and Molecular Features. Front. Oncol. 2021, 11, 627325. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients</title>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">Sophia</forename><surname>Mckenney</surname></persName>
+			<idno type="ORCID">0000-0003-4464-6869</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Weg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tejus</forename><forename type="middle">A</forename><surname>Bale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">T</forename><surname>Wild</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyemin</forename><surname>Um</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">J</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">T</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxwell</forename><forename type="middle">L</forename><surname>Birger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florent</forename><surname>Tixier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Sellitti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nelson</forename><forename type="middle">S</forename><surname>Moss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">J</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harini</forename><surname>Veeraraghavan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.adro.2022.100916</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Radiation Oncology</title>
+		<title level="j" type="abbrev">Advances in Radiation Oncology</title>
+		<idno type="ISSN">2452-1094</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">100916</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McKenney, A.S.; Weg, E.; Bale, T.A.; Wild, A.T.; Um, H.; Fox, M.J.; Lin, A.; Yang, J.T.; Yao, P.; Birger, M.L.; et al. Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients. Adv. Radiat. Oncol. 2023, 8, 100916. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Distinction of pseudoprogression from true progression in glioblastomas using machine learning based on multiparametric magnetic resonance imaging and O6-methylguanine-methyltransferase promoter methylation status</title>
+		<author>
+			<persName><forename type="first">Virendra</forename><forename type="middle">Kumar</forename><surname>Yadav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sumeet</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laiz</forename><forename type="middle">Laura</forename><surname>De Godoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Archith</forename><surname>Rajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Bagley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Brem</surname></persName>
+			<idno type="ORCID">0000-0002-5803-8920</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laurie</forename><forename type="middle">A</forename><surname>Loevner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harish</forename><surname>Poptani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anup</forename><surname>Singh</surname></persName>
+			<idno type="ORCID">0000-0001-6744-8326</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjeev</forename><surname>Chawla</surname></persName>
+			<idno type="ORCID">0000-0001-6978-7284</idno>
+		</author>
+		<idno type="DOI">10.1093/noajnl/vdae159</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology Advances</title>
+		<idno type="ISSNe">2632-2498</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">159</biblScope>
+			<date type="published" when="2024-01-01">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yadav, V.K.; Mohan, S.; Agarwal, S.; de Godoy, L.L.; Rajan, A.; Nasrallah, M.P.; Bagley, S.J.; Brem, S.; Loevner, L.A.; Poptani, H.; et al. Distinction of pseudoprogression from true progression in glioblastomas using machine learning based on multiparametric magnetic resonance imaging and O6-methylguanine-methyltransferase promoter methylation status. Neurooncol. Adv. 2024, 6, vdae159. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">CFINet: Cross-Modality MRI Feature Interaction Network for Pseudoprogression Prediction of Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Ya</forename><surname>Lv</surname></persName>
+			<idno type="ORCID">0009-0008-2819-1757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-4961-7074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pei</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0001-6566-8114</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Pan</surname></persName>
+		</author>
+		<idno type="DOI">10.1089/cmb.2024.0518</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computational Biology</title>
+		<title level="j" type="abbrev">Journal of Computational Biology</title>
+		<idno type="ISSNe">1557-8666</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="212" to="224" />
+			<date type="published" when="2025-02-01">2025</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lv, Y.; Liu, J.; Tian, X.; Yang, P.; Pan, Y. CFINet: Cross-modality MRI feature interaction network for pseudoprogression prediction. J. Comput. Biol. 2025, 32, 212-224. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gomaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Stephan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Breininger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dörfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Schnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Delev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Coras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schmitter</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2502.03999</idno>
+		<idno type="arXiv">arXiv:2502.03999</idno>
+		<title level="m">A Self-supervised Multimodal Deep Learning Approach to Differentiate Post-radiotherapy Progression from Pseudoprogression in Glioblastoma</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Gomaa, A.; Huang, Y.; Stephan, P.; Breininger, K.; Frey, B.; Dörfler, A.; Schnell, O.; Delev, D.; Coras, R.; Schmitter, C.; et al. A Self-supervised Multimodal Deep Learning Approach to Differentiate Post-radiotherapy Progression from Pseudoprogression in Glioblastoma. arXiv 2024, arXiv:2502.03999. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Synthetic minority image over-sampling technique: How to improve AUC for glioblastoma patient survival prediction</title>
+		<author>
+			<persName><forename type="first">Renhao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">O</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">W</forename><surname>Bowyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><forename type="middle">B</forename><surname>Goldgof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Gatenby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaoutar</forename><surname>Ben Ahmed</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/smc.2017.8122802</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC)</title>
+		<meeting><address><addrLine>Banff, AB, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10-08">5-8 October 2017</date>
+			<biblScope unit="page" from="1357" to="1362" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, R.; Hall, L.O.; Bowyer, K.W.; Goldgof, D.; Gatenby, R.; Ben Ahmed, K. Synthetic minority image over-sampling technique: How to improve AUC for glioblastoma patient survival prediction. In Proceedings of the 2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Banff, AB, Canada, 5-8 October 2017; pp. 1357-1362. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Learning From Oversampling: A Systematic Exploitation of Oversampling to Address Data Scarcity Issues in Deep Learning-Based Magnetic Resonance Image Reconstruction</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">K</forename><surname>Kalata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Nakarmi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2024.3426362</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">10591992</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kalata, I.K.; Khan, R.; Nakarmi, U. Learning From Oversampling: A Systematic Exploitation of Oversampling to Address Data Scarcity Issues in Deep Learning-Based Magnetic Resonance Image Reconstruction. IEEE Access 2024, 12, 10591992. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Applying oversampling before cross-validation will lead to high bias in radiomics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Demircio Glu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-62585-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11563</biblScope>
+			<date type="published" when="2024-05-21">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Demircio glu, A. Applying oversampling before cross-validation will lead to high bias in radiomics. Sci. Rep. 2024, 14, 11563. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A Novel Synthetic Minority Oversampling Technique for Multiclass Imbalance Problems</title>
+		<author>
+			<persName><forename type="first">Jiao</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-6022-1807</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Norhashidah</forename><surname>Awang</surname></persName>
+			<idno type="ORCID">0000-0002-2280-7193</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2025.3526673</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="6054" to="6066" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, J.; Awang, N. A Novel Synthetic Minority Oversampling Technique for Multiclass Imbalance Problems. IEEE Access 2025, 13, 10829925. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A diversity and reliability-enhanced synthetic minority oversampling technique for multi-label learning</title>
+		<author>
+			<persName><forename type="first">Yanlu</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanwang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengchu</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ins.2024.121579</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Sciences</title>
+		<title level="j" type="abbrev">Information Sciences</title>
+		<idno type="ISSN">0020-0255</idno>
+		<imprint>
+			<biblScope unit="volume">690</biblScope>
+			<biblScope unit="page">121579</biblScope>
+			<date type="published" when="2025-02">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gong, Y.; Wu, Q.; Zhou, M.; Chen, C. A diversity and reliability-enhanced synthetic minority oversampling technique for multi-label learning. Inf. Sci. 2025, 690, 121579. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Hybrid oversampling technique for imbalanced pattern recognition: Enhancing performance with Borderline Synthetic Minority oversampling and Generative Adversarial Networks</title>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Manjurul</forename><surname>Ahsan</surname></persName>
+			<idno type="ORCID">0000-0003-0900-7930</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shivakumar</forename><surname>Raman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingtao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zahed</forename><surname>Siddique</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mlwa.2025.100637</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning with Applications</title>
+		<title level="j" type="abbrev">Machine Learning with Applications</title>
+		<idno type="ISSN">2666-8270</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page">100637</biblScope>
+			<date type="published" when="2025-06">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ahsan, M.M.; Raman, S.; Liu, Y.; Siddique, Z. Hybrid oversampling technique for imbalanced pattern recognition: Enhancing performance with Borderline Synthetic Minority oversampling and Generative Adversarial Networks. Mach. Learn. Appl. 2025, 13, 100637. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Incidence of early pseudo‐progression in a cohort of malignant glioma patients treated with chemoirradiation with temozolomide</title>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Taal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dieta</forename><surname>Brandsma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hein</forename><forename type="middle">G</forename><surname>De Bruin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacoline</forename><forename type="middle">E</forename><surname>Bromberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annemarie</forename><forename type="middle">T</forename><surname>Swaak‐kragten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">A E</forename><surname>Sillevis Smitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corine</forename><forename type="middle">A</forename><surname>Van Es</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">J</forename><surname>Van Den Bent</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cncr.23562</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<title level="j" type="abbrev">Cancer</title>
+		<idno type="ISSN">0008-543X</idno>
+		<idno type="ISSNe">1097-0142</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="405" to="410" />
+			<date type="published" when="2008-07-08">2008</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Taal, W.; Brandsma, D.; de Bruin, H.G.; Bromberg, J.E.; Swaak-Kragten, A.T.; Sillevis Smitt, P.A.E.; van den Bent, M.J. Incidence of Early Pseudo-Progression in a Cohort of Malignant Glioma Patients Treated with Chemoirradiation with Temozolomide. Cancer 2008, 113, 405-410. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Pseudoprogression versus true progression in glioblastoma: What neurosurgeons need to know</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Al-Adli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Scotford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers18010036</idno>
+		<ptr target="https://doi.org/10.3390/cancers18010036Cancers2026" />
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosurg</title>
+		<imprint>
+			<biblScope unit="volume">139</biblScope>
+			<biblScope unit="page">36</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Young, J.S.; Al-Adli, N.; Scotford, K.; Cha, S.; Berger, M.S. Pseudoprogression versus true progression in glioblastoma: What neurosurgeons need to know. J. Neurosurg. 2023, 139, 748-759. [CrossRef] https://doi.org/10.3390/cancers18010036 Cancers 2026, 18, 36</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Incidence and outcome of pseudoprogression after radiation therapy in glioblastoma patients: A cohort study</title>
+		<author>
+			<persName><forename type="first">Hanne</forename><surname>Blakstad</surname></persName>
+			<idno type="ORCID">0000-0003-3672-9090</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><forename type="middle">Erasmo</forename><surname>Mendoza Mireles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liv</forename><forename type="middle">Cathrine</forename><surname>Heggebø</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henriette</forename><surname>Magelssen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mette</forename><surname>Sprauten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><forename type="middle">Børge</forename><surname>Johannesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Einar</forename><forename type="middle">Osland</forename><surname>Vik-Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henning</forename><surname>Leske</surname></persName>
+			<idno type="ORCID">0000-0002-3057-8730</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pitt</forename><surname>Niehusmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karoline</forename><surname>Skogen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eirik</forename><surname>Helseth</surname></persName>
+			<idno type="ORCID">0000-0001-5758-6485</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kyrre</forename><forename type="middle">Eeg</forename><surname>Emblem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petter</forename><surname>Brandal</surname></persName>
+			<idno type="ORCID">0000-0003-0259-495X</idno>
+		</author>
+		<idno type="DOI">10.1093/nop/npad063</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology Practice</title>
+		<idno type="ISSN">2054-2577</idno>
+		<idno type="ISSNe">2054-2585</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="36" to="45" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Blakstad, H.; Mendoza Mireles, E.E.; Heggebø, L.C.; Magelssen, H.; Sprauten, M.; Johannesen, T.B.; Vik-Mo, E.O.; Leske, H.; Niehusmann, P.; Skogen, K.; et al. Incidence and outcome of pseudoprogression after radiation in glioblastoma patients: A cohort study. Neurooncol. Pract. 2024, 11, 36-45. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Zolotova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Golanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">N</forename><surname>Pronin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Dalechina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Nikolaeva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Belyashova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Y</forename><surname>Usachev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Kondrateva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Druzhinina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Shirokikh</surname></persName>
+		</author>
+		<ptr target="https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/" />
+		<title level="m">Burdenko-GBM-Progression Dataset (Version 1). The Cancer Imaging Archive</title>
+		<imprint>
+			<date type="published" when="2023-12-02">2023. 2 December 2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zolotova, S.V.; Golanov, A.V.; Pronin, I.N.; Dalechina, A.V.; Nikolaeva, A.A.; Belyashova, A.S.; Usachev, D.Y.; Kondrateva, E.A.; Druzhinina, P.V.; Shirokikh, B.N.; et al. Burdenko-GBM-Progression Dataset (Version 1). The Cancer Imaging Archive, 2023. Avail- able online: https://www.cancerimagingarchive.net/collection/burdenko-gbm-progression/ (accessed on 2 December 2025).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Stratification of pseudoprogression and true progression of glioblastoma multiform based on longitudinal diffusion tensor imaging without segmentation</title>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weilin</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaobo</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1118/1.4963812</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Physics</title>
+		<title level="j" type="abbrev">Medical Physics</title>
+		<idno type="ISSN">0094-2405</idno>
+		<idno type="ISSNe">2473-4209</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="5889" to="5902" />
+			<date type="published" when="2016-10-05">2016</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qian, X.; Tan, H.; Zhang, J.; Li, Y.; Zhao, W.; Chan, M.D.; Zhou, X. Stratification of pseudoprogression and true progression of glioblastoma multiform based on longitudinal diffusion tensor imaging without segmentation. Med. Phys. 2016, 43, 5889-5902. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Pseudo progression identification of glioblastoma with dictionary learning</title>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hengyong</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keqin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hua</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tielin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maode</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">King</forename><forename type="middle">Chuen</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Waldemar</forename><surname>Debinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Paulsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ge</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaobo</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compbiomed.2016.03.027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Biology and Medicine</title>
+		<title level="j" type="abbrev">Computers in Biology and Medicine</title>
+		<idno type="ISSN">0010-4825</idno>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="94" to="101" />
+			<date type="published" when="2016-06">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, J.; Yu, H.; Qian, X.; Liu, K.; Tan, H.; Yang, T.; Wang, M.; Li, K.C.; Chan, M.D.; Debinski, W.; et al. Pseudoprogression identification of glioblastoma with dictionary learning. Comput. Biol. Med. 2016, 73, 94-101. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Analysis of heterogeneity in T2-weighted MR images can differentiate pseudoprogression from progression in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">C</forename><surname>Booth</surname></persName>
+			<idno type="ORCID">0000-0003-0984-3998</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">J</forename><surname>Larkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yinyin</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mikko</forename><forename type="middle">I</forename><surname>Kettunen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">N</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Scoffings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Holly</forename><forename type="middle">C</forename><surname>Canuto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">L</forename><surname>Vowler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heide</forename><surname>Kirschenlohr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">P</forename><surname>Hobson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Markowetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Jefferies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">M</forename><surname>Brindle</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0176528</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e0176528</biblScope>
+			<date type="published" when="2017-05-17">2017</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Booth, T.C.; Larkin, T.J.; Yuan, Y.; Kettunen, M.I.; Dawson, S.N.; Scoffings, D.; Canuto, H.C.; Vowler, S.L.; Kirschenlohr, H.; Hobson, M.P.; et al. Analysis of heterogeneity in T2-weighted MR images can differentiate pseudoprogression from progression in glioblastoma. PLoS ONE 2017, 12, e0176528. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Shape Features of the Lesion Habitat to Differentiate Brain Tumor Progression from Pseudoprogression on Routine Multiparametric MRI: A Multisite Study</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ismail</surname></persName>
+			<idno type="ORCID">0000-0002-1396-0372</idno>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Hill</surname></persName>
+			<idno type="ORCID">0000-0001-9146-9370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Statsevych</surname></persName>
+			<idno type="ORCID">0000-0003-2991-4730</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0001-7661-797X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Prasanna</surname></persName>
+			<idno type="ORCID">0000-0002-3068-3573</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Correa</surname></persName>
+			<idno type="ORCID">0000-0003-2247-7777</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Singh</surname></persName>
+			<idno type="ORCID">0000-0003-4291-9026</idno>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bera</surname></persName>
+			<idno type="ORCID">0000-0001-9831-6000</idno>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Beig</surname></persName>
+			<idno type="ORCID">0000-0002-1150-5886</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Thawani</surname></persName>
+			<idno type="ORCID">0000-0002-5378-9434</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Madabhushi</surname></persName>
+			<idno type="ORCID">0000-0002-5741-0399</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Aahluwalia</surname></persName>
+			<idno type="ORCID">0000-0003-3794-9511</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tiwari</surname></persName>
+			<idno type="ORCID">0000-0001-9477-4856</idno>
+		</author>
+		<idno type="DOI">10.3174/ajnr.a5858</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">AJNR Am J Neuroradiol</title>
+		<idno type="ISSN">0195-6108</idno>
+		<idno type="ISSNe">1936-959X</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2187" to="2193" />
+			<date type="published" when="2018-11-01">2018</date>
+			<publisher>American Society of Neuroradiology (ASNR)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ismail, M.; Hill, V.; Statsevych, V.; Huang, R.; Prasanna, P.; Correa, R.; Singh, G.; Bera, K.; Beig, N.; Thawani, R.; et al. Shape Features of the Lesion Habitat to Differentiate Brain Tumor Progression from Pseudoprogression on Routine Multiparametric MRI: A Multisite Study. AJNR Am. J. Neuroradiol. 2018, 39, 2187-2193. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Incorporating diffusion- and perfusion-weighted MRI into a radiomics model improves diagnostic performance for pseudoprogression in glioblastoma patients</title>
+		<author>
+			<persName><forename type="first">Jung</forename><forename type="middle">Youn</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Eun</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-4419-4682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Youngheun</forename><surname>Jo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Woo</forename><forename type="middle">Hyun</forename><surname>Shim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soo</forename><forename type="middle">Jung</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeong</forename><forename type="middle">Hoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roh-Eul</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ho</forename><forename type="middle">Sung</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/neuonc/noy133</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology</title>
+		<idno type="ISSN">1522-8517</idno>
+		<idno type="ISSNe">1523-5866</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="404" to="414" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kim, J.Y.; Park, J.E.; Jo, Y.; Shim, W.H.; Nam, S.J.; Kim, J.H.; Yoo, R.-E.; Choi, S.H.; Kim, H.S. Incorporating diffusion-and perfusion-weighted MRI into a radiomics model improves diagnostic performance for pseudoprogression in glioblastoma patients. Neuro-Oncology 2019, 21, 404-414. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Multicenter study demonstrates radiomic features derived from magnetic resonance perfusion images identify pseudoprogression in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Nabil</forename><surname>Elshafeey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aikaterini</forename><surname>Kotrotsou</surname></persName>
+			<idno type="ORCID">0000-0002-0433-7159</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><surname>Elshafei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Islam</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srishti</forename><surname>Abrol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamel</forename><surname>El Salek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Bergamaschi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><surname>Acharya</surname></persName>
+			<idno type="ORCID">0000-0003-0873-0836</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fanny</forename><forename type="middle">E</forename><surname>Moron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">N</forename><surname>Fuller</surname></persName>
+			<idno type="ORCID">0000-0001-9447-2647</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">T</forename><surname>Huse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><forename type="middle">O</forename><surname>Zinn</surname></persName>
+			<idno type="ORCID">0000-0003-0091-5887</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rivka</forename><forename type="middle">R</forename><surname>Colen</surname></persName>
+			<idno type="ORCID">0000-0002-0882-0607</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-019-11007-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">3170</biblScope>
+			<date type="published" when="2019-07-18">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Elshafeey, N.; Kotrotsou, A.; Hassan, A.; Elshafei, N.; Hassan, I.; Ahmed, S.; Abrol, S.; Agarwal, A.; El Salek, K.; Bergam- aschi, S.; et al. Multicenter study demonstrates radiomic features derived from magnetic resonance perfusion images identify pseudoprogression in glioblastoma. Nat. Commun. 2019, 10, 3170. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Conventional MRI radiomics in patients with suspected early- or pseudo-progression</title>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Bani-Sadr</surname></persName>
+			<idno type="ORCID">0000-0002-1808-2484</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Omer</forename><forename type="middle">Faruk</forename><surname>Eker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lise-Prune</forename><surname>Berner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roxana</forename><surname>Ameli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Hermier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Barritault</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Meyronet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacques</forename><surname>Guyotat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Jouanneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerome</forename><surname>Honnorat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">François</forename><surname>Ducray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yves</forename><surname>Berthezene</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/noajnl/vdz019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Oncology Advances</title>
+		<idno type="ISSNe">2632-2498</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">19</biblScope>
+			<date type="published" when="2019-05-01">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bani-Sadr, A.; Eker, O.F.; Berner, L.-P.; Ameli, R.; Hermier, M.; Barritault, M.; Meyronet, D.; Guyotat, J.; Jouanneau, E.; Honnorat, J.; et al. Conventional MRI radiomics in patients with suspected early-or pseudo-progression. Neurooncol. Adv. 2019, 1, vdz019. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Machine Learning Model to Predict Pseudoprogression Versus Progression in Glioblastoma Using MRI: A Multi-Institutional Study (KROG 18-07)</title>
+		<author>
+			<persName><forename type="first">Bum-Sup</forename><surname>Jang</surname></persName>
+			<idno type="ORCID">0000-0002-7064-9855</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">J</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hyuck</forename><surname>Jeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Il</forename><forename type="middle">Han</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Do</forename><forename type="middle">Hoon</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shin-Hyung</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ju</forename><forename type="middle">Hye</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-6758-6822</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Hyun</forename><surname>Chang</surname></persName>
+			<idno type="ORCID">0000-0001-5921-5522</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kwan</forename><forename type="middle">Ho</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Hee</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0001-8608-9250</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Leonard</forename><surname>Sunwoo</surname></persName>
+			<idno type="ORCID">0000-0003-0374-8658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">In</forename><forename type="middle">Ah</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers12092706</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">2706</biblScope>
+			<date type="published" when="2020-09-21">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jang, B.-S.; Jeon, S.H.; Park, A.J.; Kim, I.H.; Lim, D.H.; Park, S.H.; Lee, J.H.; Chang, J.H.; Cho, K.H.; Kim, J.H.; et al. ML to predict pseudoprogression vs progression: Multi-institutional study. Cancers 2020, 12, 2706. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Transparency-guided ensemble convolutional neural network for the stratification between pseudoprogression and true progression of glioblastoma multiform in MRI</title>
+		<author>
+			<persName><forename type="first">Xiaoming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaobo</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Qian</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jvcir.2020.102880</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Visual Communication and Image Representation</title>
+		<title level="j" type="abbrev">Journal of Visual Communication and Image Representation</title>
+		<idno type="ISSN">1047-3203</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page">102880</biblScope>
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>CrossRef</note>
+	<note type="raw_reference">Liu, X.; Zhou, X.; Qian, X. Transparency-guided ensemble convolutional neural network for the stratification between pseu- doprogression and true progression of glioblastoma multiform in MRI. J. Vis. Commun. Image Represent. 2020, 72, 102880. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Histopathology‐validated machine learning radiographic biomarker for noninvasive discrimination between true progression and pseudo‐progression in glioblastoma</title>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saima</forename><surname>Rathore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maclean</forename><forename type="middle">P</forename><surname>Nasrallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Shukla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Mamourian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Bagley</surname></persName>
+			<idno type="ORCID">0000-0002-7117-0539</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Rudie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">E</forename><surname>Flanders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">P</forename><surname>Dicker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arati</forename><forename type="middle">S</forename><surname>Desai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">M</forename><surname>O’rourke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Brem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Lustig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suyash</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">L</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Martinez‐lage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cncr.32790</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<title level="j" type="abbrev">Cancer</title>
+		<idno type="ISSN">0008-543X</idno>
+		<idno type="ISSNe">1097-0142</idno>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2625" to="2636" />
+			<date type="published" when="2020-03-04">2020</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Akbari, H.; Rathore, S.; Bakas, S.; Nasrallah, P.; Shukla, G.; Mamourian, E.; Rozycki, M.; Bagley, S.; Rudie, J.; Flanders, A.; et al. Histopathology-validated machine learning radiographic biomarker for noninvasive discrimination between true progression and pseudo-progression in glioblastoma. Cancer 2020, 126, 2625-2636. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">FET PET Radiomics for Differentiating Pseudoprogression from Early Tumor Progression in Glioma Patients Post-Chemoradiation</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Lohmann</surname></persName>
+			<idno type="ORCID">0000-0002-5360-046X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mai</forename><forename type="middle">A</forename><surname>Elahmadawy</surname></persName>
+			<idno type="ORCID">0000-0002-3536-5945</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robin</forename><surname>Gutsche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Michael</forename><surname>Werner</surname></persName>
+			<idno type="ORCID">0000-0001-7147-4594</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><forename type="middle">K</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Garry</forename><surname>Ceccon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Kocher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><forename type="middle">W</forename><surname>Lerche</surname></persName>
+			<idno type="ORCID">0000-0003-2749-2108</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Rapp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gereon</forename><forename type="middle">R</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadim</forename><forename type="middle">J</forename><surname>Shah</surname></persName>
+			<idno type="ORCID">0000-0002-8151-6169</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Karl-Josef</forename><surname>Langen</surname></persName>
+			<idno type="ORCID">0000-0003-1101-5075</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Norbert</forename><surname>Galldiks</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers12123835</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">3835</biblScope>
+			<date type="published" when="2020-12-18">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lohmann, P.; Elahmadawy, M.A.; Gutsche, R.; Werner, J.-M.; Bauer, E.K.; Ceccon, G.; Kocher, M.; Lerche, C.W.; Rapp, M.; Fink, G.R.; et al. FET-PET radiomics for differentiating Pseudoprogression in Glioma Patients Post-Chemoradiation. Cancers 2020, 12, 3835. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">A Preliminary Study on Machine Learning-Based Evaluation of Static and Dynamic FET-PET for the Detection of Pseudoprogression in Patients with IDH-Wildtype Glioblastoma</title>
+		<author>
+			<persName><forename type="first">Sied</forename><surname>Kebir</surname></persName>
+			<idno type="ORCID">0000-0002-0678-5852</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Teresa</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lazaros</forename><surname>Lazaridis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norbert</forename><surname>Galldiks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karl-Josef</forename><surname>Langen</surname></persName>
+			<idno type="ORCID">0000-0003-1101-5075</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Kleinschnitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elke</forename><surname>Hattingen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulrich</forename><surname>Herrlinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Lohmann</surname></persName>
+			<idno type="ORCID">0000-0002-5360-046X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Glas</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers12113080</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">3080</biblScope>
+			<date type="published" when="2020-10-22">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kebir, S.; Schmidt, T.; Weber, M.; Lazaridis, L.; Galldiks, N.; Langen, K.-J.; Kleinschnitz, C.; Hattingen, E.; Herrlinger, U.; Lohmann, P.; et al. A Preliminary Study on Machine learning-Based Evaluation of static and Dynamic FET-PET for the Detection of Pseudoprogression in Patients with IDH-wildtype Glioblastoma. Cancers 2020, 12, 3080. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The Potential Use of Radiomics with Pre-Radiation Therapy MR Imaging in Predicting Risk of Pseudoprogression in Glioblastoma Patients</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Baine</surname></persName>
+			<idno type="ORCID">0000-0002-1163-7539</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoying</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luke</forename><surname>Krajewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Zima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerard</forename><surname>Rux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dandan</forename><surname>Zheng</surname></persName>
+			<idno type="ORCID">0000-0003-2259-1633</idno>
+		</author>
+		<idno type="DOI">10.3390/jimaging7020017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging</title>
+		<title level="j" type="abbrev">J. Imaging</title>
+		<idno type="ISSNe">2313-433X</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">17</biblScope>
+			<date type="published" when="2021-01-28">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Baine, M.; Burr, J.; Du, Q.; Zhang, C.; Liang, X.; Krajewski, L.; Zima, L.; Rux, G.; Zhang, C.; Zheng, D. The Potential Use of Radiomics with Pre-Radiation Therapy MR Imaging in Predicting Risk of Pseudoprogression in Glioblastoma Patients. J. Imaging 2021, 7, 17. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Interpretable deep learning model for distinguishing tumor pseudoprogression from true progression using MRI imaging of glioblastoma patients</title>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rayyan</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parandoush</forename><surname>Abbasian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Ryner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Pitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Ashraf</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3046738</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging 2025: Computer-Aided Diagnosis</title>
+		<meeting><address><addrLine>San Diego, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2025-02">February 2025</date>
+			<biblScope unit="page">72</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, Z.; Khan, R.; Abbasian, P.; Ryner, L.; Lambert, P.; Pitz, M.; Ashraf, A. Interpretable Deep Learning Model for Distinguishing Tumor Pseudoprogression from True Progression Using MRI Imaging of Glioblastoma Patients. In Proceedings of the Medical Imaging 2025: Computer-Aided Diagnosis, 134073K, San Diego, CA, USA, 17-20 February 2025; Volume 13407.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Interpretable deep learning model for distinguishing tumor pseudoprogression from true progression using MRI imaging of glioblastoma patients</title>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rayyan</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parandoush</forename><surname>Abbasian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Ryner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Pitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Ashraf</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3046738</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging 2025: Computer-Aided Diagnosis</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2025-04-04" />
+			<biblScope unit="page">72</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">An overview of the challenges of bringing a medical device for the spine to the market * *Disclaimer: Any opinions expressed in this article are solely the personal opinions of the author at the time of writing, and do not necessarily represent those of any company, organisation or institution.</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Alcock</surname></persName>
+		</author>
+		<idno type="DOI">10.1533/9780857096197.1.41</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Biomaterials for Spinal Surgery</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="41" to="77" />
+		</imprint>
+	</monogr>
+	<note>Disclaimer/Publisher&apos;s Note MDPI and/or the editor(s MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content</note>
+	<note type="raw_reference">Disclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

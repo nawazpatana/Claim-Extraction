@@ -1,0 +1,3174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A Practical Guide to Manual and Semi-Automated Neurosurgical Brain Lesion Segmentation</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>MDPI AG</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-08-02">2 August 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Raunak</forename><surname>Jain</surname></persName>
+							<email>raunak.jain.19@ucl.ac.uk</email>
+							<idno type="ORCID">0000-0002-5813-5835</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> UCL Medical School , University College London , London WC1E 6DE , UK;</note>
+								<orgName type="department">UCL Medical School</orgName>
+								<orgName type="institution">University College London</orgName>
+								<address>
+									<postCode>WC1E 6DE</postCode>
+									<settlement>London</settlement>
+									<country>UK;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Faith</forename><surname>Lee</surname></persName>
+							<email>faith.lee.18@ucl.ac.uk</email>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> UCL Medical School , University College London , London WC1E 6DE , UK;</note>
+								<orgName type="department">UCL Medical School</orgName>
+								<orgName type="institution">University College London</orgName>
+								<address>
+									<postCode>WC1E 6DE</postCode>
+									<settlement>London</settlement>
+									<country>UK;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nianhe</forename><surname>Luo</surname></persName>
+							<idno type="ORCID">0000-0002-2771-9416</idno>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> UCL Medical School , University College London , London WC1E 6DE , UK;</note>
+								<orgName type="department">UCL Medical School</orgName>
+								<orgName type="institution">University College London</orgName>
+								<address>
+									<postCode>WC1E 6DE</postCode>
+									<settlement>London</settlement>
+									<country>UK;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Harpreet</forename><surname>Hyare</surname></persName>
+							<email>h.hyare@ucl.ac.uk</email>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Lysholm Department of Neuroradiology , National Hospital for Neurology and Neurosurgery , London WC1N 3BG , UK;</note>
+								<orgName type="department">Lysholm Department of Neuroradiology</orgName>
+								<orgName type="institution">National Hospital for Neurology and Neurosurgery</orgName>
+								<address>
+									<postCode>WC1N 3BG</postCode>
+									<settlement>London</settlement>
+									<country>UK;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Anand</forename><forename type="middle">S</forename><surname>Pandit</surname></persName>
+							<email>a.pandit@ucl.ac.uk</email>
+							<idno type="ORCID">0000-0003-4936-4916</idno>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Victor Horsley Department of Neurosurgery , National Hospital for Neurology and Neurosurgery , London WC1N 3BG , UK</note>
+								<orgName type="department">Victor Horsley Department of Neurosurgery</orgName>
+								<orgName type="institution">National Hospital for Neurology and Neurosurgery</orgName>
+								<address>
+									<postCode>WC1N 3BG</postCode>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> High-Dimensional Neurology , Institute of Neurology , University College London , London WC1N 3BG , UK</note>
+								<orgName type="department" key="dep1">High-Dimensional Neurology</orgName>
+								<orgName type="department" key="dep2">Institute of Neurology</orgName>
+								<orgName type="institution">University College London</orgName>
+								<address>
+									<postCode>WC1N 3BG</postCode>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A Practical Guide to Manual and Semi-Automated Neurosurgical Brain Lesion Segmentation</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">NeuroSci</title>
+						<title level="j" type="abbrev">NeuroSci</title>
+						<idno type="eISSN">2673-4087</idno>
+						<imprint>
+							<publisher>MDPI AG</publisher>
+							<biblScope unit="volume">5</biblScope>
+							<biblScope unit="issue">3</biblScope>
+							<biblScope unit="page" from="265" to="275"/>
+							<date type="published" when="2024-08-02">2 August 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2B590AC555C52EC04274C31DD7364D1B</idno>
+					<idno type="DOI">10.3390/neurosci5030021</idno>
+					<note type="submission">Received: 25 June 2024 Revised: 30 July 2024 Accepted: 31 July 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T14:38+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>segmentation</term>
+					<term>education</term>
+					<term>radiomics</term>
+					<term>meningioma</term>
+					<term>glioblastoma</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The purpose of the article is to provide a practical guide for manual and semi-automated image segmentation of common neurosurgical cranial lesions, namely meningioma, glioblastoma multiforme (GBM) and subarachnoid haemorrhage (SAH), for neurosurgical trainees and researchers. Materials and Methods: The medical images used were sourced from the Medical Image Computing and Computer Assisted Interventions Society (MICCAI) Multimodal Brain Tumour Segmentation Challenge (BRATS) image database and from the local Picture Archival and Communication System (PACS) record with consent. Image pre-processing was carried out using MRIcron software (v1.0.20190902). ITK-SNAP (v3.8.0) was used in this guideline due to its availability and powerful built-in segmentation tools, although others (Seg3D, Freesurfer and 3D Slicer) are available. Quality control was achieved by employing expert segmenters to review. Results: A pipeline was developed to demonstrate the pre-processing and manual and semi-automated segmentation of patient images for each cranial lesion, accompanied by image guidance and video recordings. Three sample segmentations were generated to illustrate potential challenges. Advice and solutions were provided within both text and video. Conclusions: Semi-automated segmentation methods enhance efficiency, increase reproducibility, and are suitable to be incorporated into future clinical practise. However, manual segmentation remains a highly effective technique in specific circumstances and provides initial training sets for the development of more advanced semi-and fully automated segmentation algorithms.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Image segmentation algorithms are powerful tools for the delineation of regions of interest in medical images obtained through various modalities such as magnetic resonance imaging (MRI) and computed tomography (CT) <ref type="bibr" target="#b0">[1]</ref>. Segmentation allows for the efficient delineation of pathology spread and border, to define the three-dimensional spatial characteristics of the lesion and the use of radiomics to determine clinical lesion characteristics such as volume, intensity and shape <ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref>. These features are valuable in clinical practise to allow for the determination of treatment planning, surgical approach, prognosis and, in the long-term, follow-up of patients with neurosurgical brain lesions <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>.</p><p>Segmentation methods can be broadly divided into manual, semi-automated and fully automated types, depending on the level of involvement from the segmenter <ref type="bibr" target="#b7">[8]</ref>. Manual segmentation describes the hand-crafted process of outlining structures in medical images in a slice-by-slice manner <ref type="bibr" target="#b8">[9]</ref>. Semi-automated segmentation relies on pre-coded computer algorithms for initial segmentation and requires manual inspection and editing</p><p>NeuroSci 2024, 5 266 afterwards <ref type="bibr" target="#b9">[10]</ref>. Fully automated segmentation typically employs machine learning for algorithm development and aims to minimise the manual input <ref type="bibr" target="#b10">[11]</ref>.</p><p>Medical image segmentation can be undertaken on various software including ITK-SNAP, Seg3D, Freesurfer and 3D Slicer <ref type="bibr" target="#b11">[12]</ref>. While manual, semi-and fully automated techniques have been widely used in research for common neurosurgical conditions like brain tumours <ref type="bibr" target="#b12">[13]</ref>, subarachnoid haemorrhage <ref type="bibr" target="#b13">[14]</ref> and hydrocephalus <ref type="bibr" target="#b14">[15]</ref>, their clinical and educational potential in neurosurgery remains undervalued <ref type="bibr" target="#b11">[12]</ref>. There is also currently a lack of training in segmentation in the U.K. and international neurosurgical resident curricula <ref type="bibr" target="#b15">[16]</ref>.</p><p>To fill this gap, we offer a detailed practical guide for novices on how to segment common cerebral lesions. Specifically, we demonstrate a pipeline that makes use of ITK-SNAP to delineate meningiomas, subarachnoid haemorrhage and glioblastomas. We chose these three conditions as they represent distinct pathologies involving different segmentation methods. Hence, we demonstrate a wide variety of possible segmentation methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head><p>The image processing pipeline (Figure <ref type="figure" target="#fig_0">1</ref>) summarises our process. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Ethics</head><p>This article was written as an educational guide and is exempt from ethical committee approval. Where relevant, patients approved the use of their scans for research and educational purposes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Hardware</head><p>Segmentations were performed on an Hewlett-Packard Pavilion laptop 2015 (made in China) with an Advanced Micro Devices (AMD) 2.00 GHz processor and 16 GB of Random Access Memory (RAM). The time taken for image pre-processing averaged around 15-60 s. The manual segmentation of meningioma required 15 min, compared to 20 min and 30 min for GBM and SAH semi-automated segmentation, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Software</head><p>ITK-SNAP is an openly accessible and easy-to-use software that has powerful builtin semi-automated segmentation tools <ref type="bibr" target="#b16">[17]</ref>. It is available with Windows, MacOS and Linux <ref type="bibr" target="#b17">[18]</ref> and allows for image processing, segmentation and visualisation. 3D Slicer is a possible alternative software, which is a general-purpose 3D medical image analysis tool that can perform similar functions of contour-based segmentation <ref type="bibr" target="#b18">[19]</ref>.</p><p>MRIcron is a free cross-platform image viewer that can convert Digital Imaging and Communication in Medicine (DICOM) images to Neuroimaging Informatics Technology Initiative (NIfTI) format <ref type="bibr" target="#b19">[20]</ref>. Matrix Laboratory (MATLAB) is a programming language and software that allows the calculation of post-segmentation error metrics, such as the Dice similarity coefficient, to evaluate the quality of segmentation <ref type="bibr" target="#b13">[14,</ref><ref type="bibr">21]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Image Acquisition</head><p>Glioblastoma (GBM) scans were sourced from the Medical Image Computing and Computer Assisted Interventions Society (MICCAI) Multimodal Brain Tumour Segmentation Challenge (BRATS) <ref type="bibr" target="#b20">[22]</ref><ref type="bibr" target="#b21">[23]</ref><ref type="bibr" target="#b22">[24]</ref><ref type="bibr" target="#b23">[25]</ref><ref type="bibr" target="#b24">[26]</ref><ref type="bibr" target="#b25">[27]</ref>. This database provided the T1-weighted, T1-weighted + contrast, T2-weighted and T2 Fluid-attenuated inversion recovery (FLAIR) scans for each patient. It also provides a ground truth manual segmentation. The inclusion criteria involved a pathologically confirmed diagnosis of GBM and an available O6-methylguanine-DNA methyl transferase (MGMT) promoter methylation status. Demographically, 60% of the patients were male, while 40% were females <ref type="bibr" target="#b20">[22,</ref><ref type="bibr" target="#b26">28]</ref>.</p><p>The scans for SAH and meningiomas were obtained from consenting patients from our institution. These images were originally downloaded from the Picture Archival and Communication System (PACS, Figure <ref type="figure" target="#fig_0">1</ref>), a hospital system that allows medical professionals to gain access to medical imaging <ref type="bibr" target="#b27">[29]</ref>. All data used were anonymised. The SAH patient was a female in her early 70s at the time of the scan, while the patient with the meningioma was man in his early 40s, who had a tumour of grade II.</p><p>PACS images are typically stored in DICOM format: the standard for raw images obtained from medical scanners <ref type="bibr" target="#b28">[30]</ref>. DICOM files are converted to the NIFTI format using software like MRIcron (Figure <ref type="figure" target="#fig_0">1</ref>) <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b29">31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Training</head><p>Before segmentation, segmenters often require training to recognise key radiological features of meningiomas, SAH and GBM, the key features of which are summarised in Table <ref type="table">1</ref>.</p><p>Table <ref type="table">1</ref>. Key imaging sequences and radiological features of meningioma, glioblastoma and subarachnoid haemorrhage. CT: computed tomography, FLAIR: Fluid Attenuated Inversion Recovery. T1w: T1 weighted. T2w: T2 weighted. TIRM: Turbo Inversion Recovery Magnitude.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Lesion Sequences for Segmentations Radiological Features</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Meningioma T1w</head><p>T1w + contrast T2w</p><p>Meningiomas have isointensity to slight hypointensity with T1 weighting. With T2-weighted sequences, meningiomas have isointensity to slight hyperintensity <ref type="bibr" target="#b30">[32]</ref>. Two basic morphologies of meningioma include en plaque with a sheet-like dural extension and globose with a broad dural attachment <ref type="bibr" target="#b31">[33]</ref>.</p><p>The thick extended dura (commonly referred to as a dural tail) tends to extend away from the meningioma, which can be easily missed <ref type="bibr" target="#b32">[34]</ref>. Bone changes may be visible, such as hyperostosis, osteolysis, enlargement of the skull base foramina and meningioma calcification <ref type="bibr" target="#b33">[35]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Subarachnoid Haemorrhage (SAH) CT non-contrast</head><p>Acute haemorrhage will be present with 15-25 Hounsfield Units (HU) of greater density than normal grey and white matter on a CT scan <ref type="bibr" target="#b34">[36]</ref>. Anatomically, SAH is typically found present in the interpeduncular cistern, the Sylvian fissure, the occipital horns of the lateral ventricles and the deep sulci on each side of the medial longitudinal fissure <ref type="bibr" target="#b35">[37]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Glioblastoma (GBM) T1w</head><p>T1w + contrast T2w T2 FLAIR/TIRM GBMs are generally hyperintense on T2-weighted images but are hypo-or isointense on T1-weighted images <ref type="bibr" target="#b36">[38]</ref>. GBM often have enhancing and non-enhancing components. Necrosis is typically visible as a low signal intensity (SI) on T1-enhanced MRI and located at the centre of the lesion <ref type="bibr" target="#b37">[39]</ref>. Cystic components of a GBM are typically T2W hyperintense and T1 hypointense, with a well-defined thin wall. There can also an area of oedema surrounding the tumour that is visible in T2 FLAIR scans <ref type="bibr" target="#b36">[38]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Segmentation</head><p>We utilise manual segmentations to delineate meningiomas, particularly given its complex morphology around the skull base. It involves annotating the full extent of the meningioma through a sequential array of MRI slices followed by interpolation to generate a 3D structure (Figure <ref type="figure" target="#fig_1">2</ref>). A detailed step-by-step guide can be found in Supplementary Video S1 (introduction) and Supplementary Video S2 (meningioma segmentation).</p><p>-------- We utilise semi-automated segmentation (classification) to delineate SAH (Figure <ref type="figure" target="#fig_2">3A</ref>). In brief, different brain tissues are first manually labelled (Figure <ref type="figure" target="#fig_2">3B</ref>). A contour is then initialised where the centre of the lesion is likely to be and grows stochastically to the lesion boundary (Figure <ref type="figure" target="#fig_2">3C</ref>). Finally, the segmentation image generated is inspected and edited manually (Figure <ref type="figure" target="#fig_2">3D</ref>, Supplementary Video S3). Particular attention is given to diffuse areas of SAH over the falx cerebri and adjacent to the venous sinuses. Using slight modifications of these steps, GBMs are segmented using a similar process (Figure <ref type="figure" target="#fig_3">4</ref>, Supplementary Video S4). Particular attention is given to areas of oedema which may or may not be needed in the segmentation. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.">Methods of Quality Control</head><p>Quality control is integral to image segmentation in order to maintain the reliability, consistency and accuracy of derived radiomics <ref type="bibr" target="#b38">[40]</ref>. In addition to segmenter training, commonly used quality control methods include the use of expert-defined segmentations, appropriate labelling and error metrics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.1.">Expertly Defined Segmentations and the Imaging Ground Truth</head><p>During manual inspection, segmentations are generally checked by consultant radiologists, anatomists and other expert clinical neuroscientists to provide rigorous visual validation. This acts as a ground truth, which allows for a more reliable delineation of lesions and the exclusion of errors. If identified, the errors can then be fixed immediately with cross-checking <ref type="bibr" target="#b39">[41]</ref>. However, there remains doubt as to what constitutes an 'expert' due to the varied knowledge base and techniques required <ref type="bibr" target="#b40">[42]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.2.">Error Metrics</head><p>The Dice similarity coefficient and the Jaccard index are two commonly used performance statistical metrics to evaluate the efficacy of segmentation <ref type="bibr" target="#b41">[43]</ref>, i.e., both can be applied to check for the consistency of segmentation for the same type of lesions against the ground truth or the inter-segmenter consistency. Both indices are calculated by comparing the segmentation performed by a particular method (A) against the gold standard (B, typically expert manual segmentation). These coefficients range between 0 and 1, with 1 indicating high similarity whereas 0 indicates complete separate results.</p><p>While the Dice similarity coefficient more strongly weighs the commonalities between two objects and takes into account the total lesion volume, the Jaccard index penalises the differences between two objects and is not volume dependent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8.">Post-Segmentation Processing and Radiomics</head><p>After successful segmentation, quantitative features of the pathologies such as the size, shape, contrast-enhancement and texture (radiomics) can be extracted using preprogrammed algorithms <ref type="bibr" target="#b42">[44]</ref>. A few examples of relevant radiomics features can be found in the following papers <ref type="bibr" target="#b43">[45]</ref><ref type="bibr" target="#b44">[46]</ref><ref type="bibr" target="#b45">[47]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results and Discussion</head><p>In this article, we provide a step-by-step guideline for the manual and semi-automated segmentation of three common neurosurgical pathologies: meningioma, subarachnoid haemorrhage and glioblastoma using ITK-SNAP.</p><p>Manual segmentation performed by expert surgeons and radiologists still currently remains the gold standard <ref type="bibr" target="#b46">[48]</ref> and is particularly helpful when the lesion and surrounding tissue have similar signal intensities, causing automated algorithms to fail <ref type="bibr" target="#b47">[49]</ref>. Semiautomated segmentation offers increased efficiency and improved repeatability while retaining an aspect of real-time quality control <ref type="bibr" target="#b8">[9]</ref> and is particularly suitable for segmenting anatomically complex brain lesions where sparse training data sets exist <ref type="bibr" target="#b13">[14]</ref>.</p><p>Inexperienced trainees can quickly develop the ability to perform manual and semiautomated segmentation. In a particular study, a group of five participants, including a neurosurgeon, two biomedical engineers and two medical students, were given a standardised 10 min preparation time before segmenting four vestibular schwannoma scans using manual and semi-automated methods. Three of these participants were inexperienced in segmentation, while two were experts <ref type="bibr" target="#b8">[9]</ref>. The inexperienced participants had a Dice score of 0.899 compared to 1.901 for the expert segmenters, against ground truth data. This suggests, albeit in a small sample, that segmentation skills can be trained over a short period of time <ref type="bibr" target="#b8">[9]</ref>.</p><p>Despite the advancements in semi-automated and automated methods, manual segmentation remains a commonly used method for segmentation and is typically held as a gold standard when performed by an expert <ref type="bibr" target="#b48">[50]</ref>. Semi-automated segmentation, though faster and less labour-intensive, can miss out key areas of brain lesions due to heterogeneity between lesions. Thus, semi-automated methods may still require supervision by a clinician and extensive manual checks <ref type="bibr" target="#b7">[8]</ref>.</p><p>Automated segmentation methods exist for meningioma and have been relatively effective in demarcating lesion boundaries <ref type="bibr" target="#b49">[51]</ref><ref type="bibr" target="#b50">[52]</ref><ref type="bibr" target="#b51">[53]</ref>. However, meningiomas often have areas of heterogeneity: oedema and necrosis make automatic classification methods difficult to implement <ref type="bibr" target="#b12">[13]</ref>. Automated, quantitative tools for non-invasive sub-classification of meningiomas on multi-sequence MR images have recently become more available, following the publication of open access manually segmented datasets.</p><p>While automated segmentation further improves efficiency, they require extensive coding and training on large databases <ref type="bibr" target="#b12">[13]</ref>, and usually still require manual quality control steps. The lack of publicly available data for spatially complex brain lesions, such as subarachnoid haemorrhage, can limit their utility at present <ref type="bibr" target="#b52">[54]</ref>. With greater capability for training, larger databases and more computational power, this will likely become a less pertinent issue <ref type="bibr" target="#b53">[55]</ref>.</p><p>While segmenting, special considerations should be paid to patient confidentiality. Article 9 of the EU general data protection regulation (GDPR), for example, prohibits the processing and revealing of data concerning health and biometric data for the purpose of uniquely identifying a natural person, unless the data subject has given explicit consent <ref type="bibr">[56]</ref>. Medical image from PACS stored in the DICOM format contains patient's protected health data in the header <ref type="bibr" target="#b54">[57]</ref>. When converting DICOM files into NIFTI format using software like MRIcron <ref type="bibr" target="#b19">[20]</ref>, the data header should be anonymised. However, patients' facial contour details still remain in the CT and MRI scans, and three-dimensional models of the patient's facial appearance can be reconstructed <ref type="bibr" target="#b54">[57]</ref>. This issue may be resolved by defacing/skullstripping algorithms <ref type="bibr" target="#b55">[58]</ref> or the application of digital masks <ref type="bibr" target="#b56">[59]</ref>.</p><p>If neurosurgery is to become more automated and personalised as anticipated <ref type="bibr" target="#b57">[60]</ref>, early delineation and characterisation of brain lesions are needed to triage and optimise management. This requires fast, accurate lesion segmentation which can be embedded into the clinical workflow. Such algorithms require training sets of segmentations at scale to ensure both accuracy and precision. By educating clinicians to confidently carry out manual and semi-automated segmentation, the underpinning training data will be accrued. Moreover, by performing segmentations, neurosurgical trainees can actively improve their understanding of the radiology of brain pathologies and mentally rehearse relevant operative procedures <ref type="bibr" target="#b11">[12]</ref>.</p><p>In conclusion, neurosurgical image segmentation has great potential within clinical care, education and research. Our educational guideline provides a step-by-step pathway for neurosurgical trainees new to medical image segmentation. This allows them to effectively apply this within their research and practice.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. An example image-processing pipeline with image acquisition, pre-processing, segmentation and post-processing stages. (Single column with colour in print).</figDesc><graphic coords="2,168.18,325.25,355.32,237.38" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Manual segmentation of a convexity meningioma. (A) Original MRI. (B) Manual delineation of meningioma outline. (C) Interpolation of lesion through various slices.. (single column with colour in print).</figDesc><graphic coords="4,170.74,190.76,304.43,425.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Semi-automated segmentation of SAH. (A) Original CT. (B) Manual labelling of different brain tissues, i.e., classification. Red represents cerebrospinal fluid, green represents bone, blue represents brain parenchyma and yellow represents subarachnoid haemorrhage. (C) Evolution of contours. (D) Final segmentation at different levels after manual inspection and editing. (Single column with colour in print).</figDesc><graphic coords="5,74.81,84.22,445.81,525.20" type="vector_box" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Semi-automated segmentation of a glioblastoma. (A) Original MRI. (B) Capturing the extent of GBM through classification. Red represents glioblastoma, green represents cerebral oedema, blue represents brain parenchyma and yellow represents cerebrospinal fluid. (C) Derivation of 3D lesion volume. (Single column with colour in print).</figDesc><graphic coords="6,54.47,89.87,485.64,563.16" type="vector_box" /></figure>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Funding: This research received no external funding.</p><p>Informed Consent Statement: Informed consent was obtained from all subjects involved in the study.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following supporting information can be downloaded at: <ref type="url" target="https://www.mdpi.com/article/10.3390/neurosci5030021/s1">https://  www.mdpi.com/article/10.3390/neurosci5030021/s1</ref>, Video S1: introduction. Video S2: meningioma segmentation. Video S3: SAH. Video S4: GBM.</p><p>Author Contributions: Conceptualization, A.S.P.; methodology, A.S.P.; software, R.J. and N.L., validation, R.J. and N.L.; formal analysis, R.J., N.L. and F.L.; investigation, R.J. and N.L.; resources, R.J., A.S.P. and N.L.; data curation, R.J., F.L. and N.L.; writing-original draft preparation, R.J., F.L., N.L. and A.S.P.; writing-review and editing, R.J., F.L., N.L., A.S.P. and H.H.; visualization, R.J., F.L. and N.L.; supervision, A.S.P. and H.H.; project administration, A.S.P.; funding acquisition not relevant. All authors have read and agreed to the published version of the manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflicts of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Current Methods in Medical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Dzung</forename><forename type="middle">L</forename><surname>Pham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenyang</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><forename type="middle">L</forename><surname>Prince</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.bioeng.2.1.315</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Biomedical Engineering</title>
+		<title level="j" type="abbrev">Annu. Rev. Biomed. Eng.</title>
+		<idno type="ISSN">1523-9829</idno>
+		<idno type="ISSNe">1545-4274</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="315" to="337" />
+			<date type="published" when="2000-08">2000</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pham, D.L.; Xu, C.; Prince, J.L. Current methods in medical image segmentation. Annu. Rev. Biomed. Eng. 2000, 2, 315-337. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Does Meningioma Volume Correlate With Clinical Disease Manifestation Irrespective of Histopathologic Tumor Grade?</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Kauke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali-Farid</forename><surname>Safi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pantelis</forename><surname>Stavrinou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Krischek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Goldbrunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Timmer</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/scs.0000000000005845</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Craniofacial Surgery</title>
+		<idno type="ISSN">1049-2275</idno>
+		<idno type="ISSNe">1536-3732</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="e799" to="e802" />
+			<date type="published" when="2019-11">2019</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kauke, M.; Safi, A.F.; Stavrinou, P.; Krischek, B.; Goldbrunner, R.; Timmer, M. Does Meningioma Volume Correlate With Clinical Disease Manifestation Irrespective of Histopathologic Tumor Grade? J. Craniofac. Surg. 2019, 30, e799. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Segmentation of glioblastomas in early post-operative multi-modal MRI with deep neural networks</title>
+		<author>
+			<persName><forename type="first">Ragnhild</forename><forename type="middle">Holden</forename><surname>Helland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandros</forename><surname>Ferles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><surname>Pedersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivar</forename><surname>Kommers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hilko</forename><surname>Ardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederik</forename><surname>Barkhof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tora</forename><surname>Dunås</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><forename type="middle">Conti</forename><surname>Nibali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Furtner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">J S</forename><surname>Idema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Kiesel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rishi</forename><forename type="middle">Nandoe</forename><surname>Tewari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Mandonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenique</forename><forename type="middle">M J</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><forename type="middle">A</forename><surname>Robe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">M</forename><surname>Sagberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommaso</forename><surname>Sciortino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Aalders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michiel</forename><surname>Wagemakers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marnix</forename><forename type="middle">G</forename><surname>Witte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aeilko</forename><forename type="middle">H</forename><surname>Zwinderman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paulina</forename><forename type="middle">L</forename><surname>Majewska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asgeir</forename><forename type="middle">S</forename><surname>Jakola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ole</forename><surname>Solheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">C De Witt</forename><surname>Hamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingerid</forename><surname>Reinertsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roelant</forename><forename type="middle">S</forename><surname>Eijgelaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bouget</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-45456-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">18897</biblScope>
+			<date type="published" when="2023-11-02">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helland, R.H.; Ferles, A.; Pedersen, A.; Kommers, I.; Ardon, H.; Barkhof, F.; Bello, L.; Berger, M.S.; Dunås, T.; Nibali, M.C.; et al. Segmentation of glioblastomas in early post-operative multi-modal MRI with deep neural networks. Sci. Rep. 2023, 13, 18897. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Segmentation of Glioblastoma Multiforme from MR Images – A comprehensive review</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">R</forename><surname>Simi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Joseph</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejrnm.2015.08.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Egyptian Journal of Radiology and Nuclear Medicine</title>
+		<title level="j" type="abbrev">The Egyptian Journal of Radiology and Nuclear Medicine</title>
+		<idno type="ISSN">0378-603X</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1105" to="1110" />
+			<date type="published" when="2015-12">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Simi, V.R.; Joseph, J. Segmentation of Glioblastoma Multiforme from MR Images-A comprehensive review. Egypt. J. Radiol. Nucl. Med. 2015, 46, 1105-1110. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Machine learning-based radiomics analysis in predicting the meningioma grade using multiparametric MRI</title>
+		<author>
+			<persName><forename type="first">Jianping</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yijing</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengcheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianyi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingfu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dairong</forename><surname>Cao</surname></persName>
+			<idno type="ORCID">0000-0002-0051-3143</idno>
+		</author>
+		<idno type="DOI">10.1016/j.ejrad.2020.109251</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Radiology</title>
+		<title level="j" type="abbrev">European Journal of Radiology</title>
+		<idno type="ISSN">0720-048X</idno>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page">109251</biblScope>
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hu, J.; Zhao, Y.; Li, M.; Liu, J.; Wang, F.; Weng, Q.; Wang, X.; Cao, D. Machine learning-based radiomics analysis in predicting the meningioma grade using multiparametric MRI. Eur. J. Radiol. 2020, 131, 109251. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Predicting Short-Term Survival after Gross Total or Near Total Resection in Glioblastomas by Machine Learning-Based Radiomic Analysis of Preoperative MRI</title>
+		<author>
+			<persName><forename type="first">Santiago</forename><surname>Cepeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angel</forename><surname>Pérez-Nuñez</surname></persName>
+			<idno type="ORCID">0000-0002-2391-6586</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>García-García</surname></persName>
+			<idno type="ORCID">0000-0003-2356-5306</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>García-Pérez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ignacio</forename><surname>Arrese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><surname>Jiménez-Roldán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>García-Galindo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">María</forename><surname>Velasco-Casares</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Zamora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosario</forename><surname>Sarabia</surname></persName>
+			<idno type="ORCID">0000-0003-2576-7518</idno>
+		</author>
+		<idno type="DOI">10.3390/cancers13205047</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page">5047</biblScope>
+			<date type="published" when="2021-10-09">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cepeda, S.; Pérez-Nuñez, A.; García-García, S.; García-Pérez, D.; Arrese, I.; Jiménez-Roldán, L.; García-Galindo, M.; González, P.; Velasco-Casares, M.; Zamora, T.; et al. Predicting Short-Term Survival after Gross Total or Near Total Resection in Glioblastomas by Machine Learning-Based Radiomic Analysis of Preoperative MRI. Cancers 2021, 13, 5047. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Multi-class glioma segmentation on real-world data with missing MRI sequences: comparison of three deep learning algorithms</title>
+		<author>
+			<persName><forename type="first">Hugh</forename><forename type="middle">G</forename><surname>Pemberton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivar</forename><surname>Kommers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenique</forename><forename type="middle">M J</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yipeng</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivia</forename><surname>Goodkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sjoerd</forename><forename type="middle">B</forename><surname>Vos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sotirios</forename><surname>Bisdas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><forename type="middle">A</forename><surname>Robe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hilko</forename><surname>Ardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommaso</forename><surname>Sciortino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><forename type="middle">Conti</forename><surname>Nibali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchel</forename><forename type="middle">S</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shawn</forename><forename type="middle">L</forename><surname>Hervey-Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wim</forename><surname>Bouwknegt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wimar</forename><forename type="middle">A</forename><surname>Van Den Brink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Furtner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seunggu</forename><forename type="middle">J</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">J S</forename><surname>Idema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Kiesel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Widhalm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfred</forename><surname>Kloet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michiel</forename><surname>Wagemakers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aeilko</forename><forename type="middle">H</forename><surname>Zwinderman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandro</forename><forename type="middle">M</forename><surname>Krieg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Mandonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ferran</forename><surname>Prados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>De Witt Hamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederik</forename><surname>Barkhof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roelant</forename><forename type="middle">S</forename><surname>Eijgelaar</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-44794-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">18911</biblScope>
+			<date type="published" when="2023-11-02">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pemberton, H.G.; Wu, J.; Kommers, I.; Müller, D.M.J.; Hu, Y.; Goodkin, O.; Vos, S.B.; Bisdas, S.; Robe, P.A.; Ardon, H.; et al. Multi-class glioma segmentation on real-world data with missing MRI sequences: Comparison of three deep learning algorithms. Sci. Rep. 2023, 13, 18911. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Beyond automatic medical image segmentation—the spectrum between fully manual and fully automatic delineation</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">J</forename><surname>Trimpl</surname></persName>
+			<idno type="ORCID">0000-0003-3393-0717</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Primakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eleanor</forename><forename type="middle">P J</forename><surname>Stride</surname></persName>
+			<idno type="ORCID">0000-0003-3371-5929</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katherine</forename><forename type="middle">A</forename><surname>Vallis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">J</forename><surname>Gooding</surname></persName>
+			<idno type="ORCID">0000-0002-1177-5608</idno>
+		</author>
+		<idno type="DOI">10.1088/1361-6560/ac6d9c</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine &amp; Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">12TR01</biblScope>
+			<date type="published" when="2022-06-13">2022</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Trimpl, M.J.; Primakov, S.; Lambin, P.; Stride, E.P.J.; Vallis, K.A.; Gooding, M.J. Beyond automatic medical image segmentation-the spectrum between fully manual and fully automatic delineation. Phys. Med. Biol. 2022, 67, 12TR01. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Manual segmentation versus semi-automated segmentation for quantifying vestibular schwannoma volume on MRI</title>
+		<author>
+			<persName><forename type="first">Hari</forename><surname>Mcgrath</surname></persName>
+			<idno type="ORCID">0000-0002-0037-4761</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peichao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reuben</forename><surname>Dorent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Bradford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shakeel</forename><surname>Saeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sotirios</forename><surname>Bisdas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastien</forename><surname>Ourselin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Shapey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Vercauteren</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11548-020-02222-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Assisted Radiology and Surgery</title>
+		<title level="j" type="abbrev">Int J CARS</title>
+		<idno type="ISSN">1861-6410</idno>
+		<idno type="ISSNe">1861-6429</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1445" to="1455" />
+			<date type="published" when="2020-07-16">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McGrath, H.; Li, P.; Dorent, R.; Bradford, R.; Saeed, S.; Bisdas, S.; Ourselin, S.; Shapey, J.; Vercauteren, T. Manual segmentation versus semi-automated segmentation for quantifying vestibular schwannoma volume on MRI. Int. J. Comput. Assist. Radiol. Surg. 2020, 15, 1445-1455. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A comparison of semi-automated volumetric vs linear measurement of small vestibular schwannomas</title>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Mackeith</surname></persName>
+			<idno type="ORCID">0000-0002-1499-649X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tilak</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><surname>Donnelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Mannion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Axon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Tysome</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00405-018-4865-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Archives of Oto-Rhino-Laryngology</title>
+		<title level="j" type="abbrev">Eur Arch Otorhinolaryngol</title>
+		<idno type="ISSN">0937-4477</idno>
+		<idno type="ISSNe">1434-4726</idno>
+		<imprint>
+			<biblScope unit="volume">275</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="867" to="874" />
+			<date type="published" when="2018-01-15">2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">MacKeith, S.; Das, T.; Graves, M.; Patterson, A.; Donnelly, N.; Mannion, R.; Axon, P.; Tysome, J. A comparison of semi-automated volumetric vs linear measurement of small vestibular schwannomas. Eur. Arch. Oto-Rhino-Laryngol. 2018, 275, 867-874. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Deep learning for the fully automated segmentation of the inner ear on MRI</title>
+		<author>
+			<persName><forename type="first">Akshayaa</forename><surname>Vaidyanathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marly</forename><forename type="middle">F J A</forename><surname>Van Der Lubbe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralph</forename><forename type="middle">T H</forename><surname>Leijenaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Van Hoof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fadila</forename><surname>Zerka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Miraglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Primakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alida</forename><forename type="middle">A</forename><surname>Postma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tjasse</forename><forename type="middle">D</forename><surname>Bruintjes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monique</forename><forename type="middle">A L</forename><surname>Bilderbeek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hammer</forename><surname>Sebastiaan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">F M</forename><surname>Dammeijer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Van Rompaey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><forename type="middle">C</forename><surname>Woodruff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wim</forename><surname>Vos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seán</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><surname>Van De Berg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Lambin</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-82289-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2885</biblScope>
+			<date type="published" when="2021-02-03">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaidyanathan, A.; van der Lubbe, M.F.J.A.; Leijenaar, R.T.H.; van Hoof, M.; Zerka, F.; Miraglio, B.; Primakov, S.; Postma, A.A.; Bruintjes, T.D.; Bilderbeek, M.A.L.; et al. Deep learning for the fully automated segmentation of the inner ear on MRI. Sci. Rep. 2021, 11, 2885. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Letter: Image Segmentation in Neurosurgery: An Undervalued Skill Set?</title>
+		<author>
+			<persName><forename type="first">Chu</forename><forename type="middle">Ning</forename><surname>Ann</surname></persName>
+			<idno type="ORCID">0000-0001-9745-4006</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nianhe</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">S</forename><surname>Pandit</surname></persName>
+		</author>
+		<idno type="DOI">10.1227/neu.0000000000002018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgery</title>
+		<idno type="ISSN">0148-396X</idno>
+		<idno type="ISSNe">1524-4040</idno>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="e31" to="e32" />
+			<date type="published" when="2022-04-28">2022</date>
+			<publisher>Ovid Technologies (Wolters Kluwer Health)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ann, C.N.; Luo, N.; Pandit, A.S. Letter: Image Segmentation in Neurosurgery: An Undervalued Skill Set? Neurosurgery 2022, 91, e31-e32. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Fully Automated &lt;scp&gt;MRI&lt;/scp&gt; Segmentation and Volumetric Measurement of Intracranial Meningioma Using Deep Learning</title>
+		<author>
+			<persName><forename type="first">Ho</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">Nathanael</forename><surname>Witanto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Pratama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doohee</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyu</forename><forename type="middle">Sung</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyung‐min</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min‐sung</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Wook</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><forename type="middle">Hwy</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sang</forename><forename type="middle">Joon</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chul‐kee</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-2350-9876</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.28332</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="871" to="881" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kang, H.; Witanto, J.N.; Pratama, K.; Lee, D.; Choi, K.S.; Choi, S.H.; Kim, K.; Kim, M.; Kim, J.W.; Kim, Y.H.; et al. Fully Automated MRI Segmentation and Volumetric Measurement of Intracranial Meningioma Using Deep Learning. J. Magn. Reson. Imaging 2023, 57, 871-881. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Predicting vasospasm risk using first presentation aneurysmal subarachnoid hemorrhage volume: A semi-automated CT image segmentation analysis using ITK-SNAP</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">S</forename><surname>Street</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">S</forename><surname>Pandit</surname></persName>
+			<idno type="ORCID">0000-0003-4936-4916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">K</forename><surname>Toma</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0286485</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e0286485</biblScope>
+			<date type="published" when="2023-06-01">2023</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Street, J.S.; Pandit, A.S.; Toma, A.K. Predicting vasospasm risk using first presentation aneurysmal subarachnoid hemorrhage volume: A semi-automated CT image segmentation analysis using ITK-SNAP. PLoS ONE 2023, 18, e0286485. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Evaluation of a Fully Automated Method for Ventricular Volume Segmentation Before and After Shunt Surgery in Idiopathic Normal Pressure Hydrocephalus</title>
+		<author>
+			<persName><forename type="first">Doerthe</forename><surname>Ziegelitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Per</forename><surname>Hellström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isabella</forename><forename type="middle">M</forename><surname>Björkman-Burtscher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Agerskov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oskar</forename><surname>Stevens-Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Farahmand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mats</forename><surname>Tullberg</surname></persName>
+			<idno type="ORCID">0000-0003-4997-5266</idno>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2023.10.045</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">181</biblScope>
+			<biblScope unit="page" from="e303" to="e311" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ziegelitz, D.; Hellström, P.; Björkman-Burtscher, I.M.; Agerskov, S.; Stevens-Jones, O.; Farahmand, D.; Tullberg, M. Evaluation of a fully automated method for ventricular volume segmentation before and after shunt surgery in idiopathic normal pressure hydrocephalus. World Neurosurg. 2023, 181, e303-e311. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Neurosurgery Curriculum</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Whitfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Thomson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kitchen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Edlmann</surname></persName>
+		</author>
+		<ptr target="https://www.gmc-uk.org/-/media/documents/neurosurgery-curriculum-2021---minor-changes-approved-feb22_pdf-89622738.pdf" />
+		<imprint>
+			<date type="published" when="2021-08-04">2021. 4 August 2021. 7 October 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Whitfield, P.; Thomson, S.; Brown, J.; Kitchen, N.; Edlmann, E. Neurosurgery Curriculum 2021. Published 4 August 2021. Available online: https://www.gmc-uk.org/-/media/documents/neurosurgery-curriculum-2021---minor-changes-approved- feb22_pdf-89622738.pdf (accessed on 7 October 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">An Introductory Module in Medical Image Segmentation for BME Students</title>
+		<author>
+			<persName><forename type="first">Christine</forename><forename type="middle">Miller</forename><surname>Buffinton</surname></persName>
+			<idno type="ORCID">0000-0001-7369-3651</idno>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">W</forename><surname>Baish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donna</forename><forename type="middle">M</forename><surname>Ebenstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s43683-022-00085-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Engineering Education</title>
+		<title level="j" type="abbrev">Biomed Eng Education</title>
+		<idno type="ISSN">2730-5937</idno>
+		<idno type="ISSNe">2730-5945</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="95" to="109" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Buffinton, C.M.; Baish, J.W.; Ebenstein, D.M. An Introductory Module in Medical Image Segmentation for BME Students. Biomed. Eng. Educ. 2023, 3, 95-109. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">User-guided 3D active contour segmentation of anatomical structures: Significantly improved efficiency and reliability</title>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Yushkevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Piven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><forename type="middle">Cody</forename><surname>Hazlett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">Gimpel</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">C</forename><surname>Gee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Gerig</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2006.01.015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1116" to="1128" />
+			<date type="published" when="2006-07">2006</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yushkevich, P.A.; Piven, J.; Hazlett, H.C.; Smith, R.G.; Ho, S.; Gee, J.C.; Gerig, G. User-guided 3D active contour segmentation of anatomical structures: Significantly improved efficiency and reliability. NeuroImage 2006, 31, 1116-1128. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">3D Slicer as an image computing platform for the Quantitative Imaging Network</title>
+		<author>
+			<persName><forename type="first">Andriy</forename><surname>Fedorov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reinhard</forename><surname>Beichel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Finet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Christophe</forename><surname>Fillion-Robin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sonia</forename><surname>Pujol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Jennings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fiona</forename><surname>Fennessy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Sonka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Buatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Aylward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">V</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steve</forename><surname>Pieper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ron</forename><surname>Kikinis</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mri.2012.05.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">0730-725X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1323" to="1341" />
+			<date type="published" when="2012-11">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fedorov, A.; Beichel, R.; Kalpathy-Cramer, J.; Finet, J.; Fillion-Robin, J.-C.; Pujol, S.; Bauer, C.; Jennings, D.; Fennessy, F.; Sonka, M.; et al. 3D Slicer as an image computing platform for the Quantitative Imaging Network. Magn. Reson. Imaging 2012, 30, 1323-1341. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Stereotaxic Display of Brain Lesions</title>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Rorden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Brett</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2000/421719</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Behavioural Neurology</title>
+		<title level="j" type="abbrev">Behavioural Neurology</title>
+		<idno type="ISSN">0953-4180</idno>
+		<idno type="ISSNe">1875-8584</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="191" to="200" />
+			<date type="published" when="2000-01">2000</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rorden, C.; Brett, M. Stereotaxic display of brain lesions. Behav. Neurol. 2000, 12, 191-200. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghodasara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Calabrese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Colak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Kitamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pati</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2107.02314</idno>
+		<idno type="arXiv">arXiv:2107.02314</idno>
+		<title level="m">The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Baid, U.; Ghodasara, S.; Mohan, S.; Bilello, M.; Calabrese, E.; Colak, E.; Farahani, K.; Kalpathy-Cramer, J.; Kitamura, F.C.; Pati, S.; et al. The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification. arXiv 2021, arXiv:2107.02314. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)</title>
+		<author>
+			<persName><forename type="first">Bjoern</forename><forename type="middle">H</forename><surname>Menze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andras</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayashree</forename><surname>Kalpathy-Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliya</forename><surname>Burren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicole</forename><surname>Porz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Slotboom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Levente</forename><surname>Lanczi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Gerstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-Andre</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Arbel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">B</forename><surname>Avants</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Ayache</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Buendia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Louis</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Cordier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">J</forename><surname>Corso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Criminisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tilak</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Delingette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cagatay</forename><surname>Demiralp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Durst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Dojat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Senan</forename><surname>Doyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joana</forename><surname>Festa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ezequiel</forename><surname>Geremia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Glocker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Polina</forename><surname>Golland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotao</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andac</forename><surname>Hamamci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">M</forename><surname>Iftekharuddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raj</forename><surname>Jena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">M</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ender</forename><surname>Konukoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danial</forename><surname>Lashkari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">Antonio</forename><surname>Mariz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergio</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doina</forename><surname>Precup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tammy</forename><forename type="middle">Riklin</forename><surname>Raviv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">M S</forename><surname>Reza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Duygu</forename><surname>Sarikaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hoo-Chang</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Shotton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">A</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Sousa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nagesh</forename><forename type="middle">K</forename><surname>Subbanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabor</forename><surname>Szekely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">J</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Owen</forename><forename type="middle">M</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Tustison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gozde</forename><surname>Unal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flor</forename><surname>Vasseur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Wintermark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><forename type="middle">Hye</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Binsheng</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Darko</forename><surname>Zikic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Prastawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><surname>Van Leemput</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2014.2377694</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1993" to="2024" />
+			<date type="published" when="2015-10">2015</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Menze, B.H.; Jakab, A.; Bauer, S.; Kalpathy-Cramer, J.; Farahani, K.; Kirby, J.; Burren, Y.; Porz, N.; Slotboom, J.; Wiest, R.; et al. The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). IEEE Trans. Med. Imaging 2015, 34, 1993-2024. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features</title>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamed</forename><surname>Akbari</surname></persName>
+			<idno type="ORCID">0000-0001-9786-3707</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><forename type="middle">S</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">B</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyvan</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/sdata.2017.117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">170117</biblScope>
+			<date type="published" when="2017-09-05">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Akbari, H.; Sotiras, A.; Bilello, M.; Rozycki, M.; Kirby, J.S.; Freymann, J.B.; Farahani, K.; Davatzikos, C. Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features. Sci. Data 2017, 4, 170117. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Segmentation Labels for the Pre-Operative Scans of the TCGA-GBM Collection</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Akbari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.7937/K9/TCIA.2017.KLXWJJ1Q</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Bethesda, MD, USA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>National Institutes of Health</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Akbari, H.; Sotiras, A.; Bilello, M.; Rozycki, M.; Kirby, J.; Freymann, J.; Farahani, K.; Davatzikos, C. Segmentation Labels for the Pre-Operative Scans of the TCGA-GBM Collection; National Institutes of Health: Bethesda, MD, USA, 2017. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Segmentation Labels for the Pre-Operative Scans of the TCGA-LGG Collection</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Akbari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sotiras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bilello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rozycki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Freymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Farahani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Davatzikos</surname></persName>
+		</author>
+		<idno type="DOI">10.7937/K9/TCIA.2017.GJQ7R0EF</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>National Institutes of Health</publisher>
+			<pubPlace>Bethesda, MD, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Akbari, H.; Sotiras, A.; Bilello, M.; Rozycki, M.; Kirby, J.; Freymann, J.; Farahani, K.; Davatzikos, C. Segmentation Labels for the Pre-Operative Scans of the TCGA-LGG Collection; National Institutes of Health: Bethesda, MD, USA, 2017. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation, Progression Assessment, and Overall Survival Prediction in the BRATS Challenge</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rempfler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Crimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Shinohara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Ha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rozycki</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1811.02629</idno>
+		<idno type="arXiv">arXiv:1811.02629</idno>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Bakas, S.; Reyes, M.; Jakab, A.; Bauer, S.; Rempfler, M.; Crimi, A.; Shinohara, R.T.; Berger, C.; Ha, S.M.; Rozycki, M.; et al. Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation, Progression Assessment, and Overall Survival Prediction in the BRATS Challenge. arXiv 2019, arXiv:1811.02629. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Validation of MRI-Based Models to Predict MGMT Promoter Methylation in Gliomas: BraTS 2021 Radiogenomics Challenge</title>
+		<author>
+			<persName><forename type="first">Byung-Hoon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyeonhoon</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-9426-823X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kyu</forename><forename type="middle">Sung</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ju</forename><forename type="middle">Gang</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chul-Kee</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sung-Hye</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-8681-1597</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Wook</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seung</forename><forename type="middle">Hong</forename><surname>Choi</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers14194827</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">4827</biblScope>
+			<date type="published" when="2022-10-03">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kim, B.-H.; Lee, H.; Choi, K.S.; Nam, J.G.; Park, C.-K.; Park, S.-H.; Chung, J.W.; Choi, S.H. Validation of MRI-Based Models to Predict MGMT Promoter Methylation in Gliomas: BraTS 2021 Radiogenomics Challenge. Cancers 2022, 14, 4827. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The effects of PACS on radiographer&apos;s work practice</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Aspelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bergquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hillergård</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jacobsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lindsköld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wallberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lundberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.radi.2006.02.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiography</title>
+		<title level="j" type="abbrev">Radiography</title>
+		<idno type="ISSN">1078-8174</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="235" to="240" />
+			<date type="published" when="2007-08">2007</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Larsson, W.; Aspelin, P.; Bergquist, M.; Hillergård, K.; Jacobsson, B.; Lindsköld, L.; Wallberg, J.; Lundberg, N. The effects of PACS on radiographer&apos;s work practice. Radiography 2007, 13, 235-240. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The first step for neuroimaging data analysis: DICOM to NIfTI conversion</title>
+		<author>
+			<persName><forename type="first">Xiangrui</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">S</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Ashburner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jolinda</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Rorden</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jneumeth.2016.03.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience Methods</title>
+		<title level="j" type="abbrev">Journal of Neuroscience Methods</title>
+		<idno type="ISSN">0165-0270</idno>
+		<imprint>
+			<biblScope unit="volume">264</biblScope>
+			<biblScope unit="page" from="47" to="56" />
+			<date type="published" when="2016-05">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, X.; Morgan, P.S.; Ashburner, J.; Smith, J.; Rorden, C. The first step for neuroimaging data analysis: DICOM to NIfTI conversion. J. Neurosci. Methods 2016, 264, 47-56. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Geometry in Medical Imaging: DICOM and NIfTI Formats</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Atkinson</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.6467772</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<pubPlace>Zenodo</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Atkinson, D. Geometry in Medical Imaging: DICOM and NIfTI Formats. Zenodo 2022. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Magnetic resonance imaging of meningiomas: a pictorial review</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Watts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Box</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Galvin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brotchie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Trost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sutherland</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13244-013-0302-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Insights into Imaging</title>
+		<title level="j" type="abbrev">Insights Imaging</title>
+		<idno type="ISSNe">1869-4101</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="113" to="122" />
+			<date type="published" when="2014-01-08">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Watts, J.; Box, G.; Galvin, A.; Brotchie, P.; Trost, N.; Sutherland, T. Magnetic resonance imaging of meningiomas: A pictorial review. Insights Imaging 2014, 5, 113-122. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Dilemmas and diagnostic difficulties in meningioma</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T P D</forename><surname>Hallinan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Hegde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">E H</forename><surname>Lim</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.crad.2013.03.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Radiology</title>
+		<title level="j" type="abbrev">Clinical Radiology</title>
+		<idno type="ISSN">0009-9260</idno>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="837" to="844" />
+			<date type="published" when="2013-08">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hallinan, J.T.P.D.; Hegde, A.N.; Lim, W.E.H. Dilemmas and diagnostic difficulties in meningioma. Clin. Radiol. 2013, 68, 837-844. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Radiology of meningiomas</title>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">E</forename><surname>Ginsberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf00165653</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuro-Oncology</title>
+		<title level="j" type="abbrev">J Neuro-Oncol</title>
+		<idno type="ISSN">0167-594X</idno>
+		<idno type="ISSNe">1573-7373</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="229" to="238" />
+			<date type="published" when="1996-09">1996</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ginsberg, L.E. Radiology of meningiomas. J. Neurooncol. 1996, 29, 229-238. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Presurgical differentiation between malignant haemangiopericytoma and angiomatous meningioma by a radiomics approach based on texture analysis</title>
+		<author>
+			<persName><forename type="first">Xuanxuan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiping</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongdong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dejun</forename><surname>She</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinping</forename><surname>Kuai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daoying</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Yin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neurad.2019.05.013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroradiology</title>
+		<title level="j" type="abbrev">Journal of Neuroradiology</title>
+		<idno type="ISSN">0150-9861</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="281" to="287" />
+			<date type="published" when="2019-09">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, X.; Lu, Y.; Xiong, J.; Wang, D.; She, D.; Kuai, X.; Geng, D.; Yin, B. Presurgical differentiation between malignant haemangioper- icytoma and angiomatous meningioma by a radiomics approach based on texture analysis. J. Neuroradiol. 2019, 46, 281-287. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Intracranial Hemorrhage Imaging</title>
+		<author>
+			<persName><forename type="first">Amin</forename><forename type="middle">F</forename><surname>Saad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruchir</forename><surname>Chaudhari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><forename type="middle">J</forename><surname>Fischbein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Wintermark</surname></persName>
+		</author>
+		<idno type="DOI">10.1053/j.sult.2018.01.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Seminars in Ultrasound, CT and MRI</title>
+		<title level="j" type="abbrev">Seminars in Ultrasound, CT and MRI</title>
+		<idno type="ISSN">0887-2171</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="441" to="456" />
+			<date type="published" when="2018-10">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saad, A.F.; Chaudhari, R.; Fischbein, N.J.; Wintermark, M. Intracranial Hemorrhage Imaging. Semin. Ultrasound CT MRI 2018, 39, 441-456. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">CT evaluation of subarachnoid hemorrhage: a practical review for the radiologist interpreting emergency room studies</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">M</forename><surname>Provenzale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lotfi</forename><surname>Hacein-Bey</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10140-009-0824-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Emergency Radiology</title>
+		<title level="j" type="abbrev">Emerg Radiol</title>
+		<idno type="ISSN">1070-3004</idno>
+		<idno type="ISSNe">1438-1435</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="441" to="451" />
+			<date type="published" when="2009-06-19">2009</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Provenzale, J.M.; Hacein-Bey, L. CT evaluation of subarachnoid hemorrhage: A practical review for the radiologist interpreting emergency room studies. Emerg. Radiol. 2009, 16, 441. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Radiological characteristics of glioblastoma multiforme using CT and MRI examination</title>
+		<author>
+			<persName><forename type="first">Amr</forename><forename type="middle">A</forename><surname>Abd-Elghany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdu</forename><forename type="middle">Ahmed</forename><surname>Naji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Batil</forename><surname>Alonazi</surname></persName>
+			<idno type="ORCID">0000-0003-2942-9516</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hassan</forename><surname>Aldosary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Abdluaziz</forename><surname>Alsufayan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Alnasser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ebtsam</forename><forename type="middle">A</forename><surname>Mohammad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mustafa</forename><forename type="middle">Z</forename><surname>Mahmoud</surname></persName>
+			<idno type="ORCID">0000-0003-2552-9165</idno>
+		</author>
+		<idno type="DOI">10.1080/16878507.2019.1655864</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Radiation Research and Applied Sciences</title>
+		<title level="j" type="abbrev">Journal of Radiation Research and Applied Sciences</title>
+		<idno type="ISSN">1687-8507</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="289" to="293" />
+			<date type="published" when="2019-01">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abd-Elghany, A.A.; Naji, A.A.; Alonazi, B.; Aldosary, H.; Alsufayan, M.A.; Alnasser, M.; Mohammad, E.A.; Mahmoud, M.Z. Radiological characteristics of glioblastoma multiforme using CT and MRI examination. J. Radiat. Res. Appl. Sci. 2019, 12, 289-293. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Advanced magnetic resonance imaging in glioblastoma: a review</title>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Shukla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">S</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Nikam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kiran</forename><surname>Talekar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">D</forename><surname>Palmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenyin</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.21037/cco.2017.06.28</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Chinese Clinical Oncology</title>
+		<title level="j" type="abbrev">Chin. Clin. Oncol.</title>
+		<idno type="ISSN">2304-3865</idno>
+		<idno type="ISSNe">2304-3873</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="40" to="40" />
+			<date type="published" when="2017-08">2017</date>
+			<publisher>AME Publishing Company</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shukla, G.; Alexander, G.S.; Bakas, S.; Nikam, R.; Talekar, K.; Palmer, J.D.; Shi, W. Advanced magnetic resonance imaging in glioblastoma: A review. Chin. Clin. Oncol. 2017, 6, 40. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Medical image segmentation automatic quality control: A multi-dimensional approach</title>
+		<author>
+			<persName><forename type="first">Joris</forename><surname>Fournel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Axel</forename><surname>Bartoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bendahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxime</forename><surname>Guye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Monique</forename><surname>Bernard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Rauseo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Y</forename><surname>Khanji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steffen</forename><forename type="middle">E</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexis</forename><surname>Jacquier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Badih</forename><surname>Ghattas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2021.102213</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Image Analysis</title>
+		<title level="j" type="abbrev">Medical Image Analysis</title>
+		<idno type="ISSN">1361-8415</idno>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page">102213</biblScope>
+			<date type="published" when="2021-12">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fournel, J.; Bartoli, A.; Bendahan, D.; Guye, M.; Bernard, M.; Rauseo, E.; Khanji, M.Y.; Petersen, S.E.; Jacquier, A.; Ghattas, B. Medical image segmentation automatic quality control: A multi-dimensional approach. Med. Image Anal. 2021, 74, 102213. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Quality control strategies for brain MRI segmentation and parcellation: Practical approaches and recommendations - insights from the Maastricht study</title>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Monereo-Sánchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joost</forename><forename type="middle">J A</forename><surname>De Jong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerhard</forename><forename type="middle">S</forename><surname>Drenthen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Magdalena</forename><surname>Beran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><forename type="middle">H</forename><surname>Backes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coen</forename><forename type="middle">D A</forename><surname>Stehouwer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miranda</forename><forename type="middle">T</forename><surname>Schram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">E J</forename><surname>Linden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacobus</forename><forename type="middle">F A</forename><surname>Jansen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2021.118174</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">237</biblScope>
+			<biblScope unit="page">118174</biblScope>
+			<date type="published" when="2021-08">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Monereo-Sánchez, J.; de Jong, J.J.; Drenthen, G.S.; Beran, M.; Backes, W.H.; Stehouwer, C.D.; Schram, M.T.; Linden, D.E.; Jansen, J.F. Quality control strategies for brain MRI segmentation and parcellation: Practical approaches and recommendations-Insights from the Maastricht study. NeuroImage 2021, 237, 118174. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Is AI Ground Truth Really True? The Dangers of Training and Evaluating AI Tools Based on Experts’ Know-What</title>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Lebovitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalia</forename><surname>Levina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hila</forename><surname>Lifshitz-Assaf</surname></persName>
+		</author>
+		<idno type="DOI">10.25300/misq/2021/16564</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<idno type="ISSN">0276-7783</idno>
+		<idno type="ISSNe">2162-9730</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1501" to="1526" />
+			<date type="published" when="2021-09-01">2021</date>
+			<publisher>MIS Quarterly</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lebovitz, S.; Levina, N.; Lifshitz-Assaf, H. Is AI Ground Truth Really True? The Dangers of Training and Evaluating AI Tools Based on Experts&apos; Know-What. MIS Q. 2021, 45, 1501-1526. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Optimization for Medical Image Segmentation: Theory and Practice When Evaluating With Dice Score or Jaccard Index</title>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Eelbode</surname></persName>
+			<idno type="ORCID">0000-0003-2222-1843</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Bertels</surname></persName>
+			<idno type="ORCID">0000-0001-7206-2671</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maxim</forename><surname>Berman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Vandermeulen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederik</forename><surname>Maes</surname></persName>
+			<idno type="ORCID">0000-0003-0027-1479</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raf</forename><surname>Bisschops</surname></persName>
+			<idno type="ORCID">0000-0002-9994-8226</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">B</forename><surname>Blaschko</surname></persName>
+			<idno type="ORCID">0000-0002-2640-181X</idno>
+		</author>
+		<idno type="DOI">10.1109/tmi.2020.3002417</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3679" to="3690" />
+			<date type="published" when="2020-11">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eelbode, T.; Bertels, J.; Berman, M.; Vandermeulen, D.; Maes, F.; Bisschops, R.; Blaschko, M.B. Optimization for Medical Image Segmentation: Theory and Practice When Evaluating With Dice Score or Jaccard Index. IEEE Trans. Med. Imaging 2020, 39, 3679-3690. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Introduction to radiomics for a clinical audience</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mccague</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ramlee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Reinius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Selby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hulse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Piyatissa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Bura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Crispin-Ortuzar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Sala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Woitek</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.crad.2022.08.149</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Radiology</title>
+		<title level="j" type="abbrev">Clinical Radiology</title>
+		<idno type="ISSN">0009-9260</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="83" to="98" />
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McCague, C.; Ramlee, S.; Reinius, M.; Selby, I.; Hulse, D.; Piyatissa, P.; Bura, V.; Crispin-Ortuzar, M.; Sala, E.; Woitek, R. Introduction to radiomics for a clinical audience. Clin. Radiol. 2023, 78, 83-98. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Sparse Representation-Based Radiomics for the Diagnosis of Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Guoqing</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-8991-8701</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yinsheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanyuan</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-6992-5816</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jinhua</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0000-0002-0654-6034</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaofei</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xue</forename><surname>Ju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhifeng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongping</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2017.2776967</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<idno type="ISSNe">1558-254X</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="893" to="905" />
+			<date type="published" when="2018-04">2018</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wu, G.; Chen, Y.; Wang, Y.; Yu, J.; Lv, X.; Ju, X.; Shi, Z.; Chen, L.; Chen, Z. Sparse Representation-Based Radiomics for the Diagnosis of Brain Tumors. IEEE Trans. Med. Imaging 2018, 37, 893-905. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Radiomics-Based Machine Learning in Differentiation Between Glioblastoma and Metastatic Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Chaoyue</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuejin</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuelei</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fonc.2019.00806</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Oncology</title>
+		<title level="j" type="abbrev">Front. Oncol.</title>
+		<idno type="ISSNe">2234-943X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">806</biblScope>
+			<date type="published" when="2019-08-22">2019</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen, C.; Ou, X.; Wang, J.; Guo, W.; Ma, X. Radiomics-Based Machine Learning in Differentiation Between Glioblastoma and Metastatic Brain Tumors. Front. Oncol. 2019, 9, 806. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Clinical applications of artificial intelligence and radiomics in neuro-oncology imaging</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A K A</forename><surname>Razek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alksas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shehata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abdelkhalek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Baky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>El-Baz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Helmy</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13244-021-01102-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Insights Imaging</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">152</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Razek, A.A.K.A.; Alksas, A.; Shehata, M.; AbdelKhalek, A.; Baky, K.A.; El-Baz, A.; Helmy, E. Clinical applications of artificial intelligence and radiomics in neuro-oncology imaging. Insights Imaging 2021, 12, 152. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">A survey of MRI-based medical image analysis for brain tumor studies</title>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Wiest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Null-</forename><forename type="middle">P</forename><surname>Nolte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Reyes</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0031-9155/58/13/r97</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics in Medicine and Biology</title>
+		<title level="j" type="abbrev">Phys. Med. Biol.</title>
+		<idno type="ISSN">0031-9155</idno>
+		<idno type="ISSNe">1361-6560</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="R97" to="R129" />
+			<date type="published" when="2013-06-06">2013</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bauer, S.; Wiest, R.; Nolte, L.P.; Reyes, M. A survey of MRI-based medical image analysis for brain tumor studies. Phys. Med. Biol. 2013, 58, R97. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Automated Segmentation of MR Images of Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Kaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">K</forename><surname>Warfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arya</forename><surname>Nabavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ferenc</forename><forename type="middle">A</forename><surname>Jolesz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ron</forename><surname>Kikinis</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiology.218.2.r01fe44586</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<title level="j" type="abbrev">Radiology</title>
+		<idno type="ISSN">0033-8419</idno>
+		<idno type="ISSNe">1527-1315</idno>
+		<imprint>
+			<biblScope unit="volume">218</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="586" to="591" />
+			<date type="published" when="2001-02">2001</date>
+			<publisher>Radiological Society of North America (RSNA)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaus, M.R.; Warfield, S.K.; Nabavi, A.; Black, P.M.; Jolesz, F.A.; Kikinis, R. Automated Segmentation of MR Images of Brain Tumors. Radiology 2001, 218, 586-591. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Manual, semi-automated, and automated delineation of chronic brain lesions: A comparison of methods</title>
+		<author>
+			<persName><forename type="first">Marko</forename><surname>Wilke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bianca</forename><surname>De Haan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hendrik</forename><surname>Juenger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans-Otto</forename><surname>Karnath</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroimage.2011.04.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NeuroImage</title>
+		<title level="j" type="abbrev">NeuroImage</title>
+		<idno type="ISSN">1053-8119</idno>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2038" to="2046" />
+			<date type="published" when="2011-06">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wilke, M.; de Haan, B.; Juenger, H.; Karnath, H.-O. Manual, semi-automated, and automated delineation of chronic brain lesions: A comparison of methods. NeuroImage 2011, 56, 2038-2046. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Automated Meningioma Segmentation in Multiparametric MRI</title>
+		<author>
+			<persName><forename type="first">Kai</forename><forename type="middle">Roman</forename><surname>Laukamp</surname></persName>
+			<idno type="ORCID">0000-0002-5600-5914</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lenhard</forename><surname>Pennig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Thiele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Reimer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukas</forename><surname>Görtz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgy</forename><surname>Shakirin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Zopfs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Timmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Perkuhn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Borggrefe</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00062-020-00884-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Neuroradiology</title>
+		<title level="j" type="abbrev">Clin Neuroradiol</title>
+		<idno type="ISSN">1869-1439</idno>
+		<idno type="ISSNe">1869-1447</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="357" to="366" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Laukamp, K.R.; Pennig, L.; Thiele, F.; Reimer, R.; Görtz, L.; Shakirin, G.; Zopfs, D.; Timmer, M.; Perkuhn, M.; Borggrefe, J. Automated Meningioma Segmentation in Multiparametric MRI. Clin. Neuroradiol. 2021, 31, 357-366. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Labella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Adewole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alonso-Basanta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Altes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Anwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bergquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bhalerao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chung</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2305.07642</idno>
+		<idno type="arXiv">arXiv:2305.07642</idno>
+		<title level="m">The ASNR-MICCAI Brain Tumor Segmentation (BraTS) Challenge 2023: Intracranial Meningioma</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">LaBella, D.; Adewole, M.; Alonso-Basanta, M.; Altes, T.; Anwar, S.M.; Baid, U.; Bergquist, T.; Bhalerao, R.; Chen, S.; Chung, V.; et al. The ASNR-MICCAI Brain Tumor Segmentation (BraTS) Challenge 2023: Intracranial Meningioma. arXiv 2023, arXiv:2305.07642. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">A multi-institutional meningioma MRI dataset for automated multi-sequence image segmentation</title>
+		<author>
+			<persName><forename type="first">Dominic</forename><surname>Labella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omaditya</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shan</forename><surname>Mcburney-Lin</surname></persName>
+			<idno type="ORCID">0000-0001-9829-5748</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Mclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Nedelec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arif</forename><forename type="middle">S</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nourel</forename><forename type="middle">Hoda</forename><surname>Tahon</surname></persName>
+			<idno type="ORCID">0009-0002-5863-0219</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Talissa</forename><surname>Altes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ujjwal</forename><surname>Baid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Radhika</forename><surname>Bhalerao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaseen</forename><surname>Dhemesh</surname></persName>
+			<idno type="ORCID">0000-0003-2263-0452</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Floyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devon</forename><surname>Godfrey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fathi</forename><surname>Hilal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anastasia</forename><surname>Janas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anahita</forename><surname>Kazerooni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Collin</forename><surname>Kent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Kofler</surname></persName>
+			<idno type="ORCID">0000-0003-0642-7884</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Leu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nazanin</forename><surname>Maleki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjoern</forename><surname>Menze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxence</forename><surname>Pajot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zachary</forename><forename type="middle">J</forename><surname>Reitman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Rudie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachit</forename><surname>Saluja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yury</forename><surname>Velichko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunhao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pranav</forename><forename type="middle">I</forename><surname>Warman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nico</forename><surname>Sollmann</surname></persName>
+			<idno type="ORCID">0000-0002-8120-2223</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Diffley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khanak</forename><forename type="middle">K</forename><surname>Nandolia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">I</forename><surname>Warren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Pascal</forename><surname>Fehringer</surname></persName>
+			<idno type="ORCID">0009-0001-2184-4013</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yulia</forename><surname>Bronstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Deptula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><forename type="middle">G</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahsa</forename><surname>Taherzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><surname>Portela De Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aoife</forename><surname>Haughey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marinos</forename><surname>Kontzialis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Saba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melanie</forename><forename type="middle">M T</forename><surname>Brüßeler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shehbaz</forename><surname>Ansari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Athanasios</forename><surname>Gkampenis</surname></persName>
+			<idno type="ORCID">0009-0005-0668-425X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">Maximilian</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aya</forename><surname>Mansour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Islam</forename><forename type="middle">H</forename><surname>Shawali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolay</forename><surname>Yordanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roula</forename><surname>Hourani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Yahya</forename><surname>Moshebah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">Magdy</forename><surname>Abouelatta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanvir</forename><surname>Rizvi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klara</forename><surname>Willms</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dann</forename><forename type="middle">C</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdullah</forename><surname>Okar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gennaro</forename><surname>D’anna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Taha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasaman</forename><surname>Sharifi</surname></persName>
+			<idno type="ORCID">0000-0001-5563-6311</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shahriar</forename><surname>Faghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominic</forename><surname>Kite</surname></persName>
+			<idno type="ORCID">0000-0001-8627-1036</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Ammar</forename><surname>Haider</surname></persName>
+			<idno type="ORCID">0000-0002-8006-6426</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Alonso-Basanta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>Villanueva-Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><forename type="middle">M</forename><surname>Rauschecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayman</forename><surname>Nada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariam</forename><surname>Aboian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Flanders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spyridon</forename><surname>Bakas</surname></persName>
+			<idno type="ORCID">0000-0001-8734-6482</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Calabrese</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41597-024-03350-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">496</biblScope>
+			<date type="published" when="2024-05-15">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">LaBella, D.; Khanna, O.; McBurney-Lin, S.; Mclean, R.; Nedelec, P.; Rashid, A.S.; Tahon, N.H.; Altes, T.; Baid, U.; Bhalerao, R.; et al. A multi-institutional meningioma MRI dataset for automated multi-sequence image segmentation. Sci. Data 2024, 11, 496. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Automated segmentation of subarachnoid hemorrhages with convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Renan</forename><forename type="middle">Sales</forename><surname>Barros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wessel</forename><forename type="middle">E</forename><surname>Van Der Steen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">M M</forename><surname>Boers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ijsbrand</forename><surname>Zijlstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rene</forename><surname>Van Den Berg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wassim</forename><surname>El Youssoufi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Urwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dagmar</forename><surname>Verbaan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Vandertop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Majoie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silvia</forename><forename type="middle">Delgado</forename><surname>Olabarriaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henk</forename><forename type="middle">A</forename><surname>Marquering</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imu.2020.100321</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Informatics in Medicine Unlocked</title>
+		<title level="j" type="abbrev">Informatics in Medicine Unlocked</title>
+		<idno type="ISSN">2352-9148</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page">100321</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barros, R.S.; van der Steen, W.E.; Boers, A.M.; Zijlstra, I.; Berg, R.v.D.; El Youssoufi, W.; Urwald, A.; Verbaan, D.; Vandertop, P.; Majoie, C.; et al. Automated segmentation of subarachnoid hemorrhages with convolutional neural networks. Inform. Med. Unlocked 2020, 19, 100321. [CrossRef]</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Brain MRI Segmentation: State of the Art and Future Directions</title>
+		<author>
+			<persName><forename type="first">Zeynettin</forename><surname>Akkus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfiia</forename><surname>Galimzianova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Assaf</forename><surname>Hoogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10278-017-9983-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Digital Imaging</title>
+		<title level="j" type="abbrev">J Digit Imaging</title>
+		<idno type="ISSN">0897-1889</idno>
+		<idno type="ISSNe">1618-727X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="449" to="459" />
+			<date type="published" when="2016">2017. 2016. 2016. 2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+			<pubPlace>Union</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Directive 95/46/EC (General. Data Protection Regulation Regulation EU /679 of the European Parliament and of the Council of 27 April 2016 on the Protection of Natural Persons with Regard to the Processing of Personal</note>
+	<note type="raw_reference">Akkus, Z.; Galimzianova, A.; Hoogi, A.; Rubin, D.L.; Erickson, B.J. Deep Learning for Brain MRI Segmentation: State of the Art and Future Directions. J. Digit. Imaging 2017, 30, 449-459. [CrossRef] [PubMed] 56. Directive 95/46/EC (General. Data Protection Regulation). Regulation EU (2016) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the Protection of Natural Persons with Regard to the Processing of Personal. Data and on the Free Movement of Such. Data, and Repealing. Off. J. Eur. Union 2016, 119.</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">HIPAA Privacy and DICOM Anonymization for Research</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Avrin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.acra.2008.01.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Academic Radiology</title>
+		<title level="j" type="abbrev">Academic Radiology</title>
+		<idno type="ISSN">1076-6332</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">273</biblScope>
+			<date type="published" when="2008-03">2008</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Avrin, D. HIPAA privacy and DICOM anonymization for research. Acad. Radiol. 2008, 15, 273. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Medical Imaging and Privacy in the Era of Artificial Intelligence: Myth, Fallacy, and the Future</title>
+		<author>
+			<persName><forename type="first">Eyal</forename><surname>Lotan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charlotte</forename><surname>Tschider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">K</forename><surname>Sodickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><forename type="middle">L</forename><surname>Caplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><surname>Bruno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvonne</forename><forename type="middle">W</forename><surname>Lui</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jacr.2020.04.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American College of Radiology</title>
+		<title level="j" type="abbrev">Journal of the American College of Radiology</title>
+		<idno type="ISSN">1546-1440</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1159" to="1162" />
+			<date type="published" when="2020-09">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lotan, E.; Tschider, C.; Sodickson, D.K.; Caplan, A.L.; Bruno, M.; Zhang, B.; Lui, Y.W. Medical Imaging and Privacy in the Era of Artificial Intelligence: Myth, Fallacy, and the Future. J. Am. Coll. Radiol. JACR 2020, 17, 1159-1162. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">A digital mask to safeguard patient privacy</title>
+		<author>
+			<persName><forename type="first">Yahan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junfeng</forename><surname>Lyu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruixin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lanqin</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0002-5182-3678</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenben</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaowei</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keli</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingying</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danqi</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijing</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxuan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tingxin</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lixue</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wai</forename><forename type="middle">Cheng</forename><surname>Iao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><forename type="middle">Y</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Youjin</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0002-7758-8733</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lai</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iat</forename><forename type="middle">Fan</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinping</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingchang</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-1378-898X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhonghao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huijing</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huasheng</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danping</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoming</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei-Shi</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruixuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Yu-Wai-Man</surname></persName>
+			<idno type="ORCID">0000-0001-7847-9320</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0000-0002-0953-1057</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qionghai</forename><surname>Dai</surname></persName>
+			<idno type="ORCID">0000-0001-7043-3061</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Haotian</forename><surname>Lin</surname></persName>
+			<idno type="ORCID">0000-0003-4672-9721</idno>
+		</author>
+		<idno type="DOI">10.1038/s41591-022-01966-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1883" to="1892" />
+			<date type="published" when="2022-09">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang, Y.; Lyu, J.; Wang, R.; Wen, Q.; Zhao, L.; Chen, W.; Bi, S.; Meng, J.; Mao, K.; Xiao, Y.; et al. A digital mask to safeguard patient privacy. Nat. Med. 2022, 28, 1883-1892. [CrossRef] [PubMed]</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">From theory to practice: what is the potential of artificial intelligence in the future of neurosurgery?</title>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Planells</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viraj</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hani</forename><forename type="middle">J</forename><surname>Marcus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">S</forename><surname>Pandit</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/14737175.2023.2285432</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Review of Neurotherapeutics</title>
+		<title level="j" type="abbrev">Expert Review of Neurotherapeutics</title>
+		<idno type="ISSN">1473-7175</idno>
+		<idno type="ISSNe">1744-8360</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1041" to="1046" />
+			<date type="published" when="2023-11-24">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note>PubMedDisclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content</note>
+	<note type="raw_reference">Planells, H.; Parmar, V.; Marcus, H.J.; Pandit, A.S. From theory to practice: What is the potential of artificial intelligence in the future of neurosurgery? Expert. Rev. Neurother. 2023, 23, 1041-1046. [CrossRef] [PubMedDisclaimer/Publisher&apos;s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

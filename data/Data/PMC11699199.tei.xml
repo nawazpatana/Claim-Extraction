@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Explainable artificial intelligence with UNet based segmentation and Bayesian machine learning for classification of brain tumors using MRI images</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Science and Business Media LLC</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-01-03">2025-01-03</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">K</forename><surname>Lakshmi</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation"><label>1</label> Department of Information Technology , Sri Manakula Vinayagar Engineering College , Madagadipet , Puducherry , India.</note>
+								<orgName type="department">Department of Information Technology</orgName>
+								<orgName type="institution">Sri Manakula Vinayagar Engineering College</orgName>
+								<address>
+									<settlement>Madagadipet</settlement>
+									<region>Puducherry</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sibi</forename><surname>Amaran</surname></persName>
+							<affiliation key="aff1">
+								<note type="raw_affiliation"><label>2</label> Department of Computing Technologies , School of Computing , College of Engineering and Technology , Faculty of Engineering and Technology , SRM Institute of Science and Technology , SRM Nagar , Kattankulathur , Chennai 603203 , India.</note>
+								<orgName type="department" key="dep1">Department of Computing Technologies</orgName>
+								<orgName type="department" key="dep2">School of Computing</orgName>
+								<orgName type="department" key="dep3">College of Engineering and Technology</orgName>
+								<orgName type="department" key="dep4">Faculty of Engineering and Technology</orgName>
+								<orgName type="institution">SRM Institute of Science and Technology</orgName>
+								<address>
+									<addrLine>SRM Nagar</addrLine>
+									<postCode>603203</postCode>
+									<settlement>Kattankulathur</settlement>
+									<region>Chennai</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">G</forename><surname>Subbulakshmi</surname></persName>
+							<affiliation key="aff2">
+								<note type="raw_affiliation"><label>3</label> Department of Artificial Intelligence and Data Science , St. Joseph&apos;s College of Engineering and Technology , Elupatti , Thanjavur , India.</note>
+								<orgName type="department">Department of Artificial Intelligence and Data Science</orgName>
+								<orgName type="institution">St. Joseph&apos;s College of Engineering and Technology</orgName>
+								<address>
+									<settlement>Elupatti Thanjavur</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">S</forename><surname>Padmini</surname></persName>
+							<affiliation key="aff3">
+								<note type="raw_affiliation"><label>4</label> Department of Computing Technologies , SRM Institute of Science and Technology , Kattankulathur , Chennai 603203 , India.</note>
+								<orgName type="department">Department of Computing Technologies</orgName>
+								<orgName type="institution">SRM Institute of Science and Technology</orgName>
+								<address>
+									<postCode>603203</postCode>
+									<settlement>Kattankulathur</settlement>
+									<region>Chennai</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gyanenedra</forename><forename type="middle">Prasad</forename><surname>Joshi</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Woong</forename><surname>Cho</surname></persName>
+							<email>wcho@kangwon.ac.kr</email>
+							<affiliation key="aff5">
+								<note type="raw_affiliation"><label>6</label> Department of Electronics, Information and Communication Engineering , Kangwon National University , Samcheok , Republic of Korea.</note>
+								<orgName type="department">Department of Electronics, Information and Communication Engineering</orgName>
+								<orgName type="institution">Kangwon National University</orgName>
+								<address>
+									<settlement>Samcheok</settlement>
+									<country key="KR">Republic of Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Explainable artificial intelligence with UNet based segmentation and Bayesian machine learning for classification of brain tumors using MRI images</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Scientific Reports</title>
+						<title level="j" type="abbrev">Sci Rep</title>
+						<idno type="eISSN">2045-2322</idno>
+						<imprint>
+							<publisher>Springer Science and Business Media LLC</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2025-01-03" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">1E221569DEFCA17B2EBC65E677C8C66B</idno>
+					<idno type="DOI">10.1038/s41598-024-84692-7</idno>
+					<note type="submission">Received: 26 August 2024; Accepted: 26 December 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2026-01-31T18:29+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=true, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[1], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Brain tumors</term>
+					<term>Hyperparameter tuning</term>
+					<term>Explainable artificial intelligence</term>
+					<term>Semantic segmentation</term>
+					<term>Bayesian</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Detecting brain tumours (BT) early improves treatment possibilities and increases patient survival rates. Magnetic resonance imaging (MRI) scanning offers more comprehensive information, such as better contrast and clarity, than any alternative scanning process. Manually separating BTs from several MRI images gathered in medical practice for cancer analysis is challenging and time-consuming. Tumours and MRI scans of the brain are exposed utilizing methods and machine learning technologies, simplifying the process for doctors. MRI images can sometimes appear normal even when a patient has a tumour or malignancy. Deep learning approaches have recently depended on deep convolutional neural networks to analyze medical images with promising outcomes. It supports saving lives faster and rectifying some medical errors. With this motivation, this article presents a new explainable artificial intelligence with semantic segmentation and Bayesian machine learning for brain tumors (XAISS-BMLBT) technique. The presented XAISS-BMLBT technique mainly concentrates on the semantic segmentation and classification of BT in MRI images. The presented XAISS-BMLBT approach initially involves bilateral filtering-based image pre-processing to eliminate the noise. Next, the XAISS-BMLBT technique performs the MEDU-Net+ segmentation process to define the impacted brain regions. For the feature extraction process, the ResNet50 model is utilized. Furthermore, the Bayesian regularized artificial neural network (BRANN) model is used to identify the presence of BTs. Finally, an improved radial movement optimization model is employed for the hyperparameter tuning of the BRANN technique. To highlight the improved performance of the XAISS-BMLBT technique, a series of simulations were accomplished by utilizing a benchmark database. The experimental validation of the XAISS-BMLBT technique portrayed a superior accuracy value of 97.75% over existing models.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.276" lry="782.36"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>imaging conditions include positron emission tomography (PET), computed tomography (CT), single-photon emission CT (SPECT), MRI, and X-ray <ref type="bibr" target="#b2">3</ref> . A three-dimensional image of the human brain can be obtained from a fixed MRI scan. e main persistence of this association is to recognize, investigate, categorize, and diagnose various neurological disorders. Radiation therapy has been generally utilized in cancer treatment, and MRI segmentation can o en be applied to direct radiation therapy <ref type="bibr" target="#b3">4</ref> . Because of this, it is possible to control whether or not a fragment identified by an MRI as a tumour is present. is treatment doesn't include ionizing radiation application and is instead employed for identification, diagnosing disease phases, and following monitoring <ref type="bibr" target="#b4">5</ref> . e most standard background in which this treatment is applied is within hospitals. MRI is the most advantageous condition currently available and is utilized to diagnose more innovative BT stages <ref type="bibr" target="#b5">6</ref> . e growth of artificial intelligence (AI) and novel DL-based techniques have a significant influence on medical imaging, especially in diagnosing disease. e CNN method is the most widely applied DL technique in neural networks <ref type="bibr" target="#b6">7</ref> . Features extraction and segmentation are the two characteristics of a conventional CNN model. e CNN architecture has five layers: a folding layer, an input layer, a pooling layer, a classification layer, and a fully connected (FC) layer <ref type="bibr" target="#b7">8</ref> . KNN, ANN, and SVM are the most typically used and exact techniques. Simultaneously, increasing BT classification would require developing the obtainable data within the area and emerging a novel artificial neural network (ANN)-based DL technology <ref type="bibr" target="#b8">9</ref> . e most prominent difference between these three tumours is that meningioma is naturally benign, while gliomas are usually malignant. CNNs are a neural network that aids you in visualizing, interpreting, and exploring vast data sizes in diagnostic imaging <ref type="bibr" target="#b9">10</ref> . e recommended independent computer diagnostic algorithmic performance has been calculated using parameter precision.</p><p>is article presents a new explainable artificial intelligence with semantic segmentation and Bayesian machine learning for brain tumors (XAISS-BMLBT) technique. e presented XAISS-BMLBT technique mainly concentrates on the semantic segmentation and classification of BT in MRI images. e presented XAISS-BMLBT approach initially involves bilateral filtering (BF)-based image pre-processing to eliminate the noise. Next, the XAISS-BMLBT technique performs the MEDU-Net+ segmentation process to define the impacted brain regions. For the feature extraction process, the ResNet50 model is utilized. Furthermore, the Bayesian regularized ANN (BRANN) model is used to identify the presence of BTs. Finally, an improved radial movement optimization (IRMO) model is employed for the hyperparameter tuning of the BRANN technique. To highlight the improved performance of the XAISS-BMLBT technique, a series of simulations were accomplished by utilizing a benchmark database.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Review of literature</head><p>Cekic et al. <ref type="bibr" target="#b10">11</ref> presented the Mask R-CNN structure, optimizing its advanced features to analyze and process the data from the preoperative microscope and surgical MRI videos. Resnet50 and Resnet101 support systems have been utilized in the method of Mask R-CNN, and experimenting outcomes have been provided. DL methods are trained from MRI and preoperative microscope images, and the classification outcome attained for every patient has been integrated by the average weight. Haq et al. <ref type="bibr" target="#b11">12</ref> propose two proficient and fast BT classification methods based on deep CNNs by utilizing MRI data to detect and classify various kinds of BT. e author utilizes two freely accessible datasets from BraTS and Figshare 2018, employs restricted arbitrary regions to reduce forged outputs, and examines spatial data on well-segmentation tasks. Based on the Figshare dataset, the presented structure identifies BT as pituitary tumoursliomas or meningiomas. e following structure is separated among the grades of lower and higher gliomas (LGG and HGG, respectively). Rajendran et al. <ref type="bibr" target="#b12">13</ref> presented a technique that utilizes a gray level co-occurrence matrix features extraction method to remove redundant particulars from the images. In contrast with the present advanced technique, the precision of BT segmentation has been substantially enhanced by utilizing CNN, which is commonly used in segmenting biomedical images. By integrating the outcomes of 2 distinct segmentation systems, the presented technique determines a main but modest combinatorial tactic which, as a straight significance, produces more complete and precise evaluations. Jyothi and Singh 14 aim to deliver a complete analysis of current mechanisms advanced in the segmentation of BT. In this study, an organized article analysis is proposed to the readers to recognize 3 strategies, specifically the conventional system, ML tactic, and DL method intended for the segmentation of BT. e main objective is to comprise conventional systems such as statistical-based methods and atlas-based strategies to segment tumours from brain MRI. Akter et al. <ref type="bibr" target="#b14">15</ref> presented a deep CNN-based structure for automated brain image identification into four modules and a U-Net-based segmentation method. Utilizing six benchmark datasets, the author tested the classifier and trained the segmentation method, allowing lateral comparison of the segmentation effect on tumour identification in brain MRI images. e advanced new DL-based method for BT segmentation and classification overtakes present pre-trained methods throughout six datasets.</p><p>Anantharajan et al. <ref type="bibr" target="#b15">16</ref> propose a new hybrid technique incorporating personalized features with CNNs to improve the performance of BT segmentation. In this research, personalized features are extracted from MRI scans, which include texture-based, shape-based, and intensity-based features. Simultaneously, a single CNN structure has been trained and developed to identify the features from the data spontaneously. e presented hybrid technique has been integrated with personalized features and features recognized by CNN in various ways for a novel CNN. Mohanty et al. <ref type="bibr" target="#b16">17</ref> propose a unique DL method, which restraints the strength of a so attention mechanism, and accurately intended CNN has been employed. It contains four convolution layers. Most of the crucial inventions in the method represent the technique of extracting features. Rather than feature extraction uniquely from the concluding layer, as is usual in various methods, the technique combines and aggregates features from every layer. is assures that the crucial features inherent to every layer are not misplaced but combined into a comprehensive and robust feature vector. Mehnatkesh et al. <ref type="bibr" target="#b17">18</ref> present an optimizer-based deep convolutional ResNet method integrated with a new evolutional method to enhance the hyperparameters and structure of the deep ResNet method spontaneously without the necessity of human professionals. Also, the physical structure design made identifying various kinds of BT difficult. In addition, according to the theories of difference development tactics and multiple-population operators, an enhanced version of IACO has been proposed. Amiya et al. <ref type="bibr" target="#b18">19</ref> develop a hybrid methodology that integrates GLCM for feature extraction and AlexNet for classifying low bone mass variations in DEXA images, assisting in the segmentation and diagnosis of osteoporosis, osteopenia, and normal bone health. Subramanian and Govindaraj 20 present an interactive toy using DL (HARNet) and IoT to teach yoga to autistic children, helping them improve social interaction. e toy responds to touch sensors and recognizes yoga postures to guide the child. Amiya et al. <ref type="bibr" target="#b20">21</ref> enhanced a texture feature extraction system that integrates local binary patterns (LBP) and normalized grey-level co-occurrence matrix-based (nGLCM) for volumetric images, with modified U-Net (ModU-Net) used for segmenting low bone mass in osteoporosis X-ray images. Shi et al. <ref type="bibr" target="#b21">22</ref> propose an SGS method by integrating SqueezeNet with a Gaussian kernel SVM for non-linear classification, attaining high accuracy and sensitivity in diagnosing COVID-19 from CT images.</p><p>Bouguerra et al. <ref type="bibr" target="#b22">23</ref> propose a two-stage approach for BT classification, improving MRI images and combining model predictions utilizing ensemble learning for improved accuracy. Wang et al. <ref type="bibr" target="#b23">24</ref> present RanMerFormer, a novel CAD method for BT classification by employing a pre-trained vision transformer. It integrates a tokenmerging mechanism for enhanced efficiency and a randomized vector functional link for fast training. Saeed et al. <ref type="bibr" target="#b24">25</ref> introduce a three-phase method using DeeplabV3+ for segmentation, feature extraction with Darknet53 and MobileNetV2 for SVM, and XAI for analyzing features, with uncertainty quantified by confusion entropy. Alagarsamy et al. <ref type="bibr" target="#b25">26</ref> developed an automated methodology for accurate BT prediction by incorporating the Firefly algorithm and interval type-II fuzzy logic system for improved tumour delineation in complex brain tissue. Nisha et al. <ref type="bibr" target="#b26">27</ref> present an automated Alzheimer's disease detection system using MRI data, with pre-processing, brain tissue segmentation, and multiclass classification by utilizing hybrid dense optimal capsule network (Hybrid D-OCapNet), optimized by modified bald eagle search (M-BES) model. Rahman et al. <ref type="bibr" target="#b27">28</ref> present Glioma-CNN, a lightweight model that integrates with gradient boosting. Interpretability is ensured through SHapley Additive exPlanations (SHAP) and Gradient-weighted Class Activation Mapping (Grad-CAM++). Alagarsamy et al. <ref type="bibr" target="#b28">29</ref> develop an approach by integrating the artificial bee colony (ABC) and Interval Type-II fuzzy logic system (IT2FLS) to delineate tumour regions, assisting oncologists in decision-making accurately. Charaabi et al. <ref type="bibr" target="#b29">30</ref> present an XAI-enhanced framework for improving the interpretability of Deep Transfer Learning (DTL) models in BT classification using MRI, leveraging pre-trained models like Xception, ResNet50-V2, DenseNet121, and EfficientNetB0-V2. Rajeev et al. <ref type="bibr" target="#b30">31</ref> develop a DL-based classification model comprising skull-stripping, tumour segmentation, feature extraction using improved Gabor wavelet transform (IGWT), feature selection with black widow adaptive red deer optimization (BWARD), and classification through a hybrid Elman BiLSTM network. Hosny et al. <ref type="bibr" target="#b31">32</ref> propose an ensemble approach using TL with DenseNet121 and InceptionV3, incorporating modified classifiers and Grad-CAM. Mallampati et al. <ref type="bibr" target="#b32">33</ref> present an ML-based approach for BT detection using MRI features. It integrates 3D-UNet and 2D-UNet segmentation with KNN and gradient-boosting classifiers in a hybrid model using so voting to enhance performance.</p><p>Khosravi et al. <ref type="bibr" target="#b33">34</ref> aim to explore the integration of AI in anomaly detection for MRI, focusing on advanced ML and DL techniques to enhance diagnostic accuracy. Hossain et al. <ref type="bibr" target="#b34">35</ref> aim to develop a TL-based multiclass classification model, IVX16, for faster and more reliable BT detection using MRI images, focusing on several DL architectures to improve tumour-type classification. Nag et al. <ref type="bibr" target="#b35">36</ref> incorporate ResNet50 for feature extraction and Generative Adversarial Networks (GANs) for data augmentation. Halder et al. <ref type="bibr" target="#b36">37</ref> aim to enhance automated BT diagnosis using DL and TL, integrating image denoising, tumour detection, and classification to improve accuracy and assist in early abnormality detection. Lamba and Rani <ref type="bibr" target="#b37">38</ref> propose a novel brain-computer interface framework by integrating Xception architecture with TL for feature extraction and linear SVM for classification, enhanced by Gradient-Weighted CAM (Grad-CAM)-based Explainable AI for transparent brain-related diagnostics in smart healthcare. Roy et al. <ref type="bibr" target="#b38">39</ref> review the role of explainable deep learning (XDL) and XAI in enhancing transparency and decision-making in medical imaging, aiming to bridge the gap in understanding DL models for healthcare applications. Chauhan et al. <ref type="bibr" target="#b39">40</ref>   <ref type="bibr" target="#b44">45</ref> propose MBANet, a 3D CNN with multi-branch attention, utilizing an optimized shu e unit and 3D Shu e Attention modules for improved feature extraction and resolution recovery in BT detection.</p><p>Many studies on BT detection need to be revised, as well as computational complexity and dataset reliance limitations. Techniques like Mask R-CNN and GLCM for feature extraction may need help with high-complexity images or limited datasets, affecting accuracy and scalability. DL methods, namely CNNs and U-Net, are prone to overfitting on small datasets and need substantial computational resources. Hybrid methods that integrate personalized features with CNNs can be challenging to integrate effectually, reducing interpretability. Attention mechanisms and optimization techniques may increase model complexity, making them less suitable for real-time applications. Additionally, methods focused on specific imaging modalities may need to be better generalized to diverse medical data. e research gap is in developing more generalized, efficient models for BT detection that can handle varied and complex datasets without overfitting while reducing computational complexity. Additionally, there is a requirement for methods that can seamlessly integrate multiple feature types and imaging modalities to enhance accuracy and real-world applicability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Material and methods is article presents a novel XAISS-BMLBT technique.</head><p>e technique mainly concentrates on semantic segmentation and classification of BT in MRI images. It encompasses distinct pre-processing, segmentation, feature extractor, classification, and parameter tuning processes. Figure <ref type="figure" target="#fig_1">1</ref> illustrates the workflow of the XAISS-BMLBT technique.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pre-processing: BF model</head><p>Initially, the presented XAISS-BMLBT approach involves BF-based image pre-processing to eliminate the noise present within it <ref type="bibr" target="#b45">46</ref> . is model is chosen for pre-processing because it can efficiently reduce noise while conserving edges in an image. Unlike conventional linear filters, which blur edges along with noise, BF utilizes diverse weights for neighbouring pixels based on their spatial distance and intensity difference. is confirms that only pixels with similar intensity values are averaged, preserving crucial details such as boundaries and textures. Furthermore, BF is computationally effectual and can be easily adjusted via its spatial and range parameters to suit diverse types of noise and image characteristics. is makes it versatile for image pre-processing tasks like segmentation, where edge preservation is critical. Figure <ref type="figure" target="#fig_2">2</ref> specifies the working flow of the BF technique.</p><p>It combines the image of input through weights calculated based on either intensity or geometric distances among the pixels of a neighbour. A er a numerical viewpoint, BF functions as described in Eq. (1). O (x, y) , and I (x, y) are the output and input pixels for the (x, y) coordinate; correspondingly, Ω represents k × k filtering window placed in I (x, y) ; W r (i, j) and W s (i, j), are specified in Eq. ( <ref type="formula">2</ref>), which means the range and spatial coefficients at the common location (i, j) in Ω.</p><formula xml:id="formula_0">O (x, y) = ∑ I (i, j) × W s (i, j) × W r (i, j) ∑ W s (i, j) × W r (i, j) (1) W s (i, j) = e - (x-i) 2 +(Q-j) 2 2×σs 2 (2) W r (i, j) = e - |I(x,y)-I(ij)| 2 2×σr 2<label>(3)</label></formula><p>It should be stated that the weight computation, which depends upon the Gaussian distribution, contains standard deviation parameters σr and σs that have been utilized as fine-tuning parameters to modify the filtering level. Mainly, σs represents a set based upon the size of the filtering window, hence that √ (xi) 2 + (yj) 2 ≤ 3 × σs equally, σr must be accurately selected based on the task to perform. For instance, regarding the denoising, its value is based upon the existing noisy standard deviation σn, and it is chosen subsequently σr = 3 × σn. For Eqs. ( <ref type="formula">1</ref>)-( <ref type="formula" target="#formula_0">3</ref>), the BF difficulty is mainly owing to the significant number of multiplication and exponentiation processes required to calculate the filter's weight. If it is alone, the spatial coefficients can be regarded as constant once k represents a set; alternatively, the coefficients of the range need additional computing sources to execute exponential operations at the timeline for various pixel intensity variations and σr.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Segmentation: MEDU-Net+ technique</head><p>Next, the XAISS-BMLBT technique utilizes the MEDU-Net+ segmentation to define the impacted brain regions <ref type="bibr" target="#b46">47</ref> .</p><p>e MEDU-Net+ technique is selected for segmentation because it can effectively capture fine and coarse features through a multi-scale architecture. is model builds on the popular U-Net framework, improving it with additional encoding-decoding layers and skip connections, which allow it to preserve spatial data while enhancing segmentation accuracy. MEDU-Net+ also incorporates multi-level attention mechanisms, enabling it to concentrate on relevant regions while suppressing irrelevant background noise. Compared to other models, it is highly effective in handling intrinsic structures and weakly-defined boundaries, making it appropriate for medical image segmentation tasks. Its flexibility, performance in diverse contexts, and robust generalization capabilities make it an ideal choice.</p><p>Recently, the U-Net-based medical image segmentation has attracted much attention, and various improved U-Net networks are presented gradually, like U-Net++, V-Net, Multi-ResU-Net, 3D U-Net, U2-Net, and CE-Net. Some better techniques mostly advance the basic convolution block during the encoding, add residual connections between convolution blocks, or widen and deepen the network. Nevertheless, this method o en carries the parameters increase energetically.</p><p>It differed from the preceding improved U-Net networks, which only develop the encoder and the connection; the suggested MEDU-Net+ network incorporates the information between encoding and decoding and progresses the decoder, encoder, and skip connection to accomplish superior performance. e recommended MEDU-Net+ network even utilizes the U-shaped architecture. Compared with U-Net, the presented network performance is significantly improved, and the parameter counts have an assured rise. en, the U-shaped framework has been filled with the deconvolution transmission term.</p><p>e suggested MEDU-Net+ comprises the multi-scale encoder joined with Google Net; the novel layer-wise skip connection, and the multiple-scale feature fusion of the decoder. e encoding block function removes image feature information over a sequence of operations like pooling and convolution. is block comprises four sub-modules, every submodule holding four branches: 1 × 1 convolution, the concatenation 1 × 1 convolution and 3 × 3 convolution, the concatenation 1 × 1 convolution and 5 × 5 convolution, and the concatenation 3 × 3 maximum pooling and 1 × 1 convolution. e output is the outcome of concatenating these four branches. A er every sub-module, a down-sampling layer can be applied through the maximum pooling that successively gathers deeper semantic information. is connection block presents a novel layer-wise returned skip connection that creates a more proper route for transferring information between encoder and decoder through the essential stages of connection, convolution, and deconvolution.</p><p>e layer-wise skip connection can be understood as a flow of many U-shaped networks, utilizing this transmission form to transmit and collect semantical information of each coding layer. e consistent decoder block contains four layers, each with a sub-module from deconvolution and up-sampling. Various scales of convolution of 1 × 1, 3 × 3, and 5 × 5 are selected to deconvolution the information. e outcomes of every branch further aggregate to gain the output of every deconvolution block by the decoder. roughout decoding, the resolution can be stored by up-sampling till it is reliable with the resolution of the input image. e complete contributions of the presented MEDU-Net+ are assumed below:</p><p>1. e inception structure of the above-mentioned Google Net convolution block replaces the encoding convolution block of the MEDU-Net+. ese inception frameworks contain four branches: the 1 × 1 convolution, the concatenated 1 × 1 and 3 × 3 convolutions, the concatenated 1 × 1 and 5 × 5 convolutions, and the concatenated 3 × 3 max pooling and 1 × 1 convolution. en, the output of the encoder convolution block is the outcome of the concatenation of the four branches. 2. A novel skip connection in the suggested MEDU-Net+ network is presented. e layer-wise skip connection includes a transferring item depending on deconvolution and a drop of several U-shaped networks. Besides, these novel skip connection processes are connection, deconvolution, and convolution. Finally, all the gathered semantic information is aggregated. 3. Multiple scales feature fusion is presented to the decoder segment for receiving improved image segmentation performance. e receptive domains in the aggregation method are also significant, and the feature extraction is recovered more systematically by utilizing larger and different-scale receptive areas. us, they select convolution kernels of numerous sizes. e decoder part deconvolutes the convolution kernel sizes of 1 × 1, 1 × 1 and 3 × 3 and 5 × 5, a er that, combines the outcomes of every branch to attain the output of the basic block of deconvolution. Usually, the presented network has a unique key structure without a redundant branch structure. is new network architecture has significant flexibility and is suitable for adding modules to develop the performance further.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature extractor: ResNet50 model</head><p>For the feature extraction process, the ResNet50 model is employed <ref type="bibr" target="#b47">48</ref> . is model is chosen due to its deep residual learning architecture, which effectually reduces the vanishing gradient problem and enables the training of intense networks. e 50-layer depth allows it to capture complex hierarchical features in images, making it specifically appropriate for complex tasks such as medical image analysis. Its residual blocks facilitate the learning of more robust representations without suffering from degradation in performance as the network deepens. Additionally, ResNet50 has been widely validated in various image classification and feature extraction tasks, showing robust generalization capability and high accuracy. Compared to shallower models, ResNet50 presents superior performance in extracting meaningful features from high-dimensional data. Its pre-trained versions also provide a crucial advantage in transfer learning (TL) scenarios, reducing the requirement for large training data. Figure <ref type="figure" target="#fig_4">3</ref> defines the framework of the ResNet50 model. ResNet50's main feature is the use of remaining connections to struggle with the problem of vanishing gradients in training complex networks. With 50 layers, ResNet50 integrates batch normalization (BN), maxpooling, convolutional layers, and FC layers in a hierarchical structure. Its remaining blocks discriminate ResNet50, which represents the theory of residual learning. Every block covers dual 3 × 3 convolutional layers with BN, ReLU, and a shortcut link to acquire across a layer. is design permits a smoother data flow within the network, making it simpler to train much deeper structures. Furthermore, ResNet50 utilizes bottleneck blocks in its deeper layer to enhance model performance and computational efficacy. e design comprises a global average pooling layer to collect spatial data from the feature map and an FC layer for classification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification process: BRANN model</head><p>Furthermore, the BRANN model is utilized to detect the presence of BTs <ref type="bibr" target="#b48">49</ref> . is model is chosen due to its capacity to incorporate the power of neural networks with Bayesian regularization, which enhances generalization and mitigates overfitting. By integrating a probabilistic framework, BRANN optimizes the network's weights through a penalty on large weights, resulting in a more robust and stable model. is regularization assists in cases where limited data is available or the dataset is noisy, which is common in real-world applications. Compared to conventional neural networks, BRANN presents a more reliable performance by balancing model complexity and accuracy. Also, the Bayesian approach provides a natural way to quantify uncertainty, making it ideal for applications needing confidence in predictions, such as medical diagnostics. Its flexibility and efficiency in handling non-linear relationships and intrinsic patterns make it a robust choice over conventional classification methods. Figure <ref type="figure" target="#fig_3">4</ref> demonstrates the structure of the BRANN model.</p><p>Unlike conventional ANN, BRANN integrates the Bayesian inference standards through ANN. It proposes a Bayesian regularization in the training process by increasing loss function by a further term. is additional term sentences the enormous weight that can be presented for providing a smooth network response. e function of loss can be presented in BRANN, which can be represented below:  whereas w i represents the weight of the network; β and α are loss function hyperparameters. When α″β, the training method will focus on decreasing errors, resulting in small values of error. In contrast, if α″β, training will give priority to decreasing the weight size, as it arises by the higher network error cost.</p><formula xml:id="formula_1">L = β 1 N N ∑ i ( Y T i -Y P i ) 2 + α 1 N N ∑ i w 2 i (4)</formula><p>In BRANN, random variables rather than fixed values weigh the neural network weights. When the data is recovered, the function of density for the weight of ANN is upgraded based on the Bayes' rule is expressed below:</p><formula xml:id="formula_2">P (w|D, α, β, M ) = P (D|w, β, M ) P (w|α, M ) P (D|α, β, M )<label>(5)</label></formula><p>D represents the training data set, and M denotes a specific ANN method. P (D|w, β, M ) means the function of likelihood that computes the network weight probability. P (w|α, M ) states the density of preceding that describes the data or principles regarding the weights before one data is gathered. P (D|α, β, and M ) are fed as normalizing factors to ensure that the overall probability adds up to 1. With Bayesian inference, BRANN could evaluate the following distribution across the network parameters instead of detecting a single-point estimation. In the Bayesian structure, the optimum weights have been identified by increasing the posterior probability (w|D, α, β, M ). is maximizing method is equal to minimalizing the regularized function of loss L.</p><p>Regularizing Bayesian in BRANN helps inhibit overfitting by striking a disadvantage on huge weights, promising a more generalized and robust method. In addition, the uncertainty estimations offered by BRANN are beneficial in decision-making, determining the uncertainty in predictions. BRANN has been used in different fields, including classification, regression, and reinforcement learning tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Parameter tuning: IRMO model</head><p>Finally, an IRMO method is employed for the hyperparameter tuning of the BRANN model <ref type="bibr" target="#b49">50</ref> . is method is chosen due to its efficient search mechanism, which integrates the merits of radial-based movement with enhanced exploration and exploitation strategies. IRMO enhances conventional optimization algorithms by utilizing a radial movement approach that dynamically alters the search space, allowing it to escape local minima and converge to global optima more effectually. Compared to other optimization techniques, IRMO exhibits faster convergence rates and greater accuracy in finding optimal solutions for complex, non-linear problems. Its robustness in handling various parameter spaces, particularly in high-dimensional optimization tasks, makes it appropriate for fine-tuning ML models. Furthermore, IRMO's flexibility and adaptability across diverse domains, from neural networks to DL models, confirm its superior performance over conventional methods such as grid or random search. Figure <ref type="figure" target="#fig_5">5</ref>  improve the self-feedback capability between particles. is certifies that the valued data of the particle swarm is repeatedly organic to discover the finest solution.</p><p>A er describing the parameter variable and objective function, the algorithm of IRMO sets numerous particles at random. It then repeatedly hunts for the optimum solution by assessing the value and upgrading them depending on contrasts. e particle locations and the optimal solution aid as an initial centre location. In every subsequent group, new particles are generated near this vital fact. e function values are assessed and equated to the preceding group. is procedure includes repeatedly upgrading the optimum solution and vital location near the global optimal as the iteration grows. e global optimum solution has been signified by the value of the function, which matches the point where the space of the solution finally unites. e execution steps of the IRMO model are given below:</p><p>1. Create the initial population. 2. Initially, the lower limit xmin,j and upper limit xmax,j of every dimension variable are fixed by Eqs. ( <ref type="formula" target="#formula_3">6</ref>) and (7), and N early position points Xi (1 ≤ i ≤ N ) are produced at random as per Eq. ( <ref type="formula">8</ref>). ese early locations establish the early population X as definite in Eq. ( <ref type="formula">9</ref>). In the calculation, M signifies the complete volume of variables. e global optimum position point Gbestx 1 has been computed for every position point Xi in the early population and selected as the early position centre Centre 1 .</p><formula xml:id="formula_3">Xmin = [xmin,1xmin,2 . . . xmin,M ]<label>(6)</label></formula><formula xml:id="formula_4">Xmax = [xmax,1xmax,2 . . . xmax,M ]<label>(7)</label></formula><formula xml:id="formula_5">Xi = Xmin + rand (0, 1) × (Xmax -Xmin) (8) X =    x1,1 x1,2 • • • x1,M x2,1 x2,2 • • • x2,M . . . . . . . . . . . . xN,1 xN,2 • • • xN,M    (9)</formula><p>3. Enhance the position information by refining the accuracy and details of the location data. e optimum position is where the objective function reaches its best value. It represents the most favourable solution within the solution space. 4.</p><p>e pre-position Y k i is produced as per Eqs at the kth iteration. Equations ( <ref type="formula">10</ref>) and ( <ref type="formula" target="#formula_6">11</ref>), whereas β1 and β2 are randomly produced numbers from 0 to 1, and G refers to the highest iteration count. Once the pre-position Y k i is produced, the target function assesses its value, which is equated with the value of the objective function from the preceding group. en, the location data equivalent to the optimum value is removed and chosen as the present optimum location, denoted as point Rbest k . If the current location Rbest k demonstrates greater than the global optimum location Gbest k-1 , an upgrade is created to the global optimum location.</p><formula xml:id="formula_6">if β1 &lt; 0.1 or β2 &lt; β, Y k i = Centre k-1 + rand (-0.5, 0.5) × (Xmax -Xmin) w k (10) Otherwise, Y k i = X k i-1<label>(11)</label></formula><formula xml:id="formula_7">w k = 1 -k/G (12) β = j M<label>(13)</label></formula><p>5. Change the location of the centre. 6. According to Eq. ( <ref type="formula" target="#formula_8">14</ref>), the central location alters with the overall and global optimum locations. Once repeated to the latter group, the optimum location point Centre k is the last outcome. In the calculation, C 1 and C 2 denote the correlation coefficient that impacts the balance and the haste of convergence, where values typically range from 0.4 to 0.9. In this work, the values given to C 1 and C 2 are 0.4 and 0.5, correspondingly.</p><formula xml:id="formula_8">Centre k = Centre k-1 + C1 ( Gbestx k -Centre k-1 ) + C2 ( Rbestx k -Centre k-1 )<label>(14)</label></formula><p>e IRMO model develops a fitness function (FF) to enhance classification performance. It explains a positive integer to describe the improved performance of the candidate solutions. In this work, the minimization of the classification rate of error can be determined as the FF, as presented in Eq. (15).</p><formula xml:id="formula_9">F itness (xi) = Classif ierErrorRate (xi) = N umber of misclassif ied samples T otal number of samples × 100<label>(15)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>XAI: lime</head><p>LIME helps DL specialists describe some ML classifiers by highlighting the main input properties responsible for a prediction <ref type="bibr" target="#b50">51</ref> . LIME interprets by approximating a black box method with an explainable technique. A comprehensible depiction of images is a binary vector that signifies the absence or presence of a sequence of related connecting pixels (also termed superpixels). Equation ( <ref type="formula" target="#formula_10">16</ref>) offers the description provided by LIME.</p><formula xml:id="formula_10">ξ (x) = arg min g∈G L (f, g, πx) + Ω (g) ,<label>(16)</label></formula><p>An interpretation can be described as a method with various justification fidelity functions, families, and complex measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental results and analysis</head><p>is article examines the stimulated validation analysis of the XAISS-BMLBT method by employing the BT-MRI dataset 52 , which contains 5500 samples with four classes in Table <ref type="table">1</ref>. Figure <ref type="figure" target="#fig_6">6</ref> defines the sample images. Figure <ref type="figure" target="#fig_8">7</ref> illustrates the original and segmented images. e suggested technique is simulated using the Python 3.6.5 tool on PC i5-8600k, 250 GB SSD, GeForce 1050Ti 4 GB, 16 GB RAM, and 1 TB HDD. e parameter settings are provided: learning rate: 0.01, activation: ReLU, epoch count: 50, dropout: 0.5, and batch size: 5.</p><p>Figure <ref type="figure" target="#fig_9">8</ref> reports a set of confusion matrices generated by the XAISS-BMLBT model on various epochs. On 500 epochs, the XAISS-BMLBT model has recognized 1217 samples into glioma, 1240 samples into meningioma, 1464 samples into no-tumor, and 1323 samples into pituitary. In addition, on 1000 epochs, the XAISS-BMLBT method has predicted 1224 samples into glioma, 1228 samples into meningioma, 1469 samples into no-tumor, and 1332 samples into pituitary. Meanwhile, on 2500 epoch counts, the XAISS-BMLBT techniques have identified 1199 samples into glioma, 1223 samples into meningioma, 1461 samples into no-tumor, and 1315 </p><note type="other">Classes Image count Glioma 1300 Meningioma 1300</note><p>No-tumor 1500</p><p>Pituitary 1400</p><p>Total count 5500</p><p>Table <ref type="table">1</ref>. Details of the dataset.</p><p>samples into pituitary. At last, on 3000 epoch counts, the XAISS-BMLBT approach has recognized 1186 samples into glioma, 1218 samples into meningioma, 1457 samples into no-tumor, and 1292 samples into pituitary. Table <ref type="table">2</ref> represents the overall BT detection results of the XAISS-BMLBT methodology with various epochs. Figure <ref type="figure" target="#fig_10">9</ref> defines the classifier outcome of the XAISS-BMLBT approach under epochs 500-1500. e table values inferred that the XAISS-BMLBT approach has correctly identified four class labels. With 500 epochs, the XAISS-BMLBT model offers an average accu y of 97.67%, prec n of 95.36%, reca l of 95.27%, F1 score of 95.31%, and MCC of 93.77%. Also, with 1000 epoch counts, the XAISS-BMLBT technique provides an average accu y of 97.75%, prec n of 95.56%, reca l of 95.42%, F1 score of 95.48%, and MCC of 93.99%. Moreover, with 1500 epoch counts, the XAISS-BMLBT technique presents an average accu y of 97.48%, prec n of 95.02%, reca l of 94.87%, F1 score of 94.93%, and MCC of 93.27%.</p><p>Figure <ref type="figure" target="#fig_11">10</ref>   counts, the XAISS-BMLBT approach provides an average accu y of 97.60%, prec n of 95.24%, reca l of 95.11%, F1 score of 95.16%, and MCC of 93.57%. Additionally, with 2500 epoch counts, the XAISS-BMLBT approach presents an average accu y of 97.25%, prec n of 94.55%, reca l of 94.41%, F1 score of 94.47%, and MCC of 92.65%. Finally, with 3000 epoch counts, the XAISS-BMLBT approach gives an average accu y of 96.85%, prec n of 93.73%, reca l of 93.59%, F1 score of 93.64%, and MCC of 91.56%.</p><p>Figure <ref type="figure" target="#fig_12">11</ref> states the training and validation accuracy results of the XAISS-BMLBT technique. e accurate outcomes are calculated for 0-3000 epochs. e figure underlines that the training and validation accuracy performance shows a reliable tendency that informed the proficiency of the XAISS-BMLBT methodology with greater values across various numbers of iterations. Additionally, the training and validation accuracy stayed nearer through the number of epochs that illustrate lower reduced overfitting and display better performance of the XAISS-BMLBT methodology, assuring steady prediction on unseen instances.</p><p>Figure <ref type="figure" target="#fig_13">12</ref> depicts the training loss and validation loss graph of the XAISS-BMLBT methodology. e loss outcomes are calculated over 0-3000 epochs. e training and validation accuracy performance has a reducing tendency, which reports the capacity of the XAISS-BMLBT approach to balancing a trade-off between data fitting and generalization. e consistent lessening in loss outcomes further ensures higher results for the XAISS-BMLBT approach and tuning the prediction results on time.</p><p>In Fig. <ref type="figure" target="#fig_14">13</ref>, the precision-recall (PR) curve examination of the XAISS-BMLBT model explains its performance by plotting Precision against Recall for all the class labels. e figure expresses that the XAISS-BMLBT method constantly reaches superior PR values across various classes, representing its capability to preserve an essential proportion of true positive predictions between every positive prediction (precision) but additionally captures a greater portion of actual positives (recall). e gradual increase in PR results among all class labels indicates the efficiency of the XAISS-BMLBT method in the classification process.</p><p>Figure <ref type="figure" target="#fig_15">14</ref> shows the ROC curve of the XAISS-BMLBT method. e outcomes showed that the XAISS-BMLBT technique attains improved ROC results for all class labels, representing the critical ability to differentiate the class labels. ese arising tendencies of enhanced ROC values over several class labels indicate the efficient performance of the XAISS-BMLBT approach in predicting class labels, emphasizing the robust nature of the classification process.</p><p>In Table <ref type="table">3</ref> and Fig. <ref type="figure" target="#fig_16">15</ref>, the stimulation values of the XAISS-BMLBT approach with existing methods are offered <ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b23">24,</ref><ref type="bibr" target="#b51">[53]</ref><ref type="bibr" target="#b52">[54]</ref><ref type="bibr" target="#b53">[55]</ref> . e outcomes demonstrate that the novel 3D-CNN approach has presented poor performance with accu y , prec n , reca l , and F1 score of 89.50%, 92.02%, 90.40%, and 91.50%, correspondingly. Simultaneously, the Fine-tuned VGG19 method has gained marginally improved results with accu y , prec n , reca l , and F1 score of 94.00%, 93.03%, 91.71%, and 92.95%, individually. Also, the Inception-V3, Xception, Random Forest (RF), and ResNet50 techniques have obtained somewhat nearer performance. In the meantime, the graph CNN process has resulted in significant results with accu y , prec n , reca l , and F1 score of 96.65%, 93.30%, 91.78%, and 92.32%, appropriately. Furthermore, the EfficientNet-B5, DenseNet-169, RanMerFormer, and ResNet152V2 techniques attained slightly increased values. But the XAISS-BMLBT methodology outshines the other model with greater accu y , prec n , reca l , and F1 score of 97.75%, 95.56%, 95.42%, and 95.48%, correspondingly.</p><p>e execution timing (EXT) of the XAISS-BMLBT model is calculated using recent techniques in Table <ref type="table">4</ref>. e outcomes underscored that correspondingly, the novel 3D-CNN and Xception methods have gained low performance with improved EXT of 23.75 s and 22.14 s. As well as that, the Inception-V3, ResNet50, Finetuned VGG19, and Graph CNN methodology have stated adjacent EXT values of 19.08 s, 18.73 s, 16.92 s, and 12.43 s, respectively. In the meantime, the RF approach is accomplished to describe a significant EXT of 9.77 s. Moreover, the EfficientNet-B5, DenseNet-169, RanMerFormer,and ResNet152V2 approaches exhibited EXT values of 23.92 s, 25.58 s, 27.12 s, and 28.68 s. However, the XAISS-BMLBT methodology performed better with a minimum EXT of 4.60 s. Hence, the XAISS-BMLBT methodology is used to recognize BT automatically.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In this work, a new XAISS-BMLBT method is presented. e presented XAISS-BMLBT method mainly concentrates on the semantic segmentation and classification of BT in MRI images. It encompasses distinct pre-processing, segmentation, feature extractor, classification, and parameter tuning processes. e presented</p><p>Class Accu y Prec n Reca l F1 Score MCC Epoch-500 Glioma 97.40 95.30 93.62 94.45 92.76 Meningioma 97.85 95.53 95.38 95.46 94.05 No-tumor 97.89 94.82 97.60 96.19 94.75 Pituitary 97.55 95.80 94.50 95.15 93.51 Average 97.67 95.36 95.27 95.31 93.77 Epoch-1000 Glioma 97.47 95.10 94.15 94.63 92.98 Meningioma 97.98 96.92 94.46 95.68 94.37 No-tumor 97.91 94.59 97.93 96.23 94.81 Pituitary 97.65 95.62 95.14 95.38 93.81 Average 97.75 95.56 95.42 95.48 93.99 Epoch-1500 Glioma 97.13 94.33 93.46 93.89 92.02 Meningioma 97.76 96.45 94.00 95.21 93.76 No-tumor 97.62 93.79 97.73 95.72 94.11 Pituitary 97.42 95.51 94.29 94.90 93.17 Average 97.48 95.02 94.87 94.93 93.27 Epoch-2000 Glioma 97.22 94.63 93.54 94.08 92.27 Meningioma 97.78 96.16 94.38 95.26 93.82 No-tumor 97.76 94.28 97.73 95.97 94.46 Pituitary 97.64 95.88 94.79 95.33 93.75 Average 97.60 95.24 95.11 95.16 93.57 Epoch-2500 Glioma 96.82 94.19 92.23 93.20 91.13 Meningioma 97.55 95.47 94.08 94.77 93.17 No-tumor 97.44 93.47 97.40 95.40 93.66 Pituitary 97.22 95.08 93.93 94.50 92.64 Average 97.25 94.55 94.41 94.47 92.65 Epoch-3000 Glioma 96.15 92.37 91.23 91.80 89.28 Meningioma 97.36 95.08 93.69 94.38 92.66 No-tumor 97.13 92.68 97.13 94.86 92.91 Pituitary 96.75 94.79 92.29 93.52 91.36 Average 96.85 93.73 93.59 93.64 91.56 Table 2. BT detection outcome of XAISS-BMLBT model under various epochs.</p><p>XAISS-BMLBT approach initially performed BF-based image pre-processing to eliminate the noise. Next, the XAISS-BMLBT approach utilized the MEDU-Net+ segmentation process to define the impacted brain regions. For the feature extraction process, the ResNet50 model is used. Furthermore, the BRANN model was employed to identify the presence of BTs. Finally, an IRMO technique was used for the hyperparameter tuning of the BRANN technique. To highlight the improved performance of the XAISS-BMLBT technique, a series of simulations were accomplished by utilizing a benchmark database. e experimental validation of the XAISS-BMLBT technique portrayed a superior accuracy value of 97.75% over existing models. e limitations of the XAISS-BMLBT technique comprise its reliance on a single dataset, which may limit the model's generalizability to diverse patient populations or imaging conditions. e study concentrates primarily on specific image processing techniques, which may not perform as well in extreme noise or artefacts. e computational complexity of the model also poses challenges for real-time applications, specifically in resourceconstrained environments. Furthermore, while the proposed methodology shows promising results, it lacks a comprehensive evaluation across various clinical scenarios and external validation datasets. Future studies may explore incorporating multimodal data, such as patient demographics and clinical history, to enhance predictive performance. Moreover, further optimization of the model for faster processing and implementation in clinical settings is a key area for improvement. Finally, expanding the dataset and integrating more advanced TL models could improve model robustness and accuracy across a broader range of medical imaging conditions.     Models Accu y Prec n Reca l F1 Score XAISS-BMLBT 97.75 95.56 95.42 95.48 Graph CNN 96.65 93.30 91.78 92.32 RF 95.96 94.23 94.02 91.46 Novel 3D-CNN 89.50 92.02 90.40 91.50 Inception-V3 95.60 94.01 94.15 92.18 Fine-tuned VGG19 94.00 93.03 91.71 92.95 ResNet50 model 96.50 94.41 91.04 94.86 Xception classifier 95.60 90.46 92.04 90.32 EfficientNet-B5 94.85 89.84 91.39 89.54 DenseNet-169 94.14 89.26 90.65 89.02 RanMerFormer 93.44 88.72 89.96 88.24 ResNet152V2 92.79 87.98 89.30 87.68</p><p>Table <ref type="table">3</ref>. Comparative analysis of XAISS-BMLBT technique with existing methods <ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b23">24,</ref><ref type="bibr" target="#b51">[53]</ref><ref type="bibr" target="#b52">[54]</ref><ref type="bibr" target="#b53">[55]</ref> . Table 4. EXT analysis of XAISS-BMLBT technique with existing methods. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>compare DL models, including U-Net, PSPNet, DeepLabV3+, and ResNet50, for BT segmentation. Bidkar et al.<ref type="bibr" target="#b40">41</ref> propose a novel BT segmentation and classification techniques utilizing AdamSTBO + UNet++ for segmentation and Adam Salp Water Wave Optimisation with the Deep CNN (AdamSWO-DCNN) for classification, incorporating Adam optimizer with Sewing Training Based Optimization (STBO) and SWO. Shafiq and Butt 42 focus on the utilization of U-Net for brain MRI segmentation, highlighting its efficiency in detecting key brain regions and exploring recent advancements in DL for medical image segmentation. Nirmalapriya et al. 43 introduce an optimization-driven model for BT classification, integrating U-Net and CFPNet-M for segmentation, trained by utilizing an aquila spider monkey optimization (ASMO) model and classifying tumours with a SqueezeNet model optimized by fractional ASMO (FASMO). Mithun and Jawhar 44 propose a YOLO NAS-based model, which utilizes hybrid anisotropic diffusion filtering for noise removal, encoder-decoder network (En-DeNet) for segmentation, and DL techniques for classification. Cao et al.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Workflow of XAISS-BMLBT technique.</figDesc><graphic coords="5,155.91,50.50,396.48,566.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Workflow of BF technique.</figDesc><graphic coords="6,129.37,50.50,424.80,151.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. BRANN architecture.</figDesc><graphic coords="7,155.91,224.46,339.84,270.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. Framework of ResNet50 model.</figDesc><graphic coords="7,72.49,50.50,481.68,122.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Steps involved in the IRMO technique.</figDesc><graphic coords="8,155.91,421.31,339.84,290.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Sample images.</figDesc><graphic coords="10,101.05,171.44,453.12,300.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><figDesc>describes the classifier result of the XAISS-BMLBT technique under epoch counts 2000-3000. e table values gathered show that the XAISS-BMLBT technique correctly recognizes four classes. With 2000 epoch</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. (a,c,e) Original images and (b,d,f) Segmented images.</figDesc><graphic coords="11,105.13,50.50,449.04,516.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. Confusion matrices of XAISS-BMLBT technique (a-f) Epochs 500-3000.</figDesc><graphic coords="12,72.49,50.50,481.68,341.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Fig. 9 .</head><label>9</label><figDesc>Fig. 9. Average outcome of XAISS-BMLBT approach (a-c) epochs 500-1500.</figDesc><graphic coords="14,155.91,50.50,390.24,281.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 10 .</head><label>10</label><figDesc>Fig. 10. Average outcome of XAISS-BMLBT approach (a-c) epochs 2000-3000.</figDesc><graphic coords="15,129.37,50.50,424.80,337.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Fig. 11 .</head><label>11</label><figDesc>Fig. 11. Accu y curve of XAISS-BMLBT technique (a-f) Epochs 500-3000.</figDesc><graphic coords="16,72.49,50.50,481.68,481.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Fig. 12 .</head><label>12</label><figDesc>Fig. 12. Loss curve of XAISS-BMLBT technique (a-f) Epochs 500-3000.</figDesc><graphic coords="17,72.49,50.50,481.68,487.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Fig. 13 .</head><label>13</label><figDesc>Fig. 13. PR curve of XAISS-BMLBT technique (a-f) Epochs 500-3000.</figDesc><graphic coords="18,72.49,50.50,481.68,323.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>Fig. 14 .</head><label>14</label><figDesc>Fig. 14. ROC curve of XAISS-BMLBT technique (a-f) Epochs 500-3000.</figDesc><graphic coords="19,72.49,50.50,481.68,323.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><head>Fig. 15 .</head><label>15</label><figDesc>Fig. 15. Comparative analysis of XAISS-BMLBT technique with existing methods.</figDesc><graphic coords="20,155.91,50.50,339.84,250.56" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Scientific Reports | (2025) 15:690 2 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Scientific Reports | (2025) 15:690 3 | https://doi.org/10.1038/s41598-024-84692-7www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Scientific Reports | (2025) 15:690 4 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>Scientific Reports | (2025) 15:690 5 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_4"><p>Scientific Reports | (2025) 15:690 6 | https://doi.org/10.1038/s41598-024-84692-7www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Scientific Reports | (2025) 15:690 7 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_6"><p>Scientific Reports |(2025) 15:690</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_7"><p>Scientific Reports | (2025) 15:690 9 | https://doi.org/10.1038/s41598-024-84692-7www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_8"><p>Scientific Reports | (2025) 15:690 10 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_9"><p>| https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_10"><p>Scientific Reports | (2025) 15:690 12 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_11"><p>Scientific Reports | (2025) 15:690 13 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_12"><p>Scientific Reports | (2025) 15:690 15 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_13"><p>Scientific Reports | (2025) 15:690 16 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_14"><p>Scientific Reports | (2025) 15:690 17 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_15"><p>Scientific Reports | (2025) 15:690 18 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_16"><p>Scientific Reports | (2025) 15:690 19 | https://doi.org/10.1038/s41598-024-84692-7 www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_17"><p>Scientific Reports | (2025) 15:690 20 | https://doi.org/10.1038/s41598-024-84692-7</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_18"><p>Scientific Reports | (2025) 15:690 21 | https://doi.org/10.1038/s41598-024-84692-7www.nature.com/scientificreports/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_19"><p>Scientific Reports | (2025) 15:690 22 | https://doi.org/10.1038/s41598-024-84692-7www.nature.com/scientificreports/</p></note>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>e data that support the findings of this study are publicly available at h t t p s : / / w w w . k a g g l e . c o m / d a t a s e t s / m a s o u d n i c k p a r v a r / b r a i n -t u m o r -m r i -d a t a s e t (reference number 52 ).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>K.L.: Conceptualization, investigation, writing-original dra . S.A.: Formal analysis, so ware, visualization. G.S.: Resources, investigation, so ware. S.P.: Data curation, methodology, validation. G.P.J.: Validation, supervision, writing-review and editing. W.C.: Funding acquisition, project administration, supervision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declarations</head><p>Competing interests e authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics approval</head><p>is article contains no studies with human participants performed by any authors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional information</head><p>Correspondence and requests for materials should be addressed to G.P.J. or W.C.</p><p>Reprints and permissions information is available at <ref type="url" target="www.nature.com/reprints">www.nature.com/reprints</ref>. Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Open Access</head><p>is article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. e images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit h t t p : / / c r e a t i v e c o m m o n s . o r g / l i c e n s e s / b y -n c -n d / 4 . 0 / .</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Human brain tumors detection using neutrosophic c-means clustering algorithm</title>
+		<author>
+			<persName><forename type="first">Nihal</forename><forename type="middle">N</forename><surname>Mostafa</surname></persName>
+		</author>
+		<idno type="DOI">10.54216/jnfs.010106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neutrosophic and Fuzzy Systems</title>
+		<title level="j" type="abbrev">JNFS</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="55" to="58" />
+			<date type="published" when="2021">2021</date>
+			<publisher>ASPG Publishing LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mostafa, N. N. Human brain tumors detection using neutrosophic c-means clustering algorithm. J. Neutrosophic Fuzzy Syst. 1(1), 55-65 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">RETRACTED: PBTNet: A New Computer-Aided Diagnosis System for Detecting Primary Brain Tumors</title>
+		<author>
+			<persName><forename type="first">Si-Yuan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suresh</forename><forename type="middle">Chandra</forename><surname>Satapathy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shui-Hua</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Dong</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fcell.2021.765654</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Cell and Developmental Biology</title>
+		<title level="j" type="abbrev">Front. Cell Dev. Biol.</title>
+		<idno type="ISSNe">2296-634X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">765654</biblScope>
+			<date type="published" when="2021-10-15">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu, S. Y., Satapathy, S. C., Wang, S. H. &amp; Zhang, Y. D. PBTNet: A new computer-aided diagnosis system for detecting primary brain tumors. Front. Cell Dev. Biol. 9, 765654 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Explanation-Driven Deep Learning Model for Prediction of Brain Tumour Status Using MRI Image Data</title>
+		<author>
+			<persName><forename type="first">Loveleen</forename><surname>Gaur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohan</forename><surname>Bhandari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanvi</forename><surname>Razdan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saurav</forename><surname>Mallik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongming</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fgene.2022.822666</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Genetics</title>
+		<title level="j" type="abbrev">Front. Genet.</title>
+		<idno type="ISSNe">1664-8021</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">448</biblScope>
+			<date type="published" when="2022-03-14">2022</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gaur, L., Bhandari, M., Razdan, T., Mallik, S. &amp; Zhao, Z. Explanation-driven deep learning model for prediction of brain tumour status using MRI image data. Front. Genet. 13, 448 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A Comparative Analysis of Efficient CNN-based Brain Tumor Classification Models</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Haroon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Muhammad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Baik</surname></persName>
+		</author>
+		<idno type="DOI">10.1142/9789811218842_0011</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Generalization with Deep Learning</title>
+		<imprint>
+			<publisher>WORLD SCIENTIFIC</publisher>
+			<date type="published" when="2021-04">2021</date>
+			<biblScope unit="page" from="259" to="278" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hussain, T., Ullah, A., Haroon, U., Muhammad, K. &amp; Baik, S. W. A comparative analysis of efficient CNN-based brain tumor classification models. In Generalization with Deep Learning: For Improvement on Sensing Capability, 259-278 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Computer-aided diagnosis applied to MRI images of brain tumor using cognition based modified level set and optimized ANN classifier</title>
+		<author>
+			<persName><surname>Virupakshappa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Basavaraj</forename><surname>Amarapur</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-018-6176-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Tools and Applications</title>
+		<title level="j" type="abbrev">Multimed Tools Appl</title>
+		<idno type="ISSN">1380-7501</idno>
+		<idno type="ISSNe">1573-7721</idno>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">5-6</biblScope>
+			<biblScope unit="page" from="3571" to="3599" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Virupakshappa, &amp; Amarapur, B. Computer-aided diagnosis applied to MRI images of brain tumor using cognition based modified level set and optimized ANN classifier. Multimed. Tools Appl. 79(5-6), 3571-3599 (2020).</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Explainable Convolutional Neural Network for Brain Tumor Classification via MRI Images</title>
+		<author>
+			<persName><forename type="first">Hadjer</forename><surname>Benyamina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Auwalu</forename><forename type="middle">Saleh</forename><surname>Mubarak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fadi</forename><surname>Al-Turjman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/aiotcs58181.2022.00048</idno>
+		<idno>12 ResNet152V2 28.68</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 International Conference on Artificial Intelligence of Things and Crowdsensing (AIoTCs)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-10">2022</date>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="266" to="272" />
+		</imprint>
+	</monogr>
+	<note>60 Graph CNN 12.43 RF 9.77 Novel 3D-CNN 23.75 Inception-V3 19.08 Fine-tuned VGG Xception classifier 22 EfficientNet RanMerFormer</note>
+	<note type="raw_reference">Benyamina, H., Mubarak, A. S. &amp; Al-Turjman, F. Explainable convolutional neural network for brain tumor classification via MRI images. In 2022 International Conference on Artificial Intelligence of ings and Crowdsensing (AIoTCs), 266-272 (IEEE, 2022). Models EXT (s) XAISS-BMLBT 4.60 Graph CNN 12.43 RF 9.77 Novel 3D-CNN 23.75 Inception-V3 19.08 Fine-tuned VGG19 16.92 ResNet50 model 18.73 Xception classifier 22.14 EfficientNet-B5 23.92 DenseNet-169 25.58 RanMerFormer 27.12 ResNet152V2 28.68</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A Comprehensive Survey on Brain Tumor Diagnosis Using Deep Learning and Emerging Hybrid Techniques with Multi-modal MR Image</title>
+		<author>
+			<persName><forename type="first">Saqib</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Pei</surname></persName>
+			<idno type="ORCID">0000-0003-1545-9204</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rooha</forename><surname>Khurram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khalil</forename><forename type="middle">Ur</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tariq</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11831-022-09758-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of Computational Methods in Engineering</title>
+		<title level="j" type="abbrev">Arch Computat Methods Eng</title>
+		<idno type="ISSN">1134-3060</idno>
+		<idno type="ISSNe">1886-1784</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="4871" to="4896" />
+			<date type="published" when="2022-05-09">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ali, S. et al. A comprehensive survey on brain tumor diagnosis using deep learning and emerging hybrid techniques with multimodal MR image. Arch. Comput. Methods Eng. 29(7), 4871-4896 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Doctor&apos;s Dilemma: Evaluating an Explainable Subtractive Spatial Lightweight Convolutional Neural Network for Brain Tumor Diagnosis</title>
+		<author>
+			<persName><forename type="first">Ambeshwar</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramachandran</forename><surname>Manikandan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Utku</forename><surname>Kose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deepak</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suresh</forename><forename type="middle">C</forename><surname>Satapathy</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3457187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Multimedia Computing, Communications, and Applications</title>
+		<title level="j" type="abbrev">ACM Trans. Multimedia Comput. Commun. Appl.</title>
+		<idno type="ISSN">1551-6857</idno>
+		<idno type="ISSNe">1551-6865</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3s</biblScope>
+			<biblScope unit="page" from="1" to="26" />
+			<date type="published" when="2021-10-26">2021</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kumar, A., Manikandan, R., Kose, U., Gupta, D. &amp; Satapathy, S. C. Doctor&apos;s dilemma: Evaluating an explainable subtractive spatial lightweight convolutional neural network for brain tumor diagnosis. ACM Trans. Multimed. Comput. Commun. Appl. TOMM 17(3), 1-26 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">RETRACTED: Optimal brain tumor diagnosis based on deep learning and balanced sparrow search algorithm</title>
+		<author>
+			<persName><forename type="first">Tingting</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Badami</surname></persName>
+			<idno type="ORCID">0000-0003-0963-0626</idno>
+		</author>
+		<idno type="DOI">10.1002/ima.22559</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Imaging Systems and Technology</title>
+		<title level="j" type="abbrev">Int J Imaging Syst Tech</title>
+		<idno type="ISSN">0899-9457</idno>
+		<idno type="ISSNe">1098-1098</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1921" to="1935" />
+			<date type="published" when="2021-02-22">2021</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu, T., Yuan, Z., Wu, L. &amp; Badami, B. Optimal brain tumor diagnosis based on deep learning and balanced sparrow search algorithm. Int. J. Imaging Syst. Technol. 31(4), 1921-1935 (2021).</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A brain tumor computer-aided diagnosis method with automatic lesion segmentation and ensemble decision strategy</title>
+		<author>
+			<persName><forename type="first">Liheng</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zekuan</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linlin</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daoying</forename><surname>Geng</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fmed.2023.1232496</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Medicine</title>
+		<title level="j" type="abbrev">Front. Med.</title>
+		<idno type="ISSNe">2296-858X</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">1232496</biblScope>
+			<date type="published" when="2023-09-29">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yu, L., Yu, Z., Sun, L., Zhu, L. &amp; Geng, D. A brain tumor computer-aided diagnosis method with automatic lesion segmentation and ensemble decision strategy. Front. Med. 10, 1232496 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Deep Learning-Assisted Segmentation and Classification of Brain Tumor Types on Magnetic Resonance and Surgical Microscope Images</title>
+		<author>
+			<persName><forename type="first">Efecan</forename><surname>Cekic</surname></persName>
+			<idno type="ORCID">0000-0003-2203-5944</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ertugrul</forename><surname>Pinar</surname></persName>
+			<idno type="ORCID">0000-0003-2606-3205</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Merve</forename><surname>Pinar</surname></persName>
+			<idno type="ORCID">0000-0003-3041-6958</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Dagcinar</surname></persName>
+			<idno type="ORCID">0000-0001-9532-7820</idno>
+		</author>
+		<idno type="DOI">10.1016/j.wneu.2023.11.073</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Neurosurgery</title>
+		<title level="j" type="abbrev">World Neurosurgery</title>
+		<idno type="ISSN">1878-8750</idno>
+		<imprint>
+			<biblScope unit="volume">182</biblScope>
+			<biblScope unit="page" from="e196" to="e204" />
+			<date type="published" when="2024-02">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cekic, E., Pinar, E., Pinar, M. &amp; Dagcinar, A. Deep learning-assisted segmentation and classification of brain tumor types on magnetic resonance and surgical microscope images. World Neurosurg. 182, e196-e204 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">An MRI-based deep learning approach for efficient classification of brain tumors</title>
+		<author>
+			<persName><forename type="first">Ejaz</forename><forename type="middle">Ul</forename><surname>Haq</surname></persName>
+			<idno type="ORCID">0000-0002-0099-0708</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Huang</forename><surname>Jianjun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hafeez</forename><forename type="middle">Ul</forename><surname>Haq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tijiang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12652-021-03535-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Ambient Intelligence and Humanized Computing</title>
+		<title level="j" type="abbrev">J Ambient Intell Human Comput</title>
+		<idno type="ISSN">1868-5137</idno>
+		<idno type="ISSNe">1868-5145</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="6697" to="6718" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haq, E. U., Jianjun, H., Li, K., Haq, H. U. &amp; Zhang, T. An MRI-based deep learning approach for efficient classification of brain tumors. J. Ambient Intell. Humaniz. Comput. 14, 1-22 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Automated Segmentation of Brain Tumor MRI Images Using Deep Learning</title>
+		<author>
+			<persName><forename type="first">Surendran</forename><surname>Rajendran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suresh</forename><forename type="middle">Kumar</forename><surname>Rajagopal</surname></persName>
+			<idno type="ORCID">0000-0002-3299-3903</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tamilvizhi</forename><surname>Thanarajan</surname></persName>
+			<idno type="ORCID">0000-0002-5427-7000</idno>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shankar</surname></persName>
+			<idno type="ORCID">0000-0002-2803-3846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sachin</forename><surname>Kumar</surname></persName>
+			<idno type="ORCID">0000-0003-3949-0302</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Najah</forename><forename type="middle">M</forename><surname>Alsubaie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamad</forename><forename type="middle">Khairi</forename><surname>Ishak</surname></persName>
+			<idno type="ORCID">0000-0002-3554-0061</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Samih</forename><forename type="middle">M</forename><surname>Mostafa</surname></persName>
+			<idno type="ORCID">0000-0001-9234-5898</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2023.3288017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="64758" to="64768" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rajendran, S. et al. Automated segmentation of brain tumor MRI images using deep learning. IEEE Access 11, 64758-64768 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Deep learning models and traditional automated techniques for brain tumor segmentation in MRI: a review</title>
+		<author>
+			<persName><forename type="first">Parvathy</forename><surname>Jyothi</surname></persName>
+			<idno type="ORCID">0000-0002-1994-4082</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Robert</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-022-10245-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSN">0269-2821</idno>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2923" to="2969" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jyothi, P. &amp; Singh, A. R. Deep learning models and traditional automated techniques for brain tumor segmentation in MRI: A review. Artif. Intell. Rev. 56(4), 2923-2969 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Robust clinical applicable CNN and U-Net based algorithm for MRI classification and segmentation for brain tumor</title>
+		<author>
+			<persName><forename type="first">Atika</forename><surname>Akter</surname></persName>
+			<idno type="ORCID">0000-0002-3248-3997</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nazeela</forename><surname>Nosheen</surname></persName>
+			<idno type="ORCID">0000-0001-9980-855X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sabbir</forename><surname>Ahmed</surname></persName>
+			<idno type="ORCID">0000-0003-1186-4755</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mariom</forename><surname>Hossain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Abu</forename><surname>Yousuf</surname></persName>
+			<idno type="ORCID">0000-0001-8065-7173</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Ali Abdullah</forename><surname>Almoyad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khondokar</forename><forename type="middle">Fida</forename><surname>Hasan</surname></persName>
+			<idno type="ORCID">0000-0002-8008-8203</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Ali</forename><surname>Moni</surname></persName>
+			<idno type="ORCID">0000-0003-0756-1006</idno>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2023.122347</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">238</biblScope>
+			<biblScope unit="page">122347</biblScope>
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Akter, A. et al. Robust clinical applicable CNN and U-Net based algorithm for MRI classification and segmentation for brain tumor. Expert Syst. Appl. 238, 122347 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">MRI brain tumor detection using deep learning and machine learning approaches</title>
+		<author>
+			<persName><forename type="first">Shenbagarajan</forename><surname>Anantharajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shenbagalakshmi</forename><surname>Gunasekaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thavasi</forename><surname>Subramanian</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.measen.2024.101026</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Measurement: Sensors</title>
+		<title level="j" type="abbrev">Measurement: Sensors</title>
+		<idno type="ISSN">2665-9174</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page">101026</biblScope>
+			<date type="published" when="2024-02">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Anantharajan, S., Gunasekaran, S., Subramanian, T. &amp; Venkatesh, R. MRI brain tumor detection using deep learning and machine learning approaches. Meas. Sens. 31, 101026 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Feature-enhanced deep learning technique with soft attention for MRI-based brain tumor classification</title>
+		<author>
+			<persName><forename type="first">Bipin</forename><forename type="middle">Ch. </forename><surname>Mohanty</surname></persName>
+			<idno type="ORCID">0009-0000-1024-5325</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Subudhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ratnakar</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bidyadhar</forename><surname>Mohanty</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s41870-023-01701-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Technology</title>
+		<title level="j" type="abbrev">Int. j. inf. tecnol.</title>
+		<idno type="ISSN">2511-2104</idno>
+		<idno type="ISSNe">2511-2112</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1617" to="1626" />
+			<date type="published" when="2024-01-20">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mohanty, B. C., Subudhi, P. K., Dash, R. &amp; Mohanty, B. Feature-enhanced deep learning technique with so attention for MRI- based brain tumor classification. Int. J. Inf. Technol. 16(3), 1617-1626 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An intelligent driven deep residual learning framework for brain tumor classification using MRI images</title>
+		<author>
+			<persName><forename type="first">Hossein</forename><surname>Mehnatkesh</surname></persName>
+			<idno type="ORCID">0000-0002-6187-9675</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Seyed</forename><forename type="middle">Mohammad Jafar</forename><surname>Jalali</surname></persName>
+			<idno type="ORCID">0000-0002-2169-4350</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abbas</forename><surname>Khosravi</surname></persName>
+			<idno type="ORCID">0000-0001-6927-0744</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saeid</forename><surname>Nahavandi</surname></persName>
+			<idno type="ORCID">0000-0002-0360-5270</idno>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2022.119087</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">213</biblScope>
+			<biblScope unit="page">119087</biblScope>
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mehnatkesh, H., Jalali, S. M. J., Khosravi, A. &amp; Nahavandi, S. An intelligent driven deep residual learning framework for brain tumor classification using MRI images. Expert Syst. Appl. 213, 119087 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Expeditious detection and segmentation of bone mass variation in DEXA images using the hybrid GLCM-AlexNet approach</title>
+		<author>
+			<persName><forename type="first">Gautam</forename><surname>Amiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pallikonda</forename><forename type="middle">Rajasekaran</forename><surname>Murugan</surname></persName>
+			<idno type="ORCID">0000-0003-2887-2815</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kottaimalai</forename><surname>Ramaraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muneeswaran</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Dong</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arunprasath</forename><surname>Thiyagarajan</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-2485093/v1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">So Comput</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amiya, G., Murugan, P. R., Ramaraj, K., Govindaraj, V., Vasudevan, M., irumurugan, M., Zhang, Y. D., Abdullah, S. S. &amp; iyagarajan, A. Expeditious detection and segmentation of bone mass variation in DEXA images using the hybrid GLCM- AlexNet approach. So Comput. 1-14 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">HARNet: design and evaluation of a deep genetic algorithm for recognizing yoga postures</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Raja</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11760-024-03173-6</idno>
+		<ptr target="https://doi.org/10.1007/s11760-024-03173-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Signal, Image and Video Processing</title>
+		<title level="j" type="abbrev">SIViP</title>
+		<idno type="ISSN">1863-1703</idno>
+		<idno type="ISSNe">1863-1711</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">S1</biblScope>
+			<biblScope unit="page" from="553" to="564" />
+			<date type="published" when="2024-05-15">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Subramanian, R. R. &amp; Govindaraj, V. HARNet: Design and evaluation of a deep genetic algorithm for recognizing yoga postures. Signal Image Video Process. https://doi.org/10.1007/s11760-024-03173-6 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">LMGU-NET: methodological intervention for prediction of bone health for clinical recommendations</title>
+		<author>
+			<persName><forename type="first">Gautam</forename><surname>Amiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pallikonda</forename><forename type="middle">Rajasekaran</forename><surname>Murugan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kottaimalai</forename><surname>Ramaraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muneeswaran</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Thirumurugan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Sheik</forename><surname>Abdullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arunprasath</forename><surname>Thiyagarajan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11227-024-06048-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Supercomputing</title>
+		<title level="j" type="abbrev">J Supercomput</title>
+		<idno type="ISSN">0920-8542</idno>
+		<idno type="ISSNe">1573-0484</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="15636" to="15663" />
+			<date type="published" when="2024-04-04">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amiya, G. et al. LMGU-NET: Methodological intervention for prediction of bone health for clinical recommendations. J. Supercomput. 80, 1-28 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">SGS: SqueezeNet-guided Gaussian-kernel SVM for COVID-19 Diagnosis</title>
+		<author>
+			<persName><forename type="first">Fanfeng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaji</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11036-023-02288-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mobile Networks and Applications</title>
+		<title level="j" type="abbrev">Mobile Netw Appl</title>
+		<idno type="ISSN">1383-469X</idno>
+		<idno type="ISSNe">1572-8153</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1872" to="1885" />
+			<date type="published" when="2024-01-13" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shi, F., Wang, J. &amp; Govindaraj, V. SGS: SqueezeNet-guided Gaussian-kernel SVM for COVID-19 diagnosis. Mob. Netw. Appl.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">MRI-based brain tumor ensemble classification using two stage score level fusion and CNN models</title>
+		<author>
+			<persName><forename type="first">Oussama</forename><surname>Bouguerra</surname></persName>
+			<idno type="ORCID">0009-0001-8564-5291</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bilal</forename><surname>Attallah</surname></persName>
+			<idno type="ORCID">0000-0003-3661-957X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Youcef</forename><surname>Brik</surname></persName>
+			<idno type="ORCID">0000-0003-1565-0594</idno>
+		</author>
+		<idno type="DOI">10.1016/j.eij.2024.100565</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Egyptian Informatics Journal</title>
+		<title level="j" type="abbrev">Egyptian Informatics Journal</title>
+		<idno type="ISSN">1110-8665</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page">100565</biblScope>
+			<date type="published" when="2024-12">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bouguerra, O., Attallah, B. &amp; Brik, Y. MRI-based brain tumor ensemble classification using two stage score level fusion and CNN models. Egypt. Inform. J. 28, 100565 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">RanMerFormer: Randomized vision transformer with token merging for brain tumor classification</title>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Si-Yuan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shui-Hua</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Dong</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neucom.2023.127216</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<title level="j" type="abbrev">Neurocomputing</title>
+		<idno type="ISSN">0925-2312</idno>
+		<imprint>
+			<biblScope unit="volume">573</biblScope>
+			<biblScope unit="page">127216</biblScope>
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, J., Lu, S. Y., Wang, S. H. &amp; Zhang, Y. D. RanMerFormer: Randomized vision transformer with token merging for brain tumor classification. Neurocomputing 573, 127216 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Neuro-XAI: Explainable deep learning framework based on deeplabV3+ and bayesian optimization for segmentation and classification of brain tumor in MRI scans</title>
+		<author>
+			<persName><forename type="first">Tallha</forename><surname>Saeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Attique</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ameer</forename><surname>Hamza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Shabaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wazir</forename><forename type="middle">Zada</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatimah</forename><surname>Alhayan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leila</forename><surname>Jamel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamel</forename><surname>Baili</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jneumeth.2024.110247</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience Methods</title>
+		<title level="j" type="abbrev">Journal of Neuroscience Methods</title>
+		<idno type="ISSN">0165-0270</idno>
+		<imprint>
+			<biblScope unit="volume">410</biblScope>
+			<biblScope unit="page">110247</biblScope>
+			<date type="published" when="2024-10">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saeed, T. et al. Neuro-XAI: Explainable deep learning framework based on deeplabV3+ and bayesian optimization for segmentation and classification of brain tumor in MRI scans. J. Neurosci. Methods 410, 110247 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Intelligent Multigrade Brain Tumor Identification in MRI: A Metaheuristic-Based Uncertain Set Framework</title>
+		<author>
+			<persName><forename type="first">Saravanan</forename><surname>Alagarsamy</surname></persName>
+			<idno type="ORCID">0000-0001-7362-6950</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+			<idno type="ORCID">0000-0001-9136-3461</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shahina</surname></persName>
+			<idno type="ORCID">0000-0003-4862-6611</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nagarajan</surname></persName>
+			<idno type="ORCID">0000-0003-1411-532X</idno>
+		</author>
+		<idno type="DOI">10.1109/tai.2024.3441520</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Artificial Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Artif. Intell.</title>
+		<idno type="ISSNe">2691-4581</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="5381" to="5391" />
+			<date type="published" when="2024-11">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alagarsamy, S., Govindaraj, V., Shahina, A. &amp; Nagarajan, D. Intelligent multi-grade brain tumor identification in MRI: A metaheuristic-based uncertain set framework. IEEE Trans. Artif. Intell. 5, 5381-5391 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Hybrid D-OCapNet: Automated Multi-Class Alzheimer’s Disease Classification in Brain MRI Using Hybrid Dense Optimal Capsule Network</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Nisha</surname></persName>
+			<idno type="ORCID">0000-0001-9493-8750</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Pallikonda</forename><surname>Rajasekaran</surname></persName>
+			<idno type="ORCID">0000-0001-6942-4512</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kottaimalai</surname></persName>
+			<idno type="ORCID">0000-0002-4846-6067</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vishnuvarthanan</surname></persName>
+			<idno type="ORCID">0000-0001-9136-3461</idno>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Arunprasath</surname></persName>
+			<idno type="ORCID">0000-0003-4891-4779</idno>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Muneeswaran</surname></persName>
+		</author>
+		<idno type="DOI">10.1142/s0218001423560256</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Pattern Recognition and Artificial Intelligence</title>
+		<title level="j" type="abbrev">Int. J. Patt. Recogn. Artif. Intell.</title>
+		<idno type="ISSN">0218-0014</idno>
+		<idno type="ISSNe">1793-6381</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">2356025</biblScope>
+			<date type="published" when="2023-12-15">2023</date>
+			<publisher>World Scientific Pub Co Pte Ltd</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nisha, A. V. et al. Hybrid d-ocapnet: Automated multiclass Alzheimer&apos;s disease classification in brain MRI using hybrid dense optimal capsule network. Int. J. Pattern Recognit. Artif. Intell. 37(15), 2356025 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">GliomaCNN: An Effective Lightweight CNN Model in Assessment of Classifying Brain Tumor from Magnetic Resonance Images Using Explainable AI</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Atiqur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mustavi</forename><forename type="middle">Ibne</forename><surname>Masum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><forename type="middle">Md</forename><surname>Hasib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Mridha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sultan</forename><surname>Alfarhood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mejdl</forename><surname>Safran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dunren</forename><surname>Che</surname></persName>
+		</author>
+		<idno type="DOI">10.32604/cmes.2024.050760</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Modeling in Engineering &amp; Sciences</title>
+		<title level="j" type="abbrev">CMES</title>
+		<idno type="ISSNe">1526-1506</idno>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="2425" to="2448" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Tech Science Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rahman, M. A. et al. GliomaCNN: An effective lightweight CNN model in assessment of classifying brain tumor from magnetic resonance images using explainable AI. CMES-Comput. Model. Eng. Sci. 140(3), 2425-2448 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Automated Brain Tumor Segmentation for MR Brain Images Using Artificial Bee Colony Combined With Interval Type-II Fuzzy Technique</title>
+		<author>
+			<persName><forename type="first">Saravanan</forename><surname>Alagarsamy</surname></persName>
+			<idno type="ORCID">0000-0001-7362-6950</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vishnuvarthanan</forename><surname>Govindaraj</surname></persName>
+			<idno type="ORCID">0000-0001-9136-3461</idno>
+		</author>
+		<idno type="DOI">10.1109/tii.2023.3244344</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Industrial Informatics</title>
+		<title level="j" type="abbrev">IEEE Trans. Ind. Inf.</title>
+		<idno type="ISSN">1551-3203</idno>
+		<idno type="ISSNe">1941-0050</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="11150" to="11159" />
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alagarsamy, S., Govindaraj, V. &amp; Senthilkumar, A. Automated brain tumor segmentation for MR brain images using artificial bee colony combined with interval type-II fuzzy technique. IEEE Trans. Ind. Inform. 19(11), 11150-11159 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">An XAI-Infused Multiclass MRI Brain Tumor Classification using Deep Transfert Learning (DTL)</title>
+		<author>
+			<persName><forename type="first">Hana</forename><surname>Charaabi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amal</forename><surname>Sayari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ridha</forename><surname>El Hamdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Njah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">Ben</forename><surname>Slima</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/codit62066.2024.10708599</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 10th International Conference on Control, Decision and Information Technologies (CoDIT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-07-01">2024</date>
+			<biblScope unit="page" from="1044" to="1049" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Charaabi, H., Sayari, A., El Hamdi, R., Njah, M. &amp; Slima, M. B. An XAI-infused multiclass MRI brain tumor classification deep transfert learning (DTL). In 2024 10th International Conference on Control, Decision and Information Technologies (CoDIT), 1044-1049 (IEEE, 2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A biologically-inspired hybrid deep learning approach for brain tumor classification from magnetic resonance imaging using improved gabor wavelet transform and Elmann-BiLSTM network</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Rajeev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pallikonda Rajasekaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vishnuvarthanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Arunprasath</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2022.103949</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page">103949</biblScope>
+			<date type="published" when="2022-09">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rajeev, S. K., Rajasekaran, M. P., Vishnuvarthanan, G. &amp; Arunprasath, T. A biologically-inspired hybrid deep learning approach for brain tumor classification from magnetic resonance imaging using improved gabor wavelet transform and Elmann-BiLSTM network. Biomed. Signal Process. Control 78, 103949 (2022).</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Explainable ensemble deep learning-based model for brain tumor detection and classification</title>
+		<author>
+			<persName><forename type="first">Khalid</forename><forename type="middle">M</forename><surname>Hosny</surname></persName>
+			<idno type="ORCID">0000-0001-8065-8977</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><forename type="middle">A</forename><surname>Mohammed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rania</forename><forename type="middle">A</forename><surname>Salama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">M</forename><surname>Elshewey</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00521-024-10401-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computing and Applications</title>
+		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
+		<idno type="ISSN">0941-0643</idno>
+		<idno type="ISSNe">1433-3058</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1289" to="1306" />
+			<date type="published" when="2024-11-20" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hosny, K. M., Mohammed, M. A., Salama, R. A. &amp; Elshewey, A. M. Explainable ensemble deep learning-based model for brain tumor detection and classification. Neural Comput. Appl.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection Using 3D-UNet Segmentation Features and Hybrid Machine Learning Model</title>
+		<author>
+			<persName><forename type="first">Bhargav</forename><surname>Mallampati</surname></persName>
+			<idno type="ORCID">0009-0006-9058-9518</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abid</forename><surname>Ishaq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Furqan</forename><surname>Rustam</surname></persName>
+			<idno type="ORCID">0000-0001-8403-1047</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Venu</forename><surname>Kuthala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sultan</forename><surname>Alfarhood</surname></persName>
+			<idno type="ORCID">0009-0001-1268-9613</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Imran</forename><surname>Ashraf</surname></persName>
+			<idno type="ORCID">0000-0002-8271-6496</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2023.3337363</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="135020" to="135034" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mallampati, B. et al. Brain tumor detection using 3D-UNet segmentation features and hybrid machine learning model. IEEE Access 11, 135020-135034 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">&lt;scp&gt;AI‐Enhanced&lt;/scp&gt; Detection of Clinically Relevant Structural and Functional Anomalies in &lt;scp&gt;MRI&lt;/scp&gt;: Traversing the Landscape of Conventional to Explainable Approaches</title>
+		<author>
+			<persName><forename type="first">Pegah</forename><surname>Khosravi</surname></persName>
+			<idno type="ORCID">0000-0003-3497-2820</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saber</forename><surname>Mohammadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatemeh</forename><surname>Zahiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masoud</forename><surname>Khodarahmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javad</forename><surname>Zahiri</surname></persName>
+			<idno type="ORCID">0000-0002-8360-2458</idno>
+		</author>
+		<idno type="DOI">10.1002/jmri.29247</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Magnetic Resonance Imaging</title>
+		<title level="j" type="abbrev">Magnetic Resonance Imaging</title>
+		<idno type="ISSN">1053-1807</idno>
+		<idno type="ISSNe">1522-2586</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2272" to="2289" />
+			<date type="published" when="2024-01-19">2024</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khosravi, P., Mohammadi, S., Zahiri, F., Khodarahmi, M. &amp; Zahiri, J. AI-enhanced detection of clinically relevant structural and functional anomalies in MRI: Traversing the landscape of conventional to explainable approaches. J. Magn. Reson. Imaging 60, 2272-2289 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Vision Transformers, Ensemble Model, and Transfer Learning Leveraging Explainable AI for Brain Tumor Detection and Classification</title>
+		<author>
+			<persName><forename type="first">Shahriar</forename><surname>Hossain</surname></persName>
+			<idno type="ORCID">0000-0002-6132-1305</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amitabha</forename><surname>Chakrabarty</surname></persName>
+			<idno type="ORCID">0000-0003-0306-4029</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thippa</forename><forename type="middle">Reddy</forename><surname>Gadekallu</surname></persName>
+			<idno type="ORCID">0000-0003-0097-801X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mamoun</forename><surname>Alazab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Jalil</forename><surname>Piran</surname></persName>
+			<idno type="ORCID">0000-0003-3229-6785</idno>
+		</author>
+		<idno type="DOI">10.1109/jbhi.2023.3266614</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Biomedical and Health Informatics</title>
+		<title level="j" type="abbrev">IEEE J. Biomed. Health Inform.</title>
+		<idno type="ISSN">2168-2194</idno>
+		<idno type="ISSNe">2168-2208</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1261" to="1272" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hossain, S., Chakrabarty, A., Gadekallu, T. R., Alazab, M. &amp; Piran, M. J. Vision transformers, ensemble model, and transfer learning leveraging explainable AI for brain tumor detection and classification. IEEE J. Biomed. Health Inform. 28(3), 1261-1272 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">TumorGANet: A Transfer Learning and Generative Adversarial Network- Based Data Augmentation Model for Brain Tumor Classification</title>
+		<author>
+			<persName><forename type="first">Anindya</forename><surname>Nag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hirak</forename><surname>Mondal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><surname>Mehedi Hassan</surname></persName>
+			<idno type="ORCID">0000-0002-9890-0968</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taher</forename><surname>Al-Shehari</surname></persName>
+			<idno type="ORCID">0000-0002-9783-919X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Kadrie</surname></persName>
+			<idno type="ORCID">0009-0000-4591-5069</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muna</forename><surname>Al-Razgan</surname></persName>
+			<idno type="ORCID">0000-0002-9705-3867</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taha</forename><surname>Alfakih</surname></persName>
+			<idno type="ORCID">0000-0003-0366-5932</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sujit</forename><surname>Biswas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anupam</forename><surname>Kumar Bairagi</surname></persName>
+			<idno type="ORCID">0009-0000-9132-8893</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2024.3429633</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="103060" to="103081" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nag, A. et al. TumorGANet: A transfer learning and generative adversarial network-based data augmentation model for brain tumor classification. IEEE Access 12, 103060-103081 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Automated Brain Tumor Analysis Using Deep Learning-Based Framework</title>
+		<author>
+			<persName><forename type="first">Amiya</forename><surname>Halder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rudrajit</forename><surname>Choudhuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Apurba</forename><surname>Sarkar</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781003257721-7</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Data Analysis and Processing using Explainable Artificial Intelligence</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2023-09-15">2023</date>
+			<biblScope unit="page" from="123" to="148" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Halder, A., Choudhuri, R. &amp; Sarkar, A. Automated brain tumor analysis using deep learning-based framework. In Medical Data Analysis and Processing using Explainable Artificial Intelligence, 123-148 (CRC Press, 2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A novel approach of brain-computer interfacing (BCI) and Grad-CAM based explainable artificial intelligence: Use case scenario for smart healthcare</title>
+		<author>
+			<persName><forename type="first">Kamini</forename><surname>Lamba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shalli</forename><surname>Rani</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jneumeth.2024.110159</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience Methods</title>
+		<title level="j" type="abbrev">Journal of Neuroscience Methods</title>
+		<idno type="ISSN">0165-0270</idno>
+		<imprint>
+			<biblScope unit="volume">408</biblScope>
+			<biblScope unit="page">110159</biblScope>
+			<date type="published" when="2024-08">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lamba, K. &amp; Rani, S. A novel approach of brain-computer interfacing (BCI) and Grad-CAM based explainable artificial intelligence: Use case scenario for smart healthcare. J. Neurosci. Methods 408, 110159 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Explainable artificial intelligence to increase transparency for revolutionizing healthcare ecosystem and the road ahead</title>
+		<author>
+			<persName><forename type="first">Sudipta</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Debojyoti</forename><surname>Pal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanushree</forename><surname>Meena</surname></persName>
+			<idno type="ORCID">0000-0002-4197-2549</idno>
+		</author>
+		<idno type="DOI">10.1007/s13721-023-00437-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Network Modeling Analysis in Health Informatics and Bioinformatics</title>
+		<title level="j" type="abbrev">Netw Model Anal Health Inform Bioinforma</title>
+		<idno type="ISSNe">2192-6670</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2023-12-22">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Roy, S., Pal, D. &amp; Meena, T. Explainable artificial intelligence to increase transparency for revolutionizing healthcare ecosystem and the road ahead. Netw. Model. Anal. Health Inform. Bioinform. 13(1), 4 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Design and assessment of improved Convolutional Neural Network based brain tumor segmentation and classification system</title>
+		<author>
+			<persName><forename type="first">Alok</forename><forename type="middle">Singh</forename><surname>Chauhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jyoti</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sumit</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neeru</forename><surname>Saxena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meghna</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Poonam</forename><surname>Verma</surname></persName>
+		</author>
+		<idno type="DOI">10.62110/sciencein.jist.2024.v12.793</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Integrated Science and Technology</title>
+		<title level="j" type="abbrev">JIST</title>
+		<idno type="ISSNe">2321-4635</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="793" to="793" />
+			<date type="published" when="2024-02-08">2024</date>
+			<publisher>The ScienceIn Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chauhan, A. S. et al. Design and assessment of improved convolutional neural network based brain tumor segmentation and classification system. J. Integr. Sci. Technol. 12(4), 793-793 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Hybrid Adam Sewing Training Optimization Enabled Deep Learning for Brain Tumor Segmentation and Classification using MRI Images</title>
+		<author>
+			<persName><forename type="first">Pravin</forename><forename type="middle">Shivaji</forename><surname>Bidkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ram</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhijyoti</forename><surname>Ghosh</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/21681163.2023.2199891</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods in Biomechanics and Biomedical Engineering: Imaging &amp; Visualization</title>
+		<title level="j" type="abbrev">Computer Methods in Biomechanics and Biomedical Engineering: Imaging &amp; Visualization</title>
+		<idno type="ISSN">2168-1163</idno>
+		<idno type="ISSNe">2168-1171</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1921" to="1936" />
+			<date type="published" when="2023-04-21">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bidkar, P. S., Kumar, R. &amp; Ghosh, A. Hybrid Adam sewing training optimization enabled deep learning for brain tumor segmentation and classification using MRI images. Comput. Methods Biomech. Biomed. Eng. Imaging Vis. 11(5), 1921-1936 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Segmentation of brain MRI using U-Net: Innovations in medical image processing</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">U</forename><surname>Shafiq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Butt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Comput. Inform. Bus</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shafiq, M. U. &amp; Butt, A. I. Segmentation of brain MRI using U-Net: Innovations in medical image processing. J. Comput. Inform. Bus. 1(1) (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Fractional Aquila spider monkey optimization based deep learning network for classification of brain tumor</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Nirmalapriya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Agalya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeshkannan</forename><surname>Regunathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Belsam Jeba Ananth</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2022.104017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page">104017</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nirmalapriya, G., Agalya, V., Regunathan, R. &amp; Ananth, M. B. J. Fractional Aquila spider monkey optimization based deep learning network for classification of brain tumor. Biomed. Signal Process. Control 79, 104017 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Detection and classification on MRI images of brain tumor using YOLO NAS deep learning model</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Mithun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Joseph Jawhar</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jrras.2024.101113</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Radiation Research and Applied Sciences</title>
+		<title level="j" type="abbrev">Journal of Radiation Research and Applied Sciences</title>
+		<idno type="ISSN">1687-8507</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">101113</biblScope>
+			<date type="published" when="2024-12">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mithun, M. S. &amp; Jawhar, S. J. Detection and classification on MRI images of brain tumor using YOLO NAS deep learning model. J. Radiat. Res. Appl. Sci. 17(4), 101113 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">MBANet: A 3D convolutional neural network with multi-branch attention for brain tumor segmentation from MRI images</title>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weifeng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Zang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dianlong</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2022.104296</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Signal Processing and Control</title>
+		<title level="j" type="abbrev">Biomedical Signal Processing and Control</title>
+		<idno type="ISSN">1746-8094</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page">104296</biblScope>
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cao, Y. et al. MBANet: A 3D convolutional neural network with multi-branch attention for brain tumor segmentation from MRI images. Biomed. Signal Process. Control 80, 104296 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Approximate bilateral filters for real-time and low-energy imaging applications on FPGAs</title>
+		<author>
+			<persName><forename type="first">Fanny</forename><surname>Spagnolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pasquale</forename><surname>Corsonello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Frustaci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefania</forename><surname>Perri</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11227-024-06084-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Supercomputing</title>
+		<title level="j" type="abbrev">J Supercomput</title>
+		<idno type="ISSN">0920-8542</idno>
+		<idno type="ISSNe">1573-0484</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="15894" to="15916" />
+			<date type="published" when="2024-04-07">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Spagnolo, F., Corsonello, P., Frustaci, F. &amp; Perri, S. Approximate bilateral filters for real-time and low-energy imaging applications on FPGAs. J. Supercomput. 80, 1-23 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">MEDU-Net+: a novel improved U-Net based on multi-scale encoder-decoder for medical image segmentation</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.3837/tiis.2024.07.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">KSII Transactions on Internet and Information Systems</title>
+		<title level="j" type="abbrev">KSII TIIS</title>
+		<idno type="ISSNe">1976-7277</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1706" to="1725" />
+			<date type="published" when="2024-07-31">2024</date>
+			<publisher>Korean Society for Internet Information (KSII)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang, Z., Sun, X., Yang, Y. &amp; Wu, X. MEDU-Net+: A novel improved U-Net based on multi-scale encoder-decoder for medical image segmentation. KSII Trans. Internet Inform. Syst. 18, 1706-1725 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Automated identification of breast cancer type using novel multipath transfer learning and ensemble of classifier</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Subaji</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="87560" to="87578" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nair, S. S. &amp; Subaji, M. Automated identification of breast cancer type using novel multipath transfer learning and ensemble of classifier. IEEE Access 12, 87560-87578 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Data-driven prediction of tool wear using Bayesian regularized artificial neural networks</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">T</forename><surname>Truong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Measurement</title>
+		<imprint>
+			<biblScope unit="volume">238</biblScope>
+			<biblScope unit="page">115303</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Truong, T. T. et al. Data-driven prediction of tool wear using Bayesian regularized artificial neural networks. Measurement 238, 115303 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Prediction of Ultimate Bearing Capacity of Soil–Cement Mixed Pile Composite Foundation Using SA-IRMO-BPNN Model</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liangxing</forename><surname>Jin</surname></persName>
+			<idno type="ORCID">0000-0003-3109-1833</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yujie</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pingting</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-5589-3518</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junjie</forename><surname>Wei</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/math12111701</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics</title>
+		<title level="j" type="abbrev">Mathematics</title>
+		<idno type="ISSNe">2227-7390</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1701</biblScope>
+			<date type="published" when="2024-05-30">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xi, L., Jin, L., Ji, Y., Liu, P. &amp; Wei, J. Prediction of ultimate bearing capacity of soil-cement mixed pile composite foundation using SA-IRMO-BPNN model. Mathematics 12(11), 1701 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Pediatric Posterior Fossa Tumors Classification and Explanation-Driven with Explainable Artificial Intelligence Models</title>
+		<author>
+			<persName><forename type="first">Eman</forename><forename type="middle">Ragab</forename><surname>Ashry</surname></persName>
+			<idno type="ORCID">0009-0003-5528-2439</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fahima</forename><forename type="middle">A</forename><surname>Maghraby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasser</forename><forename type="middle">M Abd</forename><surname>El-Latif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Agag</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s44196-024-00527-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computational Intelligence Systems</title>
+		<title level="j" type="abbrev">Int J Comput Intell Syst</title>
+		<idno type="ISSNe">1875-6883</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">166</biblScope>
+			<date type="published" when="2024-06-27">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ashry, E. R., Maghraby, F. A., El-Latif, Y. M. A. &amp; Agag, M. Pediatric posterior fossa tumors classification and explanation-driven with explainable artificial intelligence models. Int. J. Comput. Intell. Syst. 17(1), 166 (2024).</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Leveraging Brain MRI for Biomedical Alzheimer’s Disease Diagnosis Using Enhanced Manta Ray Foraging Optimization Based Deep Learning</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Syed</forename><surname>Jamalullah</surname></persName>
+			<idno type="ORCID">0000-0003-0942-3168</idno>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Mary</forename><surname>Gladence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Altaf</forename><surname>Ahmed</surname></persName>
+			<idno type="ORCID">0000-0003-0355-7835</idno>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">Laxmi</forename><surname>Lydia</surname></persName>
+			<idno type="ORCID">0000-0003-1751-481X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamad</forename><forename type="middle">Khairi</forename><surname>Ishak</surname></persName>
+			<idno type="ORCID">0000-0002-3554-0061</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Myriam</forename><surname>Hadjouni</surname></persName>
+			<idno type="ORCID">0000-0001-9070-6821</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Samih</forename><forename type="middle">M</forename><surname>Mostafa</surname></persName>
+			<idno type="ORCID">0000-0001-9234-5898</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2023.3294711</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="81921" to="81929" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jamalullah, R. S. et al. Leveraging brain MRI for biomedical Alzheimer&apos;s disease diagnosis using enhanced manta ray foraging optimization based deep learning. IEEE Access 11, 81921-81929 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Ensemble Learning Driven Computer-Aided Diagnosis Model for Brain Tumor Classification on Magnetic Resonance Imaging</title>
+		<author>
+			<persName><forename type="first">Thavavel</forename><surname>Vaiyapuri</surname></persName>
+			<idno type="ORCID">0000-0001-5494-5278</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaiganesh</forename><surname>Mahalingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sultan</forename><surname>Ahmad</surname></persName>
+			<idno type="ORCID">0000-0002-3198-7974</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hikmat</forename><forename type="middle">A M</forename><surname>Abdeljaber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eunmok</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-6508-7034</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Soo-Yong</forename><surname>Jeong</surname></persName>
+			<idno type="ORCID">0000-0001-7729-5511</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2023.3306961</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="91398" to="91406" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaiyapuri, T. et al. Ensemble learning driven computer-aided diagnosis model for brain tumor classification on magnetic resonance imaging. IEEE Access 11, 91398-91406 (2023).</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Brain Tumor Detection Based on Deep Learning Approaches and Magnetic Resonance Imaging</title>
+		<author>
+			<persName><forename type="first">Akmalbek</forename><forename type="middle">Bobomirzaevich</forename><surname>Abdusalomov</surname></persName>
+			<idno type="ORCID">0000-0001-5923-8695</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mukhriddin</forename><surname>Mukhiddinov</surname></persName>
+			<idno type="ORCID">0000-0002-1424-0799</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taeg</forename><forename type="middle">Keun</forename><surname>Whangbo</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers15164172</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<title level="j" type="abbrev">Cancers</title>
+		<idno type="ISSNe">2072-6694</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page">4172</biblScope>
+			<date type="published" when="2023-08-18">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abdusalomov, A. B., Mukhiddinov, M. &amp; Whangbo, T. K. Brain detection based on deep learning approaches and magnetic resonance imaging. Cancers 15(16), 4172 (2023).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
